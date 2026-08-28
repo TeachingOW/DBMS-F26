@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CREATE TABLE · SQL Syntax</title><style>
+:root{color-scheme:light;--green:#0b5d3b;--ink:#142019;--gold:#c7a34a;--paper:#fbfaf5}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:linear-gradient(145deg,#f3f7f2,#fff 55%,#f3f0e5);font:17px/1.6 "Segoe UI",Arial,sans-serif}
+header,main{width:min(980px,calc(100% - 32px));margin:auto}header{padding:34px 0 18px;border-bottom:5px solid var(--green)}
+.eyebrow{margin:0 0 6px;color:var(--green);font-size:.78rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}h1{margin:0;font:700 clamp(2rem,5vw,3.6rem)/1.06 Georgia,serif}main{padding:28px 0 60px}
+.lead{max-width:780px;font-size:1.18rem}.card{margin:22px 0;padding:20px;background:rgba(255,255,255,.92);border:1px solid #d7e3da;border-radius:12px;box-shadow:0 10px 28px rgba(19,49,31,.08)}h2{margin:0 0 12px;color:var(--green);font:700 1.25rem/1.2 "Segoe UI",Arial,sans-serif}
+pre{margin:0;padding:18px;overflow:auto;color:#eaf6ee;background:#10251b;border-radius:9px;font:15px/1.5 Consolas,monospace;white-space:pre-wrap}ul{padding-left:1.3rem}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+a,button{display:inline-flex;align-items:center;padding:9px 13px;color:var(--green);font:700 .95rem "Segoe UI",Arial,sans-serif;background:#fff;border:1px solid rgba(11,93,59,.35);border-radius:8px;text-decoration:none;cursor:pointer}a:hover,a:focus-visible,button:hover,button:focus-visible{color:#fff;background:var(--green);outline:2px solid var(--gold);outline-offset:2px}
+.topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}.topic-grid a{display:block}.topic-grid small{display:block;margin-top:5px;color:#54645a;font-weight:400}
+footer{margin-top:34px;color:#5a6b61;font-size:.9rem}@media(max-width:600px){body{font-size:16px}.card{padding:16px}}
+</style></head>
+<body><header><p class="eyebrow">SQL general syntax</p><h1>CREATE TABLE</h1></header><main>
+    <p class="lead">Create a relation by declaring its columns, data types, keys, and integrity rules.</p>
+    <section class="card"><h2>General pattern</h2><pre><code>CREATE TABLE table_name (
+  column_name data_type [constraint],
+  ...
+  [FOREIGN KEY (column_name) REFERENCES parent_table(parent_key)]
+);</code></pre><div class="actions"><button type="button" data-copy="pattern">Copy general pattern</button></div></section>
+    <section class="card"><h2>How to read it</h2><ul><li>Choose a stable primary key.</li><li>Use data types that match the meaning of each value.</li><li>Use constraints to prevent invalid data at write time.</li></ul></section>
+    <section class="card"><h2>Example using the course database</h2><pre><code>CREATE TABLE EnrollmentNote (
+  note_id INTEGER PRIMARY KEY,
+  student_id VARCHAR(10) REFERENCES Student(student_id),
+  note_text TEXT NOT NULL
+);</code></pre><div class="actions"><button type="button" data-copy="example">Copy example</button></div></section>
+    <nav class="actions"><a href="../index.html">← Return to presentation</a><a href="index.html">All syntax topics</a><a href="../demo-database.sql" download>Download demo database</a></nav>
+    <script>document.querySelectorAll('[data-copy]').forEach((button)=>button.addEventListener('click',async()=>{const code=button.closest('.card').querySelector('code').textContent;try{await navigator.clipboard.writeText(code);button.textContent='Copied';}catch(error){const range=document.createRange();range.selectNodeContents(button.closest('.card').querySelector('code'));const selection=getSelection();selection.removeAllRanges();selection.addRange(range);button.textContent='Selected — copy now';}setTimeout(()=>button.textContent=button.dataset.copy==='pattern'?'Copy general pattern':'Copy example',1600);}));</script><footer>Designed for PostgreSQL 16+ and the course demo database.</footer></main></body></html>

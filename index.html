@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A self-contained SQL lecture with general syntax, reproducible PostgreSQL examples, and aligned labs.">
+  <title>SQL — Reproducible HTML Presentation</title>
+  <link rel="stylesheet" href="presentation.css">
+</head>
+<body class="native-deck" data-title="SQL" data-count="126" data-deck="sql" data-native="true" data-heading-fixed="true" data-github-pages="true">
+  <main class="stage">
+    <div class="loading">Preparing native HTML slide…</div>
+    <article class="native-slide" hidden aria-live="polite"></article>
+    <article class="lab-slide" hidden aria-live="polite"></article>
+    <article class="advanced-slide" hidden aria-live="polite"></article>
+  </main>
+
+  <header class="topbar">
+    <strong class="deck-title">SQL · Reproducible HTML</strong>
+    <a class="top-link" href="#1">First slide</a>
+    <a class="top-link optional" href="demo-database.sql" download>Database setup</a>
+    <button class="button" data-action="clean-mode">Clean view</button>
+    <button class="button" data-action="labs">Labs</button>
+    <button class="button" data-action="help" aria-label="Keyboard help">?</button>
+  </header>
+
+  <nav class="controls" aria-label="Slide controls">
+    <button class="button" data-action="prev" aria-label="Previous slide">←</button>
+    <span class="counter" aria-live="polite"></span>
+    <button class="button" data-action="next" aria-label="Next slide">→</button>
+    <button class="button" data-action="overview">Overview</button>
+    <button class="button" data-action="labs">Labs</button>
+    <button class="button" data-action="fullscreen">Fullscreen</button>
+  </nav>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <section class="overview" aria-hidden="true">
+    <div class="overview-head">
+      <h2>SQL — text slide overview</h2>
+      <button class="button" data-action="close-overview">Close</button>
+    </div>
+    <div class="thumb-grid"></div>
+  </section>
+
+  <section class="labs-panel" aria-hidden="true">
+    <div class="labs-card">
+      <div class="labs-head">
+        <h2>SQL labs</h2>
+        <button class="button" data-action="close-labs">Close</button>
+      </div>
+      <p class="labs-intro">Each activity follows the concept it practices. Every example includes general syntax, copy controls, and a database reset script.</p>
+      <h3>Aligned practice slides</h3>
+      <div class="aligned-lab-list"></div>
+      <button class="lab-jump" data-action="jump-lab" data-slide="125">Jump to the embedded lab · slide 125 →</button>
+      <div class="lab-links">
+        <a class="lab-link" href="labs/foundations/data-types-use-cases.html" target="_blank" rel="noopener"><strong>Data Types by Use Case</strong><span>Money, identifiers, measurements, Boolean states, dates, and timestamps.</span></a>
+        <a class="lab-link" href="labs/quick-start/quick-start-guide.html" target="_blank" rel="noopener"><strong>SQL Quick Start</strong><span>Setup, table creation, inserts, and first queries.</span></a>
+        <a class="lab-link" href="labs/single-table/single-table-queries.html" target="_blank" rel="noopener"><strong>Single-table Queries</strong><span>SELECT, filtering, expressions, sorting, and duplicate handling.</span></a>
+        <a class="lab-link" href="labs/joins-foreign-keys/joins-part1.html" target="_blank" rel="noopener"><strong>Joins and Foreign Keys</strong><span>Connect related tables and reason about matching rows.</span></a>
+        <a class="lab-link" href="labs/aggregation/aggregation-grouping.html" target="_blank" rel="noopener"><strong>Aggregation and GROUP BY</strong><span>COUNT, SUM, grouped results, and HAVING.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="help" aria-hidden="true">
+    <div class="help-card">
+      <h2>Presentation controls</h2>
+      <div class="keys">
+        <kbd>→ / Space</kbd><span>Next slide</span>
+        <kbd>←</kbd><span>Previous slide</span>
+        <kbd>Home / End</kbd><span>First / last slide</span>
+        <kbd>F</kbd><span>Fullscreen</span>
+        <kbd>P</kbd><span>Enter or exit clean presentation view</span>
+        <kbd>O</kbd><span>Show or hide the text overview</span>
+        <kbd>L</kbd><span>Open labs</span>
+        <kbd>H</kbd><span>Hide overlays or exit clean view</span>
+        <kbd>?</kbd><span>Open keyboard help</span>
+      </div>
+      <p><button class="button" data-action="close-help">Close</button></p>
+    </div>
+  </section>
+
+  <script src="lab-content.js"></script>
+  <script src="query-labs.js"></script>
+  <script src="sql-slide-notes.js"></script>
+  <script src="original-sql-slides.js"></script>
+  <script src="advanced-sql-content.js"></script>
+  <script src="sql-reproducibility.js"></script>
+  <script src="presentation.js"></script>
+</body>
+</html>
