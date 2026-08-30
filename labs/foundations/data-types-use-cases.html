@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab: Choosing SQL Data Types from Use Cases</title>
+  <style>
+    :root { --green:#0b5d3b; --dark:#07442b; --gold:#c7a34a; --cream:#f6f2e9; --ink:#122019; }
+    *{box-sizing:border-box} body{max-width:980px;margin:auto;padding:28px 20px 60px;color:var(--ink);background:linear-gradient(160deg,#fff,var(--cream));font:16px/1.6 Arial,sans-serif} h1,h2,h3{font-family:Georgia,serif;color:var(--dark)} h1{border-bottom:4px solid var(--gold);padding-bottom:12px} a{color:var(--green);font-weight:700} .nav,.callout{padding:14px 16px;border-radius:9px;background:#fff;border:1px solid rgba(11,93,59,.18)} .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}.case{padding:16px;border-left:5px solid var(--green);background:#fff;box-shadow:0 5px 16px rgba(18,32,25,.07)} table{width:100%;border-collapse:collapse;background:#fff} th,td{padding:10px;border:1px solid #ccd8d1;text-align:left;vertical-align:top} th{background:#eaf2ed} pre{padding:16px;overflow:auto;background:#10251b;color:#f7fbf8;border-radius:8px} code{font-family:Consolas,monospace} details{margin:12px 0;padding:10px 14px;background:#fff;border:1px solid #d5dfd9;border-radius:8px} summary{cursor:pointer;font-weight:700;color:var(--green)}
+  </style>
+</head>
+<body>
+  <p class="nav"><a href="../../course-map.html">← Course map</a> · <a href="../../index.html">Portal</a></p>
+  <h1>Choosing SQL Data Types from Use Cases</h1>
+  <p class="callout"><strong>Goal:</strong> choose a type by asking what operations must be correct—not by asking what the sample value happens to look like.</p>
+  <h2>Part 1 · Classify the job of the field</h2>
+  <div class="grid">
+    <section class="case"><h3>Exact quantity</h3><p>Money, tax rates, inventory quantities measured to a fixed scale.</p><p><strong>Usually:</strong> <code>DECIMAL(p,s)</code> or <code>NUMERIC(p,s)</code>.</p></section>
+    <section class="case"><h3>Approximate measurement</h3><p>Sensor readings, scientific values, estimates where floating-point approximation is acceptable.</p><p><strong>Usually:</strong> <code>REAL</code> or <code>DOUBLE PRECISION</code>.</p></section>
+    <section class="case"><h3>Identifier</h3><p>ZIP code, phone number, SKU, student ID, or account number. Leading zeros and formatting matter; arithmetic does not.</p><p><strong>Usually:</strong> <code>CHAR</code> or <code>VARCHAR</code>.</p></section>
+    <section class="case"><h3>Time</h3><p>Birthday, due date, event instant, or local appointment time.</p><p><strong>Usually:</strong> <code>DATE</code>, <code>TIME</code>, or <code>TIMESTAMP</code>; consider time-zone semantics.</p></section>
+    <section class="case"><h3>State</h3><p>Yes/no, active/inactive, passed/failed.</p><p><strong>Usually:</strong> <code>BOOLEAN</code>, unless the domain has more than two states.</p></section>
+    <section class="case"><h3>Human text</h3><p>Name, title, comment, or description.</p><p><strong>Usually:</strong> <code>VARCHAR(n)</code> for a meaningful limit or <code>TEXT</code> for open-ended content.</p></section>
+  </div>
+  <h2>Part 2 · Defend each choice</h2>
+  <table>
+    <thead><tr><th>Field</th><th>Example</th><th>Your type</th><th>Operation that must work</th><th>Risk of the wrong type</th></tr></thead>
+    <tbody>
+      <tr><td>price</td><td>19.99</td><td></td><td>Add, compare, calculate tax exactly</td><td></td></tr>
+      <tr><td>zip_code</td><td>00501</td><td></td><td>Preserve leading zero; search by prefix</td><td></td></tr>
+      <tr><td>created_at</td><td>2026-08-27 14:30</td><td></td><td>Sort chronologically; compute elapsed time</td><td></td></tr>
+      <tr><td>temperature_c</td><td>21.8734</td><td></td><td>Analyze approximate measurements</td><td></td></tr>
+      <tr><td>is_active</td><td>true</td><td></td><td>Filter a two-state condition</td><td></td></tr>
+      <tr><td>student_id</td><td>00127463</td><td></td><td>Compare for equality; never calculate</td><td></td></tr>
+    </tbody>
+  </table>
+  <h2>Part 3 · Build and test</h2>
+  <p>Create a table named <code>event_registration</code>. Decide types and useful constraints for every field, then insert three rows designed to test the boundaries of your choices.</p>
+  <pre><code>CREATE TABLE event_registration (
+    registration_id  /* choose */ PRIMARY KEY,
+    student_id       /* choose */ NOT NULL,
+    ticket_price     /* choose */ NOT NULL,
+    registered_at    /* choose */ NOT NULL,
+    needs_access     /* choose */ NOT NULL,
+    notes            /* choose */
+);</code></pre>
+  <h3>Boundary tests</h3>
+  <ol><li>Use a student ID with leading zeros.</li><li>Insert a price whose third decimal place is nonzero. Predict what the DBMS will do.</li><li>Insert an invalid date or timestamp and record the error.</li><li>Try a missing required value.</li><li>Explain whether <code>needs_access</code> truly has two states or needs an “unknown/not answered” state.</li></ol>
+  <details><summary>Suggested core choices</summary><p><code>student_id VARCHAR(...)</code>, <code>ticket_price DECIMAL(8,2)</code>, <code>registered_at TIMESTAMP</code>, and <code>needs_access BOOLEAN</code>. The best length, nullability, default, and time-zone treatment depend on the stated requirements.</p></details>
+  <h2>Exit ticket</h2>
+  <p>Choose one field whose sample value looks numeric but should be stored as text. Explain the operation that proves your choice.</p>
+</body>
+</html>
