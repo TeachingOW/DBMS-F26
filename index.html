@@ -79,8 +79,12 @@
           <h3 id="shared-discussion-title">Class discussion</h3>
           <span>Visible to everyone</span>
         </div>
-        <p class="giscus-status" data-giscus-status aria-live="polite">Loading the discussion for this slide…</p>
-        <div class="giscus-host" data-giscus-container></div>
+        <div class="comment-provider-switch" aria-label="Choose comment method">
+          <button type="button" data-comment-provider="giscus" aria-pressed="true">GitHub discussion</button>
+          <button type="button" data-comment-provider="disqus" aria-pressed="false">Guest comments</button>
+        </div>
+        <p class="shared-comment-status" data-shared-comment-status aria-live="polite">Loading the discussion for this slide…</p>
+        <div class="shared-comment-host" data-shared-comment-container></div>
       </section>
       <details class="private-question-notes">
         <summary>Private notes on this device</summary>

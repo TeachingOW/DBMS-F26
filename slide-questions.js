@@ -14,11 +14,31 @@
   const empty = panel.querySelector('[data-question-empty]');
   const copyDraft = panel.querySelector('[data-question-copy-draft]');
   const copyAll = panel.querySelector('[data-question-copy-all]');
-  const giscusContainer = panel.querySelector('[data-giscus-container]');
-  const giscusStatus = panel.querySelector('[data-giscus-status]');
+  const sharedContainer = panel.querySelector('[data-shared-comment-container]');
+  const sharedStatus = panel.querySelector('[data-shared-comment-status]');
+  const providerButtons = [...panel.querySelectorAll('[data-comment-provider]')];
   const countBadges = [...document.querySelectorAll('[data-question-count]')];
   let context = { key: 'slide-1', label: 'Slide 1', hash: '1' };
   let store = loadStore();
+  let provider = loadProvider();
+
+  function loadProvider() {
+    try {
+      const saved = localStorage.getItem('dbms-comment-provider');
+      if (saved === 'giscus' || saved === 'disqus') return saved;
+    } catch (error) {
+      // Browser storage is optional.
+    }
+    return config.defaultProvider === 'disqus' ? 'disqus' : 'giscus';
+  }
+
+  function saveProvider() {
+    try {
+      localStorage.setItem('dbms-comment-provider', provider);
+    } catch (error) {
+      // The selected provider still works for the current session.
+    }
+  }
 
   function loadStore() {
     try {
@@ -85,7 +105,7 @@
     ].join('\n');
   }
 
-  function discussionConfig() {
+  function giscusConfig() {
     const repo = String(config.githubRepo || '').trim();
     const repoId = String(config.giscusRepoId || '').trim();
     const category = String(config.giscusCategory || '').trim();
@@ -95,16 +115,14 @@
     return { repo, repoId, category, categoryId };
   }
 
-  function loadSharedDiscussion() {
-    if (!giscusContainer || !giscusStatus) return;
-    giscusContainer.replaceChildren();
-    const shared = discussionConfig();
+  function loadGiscusDiscussion() {
+    const shared = giscusConfig();
     if (!shared) {
-      giscusStatus.textContent = 'The shared class discussion needs to be connected to the course GitHub repository. Private notes below still work.';
+      sharedStatus.textContent = 'GitHub discussion is not configured. Choose Guest comments or use the private notes below.';
       return;
     }
 
-    giscusStatus.textContent = `Loading comments for ${context.label}…`;
+    sharedStatus.textContent = `Loading GitHub comments for ${context.label}…`;
     const script = document.createElement('script');
     script.src = 'https://giscus.app/client.js';
     script.async = true;
@@ -123,12 +141,74 @@
     script.setAttribute('data-lang', 'en');
     script.setAttribute('data-loading', 'lazy');
     script.addEventListener('load', () => {
-      giscusStatus.textContent = `Shared discussion for ${context.label}. Sign in with GitHub to participate.`;
+      sharedStatus.textContent = `GitHub discussion for ${context.label}. Sign in with GitHub to participate.`;
     });
     script.addEventListener('error', () => {
-      giscusStatus.textContent = 'The shared discussion could not be loaded. Check the internet connection and GitHub discussion settings.';
+      sharedStatus.textContent = 'The GitHub discussion could not be loaded. Check the internet connection and GitHub discussion settings.';
     });
-    giscusContainer.appendChild(script);
+    sharedContainer.appendChild(script);
+  }
+
+  function disqusConfig() {
+    const shortname = String(config.disqusShortname || '').trim();
+    return /^[A-Za-z0-9-]+$/.test(shortname) ? { shortname } : null;
+  }
+
+  function discussionUrl() {
+    const hosted = /^https?:$/.test(location.protocol)
+      ? location.href.split('#')[0]
+      : 'https://teachingow.github.io/DBMS-F26/';
+    return `${hosted}#${context.hash}`;
+  }
+
+  function loadDisqusDiscussion() {
+    const shared = disqusConfig();
+    if (!shared) {
+      sharedStatus.textContent = 'Guest comments need a Disqus shortname. GitHub discussion and private notes are still available.';
+      return;
+    }
+
+    sharedStatus.textContent = `Loading guest comments for ${context.label}…`;
+    const thread = document.createElement('div');
+    thread.id = 'disqus_thread';
+    sharedContainer.appendChild(thread);
+    const setThread = function () {
+      this.page.url = discussionUrl();
+      this.page.identifier = `dbms-${context.key}`;
+      this.page.title = context.label;
+    };
+
+    if (window.DISQUS?.reset) {
+      window.DISQUS.reset({ reload: true, config: setThread });
+      sharedStatus.textContent = `Guest discussion for ${context.label}. Select “I'd rather post as guest” when submitting.`;
+      return;
+    }
+
+    window.disqus_config = setThread;
+    const script = document.createElement('script');
+    script.id = 'disqus-embed-script';
+    script.src = `https://${shared.shortname}.disqus.com/embed.js`;
+    script.async = true;
+    script.setAttribute('data-timestamp', String(Date.now()));
+    script.addEventListener('load', () => {
+      sharedStatus.textContent = `Guest discussion for ${context.label}. Select “I'd rather post as guest” when submitting.`;
+    });
+    script.addEventListener('error', () => {
+      sharedStatus.textContent = 'Guest comments could not be loaded. Check the Disqus shortname and site settings.';
+    });
+    document.head.appendChild(script);
+  }
+
+  function loadSharedDiscussion() {
+    if (!sharedContainer || !sharedStatus) return;
+    sharedContainer.replaceChildren();
+    providerButtons.forEach(button => {
+      const active = button.dataset.commentProvider === provider;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+    if (provider === 'disqus') loadDisqusDiscussion();
+    else loadGiscusDiscussion();
   }
 
   function render() {
@@ -199,6 +279,11 @@
 
   copyDraft.addEventListener('click', () => copyText(draftText(), copyDraft));
   copyAll.addEventListener('click', () => copyText(entries().map(formatEntry).join('\n\n---\n\n'), copyAll));
+  providerButtons.forEach(button => button.addEventListener('click', () => {
+    provider = button.dataset.commentProvider;
+    saveProvider();
+    loadSharedDiscussion();
+  }));
 
   window.addEventListener('dbms:slidechange', event => {
     context = event.detail;

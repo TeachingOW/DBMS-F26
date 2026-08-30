@@ -78,6 +78,24 @@ The shared conversation uses [giscus](https://giscus.app), which stores comments
 
 The presentation uses a stable internal key for each lecture slide, lab, and advanced slide, so each item always reopens the same shared discussion. Students need a GitHub account to post, but anyone who can view the public course site can read the conversation.
 
+### Easier guest-comment option
+
+The Questions panel also supports Disqus guest comments. This requires only a Disqus site shortname:
+
+1. Create a site at [Disqus](https://disqus.com/admin/create/).
+2. Copy the site's **shortname** from the Disqus settings.
+3. Open **Disqus Admin → Settings → Moderation** and enable **Guest Commenting**. The **Balanced** moderation profile permits guest submissions.
+4. Open `questions-config.js` and enter the shortname:
+
+   ```javascript
+   defaultProvider: 'disqus',
+   disqusShortname: 'YOUR-DISQUS-SHORTNAME'
+   ```
+
+5. Commit and upload the changed file.
+
+Students can then select **Guest comments** and choose **I'd rather post as guest** when submitting. Disqus requires guest submissions to be approved by a moderator before they appear publicly. Set `defaultProvider` to `giscus` if GitHub discussion should remain the initially selected option.
+
 ## Database setup
 
 The examples use PostgreSQL 16+ syntax. Create an empty database, open its SQL editor, and run `demo-database.sql`. The script drops and recreates only the teaching tables used by this presentation. Rerun it whenever you want a clean starting state.

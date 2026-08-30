@@ -382,10 +382,16 @@ kbd { width: max-content; padding: 3px 8px; color: #fff; background: #26352b; bo
 .shared-discussion-head { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-bottom:6px; }
 .shared-discussion-head h3 { margin:0 auto 0 0; color:#0b5d3b; font:700 1.15rem/1.2 Georgia,serif; }
 .shared-discussion-head span { padding:4px 8px; color:#17301f; background:#f2df9e; border-radius:999px; font-size:.75rem; font-weight:800; }
-.giscus-status { margin:5px 0 12px; color:#52665a; font-size:.88rem; line-height:1.4; }
-.giscus-host { min-height:90px; }
-.giscus-host .giscus,
-.giscus-host .giscus-frame { width:100%; border:0; }
+.comment-provider-switch { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 8px; }
+.comment-provider-switch button { padding:8px 12px; color:#17301f; background:#eef4ed; border:1px solid #b9cbbf; border-radius:8px; font-family:inherit; font-size:.84rem; font-weight:700; line-height:1.1; cursor:pointer; }
+.comment-provider-switch button:hover,
+.comment-provider-switch button:focus-visible { border-color:var(--green); outline:none; }
+.comment-provider-switch button.active { color:#fff; background:var(--green); border-color:var(--green); }
+.shared-comment-status { margin:5px 0 12px; color:#52665a; font-size:.88rem; line-height:1.4; }
+.shared-comment-host { min-height:90px; }
+.shared-comment-host .giscus,
+.shared-comment-host .giscus-frame,
+.shared-comment-host #disqus_thread { width:100%; border:0; }
 .private-question-notes { margin-top:16px; padding:0 16px 16px; border:1px solid rgba(255,255,255,.16); border-radius:10px; }
 .private-question-notes > summary { margin:0 -16px; padding:13px 16px; color:#fff; font-weight:800; cursor:pointer; }
 .private-question-notes[open] > summary { margin-bottom:16px; border-bottom:1px solid rgba(255,255,255,.14); }
