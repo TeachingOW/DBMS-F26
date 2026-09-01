@@ -98,4 +98,14 @@ Students can then select **Guest comments** and choose **I'd rather post as gues
 
 ## Database setup
 
-The examples use PostgreSQL 16+ syntax. Create an empty database, open its SQL editor, and run `demo-database.sql`. The script drops and recreates only the teaching tables used by this presentation. Rerun it whenever you want a clean starting state.
+The examples use PostgreSQL 16+ syntax. Each lecture query links to its matching standalone file in `databases/`. These small reset scripts create ordinary unqualified table names, so students can run the slide query immediately after loading the matching file.
+
+The optional `demo-database.sql` master file loads every distinct dataset into a slide-numbered schema instead of merging incompatible examples. To use the master file, select the relevant dataset before running a query, for example:
+
+Choose the relevant dataset before running a slide query, for example:
+
+```sql
+SET search_path TO slide_037_joins;
+```
+
+All setup files include only values displayed in the lecture slides. Relations that are defined in a slide without any displayed rows are created empty. Rerun the relevant subset whenever you want a clean starting state.

@@ -232,27 +232,80 @@
     const querySamples = [];
     const tableCaptions = tableCaptionsBySlide[number] || [];
     const captionRoots = new Set(tableCaptions.map(caption => caption.split(/\s(?:\(|—|:)/)[0].trim().toLowerCase()));
-    let tableIndex = 0;
-    (sourceSlide?.elements || []).forEach(element => {
+    const sourceElements = sourceSlide?.elements || [];
+    const slideWidth = 12192000;
+    const slideHeight = 6858000;
+    let captionIndex = 0;
+    const tableEntries = sourceElements
+      .map((element, sourceIndex) => {
+        if (element.kind !== 'table' || !element.rows?.length) return null;
+        const entry = { element, sourceIndex, captionIndex };
+        captionIndex += 1;
+        return entry;
+      })
+      .filter(Boolean)
+      .sort((a, b) => (a.element.position?.y || 0) - (b.element.position?.y || 0));
+    const tableRows = [];
+    tableEntries.forEach(entry => {
+      const y = entry.element.position?.y || 0;
+      const currentRow = tableRows[tableRows.length - 1];
+      if (!currentRow || Math.abs(y - currentRow.anchorY) > slideHeight * 0.09) {
+        tableRows.push({ anchorY: y, entries: [entry] });
+      } else {
+        currentRow.entries.push(entry);
+      }
+    });
+    const tableRowBySourceIndex = new Map();
+    tableRows.forEach(row => {
+      row.entries.sort((a, b) => (a.element.position?.x || 0) - (b.element.position?.x || 0));
+      row.firstSourceIndex = Math.min(...row.entries.map(entry => entry.sourceIndex));
+      row.entries.forEach(entry => tableRowBySourceIndex.set(entry.sourceIndex, row));
+    });
+
+    const createSourceTable = entry => {
+      const { element } = entry;
+      const wrap = make('figure', 'source-table-wrap');
+      const caption = tableCaptions[entry.captionIndex] || `Table ${entry.captionIndex + 1}`;
+      wrap.appendChild(make('figcaption', 'source-table-caption', caption));
+      const table = make('table', 'source-table');
+      const thead = document.createElement('thead');
+      const headRow = document.createElement('tr');
+      element.rows[0].forEach(value => headRow.appendChild(make('th', '', value)));
+      thead.appendChild(headRow);
+      const tbody = document.createElement('tbody');
+      element.rows.slice(1).forEach(row => {
+        const tr = document.createElement('tr');
+        row.forEach(value => tr.appendChild(make('td', '', value)));
+        tbody.appendChild(tr);
+      });
+      table.append(thead, tbody);
+      wrap.appendChild(table);
+      const x = element.position?.x || 0;
+      const width = element.position?.w || slideWidth;
+      const start = Math.max(1, Math.min(12, Math.floor((x / slideWidth) * 12) + 1));
+      const minimumReadableSpan = Math.min(6, Math.max(2, (element.rows[0]?.length || 1) + 1));
+      const requestedSpan = Math.max(minimumReadableSpan, Math.round((width / slideWidth) * 12));
+      const span = Math.max(1, Math.min(requestedSpan, 13 - start));
+      wrap.style.gridColumn = `${start} / span ${span}`;
+      return wrap;
+    };
+
+    sourceElements.forEach((element, sourceIndex) => {
       if (element.kind === 'table' && element.rows?.length) {
-        const wrap = make('figure', 'source-table-wrap');
-        const caption = tableCaptions[tableIndex] || `Table ${tableIndex + 1}`;
-        tableIndex += 1;
-        wrap.appendChild(make('figcaption', 'source-table-caption', caption));
-        const table = make('table', 'source-table');
-        const thead = document.createElement('thead');
-        const headRow = document.createElement('tr');
-        element.rows[0].forEach(value => headRow.appendChild(make('th', '', value)));
-        thead.appendChild(headRow);
-        const tbody = document.createElement('tbody');
-        element.rows.slice(1).forEach(row => {
-          const tr = document.createElement('tr');
-          row.forEach(value => tr.appendChild(make('td', '', value)));
-          tbody.appendChild(tr);
+        const row = tableRowBySourceIndex.get(sourceIndex);
+        if (!row || row.firstSourceIndex !== sourceIndex) return;
+        const tableRow = make('div', 'source-table-row');
+        tableRow.dataset.tableCount = String(row.entries.length);
+        if (row.entries.length > 1) {
+          tableRow.classList.add('source-table-row-multi');
+          tableRow.style.gridTemplateColumns = `repeat(${Math.min(row.entries.length, 3)}, minmax(0, 1fr))`;
+        }
+        row.entries.forEach(entry => {
+          const table = createSourceTable(entry);
+          if (row.entries.length > 1) table.style.gridColumn = 'auto';
+          tableRow.appendChild(table);
         });
-        table.append(thead, tbody);
-        wrap.appendChild(table);
-        sourceContent.appendChild(wrap);
+        sourceContent.appendChild(tableRow);
         return;
       }
 
@@ -283,7 +336,17 @@
         });
         sourceContent.appendChild(list);
       } else {
-        const block = make('div', `source-text-block${isTableDefinition ? ' table-definition' : ''}`);
+        const normalizedText = paragraphs
+          .map(paragraph => paragraph.text.trim())
+          .join(' ')
+          .replace(/\s+/g, ' ');
+        const isRequestedCallout =
+          (number === 2 && normalizedText === 'SQL separates meaning from execution') ||
+          (number === 7 && normalizedText === 'SQL is a family of dialects');
+        const block = make(
+          'div',
+          `source-text-block${isTableDefinition ? ' table-definition' : ''}${isRequestedCallout ? ' source-callout-box' : ''}`
+        );
         paragraphs.forEach(paragraph => {
           const p = make('p', '', paragraph.text);
           if (paragraph.level) p.dataset.level = String(paragraph.level);
@@ -297,8 +360,10 @@
     if (querySamples.length) {
       const actions = make('div', 'source-slide-actions');
       appendGeneralSyntax(actions, { language: 'sql', text: querySamples.join('\n') });
-      const setup = make('a', 'lab-resource', 'Recreate the demo database');
-      setup.href = resourceHref(sqlRepro.setupFile || 'demo-database.sql');
+      const databaseSubset = sqlRepro.databaseSubsetForSlide?.(number);
+      const setup = make('a', 'lab-resource', databaseSubset ? 'Download this slide’s database' : 'Recreate the demo database');
+      setup.href = resourceHref(sqlRepro.setupFileForSlide?.(number) || sqlRepro.setupFile || 'demo-database.sql');
+      if (databaseSubset?.label) setup.title = databaseSubset.label;
       setup.target = '_blank';
       setup.rel = 'noopener';
       actions.appendChild(setup);
