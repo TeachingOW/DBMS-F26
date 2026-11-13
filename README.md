@@ -1,4 +1,4 @@
-# SQL Reproducible HTML Presentation
+# DBMS-F26 Teaching Materials
 
 This folder is ready to publish as a static GitHub Pages site. It contains no slide images and requires no build step.
 
@@ -12,6 +12,7 @@ This folder is ready to publish as a static GitHub Pages site. It contains no sl
 - copy buttons for patterns, exact queries, results, and setup SQL
 - a browsable `syntax/index.html` reference with 29 SQL topics
 - `demo-database.sql` as a standalone download
+- a [MongoDB presentation](mongodb.html) with a [PowerPoint download](lectures/14_MongoDB.pptx) and a [hands-on mongosh lab](labs/nosql/mongodb.html) using the same shop dataset
 - slide-specific questions and comments that students can save or copy
 
 ## Preview locally
@@ -109,3 +110,9 @@ SET search_path TO slide_037_joins;
 ```
 
 All setup files include only values displayed in the lecture slides. Relations that are defined in a slide without any displayed rows are created empty. Rerun the relevant subset whenever you want a clean starting state.
+
+## MongoDB slides
+
+Edit `lectures/14_MongoDB.pptx` first. Then run `python3 scripts/generate-mongodb-slides.py` from the repository root to regenerate the HTML slide data. Run the same command with `--check` to verify that the two versions match. Keep the existing slide text box names when editing or duplicating slides in PowerPoint.
+
+The live site publishes from `gh-pages`. Update both the PowerPoint and the generated slide data on that branch when releasing changes.
