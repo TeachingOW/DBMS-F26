@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="MongoDB lecture slides with runnable mongosh examples and a companion lab.">
+  <title>MongoDB Presentation</title>
+  <link rel="stylesheet" href="presentation.css">
+  <style>
+    @media (max-width: 640px) {
+      .controls { flex-wrap: wrap; }
+      .advanced-slide { padding-bottom: 128px; }
+    }
+  </style>
+</head>
+<body class="native-deck" data-title="MongoDB" data-count="0" data-deck="mongodb" data-native="true" data-heading-fixed="true">
+  <main class="stage">
+    <div class="loading">Loading MongoDB slides…</div>
+    <article class="advanced-slide" hidden aria-live="polite"></article>
+    <article class="lab-slide" hidden></article>
+  </main>
+  <header class="topbar">
+    <strong class="deck-title">MongoDB</strong>
+    <a class="top-link" href="index.html">SQL</a>
+    <a class="top-link" href="labs/nosql/mongodb.html">MongoDB lab</a>
+    <a class="top-link optional" href="lectures/14_MongoDB.pptx" download>PowerPoint</a>
+    <button class="button" data-action="help" aria-label="Keyboard help">?</button>
+  </header>
+  <nav class="controls" aria-label="Slide controls">
+    <button class="button" data-action="prev" aria-label="Previous slide">←</button>
+    <span class="counter" aria-live="polite"></span>
+    <button class="button" data-action="next" aria-label="Next slide">→</button>
+    <button class="button" data-action="overview">Overview</button>
+    <button class="button" data-action="labs">Materials</button>
+    <button class="button" data-action="fullscreen">Fullscreen</button>
+  </nav>
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <section class="overview" aria-hidden="true">
+    <div class="overview-head">
+      <h2>MongoDB slide overview</h2>
+      <button class="button" data-action="close-overview">Close</button>
+    </div>
+    <div class="thumb-grid"></div>
+  </section>
+  <section class="labs-panel" aria-hidden="true">
+    <div class="labs-card">
+      <div class="labs-head">
+        <h2>MongoDB materials</h2>
+        <button class="button" data-action="close-labs">Close</button>
+      </div>
+      <div class="lab-links">
+        <a class="lab-link" href="labs/nosql/mongodb.html"><strong>MongoDB lab</strong><span>Run the shop examples and check your results.</span></a>
+        <a class="lab-link" href="lectures/14_MongoDB.pptx" download><strong>MongoDB PowerPoint</strong><span>Download the lecture slides.</span></a>
+      </div>
+    </div>
+  </section>
+  <section class="help" aria-hidden="true">
+    <div class="help-card">
+      <h2>Presentation controls</h2>
+      <div class="keys">
+        <kbd>← / →</kbd><span>Previous or next slide</span>
+        <kbd>Home / End</kbd><span>First or last slide</span>
+        <kbd>O</kbd><span>Slide overview</span>
+        <kbd>L</kbd><span>Lab and PowerPoint</span>
+        <kbd>F</kbd><span>Fullscreen</span>
+        <kbd>H</kbd><span>Close panels</span>
+      </div>
+      <p><button class="button" data-action="close-help">Close</button></p>
+    </div>
+  </section>
+  <script src="mongodb-content.js"></script>
+  <script src="presentation.js"></script>
+</body>
+</html>
