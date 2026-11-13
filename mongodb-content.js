@@ -230,5 +230,65 @@ window.DBMS_ADVANCED_SLIDES.mongodb = [
       "Single document writes are atomic. Replica sets and sharded clusters support transactions across documents."
     ],
     "takeaway": "Embed fields that must change together when they belong to the same document."
+  },
+  {
+    "id": "mongodb-14",
+    "section": "Distributed systems",
+    "title": "The CAP theorem",
+    "lead": "During a network partition, a replicated read/write store cannot guarantee both linearizability and availability for every request.",
+    "points": [
+      "Consistency (C) means operations appear to happen in a single real-time order. A read started after a write completes sees that write or a later one.",
+      "Availability (A) means every request sent to a working replica eventually receives a successful response. A timeout gives up that guarantee.",
+      "A partition (P) occurs when groups of replicas can keep running while messages between them are lost."
+    ],
+    "takeaway": "CAP limits what the store can guarantee during a partition."
+  },
+  {
+    "id": "mongodb-15",
+    "section": "Distributed systems",
+    "title": "One laptop, three replicas",
+    "lead": "A is the primary. A and B can communicate, but C is isolated. All three initially show one laptop in stock.",
+    "points": [
+      "A records the last sale and confirms it after B acknowledges the write. A and B now show zero in stock.",
+      "C still shows one. From C’s local copy, a sale on the other side looks the same as no sale.",
+      "C can return its local value or wait for information about the sale. The first option risks a stale answer, and the second can leave the request unanswered."
+    ],
+    "takeaway": "C cannot guarantee a current stock count and a successful response during the split."
+  },
+  {
+    "id": "mongodb-16",
+    "section": "Distributed systems",
+    "title": "Different requests, different guarantees",
+    "lead": "The shop can keep some features working during the partition while protecting checkout.",
+    "points": [
+      "Browse the catalog. A reachable secondary can serve the page if reads are routed to it. The displayed stock may be stale.",
+      "Buy the last laptop. The primary decrements stock atomically only if it is positive. Checkout can confirm on the majority side after A and B acknowledge the write.",
+      "Join the waitlist. The app can save a pending request locally and submit it after reconnecting. Pending means the request still needs confirmation."
+    ],
+    "takeaway": "Browsing, checkout, and waitlisting can follow different rules during the same partition."
+  },
+  {
+    "id": "mongodb-17",
+    "section": "Distributed systems",
+    "title": "MongoDB read and write settings",
+    "lead": "MongoDB exposes separate settings for read routing, read visibility, and write acknowledgment.",
+    "points": [
+      "Read preference selects the replica that serves a read. A secondary can return older data.",
+      "Read concern controls what data a read can observe. A majority read can return an older committed value. A linearizable read checks a single document on the primary.",
+      "Write concern sets the acknowledgment required for a write. The isolated member C cannot satisfy majority write concern on its own."
+    ],
+    "takeaway": "A supported linearizable read reflects successful majority writes completed before it began."
+  },
+  {
+    "id": "mongodb-18",
+    "section": "Distributed systems",
+    "title": "PACELC and normal operation",
+    "lead": "PACELC asks what the database trades off during a partition and what it trades off when the network is healthy.",
+    "points": [
+      "If Partition (P), the tradeoff is Availability (A) versus Consistency (C).",
+      "Else (E), the tradeoff is Latency (L) versus Consistency (C). A remote acknowledgment can add delay.",
+      "In the shop, checkout can pay that latency cost while catalog browsing can accept a replica’s potentially older view."
+    ],
+    "takeaway": "The relevant tradeoff depends on the request and the state of the network."
   }
 ];
