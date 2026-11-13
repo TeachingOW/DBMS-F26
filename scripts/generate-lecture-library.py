@@ -38,10 +38,14 @@ def powerpoint_slides(path):
             target = relations[slide.get(REL_ID)]
             root = read_xml(archive, target.lstrip("/") if target.startswith("/") else f"ppt/{target}")
             paragraphs = []
-            for paragraph in root.findall(".//{*}p"):
-                text = "".join(item.text or "" for item in paragraph.findall("./*/{*}t"))
-                if text.strip():
-                    paragraphs.append(text.strip())
+            for shape in root.findall("./{*}cSld/{*}spTree/*"):
+                name = shape.find("./*/{*}cNvPr")
+                if name is not None and name.get("name", "").startswith("DBMS-F26 "):
+                    continue
+                for paragraph in shape.findall(".//{*}p"):
+                    text = "".join(item.text or "" for item in paragraph.findall("./*/{*}t"))
+                    if text.strip():
+                        paragraphs.append(text.strip())
             result.append({"hidden": root.get("show") in {"0", "false"}, "text": "\n".join(paragraphs)})
         return result
 
@@ -78,6 +82,7 @@ def document(title, body, assets=""):
 def deck_page(topic, pptx):
     return document(topic, f"""<main class="lecture">
   <nav aria-label="Course navigation">
+    <strong>DBMS-F26</strong>
     <a href="../index.html">All lectures</a>
     <a href="{html.escape(pptx)}" download>Download PowerPoint</a>
   </nav>
@@ -108,13 +113,15 @@ def deck_page(topic, pptx):
 <script src="../viewer.js"></script>""", "../")
 
 
-def build_deck(source, topic, pdf_dir, titles):
+def build_deck(source, stem, topic, pdf_dir, titles):
     slides = powerpoint_slides(source)
-    deck_dir = OUTPUT / source.stem
+    deck_dir = OUTPUT / stem
     images = deck_dir / "slides"
     images.mkdir(parents=True, exist_ok=True)
-    pptx = "../" + ("14_MongoDB_Full.pptx" if source.stem == "14_MongoDB" else source.name)
-    shutil.copyfile(source, deck_dir / pptx)
+    pptx = "../" + source.name
+    download = (deck_dir / pptx).resolve()
+    if source.resolve() != download:
+        shutil.copyfile(source, download)
     pdf_file = pdf_dir / (source.stem + ".pdf")
     pdf = pypdfium2.PdfDocument(pdf_file)
     annotations = PdfReader(pdf_file).pages
@@ -130,6 +137,7 @@ def build_deck(source, topic, pdf_dir, titles):
         if not slide["text"]:
             text_page = page.get_textpage()
             slide["text"] = text_page.get_text_range().strip()
+            slide["text"] = re.sub(r"\s*DBMS-F26\s+.*?\s+\d+ / \d+\s*$", "", slide["text"], flags=re.DOTALL)
             text_page.close()
         slide["links"] = web_links(annotations[index])
         bitmap.close()
@@ -147,7 +155,7 @@ def build_deck(source, topic, pdf_dir, titles):
     return len(slides), pptx.removeprefix("../")
 
 
-def build_library(source, pdf_dir):
+def build_library(source, pdf_dir, pptx_dir):
     with (source / "topic-map.csv").open(encoding="utf-8-sig", newline="") as stream:
         topics = [row for row in csv.DictReader(stream) if row["file"] != "02_SQL.pptx"]
     titles = {}
@@ -158,18 +166,21 @@ def build_library(source, pdf_dir):
         raise ValueError("No lecture topics found")
     cards = []
     for row in topics:
-        deck = source / row["file"]
-        topic = row["topic"] + (" (full lecture)" if deck.stem == "14_MongoDB" else "")
-        count, pptx = build_deck(deck, topic, pdf_dir, titles.get(deck.stem, {}))
+        filename = row["file"]
+        deck = pptx_dir / ("14_MongoDB_Full.pptx" if filename == "14_MongoDB.pptx" else filename)
+        stem = Path(filename).stem
+        topic = row["topic"] + (" (full lecture)" if filename == "14_MongoDB.pptx" else "")
+        count, pptx = build_deck(deck, stem, topic, pdf_dir, titles.get(stem, {}))
         cards.append(f"""    <li>
       <h2>{html.escape(topic)}</h2>
       <p>{html.escape(row["focus"])}.</p>
-      <p><a href="{deck.stem}/index.html">Open slides</a>
+      <p><a href="{stem}/index.html">Open slides</a>
         <a href="{pptx}" download>PowerPoint</a>
         <span>{count} slides</span></p>
     </li>""")
     body = """<main class="catalog">
   <nav aria-label="Course navigation">
+    <strong>DBMS-F26</strong>
     <a href="../../index.html">SQL presentation</a>
     <a href="../../mongodb.html">MongoDB lab presentation</a>
   </nav>
@@ -185,19 +196,20 @@ def build_library(source, pdf_dir):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("source", type=Path, help="Organized Lectures folder")
+    parser.add_argument("--pptx-dir", type=Path, default=OUTPUT, help="Directory with the styled PowerPoints")
     parser.add_argument("--pdf-dir", type=Path, help="Use pre-rendered PDFs from the same PowerPoint files")
     args = parser.parse_args()
     if args.pdf_dir:
-        build_library(args.source, args.pdf_dir)
+        build_library(args.source, args.pdf_dir, args.pptx_dir)
     else:
-        decks = sorted(p for p in args.source.glob("*.pptx") if re.match(r"\d\d_", p.name) and p.name != "02_SQL.pptx")
+        decks = sorted(p for p in args.pptx_dir.glob("*.pptx") if re.match(r"\d\d_", p.name) and p.name != "02_SQL.pptx")
         with tempfile.TemporaryDirectory(prefix="dbms-lectures-") as tmp:
             subprocess.run([
                 "soffice", "--headless", "--convert-to",
                 'pdf:impress_pdf_Export:{"ExportHiddenSlides":{"type":"boolean","value":"true"}}',
                 "--outdir", tmp, *decks,
             ], check=True)
-            build_library(args.source, Path(tmp))
+            build_library(args.source, Path(tmp), args.pptx_dir)
 
 
 if __name__ == "__main__":
