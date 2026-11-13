@@ -1,6 +1,6 @@
 # DBMS-F26 Teaching Materials
 
-This folder is ready to publish as a static GitHub Pages site. It contains no slide images and requires no build step.
+This folder is a static GitHub Pages site and requires no build step to serve.
 
 ## What students get
 
@@ -13,6 +13,7 @@ This folder is ready to publish as a static GitHub Pages site. It contains no sl
 - a browsable `syntax/index.html` reference with 29 SQL topics
 - `demo-database.sql` as a standalone download
 - a [MongoDB presentation](mongodb.html) with a [PowerPoint download](lectures/14_MongoDB.pptx) and a [hands-on mongosh lab](labs/nosql/mongodb.html) using the same shop dataset
+- a [lecture library](lectures/library/index.html) with PowerPoint downloads and browser slides for the other organized lectures
 
 ## Preview locally
 
@@ -61,3 +62,7 @@ The live site publishes from `gh-pages`. Update both the PowerPoint and the gene
 ## Database setup
 
 The examples use PostgreSQL 16+ syntax. Create an empty database, open its SQL editor, and run `demo-database.sql`. The script drops and recreates only the teaching tables used by this presentation. Rerun it whenever you want a clean starting state.
+
+## Lecture library
+
+The organized PowerPoint decks are the source for the library. With LibreOffice (`soffice`) and Python packages `pypdfium2`, `pypdf`, and `Pillow` available, run `python3 scripts/generate-lecture-library.py "/path/to/Organized Lectures"` from the repository root. This copies the PowerPoints and regenerates the HTML, slide images, selectable text, and links. Slides marked hidden in PowerPoint keep their original positions and are labeled in the browser.

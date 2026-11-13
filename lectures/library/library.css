@@ -1,0 +1,30 @@
+:root { color-scheme: light; font-family: Arial, sans-serif; color: #14251c; background: #f6f3eb; }
+body { margin: 0; border-top: .45rem solid #0b5d3b; }
+main { margin: 0 auto; padding: 1.5rem clamp(1rem, 4vw, 3rem) 3rem; }
+.catalog { max-width: 58rem; }
+.lecture { max-width: 90rem; }
+h1, h2 { color: #0b5d3b; line-height: 1.15; }
+h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin: 1.2rem 0 .65rem; }
+h2 { font-size: 1.15rem; margin: 0 0 .45rem; }
+p { line-height: 1.5; }
+a { color: #0b5d3b; text-underline-offset: .18em; }
+:focus-visible { outline: 3px solid #976314; outline-offset: 3px; }
+nav, .slide-controls, form { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1rem; }
+.lecture-list { list-style: none; padding: 0; }
+.lecture-list li { border-top: 1px solid #b6c1b7; padding: .85rem 0 .55rem; }
+.lecture-list li p { margin: .3rem 0; }
+.lecture-list a { display: inline-block; margin-right: .8rem; }
+.lecture-list span, .status { color: #4a5b50; font-size: .9rem; }
+.status { margin: .5rem 0; }
+.slide-controls { margin-top: 1rem; }
+button, input { font: inherit; padding: .45rem .65rem; border: 1px solid #809388; border-radius: .3rem; background: white; color: inherit; }
+button { cursor: pointer; }
+button:disabled { opacity: .48; cursor: default; }
+input { width: 4.4rem; }
+figure { margin: 0; }
+figure img { display: block; width: auto; max-width: 100%; height: auto; max-height: 82vh; margin: 0 auto; background: white; box-shadow: 0 1px 7px #14251c29; }
+figcaption { padding: .6rem 0; color: #4a5b50; }
+details { padding: .65rem 0; border-top: 1px solid #b6c1b7; }
+summary { cursor: pointer; }
+.transcript { white-space: pre-wrap; }
+[data-links] { overflow-wrap: anywhere; }
