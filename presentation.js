@@ -127,6 +127,8 @@
   function advancedText(content, number) {
     const parts = [`Slide ${number}: ${content.title}`, content.section, '', content.lead, ''];
     content.points.forEach((point, index) => parts.push(`${index + 1}. ${point}`));
+    (content.diagram || []).filter(element => element.kind === 'label')
+      .forEach(element => parts.push(element.text.replaceAll('\n', ' ')));
     (content.code || []).forEach(block => parts.push('', block.label, block.text));
     parts.push('', `ⓘ Note: ${content.takeaway}`);
     return parts.join('\n');
@@ -486,6 +488,54 @@
     labSlide.appendChild(actions);
   }
 
+  function renderSlideDiagram(elements, title) {
+    const figure = make('figure', 'slide-diagram');
+    figure.tabIndex = 0;
+    figure.setAttribute('aria-label', title);
+    const svgElement = (name, attributes) => {
+      const node = document.createElementNS('http://www.w3.org/2000/svg', name);
+      Object.entries(attributes).forEach(([key, value]) => node.setAttribute(key, value));
+      return node;
+    };
+    const left = Math.min(...elements.map(element => element.x)) - 3;
+    const top = Math.min(...elements.map(element => element.y)) - 3;
+    const right = Math.max(...elements.map(element => element.x + element.width)) + 3;
+    const bottom = Math.max(...elements.map(element => element.y + element.height)) + 3;
+    const svg = svgElement('svg', {
+      viewBox: [left, top, right - left, bottom - top].join(' '),
+      role: 'img',
+      'aria-label': [title, ...elements.filter(element => element.kind === 'label')
+        .map(element => element.text.replaceAll('\n', ' '))].join('. '),
+    });
+    for (const element of elements) {
+      const { kind, x, y, width, height } = element;
+      if (kind === 'label') {
+        const textX = element.align === 'middle' ? x + width / 2 : x;
+        const label = svgElement('text', {
+          x: textX, y: y + element.size * 0.87, fill: element.color,
+          'font-size': element.size, 'font-weight': element.bold ? 700 : 400,
+          'text-anchor': element.align,
+        });
+        element.text.split('\n').forEach((line, index) => {
+          const span = svgElement('tspan', { x: textX, dy: index ? element.size * 1.22 : 0 });
+          span.textContent = line;
+          label.appendChild(span);
+        });
+        svg.appendChild(label);
+      } else {
+        const node = kind === 'box'
+          ? svgElement('rect', { x, y, width, height, fill: element.fill })
+          : svgElement('line', { x1: x, y1: y, x2: x + width, y2: y + height });
+        node.setAttribute('stroke', element.stroke);
+        node.setAttribute('stroke-width', element.strokeWidth);
+        if (element.dashed) node.setAttribute('stroke-dasharray', '8 8');
+        svg.appendChild(node);
+      }
+    }
+    figure.appendChild(svg);
+    return figure;
+  }
+
   function renderAdvanced(content, number) {
     advancedSlide.replaceChildren();
     addShowHeadingButton(advancedSlide);
@@ -495,12 +545,14 @@
     advancedSlide.appendChild(make('p', 'advanced-lead', content.lead));
 
     const layout = make('div', `advanced-layout${content.code ? '' : ' advanced-layout-wide'}`);
-    const points = make('section', 'advanced-points');
-    points.appendChild(make('h2', '', 'How to reason about it'));
-    const list = make('ul');
-    content.points.forEach(point => list.appendChild(make('li', '', point)));
-    points.appendChild(list);
-    layout.appendChild(points);
+    if (content.points.length) {
+      const points = make('section', 'advanced-points');
+      points.appendChild(make('h2', '', 'How to reason about it'));
+      const list = make('ul');
+      content.points.forEach(point => list.appendChild(make('li', '', point)));
+      points.appendChild(list);
+      layout.appendChild(points);
+    }
 
     if (content.code) {
       const work = make('section', 'advanced-code');
@@ -519,7 +571,8 @@
       });
       layout.appendChild(work);
     }
-    advancedSlide.appendChild(layout);
+    if (layout.childElementCount) advancedSlide.appendChild(layout);
+    if (content.diagram) advancedSlide.appendChild(renderSlideDiagram(content.diagram, content.title));
 
     const footer = make('div', 'advanced-footer');
     const takeaway = make('p', 'advanced-takeaway');
