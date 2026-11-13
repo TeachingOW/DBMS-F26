@@ -586,6 +586,13 @@
     revealControls();
   }
 
+  function appendCourseFooter(slide, number, total) {
+    const footer = make('footer', 'course-footer');
+    const topic = deckKey === 'mongodb' ? 'MongoDB · Lab presentation' : title;
+    footer.append(make('strong', '', 'DBMS-F26'), make('span', '', topic), make('span', '', `${number} / ${total}`));
+    slide.appendChild(footer);
+  }
+
   function showIndex(index, updateHash = true) {
     current = Math.min(sequence.length - 1, Math.max(0, index));
     const item = sequence[current];
@@ -598,6 +605,7 @@
         if (image) image.hidden = true;
         loading.hidden = true;
         renderLectureSlide(item.slide);
+        appendCourseFooter(nativeSlide, item.slide, count);
         nativeSlide.hidden = false;
         nativeSlide.scrollTop = 0;
       } else {
@@ -618,6 +626,7 @@
       if (advancedSlide) advancedSlide.hidden = true;
       loading.hidden = true;
       renderLab(item.activity);
+      appendCourseFooter(labSlide, current + 1, sequence.length);
       labSlide.hidden = false;
       labSlide.scrollTop = 0;
       document.title = `${title} — ${item.activity.title}`;
@@ -629,6 +638,7 @@
       labSlide.hidden = true;
       loading.hidden = true;
       renderAdvanced(item.content, item.slide);
+      appendCourseFooter(advancedSlide, item.slide, count + advancedSlides.length);
       advancedSlide.hidden = false;
       advancedSlide.scrollTop = 0;
       document.title = `${title} — ${item.content.title}`;

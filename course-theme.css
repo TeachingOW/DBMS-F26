@@ -1,0 +1,22 @@
+:root {
+  --course-green: #0b5d3b;
+  --course-gold: #c7a34a;
+  --course-ink: #122019;
+  --course-paper: #faf9f3;
+  --course-font: Arial, sans-serif;
+}
+
+.course-footer {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+  min-height: 2.5rem;
+  padding: .55rem clamp(.85rem, 2vw, 1.65rem);
+  border-top: 2px solid var(--course-gold);
+  background: var(--course-green);
+  color: #f0f6f2;
+  font: 400 .875rem/1.3 var(--course-font);
+}
+
+.course-footer strong { color: white; }
+.course-footer span:last-child { margin-left: auto; white-space: nowrap; }

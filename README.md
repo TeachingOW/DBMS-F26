@@ -65,4 +65,4 @@ The examples use PostgreSQL 16+ syntax. Create an empty database, open its SQL e
 
 ## Lecture library
 
-The organized PowerPoint decks are the source for the library. With LibreOffice (`soffice`) and Python packages `pypdfium2`, `pypdf`, and `Pillow` available, run `python3 scripts/generate-lecture-library.py "/path/to/Organized Lectures"` from the repository root. This copies the PowerPoints and regenerates the HTML, slide images, selectable text, and links. Slides marked hidden in PowerPoint keep their original positions and are labeled in the browser.
+The published PowerPoints in `lectures/library/` are the source for the browser decks. Each uses an editable DBMS-F26 footer. With LibreOffice (`soffice`) and Python packages `pypdfium2`, `pypdf`, and `Pillow` available, run `python3 scripts/generate-lecture-library.py "/path/to/Organized Lectures"` from the repository root. The organized lecture folder supplies the catalog and slide titles. The script renders the published PowerPoints and regenerates the HTML, slide images, selectable text, and links. Slides marked hidden in PowerPoint keep their original positions and are labeled in the browser.

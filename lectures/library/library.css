@@ -1,15 +1,19 @@
-:root { color-scheme: light; font-family: Arial, sans-serif; color: #14251c; background: #f6f3eb; }
-body { margin: 0; border-top: .45rem solid #0b5d3b; }
+@import url("../../course-theme.css");
+
+:root { color-scheme: light; font-family: var(--course-font); color: var(--course-ink); background: var(--course-paper); }
+body { margin: 0; }
 main { margin: 0 auto; padding: 1.5rem clamp(1rem, 4vw, 3rem) 3rem; }
 .catalog { max-width: 58rem; }
 .lecture { max-width: 90rem; }
-h1, h2 { color: #0b5d3b; line-height: 1.15; }
+h1, h2 { color: var(--course-green); line-height: 1.15; }
 h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin: 1.2rem 0 .65rem; }
 h2 { font-size: 1.15rem; margin: 0 0 .45rem; }
 p { line-height: 1.5; }
-a { color: #0b5d3b; text-underline-offset: .18em; }
+a { color: var(--course-green); text-underline-offset: .18em; }
 :focus-visible { outline: 3px solid #976314; outline-offset: 3px; }
 nav, .slide-controls, form { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1rem; }
+nav[aria-label="Course navigation"] { margin: -1.5rem calc(-1 * clamp(1rem, 4vw, 3rem)) 1.5rem; padding: .75rem clamp(1rem, 4vw, 3rem); background: var(--course-green); border-top: 2px solid var(--course-gold); color: white; }
+nav[aria-label="Course navigation"] a { color: white; }
 .lecture-list { list-style: none; padding: 0; }
 .lecture-list li { border-top: 1px solid #b6c1b7; padding: .85rem 0 .55rem; }
 .lecture-list li p { margin: .3rem 0; }
@@ -18,7 +22,8 @@ nav, .slide-controls, form { display: flex; flex-wrap: wrap; align-items: center
 .status { margin: .5rem 0; }
 .slide-controls { margin-top: 1rem; }
 button, input { font: inherit; padding: .45rem .65rem; border: 1px solid #809388; border-radius: .3rem; background: white; color: inherit; }
-button { cursor: pointer; }
+button { cursor: pointer; color: white; border-color: var(--course-green); background: var(--course-green); }
+button:not(:disabled):hover { background: #104735; }
 button:disabled { opacity: .48; cursor: default; }
 input { width: 4.4rem; }
 figure { margin: 0; }
