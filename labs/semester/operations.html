@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Restore verification and least-privilege exercise · DBMS-F26</title><style>body{max-width:1120px;margin:auto;padding:24px;font:17px/1.6 system-ui,sans-serif;color:#172d25;background:#f7f5ef}h1,h2,h3{color:#07583b;line-height:1.25}a{color:#07583b}nav,section,.note{background:white;padding:18px;margin:18px 0;border:1px solid #cbd8cf;border-radius:8px}table{width:100%;border-collapse:collapse;background:white}th,td{border:1px solid #cbd8cf;padding:10px;text-align:left;vertical-align:top}th{background:#e5eee8}pre{background:#edf1ed;padding:16px;overflow:auto;font-size:14px}code{font-family:Consolas,monospace}summary{cursor:pointer;font-weight:bold}li{margin:8px 0}.table-wrap{overflow:auto}.meta{color:#4c6056}@media print{body{font-size:11pt;max-width:none;background:white}nav{display:none}section{break-inside:avoid}a{color:inherit}pre{white-space:pre-wrap}h2{break-after:avoid}}</style></head><body><nav><a href="../../course-plan.html">32-meeting plan</a> · <a href="../../lectures/library/index.html">Existing lecture library</a> · <a href="../../course-map.html">Course resources</a></nav><main><h1>Restore verification and least-privilege exercise</h1>
+<p>Meeting 26, 100 minutes: 10 recovery recap, 15 instructor demo, 15 guided fingerprint, 50 restore/permissions exercise, 10 debrief. Prerequisites: PostgreSQL client programs on PATH, a disposable teaching database named dbms_course32 containing the fixture, and an instructor-provided role permitted to create a separate restore database. Use an instructor demonstration if students do not have role-management rights; do not grant superuser access for this exercise.</p>
+<h2>Part A: restore, do not merely create a dump</h2><ol><li>Record counts for students, events, bookings, and accounts; record SUM(balance) and paid revenue by event. Save the outputs.</li><li>From a terminal run the commands below. Replace lab_owner with your teaching account; authentication uses the normal PostgreSQL client configuration/prompt. Use a new restore database name if it already exists.</li><li>Connect to dbms_course32_restore. Repeat the fingerprints and verify the same constraints by attempting an invalid booking in a rolled-back transaction.</li><li>After the dump, change a fee only in the source database. Verify the restored snapshot does not include the later change. Explain why a logical backup alone cannot recover that later update.</li></ol>
+<pre><code>pg_dump -U lab_owner -d dbms_course32 -Fc -f course32.dump
+createdb -U lab_owner dbms_course32_restore
+pg_restore -U lab_owner -d dbms_course32_restore --no-owner --no-privileges --exit-on-error course32.dump</code></pre>
+<h2>Part B: least privilege</h2><p>An instructor/admin creates a NOLOGIN role once and permits the teaching owner to SET ROLE to it. The schema owner grants only USAGE on course32 and SELECT on events. Run each attempted forbidden statement in its own transaction or autocommit mode so one error does not hide the next test.</p>
+<pre><code>-- Instructor/admin, once in a dedicated teaching environment:
+CREATE ROLE course32_reader NOLOGIN;
+GRANT course32_reader TO lab_owner;
+-- Schema owner:
+GRANT USAGE ON SCHEMA course32 TO course32_reader;
+GRANT SELECT ON course32.events TO course32_reader;
+SET ROLE course32_reader;
+SELECT id,title FROM course32.events; -- allowed
+UPDATE course32.events SET fee=0 WHERE id=101; -- denied
+SELECT * FROM course32.accounts; -- denied
+RESET ROLE;</code></pre>
+<p>Record a matrix of role × operation × expected/observed outcome. Explain why a real application login should be narrowly privileged rather than using the database owner.</p>
+<h2>Recovery objectives</h2><p>A backup is taken at midnight, the service fails at 15:00, and restore takes 40 minutes. With no later recoverable log, what is the possible data-loss interval? If the business requires at most five minutes of data loss and ten minutes of downtime, explain why this backup plan is inadequate. Distinguish RPO, RTO, replication, logical backup, and WAL-based crash recovery.</p>
+<p><strong>Submit:</strong> command transcript with no credentials, matching fingerprints, constraint check, permission matrix, and recovery recommendation. <strong>Stretch:</strong> explain what a table-level count alone can fail to detect; compare values and keys as well.</p>
+<p>Reference: <a href="https://www.postgresql.org/docs/16/app-pgdump.html">PostgreSQL pg_dump</a>.</p>
+</main></body></html>

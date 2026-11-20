@@ -121,3 +121,12 @@ The live site publishes from `gh-pages`. Update both the PowerPoint and the gene
 ## Lecture library
 
 The published PowerPoints in `lectures/library/` are the source for the browser decks. Each uses an editable DBMS-F26 footer. With LibreOffice (`soffice`) and Python packages `pypdfium2`, `pypdf`, and `Pillow` available, run `python3 scripts/generate-lecture-library.py "/path/to/Organized Lectures"` from the repository root. The organized lecture folder supplies the catalog and slide titles. The script renders the published PowerPoints and regenerates the HTML, slide images, selectable text, and links. Slides marked hidden in PowerPoint keep their original positions and are labeled in the browser.
+
+## 32-meeting teaching plan
+
+Open [course-plan.html](course-plan.html) for 16 weeks, two 100-minute meetings per week (53 hours 20 minutes). Each meeting links to an existing lecture, a timed activity, and a student deliverable. The plan includes 11 supplemental exercise pages, a shared PostgreSQL fixture, a 100,000-row performance dataset, reference queries, stored programs, a Python booking starter, and openly available instructor checkpoints under `labs/semester/`.
+
+The new executable labs use PostgreSQL 16+; the application uses Python with `psycopg[binary]`. Existing MySQL/MariaDB lecture examples remain unchanged. No PowerPoint or rendered lecture assets are modified. Quizzes and project milestones are scheduled without changing course grading weights. Reconcile the 32 slots with holidays and any separately scheduled final exam.
+
+To regenerate the plan and exercise HTML after editing its source, run `python scripts/build-course-plan.py`. SQL and Python starters are maintained directly in `labs/semester/`. The instructor guide is public, not a protected exam answer key.
+
