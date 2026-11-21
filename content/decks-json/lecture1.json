@@ -9,6 +9,7 @@
     {
       "number": 1,
       "title": "Intro to Databases",
+      "subtitle": "Lecture 1: Course Overview",
       "hidden": false,
       "content": [
         {
@@ -353,6 +354,7 @@
     {
       "number": 2,
       "title": "The world is increasingly \ndriven by data…",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -703,6 +705,7 @@
     {
       "number": 3,
       "title": "Key Questions We Will Answer",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -1329,6 +1332,7 @@
     {
       "number": 4,
       "title": "When you’ll use this material",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -1845,6 +1849,7 @@
     {
       "number": 5,
       "title": "Big Data Landscape… \nInfrastructure is Changing",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -2443,6 +2448,7 @@
     {
       "number": 6,
       "title": "Why should you study databases?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -3467,6 +3473,7 @@
     {
       "number": 7,
       "title": "What this course is (and is not)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -4058,6 +4065,7 @@
     {
       "number": 8,
       "title": "Lectures",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -4625,6 +4633,7 @@
     {
       "number": 9,
       "title": "Attendance",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -5130,6 +5139,7 @@
     {
       "number": 10,
       "title": "Lectures: 1st half - from a user’s perspective",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -5882,6 +5892,7 @@
     {
       "number": 11,
       "title": "Lectures: 2nd half - understanding how it works",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -6700,6 +6711,7 @@
     {
       "number": 12,
       "title": "2. Overview of the relational data model",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -6978,6 +6990,7 @@
     {
       "number": 13,
       "title": "What you will learn about in this section",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -7554,6 +7567,7 @@
     {
       "number": 14,
       "title": "What is a DBMS?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -8267,6 +8281,7 @@
     {
       "number": 15,
       "title": "A Motivating, Running Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -9186,6 +9201,7 @@
     {
       "number": 16,
       "title": "Data models",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -9830,6 +9846,7 @@
     {
       "number": 17,
       "title": "“Relational databases form the bedrock of western civilization”",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -10212,6 +10229,7 @@
     {
       "number": 18,
       "title": "Modeling the CMS",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -11655,6 +11673,7 @@
     {
       "number": 19,
       "title": "Modeling the CMS",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -13227,6 +13246,7 @@
     {
       "number": 20,
       "title": "Other Schemata…",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -14166,6 +14186,7 @@
     {
       "number": 21,
       "title": "Data independence",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -15175,6 +15196,7 @@
     {
       "number": 22,
       "title": "Activity-1-2.ipynb",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -15431,6 +15453,7 @@
     {
       "number": 23,
       "title": "3. Overview of DBMS topics",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -15745,6 +15768,7 @@
     {
       "number": 24,
       "title": "What you will learn about in this section",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -16235,6 +16259,7 @@
     {
       "number": 25,
       "title": "Challenges with Many Users",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -17263,6 +17288,7 @@
     {
       "number": 26,
       "title": "Transactions",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -18595,6 +18621,7 @@
     {
       "number": 27,
       "title": "Transactions",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -19625,6 +19652,7 @@
     {
       "number": 28,
       "title": "Challenge: Scheduling Concurrent Transactions",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -21075,6 +21103,7 @@
     {
       "number": 29,
       "title": "Ensuring Atomicity & Durability",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -21949,6 +21978,7 @@
     {
       "number": 30,
       "title": "A Well-Designed DBMS makes many people happy!",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -22663,6 +22693,7 @@
     {
       "number": 31,
       "title": "Summary of DBMS",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {

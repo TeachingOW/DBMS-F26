@@ -9,6 +9,7 @@
     {
       "number": 1,
       "title": "CS 4550 – Database Management Systems",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -175,6 +176,7 @@
     {
       "number": 2,
       "title": "Textbooks",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -553,6 +555,7 @@
     {
       "number": 3,
       "title": "Course Delivery",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -983,6 +986,7 @@
     {
       "number": 4,
       "title": "Course Description",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -1449,6 +1453,7 @@
     {
       "number": 5,
       "title": "Course Objectives",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -1959,6 +1964,7 @@
     {
       "number": 6,
       "title": "Topics Covered",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -2557,6 +2563,7 @@
     {
       "number": 7,
       "title": "Schedule",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -3041,6 +3048,7 @@
     {
       "number": 8,
       "title": "Attendance",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -4003,6 +4011,7 @@
     {
       "number": 9,
       "title": "Evaluation",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -4469,6 +4478,7 @@
     {
       "number": 10,
       "title": "Course Rules",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -4935,6 +4945,7 @@
     {
       "number": 11,
       "title": "Attendance & Classroom Civility",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -5461,6 +5472,7 @@
     {
       "number": 12,
       "title": "Basic Needs Support",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -6031,6 +6043,7 @@
     {
       "number": 13,
       "title": "Counseling & Mental Health Resources",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -6601,6 +6614,7 @@
     {
       "number": 14,
       "title": "Title IX, Safety & Discrimination",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -7259,6 +7273,7 @@
     {
       "number": 15,
       "title": "Academic Integrity & Misconduct",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -7785,6 +7800,7 @@
     {
       "number": 16,
       "title": "Accommodations & Accessibility",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -8295,6 +8311,7 @@
     {
       "number": 17,
       "title": "Proctorio & Online Meeting Policy",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {

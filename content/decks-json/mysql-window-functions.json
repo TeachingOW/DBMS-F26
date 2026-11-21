@@ -9,6 +9,7 @@
     {
       "number": 1,
       "title": "This presentation explains the many window function facilities and how they can be",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -1293,6 +1294,7 @@
     {
       "number": 2,
       "title": "1.",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -3229,6 +3231,7 @@
     {
       "number": 3,
       "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -3395,6 +3398,7 @@
     {
       "number": 4,
       "title": "4 / 85",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -4407,6 +4411,7 @@
     {
       "number": 5,
       "title": "A window function performs a calculation across a set of table rows that are somehow",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -5623,6 +5628,7 @@
     {
       "number": 6,
       "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -5789,6 +5795,7 @@
     {
       "number": 7,
       "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -5955,6 +5962,7 @@
     {
       "number": 8,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -8335,6 +8343,7 @@
     {
       "number": 9,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -11779,6 +11788,7 @@
     {
       "number": 10,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -16423,6 +16433,7 @@
     {
       "number": 11,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -21135,6 +21146,7 @@
     {
       "number": 12,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -25847,6 +25859,7 @@
     {
       "number": 13,
       "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -26013,6 +26026,7 @@
     {
       "number": 14,
       "title": "15 / 85",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -27355,6 +27369,7 @@
     {
       "number": 15,
       "title": "16 / 85",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -28379,6 +28394,7 @@
     {
       "number": 16,
       "title": "C",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -30195,6 +30211,7 @@
     {
       "number": 17,
       "title": "C",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -33211,6 +33228,7 @@
     {
       "number": 18,
       "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -33377,6 +33395,7 @@
     {
       "number": 19,
       "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -33543,6 +33562,7 @@
     {
       "number": 20,
       "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -33709,6 +33729,7 @@
     {
       "number": 21,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -38421,6 +38442,7 @@
     {
       "number": 22,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -43133,6 +43155,7 @@
     {
       "number": 23,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -47845,6 +47868,7 @@
     {
       "number": 24,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -52557,6 +52581,7 @@
     {
       "number": 25,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -57269,6 +57294,7 @@
     {
       "number": 26,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -61981,6 +62007,7 @@
     {
       "number": 27,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -69813,6 +69840,7 @@
     {
       "number": 28,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -74525,6 +74553,7 @@
     {
       "number": 29,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -79237,6 +79266,7 @@
     {
       "number": 30,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -84789,6 +84819,7 @@
     {
       "number": 31,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -89501,6 +89532,7 @@
     {
       "number": 32,
       "title": "x",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -94213,6 +94245,7 @@
     {
       "number": 33,
       "title": "SELECT * FROM",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -96765,6 +96798,7 @@
     {
       "number": 34,
       "title": "SELECT x, COUNT(x) OVER w, SUM(x) OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -101581,6 +101615,7 @@
     {
       "number": 35,
       "title": "SELECT x, COUNT(x) OVER w, SUM(x) OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -106277,6 +106312,7 @@
     {
       "number": 36,
       "title": "SELECT x, COUNT(x) OVER w, SUM(x) OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -111213,6 +111249,7 @@
     {
       "number": 37,
       "title": "SELECT x, COUNT(x) OVER w, SUM(x) OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -116149,6 +116186,7 @@
     {
       "number": 38,
       "title": "SELECT x, COUNT(x) OVER w, SUM(x) OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -121085,6 +121123,7 @@
     {
       "number": 39,
       "title": "SELECT x, COUNT(x) OVER w, SUM(x) OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -126021,6 +126060,7 @@
     {
       "number": 40,
       "title": "SELECT x, COUNT(x) OVER w, SUM(x) OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -131077,6 +131117,7 @@
     {
       "number": 41,
       "title": "int4 | x | count | sum",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -135669,6 +135710,7 @@
     {
       "number": 42,
       "title": "int4 | x | count | sum",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -140261,6 +140303,7 @@
     {
       "number": 43,
       "title": "int4 | x | count | sum",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -144921,6 +144964,7 @@
     {
       "number": 44,
       "title": "int4 | x | count | sum",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -149581,6 +149625,7 @@
     {
       "number": 45,
       "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -149747,6 +149792,7 @@
     {
       "number": 46,
       "title": "SELECT x,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -154203,6 +154249,7 @@
     {
       "number": 47,
       "title": "SELECT x,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -158059,6 +158106,7 @@
     {
       "number": 48,
       "title": "SELECT x,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -161915,6 +161963,7 @@
     {
       "number": 49,
       "title": "SELECT x,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -167811,6 +167860,7 @@
     {
       "number": 50,
       "title": "SELECT x,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -173227,6 +173277,7 @@
     {
       "number": 51,
       "title": "SELECT x, FIRST_VALUE(x) OVER w, LAST_VALUE(x) OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -178283,6 +178334,7 @@
     {
       "number": 52,
       "title": "SELECT x,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -183819,6 +183871,7 @@
     {
       "number": 53,
       "title": "SELECT x, NTH_VALUE(x, 3) OVER w, NTH_VALUE(x, 7) OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -188995,6 +189048,7 @@
     {
       "number": 54,
       "title": "SELECT x, NTH_VALUE(x, 3) OVER w, NTH_VALUE(x, 7) OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -194051,6 +194105,7 @@
     {
       "number": 55,
       "title": "SELECT x,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -200787,6 +200842,7 @@
     {
       "number": 56,
       "title": "SELECT x, RANK() OVER w, DENSE_RANK() OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -206923,6 +206979,7 @@
     {
       "number": 57,
       "title": "SELECT x, RANK() OVER w, DENSE_RANK() OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -213059,6 +213116,7 @@
     {
       "number": 58,
       "title": "SELECT x, RANK() OVER w, DENSE_RANK() OVER w",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -219195,6 +219253,7 @@
     {
       "number": 59,
       "title": "P",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -220735,6 +220794,7 @@
     {
       "number": 60,
       "title": "int4 | x | rank | dense_rank",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -225395,6 +225455,7 @@
     {
       "number": 61,
       "title": "int4 | x | percent_rank | cume_dist | ntile",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -231323,6 +231384,7 @@
     {
       "number": 62,
       "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -231489,6 +231551,7 @@
     {
       "number": 63,
       "title": "64 / 85",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -232837,6 +232900,7 @@
     {
       "number": 64,
       "title": "SELECT * FROM",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -235973,6 +236037,7 @@
     {
       "number": 65,
       "title": "SELECT",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -238029,6 +238094,7 @@
     {
       "number": 66,
       "title": "SELECT department, COUNT(*), SUM(salary),",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -240805,6 +240871,7 @@
     {
       "number": 67,
       "title": "GROUP BY",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -244025,6 +244092,7 @@
     {
       "number": 68,
       "title": "SELECT name, salary",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -246441,6 +246509,7 @@
     {
       "number": 69,
       "title": "SELECT name, salary,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -249097,6 +249166,7 @@
     {
       "number": 70,
       "title": "SELECT name, salary,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -251993,6 +252063,7 @@
     {
       "number": 71,
       "title": "SELECT name, salary,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -255249,6 +255320,7 @@
     {
       "number": 72,
       "title": "SELECT name, salary,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -258145,6 +258217,7 @@
     {
       "number": 73,
       "title": "SELECT name, salary,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -262121,6 +262194,7 @@
     {
       "number": 74,
       "title": "SELECT name, salary,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -265857,6 +265931,7 @@
     {
       "number": 75,
       "title": "SELECT name, salary,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -271393,6 +271468,7 @@
     {
       "number": 76,
       "title": "SELECT name, salary,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -276929,6 +277005,7 @@
     {
       "number": 77,
       "title": "SELECT name, department, salary,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -282585,6 +282662,7 @@
     {
       "number": 78,
       "title": "SELECT name, department, salary,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -287281,6 +287359,7 @@
     {
       "number": 79,
       "title": "SELECT name, department, salary,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -292097,6 +292176,7 @@
     {
       "number": 80,
       "title": "SELECT name, department, salary,",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -297993,6 +298073,7 @@
     {
       "number": 81,
       "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -298159,6 +298240,7 @@
     {
       "number": 82,
       "title": "83 / 85",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -299251,6 +299333,7 @@
     {
       "number": 83,
       "title": "Scope",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -306587,6 +306670,7 @@
     {
       "number": 84,
       "title": "https://momjian.us/presentations",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -307021,6 +307105,7 @@
     {
       "number": 85,
       "title": "Original Source & MySQL Adaptation",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {

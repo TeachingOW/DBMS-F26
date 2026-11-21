@@ -9,6 +9,7 @@
     {
       "number": 1,
       "title": "Design Theory",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -335,6 +336,7 @@
     {
       "number": 2,
       "title": "Why normalization exists",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -835,6 +837,7 @@
     {
       "number": 3,
       "title": "1. Normal forms & functional dependencies",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -1129,6 +1132,7 @@
     {
       "number": 4,
       "title": "Design Theory",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -1569,6 +1573,7 @@
     {
       "number": 5,
       "title": "Normal Forms",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -2587,6 +2592,7 @@
     {
       "number": 6,
       "title": "1st Normal Form (1NF)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -3371,6 +3377,7 @@
     {
       "number": 7,
       "title": "Data Anomalies & Constraints",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -3681,6 +3688,7 @@
     {
       "number": 8,
       "title": "Constraints Prevent (some) \nAnomalies in the Data",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -4415,6 +4423,7 @@
     {
       "number": 9,
       "title": "Constraints Prevent (some) \nAnomalies in the Data",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -5153,6 +5162,7 @@
     {
       "number": 10,
       "title": "Constraints Prevent (some) \nAnomalies in the Data",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -5863,6 +5873,7 @@
     {
       "number": 11,
       "title": "Constraints Prevent (some) \nAnomalies in the Data",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -6697,6 +6708,7 @@
     {
       "number": 12,
       "title": "Constraints Prevent (some) \nAnomalies in the Data",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -7607,6 +7619,7 @@
     {
       "number": 13,
       "title": "Checkpoint: name the anomaly",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -8167,6 +8180,7 @@
     {
       "number": 14,
       "title": "Functional Dependencies",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -8477,6 +8491,7 @@
     {
       "number": 15,
       "title": "Functional Dependency",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -9479,6 +9494,7 @@
     {
       "number": 16,
       "title": "A Picture Of FDs",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -10473,6 +10489,7 @@
     {
       "number": 17,
       "title": "A Picture Of FDs",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -11907,6 +11924,7 @@
     {
       "number": 18,
       "title": "A Picture Of FDs",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -13741,6 +13759,7 @@
     {
       "number": 19,
       "title": "A Picture Of FDs",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -16445,6 +16464,7 @@
     {
       "number": 20,
       "title": "FDs for Relational Schema Design",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -17021,6 +17041,7 @@
     {
       "number": 21,
       "title": "Functional Dependencies as Constraints",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -17953,6 +17974,7 @@
     {
       "number": 22,
       "title": "Functional Dependencies as Constraints",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -18751,6 +18773,7 @@
     {
       "number": 23,
       "title": "Evidence is not a business rule",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -19251,6 +19274,7 @@
     {
       "number": 24,
       "title": "More Examples",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -19789,6 +19813,7 @@
     {
       "number": 25,
       "title": "More Examples",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -22053,6 +22078,7 @@
     {
       "number": 26,
       "title": "More Examples",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -22747,6 +22773,7 @@
     {
       "number": 27,
       "title": "ACTIVITY",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -23783,6 +23810,7 @@
     {
       "number": 28,
       "title": "2. Finding functional dependencies",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -24077,6 +24105,7 @@
     {
       "number": 29,
       "title": "“Good” vs. “Bad” FDs",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -24923,6 +24952,7 @@
     {
       "number": 30,
       "title": "“Good” vs. “Bad” FDs",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -25823,6 +25853,7 @@
     {
       "number": 31,
       "title": "“Good” vs. “Bad” FDs",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -26709,6 +26740,7 @@
     {
       "number": 32,
       "title": "FDs for Relational Schema Design",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -27445,6 +27477,7 @@
     {
       "number": 33,
       "title": "Finding Functional Dependencies",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -28121,6 +28154,7 @@
     {
       "number": 34,
       "title": "Finding Functional Dependencies",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -29223,6 +29257,7 @@
     {
       "number": 35,
       "title": "Finding Functional Dependencies",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -29963,6 +29998,7 @@
     {
       "number": 36,
       "title": "1. Split/Combine",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -30795,6 +30831,7 @@
     {
       "number": 37,
       "title": "1. Split/Combine",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -31941,6 +31978,7 @@
     {
       "number": 38,
       "title": "1. Split/Combine",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -33077,6 +33115,7 @@
     {
       "number": 39,
       "title": "Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -33365,6 +33404,7 @@
     {
       "number": 40,
       "title": "Reduction/Trivial",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -34263,6 +34303,7 @@
     {
       "number": 41,
       "title": "Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -34519,6 +34560,7 @@
     {
       "number": 42,
       "title": "3. Transitive Closure",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -35639,6 +35681,7 @@
     {
       "number": 43,
       "title": "3. Transitive Closure",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -36951,6 +36994,7 @@
     {
       "number": 44,
       "title": "Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -37235,6 +37279,7 @@
     {
       "number": 45,
       "title": "Finding Functional Dependencies",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -38211,6 +38256,7 @@
     {
       "number": 46,
       "title": "Finding Functional Dependencies",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -39179,6 +39225,7 @@
     {
       "number": 47,
       "title": "Finding Functional Dependencies",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -40147,6 +40194,7 @@
     {
       "number": 48,
       "title": "A repeatable FD inference routine",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -40707,6 +40755,7 @@
     {
       "number": 49,
       "title": "Closures",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -41017,6 +41066,7 @@
     {
       "number": 50,
       "title": "Closure of a set of Attributes",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -43491,6 +43541,7 @@
     {
       "number": 51,
       "title": "Closure Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -44795,6 +44846,7 @@
     {
       "number": 52,
       "title": "Closure Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -46871,6 +46923,7 @@
     {
       "number": 53,
       "title": "Closure Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -49325,6 +49378,7 @@
     {
       "number": 54,
       "title": "Closure Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -52077,6 +52131,7 @@
     {
       "number": 55,
       "title": "Closure Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -55127,6 +55182,7 @@
     {
       "number": 56,
       "title": "Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -56393,6 +56449,7 @@
     {
       "number": 57,
       "title": "3. Closures, Superkeys & Keys",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -56703,6 +56760,7 @@
     {
       "number": 58,
       "title": "Why Do We Need the Closure?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -57953,6 +58011,7 @@
     {
       "number": 59,
       "title": "Using Closure to Infer ALL FDs",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -60403,6 +60462,7 @@
     {
       "number": 60,
       "title": "Using Closure to Infer ALL FDs",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -63037,6 +63097,7 @@
     {
       "number": 61,
       "title": "Using Closure to Infer ALL FDs",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -65841,6 +65902,7 @@
     {
       "number": 62,
       "title": "Using Closure to Infer ALL FDs",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -68661,6 +68723,7 @@
     {
       "number": 63,
       "title": "Fast path to candidate keys",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -69161,6 +69224,7 @@
     {
       "number": 64,
       "title": "Superkeys and Keys",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -69531,6 +69595,7 @@
     {
       "number": 65,
       "title": "Keys and Superkeys",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -70937,6 +71002,7 @@
     {
       "number": 66,
       "title": "Finding Keys and Superkeys",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -71569,6 +71635,7 @@
     {
       "number": 67,
       "title": "Example of Finding Keys",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -72481,6 +72548,7 @@
     {
       "number": 68,
       "title": "Example of Keys",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -73645,6 +73713,7 @@
     {
       "number": 69,
       "title": "Superkey vs Key",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -74027,6 +74096,7 @@
     {
       "number": 70,
       "title": "Design Theory II",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -74323,6 +74393,7 @@
     {
       "number": 71,
       "title": "Normal Forms",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -74633,6 +74704,7 @@
     {
       "number": 72,
       "title": "Normal forms answer different questions",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -75193,6 +75265,7 @@
     {
       "number": 73,
       "title": "2NF",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -75693,6 +75766,7 @@
     {
       "number": 74,
       "title": "Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -77947,6 +78021,7 @@
     {
       "number": 75,
       "title": "2NF",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -78417,6 +78492,7 @@
     {
       "number": 76,
       "title": "3NF",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -78913,6 +78989,7 @@
     {
       "number": 77,
       "title": "2NF -> 3NF",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -80118,7 +80195,8 @@
     },
     {
       "number": 78,
-      "title": "72",
+      "title": "BCNF:",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -80879,6 +80957,7 @@
     {
       "number": 79,
       "title": "BCNF",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -81251,6 +81330,7 @@
     {
       "number": 80,
       "title": "3NF to BCNF",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -82413,6 +82493,7 @@
     {
       "number": 81,
       "title": "Boyce-Codd Normal Form (BCNF)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -83005,6 +83086,7 @@
     {
       "number": 82,
       "title": "Boyce-Codd Normal Form (BCNF)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -83693,6 +83775,7 @@
     {
       "number": 83,
       "title": "Boyce-Codd Normal Form",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -84999,6 +85082,7 @@
     {
       "number": 84,
       "title": "Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -86101,6 +86185,7 @@
     {
       "number": 85,
       "title": "Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -87243,6 +87328,7 @@
     {
       "number": 86,
       "title": "BCNF Decomposition Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -88849,6 +88935,7 @@
     {
       "number": 87,
       "title": "BCNF Decomposition Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -90533,6 +90620,7 @@
     {
       "number": 88,
       "title": "BCNF Decomposition Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -92205,6 +92293,7 @@
     {
       "number": 89,
       "title": "BCNF Decomposition Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -94071,6 +94160,7 @@
     {
       "number": 90,
       "title": "BCNF Decomposition Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -96481,6 +96571,7 @@
     {
       "number": 91,
       "title": "BCNF Decomposition Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -98921,6 +99012,7 @@
     {
       "number": 92,
       "title": "BCNF Decomposition Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -100753,6 +100845,7 @@
     {
       "number": 93,
       "title": "R(A,B,C,D,E)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -102507,6 +102600,7 @@
     {
       "number": 94,
       "title": "Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -104499,6 +104593,7 @@
     {
       "number": 95,
       "title": "Two checks after decomposition",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -104999,6 +105094,7 @@
     {
       "number": 96,
       "title": "Lossless join decomposition",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -105937,6 +106033,7 @@
     {
       "number": 97,
       "title": "Lossless join decomposition",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -106255,6 +106352,7 @@
     {
       "number": 98,
       "title": "Summary",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -106799,6 +106897,7 @@
     {
       "number": 99,
       "title": "Exercise",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -107771,6 +107870,7 @@
     {
       "number": 100,
       "title": "Exit ticket: diagnose, prove, decompose",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -108331,6 +108431,7 @@
     {
       "number": 101,
       "title": "Lab: repair a flat enrollment table",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -108891,6 +108992,7 @@
     {
       "number": 102,
       "title": "Decompose and verify",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {

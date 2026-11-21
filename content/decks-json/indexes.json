@@ -9,6 +9,7 @@
     {
       "number": 1,
       "title": "The IO Model & Indexing & External Sorting",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -163,6 +164,7 @@
     {
       "number": 2,
       "title": "Today’s Lecture",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -609,6 +611,7 @@
     {
       "number": 3,
       "title": "1. The Buffer",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -801,6 +804,7 @@
     {
       "number": 4,
       "title": "Transition to Mechanisms",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -1387,6 +1391,7 @@
     {
       "number": 5,
       "title": "What you will learn about in this section",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -1796,6 +1801,7 @@
     {
       "number": 6,
       "title": "High-level: Disk vs. Main Memory",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -8619,6 +8625,7 @@
     {
       "number": 7,
       "title": "The Buffer",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -9431,6 +9438,7 @@
     {
       "number": 8,
       "title": "The (Simplified) Buffer",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -10523,6 +10531,7 @@
     {
       "number": 9,
       "title": "The (Simplified) Buffer",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -11974,6 +11983,7 @@
     {
       "number": 10,
       "title": "The (Simplified) Buffer",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -13196,6 +13206,7 @@
     {
       "number": 11,
       "title": "The (Simplified) Buffer",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -14584,6 +14595,7 @@
     {
       "number": 12,
       "title": "Managing Disk: The DBMS Buffer",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -15562,6 +15574,7 @@
     {
       "number": 13,
       "title": "The Buffer Manager",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -15980,6 +15993,7 @@
     {
       "number": 14,
       "title": "A Simplified Filesystem Model",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -17274,6 +17288,7 @@
     {
       "number": 15,
       "title": "B+ Trees: \nAn IO-Aware Index Structure",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -17504,6 +17519,7 @@
     {
       "number": 16,
       "title": "“If you don’t find it in the index, look very carefully through the entire catalog”",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -17820,6 +17836,7 @@
     {
       "number": 17,
       "title": "Today’s Lecture",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -18198,6 +18215,7 @@
     {
       "number": 18,
       "title": "What you will learn about in this section",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -18702,6 +18720,7 @@
     {
       "number": 19,
       "title": "Index Motivation",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -19120,6 +19139,7 @@
     {
       "number": 20,
       "title": "Index Motivation",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -20290,6 +20310,7 @@
     {
       "number": 21,
       "title": "Index Motivation",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -20873,6 +20894,7 @@
     {
       "number": 22,
       "title": "Further Motivation for Indexes: NoSQL!",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -21362,6 +21384,7 @@
     {
       "number": 23,
       "title": "Indexes: High-level",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -22424,6 +22447,7 @@
     {
       "number": 24,
       "title": "More precisely",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -23118,6 +23142,7 @@
     {
       "number": 25,
       "title": "Operations on an Index",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -23712,6 +23737,7 @@
     {
       "number": 26,
       "title": "Conceptual Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -24492,6 +24518,7 @@
     {
       "number": 27,
       "title": "Conceptual Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -25462,6 +25489,7 @@
     {
       "number": 28,
       "title": "Conceptual Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -26782,6 +26810,7 @@
     {
       "number": 29,
       "title": "Covering Indexes",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -27655,6 +27684,7 @@
     {
       "number": 30,
       "title": "High-level Categories of Index Types",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -28571,6 +28601,7 @@
     {
       "number": 31,
       "title": "Activity-13.ipynb",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -28827,6 +28858,7 @@
     {
       "number": 32,
       "title": "Project #2 Hint",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -29193,6 +29225,7 @@
     {
       "number": 33,
       "title": "2. B+ Trees",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -29449,6 +29482,7 @@
     {
       "number": 34,
       "title": "What you will learn about in this section",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -29891,6 +29925,7 @@
     {
       "number": 35,
       "title": "B+ Trees",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -30411,6 +30446,7 @@
     {
       "number": 36,
       "title": "B+ Tree Basics",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -31046,6 +31082,7 @@
     {
       "number": 37,
       "title": "B+ Tree Basics",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -31872,6 +31909,7 @@
     {
       "number": 38,
       "title": "B+ Tree Basics",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -32622,6 +32660,7 @@
     {
       "number": 39,
       "title": "B+ Tree Basics",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -33760,6 +33799,7 @@
     {
       "number": 40,
       "title": "B+ Tree Basics",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -36646,6 +36686,7 @@
     {
       "number": 41,
       "title": "B+ Tree Basics",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -39828,6 +39869,7 @@
     {
       "number": 42,
       "title": "B+ Tree Basics",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -43246,6 +43288,7 @@
     {
       "number": 43,
       "title": "Some finer points of B+ Trees",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -43458,6 +43501,7 @@
     {
       "number": 44,
       "title": "Searching a B+ Tree",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -44605,6 +44649,7 @@
     {
       "number": 45,
       "title": "B+ Tree Exact Search Animation",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -49006,6 +49051,7 @@
     {
       "number": 46,
       "title": "B+ Tree Range Search Animation",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -53414,6 +53460,7 @@
     {
       "number": 47,
       "title": "B+ Tree Design",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -54153,6 +54200,7 @@
     {
       "number": 48,
       "title": "B+ Tree: High Fanout = Smaller & Lower IO",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -55211,6 +55259,7 @@
     {
       "number": 49,
       "title": "B+ Trees in Practice",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -56449,6 +56498,7 @@
     {
       "number": 50,
       "title": "Simple Cost Model for Search",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -57618,6 +57668,7 @@
     {
       "number": 51,
       "title": "Simple Cost Model for Search",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -58016,6 +58067,7 @@
     {
       "number": 52,
       "title": "Simple Cost Model for Search",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -58506,6 +58558,7 @@
     {
       "number": 53,
       "title": "Fast Insertions & Self-Balancing",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -59204,6 +59257,7 @@
     {
       "number": 54,
       "title": "Clustered Indexes",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -59642,6 +59696,7 @@
     {
       "number": 55,
       "title": "Clustered vs. Unclustered Index",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -63720,6 +63775,7 @@
     {
       "number": 56,
       "title": "Clustered vs. Unclustered Index",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -64428,6 +64484,7 @@
     {
       "number": 57,
       "title": "Summary",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -65196,6 +65253,7 @@
     {
       "number": 58,
       "title": "2. External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -65452,6 +65510,7 @@
     {
       "number": 59,
       "title": "Challenge: Merging Big Files with Small Memory",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -65980,6 +66039,7 @@
     {
       "number": 60,
       "title": "External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -66378,6 +66438,7 @@
     {
       "number": 61,
       "title": "Key (Simple) Idea",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -66664,6 +66725,7 @@
     {
       "number": 62,
       "title": "External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -68817,6 +68879,7 @@
     {
       "number": 63,
       "title": "External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -70955,6 +71018,7 @@
     {
       "number": 64,
       "title": "External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -73209,6 +73273,7 @@
     {
       "number": 65,
       "title": "External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -75463,6 +75528,7 @@
     {
       "number": 66,
       "title": "External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -77961,6 +78027,7 @@
     {
       "number": 67,
       "title": "External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -80361,6 +80428,7 @@
     {
       "number": 68,
       "title": "External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -82607,6 +82675,7 @@
     {
       "number": 69,
       "title": "External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -84861,6 +84930,7 @@
     {
       "number": 70,
       "title": "External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -87115,6 +87185,7 @@
     {
       "number": 71,
       "title": "External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -89562,6 +89633,7 @@
     {
       "number": 72,
       "title": "We can merge lists of arbitrary \nlength with only 3 buffer pages.",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -90204,6 +90276,7 @@
     {
       "number": 73,
       "title": "Recap: External Merge Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -90904,6 +90977,7 @@
     {
       "number": 74,
       "title": "3. External Merge Sort",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -91160,6 +91234,7 @@
     {
       "number": 75,
       "title": "Why are Sort Algorithms Important?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -91868,6 +91943,7 @@
     {
       "number": 76,
       "title": "More reasons to sort…",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -92473,6 +92549,7 @@
     {
       "number": 77,
       "title": "Do people care?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -92911,6 +92988,7 @@
     {
       "number": 78,
       "title": "So how do we sort big files?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -93373,6 +93451,7 @@
     {
       "number": 79,
       "title": "External Merge Sort Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -95253,6 +95332,7 @@
     {
       "number": 80,
       "title": "External Merge Sort Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -97319,6 +97399,7 @@
     {
       "number": 81,
       "title": "External Merge Sort Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -99527,6 +99608,7 @@
     {
       "number": 82,
       "title": "External Merge Sort Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -101757,6 +101839,7 @@
     {
       "number": 83,
       "title": "External Merge Sort Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -104400,6 +104483,7 @@
     {
       "number": 84,
       "title": "External Merge Sort Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -106354,6 +106438,7 @@
     {
       "number": 85,
       "title": "Calculating IO Cost",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -106951,6 +107036,7 @@
     {
       "number": 86,
       "title": "Running External Merge Sort on Larger Files",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -109483,6 +109569,7 @@
     {
       "number": 87,
       "title": "Running External Merge Sort on Larger Files",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -112495,6 +112582,7 @@
     {
       "number": 88,
       "title": "Running External Merge Sort on Larger Files",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -115708,6 +115796,7 @@
     {
       "number": 89,
       "title": "Running External Merge Sort on Larger Files",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -121142,6 +121231,7 @@
     {
       "number": 90,
       "title": "Running External Merge Sort on Larger Files",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -128990,6 +129080,7 @@
     {
       "number": 91,
       "title": "Running External Merge Sort on Larger Files",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -138814,6 +138905,7 @@
     {
       "number": 92,
       "title": "Simplified 3-page Buffer Version",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -140245,6 +140337,7 @@
     {
       "number": 93,
       "title": "External Merge Sort: Optimizations",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -140675,6 +140768,7 @@
     {
       "number": 94,
       "title": "Using B+1 buffer pages to reduce # of passes",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -141309,6 +141403,7 @@
     {
       "number": 95,
       "title": "Using B+1 buffer pages to reduce # of passes",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -142098,6 +142193,7 @@
     {
       "number": 96,
       "title": "Repacking for even longer initial runs",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -142316,6 +142412,7 @@
     {
       "number": 97,
       "title": "Repacking Example: 3 page buffer",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -144185,6 +144282,7 @@
     {
       "number": 98,
       "title": "Repacking Example: 3 page buffer",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -146654,6 +146752,7 @@
     {
       "number": 99,
       "title": "Repacking Example: 3 page buffer",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -148886,6 +148985,7 @@
     {
       "number": 100,
       "title": "Repacking Example: 3 page buffer",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -151013,6 +151113,7 @@
     {
       "number": 101,
       "title": "Repacking Example: 3 page buffer",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -153287,6 +153388,7 @@
     {
       "number": 102,
       "title": "Repacking Example: 3 page buffer",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -155537,6 +155639,7 @@
     {
       "number": 103,
       "title": "Repacking Example: 3 page buffer",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -157541,6 +157644,7 @@
     {
       "number": 104,
       "title": "Repacking Example: 3 page buffer",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -159559,6 +159663,7 @@
     {
       "number": 105,
       "title": "Repacking Example: 3 page buffer",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -161541,6 +161646,7 @@
     {
       "number": 106,
       "title": "Repacking Example: 3 page buffer",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -163701,6 +163807,7 @@
     {
       "number": 107,
       "title": "Repacking Example: 3 page buffer",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -165876,6 +165983,7 @@
     {
       "number": 108,
       "title": "Repacking",
+      "subtitle": null,
       "hidden": true,
       "content": [
         {
@@ -166435,6 +166543,7 @@
     {
       "number": 109,
       "title": "Summary",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {

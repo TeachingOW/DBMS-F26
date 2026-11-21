@@ -9,6 +9,7 @@
     {
       "number": 1,
       "title": "The E/R Model",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -139,6 +140,7 @@
     {
       "number": 2,
       "title": "E/R is the bridge between requirements and tables",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -477,6 +479,7 @@
     {
       "number": 3,
       "title": "1. E/R Basics: Entities & Relations",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -607,6 +610,7 @@
     {
       "number": 4,
       "title": "Database Design",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -1211,6 +1215,7 @@
     {
       "number": 5,
       "title": "Database Design Process",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -2117,6 +2122,7 @@
     {
       "number": 6,
       "title": "Database Design Process",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -3031,6 +3037,7 @@
     {
       "number": 7,
       "title": "Database Design Process",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -3711,6 +3718,7 @@
     {
       "number": 8,
       "title": "Database Design Process",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -6225,6 +6233,7 @@
     {
       "number": 9,
       "title": "Turn requirement sentences into a model",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -6639,6 +6648,7 @@
     {
       "number": 10,
       "title": "Interlude: Impact of the ER model",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -6981,6 +6991,7 @@
     {
       "number": 11,
       "title": "Entities and Entity Sets",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -7979,6 +7990,7 @@
     {
       "number": 12,
       "title": "Entities and Entity Sets",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -9359,6 +9371,7 @@
     {
       "number": 13,
       "title": "Entities vs. Entity Sets",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -11763,6 +11776,7 @@
     {
       "number": 14,
       "title": "Keys",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -13411,6 +13425,7 @@
     {
       "number": 15,
       "title": "Multivalued and Derived Attributes",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -14181,6 +14196,7 @@
     {
       "number": 16,
       "title": "The R in E/R: Relationships",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -15895,6 +15911,7 @@
     {
       "number": 17,
       "title": "What is a Relationship?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -17407,6 +17424,7 @@
     {
       "number": 18,
       "title": "What is a Relationship?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -20153,6 +20171,7 @@
     {
       "number": 19,
       "title": "What is a Relationship?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -22241,6 +22260,7 @@
     {
       "number": 20,
       "title": "What is a Relationship?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -24841,6 +24861,7 @@
     {
       "number": 21,
       "title": "What is a Relationship?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -26741,6 +26762,7 @@
     {
       "number": 22,
       "title": "What is a Relationship?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -28967,6 +28989,7 @@
     {
       "number": 23,
       "title": "What is a Relationship?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -31443,6 +31466,7 @@
     {
       "number": 24,
       "title": "What is a Relationship?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -34121,6 +34145,7 @@
     {
       "number": 25,
       "title": "What is a Relationship?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -36665,6 +36690,7 @@
     {
       "number": 26,
       "title": "Relationships and Attributes",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -39049,6 +39075,7 @@
     {
       "number": 27,
       "title": "Relationships",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -40899,6 +40926,7 @@
     {
       "number": 28,
       "title": "Conceptual Unary Relationship",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -42035,6 +42063,7 @@
     {
       "number": 29,
       "title": "Conceptual Binary Relationship",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -43119,6 +43148,7 @@
     {
       "number": 30,
       "title": "Multiplicity of E/R Relationships",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -47997,6 +48027,7 @@
     {
       "number": 31,
       "title": "Minimum Cardinality",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -48903,6 +48934,7 @@
     {
       "number": 32,
       "title": "Maximum Cardinality",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -50767,6 +50799,7 @@
     {
       "number": 33,
       "title": "Cardinality needs two answers",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -51165,6 +51198,7 @@
     {
       "number": 34,
       "title": "Conceptual Ternary Relationship",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -52635,6 +52669,7 @@
     {
       "number": 35,
       "title": "makes",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -55486,7 +55521,8 @@
     },
     {
       "number": 36,
-      "title": "33",
+      "title": "address",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -58519,6 +58555,7 @@
     {
       "number": 37,
       "title": "Decision: Relationship vs. Entity?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -61511,6 +61548,7 @@
     {
       "number": 38,
       "title": "Multi-way Relationships",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -62579,6 +62617,7 @@
     {
       "number": 39,
       "title": "Arrows in Multiway Relationships",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -63675,6 +63714,7 @@
     {
       "number": 40,
       "title": "Arrows in Multiway Relationships",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -64849,6 +64889,7 @@
     {
       "number": 41,
       "title": "Arrows in Multiway Relationships",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -66001,6 +66042,7 @@
     {
       "number": 42,
       "title": "Converting Multi-way Relationships to Binary",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -67765,6 +67807,7 @@
     {
       "number": 43,
       "title": "Decision: Relationship vs. Entity?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -69869,6 +69912,7 @@
     {
       "number": 44,
       "title": "Decision: Multi-way or New Entity + Binary?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -73171,6 +73215,7 @@
     {
       "number": 45,
       "title": "Choose an entity when the event has identity",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -73569,6 +73614,7 @@
     {
       "number": 46,
       "title": "3. Design Principles",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -74939,6 +74985,7 @@
     {
       "number": 47,
       "title": "Design Principles:\nWhat’s Wrong?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -76243,6 +76290,7 @@
     {
       "number": 48,
       "title": "Design Principles:\nWhat’s Wrong?",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -77547,6 +77595,7 @@
     {
       "number": 49,
       "title": "Examples: Entity vs. Attribute",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -79597,6 +79646,7 @@
     {
       "number": 50,
       "title": "Examples: Entity vs. Attribute",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -80655,6 +80705,7 @@
     {
       "number": 51,
       "title": "Examples: Entity vs. Attribute",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -82789,6 +82840,7 @@
     {
       "number": 52,
       "title": "ACTIVITY: E/R Diagrams",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -82919,6 +82971,7 @@
     {
       "number": 53,
       "title": "DRAW AN E/R DIAGRAM FOR FOOTBALL",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -85409,6 +85462,7 @@
     {
       "number": 54,
       "title": "Note two copies of  the Teams entity  here!",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -90253,6 +90307,7 @@
     {
       "number": 55,
       "title": "Players",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -96899,6 +96954,7 @@
     {
       "number": 56,
       "title": "ERD Design Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -106850,6 +106906,7 @@
     {
       "number": 57,
       "title": "ParticipateIn",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -110550,6 +110607,7 @@
     {
       "number": 58,
       "title": "ENHANCE YOUR E/R DIAGRAM!",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -111915,7 +111973,8 @@
     },
     {
       "number": 59,
-      "title": "55",
+      "title": "Players can achieve  a Personal Record  linked to a specific  Game and Play",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -112370,6 +112429,7 @@
     {
       "number": 60,
       "title": "ParticipateIn",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -115513,7 +115573,8 @@
     },
     {
       "number": 61,
-      "title": "57",
+      "title": "Players can achieve  a Personal Record  linked to a specific  Game and Play",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -115968,6 +116029,7 @@
     {
       "number": 62,
       "title": "ParticipateIn",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -119666,6 +119728,7 @@
     {
       "number": 63,
       "title": "Mapping natural language",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -120694,6 +120757,7 @@
     {
       "number": 64,
       "title": "E/R Summary",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -121272,6 +121336,7 @@
     {
       "number": 65,
       "title": "Checkpoint: explain the diagram in plain English",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -121670,6 +121735,7 @@
     {
       "number": 66,
       "title": "From E/R Diagrams to Relational Schema",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -121974,6 +122040,7 @@
     {
       "number": 67,
       "title": "From E/R Diagrams to Relational Schema",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -123306,6 +123373,7 @@
     {
       "number": 68,
       "title": "From E/R Diagrams to Relational Schema",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -124776,6 +124844,7 @@
     {
       "number": 69,
       "title": "From E/R Diagrams to Relational Schema",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -127568,6 +127637,7 @@
     {
       "number": 70,
       "title": "From E/R Diagrams to Relational Schema",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -130616,6 +130686,7 @@
     {
       "number": 71,
       "title": "From E/R Diagram to Relational Schema",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -134081,7 +134152,8 @@
     },
     {
       "number": 72,
-      "title": "67",
+      "title": "Slide 72",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -134187,7 +134259,8 @@
     },
     {
       "number": 73,
-      "title": "68",
+      "title": "Slide 73",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -134294,6 +134367,7 @@
     {
       "number": 74,
       "title": "It has SQL for the previous example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -134424,6 +134498,7 @@
     {
       "number": 75,
       "title": "ER-to-Relational Mapping Algorithm",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -134824,6 +134899,7 @@
     {
       "number": 76,
       "title": "ER-to-Relational Mapping Algorithm (cont’d.)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -135042,6 +135118,7 @@
     {
       "number": 77,
       "title": "ER-to-Relational Mapping Algorithm (cont’d.)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -135558,6 +135635,7 @@
     {
       "number": 78,
       "title": "ER-to-Relational Mapping Algorithm (cont’d.)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -135986,6 +136064,7 @@
     {
       "number": 79,
       "title": "ER-to-Relational Mapping Algorithm (cont’d.)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -136462,6 +136541,7 @@
     {
       "number": 80,
       "title": "ER-to-Relational Mapping Algorithm (cont’d.)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -136838,6 +136918,7 @@
     {
       "number": 81,
       "title": "ER-to-Relational Mapping Algorithm (cont’d.)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -137246,6 +137327,7 @@
     {
       "number": 82,
       "title": "Discussion and Summary of Mapping for ER Model Constructs",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -137449,7 +137531,8 @@
     },
     {
       "number": 83,
-      "title": "78",
+      "title": "Slide 83",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -137596,6 +137679,7 @@
     {
       "number": 84,
       "title": "Mapping Summary",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -138024,6 +138108,7 @@
     {
       "number": 85,
       "title": "Mapping decisions you should make automatically",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -138422,6 +138507,7 @@
     {
       "number": 86,
       "title": "Example in Class",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -138930,6 +139016,7 @@
     {
       "number": 87,
       "title": "Example in Class",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -139430,6 +139517,7 @@
     {
       "number": 88,
       "title": "Not Recommended",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -140040,6 +140128,7 @@
     {
       "number": 89,
       "title": "CREATE TABLE Person(",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -140434,6 +140523,7 @@
     {
       "number": 90,
       "title": "3. Advanced E/R Concepts (EERD)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -140564,6 +140654,7 @@
     {
       "number": 91,
       "title": "What you will learn about in this section",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -140880,6 +140971,7 @@
     {
       "number": 92,
       "title": "Modeling Subclasses",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -142255,7 +142347,8 @@
     },
     {
       "number": 93,
-      "title": "87",
+      "title": "Product",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -144172,6 +144265,7 @@
     {
       "number": 94,
       "title": "Understanding Subclasses",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -147954,6 +148048,7 @@
     {
       "number": 95,
       "title": "Think like tables…",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -150284,6 +150379,7 @@
     {
       "number": 96,
       "title": "IsA Review",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -150726,6 +150822,7 @@
     {
       "number": 97,
       "title": "Modeling UnionTypes With Subclasses",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -151428,6 +151525,7 @@
     {
       "number": 98,
       "title": "Modeling Union Types with Subclasses",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -152756,6 +152854,7 @@
     {
       "number": 99,
       "title": "Modeling Union Types with Subclasses",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -154328,6 +154427,7 @@
     {
       "number": 100,
       "title": "Constraints in E/R Diagrams",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -155340,6 +155440,7 @@
     {
       "number": 101,
       "title": "Participation Constraints: Partial v. Total",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -157000,6 +157101,7 @@
     {
       "number": 102,
       "title": "Keys in E/R Diagrams",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -159046,6 +159148,7 @@
     {
       "number": 103,
       "title": "Single Value Constraints",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -159966,6 +160069,7 @@
     {
       "number": 104,
       "title": "Referential Integrity Constraints",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -161574,6 +161678,7 @@
     {
       "number": 105,
       "title": "Weak Entity Sets",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -163434,6 +163539,7 @@
     {
       "number": 106,
       "title": "Weak Entity Sets",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -165444,6 +165550,7 @@
     {
       "number": 107,
       "title": "Strong and Weak Entities",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -167418,6 +167525,7 @@
     {
       "number": 108,
       "title": "Weak entities borrow identity - not just existence",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -167816,6 +167924,7 @@
     {
       "number": 109,
       "title": "ACTIVITY: E/R Diagrams",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -167946,6 +168055,7 @@
     {
       "number": 110,
       "title": "Players have a weight which changes in on vs. off-season",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -168174,6 +168284,7 @@
     {
       "number": 111,
       "title": "ParticipateIn",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -174200,6 +174311,7 @@
     {
       "number": 112,
       "title": "ADD IN: SUBCLASSES, CONSTRAINTS,  AND WEAK ENTITY SETS",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -176066,6 +176178,7 @@
     {
       "number": 113,
       "title": "LocatedIn",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -179068,6 +179181,7 @@
     {
       "number": 114,
       "title": "Teams",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -190518,6 +190632,7 @@
     {
       "number": 115,
       "title": "ER-to-Relational Mapping Algorithm (cont’d.)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -190817,7 +190932,8 @@
     },
     {
       "number": 116,
-      "title": "109",
+      "title": "name",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -194714,6 +194830,7 @@
     {
       "number": 117,
       "title": "Mapping EER Model Constructs to Relations",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -194902,6 +195019,7 @@
     {
       "number": 118,
       "title": "Mapping of Specialization or Generalization",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -197058,6 +197176,7 @@
     {
       "number": 119,
       "title": "Mapping of Specialization or Generalization (cont’d.)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -198896,6 +199015,7 @@
     {
       "number": 120,
       "title": "Mapping of Shared Subclasses (Multiple Inheritance)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -199084,6 +199204,7 @@
     {
       "number": 121,
       "title": "Mapping of Categories (Union Types)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -199378,6 +199499,7 @@
     {
       "number": 122,
       "title": "Person",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -202726,6 +202848,7 @@
     {
       "number": 123,
       "title": "Chen Notation (Summary)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -205154,6 +205277,7 @@
     {
       "number": 124,
       "title": "Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -205934,6 +206058,7 @@
     {
       "number": 125,
       "title": "ERD Examples",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -206083,7 +206208,8 @@
     },
     {
       "number": 126,
-      "title": "119",
+      "title": "Slide 126",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -206195,7 +206321,8 @@
     },
     {
       "number": 127,
-      "title": "120",
+      "title": "Slide 127",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -206307,7 +206434,8 @@
     },
     {
       "number": 128,
-      "title": "121",
+      "title": "Slide 128",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -206419,7 +206547,8 @@
     },
     {
       "number": 129,
-      "title": "122",
+      "title": "Slide 129",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -206531,7 +206660,8 @@
     },
     {
       "number": 130,
-      "title": "123",
+      "title": "Slide 130",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -206644,6 +206774,7 @@
     {
       "number": 131,
       "title": "Advanced Notation",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -206814,6 +206945,7 @@
     {
       "number": 132,
       "title": "Weak Entity in E/R Diagrams",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -210904,6 +211036,7 @@
     {
       "number": 133,
       "title": "ERD Problems",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -211054,6 +211187,7 @@
     {
       "number": 134,
       "title": "Congress",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -211549,7 +211683,8 @@
     },
     {
       "number": 135,
-      "title": "128",
+      "title": "Diagram https://www.tldraw.com/r/12YKkWcscWMT87vOHgE_b?d=v0.0.1920.919.page",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -211922,6 +212057,7 @@
     {
       "number": 136,
       "title": "Problem 2 — Airport Database",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -212769,7 +212905,8 @@
     },
     {
       "number": 137,
-      "title": "130",
+      "title": "Check notes",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -212913,7 +213050,8 @@
     },
     {
       "number": 138,
-      "title": "131",
+      "title": "Slide 138",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -213020,6 +213158,7 @@
     {
       "number": 139,
       "title": "Convert to a Logical Schema",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -214054,6 +214193,7 @@
     {
       "number": 140,
       "title": "Company(ID,  name , address )",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -215540,6 +215680,7 @@
     {
       "number": 141,
       "title": "Convert to logical Schema",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -215719,7 +215860,8 @@
     },
     {
       "number": 142,
-      "title": "135",
+      "title": "Slide 142",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -215826,6 +215968,7 @@
     {
       "number": 143,
       "title": "create table bank(code char(10), name varchar(20), addr varchar(100), primary key code)",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -216726,6 +216869,7 @@
     {
       "number": 144,
       "title": "ERD Example",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -217246,6 +217390,7 @@
     {
       "number": 145,
       "title": "Employee(",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -217998,6 +218143,7 @@
     {
       "number": 146,
       "title": "Exit ticket: requirement -> E/R -> relation",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -218396,6 +218542,7 @@
     {
       "number": 147,
       "title": "Lab: model a campus event system",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
@@ -218794,6 +218941,7 @@
     {
       "number": 148,
       "title": "Lab: model, map, audit",
+      "subtitle": null,
       "hidden": false,
       "content": [
         {
