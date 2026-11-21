@@ -4843,7 +4843,86 @@
           ]
         }
       ],
-      "speaker_notes": ""
+      "speaker_notes": "",
+      "diagram": {
+        "type": "erd",
+        "description": "Simplified football season model",
+        "entities": [
+          {
+            "id": "teams",
+            "name": "Teams",
+            "attributes": [
+              "Team ID"
+            ]
+          },
+          {
+            "id": "players",
+            "name": "Players",
+            "attributes": [
+              "Player ID",
+              "name"
+            ]
+          },
+          {
+            "id": "games",
+            "name": "Games",
+            "attributes": [
+              "date",
+              "location"
+            ]
+          },
+          {
+            "id": "plays",
+            "name": "Plays",
+            "attributes": [
+              "Play ID",
+              "Yardage Diff",
+              "Touchdown"
+            ]
+          }
+        ],
+        "relationships": [
+          {
+            "id": "member-of",
+            "name": "MemberOf",
+            "from": "players",
+            "to": "teams",
+            "cardinality": "A player belongs to one team (no trades)."
+          },
+          {
+            "id": "playing-home",
+            "name": "PlayingHome",
+            "from": "games",
+            "to": "teams",
+            "cardinality": "A game has a home team; a team can play repeatedly."
+          },
+          {
+            "id": "playing-away",
+            "name": "PlayingAway",
+            "from": "games",
+            "to": "teams",
+            "cardinality": "A game has an away team; a team can play repeatedly."
+          },
+          {
+            "id": "occur-in",
+            "name": "OccurIn",
+            "from": "plays",
+            "to": "games",
+            "cardinality": "A play occurs in one game."
+          },
+          {
+            "id": "participate-in",
+            "name": "ParticipateIn",
+            "from": "players",
+            "to": "plays",
+            "cardinality": "A play has one or more player participants.",
+            "attributes": [
+              "Participation Type"
+            ]
+          }
+        ],
+        "notes": "A play is a run by one player or a pass involving a passer and receiver. The source does not specify all participation cardinalities; confirm whether a play has exactly one runner or one passer and one receiver."
+      }
     },
     {
       "number": 57,
