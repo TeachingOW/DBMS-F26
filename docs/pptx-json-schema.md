@@ -17,4 +17,4 @@ Custom shape paths retain their commands, points, and guide formulas. Connector 
 
 ## Current fidelity limit
 
-The JSON now carries more source geometry and text-box behavior, but the HTML viewer still uses a simplified presentation layout and approximate vector reconstruction. It does not yet resolve all theme/style inheritance, faithfully display every custom path or media asset, or reproduce PowerPoint animation timing. JSON extraction and visual rendering are separate stages; a later renderer should consume the scene graph and source object properties.
+The HTML viewer places straightforward text-only slides on a proportional slide canvas when their objects have source or inherited bounds. Complex diagrams still use simplified layout and approximate vector reconstruction. Theme/style inheritance, every custom path or media asset, and PowerPoint animation timing are not yet reproduced fully. JSON extraction and visual rendering remain separate stages; the renderer should consume the scene graph and source object properties.

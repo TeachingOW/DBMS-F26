@@ -33,6 +33,7 @@
           "kind": "text",
           "name": "TextBox 2",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "CS 4550 – Database Management Systems",
             "Spring 2026 | SUNY Old Westbury"
@@ -119,6 +120,7 @@
           "kind": "text",
           "name": "TextBox 2",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "CS 4550 – Database Management Systems",
             "Spring 2026 | SUNY Old Westbury"
@@ -222,6 +224,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -278,6 +281,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Textbooks"
           ],
@@ -328,6 +332,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Elmasri & Navathe, Fundamentals of Database Systems (7th Edition) – Primary text",
             "Coronel & Morris, Database Systems: Design, Implementation, and Management (13th Edition)",
@@ -429,6 +434,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -485,6 +491,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Textbooks"
           ],
@@ -535,6 +542,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Elmasri & Navathe, Fundamentals of Database Systems (7th Edition) – Primary text",
             "Coronel & Morris, Database Systems: Design, Implementation, and Management (13th Edition)",
@@ -682,6 +690,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -738,6 +747,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Delivery"
           ],
@@ -788,6 +798,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Lectures will be conducted in person",
             "Office hours available in person or online",
@@ -915,6 +926,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -971,6 +983,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Delivery"
           ],
@@ -1021,6 +1034,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Lectures will be conducted in person",
             "Office hours available in person or online",
@@ -1194,6 +1208,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -1250,6 +1265,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Description"
           ],
@@ -1300,6 +1316,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Study of fundamental concepts of relational database systems",
             "Entity-Relationship design and relational algebra",
@@ -1445,6 +1462,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -1501,6 +1519,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Description"
           ],
@@ -1551,6 +1570,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Study of fundamental concepts of relational database systems",
             "Entity-Relationship design and relational algebra",
@@ -1742,6 +1762,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -1798,6 +1819,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Objectives"
           ],
@@ -1848,6 +1870,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Design relational databases based on given requirements",
             "Write efficient and correct SQL queries",
@@ -2015,6 +2038,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -2071,6 +2095,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Objectives"
           ],
@@ -2121,6 +2146,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Design relational databases based on given requirements",
             "Write efficient and correct SQL queries",
@@ -2334,6 +2360,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -2390,6 +2417,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Topics Covered"
           ],
@@ -2440,6 +2468,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Relational data model and schema design",
             "SQL (DDL, DML, views, triggers)",
@@ -2651,6 +2680,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -2707,6 +2737,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Topics Covered"
           ],
@@ -2757,6 +2788,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Relational data model and schema design",
             "SQL (DDL, DML, views, triggers)",
@@ -3014,6 +3046,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -3070,6 +3103,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Schedule"
           ],
@@ -3120,6 +3154,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Week 1–3: SQL fundamentals and advanced queries",
             "Week 4–6: Relational model, ER modeling, and design",
@@ -3274,6 +3309,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -3330,6 +3366,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Schedule"
           ],
@@ -3380,6 +3417,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Week 1–3: SQL fundamentals and advanced queries",
             "Week 4–6: Relational model, ER modeling, and design",
@@ -3580,6 +3618,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -3636,6 +3675,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Attendance"
           ],
@@ -3686,6 +3726,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Class attendance is required",
             "Students are responsible for material covered during absences",
@@ -3787,6 +3828,7 @@
           "kind": "text",
           "name": "TextBox 5",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "A: 94–100",
             "A-: 90–93",
@@ -4086,6 +4128,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -4142,6 +4185,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Attendance"
           ],
@@ -4192,6 +4236,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Class attendance is required",
             "Students are responsible for material covered during absences",
@@ -4293,6 +4338,7 @@
           "kind": "text",
           "name": "TextBox 5",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "A: 94–100",
             "A-: 90–93",
@@ -4644,6 +4690,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -4700,6 +4747,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Evaluation"
           ],
@@ -4750,6 +4798,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Homework assignments: 35%",
             "Projects: 35%",
@@ -4895,6 +4944,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -4951,6 +5001,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Evaluation"
           ],
@@ -5001,6 +5052,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Homework assignments: 35%",
             "Projects: 35%",
@@ -5192,6 +5244,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -5248,6 +5301,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Rules"
           ],
@@ -5298,6 +5352,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "All assignments must be completed individually unless stated otherwise",
             "No missed exams without documented and approved reasons",
@@ -5443,6 +5498,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -5499,6 +5555,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Rules"
           ],
@@ -5549,6 +5606,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "All assignments must be completed individually unless stated otherwise",
             "No missed exams without documented and approved reasons",
@@ -5740,6 +5798,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -5796,6 +5855,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Attendance & Classroom Civility"
           ],
@@ -5846,6 +5906,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Class attendance is essential for success.",
             "Arrive on time and stay for the full class.",
@@ -5989,6 +6050,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "11"
           ],
@@ -6012,11 +6074,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -6024,6 +6100,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -6080,6 +6157,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Attendance & Classroom Civility"
           ],
@@ -6130,6 +6208,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Class attendance is essential for success.",
             "Arrive on time and stay for the full class.",
@@ -6273,6 +6352,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "11"
           ],
@@ -6296,11 +6376,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "scene": {
@@ -6360,6 +6454,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -6416,6 +6511,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Basic Needs Support"
           ],
@@ -6466,6 +6562,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Panther Community Care Center (PCCC), Campus Center K-100.",
             "Hours: Monday–Friday, 9:00 AM – 5:00 PM.",
@@ -6631,6 +6728,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "12"
           ],
@@ -6654,11 +6752,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -6666,6 +6778,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -6722,6 +6835,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Basic Needs Support"
           ],
@@ -6772,6 +6886,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Panther Community Care Center (PCCC), Campus Center K-100.",
             "Hours: Monday–Friday, 9:00 AM – 5:00 PM.",
@@ -6937,6 +7052,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "12"
           ],
@@ -6960,11 +7076,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "scene": {
@@ -7024,6 +7154,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -7080,6 +7211,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Counseling & Mental Health Resources"
           ],
@@ -7130,6 +7262,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Counseling and Psychological Wellness Services are free and confidential.",
             "Location: Campus Center I-Wing, Wellness Wing, Suite 102.",
@@ -7295,6 +7428,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "13"
           ],
@@ -7318,11 +7452,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -7330,6 +7478,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -7386,6 +7535,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Counseling & Mental Health Resources"
           ],
@@ -7436,6 +7586,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Counseling and Psychological Wellness Services are free and confidential.",
             "Location: Campus Center I-Wing, Wellness Wing, Suite 102.",
@@ -7601,6 +7752,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "13"
           ],
@@ -7624,11 +7776,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "scene": {
@@ -7688,6 +7854,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -7744,6 +7911,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Title IX, Safety & Discrimination"
           ],
@@ -7794,6 +7962,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "SUNY Old Westbury prohibits sexual discrimination, harassment, and violence.",
             "Title IX protects against sex-based discrimination and harassment.",
@@ -8003,6 +8172,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "14"
           ],
@@ -8026,11 +8196,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -8038,6 +8222,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -8094,6 +8279,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Title IX, Safety & Discrimination"
           ],
@@ -8144,6 +8330,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "SUNY Old Westbury prohibits sexual discrimination, harassment, and violence.",
             "Title IX protects against sex-based discrimination and harassment.",
@@ -8353,6 +8540,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "14"
           ],
@@ -8376,11 +8564,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "scene": {
@@ -8440,6 +8642,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -8496,6 +8699,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Academic Integrity & Misconduct"
           ],
@@ -8546,6 +8750,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Students are expected to maintain the highest standards of academic honesty.",
             "Cheating, plagiarism, and forgery are serious offenses.",
@@ -8689,6 +8894,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "15"
           ],
@@ -8712,11 +8918,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -8724,6 +8944,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -8780,6 +9001,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Academic Integrity & Misconduct"
           ],
@@ -8830,6 +9052,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Students are expected to maintain the highest standards of academic honesty.",
             "Cheating, plagiarism, and forgery are serious offenses.",
@@ -8973,6 +9196,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "15"
           ],
@@ -8996,11 +9220,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "scene": {
@@ -9060,6 +9298,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -9116,6 +9355,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Accommodations & Accessibility"
           ],
@@ -9166,6 +9406,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Students with disabilities are encouraged to contact the",
             "Office of Services for Students with Disabilities (OSSD).",
@@ -9301,6 +9542,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "16"
           ],
@@ -9324,11 +9566,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -9336,6 +9592,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -9392,6 +9649,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Accommodations & Accessibility"
           ],
@@ -9442,6 +9700,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Students with disabilities are encouraged to contact the",
             "Office of Services for Students with Disabilities (OSSD).",
@@ -9577,6 +9836,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "16"
           ],
@@ -9600,11 +9860,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "scene": {
@@ -9664,6 +9938,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -9720,6 +9995,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Proctorio & Online Meeting Policy"
           ],
@@ -9770,6 +10046,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Exams or quizzes may be proctored using Proctorio via Blackboard.",
             "Students need a webcam, microphone, Chrome browser, and reliable internet.",
@@ -9921,6 +10198,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "17"
           ],
@@ -9944,11 +10222,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -9956,6 +10248,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -10012,6 +10305,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Proctorio & Online Meeting Policy"
           ],
@@ -10062,6 +10356,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Exams or quizzes may be proctored using Proctorio via Blackboard.",
             "Students need a webcam, microphone, Chrome browser, and reliable internet.",
@@ -10213,6 +10508,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "17"
           ],
@@ -10236,11 +10532,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 5
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "scene": {

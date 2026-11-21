@@ -16,6 +16,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "ctrTitle",
+          "placeholder_idx": null,
           "paragraphs": [
             "Intro to Databases"
           ],
@@ -43,16 +44,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 1524000,
+            "y": 1122363,
+            "width": 9144000,
+            "height": 2387600,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "ctrTitle",
+            "idx": null,
+            "layout_object_name": "Title 1"
+          }
         },
         {
           "kind": "text",
           "name": "Subtitle 2",
           "placeholder": "subTitle",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Lecture 1: Course Overview"
           ],
@@ -75,16 +91,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 1524000,
+            "y": 3602038,
+            "width": 9144000,
+            "height": 1655762,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "subTitle",
+            "idx": "1",
+            "layout_object_name": "Subtitle 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "1"
           ],
@@ -108,16 +139,31 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
           "name": "Rectangle 5",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -157,6 +203,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Based on Stanford CS 145 & previous offering of CECS 535"
           ],
@@ -208,6 +255,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "ctrTitle",
+          "placeholder_idx": null,
           "paragraphs": [
             "Intro to Databases"
           ],
@@ -235,16 +283,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 1524000,
+            "y": 1122363,
+            "width": 9144000,
+            "height": 2387600,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "ctrTitle",
+            "idx": null,
+            "layout_object_name": "Title 1"
+          }
         },
         {
           "kind": "text",
           "name": "Subtitle 2",
           "placeholder": "subTitle",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Lecture 1: Course Overview"
           ],
@@ -267,16 +330,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 1524000,
+            "y": 3602038,
+            "width": 9144000,
+            "height": 1655762,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "subTitle",
+            "idx": "1",
+            "layout_object_name": "Subtitle 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "1"
           ],
@@ -300,16 +378,31 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
           "name": "Rectangle 5",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -349,6 +442,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Based on Stanford CS 145 & previous offering of CECS 535"
           ],
@@ -452,6 +546,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "The world is increasingly \ndriven by data…"
           ],
@@ -511,6 +606,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "2"
           ],
@@ -534,16 +630,31 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "Title 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "This class teaches the basics of how to use & manage data."
           ],
@@ -605,6 +716,7 @@
           "kind": "drawing",
           "name": "Rectangle 5",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -646,6 +758,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "The world is increasingly \ndriven by data…"
           ],
@@ -705,6 +818,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "2"
           ],
@@ -728,16 +842,31 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "Title 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "This class teaches the basics of how to use & manage data."
           ],
@@ -799,6 +928,7 @@
           "kind": "drawing",
           "name": "Rectangle 5",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -886,6 +1016,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Key Questions We Will Answer"
           ],
@@ -908,16 +1039,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "How can we collect and store large amounts of data?",
             "By building tools and data structures to efficiently index and serve data",
@@ -1128,16 +1274,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "3"
           ],
@@ -1161,16 +1322,31 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
           "name": "Rectangle 7",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -1212,6 +1388,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Key Questions We Will Answer"
           ],
@@ -1234,16 +1411,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "How can we collect and store large amounts of data?",
             "By building tools and data structures to efficiently index and serve data",
@@ -1454,16 +1646,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "3"
           ],
@@ -1487,16 +1694,31 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
           "name": "Rectangle 7",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -1584,6 +1806,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "When you’ll use this material"
           ],
@@ -1606,16 +1829,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Building almost any software application",
             "e.g., mobile, cloud, consumer, enterprise, analytics, machine learning",
@@ -1802,16 +2040,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "4"
           ],
@@ -1835,11 +2088,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -1847,6 +2114,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "When you’ll use this material"
           ],
@@ -1869,16 +2137,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Building almost any software application",
             "e.g., mobile, cloud, consumer, enterprise, analytics, machine learning",
@@ -2065,16 +2348,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "4"
           ],
@@ -2098,11 +2396,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "scene": {
@@ -2150,6 +2462,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Big Data Landscape… \nInfrastructure is Changing"
           ],
@@ -2181,16 +2494,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "5"
           ],
@@ -2249,6 +2577,7 @@
           "kind": "text",
           "name": "Rectangle 6",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "http://www.bigdatalandscape.com/"
           ],
@@ -2309,6 +2638,7 @@
           "kind": "text",
           "name": "TextBox 2",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "New tech. Same Principles."
           ],
@@ -2470,6 +2800,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Big Data Landscape… \nInfrastructure is Changing"
           ],
@@ -2501,16 +2832,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "5"
           ],
@@ -2569,6 +2915,7 @@
           "kind": "text",
           "name": "Rectangle 6",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "http://www.bigdatalandscape.com/"
           ],
@@ -2629,6 +2976,7 @@
           "kind": "text",
           "name": "TextBox 2",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "New tech. Same Principles."
           ],
@@ -2856,6 +3204,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Why should you study databases?"
           ],
@@ -2888,16 +3237,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Mercenary- make more $$$:",
             "Startups need DB talent right away = low employee #",
@@ -3068,16 +3432,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 13",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "6"
           ],
@@ -3101,11 +3480,25 @@
           ],
           "object_type": "sp",
           "shape_id": "14",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -3193,6 +3586,7 @@
           "kind": "drawing",
           "name": "TextBox 11",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -3224,6 +3618,7 @@
           "kind": "text",
           "name": "TextBox 14",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Many great computer systems ideas started in DB."
           ],
@@ -3359,6 +3754,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Why should you study databases?"
           ],
@@ -3391,16 +3787,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Mercenary- make more $$$:",
             "Startups need DB talent right away = low employee #",
@@ -3571,16 +3982,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 13",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "6"
           ],
@@ -3604,11 +4030,25 @@
           ],
           "object_type": "sp",
           "shape_id": "14",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -3696,6 +4136,7 @@
           "kind": "drawing",
           "name": "TextBox 11",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -3727,6 +4168,7 @@
           "kind": "text",
           "name": "TextBox 14",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Many great computer systems ideas started in DB."
           ],
@@ -4036,6 +4478,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "What this course is (and is not)"
           ],
@@ -4058,16 +4501,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Discuss fundamentals of data management",
             "How to design databases, query databases, build applications with them.",
@@ -4207,16 +4665,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "7"
           ],
@@ -4240,11 +4713,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -4330,6 +4817,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "What this course is (and is not)"
           ],
@@ -4352,16 +4840,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Discuss fundamentals of data management",
             "How to design databases, query databases, build applications with them.",
@@ -4501,16 +5004,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "7"
           ],
@@ -4534,11 +5052,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -4713,6 +5245,7 @@
           "kind": "text",
           "name": "Rectangle 2",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Lectures"
           ],
@@ -4735,16 +5268,31 @@
           ],
           "object_type": "sp",
           "shape_id": "69634",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Rectangle 3",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Lecture slides cover essential material",
             "Book provides more breath knowledge and explanation",
@@ -4855,6 +5403,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "8"
           ],
@@ -4878,11 +5427,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -5008,6 +5571,7 @@
           "kind": "text",
           "name": "Rectangle 2",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Lectures"
           ],
@@ -5030,16 +5594,31 @@
           ],
           "object_type": "sp",
           "shape_id": "69634",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Rectangle 3",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Lecture slides cover essential material",
             "Book provides more breath knowledge and explanation",
@@ -5150,6 +5729,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "8"
           ],
@@ -5173,11 +5753,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -5390,6 +5984,7 @@
           "kind": "text",
           "name": "Rectangle 2",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Attendance"
           ],
@@ -5412,16 +6007,31 @@
           ],
           "object_type": "sp",
           "shape_id": "69634",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Rectangle 3",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "I dislike mandatory attendance… but in the past we noticed…",
             "People who did not attend did worse ",
@@ -5535,6 +6145,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "9"
           ],
@@ -5558,11 +6169,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -5648,6 +6273,7 @@
           "kind": "text",
           "name": "Rectangle 2",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Attendance"
           ],
@@ -5670,16 +6296,31 @@
           ],
           "object_type": "sp",
           "shape_id": "69634",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Rectangle 3",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "I dislike mandatory attendance… but in the past we noticed…",
             "People who did not attend did worse ",
@@ -5793,6 +6434,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "9"
           ],
@@ -5816,11 +6458,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -5981,6 +6637,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Lectures: 1st half - from a user’s perspective"
           ],
@@ -6013,16 +6670,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Foundations: Relational data models & SQL",
             "Lectures 2-3",
@@ -6254,16 +6926,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "10"
           ],
@@ -6287,11 +6974,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -6377,6 +7078,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Lectures: 1st half - from a user’s perspective"
           ],
@@ -6409,16 +7111,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Foundations: Relational data models & SQL",
             "Lectures 2-3",
@@ -6650,16 +7367,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "10"
           ],
@@ -6683,11 +7415,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -6819,6 +7565,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Lectures: 2nd half - understanding how it works"
           ],
@@ -6869,6 +7616,7 @@
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "4. Introduction to database systems",
             "Lectures 9-16",
@@ -7135,6 +7883,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "11"
           ],
@@ -7158,11 +7907,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -7248,6 +8011,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Lectures: 2nd half - understanding how it works"
           ],
@@ -7298,6 +8062,7 @@
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "4. Introduction to database systems",
             "Lectures 9-16",
@@ -7564,6 +8329,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "11"
           ],
@@ -7587,11 +8353,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -7723,6 +8503,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "2. Overview of the relational data model"
           ],
@@ -7745,30 +8526,60 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 831850,
+            "y": 1709738,
+            "width": 10515600,
+            "height": 2852737,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title 1"
+          }
         },
         {
           "kind": "drawing",
           "name": "Text Placeholder 2",
           "placeholder": "body",
+          "placeholder_idx": "1",
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 831850,
+            "y": 4589463,
+            "width": 10515600,
+            "height": 1500187,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "body",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "12"
           ],
@@ -7792,11 +8603,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -7882,6 +8707,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "2. Overview of the relational data model"
           ],
@@ -7904,30 +8730,60 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 831850,
+            "y": 1709738,
+            "width": 10515600,
+            "height": 2852737,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title 1"
+          }
         },
         {
           "kind": "drawing",
           "name": "Text Placeholder 2",
           "placeholder": "body",
+          "placeholder_idx": "1",
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 831850,
+            "y": 4589463,
+            "width": 10515600,
+            "height": 1500187,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "body",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "12"
           ],
@@ -7951,11 +8807,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -8087,6 +8957,7 @@
           "kind": "drawing",
           "name": "Rectangle 9",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -8126,6 +8997,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "What you will learn about in this section"
           ],
@@ -8148,16 +9020,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Definition of DBMS",
             "Data models & the relational data model",
@@ -8290,6 +9177,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "13"
           ],
@@ -8313,11 +9201,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 4
+          "source_order": 4,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -8403,6 +9305,7 @@
           "kind": "drawing",
           "name": "Rectangle 9",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -8442,6 +9345,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "What you will learn about in this section"
           ],
@@ -8464,16 +9368,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Definition of DBMS",
             "Data models & the relational data model",
@@ -8606,6 +9525,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "13"
           ],
@@ -8629,11 +9549,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 4
+          "source_order": 4,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -8771,6 +9705,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "What is a DBMS?"
           ],
@@ -8793,16 +9728,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "What is DB?",
             "A large, integrated collection of data",
@@ -8930,16 +9880,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "14"
           ],
@@ -8963,16 +9928,31 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "A Database Management System (DBMS) is a piece of software designed to store and manage databases"
           ],
@@ -9130,6 +10110,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "What is a DBMS?"
           ],
@@ -9152,16 +10133,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "What is DB?",
             "A large, integrated collection of data",
@@ -9289,16 +10285,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "14"
           ],
@@ -9322,16 +10333,31 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "A Database Management System (DBMS) is a piece of software designed to store and manage databases"
           ],
@@ -9584,6 +10610,7 @@
           "kind": "text",
           "name": "Rectangle 9",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "A Motivating, Running Example"
           ],
@@ -9606,16 +10633,31 @@
           ],
           "object_type": "sp",
           "shape_id": "10249",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Rectangle 10",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Consider building a course management system (CMS):",
             "Students",
@@ -9743,16 +10785,31 @@
           ],
           "object_type": "sp",
           "shape_id": "10250",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "15"
           ],
@@ -9776,16 +10833,31 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
           "name": "Right Brace 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -9828,6 +10900,7 @@
           "kind": "text",
           "name": "TextBox 5",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Entities"
           ],
@@ -9885,6 +10958,7 @@
           "kind": "drawing",
           "name": "Right Brace 6",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -9927,6 +11001,7 @@
           "kind": "text",
           "name": "TextBox 7",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Relationships"
           ],
@@ -10064,6 +11139,7 @@
           "kind": "text",
           "name": "Rectangle 9",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "A Motivating, Running Example"
           ],
@@ -10086,16 +11162,31 @@
           ],
           "object_type": "sp",
           "shape_id": "10249",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Rectangle 10",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Consider building a course management system (CMS):",
             "Students",
@@ -10223,16 +11314,31 @@
           ],
           "object_type": "sp",
           "shape_id": "10250",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "15"
           ],
@@ -10256,16 +11362,31 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
           "name": "Right Brace 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -10308,6 +11429,7 @@
           "kind": "text",
           "name": "TextBox 5",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Entities"
           ],
@@ -10365,6 +11487,7 @@
           "kind": "drawing",
           "name": "Right Brace 6",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -10407,6 +11530,7 @@
           "kind": "text",
           "name": "TextBox 7",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Relationships"
           ],
@@ -10685,6 +11809,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Data models"
           ],
@@ -10707,16 +11832,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "A data model is a collection of concepts for describing data",
             "The relational model of data is the most widely used model today",
@@ -10896,6 +12036,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "16"
           ],
@@ -10919,11 +12060,25 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -11009,6 +12164,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Data models"
           ],
@@ -11031,16 +12187,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "A data model is a collection of concepts for describing data",
             "The relational model of data is the most widely used model today",
@@ -11220,6 +12391,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "16"
           ],
@@ -11243,11 +12415,25 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -11415,6 +12601,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "“Relational databases form the bedrock of western civilization”"
           ],
@@ -11455,6 +12642,7 @@
           "kind": "text",
           "name": "Text Placeholder 2",
           "placeholder": "body",
+          "placeholder_idx": "1",
           "paragraphs": [
             "- Bruce Lindsay, IBM Research"
           ],
@@ -11496,6 +12684,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "17"
           ],
@@ -11519,11 +12708,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -11626,6 +12829,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "“Relational databases form the bedrock of western civilization”"
           ],
@@ -11666,6 +12870,7 @@
           "kind": "text",
           "name": "Text Placeholder 2",
           "placeholder": "body",
+          "placeholder_idx": "1",
           "paragraphs": [
             "- Bruce Lindsay, IBM Research"
           ],
@@ -11707,6 +12912,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "17"
           ],
@@ -11730,11 +12936,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -11889,6 +13109,7 @@
           "kind": "drawing",
           "name": "Rectangle 14",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -11928,6 +13149,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Modeling the CMS"
           ],
@@ -11950,16 +13172,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Logical Schema",
             "Students(sid: string, name: string, gpa: float)",
@@ -12199,6 +13436,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 13",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "18"
           ],
@@ -12222,11 +13460,25 @@
           ],
           "object_type": "sp",
           "shape_id": "14",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 4
+          "source_order": 4,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "table",
@@ -12266,6 +13518,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Students"
           ],
@@ -12353,6 +13606,7 @@
           "kind": "text",
           "name": "TextBox 6",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Courses"
           ],
@@ -12435,6 +13689,7 @@
           "kind": "text",
           "name": "TextBox 8",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Enrolled"
           ],
@@ -12488,6 +13743,7 @@
           "kind": "text",
           "name": "TextBox 15",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Relations"
           ],
@@ -12621,6 +13877,7 @@
           "kind": "drawing",
           "name": "Rectangle 14",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -12660,6 +13917,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Modeling the CMS"
           ],
@@ -12682,16 +13940,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Logical Schema",
             "Students(sid: string, name: string, gpa: float)",
@@ -12931,6 +14204,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 13",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "18"
           ],
@@ -12954,11 +14228,25 @@
           ],
           "object_type": "sp",
           "shape_id": "14",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 4
+          "source_order": 4,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "table",
@@ -12998,6 +14286,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Students"
           ],
@@ -13085,6 +14374,7 @@
           "kind": "text",
           "name": "TextBox 6",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Courses"
           ],
@@ -13167,6 +14457,7 @@
           "kind": "text",
           "name": "TextBox 8",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Enrolled"
           ],
@@ -13220,6 +14511,7 @@
           "kind": "text",
           "name": "TextBox 15",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Relations"
           ],
@@ -13427,9 +14719,22 @@
         "connections": [],
         "object_count": 12,
         "concept_candidates": {
-          "type": null,
-          "confidence": "none",
-          "evidence_shape_ids": [],
+          "type": "diagram",
+          "confidence": "layout heuristic",
+          "evidence_shape_ids": [
+            "15",
+            "2",
+            "3",
+            "14",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "16",
+            "18"
+          ],
           "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
         }
       },
@@ -13532,6 +14837,7 @@
           "kind": "drawing",
           "name": "Rectangle 14",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -13571,6 +14877,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Modeling the CMS"
           ],
@@ -13593,16 +14900,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Logical Schema",
             "Students(sid: string, name: string, gpa: float)",
@@ -13842,6 +15164,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 13",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "19"
           ],
@@ -13865,11 +15188,25 @@
           ],
           "object_type": "sp",
           "shape_id": "14",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 4
+          "source_order": 4,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "table",
@@ -13909,6 +15246,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Students"
           ],
@@ -13996,6 +15334,7 @@
           "kind": "text",
           "name": "TextBox 6",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Courses"
           ],
@@ -14078,6 +15417,7 @@
           "kind": "text",
           "name": "TextBox 8",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Enrolled"
           ],
@@ -14205,6 +15545,7 @@
           "kind": "text",
           "name": "TextBox 15",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Corresponding keys"
           ],
@@ -14345,6 +15686,7 @@
           "kind": "drawing",
           "name": "Rectangle 14",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -14384,6 +15726,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Modeling the CMS"
           ],
@@ -14406,16 +15749,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Logical Schema",
             "Students(sid: string, name: string, gpa: float)",
@@ -14655,6 +16013,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 13",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "19"
           ],
@@ -14678,11 +16037,25 @@
           ],
           "object_type": "sp",
           "shape_id": "14",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 4
+          "source_order": 4,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "table",
@@ -14722,6 +16095,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Students"
           ],
@@ -14809,6 +16183,7 @@
           "kind": "text",
           "name": "TextBox 6",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Courses"
           ],
@@ -14891,6 +16266,7 @@
           "kind": "text",
           "name": "TextBox 8",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Enrolled"
           ],
@@ -15018,6 +16394,7 @@
           "kind": "text",
           "name": "TextBox 15",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Corresponding keys"
           ],
@@ -15263,7 +16640,9 @@
           "confidence": "layout heuristic",
           "evidence_shape_ids": [
             "15",
+            "2",
             "3",
+            "14",
             "4",
             "5",
             "6",
@@ -15360,6 +16739,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Other Schemata…"
           ],
@@ -15382,16 +16762,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Physical Schema: describes data layout",
             "Relations as unordered files",
@@ -15566,16 +16961,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 12",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "20"
           ],
@@ -15599,16 +17009,31 @@
           ],
           "object_type": "sp",
           "shape_id": "13",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 8",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Applications"
           ],
@@ -15661,6 +17086,7 @@
           "kind": "text",
           "name": "TextBox 9",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Administrators"
           ],
@@ -15713,6 +17139,7 @@
           "kind": "drawing",
           "name": "Up Arrow 10",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -15745,6 +17172,7 @@
           "kind": "drawing",
           "name": "Down Arrow 11",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -15857,6 +17285,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Other Schemata…"
           ],
@@ -15879,16 +17308,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Physical Schema: describes data layout",
             "Relations as unordered files",
@@ -16063,16 +17507,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 12",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "20"
           ],
@@ -16096,16 +17555,31 @@
           ],
           "object_type": "sp",
           "shape_id": "13",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 8",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Applications"
           ],
@@ -16158,6 +17632,7 @@
           "kind": "text",
           "name": "TextBox 9",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Administrators"
           ],
@@ -16210,6 +17685,7 @@
           "kind": "drawing",
           "name": "Up Arrow 10",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -16242,6 +17718,7 @@
           "kind": "drawing",
           "name": "Down Arrow 11",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -16453,6 +17930,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Data independence"
           ],
@@ -16475,16 +17953,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Concept: Applications do not need to worry about how the data is structured and stored"
           ],
@@ -16541,6 +18034,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 6",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "21"
           ],
@@ -16564,16 +18058,31 @@
           ],
           "object_type": "sp",
           "shape_id": "7",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Logical data independence: protection from changes in the logical structure of the data"
           ],
@@ -16660,6 +18169,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Physical data independence: protection from physical layout changes"
           ],
@@ -16746,6 +18256,7 @@
           "kind": "text",
           "name": "TextBox 5",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "One of the most important reasons to use a DBMS"
           ],
@@ -16878,6 +18389,7 @@
           "kind": "text",
           "name": "Rectangle 10",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "I.e. should not need to ask: can we add  a new entity or attribute without rewriting the application?"
           ],
@@ -16926,6 +18438,7 @@
           "kind": "text",
           "name": "Rectangle 11",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "I.e. should not need to ask: which disks are the data stored on? Is the data indexed?"
           ],
@@ -16976,6 +18489,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Data independence"
           ],
@@ -16998,16 +18512,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Concept: Applications do not need to worry about how the data is structured and stored"
           ],
@@ -17064,6 +18593,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 6",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "21"
           ],
@@ -17087,16 +18617,31 @@
           ],
           "object_type": "sp",
           "shape_id": "7",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Logical data independence: protection from changes in the logical structure of the data"
           ],
@@ -17183,6 +18728,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Physical data independence: protection from physical layout changes"
           ],
@@ -17269,6 +18815,7 @@
           "kind": "text",
           "name": "TextBox 5",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "One of the most important reasons to use a DBMS"
           ],
@@ -17401,6 +18948,7 @@
           "kind": "text",
           "name": "Rectangle 10",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "I.e. should not need to ask: can we add  a new entity or attribute without rewriting the application?"
           ],
@@ -17449,6 +18997,7 @@
           "kind": "text",
           "name": "Rectangle 11",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "I.e. should not need to ask: which disks are the data stored on? Is the data indexed?"
           ],
@@ -17618,6 +19167,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Activity-1-2.ipynb"
           ],
@@ -17640,16 +19190,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 831850,
+            "y": 1709738,
+            "width": 10515600,
+            "height": 2852737,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title 1"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "22"
           ],
@@ -17673,11 +19238,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -17763,6 +19342,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Activity-1-2.ipynb"
           ],
@@ -17785,16 +19365,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 831850,
+            "y": 1709738,
+            "width": 10515600,
+            "height": 2852737,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title 1"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "22"
           ],
@@ -17818,11 +19413,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -17948,6 +19557,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "3. Overview of DBMS topics"
           ],
@@ -17970,16 +19580,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 831850,
+            "y": 1709738,
+            "width": 10515600,
+            "height": 2852737,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title 1"
+          }
         },
         {
           "kind": "text",
           "name": "Text Placeholder 2",
           "placeholder": "body",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Key concepts & challenges"
           ],
@@ -18002,16 +19627,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 831850,
+            "y": 4589463,
+            "width": 10515600,
+            "height": 1500187,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "body",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "23"
           ],
@@ -18035,11 +19675,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -18125,6 +19779,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "3. Overview of DBMS topics"
           ],
@@ -18147,16 +19802,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 831850,
+            "y": 1709738,
+            "width": 10515600,
+            "height": 2852737,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title 1"
+          }
         },
         {
           "kind": "text",
           "name": "Text Placeholder 2",
           "placeholder": "body",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Key concepts & challenges"
           ],
@@ -18179,16 +19849,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 831850,
+            "y": 4589463,
+            "width": 10515600,
+            "height": 1500187,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "layout",
+          "layout_placeholder": {
+            "type": "body",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "23"
           ],
@@ -18212,11 +19897,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -18348,6 +20047,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "What you will learn about in this section"
           ],
@@ -18370,16 +20070,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Transactions",
             "Concurrency & locking",
@@ -18500,6 +20215,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "24"
           ],
@@ -18523,11 +20239,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -18613,6 +20343,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "What you will learn about in this section"
           ],
@@ -18635,16 +20366,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Transactions",
             "Concurrency & locking",
@@ -18765,6 +20511,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "24"
           ],
@@ -18788,11 +20535,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -18924,6 +20685,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Challenges with Many Users"
           ],
@@ -18946,16 +20708,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Suppose that our CMS application serves 1000’s of users or more- what are some challenges?"
           ],
@@ -19002,6 +20779,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "25"
           ],
@@ -19025,16 +20803,31 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "DBMS allows user to write programs",
             "as if they were the only user"
@@ -19122,6 +20915,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Disk/SSD access is slow, DBMS hide the latency by doing more CPU work concurrently"
           ],
@@ -19256,6 +21050,7 @@
           "kind": "text",
           "name": "Rectangle 9",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Security: Different users, different roles",
             "Performance: Need to provide concurrent access",
@@ -19379,6 +21174,7 @@
           "kind": "text",
           "name": "TextBox 10",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "We won’t look at too much in this course, but is extremely important"
           ],
@@ -19449,6 +21245,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Challenges with Many Users"
           ],
@@ -19471,16 +21268,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "Suppose that our CMS application serves 1000’s of users or more- what are some challenges?"
           ],
@@ -19527,6 +21339,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "25"
           ],
@@ -19550,16 +21363,31 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "DBMS allows user to write programs",
             "as if they were the only user"
@@ -19647,6 +21475,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Disk/SSD access is slow, DBMS hide the latency by doing more CPU work concurrently"
           ],
@@ -19781,6 +21610,7 @@
           "kind": "text",
           "name": "Rectangle 9",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Security: Different users, different roles",
             "Performance: Need to provide concurrent access",
@@ -19904,6 +21734,7 @@
           "kind": "text",
           "name": "TextBox 10",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "We won’t look at too much in this course, but is extremely important"
           ],
@@ -20094,6 +21925,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Transactions"
           ],
@@ -20116,16 +21948,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "A key concept is the transaction (TXN): an atomic sequence of db actions (reads/writes)"
           ],
@@ -20198,6 +22045,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "26"
           ],
@@ -20221,16 +22069,31 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Atomicity: An action either completes entirely or not at all"
           ],
@@ -20456,6 +22319,7 @@
           "kind": "text",
           "name": "TextBox 12",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Transfer $3k from A to B:",
             "Debit $3k from A",
@@ -20556,6 +22420,7 @@
           "kind": "text",
           "name": "TextBox 14",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Crash before 1,",
             "After 1 but before 2,",
@@ -20661,6 +22526,7 @@
           "kind": "text",
           "name": "TextBox 15",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Written naively, in which states is atomicity preserved?"
           ],
@@ -20726,6 +22592,7 @@
           "kind": "text",
           "name": "TextBox 16",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "DB Always preserves atomicity!"
           ],
@@ -20781,6 +22648,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Transactions"
           ],
@@ -20803,16 +22671,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "A key concept is the transaction (TXN): an atomic sequence of db actions (reads/writes)"
           ],
@@ -20885,6 +22768,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "26"
           ],
@@ -20908,16 +22792,31 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Atomicity: An action either completes entirely or not at all"
           ],
@@ -21143,6 +23042,7 @@
           "kind": "text",
           "name": "TextBox 12",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Transfer $3k from A to B:",
             "Debit $3k from A",
@@ -21243,6 +23143,7 @@
           "kind": "text",
           "name": "TextBox 14",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Crash before 1,",
             "After 1 but before 2,",
@@ -21348,6 +23249,7 @@
           "kind": "text",
           "name": "TextBox 15",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Written naively, in which states is atomicity preserved?"
           ],
@@ -21413,6 +23315,7 @@
           "kind": "text",
           "name": "TextBox 16",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "DB Always preserves atomicity!"
           ],
@@ -21606,6 +23509,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Transactions"
           ],
@@ -21628,16 +23532,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "A key concept is the transaction (TXN): an atomic sequence of db actions (reads/writes)",
             "If a user cancels a TXN, it should be as if nothing happened!",
@@ -21790,6 +23709,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "27"
           ],
@@ -21813,16 +23733,31 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Atomicity: An action either completes entirely or not at all"
           ],
@@ -21986,6 +23921,7 @@
           "kind": "text",
           "name": "TextBox 8",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Consistency: An action results in a state which conforms to all integrity constraints"
           ],
@@ -22048,6 +23984,7 @@
           "kind": "text",
           "name": "Rectangle 9",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "However, note that the DBMS does not understand the real meaning of the constraints– consistency burden is still on the user!"
           ],
@@ -22128,6 +24065,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Transactions"
           ],
@@ -22150,16 +24088,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "A key concept is the transaction (TXN): an atomic sequence of db actions (reads/writes)",
             "If a user cancels a TXN, it should be as if nothing happened!",
@@ -22312,6 +24265,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "27"
           ],
@@ -22335,16 +24289,31 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Atomicity: An action either completes entirely or not at all"
           ],
@@ -22508,6 +24477,7 @@
           "kind": "text",
           "name": "TextBox 8",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Consistency: An action results in a state which conforms to all integrity constraints"
           ],
@@ -22570,6 +24540,7 @@
           "kind": "text",
           "name": "Rectangle 9",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "However, note that the DBMS does not understand the real meaning of the constraints– consistency burden is still on the user!"
           ],
@@ -22764,6 +24735,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Challenge: Scheduling Concurrent Transactions"
           ],
@@ -22786,16 +24758,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "The DBMS ensures that the execution of {T1,…,Tn} is equivalent to some serial execution",
             "One way to accomplish this: Locking",
@@ -23067,6 +25054,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "28"
           ],
@@ -23090,16 +25078,31 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "A set of TXNs is isolated if their effect is as if all were executed serially"
           ],
@@ -23247,6 +25250,7 @@
           "kind": "text",
           "name": "Rectangle 9",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "What if Ti and Tj need X and Y, and Ti asks for X before Tj, and Tj asks for Y before Ti?",
             "-> Deadlock!  One is aborted…"
@@ -23433,6 +25437,7 @@
           "kind": "text",
           "name": "Rectangle 10",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "All concurrency issues handled by the DBMS…"
           ],
@@ -23489,6 +25494,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Challenge: Scheduling Concurrent Transactions"
           ],
@@ -23511,16 +25517,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "The DBMS ensures that the execution of {T1,…,Tn} is equivalent to some serial execution",
             "One way to accomplish this: Locking",
@@ -23792,6 +25813,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "28"
           ],
@@ -23815,16 +25837,31 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "A set of TXNs is isolated if their effect is as if all were executed serially"
           ],
@@ -23972,6 +26009,7 @@
           "kind": "text",
           "name": "Rectangle 9",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "What if Ti and Tj need X and Y, and Ti asks for X before Tj, and Tj asks for Y before Ti?",
             "-> Deadlock!  One is aborted…"
@@ -24158,6 +26196,7 @@
           "kind": "text",
           "name": "Rectangle 10",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "All concurrency issues handled by the DBMS…"
           ],
@@ -24342,6 +26381,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Ensuring Atomicity & Durability"
           ],
@@ -24364,16 +26404,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "DBMS ensures atomicity even if a TXN crashes!",
             "One way to accomplish this: Write-ahead logging (WAL)",
@@ -24505,6 +26560,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "29"
           ],
@@ -24528,16 +26584,31 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Write-ahead Logging (WAL): Before any action is finalized, a corresponding log entry is forced to disk"
           ],
@@ -24678,6 +26749,7 @@
           "kind": "text",
           "name": "Rectangle 9",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "We assume that the log is on “stable” storage"
           ],
@@ -24730,6 +26802,7 @@
           "kind": "text",
           "name": "Rectangle 10",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "All atomicity issues also handled by the DBMS…"
           ],
@@ -24786,6 +26859,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Ensuring Atomicity & Durability"
           ],
@@ -24808,16 +26882,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "DBMS ensures atomicity even if a TXN crashes!",
             "One way to accomplish this: Write-ahead logging (WAL)",
@@ -24949,6 +27038,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "29"
           ],
@@ -24972,16 +27062,31 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Write-ahead Logging (WAL): Before any action is finalized, a corresponding log entry is forced to disk"
           ],
@@ -25122,6 +27227,7 @@
           "kind": "text",
           "name": "Rectangle 9",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "We assume that the log is on “stable” storage"
           ],
@@ -25174,6 +27280,7 @@
           "kind": "text",
           "name": "Rectangle 10",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "All atomicity issues also handled by the DBMS…"
           ],
@@ -25344,6 +27451,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "A Well-Designed DBMS makes many people happy!"
           ],
@@ -25384,6 +27492,7 @@
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "End users and DBMS vendors",
             "Reduces cost and makes money",
@@ -25513,6 +27622,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "30"
           ],
@@ -25536,16 +27646,31 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Must still understand",
             "DB internals"
@@ -25700,6 +27825,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "A Well-Designed DBMS makes many people happy!"
           ],
@@ -25740,6 +27866,7 @@
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "End users and DBMS vendors",
             "Reduces cost and makes money",
@@ -25869,6 +27996,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 4",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "30"
           ],
@@ -25892,16 +28020,31 @@
           ],
           "object_type": "sp",
           "shape_id": "5",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Must still understand",
             "DB internals"
@@ -26158,6 +28301,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Summary of DBMS"
           ],
@@ -26180,16 +28324,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "DBMS are used to maintain, query, and manage large datasets.",
             "Provide concurrency, recovery from crashes, quick application development, integrity, and security",
@@ -26275,16 +28434,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "31"
           ],
@@ -26308,11 +28482,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
@@ -26398,6 +28586,7 @@
           "kind": "text",
           "name": "Title 1",
           "placeholder": "title",
+          "placeholder_idx": null,
           "paragraphs": [
             "Summary of DBMS"
           ],
@@ -26420,16 +28609,31 @@
           ],
           "object_type": "sp",
           "shape_id": "2",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 365125,
+            "width": 10515600,
+            "height": 1325563,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 1
+          "source_order": 1,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "title",
+            "idx": null,
+            "layout_object_name": "Title Placeholder 1"
+          }
         },
         {
           "kind": "text",
           "name": "Content Placeholder 2",
           "placeholder": "",
+          "placeholder_idx": "1",
           "paragraphs": [
             "DBMS are used to maintain, query, and manage large datasets.",
             "Provide concurrency, recovery from crashes, quick application development, integrity, and security",
@@ -26515,16 +28719,31 @@
           ],
           "object_type": "sp",
           "shape_id": "3",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 838200,
+            "y": 1825625,
+            "width": 10515600,
+            "height": 4351338,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": "normAutofit"
           },
-          "source_order": 2
+          "source_order": 2,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "",
+            "idx": "1",
+            "layout_object_name": "Text Placeholder 2"
+          }
         },
         {
           "kind": "text",
           "name": "Slide Number Placeholder 3",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "31"
           ],
@@ -26548,11 +28767,25 @@
           ],
           "object_type": "sp",
           "shape_id": "4",
-          "bounds_emu": null,
+          "bounds_emu": {
+            "x": 8610600,
+            "y": 6356350,
+            "width": 2743200,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
           "text_box": {
             "auto_fit": null
           },
-          "source_order": 3
+          "source_order": 3,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         },
         {
           "kind": "drawing",
