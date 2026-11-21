@@ -78,5 +78,5 @@ The published PowerPoints in `lectures/library/` are the source for the browser 
 
 ## Editable non-SQL presentations
 
-Non-SQL PowerPoint content is extracted to structured JSON under content/decks-json/; a separate HTML viewer renders the text, tables, and speaker notes under presentations/editable/. No slide screenshots are used. Run python scripts/pptx_to_json.py to regenerate both layers from source decks in slides/. The PowerPoint files remain the source for diagrams and embedded artwork; those are not yet represented in this first JSON schema.
+Non-SQL PowerPoint content is extracted to structured JSON under content/decks-json/; a separate HTML viewer renders a presentation layer under presentations/editable/. No slide screenshots are used. Run `python scripts/pptx_to_json.py` to regenerate both layers from source decks in `slides/`. JSON retains speaker notes without rendering them, plus ordered scene-object references, positions, editable geometry, text styling, connector links, and animation targets. The viewer still needs work to reproduce PowerPoint layout and styling faithfully. See [the JSON extraction model](docs/pptx-json-schema.md).
 

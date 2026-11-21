@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "source_file": "intro.pptx",
   "slide_size_emu": {
     "width": 9144000,
@@ -82,10 +82,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 2
         }
@@ -161,14 +168,46 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 2
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 2,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -196,6 +235,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -206,7 +249,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -263,10 +310,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -355,10 +409,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "square",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -381,6 +442,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -391,7 +456,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -448,10 +517,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -540,14 +616,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "square",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -575,6 +695,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -585,7 +709,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -642,10 +770,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -760,10 +895,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -786,6 +928,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -796,7 +942,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -853,10 +1003,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -971,14 +1128,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -1006,6 +1207,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -1016,7 +1221,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -1073,10 +1282,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -1209,10 +1425,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -1235,6 +1458,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -1245,7 +1472,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -1302,10 +1533,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -1438,14 +1676,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -1473,6 +1755,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -1483,7 +1769,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -1540,10 +1830,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -1698,10 +1995,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -1724,6 +2028,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -1734,7 +2042,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -1791,10 +2103,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -1949,14 +2268,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -1984,6 +2347,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -1994,7 +2361,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -2051,10 +2422,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -2253,10 +2631,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -2279,6 +2664,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -2289,7 +2678,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -2346,10 +2739,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -2548,14 +2948,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -2583,6 +3027,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -2593,7 +3041,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -2650,10 +3102,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -2795,10 +3254,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -2821,6 +3287,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -2831,7 +3301,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -2888,10 +3362,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -3033,14 +3514,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -3068,6 +3593,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -3078,7 +3607,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -3135,10 +3668,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -3229,10 +3769,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -3519,10 +4066,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 5
         }
@@ -3545,6 +4099,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -3555,7 +4113,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -3612,10 +4174,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -3706,10 +4275,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -3996,14 +4572,64 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 5
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -4031,6 +4657,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -4041,7 +4671,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -4098,10 +4732,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -4234,10 +4875,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -4260,6 +4908,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -4270,7 +4922,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -4327,10 +4983,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -4463,14 +5126,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -4498,6 +5205,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -4508,7 +5219,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -4565,10 +5280,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -4701,10 +5423,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -4727,6 +5456,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -4737,7 +5470,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -4794,10 +5531,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -4930,14 +5674,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -4965,6 +5753,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -4975,7 +5767,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -5032,10 +5828,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -5168,10 +5971,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -5203,6 +6013,9 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
@@ -5224,6 +6037,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -5234,7 +6051,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -5291,10 +6112,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -5427,10 +6255,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -5462,9 +6297,55 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -5492,6 +6373,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -5502,7 +6387,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -5559,10 +6448,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -5717,10 +6613,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -5752,6 +6655,9 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
@@ -5773,6 +6679,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -5783,7 +6693,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -5840,10 +6754,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -5998,10 +6919,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -6033,9 +6961,55 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -6063,6 +7037,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -6073,7 +7051,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -6130,10 +7112,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -6288,10 +7277,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -6323,6 +7319,9 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
@@ -6344,6 +7343,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -6354,7 +7357,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -6411,10 +7418,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -6569,10 +7583,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -6604,9 +7625,55 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -6634,6 +7701,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -6644,7 +7715,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -6701,10 +7776,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -6903,10 +7985,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -6938,6 +8027,9 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
@@ -6959,6 +8051,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -6969,7 +8065,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -7026,10 +8126,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -7228,10 +8335,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -7263,9 +8377,55 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -7293,6 +8453,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -7303,7 +8467,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -7360,10 +8528,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -7496,10 +8671,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -7531,6 +8713,9 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
@@ -7552,6 +8737,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -7562,7 +8751,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -7619,10 +8812,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -7755,10 +8955,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -7790,9 +8997,55 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -7820,6 +9073,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -7830,7 +9087,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -7887,10 +9148,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -8015,10 +9283,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -8050,6 +9325,9 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
@@ -8071,6 +9349,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -8081,7 +9363,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -8138,10 +9424,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -8266,10 +9559,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -8301,9 +9601,55 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -8331,6 +9677,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -8341,7 +9691,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -8398,10 +9752,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -8542,10 +9903,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -8577,6 +9945,9 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
@@ -8598,6 +9969,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -8608,7 +9983,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -8665,10 +10044,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -8809,10 +10195,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -8844,9 +10237,55 @@
           "object_type": "sp",
           "shape_id": "6",
           "bounds_emu": null,
+          "text_box": {
+            "auto_fit": null
+          },
           "source_order": 5
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""

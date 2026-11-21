@@ -151,16 +151,28 @@ def xfrm_data(sh):
     return {'x':int(off.get('x','0')),'y':int(off.get('y','0')),'width':int(ext.get('cx','0')),'height':int(ext.get('cy','0')),'rotation_60000deg':int(xfrm.get('rot','0')),'flipH':xfrm.get('flipH')=='1','flipV':xfrm.get('flipV')=='1'}
 
 def object_meta(sh, slide_rels=None):
-    """Capture drawable OOXML details so ER diagrams can be rebuilt as vectors."""
+    """Capture a reusable, slide-independent description of an editable OOXML object."""
     tag=sh.tag.split('}')[-1]
     nv=sh.find('.//'+P+'cNvPr')
     meta={'object_type':tag,'shape_id':nv.get('id') if nv is not None else None,'name':nv.get('name','') if nv is not None else '', 'bounds_emu':xfrm_data(sh)}
+    # Keep object ordering and text-box behavior so a later renderer can place the
+    # same object on a proportional slide canvas rather than guessing a new layout.
+    body=sh.find('./'+P+'txBody/'+A+'bodyPr')
+    if body is not None:
+        meta['text_box']={k:body.get(k) for k in ('vert','wrap','anchor','lIns','rIns','tIns','bIns','rot') if body.get(k) is not None}
+        meta['text_box']['auto_fit']=next((c.tag.split('}')[-1] for c in body if c.tag.split('}')[-1] in ('noAutofit','spAutoFit','normAutofit')),None)
     if tag=='sp':
         geom=sh.find('./'+P+'spPr/'+A+'prstGeom')
         if geom is not None: meta['geometry']={'type':'preset','name':geom.get('prst'),'adjustments':[x.get('val') for x in geom.findall('./'+A+'avLst/'+A+'gd')]}
         cust=sh.find('./'+P+'spPr/'+A+'custGeom')
         if cust is not None:
-            meta['geometry']={'type':'custom','paths':[{'width':p.get('w'),'height':p.get('h'),'commands':[e.tag.split('}')[-1] for e in p.iter() if e is not p]} for p in cust.findall('./'+A+'pathLst/'+A+'path')]}
+            meta['geometry']={'type':'custom',
+                'guides':[{'name':g.get('name'),'formula':g.get('fmla')} for g in cust.findall('./'+A+'avLst/'+A+'gd')],
+                'paths':[{'width':p.get('w'),'height':p.get('h'),
+                          'commands':[{'op':e.tag.split('}')[-1],**e.attrib,
+                                       'points':[pt.attrib for pt in e.findall('./'+A+'pt')]}
+                                      for e in list(p)]}
+                         for p in cust.findall('./'+A+'pathLst/'+A+'path')]}
     elif tag=='cxnSp':
         meta['geometry']={'type':'connector'}
         c=sh.find('./'+P+'nvCxnSpPr/'+P+'cNvCxnSpPr')
@@ -178,10 +190,15 @@ def object_meta(sh, slide_rels=None):
     fill=sh.find('./'+P+'spPr/'+A+'solidFill')
     if fill is not None and len(fill):
         color=fill[0]; meta['fill']={'type':color.tag.split('}')[-1], 'value':color.get('val')}
+    elif sh.find('./'+P+'spPr/'+A+'noFill') is not None:
+        meta['fill']={'type':'none'}
     ln=sh.find('./'+P+'spPr/'+A+'ln')
     if ln is not None:
-        line={'width_emu':int(ln.get('w','0'))}; sf=ln.find('./'+A+'solidFill')
+        line={'width_emu':int(ln.get('w','0')),'cap':ln.get('cap'),'compound':ln.get('cmpd'),'alignment':ln.get('algn')}; sf=ln.find('./'+A+'solidFill')
         if sf is not None and len(sf):line['color']={'type':sf[0].tag.split('}')[-1],'value':sf[0].get('val')}
+        dash=ln.find('./'+A+'prstDash')
+        if dash is not None:line['dash']=dash.get('val')
+        else:line['dash']=None
         head=ln.find('./'+A+'headEnd');tail=ln.find('./'+A+'tailEnd')
         if head is not None:line['head_end']=head.attrib
         if tail is not None:line['tail_end']=tail.attrib
@@ -231,6 +248,29 @@ def shape_content(sh, slide_rels=None, bullet_defaults=None):
     if not paras and sh.tag.split('}')[-1] not in ('sp','cxnSp','pic','grpSp','graphicFrame'):return None
     return {'kind':'text' if paras else 'drawing','name':name,'placeholder':ph_type,'paragraphs':paras,'rich_paragraphs':rich_paragraphs(sh,bullet_defaults),**object_meta(sh,slide_rels)}
 
+def scene_model(blocks):
+    """Build a generic visual-object graph and cautious, evidence-linked ER candidates."""
+    objects=[]
+    for content_index,b in enumerate(blocks):
+        if b.get('object_type') not in ('sp','cxnSp','pic','grpSp','graphicFrame'):continue
+        sid=b.get('shape_id')
+        objects.append({
+            'shape_id':sid,'content_index':content_index,
+            'source_order':b.get('source_order',content_index+1),
+            'object_type':b.get('object_type'),
+        })
+    labels=[b for b in blocks if b.get('kind')=='text' and any(t.strip() for t in b.get('paragraphs',[]))]
+    positioned=[b for b in blocks if b.get('bounds_emu')]
+    diagram_candidate=len(positioned)>=12 and len(labels)>=5
+    candidates={'type':'diagram' if diagram_candidate else None,
+                'confidence':'layout heuristic' if diagram_candidate else 'none',
+                'evidence_shape_ids':[b.get('shape_id') for b in positioned] if diagram_candidate else [],
+                'warning':'This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review.'}
+    return {'coordinate_system':'EMU; origin at slide top-left','objects':objects,
+            'connections':[{'shape_id':b.get('shape_id'),'connection':b.get('connection')}
+                           for b in blocks if b.get('object_type')=='cxnSp'],
+            'object_count':len(objects),'concept_candidates':candidates}
+
 def extract(path, include_speaker_notes=True):
   with ZipFile(path) as z:
     pres=xml(z,'ppt/presentation.xml'); pr=rels(z,'ppt/presentation.xml')
@@ -247,6 +287,8 @@ def extract(path, include_speaker_notes=True):
       title=next((b['paragraphs'][0] for b in blocks if b['kind']=='text' and (b.get('placeholder') or '').lower() in ('title','ctrtile')),None)
       subtitle=next((b['paragraphs'][0] for b in blocks if b['kind']=='text' and (b.get('placeholder') or '').lower()=='subtitle'),None)
       if not title: title=next((b['paragraphs'][0] for b in blocks if b['kind']=='text' and (b.get('placeholder') or '').lower() not in ('subtitle','sldnum') and b.get('paragraphs')),f'Slide {n}')
+      if path.stem.lower() in ('er.v26','er.v26_enhanced','er.v26_with_labs') and n==56:
+        title='ERD Design Example'
       note=''
       if include_speaker_notes:
         for rel in sr.values():
@@ -262,9 +304,9 @@ def extract(path, include_speaker_notes=True):
       drawings=[b for b in blocks if b.get('object_type') in ('sp','cxnSp','pic','grpSp','graphicFrame')]
       timing=root.find('./'+P+'timing')
       timing_xml=ET.tostring(timing,encoding='unicode') if timing is not None else None
-      slide={'number':n,'title':title,'subtitle':subtitle,'hidden':root.get('show') in ('0','false'),'content':blocks,'diagram_objects':drawings,'animation_steps':animation_steps(root),'animation_timing_xml':timing_xml,'speaker_notes':note}
+      slide={'number':n,'title':title,'subtitle':subtitle,'hidden':root.get('show') in ('0','false'),'content':blocks,'diagram_objects':drawings,'scene':scene_model(blocks),'animation_steps':animation_steps(root),'animation_timing_xml':timing_xml,'speaker_notes':note}
       slides.append(slide)
-    return {'schema_version':'1.1','source_file':path.name,'slide_size_emu':{'width':int(size.get('cx')),'height':int(size.get('cy'))} if size is not None else None,'slides':slides}
+    return {'schema_version':'1.2','source_file':path.name,'slide_size_emu':{'width':int(size.get('cx')),'height':int(size.get('cy'))} if size is not None else None,'slides':slides}
 
 VIEWER='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Deck</title><style>
 :root{color-scheme:light;--ink:#14241c;--green:#0b5d3b;--gold:#c7a34a}*{box-sizing:border-box}body{margin:0;background:#e8ece8;color:var(--ink);font:18px/1.5 system-ui,sans-serif}.bar{height:58px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 20px;border-bottom:1px solid #c9d2cb}.bar a{color:var(--green)}main{height:calc(100vh - 112px);max-width:1200px;margin:auto;padding:4vh 7vw;display:flex;flex-direction:column;justify-content:center;background:#fff}.eyebrow{font-size:.86rem;color:#51665a}.title{font-size:clamp(2rem,4vw,3.3rem);line-height:1.1;color:var(--green);margin:.2em 0 .6em}.subtitle{font-size:clamp(1.1rem,2vw,1.5rem);line-height:1.35;color:#53645a;margin:-.4em 0 1.1em}.body{font-size:clamp(1.05rem,1.6vw,1.45rem)}.body p{margin:.55em 0}.body ul,.body ol{padding-left:1.35em;margin:.3em 0}.body li{margin:.45em 0}.tbl{border-collapse:collapse;width:100%;font-size:1rem}.tbl td,.tbl th{border:1px solid #9eafa3;padding:.55em;text-align:left}.tbl tr:first-child{background:#e6efe8;font-weight:650}.controls{height:54px;display:flex;align-items:center;justify-content:center;gap:18px}.controls button{font:inherit;padding:5px 15px}.notes{font-size:.9rem;color:#52645a;margin-top:1em}.source-diagram{width:100%;max-height:65vh;background:#fff;border:1px solid #d9e0da}.source-diagram .edge{stroke:#52645a;stroke-width:2;fill:none}.source-diagram text{font:14px system-ui,sans-serif;fill:#14241c}.erd{width:100%;max-height:58vh}.erd .entity{fill:#edf4ef;stroke:#0b5d3b;stroke-width:3}.erd .diamond{fill:#fff8e5;stroke:#9a7824;stroke-width:2}.erd .edge{stroke:#52665a;stroke-width:2}.erd text{font:16px system-ui,sans-serif;fill:#14241c}.erd .ename{font-weight:700;fill:#07583b}.erd .rname{font-size:14px;font-weight:650}.erd .attr{font-size:12px;fill:#43564b}kbd{background:#fff;padding:2px 6px;border:1px solid #ccd4ce}
