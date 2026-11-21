@@ -39,25 +39,35 @@
           "rich_paragraphs": [
             {
               "text": "CS 4550 – Database Management Systems",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "CS 4550 – Database Management Systems",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Spring 2026 | SUNY Old Westbury",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Spring 2026 | SUNY Old Westbury",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -108,25 +118,35 @@
           "rich_paragraphs": [
             {
               "text": "CS 4550 – Database Management Systems",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "CS 4550 – Database Management Systems",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Spring 2026 | SUNY Old Westbury",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Spring 2026 | SUNY Old Westbury",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -215,14 +235,19 @@
           "rich_paragraphs": [
             {
               "text": "Textbooks",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Textbooks",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -255,7 +280,7 @@
           "rich_paragraphs": [
             {
               "text": "Elmasri & Navathe, Fundamentals of Database Systems (7th Edition) – Primary text",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -265,12 +290,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Coronel & Morris, Database Systems: Design, Implementation, and Management (13th Edition)",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -280,12 +311,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Garcia-Molina, Ullman, Widom – Database Systems: The Complete Book",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -295,7 +332,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -377,14 +420,19 @@
           "rich_paragraphs": [
             {
               "text": "Textbooks",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Textbooks",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -417,7 +465,7 @@
           "rich_paragraphs": [
             {
               "text": "Elmasri & Navathe, Fundamentals of Database Systems (7th Edition) – Primary text",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -427,12 +475,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Coronel & Morris, Database Systems: Design, Implementation, and Management (13th Edition)",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -442,12 +496,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Garcia-Molina, Ullman, Widom – Database Systems: The Complete Book",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -457,7 +517,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -547,14 +613,19 @@
           "rich_paragraphs": [
             {
               "text": "Course Delivery",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Course Delivery",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -588,7 +659,7 @@
           "rich_paragraphs": [
             {
               "text": "Lectures will be conducted in person",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -598,12 +669,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Office hours available in person or online",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -613,12 +690,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "All course materials and communications via Brightspace/email",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -632,12 +715,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Zoom may be used when necessary",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -647,7 +736,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -729,14 +824,19 @@
           "rich_paragraphs": [
             {
               "text": "Course Delivery",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Course Delivery",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -770,7 +870,7 @@
           "rich_paragraphs": [
             {
               "text": "Lectures will be conducted in person",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -780,12 +880,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Office hours available in person or online",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -795,12 +901,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "All course materials and communications via Brightspace/email",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -814,12 +926,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Zoom may be used when necessary",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -829,7 +947,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -919,14 +1043,19 @@
           "rich_paragraphs": [
             {
               "text": "Course Description",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Course Description",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -961,7 +1090,7 @@
           "rich_paragraphs": [
             {
               "text": "Study of fundamental concepts of relational database systems",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -971,12 +1100,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Entity-Relationship design and relational algebra",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -986,12 +1121,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Interaction with databases using SQL",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1001,12 +1142,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Advanced SQL including triggers and stored procedures",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1016,12 +1163,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Introduction to transactions and database reliability",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1031,7 +1184,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -1113,14 +1272,19 @@
           "rich_paragraphs": [
             {
               "text": "Course Description",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Course Description",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -1155,7 +1319,7 @@
           "rich_paragraphs": [
             {
               "text": "Study of fundamental concepts of relational database systems",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1165,12 +1329,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Entity-Relationship design and relational algebra",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1180,12 +1350,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Interaction with databases using SQL",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1195,12 +1371,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Advanced SQL including triggers and stored procedures",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1210,12 +1392,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Introduction to transactions and database reliability",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1225,7 +1413,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -1315,14 +1509,19 @@
           "rich_paragraphs": [
             {
               "text": "Course Objectives",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Course Objectives",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -1358,7 +1557,7 @@
           "rich_paragraphs": [
             {
               "text": "Design relational databases based on given requirements",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1368,12 +1567,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Write efficient and correct SQL queries",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1383,12 +1588,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Understand relational models and relational algebra",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1398,12 +1609,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Explain query processing and optimization concepts",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1413,12 +1630,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Understand concurrency control and transaction management",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1428,12 +1651,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Document database systems and programming assignments",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1443,7 +1672,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -1525,14 +1760,19 @@
           "rich_paragraphs": [
             {
               "text": "Course Objectives",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Course Objectives",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -1568,7 +1808,7 @@
           "rich_paragraphs": [
             {
               "text": "Design relational databases based on given requirements",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1578,12 +1818,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Write efficient and correct SQL queries",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1593,12 +1839,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Understand relational models and relational algebra",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1608,12 +1860,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Explain query processing and optimization concepts",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1623,12 +1881,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Understand concurrency control and transaction management",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1638,12 +1902,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Document database systems and programming assignments",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1653,7 +1923,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -1743,14 +2019,19 @@
           "rich_paragraphs": [
             {
               "text": "Topics Covered",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Topics Covered",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -1788,7 +2069,7 @@
           "rich_paragraphs": [
             {
               "text": "Relational data model and schema design",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1798,12 +2079,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "SQL (DDL, DML, views, triggers)",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1813,12 +2100,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "ER modeling and database design",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1828,12 +2121,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Functional dependencies and normalization",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1843,12 +2142,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Query processing and optimization",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1858,12 +2163,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Indexing and file organization",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1873,12 +2184,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Transactions, recovery, and concurrency control",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1888,12 +2205,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Introduction to NoSQL systems",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -1903,7 +2226,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -1985,14 +2314,19 @@
           "rich_paragraphs": [
             {
               "text": "Topics Covered",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Topics Covered",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -2030,7 +2364,7 @@
           "rich_paragraphs": [
             {
               "text": "Relational data model and schema design",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2040,12 +2374,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "SQL (DDL, DML, views, triggers)",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2055,12 +2395,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "ER modeling and database design",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2070,12 +2416,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Functional dependencies and normalization",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2085,12 +2437,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Query processing and optimization",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2100,12 +2458,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Indexing and file organization",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2115,12 +2479,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Transactions, recovery, and concurrency control",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2130,12 +2500,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Introduction to NoSQL systems",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2145,7 +2521,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -2235,14 +2617,19 @@
           "rich_paragraphs": [
             {
               "text": "Schedule",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Schedule",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -2279,80 +2666,115 @@
           "rich_paragraphs": [
             {
               "text": "Week 1–3: SQL fundamentals and advanced queries",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 1–3: SQL fundamentals and advanced queries",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Week 4–6: Relational model, ER modeling, and design",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 4–6: Relational model, ER modeling, and design",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Week 7–8: Relational algebra and midterm exam",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 7–8: Relational algebra and midterm exam",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Week 9–10: Transactions and concurrency control",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 9–10: Transactions and concurrency control",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Week 11–12: Indexing and query optimization",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 11–12: Indexing and query optimization",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Week 13–14: NoSQL systems and project discussions",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 13–14: NoSQL systems and project discussions",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Week 15: Final exam",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 15: Final exam",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -2433,14 +2855,19 @@
           "rich_paragraphs": [
             {
               "text": "Schedule",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Schedule",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -2477,80 +2904,115 @@
           "rich_paragraphs": [
             {
               "text": "Week 1–3: SQL fundamentals and advanced queries",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 1–3: SQL fundamentals and advanced queries",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Week 4–6: Relational model, ER modeling, and design",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 4–6: Relational model, ER modeling, and design",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Week 7–8: Relational algebra and midterm exam",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 7–8: Relational algebra and midterm exam",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Week 9–10: Transactions and concurrency control",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 9–10: Transactions and concurrency control",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Week 11–12: Indexing and query optimization",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 11–12: Indexing and query optimization",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Week 13–14: NoSQL systems and project discussions",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 13–14: NoSQL systems and project discussions",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Week 15: Final exam",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Week 15: Final exam",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -2639,14 +3101,19 @@
           "rich_paragraphs": [
             {
               "text": "Attendance",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Attendance",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -2680,47 +3147,67 @@
           "rich_paragraphs": [
             {
               "text": "Class attendance is required",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Class attendance is required",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Students are responsible for material covered during absences",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Students are responsible for material covered during absences",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Excessive absences may negatively impact course performance",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Excessive absences may negatively impact course performance",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Regular participation is essential for success",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Regular participation is essential for success",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -2762,7 +3249,7 @@
           "rich_paragraphs": [
             {
               "text": "A: 94–100",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2772,12 +3259,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "A-: 90–93",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2787,12 +3280,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "B+: 87–89",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2802,12 +3301,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "B: 84–86",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2817,12 +3322,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "B-: 80–83",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2832,12 +3343,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "C+: 77–79",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2847,12 +3364,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "C: 74–76",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2862,12 +3385,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "C-: 70–73",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2877,12 +3406,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "D+: 67–69",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2892,12 +3427,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "D: 64–66",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2907,12 +3448,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "D-: 60–63",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2922,12 +3469,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "F: 0–59",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -2937,7 +3490,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -3019,14 +3578,19 @@
           "rich_paragraphs": [
             {
               "text": "Attendance",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Attendance",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -3060,47 +3624,67 @@
           "rich_paragraphs": [
             {
               "text": "Class attendance is required",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Class attendance is required",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Students are responsible for material covered during absences",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Students are responsible for material covered during absences",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Excessive absences may negatively impact course performance",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Excessive absences may negatively impact course performance",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Regular participation is essential for success",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Regular participation is essential for success",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -3142,7 +3726,7 @@
           "rich_paragraphs": [
             {
               "text": "A: 94–100",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3152,12 +3736,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "A-: 90–93",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3167,12 +3757,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "B+: 87–89",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3182,12 +3778,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "B: 84–86",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3197,12 +3799,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "B-: 80–83",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3212,12 +3820,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "C+: 77–79",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3227,12 +3841,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "C: 74–76",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3242,12 +3862,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "C-: 70–73",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3257,12 +3883,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "D+: 67–69",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3272,12 +3904,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "D: 64–66",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3287,12 +3925,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "D-: 60–63",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3302,12 +3946,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "F: 0–59",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3317,7 +3967,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -3407,14 +4063,19 @@
           "rich_paragraphs": [
             {
               "text": "Evaluation",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Evaluation",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -3449,7 +4110,7 @@
           "rich_paragraphs": [
             {
               "text": "Homework assignments: 35%",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3459,12 +4120,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Projects: 35%",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3474,12 +4141,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Midterm exam: 10%",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3489,12 +4162,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Final exam: 20%",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3504,12 +4183,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Final grades are based on total points earned",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3519,7 +4204,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -3601,14 +4292,19 @@
           "rich_paragraphs": [
             {
               "text": "Evaluation",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Evaluation",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -3643,7 +4339,7 @@
           "rich_paragraphs": [
             {
               "text": "Homework assignments: 35%",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3653,12 +4349,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Projects: 35%",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3668,12 +4370,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Midterm exam: 10%",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3683,12 +4391,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Final exam: 20%",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3698,12 +4412,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Final grades are based on total points earned",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3713,7 +4433,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -3803,14 +4529,19 @@
           "rich_paragraphs": [
             {
               "text": "Course Rules",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Course Rules",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -3845,7 +4576,7 @@
           "rich_paragraphs": [
             {
               "text": "All assignments must be completed individually unless stated otherwise",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3855,12 +4586,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "No missed exams without documented and approved reasons",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3870,12 +4607,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Final exam cannot be missed and has no makeup",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3885,12 +4628,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Students must regularly check campus email",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3900,12 +4649,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Email is the preferred method of communication",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -3915,7 +4670,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -3997,14 +4758,19 @@
           "rich_paragraphs": [
             {
               "text": "Course Rules",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Course Rules",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -4039,7 +4805,7 @@
           "rich_paragraphs": [
             {
               "text": "All assignments must be completed individually unless stated otherwise",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4049,12 +4815,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "No missed exams without documented and approved reasons",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4064,12 +4836,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Final exam cannot be missed and has no makeup",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4079,12 +4857,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Students must regularly check campus email",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4094,12 +4878,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Email is the preferred method of communication",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4109,7 +4899,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -4199,14 +4995,19 @@
           "rich_paragraphs": [
             {
               "text": "Attendance & Classroom Civility",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Attendance & Classroom Civility",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -4241,7 +5042,7 @@
           "rich_paragraphs": [
             {
               "text": "Class attendance is essential for success.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4251,12 +5052,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Arrive on time and stay for the full class.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4266,12 +5073,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Turn off electronic devices during class.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4281,12 +5094,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "No texting or disruptive behavior.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4296,12 +5115,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Respect others’ right to learn.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4311,7 +5136,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -4343,7 +5174,7 @@
           "rich_paragraphs": [
             {
               "text": "11",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4351,7 +5182,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -4419,14 +5254,19 @@
           "rich_paragraphs": [
             {
               "text": "Attendance & Classroom Civility",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Attendance & Classroom Civility",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -4461,7 +5301,7 @@
           "rich_paragraphs": [
             {
               "text": "Class attendance is essential for success.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4471,12 +5311,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Arrive on time and stay for the full class.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4486,12 +5332,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Turn off electronic devices during class.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4501,12 +5353,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "No texting or disruptive behavior.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4516,12 +5374,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Respect others’ right to learn.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4531,7 +5395,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -4563,7 +5433,7 @@
           "rich_paragraphs": [
             {
               "text": "11",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4571,7 +5441,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -4647,14 +5521,19 @@
           "rich_paragraphs": [
             {
               "text": "Basic Needs Support",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Basic Needs Support",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -4690,7 +5569,7 @@
           "rich_paragraphs": [
             {
               "text": "Panther Community Care Center (PCCC), Campus Center K-100.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4700,12 +5579,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Hours: Monday–Friday, 9:00 AM – 5:00 PM.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4715,12 +5600,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Supports students facing financial, emotional, or basic needs challenges.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4730,12 +5621,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Panther Food Pantry available to all students, staff, and faculty.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4745,12 +5642,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Food Pantry Hours: Tuesdays 12–4 PM; Wednesdays 4–7 PM.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4760,12 +5663,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Contact: (516) 876-3080 | pccc@oldwestbury.edu.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4775,7 +5684,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -4807,7 +5722,7 @@
           "rich_paragraphs": [
             {
               "text": "12",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4815,7 +5730,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -4883,14 +5802,19 @@
           "rich_paragraphs": [
             {
               "text": "Basic Needs Support",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Basic Needs Support",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -4926,7 +5850,7 @@
           "rich_paragraphs": [
             {
               "text": "Panther Community Care Center (PCCC), Campus Center K-100.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4936,12 +5860,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Hours: Monday–Friday, 9:00 AM – 5:00 PM.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4951,12 +5881,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Supports students facing financial, emotional, or basic needs challenges.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4966,12 +5902,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Panther Food Pantry available to all students, staff, and faculty.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4981,12 +5923,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Food Pantry Hours: Tuesdays 12–4 PM; Wednesdays 4–7 PM.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -4996,12 +5944,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Contact: (516) 876-3080 | pccc@oldwestbury.edu.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5011,7 +5965,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -5043,7 +6003,7 @@
           "rich_paragraphs": [
             {
               "text": "12",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5051,7 +6011,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -5127,14 +6091,19 @@
           "rich_paragraphs": [
             {
               "text": "Counseling & Mental Health Resources",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Counseling & Mental Health Resources",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -5170,7 +6139,7 @@
           "rich_paragraphs": [
             {
               "text": "Counseling and Psychological Wellness Services are free and confidential.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5180,12 +6149,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Location: Campus Center I-Wing, Wellness Wing, Suite 102.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5195,12 +6170,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Hours: Monday–Friday, 9:00 AM – 5:00 PM.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5210,12 +6191,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Phone: (516) 876-3053 | Email: counselingcenter@oldwestbury.edu.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5225,12 +6212,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "24/7 support via U-Will: 833-646-1526 or Suicide Prevention Lifeline: 988.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5240,12 +6233,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "After-hours emergencies: University Police (516) 876-3333.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5255,7 +6254,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -5287,7 +6292,7 @@
           "rich_paragraphs": [
             {
               "text": "13",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5295,7 +6300,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -5363,14 +6372,19 @@
           "rich_paragraphs": [
             {
               "text": "Counseling & Mental Health Resources",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Counseling & Mental Health Resources",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -5406,7 +6420,7 @@
           "rich_paragraphs": [
             {
               "text": "Counseling and Psychological Wellness Services are free and confidential.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5416,12 +6430,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Location: Campus Center I-Wing, Wellness Wing, Suite 102.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5431,12 +6451,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Hours: Monday–Friday, 9:00 AM – 5:00 PM.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5446,12 +6472,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Phone: (516) 876-3053 | Email: counselingcenter@oldwestbury.edu.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5461,12 +6493,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "24/7 support via U-Will: 833-646-1526 or Suicide Prevention Lifeline: 988.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5476,12 +6514,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "After-hours emergencies: University Police (516) 876-3333.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5491,7 +6535,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -5523,7 +6573,7 @@
           "rich_paragraphs": [
             {
               "text": "13",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5531,7 +6581,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -5607,14 +6661,19 @@
           "rich_paragraphs": [
             {
               "text": "Title IX, Safety & Discrimination",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Title IX, Safety & Discrimination",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -5652,7 +6711,7 @@
           "rich_paragraphs": [
             {
               "text": "SUNY Old Westbury prohibits sexual discrimination, harassment, and violence.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5662,12 +6721,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Title IX protects against sex-based discrimination and harassment.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5677,12 +6742,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Report concerns at https://www.oldwestbury.edu/title-ix.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5692,12 +6763,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Confidential counseling support is available.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5707,12 +6784,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Deputy Title IX Coordinator: Stephanie Benzaquen.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5722,12 +6805,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Office: Campus Center H-417",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5737,12 +6826,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Phone: (516) 876-2740",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5752,12 +6847,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Email: benzaquens@oldwestbury.edu.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5767,7 +6868,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -5799,7 +6906,7 @@
           "rich_paragraphs": [
             {
               "text": "14",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5807,7 +6914,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -5875,14 +6986,19 @@
           "rich_paragraphs": [
             {
               "text": "Title IX, Safety & Discrimination",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Title IX, Safety & Discrimination",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -5920,7 +7036,7 @@
           "rich_paragraphs": [
             {
               "text": "SUNY Old Westbury prohibits sexual discrimination, harassment, and violence.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5930,12 +7046,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Title IX protects against sex-based discrimination and harassment.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5945,12 +7067,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Report concerns at https://www.oldwestbury.edu/title-ix.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5960,12 +7088,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Confidential counseling support is available.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5975,12 +7109,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Deputy Title IX Coordinator: Stephanie Benzaquen.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -5990,12 +7130,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Office: Campus Center H-417",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6005,12 +7151,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Phone: (516) 876-2740",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6020,12 +7172,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Email: benzaquens@oldwestbury.edu.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6035,7 +7193,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -6067,7 +7231,7 @@
           "rich_paragraphs": [
             {
               "text": "14",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6075,7 +7239,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -6151,14 +7319,19 @@
           "rich_paragraphs": [
             {
               "text": "Academic Integrity & Misconduct",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Academic Integrity & Misconduct",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -6193,7 +7366,7 @@
           "rich_paragraphs": [
             {
               "text": "Students are expected to maintain the highest standards of academic honesty.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6203,12 +7376,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Cheating, plagiarism, and forgery are serious offenses.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6218,12 +7397,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Academic dishonesty may result in disciplinary action.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6233,12 +7418,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Students should consult the instructor if unsure about plagiarism.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6248,12 +7439,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Use of AI tools is permitted in general as long as it is declared",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6263,7 +7460,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -6295,7 +7498,7 @@
           "rich_paragraphs": [
             {
               "text": "15",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6303,7 +7506,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -6371,14 +7578,19 @@
           "rich_paragraphs": [
             {
               "text": "Academic Integrity & Misconduct",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Academic Integrity & Misconduct",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -6413,7 +7625,7 @@
           "rich_paragraphs": [
             {
               "text": "Students are expected to maintain the highest standards of academic honesty.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6423,12 +7635,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Cheating, plagiarism, and forgery are serious offenses.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6438,12 +7656,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Academic dishonesty may result in disciplinary action.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6453,12 +7677,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Students should consult the instructor if unsure about plagiarism.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6468,12 +7698,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Use of AI tools is permitted in general as long as it is declared",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6483,7 +7719,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -6515,7 +7757,7 @@
           "rich_paragraphs": [
             {
               "text": "15",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6523,7 +7765,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -6599,14 +7845,19 @@
           "rich_paragraphs": [
             {
               "text": "Accommodations & Accessibility",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Accommodations & Accessibility",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -6642,69 +7893,99 @@
           "rich_paragraphs": [
             {
               "text": "Students with disabilities are encouraged to contact the",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Students with disabilities are encouraged to contact the",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Office of Services for Students with Disabilities (OSSD).",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Office of Services for Students with Disabilities (OSSD).",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Director: Stacey DeFelice.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Director: Stacey DeFelice.",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Location: NAB 2065.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Location: NAB 2065.",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Phone: (516) 628-5666 | Fax: (516) 876-3005.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Phone: (516) 628-5666 | Fax: (516) 876-3005.",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Email: defelices@oldwestbury.edu.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Email: defelices@oldwestbury.edu.",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -6735,7 +8016,7 @@
           "rich_paragraphs": [
             {
               "text": "16",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6743,7 +8024,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -6811,14 +8096,19 @@
           "rich_paragraphs": [
             {
               "text": "Accommodations & Accessibility",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Accommodations & Accessibility",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -6854,69 +8144,99 @@
           "rich_paragraphs": [
             {
               "text": "Students with disabilities are encouraged to contact the",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Students with disabilities are encouraged to contact the",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Office of Services for Students with Disabilities (OSSD).",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Office of Services for Students with Disabilities (OSSD).",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Director: Stacey DeFelice.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Director: Stacey DeFelice.",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Location: NAB 2065.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Location: NAB 2065.",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Phone: (516) 628-5666 | Fax: (516) 876-3005.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Phone: (516) 628-5666 | Fax: (516) 876-3005.",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             },
             {
               "text": "Email: defelices@oldwestbury.edu.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Email: defelices@oldwestbury.edu.",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -6947,7 +8267,7 @@
           "rich_paragraphs": [
             {
               "text": "16",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -6955,7 +8275,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -7031,14 +8355,19 @@
           "rich_paragraphs": [
             {
               "text": "Proctorio & Online Meeting Policy",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Proctorio & Online Meeting Policy",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -7073,7 +8402,7 @@
           "rich_paragraphs": [
             {
               "text": "Exams or quizzes may be proctored using Proctorio via Blackboard.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -7091,12 +8420,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Students need a webcam, microphone, Chrome browser, and reliable internet.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -7106,12 +8441,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Online behavior is governed by the Student Code of Conduct.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -7121,12 +8462,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Class sessions may be recorded.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -7136,12 +8483,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Mute microphones when not speaking and remain respectful.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -7151,7 +8504,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -7183,7 +8542,7 @@
           "rich_paragraphs": [
             {
               "text": "17",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -7191,7 +8550,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
@@ -7259,14 +8622,19 @@
           "rich_paragraphs": [
             {
               "text": "Proctorio & Online Meeting Policy",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
                   "text": "Proctorio & Online Meeting Policy",
                   "style": {}
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              },
+              "paragraph_format": {}
             }
           ],
           "object_type": "sp",
@@ -7301,7 +8669,7 @@
           "rich_paragraphs": [
             {
               "text": "Exams or quizzes may be proctored using Proctorio via Blackboard.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -7319,12 +8687,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Students need a webcam, microphone, Chrome browser, and reliable internet.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -7334,12 +8708,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Online behavior is governed by the Student Code of Conduct.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -7349,12 +8729,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Class sessions may be recorded.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -7364,12 +8750,18 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             },
             {
               "text": "Mute microphones when not speaking and remain respectful.",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -7379,7 +8771,13 @@
               ],
               "bullet": {
                 "type": "char",
-                "value": "•"
+                "value": "•",
+                "font": "Arial",
+                "source": "explicit"
+              },
+              "paragraph_format": {
+                "marL": 285750,
+                "indent": -285750
               }
             }
           ],
@@ -7411,7 +8809,7 @@
           "rich_paragraphs": [
             {
               "text": "17",
-              "level": null,
+              "level": 0,
               "alignment": null,
               "runs": [
                 {
@@ -7419,7 +8817,11 @@
                   "style": {},
                   "field_type": "slidenum"
                 }
-              ]
+              ],
+              "bullet": {
+                "type": "none",
+                "source": "default"
+              }
             }
           ],
           "object_type": "sp",
