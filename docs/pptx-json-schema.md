@@ -17,4 +17,4 @@ Custom shape paths retain their commands, points, and guide formulas. Connector 
 
 ## Current fidelity limit
 
-The HTML viewer places straightforward text-only slides on a proportional slide canvas when their objects have source or inherited bounds. Complex diagrams still use simplified layout and approximate vector reconstruction. Theme/style inheritance, every custom path or media asset, and PowerPoint animation timing are not yet reproduced fully. JSON extraction and visual rendering remain separate stages; the renderer should consume the scene graph and source object properties.
+The HTML viewer places straightforward text and table slides on a proportional slide canvas when their objects have source or inherited bounds. Complex diagrams still use simplified layout and approximate vector reconstruction. Theme/style inheritance, every custom path or media asset, and PowerPoint animation timing are not yet reproduced fully. JSON extraction and visual rendering remain separate stages; the renderer should consume the scene graph and source object properties.
