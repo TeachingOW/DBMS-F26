@@ -832,7 +832,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Use a familiar flat-file example: changing one course room should not require editing many rows.\n[Sources]\n- CMU 15-445/645 Database Systems (Fall 2024), lecture_1.pdf, pages 3-7.\n[/Sources]"
     },
     {
       "number": 3,
@@ -8175,7 +8175,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Pause before revealing the labels. Ask students to justify the type of anomaly, not just name it."
     },
     {
       "number": 14,
@@ -19269,7 +19269,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Ask: If every current employee has a unique phone number, does Phone -> EmployeeID necessarily belong to the schema?"
     },
     {
       "number": 24,
@@ -23805,7 +23805,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Some examples:\nA -> D, B C, C->D\nC->E , B-> D\nA->E"
     },
     {
       "number": 28,
@@ -40750,7 +40750,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "This bridge connects Armstrong's rules to the closure algorithm on the next slides."
     },
     {
       "number": 49,
@@ -69219,7 +69219,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Emphasize that a superkey proves coverage, while a candidate key also proves minimality."
     },
     {
       "number": 64,
@@ -72543,7 +72543,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Use the same example"
     },
     {
       "number": 68,
@@ -75260,7 +75260,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Keep the focus on the determinant of a violating FD; this prevents students from treating normal forms as vocabulary only."
     },
     {
       "number": 73,
@@ -105089,7 +105089,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Use this slide before the lossless-join slides so students know why two post-decomposition checks exist."
     },
     {
       "number": 96,
@@ -108426,7 +108426,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Use as a one-minute written exit ticket or as the prompt for a worked board example."
     }
   ]
 }
