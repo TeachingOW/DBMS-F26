@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "source_file": "intro.pptx",
   "slide_size_emu": {
     "width": 9144000,
@@ -33,6 +33,7 @@
           "kind": "text",
           "name": "TextBox 2",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "CS 4550 – Database Management Systems",
             "Spring 2026 | SUNY Old Westbury"
@@ -82,10 +83,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 2
         }
@@ -112,6 +120,7 @@
           "kind": "text",
           "name": "TextBox 2",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "CS 4550 – Database Management Systems",
             "Spring 2026 | SUNY Old Westbury"
@@ -161,14 +170,46 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 2
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 2,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -183,6 +224,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -196,6 +238,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -206,7 +252,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -231,6 +281,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Textbooks"
           ],
@@ -263,10 +314,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -274,6 +332,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Elmasri & Navathe, Fundamentals of Database Systems (7th Edition) – Primary text",
             "Coronel & Morris, Database Systems: Design, Implementation, and Management (13th Edition)",
@@ -355,10 +414,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "square",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -368,6 +434,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -381,6 +448,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -391,7 +462,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -416,6 +491,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Textbooks"
           ],
@@ -448,10 +524,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -459,6 +542,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Elmasri & Navathe, Fundamentals of Database Systems (7th Edition) – Primary text",
             "Coronel & Morris, Database Systems: Design, Implementation, and Management (13th Edition)",
@@ -540,14 +624,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "square",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -562,6 +690,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -575,6 +704,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -585,7 +718,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -610,6 +747,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Delivery"
           ],
@@ -642,10 +780,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -653,6 +798,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Lectures will be conducted in person",
             "Office hours available in person or online",
@@ -760,10 +906,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -773,6 +926,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -786,6 +940,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -796,7 +954,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -821,6 +983,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Delivery"
           ],
@@ -853,10 +1016,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -864,6 +1034,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Lectures will be conducted in person",
             "Office hours available in person or online",
@@ -971,14 +1142,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -993,6 +1208,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -1006,6 +1222,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -1016,7 +1236,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -1041,6 +1265,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Description"
           ],
@@ -1073,10 +1298,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -1084,6 +1316,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Study of fundamental concepts of relational database systems",
             "Entity-Relationship design and relational algebra",
@@ -1209,10 +1442,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -1222,6 +1462,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -1235,6 +1476,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -1245,7 +1490,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -1270,6 +1519,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Description"
           ],
@@ -1302,10 +1552,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -1313,6 +1570,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Study of fundamental concepts of relational database systems",
             "Entity-Relationship design and relational algebra",
@@ -1438,14 +1696,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -1460,6 +1762,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -1473,6 +1776,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -1483,7 +1790,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -1508,6 +1819,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Objectives"
           ],
@@ -1540,10 +1852,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -1551,6 +1870,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Design relational databases based on given requirements",
             "Write efficient and correct SQL queries",
@@ -1698,10 +2018,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -1711,6 +2038,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -1724,6 +2052,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -1734,7 +2066,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -1759,6 +2095,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Objectives"
           ],
@@ -1791,10 +2128,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -1802,6 +2146,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Design relational databases based on given requirements",
             "Write efficient and correct SQL queries",
@@ -1949,14 +2294,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -1971,6 +2360,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -1984,6 +2374,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -1994,7 +2388,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -2019,6 +2417,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Topics Covered"
           ],
@@ -2051,10 +2450,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -2062,6 +2468,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Relational data model and schema design",
             "SQL (DDL, DML, views, triggers)",
@@ -2253,10 +2660,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -2266,6 +2680,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -2279,6 +2694,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -2289,7 +2708,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -2314,6 +2737,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Topics Covered"
           ],
@@ -2346,10 +2770,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -2357,6 +2788,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Relational data model and schema design",
             "SQL (DDL, DML, views, triggers)",
@@ -2548,14 +2980,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -2570,6 +3046,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -2583,6 +3060,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -2593,7 +3074,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -2618,6 +3103,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Schedule"
           ],
@@ -2650,10 +3136,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -2661,6 +3154,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Week 1–3: SQL fundamentals and advanced queries",
             "Week 4–6: Relational model, ER modeling, and design",
@@ -2795,10 +3289,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -2808,6 +3309,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -2821,6 +3323,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -2831,7 +3337,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -2856,6 +3366,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Schedule"
           ],
@@ -2888,10 +3399,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -2899,6 +3417,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Week 1–3: SQL fundamentals and advanced queries",
             "Week 4–6: Relational model, ER modeling, and design",
@@ -3033,14 +3552,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -3055,6 +3618,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -3068,6 +3632,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -3078,7 +3646,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -3103,6 +3675,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Attendance"
           ],
@@ -3135,10 +3708,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -3146,6 +3726,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Class attendance is required",
             "Students are responsible for material covered during absences",
@@ -3229,10 +3810,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -3240,6 +3828,7 @@
           "kind": "text",
           "name": "TextBox 5",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "A: 94–100",
             "A-: 90–93",
@@ -3519,10 +4108,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 5
         }
@@ -3532,6 +4128,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -3545,6 +4142,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -3555,7 +4156,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -3580,6 +4185,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Attendance"
           ],
@@ -3612,10 +4218,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -3623,6 +4236,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Class attendance is required",
             "Students are responsible for material covered during absences",
@@ -3706,10 +4320,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -3717,6 +4338,7 @@
           "kind": "text",
           "name": "TextBox 5",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "A: 94–100",
             "A-: 90–93",
@@ -3996,14 +4618,64 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 5
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -4018,6 +4690,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -4031,6 +4704,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -4041,7 +4718,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -4066,6 +4747,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Evaluation"
           ],
@@ -4098,10 +4780,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -4109,6 +4798,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Homework assignments: 35%",
             "Projects: 35%",
@@ -4234,10 +4924,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -4247,6 +4944,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -4260,6 +4958,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -4270,7 +4972,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -4295,6 +5001,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Evaluation"
           ],
@@ -4327,10 +5034,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -4338,6 +5052,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Homework assignments: 35%",
             "Projects: 35%",
@@ -4463,14 +5178,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -4485,6 +5244,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -4498,6 +5258,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -4508,7 +5272,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -4533,6 +5301,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Rules"
           ],
@@ -4565,10 +5334,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -4576,6 +5352,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "All assignments must be completed individually unless stated otherwise",
             "No missed exams without documented and approved reasons",
@@ -4701,10 +5478,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         }
@@ -4714,6 +5498,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -4727,6 +5512,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -4737,7 +5526,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -4762,6 +5555,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Course Rules"
           ],
@@ -4794,10 +5588,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -4805,6 +5606,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "All assignments must be completed individually unless stated otherwise",
             "No missed exams without documented and approved reasons",
@@ -4930,14 +5732,58 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
           },
+          "fill": {
+            "type": "none"
+          },
           "source_order": 4
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 4,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -4952,6 +5798,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -4965,6 +5812,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -4975,7 +5826,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -5000,6 +5855,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Attendance & Classroom Civility"
           ],
@@ -5032,10 +5888,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -5043,6 +5906,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Class attendance is essential for success.",
             "Arrive on time and stay for the full class.",
@@ -5168,10 +6032,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -5179,6 +6050,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "11"
           ],
@@ -5202,8 +6074,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -5211,6 +6100,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -5224,6 +6114,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -5234,7 +6128,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -5259,6 +6157,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Attendance & Classroom Civility"
           ],
@@ -5291,10 +6190,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -5302,6 +6208,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Class attendance is essential for success.",
             "Arrive on time and stay for the full class.",
@@ -5427,10 +6334,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -5438,6 +6352,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "11"
           ],
@@ -5461,10 +6376,70 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -5479,6 +6454,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -5492,6 +6468,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -5502,7 +6482,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -5527,6 +6511,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Basic Needs Support"
           ],
@@ -5559,10 +6544,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -5570,6 +6562,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Panther Community Care Center (PCCC), Campus Center K-100.",
             "Hours: Monday–Friday, 9:00 AM – 5:00 PM.",
@@ -5717,10 +6710,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -5728,6 +6728,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "12"
           ],
@@ -5751,8 +6752,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -5760,6 +6778,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -5773,6 +6792,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -5783,7 +6806,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -5808,6 +6835,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Basic Needs Support"
           ],
@@ -5840,10 +6868,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -5851,6 +6886,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Panther Community Care Center (PCCC), Campus Center K-100.",
             "Hours: Monday–Friday, 9:00 AM – 5:00 PM.",
@@ -5998,10 +7034,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -6009,6 +7052,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "12"
           ],
@@ -6032,10 +7076,70 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -6050,6 +7154,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -6063,6 +7168,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -6073,7 +7182,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -6098,6 +7211,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Counseling & Mental Health Resources"
           ],
@@ -6130,10 +7244,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -6141,6 +7262,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Counseling and Psychological Wellness Services are free and confidential.",
             "Location: Campus Center I-Wing, Wellness Wing, Suite 102.",
@@ -6288,10 +7410,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -6299,6 +7428,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "13"
           ],
@@ -6322,8 +7452,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -6331,6 +7478,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -6344,6 +7492,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -6354,7 +7506,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -6379,6 +7535,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Counseling & Mental Health Resources"
           ],
@@ -6411,10 +7568,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -6422,6 +7586,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Counseling and Psychological Wellness Services are free and confidential.",
             "Location: Campus Center I-Wing, Wellness Wing, Suite 102.",
@@ -6569,10 +7734,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -6580,6 +7752,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "13"
           ],
@@ -6603,10 +7776,70 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -6621,6 +7854,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -6634,6 +7868,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -6644,7 +7882,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -6669,6 +7911,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Title IX, Safety & Discrimination"
           ],
@@ -6701,10 +7944,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -6712,6 +7962,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "SUNY Old Westbury prohibits sexual discrimination, harassment, and violence.",
             "Title IX protects against sex-based discrimination and harassment.",
@@ -6903,10 +8154,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -6914,6 +8172,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "14"
           ],
@@ -6937,8 +8196,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -6946,6 +8222,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -6959,6 +8236,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -6969,7 +8250,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -6994,6 +8279,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Title IX, Safety & Discrimination"
           ],
@@ -7026,10 +8312,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -7037,6 +8330,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "SUNY Old Westbury prohibits sexual discrimination, harassment, and violence.",
             "Title IX protects against sex-based discrimination and harassment.",
@@ -7228,10 +8522,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -7239,6 +8540,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "14"
           ],
@@ -7262,10 +8564,70 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -7280,6 +8642,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -7293,6 +8656,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -7303,7 +8670,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -7328,6 +8699,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Academic Integrity & Misconduct"
           ],
@@ -7360,10 +8732,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -7371,6 +8750,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Students are expected to maintain the highest standards of academic honesty.",
             "Cheating, plagiarism, and forgery are serious offenses.",
@@ -7496,10 +8876,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -7507,6 +8894,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "15"
           ],
@@ -7530,8 +8918,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -7539,6 +8944,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -7552,6 +8958,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -7562,7 +8972,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -7587,6 +9001,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Academic Integrity & Misconduct"
           ],
@@ -7619,10 +9034,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -7630,6 +9052,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Students are expected to maintain the highest standards of academic honesty.",
             "Cheating, plagiarism, and forgery are serious offenses.",
@@ -7755,10 +9178,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -7766,6 +9196,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "15"
           ],
@@ -7789,10 +9220,70 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -7807,6 +9298,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -7820,6 +9312,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -7830,7 +9326,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -7855,6 +9355,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Accommodations & Accessibility"
           ],
@@ -7887,10 +9388,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -7898,6 +9406,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Students with disabilities are encouraged to contact the",
             "Office of Services for Students with Disabilities (OSSD).",
@@ -8015,10 +9524,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -8026,6 +9542,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "16"
           ],
@@ -8049,8 +9566,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -8058,6 +9592,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -8071,6 +9606,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -8081,7 +9620,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -8106,6 +9649,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Accommodations & Accessibility"
           ],
@@ -8138,10 +9682,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -8149,6 +9700,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Students with disabilities are encouraged to contact the",
             "Office of Services for Students with Disabilities (OSSD).",
@@ -8266,10 +9818,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -8277,6 +9836,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "16"
           ],
@@ -8300,10 +9860,70 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
@@ -8318,6 +9938,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -8331,6 +9952,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -8341,7 +9966,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -8366,6 +9995,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Proctorio & Online Meeting Policy"
           ],
@@ -8398,10 +10028,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -8409,6 +10046,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Exams or quizzes may be proctored using Proctorio via Blackboard.",
             "Students need a webcam, microphone, Chrome browser, and reliable internet.",
@@ -8542,10 +10180,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -8553,6 +10198,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "17"
           ],
@@ -8576,8 +10222,25 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
       "diagram_objects": [
@@ -8585,6 +10248,7 @@
           "kind": "drawing",
           "name": "Rectangle 1",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [],
           "rich_paragraphs": [],
           "object_type": "sp",
@@ -8598,6 +10262,10 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "anchor": "ctr",
+            "auto_fit": null
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
@@ -8608,7 +10276,11 @@
             "value": "006633"
           },
           "line": {
-            "width_emu": 0
+            "width_emu": 0,
+            "cap": null,
+            "compound": null,
+            "alignment": null,
+            "dash": null
           },
           "source_order": 1
         },
@@ -8633,6 +10305,7 @@
           "kind": "text",
           "name": "TextBox 3",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Proctorio & Online Meeting Policy"
           ],
@@ -8665,10 +10338,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 3
         },
@@ -8676,6 +10356,7 @@
           "kind": "text",
           "name": "TextBox 4",
           "placeholder": "",
+          "placeholder_idx": null,
           "paragraphs": [
             "Exams or quizzes may be proctored using Proctorio via Blackboard.",
             "Students need a webcam, microphone, Chrome browser, and reliable internet.",
@@ -8809,10 +10490,17 @@
             "flipH": false,
             "flipV": false
           },
+          "text_box": {
+            "wrap": "none",
+            "auto_fit": "spAutoFit"
+          },
           "geometry": {
             "type": "preset",
             "name": "rect",
             "adjustments": []
+          },
+          "fill": {
+            "type": "none"
           },
           "source_order": 4
         },
@@ -8820,6 +10508,7 @@
           "kind": "text",
           "name": "Slide Number Placeholder 5",
           "placeholder": "sldNum",
+          "placeholder_idx": "12",
           "paragraphs": [
             "17"
           ],
@@ -8843,10 +10532,70 @@
           ],
           "object_type": "sp",
           "shape_id": "6",
-          "bounds_emu": null,
-          "source_order": 5
+          "bounds_emu": {
+            "x": 6553200,
+            "y": 6356350,
+            "width": 2133600,
+            "height": 365125,
+            "rotation_60000deg": 0,
+            "flipH": false,
+            "flipV": false
+          },
+          "text_box": {
+            "auto_fit": null
+          },
+          "source_order": 5,
+          "bounds_source": "master",
+          "layout_placeholder": {
+            "type": "sldNum",
+            "idx": "12",
+            "layout_object_name": "Slide Number Placeholder 5"
+          }
         }
       ],
+      "scene": {
+        "coordinate_system": "EMU; origin at slide top-left",
+        "objects": [
+          {
+            "shape_id": "2",
+            "content_index": 0,
+            "source_order": 1,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "3",
+            "content_index": 1,
+            "source_order": 2,
+            "object_type": "pic"
+          },
+          {
+            "shape_id": "4",
+            "content_index": 2,
+            "source_order": 3,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "5",
+            "content_index": 3,
+            "source_order": 4,
+            "object_type": "sp"
+          },
+          {
+            "shape_id": "6",
+            "content_index": 4,
+            "source_order": 5,
+            "object_type": "sp"
+          }
+        ],
+        "connections": [],
+        "object_count": 5,
+        "concept_candidates": {
+          "type": null,
+          "confidence": "none",
+          "evidence_shape_ids": [],
+          "warning": "This identifies a dense visual composition only. Domain concepts such as entities, relationships, attributes, and cardinalities require semantic review."
+        }
+      },
       "animation_steps": [],
       "animation_timing_xml": null,
       "speaker_notes": ""
