@@ -49438,7 +49438,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "a person may be employed by at most one company\na product may be made by at most one company"
     },
     {
       "number": 34,
@@ -52490,7 +52490,7 @@
         }
       ],
       "animation_timing_xml": "<ns0:timing xmlns:ns0=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><ns0:tnLst><ns0:par><ns0:cTn id=\"1\" dur=\"indefinite\" restart=\"never\" nodeType=\"tmRoot\"><ns0:childTnLst><ns0:seq concurrent=\"1\" nextAc=\"seek\"><ns0:cTn id=\"2\" dur=\"indefinite\" nodeType=\"mainSeq\"><ns0:childTnLst><ns0:par><ns0:cTn id=\"3\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"indefinite\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"4\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"5\" presetID=\"1\" presetClass=\"entr\" presetSubtype=\"0\" fill=\"hold\" grpId=\"0\" nodeType=\"clickEffect\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:set><ns0:cBhvr><ns0:cTn id=\"6\" dur=\"1\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst></ns0:cTn><ns0:tgtEl><ns0:spTgt spid=\"31748\" /></ns0:tgtEl><ns0:attrNameLst><ns0:attrName>style.visibility</ns0:attrName></ns0:attrNameLst></ns0:cBhvr><ns0:to><ns0:strVal val=\"visible\" /></ns0:to></ns0:set></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par><ns0:par><ns0:cTn id=\"7\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"indefinite\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"8\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"9\" presetID=\"1\" presetClass=\"entr\" presetSubtype=\"0\" fill=\"hold\" nodeType=\"clickEffect\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:set><ns0:cBhvr><ns0:cTn id=\"10\" dur=\"1\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst></ns0:cTn><ns0:tgtEl><ns0:spTgt spid=\"31749\" /></ns0:tgtEl><ns0:attrNameLst><ns0:attrName>style.visibility</ns0:attrName></ns0:attrNameLst></ns0:cBhvr><ns0:to><ns0:strVal val=\"visible\" /></ns0:to></ns0:set></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn><ns0:prevCondLst><ns0:cond evt=\"onPrev\" delay=\"0\"><ns0:tgtEl><ns0:sldTgt /></ns0:tgtEl></ns0:cond></ns0:prevCondLst><ns0:nextCondLst><ns0:cond evt=\"onNext\" delay=\"0\"><ns0:tgtEl><ns0:sldTgt /></ns0:tgtEl></ns0:cond></ns0:nextCondLst></ns0:seq></ns0:childTnLst></ns0:cTn></ns0:par></ns0:tnLst><ns0:bldLst><ns0:bldP spid=\"31748\" grpId=\"0\" /></ns0:bldLst></ns0:timing>",
-      "speaker_notes": ""
+      "speaker_notes": "need to identify purchases by all three keys"
     },
     {
       "number": 36,
@@ -53314,7 +53314,7 @@
         }
       ],
       "animation_timing_xml": "<ns0:timing xmlns:ns0=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><ns0:tnLst><ns0:par><ns0:cTn id=\"1\" dur=\"indefinite\" restart=\"never\" nodeType=\"tmRoot\"><ns0:childTnLst><ns0:seq concurrent=\"1\" nextAc=\"seek\"><ns0:cTn id=\"2\" dur=\"indefinite\" nodeType=\"mainSeq\"><ns0:childTnLst><ns0:par><ns0:cTn id=\"3\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"indefinite\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"4\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"5\" presetID=\"1\" presetClass=\"entr\" presetSubtype=\"0\" fill=\"hold\" grpId=\"0\" nodeType=\"clickEffect\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:set><ns0:cBhvr><ns0:cTn id=\"6\" dur=\"1\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst></ns0:cTn><ns0:tgtEl><ns0:spTgt spid=\"33795\"><ns0:txEl><ns0:pRg st=\"0\" end=\"0\" /></ns0:txEl></ns0:spTgt></ns0:tgtEl><ns0:attrNameLst><ns0:attrName>style.visibility</ns0:attrName></ns0:attrNameLst></ns0:cBhvr><ns0:to><ns0:strVal val=\"visible\" /></ns0:to></ns0:set></ns0:childTnLst></ns0:cTn></ns0:par><ns0:par><ns0:cTn id=\"7\" presetID=\"1\" presetClass=\"entr\" presetSubtype=\"0\" fill=\"hold\" nodeType=\"withEffect\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:set><ns0:cBhvr><ns0:cTn id=\"8\" dur=\"1\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst></ns0:cTn><ns0:tgtEl><ns0:spTgt spid=\"2\" /></ns0:tgtEl><ns0:attrNameLst><ns0:attrName>style.visibility</ns0:attrName></ns0:attrNameLst></ns0:cBhvr><ns0:to><ns0:strVal val=\"visible\" /></ns0:to></ns0:set></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn><ns0:prevCondLst><ns0:cond evt=\"onPrev\" delay=\"0\"><ns0:tgtEl><ns0:sldTgt /></ns0:tgtEl></ns0:cond></ns0:prevCondLst><ns0:nextCondLst><ns0:cond evt=\"onNext\" delay=\"0\"><ns0:tgtEl><ns0:sldTgt /></ns0:tgtEl></ns0:cond></ns0:nextCondLst></ns0:seq></ns0:childTnLst></ns0:cTn></ns0:par></ns0:tnLst><ns0:bldLst><ns0:bldP spid=\"33795\" grpId=\"0\" build=\"p\" /></ns0:bldLst></ns0:timing>",
-      "speaker_notes": ""
+      "speaker_notes": "given a person, can determine what they bought and the store where they bought it"
     },
     {
       "number": 37,
@@ -54511,7 +54511,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "given a store, can determine who shopped there and the product they bought\neach store sells one product and to one person, ever"
     },
     {
       "number": 38,
@@ -55421,7 +55421,7 @@
         }
       ],
       "animation_timing_xml": "<ns0:timing xmlns:ns0=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><ns0:tnLst><ns0:par><ns0:cTn id=\"1\" dur=\"indefinite\" restart=\"never\" nodeType=\"tmRoot\"><ns0:childTnLst><ns0:seq concurrent=\"1\" nextAc=\"seek\"><ns0:cTn id=\"2\" dur=\"indefinite\" nodeType=\"mainSeq\"><ns0:childTnLst><ns0:par><ns0:cTn id=\"3\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"indefinite\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"4\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"5\" presetID=\"1\" presetClass=\"entr\" presetSubtype=\"0\" fill=\"hold\" nodeType=\"clickEffect\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:set><ns0:cBhvr><ns0:cTn id=\"6\" dur=\"1\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst></ns0:cTn><ns0:tgtEl><ns0:spTgt spid=\"2\" /></ns0:tgtEl><ns0:attrNameLst><ns0:attrName>style.visibility</ns0:attrName></ns0:attrNameLst></ns0:cBhvr><ns0:to><ns0:strVal val=\"visible\" /></ns0:to></ns0:set></ns0:childTnLst></ns0:cTn></ns0:par><ns0:par><ns0:cTn id=\"7\" presetID=\"1\" presetClass=\"entr\" presetSubtype=\"0\" fill=\"hold\" grpId=\"0\" nodeType=\"withEffect\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:set><ns0:cBhvr><ns0:cTn id=\"8\" dur=\"1\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst></ns0:cTn><ns0:tgtEl><ns0:spTgt spid=\"37893\" /></ns0:tgtEl><ns0:attrNameLst><ns0:attrName>style.visibility</ns0:attrName></ns0:attrNameLst></ns0:cBhvr><ns0:to><ns0:strVal val=\"visible\" /></ns0:to></ns0:set></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn><ns0:prevCondLst><ns0:cond evt=\"onPrev\" delay=\"0\"><ns0:tgtEl><ns0:sldTgt /></ns0:tgtEl></ns0:cond></ns0:prevCondLst><ns0:nextCondLst><ns0:cond evt=\"onNext\" delay=\"0\"><ns0:tgtEl><ns0:sldTgt /></ns0:tgtEl></ns0:cond></ns0:nextCondLst></ns0:seq></ns0:childTnLst></ns0:cTn></ns0:par></ns0:tnLst><ns0:bldLst><ns0:bldP spid=\"37893\" grpId=\"0\" /></ns0:bldLst></ns0:timing>",
-      "speaker_notes": ""
+      "speaker_notes": "our representation is not complete! trade-off between complexity and abstraction"
     },
     {
       "number": 39,
@@ -61734,7 +61734,7 @@
         }
       ],
       "animation_timing_xml": "<ns0:timing xmlns:ns0=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><ns0:tnLst><ns0:par><ns0:cTn id=\"1\" dur=\"indefinite\" restart=\"never\" nodeType=\"tmRoot\"><ns0:childTnLst><ns0:seq concurrent=\"1\" nextAc=\"seek\"><ns0:cTn id=\"2\" dur=\"indefinite\" nodeType=\"mainSeq\"><ns0:childTnLst><ns0:par><ns0:cTn id=\"3\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"indefinite\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"4\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"5\" presetID=\"1\" presetClass=\"entr\" presetSubtype=\"0\" fill=\"hold\" grpId=\"0\" nodeType=\"clickEffect\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:set><ns0:cBhvr><ns0:cTn id=\"6\" dur=\"1\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst></ns0:cTn><ns0:tgtEl><ns0:spTgt spid=\"40969\" /></ns0:tgtEl><ns0:attrNameLst><ns0:attrName>style.visibility</ns0:attrName></ns0:attrNameLst></ns0:cBhvr><ns0:to><ns0:strVal val=\"visible\" /></ns0:to></ns0:set></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par><ns0:par><ns0:cTn id=\"7\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"indefinite\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"8\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"9\" presetID=\"1\" presetClass=\"entr\" presetSubtype=\"0\" fill=\"hold\" nodeType=\"clickEffect\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:set><ns0:cBhvr><ns0:cTn id=\"10\" dur=\"1\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst></ns0:cTn><ns0:tgtEl><ns0:spTgt spid=\"2\" /></ns0:tgtEl><ns0:attrNameLst><ns0:attrName>style.visibility</ns0:attrName></ns0:attrNameLst></ns0:cBhvr><ns0:to><ns0:strVal val=\"visible\" /></ns0:to></ns0:set></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par><ns0:par><ns0:cTn id=\"11\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"indefinite\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"12\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"13\" presetID=\"1\" presetClass=\"entr\" presetSubtype=\"0\" fill=\"hold\" nodeType=\"clickEffect\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:set><ns0:cBhvr><ns0:cTn id=\"14\" dur=\"1\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst></ns0:cTn><ns0:tgtEl><ns0:spTgt spid=\"3\" /></ns0:tgtEl><ns0:attrNameLst><ns0:attrName>style.visibility</ns0:attrName></ns0:attrNameLst></ns0:cBhvr><ns0:to><ns0:strVal val=\"visible\" /></ns0:to></ns0:set></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn><ns0:prevCondLst><ns0:cond evt=\"onPrev\" delay=\"0\"><ns0:tgtEl><ns0:sldTgt /></ns0:tgtEl></ns0:cond></ns0:prevCondLst><ns0:nextCondLst><ns0:cond evt=\"onNext\" delay=\"0\"><ns0:tgtEl><ns0:sldTgt /></ns0:tgtEl></ns0:cond></ns0:nextCondLst></ns0:seq></ns0:childTnLst></ns0:cTn></ns0:par></ns0:tnLst><ns0:bldLst><ns0:bldP spid=\"40969\" grpId=\"0\" animBg=\"1\" /></ns0:bldLst></ns0:timing>",
-      "speaker_notes": ""
+      "speaker_notes": "product buys only one product, then out\nmultiple presidents, also may want to require country to have president"
     },
     {
       "number": 43,
@@ -63053,7 +63053,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "maybe people should be entitites!"
     },
     {
       "number": 44,
@@ -64372,7 +64372,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "dates don’t need to be an entity by themselves"
     },
     {
       "number": 45,
@@ -65907,7 +65907,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "every employee has _exactly_ two addresses!"
     },
     {
       "number": 46,
@@ -117970,7 +117970,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "https://lucid.app/lucidchart/5fe930d0-f318-48fb-bf7d-afcdb68bb8df/edit?invitationId=inv_bd1fdd51-cc4e-4f0d-a9ba-b60c4288c492&page=0_0#"
     },
     {
       "number": 68,
@@ -118274,7 +118274,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "create table Employee(\nssn primary key\nbdate\nfname\nmidint\nlaname\naddress\nsalary\ngender\nsupervisor_ssn\ndnumber NOT NULL\nforeign key supervisor_ssn references employee(ssn)\nforeign key dnumber references Department(number)\n);\nCREATE TABLE Dept (\nName\nNumber primary key\nmgrssn  NOT NULL\nmgr_sdate\nforeign key mgrss REFERENCES Employee(ssn)\nunique(mgrssn )\n);\nCREATE TABLE Dept_location(\ndnumber ,\nlocation ,\nPrimary key (number, location),\nforeign key dnumber references Dept(Number)\n);\nCREATE TABLE Project(\nName\nNumber primary key\nLocation\ncdept NOT NULL\nforeign key cdept references Dept(number)\n);\ncreate TABLE works_on(\nPnumber\nessn\nhours\nprimary key (pnumber, essn),\nforegin key pnumber references Project(number),\nforeign key essn references Employee(ssn)\n);"
     },
     {
       "number": 70,
@@ -155395,7 +155395,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Make weight weak entity"
     },
     {
       "number": 105,
@@ -179552,7 +179552,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Add 8-b and 8-c and 8-d"
     },
     {
       "number": 114,
@@ -183232,7 +183232,7 @@
         }
       ],
       "animation_timing_xml": "<ns0:timing xmlns:ns0=\"http://schemas.openxmlformats.org/presentationml/2006/main\"><ns0:tnLst><ns0:par><ns0:cTn id=\"1\" dur=\"indefinite\" restart=\"never\" nodeType=\"tmRoot\"><ns0:childTnLst><ns0:seq concurrent=\"1\" nextAc=\"seek\"><ns0:cTn id=\"2\" dur=\"indefinite\" nodeType=\"mainSeq\"><ns0:childTnLst><ns0:par><ns0:cTn id=\"3\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"indefinite\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"4\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"5\" presetID=\"1\" presetClass=\"entr\" presetSubtype=\"0\" fill=\"hold\" nodeType=\"clickEffect\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:set><ns0:cBhvr><ns0:cTn id=\"6\" dur=\"1\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst></ns0:cTn><ns0:tgtEl><ns0:spTgt spid=\"43\" /></ns0:tgtEl><ns0:attrNameLst><ns0:attrName>style.visibility</ns0:attrName></ns0:attrNameLst></ns0:cBhvr><ns0:to><ns0:strVal val=\"visible\" /></ns0:to></ns0:set></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par><ns0:par><ns0:cTn id=\"7\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"indefinite\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"8\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"9\" presetID=\"1\" presetClass=\"entr\" presetSubtype=\"0\" fill=\"hold\" grpId=\"0\" nodeType=\"clickEffect\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:set><ns0:cBhvr><ns0:cTn id=\"10\" dur=\"1\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst></ns0:cTn><ns0:tgtEl><ns0:spTgt spid=\"9\" /></ns0:tgtEl><ns0:attrNameLst><ns0:attrName>style.visibility</ns0:attrName></ns0:attrNameLst></ns0:cBhvr><ns0:to><ns0:strVal val=\"visible\" /></ns0:to></ns0:set></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par><ns0:par><ns0:cTn id=\"11\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"indefinite\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"12\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:par><ns0:cTn id=\"13\" presetID=\"10\" presetClass=\"entr\" presetSubtype=\"0\" fill=\"hold\" grpId=\"1\" nodeType=\"clickEffect\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst><ns0:childTnLst><ns0:set><ns0:cBhvr><ns0:cTn id=\"14\" dur=\"1\" fill=\"hold\"><ns0:stCondLst><ns0:cond delay=\"0\" /></ns0:stCondLst></ns0:cTn><ns0:tgtEl><ns0:spTgt spid=\"9\" /></ns0:tgtEl><ns0:attrNameLst><ns0:attrName>style.visibility</ns0:attrName></ns0:attrNameLst></ns0:cBhvr><ns0:to><ns0:strVal val=\"visible\" /></ns0:to></ns0:set><ns0:animEffect transition=\"in\" filter=\"fade\"><ns0:cBhvr><ns0:cTn id=\"15\" dur=\"500\" /><ns0:tgtEl><ns0:spTgt spid=\"9\" /></ns0:tgtEl></ns0:cBhvr></ns0:animEffect></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn></ns0:par></ns0:childTnLst></ns0:cTn><ns0:prevCondLst><ns0:cond evt=\"onPrev\" delay=\"0\"><ns0:tgtEl><ns0:sldTgt /></ns0:tgtEl></ns0:cond></ns0:prevCondLst><ns0:nextCondLst><ns0:cond evt=\"onNext\" delay=\"0\"><ns0:tgtEl><ns0:sldTgt /></ns0:tgtEl></ns0:cond></ns0:nextCondLst></ns0:seq></ns0:childTnLst></ns0:cTn></ns0:par></ns0:tnLst><ns0:bldLst><ns0:bldP spid=\"9\" grpId=\"0\" /><ns0:bldP spid=\"9\" grpId=\"1\" /></ns0:bldLst></ns0:timing>",
-      "speaker_notes": ""
+      "speaker_notes": "Option 1\nowner(owner_id)\nCompany(cname,owner_id)\nBank(bname, owner_id)\nPerson(ssn, owner_id)\nregistered_vechile(vid, platenumber)\ncar(vid, style)\ntrunk(vid, tonnage)\nOwns(owner_id, vid, purchase_date)\nOption 2\nCompany(cname,owner_id)\nBank(bname, owner_id)\nPerson(ssn, owner_id)\nregistered_vechile(vid, platenumber)\ncar(vid, style)\ntrunk(vid, tonnage)\nOwns(owner_id, vid, purchase_date)"
     },
     {
       "number": 116,
@@ -191660,7 +191660,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Change the example"
     },
     {
       "number": 126,
@@ -193671,7 +193671,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "entity airplane{\nregNo key\n}\nentity Model{\nmodelNumber key\ncapacity\nweight\n}\nrelation modelof (airplane 1, Model)\nentity technician {\nname\nssn key\naddress\nphonenumber\nsalary\nunion_memership\n}\nrelation expert (technician, Model){}\nentity TrafficController{\nssn key\nannual_medical_exam_date\nunion_memership\n}\nentity Test{\nFAA_test_no key\nmax_score\nname\n}\nentity test_event\n{\ntest_event_key key\ndate\nscore\nhours\n}\nrelation tested(test_event 1, airplane)\nrelation typeof(test_event 1, Test)\nrelation tests(test_event 1, technician)"
     },
     {
       "number": 131,
@@ -196996,7 +196996,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "digraph BankER {\n// Entity style\nnode [shape=box,  fontcolor=black, fontsize=12];\n// Entities\nBANK [label=\"BANK\", penwidth=1];\nBRANCHES [label=\"BRANCHES\", shape=diamond];\nBANK_BRANCH [label=\"BANK_BRANCH\", penwidth=3];\nACCTS [label=\"ACCTS\", shape=diamond];\nACCOUNT [label=\"ACCOUNT\"];\nLOANS [label=\"LOANS\", shape=diamond];\nLOAN [label=\"LOAN\"];\nCUSTOMER [label=\"CUSTOMER\"];\nA_C [label=\"A_C\", shape=diamond];\nL_C [label=\"L_C\", shape=diamond];\n// Attributes (ellipses)\nBANK_CODE [label=\"Code\", shape=ellipse];\nBANK_NAME [label=\"Name\", shape=ellipse];\nBANK_ADDR [label=\"Addr\", shape=ellipse];\nBRANCH_NO [label=\"Branch_no\", shape=ellipse];\nBRANCH_ADDR [label=\"Addr\", shape=ellipse];\nACCT_NO [label=\"Acct_no\", shape=ellipse];\nBALANCE [label=\"Balance\", shape=ellipse];\nLOAN_NO [label=\"Loan_no\", shape=ellipse];\nAMOUNT [label=\"Amount\", shape=ellipse];\nACCT_TYPE [label=\"Type\", shape=ellipse];\nLOAN_TYPE [label=\"Type\", shape=ellipse];\nCUSTOMER_SSN [label=\"Ssn\", shape=ellipse];\nCUSTOMER_NAME [label=\"Name\", shape=ellipse];\nCUSTOMER_PHONE [label=\"Phone\", shape=ellipse];\nCUSTOMER_ADDR [label=\"Addr\", shape=ellipse];\n// Relationships\nBANK -> BANK_CODE [dir=\"none\"];\nBANK -> BANK_NAME [dir=\"none\"];\nBANK -> BANK_ADDR [dir=\"none\"];\nBANK_BRANCH -> BRANCH_NO [dir=\"none\"];\nBANK_BRANCH -> BRANCH_ADDR [dir=\"none\"];\nACCOUNT -> ACCT_NO [dir=\"none\"];\nACCOUNT -> BALANCE [dir=\"none\"];\nACCOUNT -> ACCT_TYPE [dir=\"none\"];\nLOAN -> LOAN_NO [dir=\"none\"];\nLOAN -> AMOUNT [dir=\"none\"];\nLOAN -> LOAN_TYPE [dir=\"none\"];\nCUSTOMER -> CUSTOMER_SSN [dir=\"none\"];\nCUSTOMER -> CUSTOMER_NAME [dir=\"none\"];\nCUSTOMER -> CUSTOMER_PHONE [dir=\"none\"];\nCUSTOMER -> CUSTOMER_ADDR [dir=\"none\"];\n// Relationships between entities\nBANK -> BRANCHES [];\nBRANCHES -> BANK_BRANCH [penwidth=2, dir=\"none\"];\nBANK_BRANCH -> ACCTS [label=\"1\", dir=\"none\"];\nACCTS -> ACCOUNT [label=\"N\", dir=\"none\"];\nBANK_BRANCH -> LOANS [label=\"1\", dir=\"none\"];\nLOANS -> LOAN [label=\"N\", dir=\"none\"];\nACCOUNT -> A_C [label=\"M\", dir=\"none\"];\nA_C -> CUSTOMER [label=\"N\", dir=\"none\"];\nLOAN -> L_C [label=\"M\", dir=\"none\"];\nL_C -> CUSTOMER [label=\"N\", dir=\"none\"];\n}"
     },
     {
       "number": 136,
@@ -198386,7 +198386,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Item. (parts) can be persiable or non perishable\nfor pershiable item we need to store the expiration date\nparts are stored in data warehouse\nsku"
     },
     {
       "number": 138,

@@ -474,7 +474,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Frame the E/R model as the conceptual layer that protects application discussions from storage details.\n[Sources]\n- CMU 15-445/645 Database Systems (Fall 2024), lecture_1.pdf, page 24.\n[/Sources]"
     },
     {
       "number": 3,
@@ -6643,7 +6643,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Apply this four-part scan to one sentence from the football activity before students draw."
     },
     {
       "number": 10,
@@ -51193,7 +51193,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Have students say both directions aloud: one Department has many Employees; each Employee has at most one Department."
     },
     {
       "number": 34,
@@ -58550,7 +58550,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "a person may be employed by at most one company\na product may be made by at most one company"
     },
     {
       "number": 37,
@@ -62612,7 +62612,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "need to identify purchases by all three keys"
     },
     {
       "number": 39,
@@ -63709,7 +63709,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "given a person, can determine what they bought and the store where they bought it"
     },
     {
       "number": 40,
@@ -64884,7 +64884,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "given a store, can determine who shopped there and the product they bought\neach store sells one product and to one person, ever"
     },
     {
       "number": 41,
@@ -66037,7 +66037,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "our representation is not complete! trade-off between complexity and abstraction"
     },
     {
       "number": 42,
@@ -73609,7 +73609,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "This resolves the relationship-versus-entity decision raised by the preceding slides."
     },
     {
       "number": 46,
@@ -74980,7 +74980,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "product buys only one product, then out\nmultiple presidents, also may want to require country to have president"
     },
     {
       "number": 47,
@@ -76285,7 +76285,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "maybe people should be entitites!"
     },
     {
       "number": 48,
@@ -77590,7 +77590,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "dates don’t need to be an entity by themselves"
     },
     {
       "number": 49,
@@ -79641,7 +79641,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "every employee has _exactly_ two addresses!"
     },
     {
       "number": 50,
@@ -121651,7 +121651,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "If students cannot narrate the diagram accurately, the notation is not yet communicating the design."
     },
     {
       "number": 66,
@@ -134176,7 +134176,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "https://lucid.app/lucidchart/5fe930d0-f318-48fb-bf7d-afcdb68bb8df/edit?invitationId=inv_bd1fdd51-cc4e-4f0d-a9ba-b60c4288c492&page=0_0#"
     },
     {
       "number": 73,
@@ -134414,7 +134414,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "create table Employee(\nssn primary key\nbdate\nfname\nmidint\nlaname\naddress\nsalary\ngender\nsupervisor_ssn\ndnumber NOT NULL\nforeign key supervisor_ssn references employee(ssn)\nforeign key dnumber references Department(number)\n);\nCREATE TABLE Dept (\nName\nNumber primary key\nmgrssn  NOT NULL\nmgr_sdate\nforeign key mgrss REFERENCES Employee(ssn)\nunique(mgrssn )\n);\nCREATE TABLE Dept_location(\ndnumber ,\nlocation ,\nPrimary key (number, location),\nforeign key dnumber references Dept(Number)\n);\nCREATE TABLE Project(\nName\nNumber primary key\nLocation\ncdept NOT NULL\nforeign key cdept references Dept(number)\n);\ncreate TABLE works_on(\nPnumber\nessn\nhours\nprimary key (pnumber, essn),\nforegin key pnumber references Project(number),\nforeign key essn references Employee(ssn)\n);"
     },
     {
       "number": 75,
@@ -138423,7 +138423,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Use as a rapid retrieval check before the in-class mapping example."
     },
     {
       "number": 86,
@@ -167840,7 +167840,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Contrast a dependent whose ID is globally unique (strong) with one numbered only within an employee (weak)."
     },
     {
       "number": 109,
@@ -174227,7 +174227,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Make weight weak entity"
     },
     {
       "number": 112,
@@ -199120,7 +199120,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Add 8-b and 8-c and 8-d"
     },
     {
       "number": 121,
@@ -202764,7 +202764,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Option 1\nowner(owner_id)\nCompany(cname,owner_id)\nBank(bname, owner_id)\nPerson(ssn, owner_id)\nregistered_vechile(vid, platenumber)\ncar(vid, style)\ntrunk(vid, tonnage)\nOwns(owner_id, vid, purchase_date)\nOption 2\nCompany(cname,owner_id)\nBank(bname, owner_id)\nPerson(ssn, owner_id)\nregistered_vechile(vid, platenumber)\ncar(vid, style)\ntrunk(vid, tonnage)\nOwns(owner_id, vid, purchase_date)"
     },
     {
       "number": 123,
@@ -210952,7 +210952,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Change the example"
     },
     {
       "number": 133,
@@ -212967,7 +212967,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "entity airplane{\nregNo key\n}\nentity Model{\nmodelNumber key\ncapacity\nweight\n}\nrelation modelof (airplane 1, Model)\nentity technician {\nname\nssn key\naddress\nphonenumber\nsalary\nunion_memership\n}\nrelation expert (technician, Model){}\nentity TrafficController{\nssn key\nannual_medical_exam_date\nunion_memership\n}\nentity Test{\nFAA_test_no key\nmax_score\nname\n}\nentity test_event\n{\ntest_event_key key\ndate\nscore\nhours\n}\nrelation tested(test_event 1, airplane)\nrelation typeof(test_event 1, Test)\nrelation tests(test_event 1, technician)"
     },
     {
       "number": 138,
@@ -215884,7 +215884,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "digraph BankER {\n// Entity style\nnode [shape=box,  fontcolor=black, fontsize=12];\n// Entities\nBANK [label=\"BANK\", penwidth=1];\nBRANCHES [label=\"BRANCHES\", shape=diamond];\nBANK_BRANCH [label=\"BANK_BRANCH\", penwidth=3];\nACCTS [label=\"ACCTS\", shape=diamond];\nACCOUNT [label=\"ACCOUNT\"];\nLOANS [label=\"LOANS\", shape=diamond];\nLOAN [label=\"LOAN\"];\nCUSTOMER [label=\"CUSTOMER\"];\nA_C [label=\"A_C\", shape=diamond];\nL_C [label=\"L_C\", shape=diamond];\n// Attributes (ellipses)\nBANK_CODE [label=\"Code\", shape=ellipse];\nBANK_NAME [label=\"Name\", shape=ellipse];\nBANK_ADDR [label=\"Addr\", shape=ellipse];\nBRANCH_NO [label=\"Branch_no\", shape=ellipse];\nBRANCH_ADDR [label=\"Addr\", shape=ellipse];\nACCT_NO [label=\"Acct_no\", shape=ellipse];\nBALANCE [label=\"Balance\", shape=ellipse];\nLOAN_NO [label=\"Loan_no\", shape=ellipse];\nAMOUNT [label=\"Amount\", shape=ellipse];\nACCT_TYPE [label=\"Type\", shape=ellipse];\nLOAN_TYPE [label=\"Type\", shape=ellipse];\nCUSTOMER_SSN [label=\"Ssn\", shape=ellipse];\nCUSTOMER_NAME [label=\"Name\", shape=ellipse];\nCUSTOMER_PHONE [label=\"Phone\", shape=ellipse];\nCUSTOMER_ADDR [label=\"Addr\", shape=ellipse];\n// Relationships\nBANK -> BANK_CODE [dir=\"none\"];\nBANK -> BANK_NAME [dir=\"none\"];\nBANK -> BANK_ADDR [dir=\"none\"];\nBANK_BRANCH -> BRANCH_NO [dir=\"none\"];\nBANK_BRANCH -> BRANCH_ADDR [dir=\"none\"];\nACCOUNT -> ACCT_NO [dir=\"none\"];\nACCOUNT -> BALANCE [dir=\"none\"];\nACCOUNT -> ACCT_TYPE [dir=\"none\"];\nLOAN -> LOAN_NO [dir=\"none\"];\nLOAN -> AMOUNT [dir=\"none\"];\nLOAN -> LOAN_TYPE [dir=\"none\"];\nCUSTOMER -> CUSTOMER_SSN [dir=\"none\"];\nCUSTOMER -> CUSTOMER_NAME [dir=\"none\"];\nCUSTOMER -> CUSTOMER_PHONE [dir=\"none\"];\nCUSTOMER -> CUSTOMER_ADDR [dir=\"none\"];\n// Relationships between entities\nBANK -> BRANCHES [];\nBRANCHES -> BANK_BRANCH [penwidth=2, dir=\"none\"];\nBANK_BRANCH -> ACCTS [label=\"1\", dir=\"none\"];\nACCTS -> ACCOUNT [label=\"N\", dir=\"none\"];\nBANK_BRANCH -> LOANS [label=\"1\", dir=\"none\"];\nLOANS -> LOAN [label=\"N\", dir=\"none\"];\nACCOUNT -> A_C [label=\"M\", dir=\"none\"];\nA_C -> CUSTOMER [label=\"N\", dir=\"none\"];\nLOAN -> L_C [label=\"M\", dir=\"none\"];\nL_C -> CUSTOMER [label=\"N\", dir=\"none\"];\n}"
     },
     {
       "number": 143,
@@ -217306,7 +217306,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Item. (parts) can be persiable or non perishable\nfor pershiable item we need to store the expiration date\nparts are stored in data warehouse\nsku"
     },
     {
       "number": 145,
@@ -218458,7 +218458,7 @@
       ],
       "animation_steps": [],
       "animation_timing_xml": null,
-      "speaker_notes": ""
+      "speaker_notes": "Use one short requirement from the airport or retail case and collect a four-line response."
     }
   ]
 }
