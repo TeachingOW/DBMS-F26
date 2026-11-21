@@ -75,3 +75,8 @@ The examples use PostgreSQL 16+ syntax. Create an empty database, open its SQL e
 
 The published PowerPoints in `lectures/library/` are the source for the browser decks. Each uses an editable DBMS-F26 footer. With LibreOffice (`soffice`) and Python packages `pypdfium2`, `pypdf`, and `Pillow` available, run `python3 scripts/generate-lecture-library.py "/path/to/Organized Lectures"` from the repository root. The organized lecture folder supplies the catalog and slide titles. The script renders the published PowerPoints and regenerates the HTML, slide images, selectable text, and links. Slides marked hidden in PowerPoint keep their original positions and are labeled in the browser.
 
+
+## Editable non-SQL presentations
+
+Non-SQL PowerPoint content is extracted to structured JSON under content/decks-json/; a separate HTML viewer renders the text, tables, and speaker notes under presentations/editable/. No slide screenshots are used. Run python scripts/pptx_to_json.py to regenerate both layers from source decks in slides/. The PowerPoint files remain the source for diagrams and embedded artwork; those are not yet represented in this first JSON schema.
+

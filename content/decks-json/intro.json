@@ -1,0 +1,559 @@
+{
+  "schema_version": "1.0",
+  "source_file": "intro.pptx",
+  "source_path": "C:\\Users\\basio\\OneDrive - SUNY Old Westbury\\Teaching\\Teaching F26\\dbms\\intro.pptx",
+  "slide_size_emu": {
+    "width": 9144000,
+    "height": 6858000
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "CS 4550 – Database Management Systems",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 2",
+          "placeholder": "",
+          "paragraphs": [
+            "CS 4550 – Database Management Systems",
+            "Spring 2026 | SUNY Old Westbury"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 2,
+      "title": "Textbooks",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Textbooks"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Elmasri & Navathe, Fundamentals of Database Systems (7th Edition) – Primary text",
+            "Coronel & Morris, Database Systems: Design, Implementation, and Management (13th Edition)",
+            "Garcia-Molina, Ullman, Widom – Database Systems: The Complete Book"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 3,
+      "title": "Course Delivery",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Course Delivery"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Lectures will be conducted in person",
+            "Office hours available in person or online",
+            "All course materials and communications via Brightspace/email",
+            "Zoom may be used when necessary"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 4,
+      "title": "Course Description",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Course Description"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Study of fundamental concepts of relational database systems",
+            "Entity-Relationship design and relational algebra",
+            "Interaction with databases using SQL",
+            "Advanced SQL including triggers and stored procedures",
+            "Introduction to transactions and database reliability"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 5,
+      "title": "Course Objectives",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Course Objectives"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Design relational databases based on given requirements",
+            "Write efficient and correct SQL queries",
+            "Understand relational models and relational algebra",
+            "Explain query processing and optimization concepts",
+            "Understand concurrency control and transaction management",
+            "Document database systems and programming assignments"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 6,
+      "title": "Topics Covered",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Topics Covered"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Relational data model and schema design",
+            "SQL (DDL, DML, views, triggers)",
+            "ER modeling and database design",
+            "Functional dependencies and normalization",
+            "Query processing and optimization",
+            "Indexing and file organization",
+            "Transactions, recovery, and concurrency control",
+            "Introduction to NoSQL systems"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 7,
+      "title": "Schedule",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Schedule"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Week 1–3: SQL fundamentals and advanced queries",
+            "Week 4–6: Relational model, ER modeling, and design",
+            "Week 7–8: Relational algebra and midterm exam",
+            "Week 9–10: Transactions and concurrency control",
+            "Week 11–12: Indexing and query optimization",
+            "Week 13–14: NoSQL systems and project discussions",
+            "Week 15: Final exam"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 8,
+      "title": "Attendance",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Attendance"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Class attendance is required",
+            "Students are responsible for material covered during absences",
+            "Excessive absences may negatively impact course performance",
+            "Regular participation is essential for success"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 5",
+          "placeholder": "",
+          "paragraphs": [
+            "A: 94–100",
+            "A-: 90–93",
+            "B+: 87–89",
+            "B: 84–86",
+            "B-: 80–83",
+            "C+: 77–79",
+            "C: 74–76",
+            "C-: 70–73",
+            "D+: 67–69",
+            "D: 64–66",
+            "D-: 60–63",
+            "F: 0–59"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 9,
+      "title": "Evaluation",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Evaluation"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Homework assignments: 35%",
+            "Projects: 35%",
+            "Midterm exam: 10%",
+            "Final exam: 20%",
+            "Final grades are based on total points earned"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 10,
+      "title": "Course Rules",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Course Rules"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "All assignments must be completed individually unless stated otherwise",
+            "No missed exams without documented and approved reasons",
+            "Final exam cannot be missed and has no makeup",
+            "Students must regularly check campus email",
+            "Email is the preferred method of communication"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 11,
+      "title": "Attendance & Classroom Civility",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Attendance & Classroom Civility"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Class attendance is essential for success.",
+            "Arrive on time and stay for the full class.",
+            "Turn off electronic devices during class.",
+            "No texting or disruptive behavior.",
+            "Respect others’ right to learn."
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "Slide Number Placeholder 5",
+          "placeholder": "sldNum",
+          "paragraphs": [
+            "11"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 12,
+      "title": "Basic Needs Support",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Basic Needs Support"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Panther Community Care Center (PCCC), Campus Center K-100.",
+            "Hours: Monday–Friday, 9:00 AM – 5:00 PM.",
+            "Supports students facing financial, emotional, or basic needs challenges.",
+            "Panther Food Pantry available to all students, staff, and faculty.",
+            "Food Pantry Hours: Tuesdays 12–4 PM; Wednesdays 4–7 PM.",
+            "Contact: (516) 876-3080 | pccc@oldwestbury.edu."
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "Slide Number Placeholder 5",
+          "placeholder": "sldNum",
+          "paragraphs": [
+            "12"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 13,
+      "title": "Counseling & Mental Health Resources",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Counseling & Mental Health Resources"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Counseling and Psychological Wellness Services are free and confidential.",
+            "Location: Campus Center I-Wing, Wellness Wing, Suite 102.",
+            "Hours: Monday–Friday, 9:00 AM – 5:00 PM.",
+            "Phone: (516) 876-3053 | Email: counselingcenter@oldwestbury.edu.",
+            "24/7 support via U-Will: 833-646-1526 or Suicide Prevention Lifeline: 988.",
+            "After-hours emergencies: University Police (516) 876-3333."
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "Slide Number Placeholder 5",
+          "placeholder": "sldNum",
+          "paragraphs": [
+            "13"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 14,
+      "title": "Title IX, Safety & Discrimination",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Title IX, Safety & Discrimination"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "SUNY Old Westbury prohibits sexual discrimination, harassment, and violence.",
+            "Title IX protects against sex-based discrimination and harassment.",
+            "Report concerns at https://www.oldwestbury.edu/title-ix.",
+            "Confidential counseling support is available.",
+            "Deputy Title IX Coordinator: Stephanie Benzaquen.",
+            "Office: Campus Center H-417",
+            "Phone: (516) 876-2740",
+            "Email: benzaquens@oldwestbury.edu."
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "Slide Number Placeholder 5",
+          "placeholder": "sldNum",
+          "paragraphs": [
+            "14"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 15,
+      "title": "Academic Integrity & Misconduct",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Academic Integrity & Misconduct"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Students are expected to maintain the highest standards of academic honesty.",
+            "Cheating, plagiarism, and forgery are serious offenses.",
+            "Academic dishonesty may result in disciplinary action.",
+            "Students should consult the instructor if unsure about plagiarism.",
+            "Use of AI tools is permitted in general as long as it is declared"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "Slide Number Placeholder 5",
+          "placeholder": "sldNum",
+          "paragraphs": [
+            "15"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 16,
+      "title": "Accommodations & Accessibility",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Accommodations & Accessibility"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Students with disabilities are encouraged to contact the",
+            "Office of Services for Students with Disabilities (OSSD).",
+            "Director: Stacey DeFelice.",
+            "Location: NAB 2065.",
+            "Phone: (516) 628-5666 | Fax: (516) 876-3005.",
+            "Email: defelices@oldwestbury.edu."
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "Slide Number Placeholder 5",
+          "placeholder": "sldNum",
+          "paragraphs": [
+            "16"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    },
+    {
+      "number": 17,
+      "title": "Proctorio & Online Meeting Policy",
+      "hidden": false,
+      "content": [
+        {
+          "kind": "text",
+          "name": "TextBox 3",
+          "placeholder": "",
+          "paragraphs": [
+            "Proctorio & Online Meeting Policy"
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "TextBox 4",
+          "placeholder": "",
+          "paragraphs": [
+            "Exams or quizzes may be proctored using Proctorio via Blackboard.",
+            "Students need a webcam, microphone, Chrome browser, and reliable internet.",
+            "Online behavior is governed by the Student Code of Conduct.",
+            "Class sessions may be recorded.",
+            "Mute microphones when not speaking and remain respectful."
+          ]
+        },
+        {
+          "kind": "text",
+          "name": "Slide Number Placeholder 5",
+          "placeholder": "sldNum",
+          "paragraphs": [
+            "17"
+          ]
+        }
+      ],
+      "speaker_notes": ""
+    }
+  ]
+}
