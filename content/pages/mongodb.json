@@ -10,6 +10,23 @@
     "data-heading-fixed": "true"
   },
   "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Source presentation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "presentations/reviewed/lecture-14-mongodb/index.html"
+          },
+          "children": [
+            "Reviewed PowerPoint source"
+          ]
+        }
+      ]
+    },
     "\n  ",
     {
       "tag": "main",

@@ -145,7 +145,7 @@
                         "href": "lectures/library/01_Introduction/index.html"
                       },
                       "children": [
-                        "Introduction"
+                        "01 Introduction (reviewed source)"
                       ]
                     }
                   ]
@@ -159,7 +159,7 @@
                         "href": "lectures/library/03_ER_Modeling/index.html"
                       },
                       "children": [
-                        "ER Modeling"
+                        "03 ER Modeling (reviewed source)"
                       ]
                     }
                   ]
@@ -173,7 +173,7 @@
                         "href": "lectures/library/04_Relational_Algebra/index.html"
                       },
                       "children": [
-                        "Relational Algebra"
+                        "04 Relational Algebra (reviewed source)"
                       ]
                     }
                   ]
@@ -187,7 +187,7 @@
                         "href": "lectures/library/05_Normalization/index.html"
                       },
                       "children": [
-                        "Normalization"
+                        "05 Normalization (reviewed source)"
                       ]
                     }
                   ]
@@ -201,7 +201,7 @@
                         "href": "lectures/library/06_Window_Functions/index.html"
                       },
                       "children": [
-                        "Window Functions"
+                        "06 Window Functions (reviewed source)"
                       ]
                     }
                   ]
@@ -215,7 +215,7 @@
                         "href": "lectures/library/07_Recursive_SQL/index.html"
                       },
                       "children": [
-                        "Recursive SQL"
+                        "07 Recursive SQL (reviewed source)"
                       ]
                     }
                   ]
@@ -229,7 +229,7 @@
                         "href": "lectures/library/08_Stored_Programs/index.html"
                       },
                       "children": [
-                        "Stored Programs"
+                        "08 Stored Programs (reviewed source)"
                       ]
                     }
                   ]
@@ -243,7 +243,7 @@
                         "href": "lectures/library/09_Triggers/index.html"
                       },
                       "children": [
-                        "Triggers"
+                        "09 Triggers (reviewed source)"
                       ]
                     }
                   ]
@@ -257,7 +257,7 @@
                         "href": "lectures/library/10_Storage_and_Indexes/index.html"
                       },
                       "children": [
-                        "Storage and Indexes"
+                        "10 Storage and Indexes (reviewed source)"
                       ]
                     }
                   ]
@@ -271,7 +271,7 @@
                         "href": "lectures/library/11_Join_Algorithms/index.html"
                       },
                       "children": [
-                        "Join Algorithms"
+                        "11 Join Algorithms (reviewed source)"
                       ]
                     }
                   ]
@@ -285,7 +285,7 @@
                         "href": "lectures/library/12_Query_Optimization/index.html"
                       },
                       "children": [
-                        "Query Optimization"
+                        "12 Query Optimization (reviewed source)"
                       ]
                     }
                   ]
@@ -299,7 +299,7 @@
                         "href": "lectures/library/13_Transactions/index.html"
                       },
                       "children": [
-                        "Transactions"
+                        "13 Transactions (reviewed source)"
                       ]
                     }
                   ]
@@ -313,7 +313,7 @@
                         "href": "lectures/library/14_MongoDB/index.html"
                       },
                       "children": [
-                        "MongoDB (full lecture)"
+                        "14 MongoDB Full (reviewed source)"
                       ]
                     }
                   ]
@@ -327,7 +327,7 @@
                         "href": "lectures/library/15_Review/index.html"
                       },
                       "children": [
-                        "Review"
+                        "15 Review (reviewed source)"
                       ]
                     }
                   ]
@@ -369,7 +369,7 @@
                         "href": "presentations/editable/db-design/index.html"
                       },
                       "children": [
-                        "DB Design (editable)"
+                        "DB Design (reviewed source)"
                       ]
                     }
                   ]
@@ -383,7 +383,7 @@
                         "href": "presentations/editable/db-design-enhanced/index.html"
                       },
                       "children": [
-                        "DB Design enhanced (editable)"
+                        "DB Design enhanced (reviewed source)"
                       ]
                     }
                   ]
@@ -397,7 +397,7 @@
                         "href": "presentations/editable/db-design-with-labs/index.html"
                       },
                       "children": [
-                        "DB Design with labs (editable)"
+                        "DB Design with labs (reviewed source)"
                       ]
                     }
                   ]
@@ -411,7 +411,7 @@
                         "href": "presentations/editable/er-v26/index.html"
                       },
                       "children": [
-                        "ER.v26 (editable)"
+                        "ER.v26 (reviewed source)"
                       ]
                     }
                   ]
@@ -425,7 +425,7 @@
                         "href": "presentations/editable/er-v26-enhanced/index.html"
                       },
                       "children": [
-                        "ER.v26 enhanced (editable)"
+                        "ER.v26 enhanced (reviewed source)"
                       ]
                     }
                   ]
@@ -439,7 +439,7 @@
                         "href": "presentations/editable/er-v26-with-labs/index.html"
                       },
                       "children": [
-                        "ER.v26 with labs (editable)"
+                        "ER.v26 with labs (reviewed source)"
                       ]
                     }
                   ]
@@ -467,7 +467,7 @@
                         "href": "presentations/editable/indexes/index.html"
                       },
                       "children": [
-                        "Indexes (editable)"
+                        "Indexes (reviewed source)"
                       ]
                     }
                   ]
@@ -481,7 +481,7 @@
                         "href": "presentations/editable/intro/index.html"
                       },
                       "children": [
-                        "intro (editable)"
+                        "intro (reviewed source)"
                       ]
                     }
                   ]
@@ -495,7 +495,7 @@
                         "href": "presentations/editable/lecture1/index.html"
                       },
                       "children": [
-                        "Lecture1 (editable)"
+                        "Lecture1 (reviewed source)"
                       ]
                     }
                   ]
@@ -509,7 +509,35 @@
                         "href": "presentations/editable/mysql-window-functions/index.html"
                       },
                       "children": [
-                        "mysql window functions (editable)"
+                        "mysql window functions (reviewed source)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/reviewed/lecture-02-sql/index.html"
+                      },
+                      "children": [
+                        "02 SQL (reviewed source)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/reviewed/lecture-14-mongodb/index.html"
+                      },
+                      "children": [
+                        "14 MongoDB (reviewed source)"
                       ]
                     }
                   ]

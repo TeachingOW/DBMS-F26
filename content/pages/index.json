@@ -11,6 +11,23 @@
     "data-github-pages": "true"
   },
   "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Source presentation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "presentations/reviewed/lecture-02-sql/index.html"
+          },
+          "children": [
+            "Reviewed PowerPoint source"
+          ]
+        }
+      ]
+    },
     "\n  ",
     {
       "tag": "main",

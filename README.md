@@ -9,8 +9,8 @@ Start with [Student materials](materials.html), [Course plan](course-plan.html),
 - `content/site.json`: routes linking stable URLs to JSON documents, data, styles and renderer modules.
 - `content/pages/`: structured nodes for navigation, handouts, labs, syntax references and presentation controls.
 - `content/runtime/`: SQL slides, activities, notes, advanced slides, MongoDB, captions, syntax metadata and discussion configuration.
-- `content/library/`: lecture-frame metadata and text.
-- `content/decks-json/`: one canonical file per editable deck, with no duplicate deck copies.
+- `content/library/`: pointers to pinned reviewed lecture decks.
+- `content/decks-json/`: 26 canonical source-reviewed decks (2,646 slides), with stable source identities, reviewed-version provenance and selectable text.
 - `runtime/`, presentation controllers and CSS: rendering and interactions.
 - Lecture, presentation, asset, lab and database directories: student downloads and media. HTML files are loading shells.
 
@@ -26,6 +26,6 @@ Edit JSON and reload; no HTML build is needed. SQL setup panels fetch the files 
 
 Tools, review pipelines, migration scripts and QA live in the private [TeachingOW/DBMS-teaching-materials](https://github.com/TeachingOW/DBMS-teaching-materials) repository. Students do not need access to it.
 
-Editable rendering still approximates complex geometry and animations. Plain-text views, the reference library and PowerPoints remain available. Discussion providers are configured in JSON; private notes stay on the student's device.
+Presentation pages default to lossless static PowerPoint references attached to reviewed JSON. The editable-layout toggle remains approximate; static exports do not play animations. Plain-text views retain the extracted source content, including Office math/alternate-content blocks. DB-design variants reuse reviewed base layouts where all text and table values match; their added teaching slides remain intact. Discussion providers are configured in JSON; private notes stay on the student's device.
 
-Changes are proposed on `consolidate-f26` in [PR #5](https://github.com/TeachingOW/DBMS-F26/pull/5). Publishing to `gh-pages` remains a separate release action.
+The consolidation is proposed on `consolidate-f26` in [PR #5](https://github.com/TeachingOW/DBMS-F26/pull/5). The source-review migration is included on the same development branch. Publishing to gh-pages remains a separate action.
