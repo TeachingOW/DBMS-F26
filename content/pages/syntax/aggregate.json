@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "title": "Aggregate functions · SQL Syntax",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "header",
+      "children": [
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "eyebrow"
+          },
+          "children": [
+            "SQL general syntax"
+          ]
+        },
+        {
+          "tag": "h1",
+          "children": [
+            "Aggregate functions"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        "\n    ",
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "lead"
+          },
+          "children": [
+            "Summarize several rows with COUNT, SUM, AVG, MIN, or MAX."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "General pattern"
+              ]
+            },
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "SELECT aggregate_function([DISTINCT] expression) AS result_name\nFROM table_name\n[WHERE condition];"
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "actions"
+              },
+              "children": [
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "type": "button",
+                    "data-copy": "pattern"
+                  },
+                  "children": [
+                    "Copy general pattern"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "How to read it"
+              ]
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "children": [
+                    "COUNT(*) counts rows."
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    "Most aggregates ignore NULL input values."
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    "DISTINCT inside an aggregate removes repeated input values first."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Example using the course database"
+              ]
+            },
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "SELECT COUNT(*) AS products, AVG(price) AS average_price\nFROM Product;"
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "actions"
+              },
+              "children": [
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "type": "button",
+                    "data-copy": "example"
+                  },
+                  "children": [
+                    "Copy example"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "nav",
+          "attrs": {
+            "class": "actions"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../materials.html",
+                "class": "materials-link"
+              },
+              "children": [
+                "Student materials"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "← Return to presentation"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "index.html"
+              },
+              "children": [
+                "All syntax topics"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../demo-database.sql",
+                "download": ""
+              },
+              "children": [
+                "Download demo database"
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "footer",
+          "children": [
+            "Designed for PostgreSQL 16+ and the course demo database."
+          ]
+        }
+      ]
+    }
+  ]
+}

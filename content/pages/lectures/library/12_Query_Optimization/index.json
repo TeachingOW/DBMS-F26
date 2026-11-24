@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "title": "Query Optimization · DBMS-F26",
+  "bodyAttributes": {},
+  "nodes": [
+    "\n",
+    {
+      "tag": "main",
+      "attrs": {
+        "class": "lecture"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "nav",
+          "attrs": {
+            "aria-label": "Course navigation"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../../materials.html",
+                "class": "materials-link"
+              },
+              "children": [
+                "Student materials"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "strong",
+              "children": [
+                "DBMS-F26"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "All lectures"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../12_Query_Optimization.pptx",
+                "download": ""
+              },
+              "children": [
+                "Download PowerPoint"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "h1",
+          "children": [
+            "Query Optimization"
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "slide-controls",
+            "aria-label": "Slide controls"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "button",
+              "attrs": {
+                "type": "button",
+                "data-prev": ""
+              },
+              "children": [
+                "Previous"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "form",
+              "attrs": {
+                "data-jump": ""
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "label",
+                  "attrs": {
+                    "for": "slide-number"
+                  },
+                  "children": [
+                    "Slide"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "input",
+                  "attrs": {
+                    "id": "slide-number",
+                    "type": "number",
+                    "min": "1",
+                    "value": "1",
+                    "required": ""
+                  }
+                },
+                "\n      ",
+                {
+                  "tag": "span",
+                  "attrs": {
+                    "data-total": ""
+                  }
+                },
+                "\n      ",
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "type": "submit"
+                  },
+                  "children": [
+                    "Go"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "button",
+              "attrs": {
+                "type": "button",
+                "data-next": ""
+              },
+              "children": [
+                "Next"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "status",
+            "data-status": "",
+            "role": "status"
+          }
+        },
+        "\n  ",
+        {
+          "tag": "figure",
+          "children": [
+            "\n    ",
+            {
+              "tag": "img",
+              "attrs": {
+                "data-slide": "",
+                "alt": ""
+              }
+            },
+            "\n    ",
+            {
+              "tag": "figcaption",
+              "attrs": {
+                "data-caption": ""
+              }
+            },
+            "\n  "
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "details",
+          "attrs": {
+            "data-transcript": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "summary",
+              "children": [
+                "Slide text and links"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "transcript",
+                "data-text": ""
+              }
+            },
+            "\n    ",
+            {
+              "tag": "ul",
+              "attrs": {
+                "data-links": ""
+              }
+            },
+            "\n  "
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "noscript",
+          "children": [
+            "Enable JavaScript to navigate the slides, or download the PowerPoint above."
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    "\n",
+    "\n\n\n"
+  ]
+}

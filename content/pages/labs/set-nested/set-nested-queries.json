@@ -1,0 +1,1895 @@
+{
+  "schemaVersion": 1,
+  "title": "Lab 4: Set Operations and Advanced Queries",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Course navigation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #e7f3ff; padding: 15px; margin-bottom: 20px; border-radius: 5px;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h1",
+      "children": [
+        "Lab 4: Set Operations and Advanced Queries"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "🎯 Learning Objectives"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "By the end of this lab, you will be able to:\n- Understand set operations (UNION, UNION ALL)\n- Work with multiset operations\n- Implement SQL Division pattern\n- Write complex nested queries\n- Handle advanced subquery scenarios\n- Perform bulk UPDATE and DELETE operations"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "📋 Table of Contents"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#multiset-operations"
+              },
+              "children": [
+                "Multiset Operations"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#update-delete"
+              },
+              "children": [
+                "Update and Delete Operations"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#division"
+              },
+              "children": [
+                "Division"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "attrs": {
+        "id": "multiset-operations"
+      },
+      "children": [
+        "Multiset Operations"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "MySQL does not have INTERSECT or EXCEPT keyword. In the next lecture, we will explain an alternative.\nCompare these two queries:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT  R.A \nFROM   R, S \nWHERE  R.A=S.A\nUNION  \nSELECT R.A \nFROM   R, T  \nWHERE  R.A=T.A \n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT  R.A\nFROM   R, S\nWHERE  R.A=S.A\nUNION ALL\nSELECT R.A\nFROM   R, T\nWHERE  R.A=T.A\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "Try the following SQL code"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP TABLE IF EXISTS Product;\nDROP TABLE IF EXISTS Company;\n\nCREATE TABLE Product(\n  PName CHAR(20) PRIMARY KEY,\n    maker CHAR(20),\n    factory_loc CHAR(20)\n);\nCREATE TABLE Company(\n  CName CHAR(20) PRIMARY KEY,\n    hq_city CHAR(20)\n);\n\nALTER TABLE Product ADD FOREIGN KEY (maker) REFERENCES Company(CName);\n\nINSERT INTO Company VALUES('X co.','Seattle');\nINSERT INTO Company VALUES('Y inc.','Seattle');\nINSERT INTO Company VALUES('A co.', 'Tokyo');\n\nINSERT INTO Product VALUES('X','X co.','US');\nINSERT INTO Product VALUES('A','A co.','China');\nINSERT INTO Product VALUES('A+','A co.','US');\nINSERT INTO Product VALUES('Y','Y inc.','China');\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Compare the three queries below:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT hq_city\nFROM   Company, Product\nWHERE  maker = cname \n  AND factory_loc='US'\nAND hq_city IN (\nSELECT hq_city\nFROM   Company, Product\nWHERE  maker = cname\nAND factory_loc='China'\n);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT maker, hq_city\nFROM   Company, Product\nWHERE  maker = cname \n  AND factory_loc='US'\nAND (maker,hq_city) IN (\nSELECT maker, hq_city\nFROM   Company, Product\nWHERE  maker = cname\nAND factory_loc='China'\n);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT DISTINCT hq_city\nFROM   Company, Product\nWHERE  maker = cname \n       AND cname IN (\n        SELECT maker\n        FROM   Product\n        WHERE  factory_loc = 'US')\n     AND cname IN (\n        SELECT maker\n        FROM   Product\n        WHERE  factory_loc = 'China');\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "attrs": {
+        "id": "update-delete"
+      },
+      "children": [
+        "To Delete or update multiple rows"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "To disable safe updates or delete"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SET SQL_SAFE_UPDATES=0;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "To enable them back"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SET SQL_SAFE_UPDATES=1;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h1",
+      "children": [
+        "Lab2.2"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Run the following query"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT DISTINCT hq_city\nFROM   Company, Product\nWHERE  maker = cname \n       AND cname IN (\n    SELECT maker\n      FROM   Product\n      WHERE  factory_loc = 'US')\n   AND cname IN (\n    SELECT maker\n      FROM   Product\n      WHERE  factory_loc = 'China')\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "To understand the previous query, you may break it into three parts."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Q1:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "    SELECT maker\n    FROM   Product\n      WHERE  factory_loc = 'US'\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    " \nQ2:\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "\nSELECT maker\n      FROM   Product\n      WHERE  factory_loc = 'China'\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Q3:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT *\nFROM   Company, Product\nWHERE  maker = cname \n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Another way:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT DISTINCT hq_city\nFROM   Company, (SELECT maker\n      FROM   Product\n      WHERE  factory_loc = 'US') US, \n      (SELECT maker\n      FROM   Product\n      WHERE  factory_loc = 'China') Ch\nWHERE  us.maker = cname \nAND    ch.maker= cname \n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Another one:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT DISTINCT hq_city\nFROM   Company, Product p1,   Product p2\nWHERE  p1.maker = cname \nAND    p2.maker= cname \nAND  p1.factory_loc = 'US'\nAND  p2.factory_loc = 'China';\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "division"
+      },
+      "children": [
+        "Division"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "\n    "
+      ]
+    },
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "\n CREATE TABLE student (SID INT PRIMARY KEY,Name VARCHAR(10),Major\n VARCHAR(4)); \n CREATE TABLE enrolled (SID INT,cid VARCHAR(5),PRIMARY KEY\n (sid,cid)); \n INSERT INTO student VALUES (40,'alex','cs'), (41, 'john','cs'), (42, 'mat', 'cs'), (43, 'zack', 'math');\n INSERT INTO Enrolled VALUES (40,'cs101'),(40,  'cs102'),(41, 'cs101'),(41,  'cs404'),(41,'cs405'), (42,'cs101'),(42,'cs102'),(42,'cs203'),(43,'cs101'),(43,'cs102');",
+                {
+                  "tag": "p"
+                },
+                "\n    "
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\nFind students who are taking all courses taken by student 40\n\n    ",
+    {
+      "tag": "summary",
+      "children": [
+        "Solution"
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n    \n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "\nSELECT DISTINCT NAME FROM STUDENT S WHERE major='cs’ AND NOT EXISTS\n (SELECT * FROM ENROLLED E2 WHERE SID=40 AND CID NOT IN (SELECT CID\n FROM ENROLLED E WHERE E.SID=S.SID) )\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n    \n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "  SELECT DISTINCT NAME FROM STUDENT S WHERE major=‘cs’ AND  NOT EXISTS\n     (SELECT * FROM ENROLLED E2  WHERE SID=40 AND NOT EXISTS ( SELECT *\n     FROM ENROLLED E WHERE E.SID=S.SID AND E2.CID=E.CID) )\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "🎯 Additional Practice Examples"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 1: Combining Customer Data from Multiple Sources"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Merge customer records from different systems using UNION."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Combining data from multiple customer tables\nCREATE TABLE OnlineCustomers (\n    customer_id INT,\n    customer_name VARCHAR(100),\n    email VARCHAR(100),\n    source VARCHAR(20) DEFAULT 'Online'\n);\n\nCREATE TABLE StoreCustomers (\n    customer_id INT,\n    customer_name VARCHAR(100),\n    phone VARCHAR(20),\n    source VARCHAR(20) DEFAULT 'Store'\n);\n\n-- Query: Get all customers from both sources (no duplicates)\nSELECT customer_id, customer_name, email AS contact, source\nFROM OnlineCustomers\nUNION\nSELECT customer_id, customer_name, phone AS contact, source\nFROM StoreCustomers\nORDER BY customer_name;\n\n-- Query: Get all customers including duplicates\nSELECT customer_id, customer_name, source\nFROM OnlineCustomers\nUNION ALL\nSELECT customer_id, customer_name, source\nFROM StoreCustomers;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 2: Finding Common Elements (INTERSECT Alternative)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find customers who exist in both online and store systems."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- MySQL doesn't have INTERSECT, so we use subqueries or joins\n-- Method 1: Using IN\nSELECT DISTINCT customer_id, customer_name\nFROM OnlineCustomers\nWHERE customer_id IN (\n    SELECT customer_id FROM StoreCustomers\n);\n\n-- Method 2: Using INNER JOIN (more efficient)\nSELECT DISTINCT o.customer_id, o.customer_name\nFROM OnlineCustomers o\nINNER JOIN StoreCustomers s ON o.customer_id = s.customer_id;\n\n-- Method 3: Using EXISTS\nSELECT DISTINCT customer_id, customer_name\nFROM OnlineCustomers o\nWHERE EXISTS (\n    SELECT 1 FROM StoreCustomers s \n    WHERE s.customer_id = o.customer_id\n);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 3: Complex Filtering with Subqueries"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find products that have never been ordered using NOT EXISTS."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Schema for products and orders\nCREATE TABLE Products (\n    product_id INT PRIMARY KEY,\n    product_name VARCHAR(100),\n    category VARCHAR(50),\n    price DECIMAL(10,2)\n);\n\nCREATE TABLE OrderItems (\n    order_id INT,\n    product_id INT,\n    quantity INT\n);\n\n-- Query: Find products that have never been ordered\nSELECT p.product_id, p.product_name, p.category, p.price\nFROM Products p\nWHERE NOT EXISTS (\n    SELECT 1 FROM OrderItems oi \n    WHERE oi.product_id = p.product_id\n);\n\n-- Alternative using LEFT JOIN\nSELECT p.product_id, p.product_name, p.category, p.price\nFROM Products p\nLEFT JOIN OrderItems oi ON p.product_id = oi.product_id\nWHERE oi.product_id IS NULL;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 4: Bulk UPDATE with Subquery"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Update prices based on complex conditions using subqueries."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Increase prices for products in popular categories\nUPDATE Products\nSET price = price * 1.10\nWHERE category IN (\n    SELECT category \n    FROM (\n        SELECT p.category\n        FROM Products p\n        JOIN OrderItems oi ON p.product_id = oi.product_id\n        GROUP BY p.category\n        HAVING SUM(oi.quantity) > 100\n    ) AS popular_categories\n);\n\n-- Update discontinued products based on last order date\nUPDATE Products p\nSET price = price * 0.50\nWHERE NOT EXISTS (\n    SELECT 1 \n    FROM OrderItems oi \n    JOIN Orders o ON oi.order_id = o.order_id\n    WHERE oi.product_id = p.product_id \n    AND o.order_date > DATE_SUB(NOW(), INTERVAL 1 YEAR)\n);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 5: SQL Division Pattern - Advanced"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find customers who have ordered all products in a specific category."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Find customers who ordered ALL products from 'Electronics' category\n-- This is the relational division problem\n\n-- Method 1: Using NOT EXISTS with double negation\nSELECT DISTINCT c.customer_id, c.customer_name\nFROM Customers c\nWHERE NOT EXISTS (\n    -- Find products in Electronics category\n    SELECT p.product_id\n    FROM Products p\n    WHERE p.category = 'Electronics'\n    AND NOT EXISTS (\n        -- Check if customer ordered this product\n        SELECT 1\n        FROM Orders o\n        JOIN OrderItems oi ON o.order_id = oi.order_id\n        WHERE o.customer_id = c.customer_id\n        AND oi.product_id = p.product_id\n    )\n);\n\n-- Method 2: Using COUNT and GROUP BY\nSELECT c.customer_id, c.customer_name\nFROM Customers c\nJOIN Orders o ON c.customer_id = o.customer_id\nJOIN OrderItems oi ON o.order_id = oi.order_id\nJOIN Products p ON oi.product_id = p.product_id\nWHERE p.category = 'Electronics'\nGROUP BY c.customer_id, c.customer_name\nHAVING COUNT(DISTINCT p.product_id) = (\n    SELECT COUNT(*) \n    FROM Products \n    WHERE category = 'Electronics'\n);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #fff3cd; padding: 15px; margin: 20px 0; border-left: 4px solid #ffc107; border-radius: 4px;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "h4",
+          "attrs": {
+            "style": "margin-top: 0;"
+          },
+          "children": [
+            "💡 Key Takeaways - Set Operations & Advanced Queries"
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "ul",
+          "children": [
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "UNION"
+                  ]
+                },
+                " removes duplicates; ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "UNION ALL"
+                  ]
+                },
+                " keeps all rows (faster)"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "MySQL doesn't have INTERSECT/EXCEPT - use ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "IN"
+                  ]
+                },
+                ", ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "EXISTS"
+                  ]
+                },
+                ", or ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "JOIN"
+                  ]
+                },
+                " instead"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "NOT EXISTS"
+                  ]
+                },
+                " is often more efficient than ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "NOT IN"
+                  ]
+                },
+                " with NULLs"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "Use subqueries in WHERE for dynamic filtering based on aggregated data"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "Division pattern (A÷B) finds entities related to ALL members of another set"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "Bulk UPDATE/DELETE can use subqueries for complex conditions"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "Always test complex queries on sample data first!"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr",
+      "attrs": {
+        "style": "margin-top: 40px;"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #f0f0f0; padding: 15px; margin-top: 20px; border-radius: 5px; text-align: center;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            " | \n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/GETTING_STARTED.html"
+              },
+              "children": [
+                "🚀 Getting Started"
+              ]
+            },
+            " | \n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/SQL_CHEAT_SHEET.html"
+              },
+              "children": [
+                "📝 SQL Cheat Sheet"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    "\n\n\n"
+  ]
+}

@@ -1,0 +1,1504 @@
+{
+  "schemaVersion": 1,
+  "title": "SQL Quick Start + HTML Labs (Lecture 2/3 Order)",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Course navigation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h1",
+      "children": [
+        "SQL Quick Start + HTML Labs"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "highlight"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "strong",
+          "children": [
+            "Lecture order:"
+          ]
+        },
+        " SQL foundations and single-table queries → multi-table queries (foreign keys and joins) → set operators and nested queries → aggregation and grouping → advanced SQL topics (NULLs, quantifiers, outer joins).\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "toc"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "Table of Contents"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "ol",
+          "children": [
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "#module-1"
+                  },
+                  "children": [
+                    "Module 1: SQL Foundations and Table Setup"
+                  ]
+                }
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "#module-2"
+                  },
+                  "children": [
+                    "Module 2: Single-Table Queries"
+                  ]
+                }
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "#module-3"
+                  },
+                  "children": [
+                    "Module 3: Multi-Table Queries (Foreign Keys and Joins)"
+                  ]
+                }
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "#module-4"
+                  },
+                  "children": [
+                    "Module 4: Set Operators and Nested Queries"
+                  ]
+                }
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "#module-5"
+                  },
+                  "children": [
+                    "Module 5: Aggregation, GROUP BY, HAVING"
+                  ]
+                }
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "#module-6"
+                  },
+                  "children": [
+                    "Module 6: Advanced SQLizing (NULLs, Quantifiers, Outer Joins)"
+                  ]
+                }
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "#resources"
+                  },
+                  "children": [
+                    "Detailed HTML Labs in This Repo"
+                  ]
+                }
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "../../course-map.html"
+                  },
+                  "children": [
+                    "Materials Hub (All Assets)"
+                  ]
+                }
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr"
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "module-1"
+      },
+      "children": [
+        "Module 1: SQL Foundations and Table Setup"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Create a Database and Table"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "CREATE DATABASE store;\nUSE store;\n\nCREATE TABLE products (\n    id INT PRIMARY KEY,\n    name VARCHAR(50) NOT NULL,\n    price DECIMAL(10,2),\n    category VARCHAR(30)\n);\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Insert Starter Data"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "INSERT INTO products VALUES\n(1, 'Laptop', 999.99, 'Electronics'),\n(2, 'Mouse', 25.50, 'Electronics'),\n(3, 'Desk', 299.99, 'Furniture'),\n(4, 'Chair', 199.99, 'Furniture'),\n(5, 'Monitor', 349.99, 'Electronics');\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "tip"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "strong",
+          "children": [
+            "Foundational reminders:"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "ul",
+          "children": [
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "A table is a relation (multiset of tuples/rows)."
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "Each column has an atomic type (",
+                {
+                  "tag": "code",
+                  "children": [
+                    "INT"
+                  ]
+                },
+                ", ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "VARCHAR"
+                  ]
+                },
+                ", ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "DECIMAL"
+                  ]
+                },
+                ", etc.)."
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "Keys uniquely identify rows; ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "NOT NULL"
+                  ]
+                },
+                " enforces required data."
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "practice"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "strong",
+          "children": [
+            "Practice:"
+          ]
+        },
+        " Create ",
+        {
+          "tag": "code",
+          "children": [
+            "customers(id, name, email, city)"
+          ]
+        },
+        " with ",
+        {
+          "tag": "code",
+          "children": [
+            "id"
+          ]
+        },
+        " as primary key and ",
+        {
+          "tag": "code",
+          "children": [
+            "name"
+          ]
+        },
+        " as ",
+        {
+          "tag": "code",
+          "children": [
+            "NOT NULL"
+          ]
+        },
+        ".\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr"
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "module-2"
+      },
+      "children": [
+        "Module 2: Single-Table Queries"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Selection and Projection"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "-- All columns\nSELECT * FROM products;\n\n-- Specific columns (projection)\nSELECT name, price FROM products;\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Filtering with WHERE"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "SELECT * FROM products WHERE price < 300;\nSELECT * FROM products WHERE category = 'Electronics' AND price < 500;\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Pattern Matching with LIKE"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "SELECT * FROM products WHERE name LIKE 'M%';\nSELECT * FROM products WHERE name LIKE '%top%';\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "DISTINCT and ORDER BY"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "SELECT DISTINCT category FROM products;\nSELECT COUNT(DISTINCT category) AS unique_categories FROM products;\n\nSELECT * FROM products ORDER BY price ASC;\nSELECT * FROM products ORDER BY category, price DESC;\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "practice"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "strong",
+          "children": [
+            "Practice:"
+          ]
+        },
+        " List all furniture products between 100 and 350, sorted by price descending.\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr"
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "module-3"
+      },
+      "children": [
+        "Module 3: Multi-Table Queries (Foreign Keys and Joins)"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Define Parent/Child Tables"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "CREATE TABLE suppliers (\n    id INT PRIMARY KEY,\n    name VARCHAR(50),\n    country VARCHAR(30)\n);\n\nCREATE TABLE products_fk (\n    id INT PRIMARY KEY,\n    name VARCHAR(50),\n    price DECIMAL(10,2),\n    supplier_id INT,\n    FOREIGN KEY (supplier_id) REFERENCES suppliers(id)\n);\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Join Data Across Tables"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "SELECT\n    p.name AS product_name,\n    p.price,\n    s.name AS supplier_name,\n    s.country\nFROM products_fk p\nINNER JOIN suppliers s ON p.supplier_id = s.id;\n\nSELECT\n    p.name,\n    s.name AS supplier_name\nFROM products_fk p\nLEFT JOIN suppliers s ON p.supplier_id = s.id;\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "tip"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "strong",
+          "children": [
+            "Order dependency:"
+          ]
+        },
+        " insert parent rows first (in ",
+        {
+          "tag": "code",
+          "children": [
+            "suppliers"
+          ]
+        },
+        "), then child rows (in ",
+        {
+          "tag": "code",
+          "children": [
+            "products_fk"
+          ]
+        },
+        ") to satisfy foreign key constraints.\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "practice"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "strong",
+          "children": [
+            "Practice:"
+          ]
+        },
+        " Add one supplier without products, then compare ",
+        {
+          "tag": "code",
+          "children": [
+            "INNER JOIN"
+          ]
+        },
+        " vs ",
+        {
+          "tag": "code",
+          "children": [
+            "LEFT JOIN"
+          ]
+        },
+        " results.\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr"
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "module-4"
+      },
+      "children": [
+        "Module 4: Set Operators and Nested Queries"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "UNION and UNION ALL"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "SELECT name FROM products WHERE category = 'Electronics'\nUNION\nSELECT name FROM products WHERE price > 500;\n\nSELECT category FROM products WHERE price < 300\nUNION ALL\nSELECT category FROM products WHERE price > 200;\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Nested Queries with IN / NOT IN"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "SELECT * FROM products_fk\nWHERE supplier_id IN (\n    SELECT id FROM suppliers WHERE country = 'USA'\n);\n\nSELECT * FROM products_fk\nWHERE supplier_id NOT IN (\n    SELECT id FROM suppliers WHERE country = 'USA'\n);\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "EXISTS and NOT EXISTS"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "SELECT name FROM suppliers s\nWHERE EXISTS (\n    SELECT 1 FROM products_fk p\n    WHERE p.supplier_id = s.id\n);\n\nSELECT name FROM suppliers s\nWHERE NOT EXISTS (\n    SELECT 1 FROM products_fk p\n    WHERE p.supplier_id = s.id\n);\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "practice"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "strong",
+          "children": [
+            "Practice:"
+          ]
+        },
+        " Find products that cost more than the overall average using a subquery in ",
+        {
+          "tag": "code",
+          "children": [
+            "WHERE"
+          ]
+        },
+        ".\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr"
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "module-5"
+      },
+      "children": [
+        "Module 5: Aggregation, GROUP BY, HAVING"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Core Aggregates"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "SELECT COUNT(*) AS total_products FROM products;\nSELECT SUM(price) AS total_value FROM products;\nSELECT AVG(price) AS average_price FROM products;\nSELECT MAX(price) AS max_price, MIN(price) AS min_price FROM products;\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Grouping and Group Filters"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "SELECT category, COUNT(*) AS item_count, AVG(price) AS avg_price\nFROM products\nGROUP BY category;\n\nSELECT category, AVG(price) AS avg_price\nFROM products\nGROUP BY category\nHAVING AVG(price) > 300;\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "tip"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "strong",
+          "children": [
+            "Execution intuition:"
+          ]
+        },
+        " ",
+        {
+          "tag": "code",
+          "children": [
+            "WHERE"
+          ]
+        },
+        " filters rows before grouping; ",
+        {
+          "tag": "code",
+          "children": [
+            "HAVING"
+          ]
+        },
+        " filters groups after aggregation.\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "practice"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "strong",
+          "children": [
+            "Practice:"
+          ]
+        },
+        " Show categories with at least 2 products and total value above 400.\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr"
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "module-6"
+      },
+      "children": [
+        "Module 6: Advanced SQLizing (NULLs, Quantifiers, Outer Joins)"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Quantifiers with ANY / ALL"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "-- More expensive than at least one furniture product\nSELECT name, price\nFROM products\nWHERE price > ANY (\n    SELECT price FROM products WHERE category = 'Furniture'\n);\n\n-- More expensive than every furniture product\nSELECT name, price\nFROM products\nWHERE price > ALL (\n    SELECT price FROM products WHERE category = 'Furniture'\n);\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "NULL Handling"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "-- Never use \"= NULL\"\nSELECT * FROM products WHERE category IS NULL;\nSELECT * FROM products WHERE category IS NOT NULL;\n\nSELECT\n    id,\n    COALESCE(category, 'Unknown') AS category_label\nFROM products;\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Outer Join and Missing Data"
+      ]
+    },
+    "\n",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "attrs": {
+            "class": "language-sql"
+          },
+          "children": [
+            "SELECT\n    s.id,\n    s.name,\n    p.name AS product_name\nFROM suppliers s\nLEFT JOIN products_fk p ON p.supplier_id = s.id;\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "tip"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "strong",
+          "children": [
+            "Key idea:"
+          ]
+        },
+        " inner joins can drop unmatched rows; outer joins preserve one side and expose missing matches as ",
+        {
+          "tag": "code",
+          "children": [
+            "NULL"
+          ]
+        },
+        ".\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr"
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Quick Reference"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "table",
+      "children": [
+        "\n    ",
+        {
+          "tag": "tbody",
+          "children": [
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Topic"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Core Syntax"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Single-table query"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    {
+                      "tag": "code",
+                      "children": [
+                        "SELECT cols FROM table WHERE condition ORDER BY col;"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Joins + Foreign keys"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    {
+                      "tag": "code",
+                      "children": [
+                        "SELECT ... FROM t1 JOIN t2 ON ...;"
+                      ]
+                    },
+                    " and ",
+                    {
+                      "tag": "code",
+                      "children": [
+                        "FOREIGN KEY (...) REFERENCES ..."
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Set/nested queries"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    {
+                      "tag": "code",
+                      "children": [
+                        "UNION"
+                      ]
+                    },
+                    ", ",
+                    {
+                      "tag": "code",
+                      "children": [
+                        "UNION ALL"
+                      ]
+                    },
+                    ", ",
+                    {
+                      "tag": "code",
+                      "children": [
+                        "IN"
+                      ]
+                    },
+                    ", ",
+                    {
+                      "tag": "code",
+                      "children": [
+                        "EXISTS"
+                      ]
+                    },
+                    ", subqueries"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Aggregation"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    {
+                      "tag": "code",
+                      "children": [
+                        "SELECT grp, COUNT(*) FROM t GROUP BY grp HAVING ...;"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Advanced SQLizing"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    {
+                      "tag": "code",
+                      "children": [
+                        "IS NULL"
+                      ]
+                    },
+                    ", ",
+                    {
+                      "tag": "code",
+                      "children": [
+                        "COALESCE"
+                      ]
+                    },
+                    ", ",
+                    {
+                      "tag": "code",
+                      "children": [
+                        "ANY"
+                      ]
+                    },
+                    ", ",
+                    {
+                      "tag": "code",
+                      "children": [
+                        "ALL"
+                      ]
+                    },
+                    ", outer joins"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr"
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "resources"
+      },
+      "children": [
+        "Detailed HTML Labs in This Repo"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "table",
+      "attrs": {
+        "class": "resource-table"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "tbody",
+          "children": [
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Lecture-ordered module"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Detailed HTML resource(s)"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Module 1: Foundations + setup"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "\n            ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "../foundations/foundations-lab.html"
+                      },
+                      "children": [
+                        "../foundations/foundations-lab.html"
+                      ]
+                    },
+                    {
+                      "tag": "br"
+                    },
+                    "\n            ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "../foundations/inclass-exercise.html"
+                      },
+                      "children": [
+                        "../foundations/inclass-exercise.html"
+                      ]
+                    },
+                    "\n        "
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Module 2: Single-table queries"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "\n            ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "../single-table/single-table-queries.html"
+                      },
+                      "children": [
+                        "../single-table/single-table-queries.html"
+                      ]
+                    },
+                    "\n        "
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Module 3: Foreign keys + joins + multi-table"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "\n            ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "../joins-foreign-keys/foreign-keys.html"
+                      },
+                      "children": [
+                        "../joins-foreign-keys/foreign-keys.html"
+                      ]
+                    },
+                    {
+                      "tag": "br"
+                    },
+                    "\n            ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "../joins-foreign-keys/joins-part1.html"
+                      },
+                      "children": [
+                        "../joins-foreign-keys/joins-part1.html"
+                      ]
+                    },
+                    {
+                      "tag": "br"
+                    },
+                    "\n            ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "../joins-foreign-keys/multi-tables.html"
+                      },
+                      "children": [
+                        "../joins-foreign-keys/multi-tables.html"
+                      ]
+                    },
+                    "\n        "
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Module 4: Set operators + nested queries"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "\n            ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "../set-nested/set-nested-queries.html"
+                      },
+                      "children": [
+                        "../set-nested/set-nested-queries.html"
+                      ]
+                    },
+                    "\n        "
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Module 5: Aggregation, GROUP BY, HAVING"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "\n            ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "../aggregation/aggregation-grouping.html"
+                      },
+                      "children": [
+                        "../aggregation/aggregation-grouping.html"
+                      ]
+                    },
+                    "\n        "
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Module 6: NULLs, quantifiers, outer joins"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "\n            ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "../single-table/single-table-queries.html"
+                      },
+                      "children": [
+                        "../single-table/single-table-queries.html"
+                      ]
+                    },
+                    {
+                      "tag": "br"
+                    },
+                    "\n            ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "../joins-foreign-keys/joins-part1.html"
+                      },
+                      "children": [
+                        "../joins-foreign-keys/joins-part1.html"
+                      ]
+                    },
+                    "\n        "
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n"
+          ]
+        }
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr"
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "tip"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "Study Plan"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "ol",
+          "children": [
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "Run the SQL snippets in module order."
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "After each module, open the linked HTML lab for deeper practice."
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "Use ",
+                {
+                  "tag": "span",
+                  "attrs": {
+                    "class": "path"
+                  },
+                  "children": [
+                    "cars.sql"
+                  ]
+                },
+                " and ",
+                {
+                  "tag": "span",
+                  "attrs": {
+                    "class": "path"
+                  },
+                  "children": [
+                    "coffee.sql"
+                  ]
+                },
+                " as extra datasets to test joins, grouping, and subqueries."
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n\n\n"
+  ]
+}

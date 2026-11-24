@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "title": "Restore verification and least-privilege exercise · DBMS-F26",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html",
+            "class": "materials-link"
+          },
+          "children": [
+            "Student materials"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-plan.html"
+          },
+          "children": [
+            "32-meeting plan"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../lectures/library/index.html"
+          },
+          "children": [
+            "Existing lecture library"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-map.html"
+          },
+          "children": [
+            "Course resources"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        {
+          "tag": "h1",
+          "children": [
+            "Restore verification and least-privilege exercise"
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Meeting 26, 100 minutes: 10 recovery recap, 15 instructor demo, 15 guided fingerprint, 50 restore/permissions exercise, 10 debrief. Prerequisites: PostgreSQL client programs on PATH, a disposable teaching database named dbms_course32 containing the fixture, and an instructor-provided role permitted to create a separate restore database. Use an instructor demonstration if students do not have role-management rights; do not grant superuser access for this exercise."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Part A: restore, do not merely create a dump"
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Record counts for students, events, bookings, and accounts; record SUM(balance) and paid revenue by event. Save the outputs."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "From a terminal run the commands below. Replace lab_owner with your teaching account; authentication uses the normal PostgreSQL client configuration/prompt. Use a new restore database name if it already exists."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Connect to dbms_course32_restore. Repeat the fingerprints and verify the same constraints by attempting an invalid booking in a rolled-back transaction."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "After the dump, change a fee only in the source database. Verify the restored snapshot does not include the later change. Explain why a logical backup alone cannot recover that later update."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "children": [
+                "pg_dump -U lab_owner -d dbms_course32 -Fc -f course32.dump\ncreatedb -U lab_owner dbms_course32_restore\npg_restore -U lab_owner -d dbms_course32_restore --no-owner --no-privileges --exit-on-error course32.dump"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Part B: least privilege"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "An instructor/admin creates a NOLOGIN role once and permits the teaching owner to SET ROLE to it. The schema owner grants only USAGE on course32 and SELECT on events. Run each attempted forbidden statement in its own transaction or autocommit mode so one error does not hide the next test."
+          ]
+        },
+        "\n",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "children": [
+                "-- Instructor/admin, once in a dedicated teaching environment:\nCREATE ROLE course32_reader NOLOGIN;\nGRANT course32_reader TO lab_owner;\n-- Schema owner:\nGRANT USAGE ON SCHEMA course32 TO course32_reader;\nGRANT SELECT ON course32.events TO course32_reader;\nSET ROLE course32_reader;\nSELECT id,title FROM course32.events; -- allowed\nUPDATE course32.events SET fee=0 WHERE id=101; -- denied\nSELECT * FROM course32.accounts; -- denied\nRESET ROLE;"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Record a matrix of role × operation × expected/observed outcome. Explain why a real application login should be narrowly privileged rather than using the database owner."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Recovery objectives"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "A backup is taken at midnight, the service fails at 15:00, and restore takes 40 minutes. With no later recoverable log, what is the possible data-loss interval? If the business requires at most five minutes of data loss and ten minutes of downtime, explain why this backup plan is inadequate. Distinguish RPO, RTO, replication, logical backup, and WAL-based crash recovery."
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Submit:"
+              ]
+            },
+            " command transcript with no credentials, matching fingerprints, constraint check, permission matrix, and recovery recommendation. ",
+            {
+              "tag": "strong",
+              "children": [
+                "Stretch:"
+              ]
+            },
+            " explain what a table-level count alone can fail to detect; compare values and keys as well."
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Reference: ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.postgresql.org/docs/16/app-pgdump.html"
+              },
+              "children": [
+                "PostgreSQL pg_dump"
+              ]
+            },
+            "."
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n"
+  ]
+}

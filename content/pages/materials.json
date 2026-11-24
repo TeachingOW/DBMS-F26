@@ -1,0 +1,2095 @@
+{
+  "schemaVersion": 1,
+  "title": "Student materials · DBMS Fall 2026",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "header",
+      "children": [
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "eyebrow"
+          },
+          "children": [
+            "DBMS · FALL 2026"
+          ]
+        },
+        {
+          "tag": "h1",
+          "children": [
+            "Student materials"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "All course presentations, handouts, practice activities, and downloads in one place."
+          ]
+        },
+        {
+          "tag": "nav",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "course-plan.html"
+              },
+              "children": [
+                "Course plan"
+              ]
+            },
+            " · ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "index.html"
+              },
+              "children": [
+                "SQL presentation"
+              ]
+            },
+            " · ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "lectures/library/index.html"
+              },
+              "children": [
+                "Lecture library"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        {
+          "tag": "section",
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Course navigation"
+              ]
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "course-map.html"
+                      },
+                      "children": [
+                        "DBMS Course Resources"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "course-plan.html"
+                      },
+                      "children": [
+                        "Course plan: 32 meetings of 100 minutes"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Presentations"
+              ]
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "index.html"
+                      },
+                      "children": [
+                        "SQL — Reproducible HTML Presentation"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/01_Introduction/index.html"
+                      },
+                      "children": [
+                        "Introduction"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/03_ER_Modeling/index.html"
+                      },
+                      "children": [
+                        "ER Modeling"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/04_Relational_Algebra/index.html"
+                      },
+                      "children": [
+                        "Relational Algebra"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/05_Normalization/index.html"
+                      },
+                      "children": [
+                        "Normalization"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/06_Window_Functions/index.html"
+                      },
+                      "children": [
+                        "Window Functions"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/07_Recursive_SQL/index.html"
+                      },
+                      "children": [
+                        "Recursive SQL"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/08_Stored_Programs/index.html"
+                      },
+                      "children": [
+                        "Stored Programs"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/09_Triggers/index.html"
+                      },
+                      "children": [
+                        "Triggers"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/10_Storage_and_Indexes/index.html"
+                      },
+                      "children": [
+                        "Storage and Indexes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/11_Join_Algorithms/index.html"
+                      },
+                      "children": [
+                        "Join Algorithms"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/12_Query_Optimization/index.html"
+                      },
+                      "children": [
+                        "Query Optimization"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/13_Transactions/index.html"
+                      },
+                      "children": [
+                        "Transactions"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/14_MongoDB/index.html"
+                      },
+                      "children": [
+                        "MongoDB (full lecture)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/15_Review/index.html"
+                      },
+                      "children": [
+                        "Review"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/index.html"
+                      },
+                      "children": [
+                        "Database lectures"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "mongodb.html"
+                      },
+                      "children": [
+                        "MongoDB Presentation"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/editable/db-design/index.html"
+                      },
+                      "children": [
+                        "DB Design (editable)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/editable/db-design-enhanced/index.html"
+                      },
+                      "children": [
+                        "DB Design enhanced (editable)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/editable/db-design-with-labs/index.html"
+                      },
+                      "children": [
+                        "DB Design with labs (editable)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/editable/er-v26/index.html"
+                      },
+                      "children": [
+                        "ER.v26 (editable)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/editable/er-v26-enhanced/index.html"
+                      },
+                      "children": [
+                        "ER.v26 enhanced (editable)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/editable/er-v26-with-labs/index.html"
+                      },
+                      "children": [
+                        "ER.v26 with labs (editable)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/editable/index.html"
+                      },
+                      "children": [
+                        "Editable course presentations"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/editable/indexes/index.html"
+                      },
+                      "children": [
+                        "Indexes (editable)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/editable/intro/index.html"
+                      },
+                      "children": [
+                        "intro (editable)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/editable/lecture1/index.html"
+                      },
+                      "children": [
+                        "Lecture1 (editable)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "presentations/editable/mysql-window-functions/index.html"
+                      },
+                      "children": [
+                        "mysql window functions (editable)"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Student handouts and labs"
+              ]
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "docs/GETTING_STARTED.html"
+                      },
+                      "children": [
+                        "Getting Started with DBMS-SQL-Labs"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "docs/SQL_CHEAT_SHEET.html"
+                      },
+                      "children": [
+                        "SQL Quick Reference Cheat Sheet"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/aggregation/aggregation-grouping.html"
+                      },
+                      "children": [
+                        "Lab 3: Aggregate Functions and GROUP BY"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/foundations/data-types-use-cases.html"
+                      },
+                      "children": [
+                        "Lab: Choosing SQL Data Types from Use Cases"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/foundations/foundations-lab.html"
+                      },
+                      "children": [
+                        "Lab 1: Database Creation and Basic SQL Operations"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/foundations/inclass-exercise.html"
+                      },
+                      "children": [
+                        "In-Class Exercise"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/joins-foreign-keys/foreign-keys.html"
+                      },
+                      "children": [
+                        "Lab 3: Foreign Keys and Referential Integrity"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/joins-foreign-keys/joins-part1.html"
+                      },
+                      "children": [
+                        "Lab 2: JOINs and Multi-Table Queries"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/joins-foreign-keys/multi-tables.html"
+                      },
+                      "children": [
+                        "Multi Table Queries"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/nosql/mongodb.html"
+                      },
+                      "children": [
+                        "MongoDB Lab"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/quick-start/quick-start-guide.html"
+                      },
+                      "children": [
+                        "SQL Quick Start + HTML Labs (Lecture 2/3 Order)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/analytics.html"
+                      },
+                      "children": [
+                        "Windows and recursive queries lab"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/application.html"
+                      },
+                      "children": [
+                        "Database application and secure booking lab"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/concurrency.html"
+                      },
+                      "children": [
+                        "Atomicity, recovery reasoning, and two-session concurrency"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/design.html"
+                      },
+                      "children": [
+                        "ER design, dependencies, and decomposition studio"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/foundations.html"
+                      },
+                      "children": [
+                        "Foundations and reproducible SQL"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/models.html"
+                      },
+                      "children": [
+                        "Document models and distributed-system decisions"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/operations.html"
+                      },
+                      "children": [
+                        "Restore verification and least-privilege exercise"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/performance.html"
+                      },
+                      "children": [
+                        "Storage, indexes, joins, and optimizer laboratory"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/programming.html"
+                      },
+                      "children": [
+                        "Stored programs and transactional audit lab"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/project.html"
+                      },
+                      "children": [
+                        "Project milestones and cumulative exercises"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/query-reasoning.html"
+                      },
+                      "children": [
+                        "Query reasoning and relational algebra workbook"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/set-nested/set-nested-queries.html"
+                      },
+                      "children": [
+                        "Lab 4: Set Operations and Advanced Queries"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/single-table/single-table-queries.html"
+                      },
+                      "children": [
+                        "Lab 2: Advanced SQL Queries - Overview"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "SQL syntax reference"
+              ]
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/aggregate.html"
+                      },
+                      "children": [
+                        "Aggregate functions"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/all.html"
+                      },
+                      "children": [
+                        "ALL subquery comparison"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/create-and-insert.html"
+                      },
+                      "children": [
+                        "Create a table and insert rows"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/create-index.html"
+                      },
+                      "children": [
+                        "CREATE INDEX"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/create-table.html"
+                      },
+                      "children": [
+                        "CREATE TABLE"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/create-view.html"
+                      },
+                      "children": [
+                        "CREATE VIEW"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/cte.html"
+                      },
+                      "children": [
+                        "Common table expression (WITH)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/distinct.html"
+                      },
+                      "children": [
+                        "SELECT DISTINCT"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/exists.html"
+                      },
+                      "children": [
+                        "EXISTS"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/explain.html"
+                      },
+                      "children": [
+                        "EXPLAIN"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/grant.html"
+                      },
+                      "children": [
+                        "GRANT"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/group-by.html"
+                      },
+                      "children": [
+                        "GROUP BY"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/having.html"
+                      },
+                      "children": [
+                        "HAVING"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/in.html"
+                      },
+                      "children": [
+                        "IN subquery"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/index.html"
+                      },
+                      "children": [
+                        "SQL syntax reference"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/insert.html"
+                      },
+                      "children": [
+                        "INSERT"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/is-null.html"
+                      },
+                      "children": [
+                        "NULL tests"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/isolation.html"
+                      },
+                      "children": [
+                        "Transaction isolation"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/join.html"
+                      },
+                      "children": [
+                        "INNER JOIN"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/left-join.html"
+                      },
+                      "children": [
+                        "LEFT JOIN"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/like.html"
+                      },
+                      "children": [
+                        "LIKE pattern matching"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/not-exists.html"
+                      },
+                      "children": [
+                        "NOT EXISTS"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/order-by.html"
+                      },
+                      "children": [
+                        "ORDER BY"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/recursive-cte.html"
+                      },
+                      "children": [
+                        "Recursive common table expression"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/savepoint.html"
+                      },
+                      "children": [
+                        "SAVEPOINT"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/select.html"
+                      },
+                      "children": [
+                        "SELECT–FROM–WHERE"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/set-operators.html"
+                      },
+                      "children": [
+                        "Set operators"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/transaction.html"
+                      },
+                      "children": [
+                        "Transactions"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/update.html"
+                      },
+                      "children": [
+                        "UPDATE"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "syntax/window.html"
+                      },
+                      "children": [
+                        "Window functions"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "PowerPoint downloads"
+              ]
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/02_SQL.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "02 SQL"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/02_SQL.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/14_MongoDB.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "14 MongoDB"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/14_MongoDB.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/01_Introduction.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "01 Introduction"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/01_Introduction.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/03_ER_Modeling.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "03 ER Modeling"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/03_ER_Modeling.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/04_Relational_Algebra.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "04 Relational Algebra"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/04_Relational_Algebra.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/05_Normalization.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "05 Normalization"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/05_Normalization.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/06_Window_Functions.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "06 Window Functions"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/06_Window_Functions.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/07_Recursive_SQL.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "07 Recursive SQL"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/07_Recursive_SQL.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/08_Stored_Programs.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "08 Stored Programs"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/08_Stored_Programs.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/09_Triggers.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "09 Triggers"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/09_Triggers.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/10_Storage_and_Indexes.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "10 Storage and Indexes"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/10_Storage_and_Indexes.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/11_Join_Algorithms.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "11 Join Algorithms"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/11_Join_Algorithms.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/12_Query_Optimization.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "12 Query Optimization"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/12_Query_Optimization.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/13_Transactions.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "13 Transactions"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/13_Transactions.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/14_MongoDB_Full.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "14 MongoDB Full"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/14_MongoDB_Full.pptx"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lectures/library/15_Review.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "15 Review"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lectures/library/15_Review.pptx"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "SQL scripts and datasets"
+              ]
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-018-nulls.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 018 nulls"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-018-nulls.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-034-foreign-keys.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 034 foreign keys"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-034-foreign-keys.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-037-joins.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 037 joins"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-037-joins.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-042-ambiguity.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 042 ambiguity"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-042-ambiguity.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-045-semantics.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 045 semantics"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-045-semantics.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-059-set-operations.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 059 set operations"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-059-set-operations.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-064-intersect.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 064 intersect"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-064-intersect.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-075-correlated.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 075 correlated"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-075-correlated.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-084-aggregation.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 084 aggregation"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-084-aggregation.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-096-authors.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 096 authors"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-096-authors.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-101-quantifiers.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 101 quantifiers"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-101-quantifiers.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-105-null-logic.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 105 null logic"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-105-null-logic.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-112-outer-join.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 112 outer join"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-112-outer-join.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "databases/slide-124-types.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "slide 124 types"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — databases/slide-124-types.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "demo-database.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "demo database"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — demo-database.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "lab-database.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "lab database"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — lab-database.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/performance-setup.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "performance setup"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — labs/semester/performance-setup.sql"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/setup.sql",
+                        "download": ""
+                      },
+                      "children": [
+                        "setup"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — labs/semester/setup.sql"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Application starter"
+              ]
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "labs/semester/booking_app.py",
+                        "download": ""
+                      },
+                      "children": [
+                        "booking app"
+                      ]
+                    },
+                    {
+                      "tag": "small",
+                      "children": [
+                        " — labs/semester/booking_app.py"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

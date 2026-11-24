@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "title": "DBMS Course Resources",
+  "bodyAttributes": {},
+  "nodes": [
+    "\n",
+    {
+      "tag": "main",
+      "attrs": {
+        "class": "catalog"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "nav",
+          "attrs": {
+            "aria-label": "Course navigation"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "materials.html",
+                "class": "materials-link"
+              },
+              "children": [
+                "Student materials"
+              ]
+            },
+            {
+              "tag": "strong",
+              "children": [
+                "DBMS-F26"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "lectures/library/index.html"
+              },
+              "children": [
+                "All lectures"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "h1",
+          "children": [
+            "DBMS course resources"
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "h2",
+          "children": [
+            "Semester plan and exercises"
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "course-plan.html"
+              },
+              "children": [
+                "32 meetings of 100 minutes: schedule, lecture links, labs, and project milestones"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "p",
+          "children": [
+            "Use the existing lecture library with the new PostgreSQL exercise packet, performance experiments, concurrency tasks, and application starter."
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "lectures/library/index.html"
+              },
+              "children": [
+                "Lecture library with HTML slides and PowerPoint downloads"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "h2",
+          "children": [
+            "Editable presentations"
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "presentations/editable/index.html"
+              },
+              "children": [
+                "Open text and table presentations rendered from JSON"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "h2",
+          "children": [
+            "SQL"
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "index.html"
+              },
+              "children": [
+                "Open the SQL presentation"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "lectures/02_SQL.pptx",
+                "download": ""
+              },
+              "children": [
+                "Download the SQL PowerPoint"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "demo-database.sql",
+                "download": ""
+              },
+              "children": [
+                "Download the PostgreSQL demo database"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "p",
+          "children": [
+            "Use the ",
+            {
+              "tag": "strong",
+              "children": [
+                "Labs"
+              ]
+            },
+            " menu inside the presentation to open the aligned exercises."
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "h2",
+          "children": [
+            "MongoDB"
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "ul",
+          "children": [
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "mongodb.html"
+                  },
+                  "children": [
+                    "Open the MongoDB presentation"
+                  ]
+                }
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/14_MongoDB.pptx",
+                    "download": ""
+                  },
+                  "children": [
+                    "Download the MongoDB PowerPoint"
+                  ]
+                }
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/nosql/mongodb.html"
+                  },
+                  "children": [
+                    "Open the MongoDB lab"
+                  ]
+                }
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n\n"
+  ]
+}

@@ -1,0 +1,3129 @@
+{
+  "schemaVersion": 1,
+  "title": "Lab 1: Database Creation and Basic SQL Operations",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Course navigation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #e7f3ff; padding: 15px; margin-bottom: 20px; border-radius: 5px;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h1",
+      "children": [
+        "Lab 1: Database Creation and Basic SQL Operations"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "🎯 Learning Objectives"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "By the end of this lab, you will be able to:\n- Create and manage databases in MySQL/MariaDB\n- Design and create tables with appropriate data types\n- Insert data into tables\n- Write basic SELECT queries with filtering and sorting\n- Understand primary keys and constraints"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "📋 Prerequisites"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "MySQL or MariaDB server installed and running"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Basic understanding of relational database concepts"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Access to a SQL client (command line, MySQL Workbench, etc.)"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "🚀 Getting Started"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Step 1: Create Your First Database"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "A database is a container that holds related tables. Let's create one for our exercises:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- CREATE a NEW DATABASE (only needed once)\nCREATE DATABASE lab1_exercises;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Note"
+          ]
+        },
+        ": Database names are case-sensitive on some systems. Use lowercase for consistency."
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Step 2: Select the Database"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Before creating tables, you must specify which database to use:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Switch to our NEW DATABASE\nUSE lab1_exercises;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Important"
+          ]
+        },
+        ": You need to run ",
+        {
+          "tag": "code",
+          "children": [
+            "USE database_name;"
+          ]
+        },
+        " every time you start a new session."
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Step 3: Create Your First Table"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Let's create a product catalog table with proper data types and constraints:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- CREATE the product TABLE WITH detailed comments\nCREATE TABLE product(\n    pname        VARCHAR(20) PRIMARY KEY,  -- Product name (UNIQUE identifier)\n    price        DECIMAL(10,2),            -- Price WITH 2 DECIMAL places\n    category     VARCHAR(20),              -- Product category\n    manufacturer VARCHAR(20) NOT NULL      -- Manufacturer (required field)\n);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Key Concepts"
+          ]
+        },
+        ":\n- ",
+        {
+          "tag": "code",
+          "children": [
+            "PRIMARY KEY"
+          ]
+        },
+        ": Ensures each product name is unique\n- ",
+        {
+          "tag": "code",
+          "children": [
+            "DECIMAL(10,2)"
+          ]
+        },
+        ": Stores numbers with up to 10 digits, 2 after decimal point\n- ",
+        {
+          "tag": "code",
+          "children": [
+            "NOT NULL"
+          ]
+        },
+        ": This field cannot be empty\n- ",
+        {
+          "tag": "code",
+          "children": [
+            "VARCHAR(20)"
+          ]
+        },
+        ": Variable-length string up to 20 characters"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Step 4: Insert Sample Data"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Now let's add some products to our table:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- INSERT sample products\nINSERT INTO product VALUES('Gizmo', 19.99, 'Gadgets', 'GizmoWorks');\nINSERT INTO product VALUES('PowerGizmo', 29.99, 'Gadgets', 'GizmoWorks');\nINSERT INTO product VALUES('MultiTouch', 203.99, 'Household', 'Hitachi');\nINSERT INTO product VALUES('SingleTouch', 149.99, 'Photography', 'Canon');\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Verify your data"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- VIEW ALL products\nSELECT * FROM product;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Expected Output"
+          ]
+        },
+        ":\n"
+      ]
+    },
+    {
+      "tag": "table",
+      "children": [
+        "\n  ",
+        {
+          "tag": "thead",
+          "children": [
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "th",
+                  "children": [
+                    "pname"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "th",
+                  "children": [
+                    "price"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "th",
+                  "children": [
+                    "category"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "th",
+                  "children": [
+                    "manufacturer"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "tbody",
+          "children": [
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Gizmo"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "19.99"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Gadgets"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "GizmoWorks"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "PowerGizmo"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "29.99"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Gadgets"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "GizmoWorks"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "MultiTouch"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "203.99"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Household"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Hitachi"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "SingleTouch"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "149.99"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Photography"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Canon"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    {
+                      "tag": "p"
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "💡 Practice Exercises"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Exercise #1: Filtering and Sorting"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Task"
+          ]
+        },
+        ": Write a query to get all products with \"Touch\" in the name, showing only their name and price, sorted alphabetically by manufacturer."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Step-by-step approach"
+          ]
+        },
+        ":\n1. First, let's see all our products to understand the data:\n   ",
+        {
+          "tag": "code",
+          "children": [
+            "sql\n   SELECT * FROM product;"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "\n",
+            {
+              "tag": "p",
+              "children": [
+                "Now identify products with \"Touch\" in the name:\n   ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "sql\n   SELECT * FROM product WHERE pname LIKE '%Touch%';"
+                  ]
+                }
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "\n",
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Your turn"
+                  ]
+                },
+                ": Write the complete query here:\n   ```sql\n   -- Write your solution here"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "```"
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n",
+        {
+          "tag": "summary",
+          "children": [
+            "💡 Click to see the solution"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT pname, price \nFROM product \nWHERE pname LIKE '%Touch%' \nORDER BY manufacturer;\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Expected Output"
+          ]
+        },
+        ":\n",
+        {
+          "tag": "table",
+          "children": [
+            "\n  ",
+            {
+              "tag": "thead",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "th",
+                      "children": [
+                        "pname"
+                      ]
+                    },
+                    "\n      ",
+                    {
+                      "tag": "th",
+                      "children": [
+                        "price"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "tbody",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "SingleTouch"
+                      ]
+                    },
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "149.99"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "MultiTouch"
+                      ]
+                    },
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "203.99"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Explanation"
+          ]
+        },
+        ":\n- `LIKE '%Touch%'`: Finds any product name containing \"Touch\"\n- `ORDER BY manufacturer`: Sorts by manufacturer (Canon comes before Hitachi alphabetically)\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Exercise #1b: Distinct Values"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Task"
+          ]
+        },
+        ": Write a query that returns the distinct names of manufacturers that make products with \"Gizmo\" in the name."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Your solution"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Write your solution here\n\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n",
+        {
+          "tag": "summary",
+          "children": [
+            "💡 Click to see the solution"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT DISTINCT manufacturer \nFROM product \nWHERE pname LIKE '%Gizmo%';\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Expected Output"
+          ]
+        },
+        ":\n",
+        {
+          "tag": "table",
+          "children": [
+            "\n  ",
+            {
+              "tag": "thead",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "th",
+                      "children": [
+                        "manufacturer"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "tbody",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "GizmoWorks"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Explanation"
+          ]
+        },
+        ":\n- `DISTINCT`: Removes duplicate manufacturer names\n- Only GizmoWorks makes products with \"Gizmo\" in the name\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Exercise #2: Understanding DISTINCT and ORDER BY"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Task"
+          ]
+        },
+        ": Before running these queries, predict what each will return. Then run them to check your understanding."
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Query A\nSELECT DISTINCT category FROM product ORDER BY category;\n\n-- Query B  \nSELECT category FROM product ORDER BY pname;\n\n-- Query C\nSELECT DISTINCT category FROM product ORDER BY pname;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Predictions"
+          ]
+        },
+        ":\n- Query A will return: ",
+        {
+          "tag": "strong",
+          "children": [
+            {
+              "tag": "em",
+              "children": [
+                "_"
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "strong",
+          "children": [
+            {
+              "tag": "em",
+              "children": [
+                "_"
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "strong",
+          "children": [
+            "\n- Query B will return: ",
+            {
+              "tag": "strong",
+              "children": [
+                {
+                  "tag": "em",
+                  "children": [
+                    "_"
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "strong",
+              "children": [
+                {
+                  "tag": "em",
+                  "children": [
+                    "_"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "br"
+        },
+        "\n- Query C will return: ",
+        {
+          "tag": "strong",
+          "children": [
+            {
+              "tag": "em",
+              "children": [
+                "_"
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "strong",
+          "children": [
+            {
+              "tag": "em",
+              "children": [
+                "_"
+              ]
+            }
+          ]
+        },
+        "__"
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n",
+        {
+          "tag": "summary",
+          "children": [
+            "💡 Click to see the answers"
+          ]
+        },
+        "\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Query A Results"
+          ]
+        },
+        ":\n",
+        {
+          "tag": "table",
+          "children": [
+            "\n  ",
+            {
+              "tag": "thead",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "th",
+                      "children": [
+                        "category"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "tbody",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Gadgets"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Household"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Photography"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Explanation"
+          ]
+        },
+        ": Returns unique categories sorted alphabetically.\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Query B Results"
+          ]
+        },
+        ":\n",
+        {
+          "tag": "table",
+          "children": [
+            "\n  ",
+            {
+              "tag": "thead",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "th",
+                      "children": [
+                        "category"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "tbody",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Gadgets"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Household"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Photography"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Gadgets"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Explanation"
+          ]
+        },
+        ": Returns all categories (including duplicates) in the order of product names.\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Query C Results"
+          ]
+        },
+        ":\nThis query will produce an ",
+        {
+          "tag": "strong",
+          "children": [
+            "ERROR"
+          ]
+        },
+        "! You cannot use `ORDER BY pname` when `pname` is not in the SELECT list and you're using DISTINCT.\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Key Learning"
+          ]
+        },
+        ": When using DISTINCT, you can only ORDER BY columns that are in the SELECT clause.\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Exercise #3: Multi-Table Relationships and Foreign Keys"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Learning Focus"
+          ]
+        },
+        ": Understanding table relationships, foreign keys, and multi-table queries."
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "Setting Up the Database Schema"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "We need to recreate our tables to demonstrate foreign key relationships:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Clean up existing TABLES (ORDER matters due to FOREIGN KEY constraints!)\nDROP TABLE IF EXISTS product;  -- DROP child TABLE first\nDROP TABLE IF EXISTS company;   -- THEN DROP parent TABLE\n\n-- CREATE the parent TABLE (company)\nCREATE TABLE company (\n    cname VARCHAR(20) PRIMARY KEY,    -- Company name (UNIQUE identifier)\n    stockprice DECIMAL(10,2),         -- Stock price IN dollars\n    country VARCHAR(10)               -- Country of origin\n);\n\n-- INSERT company data\nINSERT INTO company VALUES ('ToyWorks', 25.0, 'USA');\nINSERT INTO company VALUES ('ToyFriends', 65.0, 'China');\nINSERT INTO company VALUES ('ToyCo', 15.0, 'China');\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Verify company data"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT * FROM company;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Now create the product table with a foreign key relationship:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- CREATE the child TABLE (product) WITH FOREIGN KEY CONSTRAINT\nCREATE TABLE product(\n    pname VARCHAR(10),                -- Product name\n    price DECIMAL(10,2),              -- Product price\n    category VARCHAR(10),             -- Product category\n    manufacturer VARCHAR(10),         -- Manufacturer (REFERENCES company)\n    PRIMARY KEY (pname, manufacturer), -- Composite PRIMARY KEY\n    FOREIGN KEY (manufacturer) REFERENCES company(cname)  -- FOREIGN KEY CONSTRAINT\n);\n\n-- INSERT product data\nINSERT INTO product VALUES('Pikachu', 19.99, 'Toy', 'ToyWorks');\nINSERT INTO product VALUES('Pikachu', 19.99, 'Toy', 'ToyFriends');\nINSERT INTO product VALUES('Pokeball', 29.99, 'Electronic', 'ToyCo');\nINSERT INTO product VALUES('Bulbasaur', 149.99, 'Toy', 'ToyFriends');\nINSERT INTO product VALUES('Charizard', 203.99, 'Toy', 'ToyCo');\nINSERT INTO product VALUES('PokeCamera', 19.99, 'Electronic', 'ToyWorks');\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Key Concepts Explained"
+          ]
+        },
+        ":\n- ",
+        {
+          "tag": "strong",
+          "children": [
+            "Composite Primary Key"
+          ]
+        },
+        ": ",
+        {
+          "tag": "code",
+          "children": [
+            "(pname, manufacturer)"
+          ]
+        },
+        " together uniquely identify each row\n- ",
+        {
+          "tag": "strong",
+          "children": [
+            "Foreign Key"
+          ]
+        },
+        ": ",
+        {
+          "tag": "code",
+          "children": [
+            "manufacturer"
+          ]
+        },
+        " must exist in the ",
+        {
+          "tag": "code",
+          "children": [
+            "company"
+          ]
+        },
+        " table\n- ",
+        {
+          "tag": "strong",
+          "children": [
+            "Referential Integrity"
+          ]
+        },
+        ": You cannot insert a product with a non-existent manufacturer"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "The Challenge"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Task"
+          ]
+        },
+        ": Find all categories of products that are made by Chinese companies."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Step-by-step approach"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "First, explore the data"
+              ]
+            },
+            ":\n   ```sql\n   -- See all companies\n   SELECT * FROM company;"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "-- See all products",
+        {
+          "tag": "br"
+        },
+        "\n   SELECT * FROM product;"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "-- See which companies are Chinese\n   SELECT * FROM company WHERE country = 'China';\n   ```"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Your turn"
+              ]
+            },
+            ": Write the query to find categories made by Chinese companies:\n   ```sql\n   -- Write your solution here"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "```"
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n",
+        {
+          "tag": "summary",
+          "children": [
+            "💡 Click to see the solution"
+          ]
+        },
+        "\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Solution using JOIN"
+          ]
+        },
+        ":\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT DISTINCT p.category\nFROM product p\nJOIN company c ON p.manufacturer = c.cname\nWHERE c.country = 'China';\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Alternative solution using WHERE clause"
+          ]
+        },
+        ":\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT DISTINCT category\nFROM product, company\nWHERE manufacturer = cname \n  AND country = 'China';\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Expected Output"
+          ]
+        },
+        ":\n",
+        {
+          "tag": "table",
+          "children": [
+            "\n  ",
+            {
+              "tag": "thead",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "th",
+                      "children": [
+                        "category"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "tbody",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Toy"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Electronic"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Explanation"
+          ]
+        },
+        ":\n- We need to connect the `product` and `company` tables\n- Filter for companies where `country = 'China'`\n- Use `DISTINCT` to avoid duplicate categories\n- Chinese companies (ToyFriends, ToyCo) make both Toy and Electronic products\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h4",
+      "children": [
+        "Bonus Challenge"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Task"
+          ]
+        },
+        ": Find the names of all products made by companies with stock price > $20."
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Write your solution here\n\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n",
+        {
+          "tag": "summary",
+          "children": [
+            "💡 Click to see the bonus solution"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT p.pname\nFROM product p\nJOIN company c ON p.manufacturer = c.cname\nWHERE c.stockprice > 20;\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Expected Output"
+          ]
+        },
+        ":\n",
+        {
+          "tag": "table",
+          "children": [
+            "\n  ",
+            {
+              "tag": "thead",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "th",
+                      "children": [
+                        "pname"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "tbody",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Pikachu"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Pikachu"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Bulbasaur"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "PokeCamera"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Note"
+          ]
+        },
+        ": Pikachu appears twice because it's made by two different companies (ToyWorks and ToyFriends), both with stock prices > $20.\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "🎓 Summary"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Congratulations! You've completed Lab 1. You should now be comfortable with:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "✅ ",
+        {
+          "tag": "strong",
+          "children": [
+            "Database Operations"
+          ]
+        },
+        ":\n- Creating and using databases\n- Understanding database vs. table concepts"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "✅ ",
+        {
+          "tag": "strong",
+          "children": [
+            "Table Management"
+          ]
+        },
+        ":\n- Creating tables with appropriate data types\n- Understanding primary keys and constraints\n- Using foreign keys for referential integrity"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "✅ ",
+        {
+          "tag": "strong",
+          "children": [
+            "Basic Queries"
+          ]
+        },
+        ":\n- SELECT statements with filtering (WHERE)\n- Using LIKE for pattern matching\n- Sorting results with ORDER BY\n- Removing duplicates with DISTINCT"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "✅ ",
+        {
+          "tag": "strong",
+          "children": [
+            "Multi-table Concepts"
+          ]
+        },
+        ":\n- Understanding table relationships\n- Basic JOIN operations\n- Foreign key constraints"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "🔗 Additional Resources"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Essential References"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "MySQL Data Types"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://dev.mysql.com/doc/refman/8.0/en/data-types.html"
+              },
+              "children": [
+                "Official Documentation"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Learn about VARCHAR, DECIMAL, INT, DATE, and other data types"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "CREATE TABLE Syntax"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://dev.mysql.com/doc/refman/8.0/en/create-table.html"
+              },
+              "children": [
+                "MySQL Reference"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Complete guide to table creation options"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "INSERT Statement"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://mariadb.com/kb/en/mariadb/how-to-quickly-insert-data-into-mariadb/"
+              },
+              "children": [
+                "MariaDB Guide"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Various ways to insert data efficiently"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Practice Resources"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "SQLZoo"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://sqlzoo.net/wiki/SQL_Tutorial"
+              },
+              "children": [
+                "Interactive SQL Tutorial"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Practice SELECT statements with immediate feedback"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "W3Schools SQL"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.w3schools.com/sql/"
+              },
+              "children": [
+                "Comprehensive Tutorial"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Step-by-step learning with examples"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Next Steps"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Ready for more advanced topics? Continue with:\n- ",
+        {
+          "tag": "strong",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../single-table/single-table-queries.html"
+              },
+              "children": [
+                "Lab 2"
+              ]
+            }
+          ]
+        },
+        ": Advanced queries, joins, and aggregations\n- ",
+        {
+          "tag": "strong",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../joins-foreign-keys/foreign-keys.html"
+              },
+              "children": [
+                "Foreign Keys Lab"
+              ]
+            }
+          ]
+        },
+        ": Deep dive into referential integrity\n- ",
+        {
+          "tag": "strong",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../joins-foreign-keys/multi-tables.html"
+              },
+              "children": [
+                "Multi-table Queries"
+              ]
+            }
+          ]
+        },
+        ": Complex JOIN operations"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "🐛 Troubleshooting"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Common Issues and Solutions"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "\n",
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "\"Database doesn't exist\" error"
+                  ]
+                },
+                ":\n   ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "sql\n   -- Make sure you created AND selected the DATABASE\n   CREATE DATABASE lab1_exercises;\n   USE lab1_exercises;"
+                  ]
+                }
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "\n",
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "\"Table already exists\" error"
+                  ]
+                },
+                ":\n   ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "sql\n   -- DROP the TABLE first, THEN recreate\n   DROP TABLE IF EXISTS table_name;"
+                  ]
+                }
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "\n",
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Foreign key constraint fails"
+                  ]
+                },
+                ":"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Ensure the parent table exists before creating child table"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "\n",
+            {
+              "tag": "p",
+              "children": [
+                "Check that referenced values exist in parent table"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "\n",
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Syntax errors"
+                  ]
+                },
+                ":"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Check for missing semicolons"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Verify proper quotation marks around strings"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Ensure correct spelling of keywords"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Need help? Check the ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../index.html"
+          },
+          "children": [
+            "main README"
+          ]
+        },
+        " for additional resources and support options."
+      ]
+    },
+    "\n\n",
+    "\n\n",
+    {
+      "tag": "hr",
+      "attrs": {
+        "style": "margin-top: 40px;"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #f0f0f0; padding: 15px; margin-top: 20px; border-radius: 5px; text-align: center;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            " | \n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/GETTING_STARTED.html"
+              },
+              "children": [
+                "🚀 Getting Started"
+              ]
+            },
+            " | \n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/SQL_CHEAT_SHEET.html"
+              },
+              "children": [
+                "📝 SQL Cheat Sheet"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n\n\n"
+  ]
+}

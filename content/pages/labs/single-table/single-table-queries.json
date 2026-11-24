@@ -1,0 +1,520 @@
+{
+  "schemaVersion": 1,
+  "title": "Lab 2: Advanced SQL Queries - Overview",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Course navigation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #e7f3ff; padding: 15px; margin-bottom: 20px; border-radius: 5px;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h1",
+      "children": [
+        "Labs 2-4: Advanced SQL Queries - Overview"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "🎯 About These Labs"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "The original Lab 2 has been restructured into three separate labs (Labs 2, 3, and 4) to make learning easier and more manageable. Each lab covers a specific aspect of advanced SQL queries and can be completed independently."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "📚 Lab Structure"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "lab-part"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h3",
+          "children": [
+            "Lab 2: JOINs and Multi-Table Queries"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Topics Covered:"
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "ul",
+          "children": [
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "Multi-table database schemas"
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "INNER, LEFT, and RIGHT JOINs"
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "String functions with JOINs"
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "Complex multi-table queries"
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "Handling NULL values in JOINs"
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Database:"
+              ]
+            },
+            " University database (Student, Course, Enrolled)"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Examples:"
+              ]
+            },
+            " Employee-Department relationships, Product catalogs"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../joins-foreign-keys/joins-part1.html"
+          },
+          "children": [
+            "Start Lab 2 →"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "lab-part"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h3",
+          "children": [
+            "Lab 3: Aggregate Functions and GROUP BY"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Topics Covered:"
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "ul",
+          "children": [
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "Aggregate functions (COUNT, SUM, AVG, MAX, MIN)"
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "GROUP BY clause"
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "HAVING clause for filtering grouped results"
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "COUNT() vs COUNT(DISTINCT)"
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "Nested aggregates and complex queries"
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Database:"
+              ]
+            },
+            " Company-Product-Purchase database"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Examples:"
+              ]
+            },
+            " Sales analysis, Inventory management, Performance statistics"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../aggregation/aggregation-grouping.html"
+          },
+          "children": [
+            "Start Lab 3 →"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "lab-part"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h3",
+          "children": [
+            "Lab 4: Set Operations and Advanced Queries"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Topics Covered:"
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "ul",
+          "children": [
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "UNION and UNION ALL operations"
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "Multiset operations"
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "UPDATE and DELETE with multiple rows"
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "SQL Division pattern"
+              ]
+            },
+            "\n        ",
+            {
+              "tag": "li",
+              "children": [
+                "Complex nested queries and subqueries"
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Databases:"
+              ]
+            },
+            " Multiple examples including Product/Company and Student/Enrolled"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Examples:"
+              ]
+            },
+            " Data merging, Common elements across tables, Complex filtering"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../set-nested/set-nested-queries.html"
+          },
+          "children": [
+            "Start Lab 4 →"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "💡 Learning Path"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "We recommend completing the labs in order (Lab 2 → Lab 3 → Lab 4) as each builds on concepts from the previous labs. However, Lab 3 and Lab 4 include their own database setup sections, so they can be completed independently if needed."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "📋 Prerequisites"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Completion of ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../foundations/foundations-lab.html"
+              },
+              "children": [
+                "Lab 1"
+              ]
+            },
+            " or equivalent knowledge"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Understanding of basic SQL operations"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Familiarity with primary and foreign keys"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr",
+      "attrs": {
+        "style": "margin-top: 40px;"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #f0f0f0; padding: 15px; margin-top: 20px; border-radius: 5px; text-align: center;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            " | \n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/GETTING_STARTED.html"
+              },
+              "children": [
+                "🚀 Getting Started"
+              ]
+            },
+            " | \n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/SQL_CHEAT_SHEET.html"
+              },
+              "children": [
+                "📝 SQL Cheat Sheet"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n\n\n"
+  ]
+}

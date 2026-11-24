@@ -1,0 +1,861 @@
+{
+  "schemaVersion": 1,
+  "title": "Database lectures · DBMS-F26",
+  "bodyAttributes": {},
+  "nodes": [
+    "\n",
+    {
+      "tag": "main",
+      "attrs": {
+        "class": "catalog"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "nav",
+          "attrs": {
+            "aria-label": "Course navigation"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../materials.html",
+                "class": "materials-link"
+              },
+              "children": [
+                "Student materials"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "strong",
+              "children": [
+                "DBMS-F26"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "SQL presentation"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../mongodb.html"
+              },
+              "children": [
+                "MongoDB lab presentation"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "h1",
+          "children": [
+            "Database lectures"
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../course-plan.html"
+              },
+              "children": [
+                "32-meeting course plan and supplemental exercises"
+              ]
+            },
+            " · 100 minutes per meeting."
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "p",
+          "children": [
+            "Open a lecture in your browser or download its PowerPoint."
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "ol",
+          "attrs": {
+            "class": "lecture-list"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "Introduction"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Database purpose, data models, independence and the role of a DBMS."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "01_Introduction/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "01_Introduction.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "30 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "ER Modeling"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Requirements, entities, relationships, keys, cardinality and mapping to tables."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "03_ER_Modeling/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "03_ER_Modeling.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "268 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "Relational Algebra"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Relations, operators, query expressions and multiset semantics."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "04_Relational_Algebra/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "04_Relational_Algebra.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "98 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "Normalization"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Functional dependencies, keys, normal forms and decomposition."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "05_Normalization/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "05_Normalization.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "195 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "Window Functions"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Window syntax, frames, partitions, ranking and analytics; MariaDB supplement."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "06_Window_Functions/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "06_Window_Functions.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "150 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "Recursive SQL"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Common table expressions and recursive evaluation."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "07_Recursive_SQL/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "07_Recursive_SQL.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "15 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "Stored Programs"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Variables, control flow, conditions, routines and cursors."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "08_Stored_Programs/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "08_Stored_Programs.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "59 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "Triggers"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Events, conditions, actions, granularity and integrity."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "09_Triggers/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "09_Triggers.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "40 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "Storage and Indexes"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Buffering, the I/O model, external sorting and indexes."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "10_Storage_and_Indexes/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "10_Storage_and_Indexes.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "107 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "Join Algorithms"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Nested loops, sorting, hashing and join costs."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "11_Join_Algorithms/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "11_Join_Algorithms.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "89 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "Query Optimization"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Logical and physical optimization, plans and cost estimation."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "12_Query_Optimization/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "12_Query_Optimization.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "49 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "Transactions"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "ACID, logging, recovery, concurrency, serializability and isolation."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "13_Transactions/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "13_Transactions.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "183 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "MongoDB (full lecture)"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Document data, MongoDB concepts and operations."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "14_MongoDB/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "14_MongoDB_Full.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "53 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "Review"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "Cumulative questions and worked examples."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "15_Review/index.html"
+                      },
+                      "children": [
+                        "Open slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "15_Review.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "107 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n\n\n"
+  ]
+}

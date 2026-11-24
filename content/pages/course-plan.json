@@ -1,0 +1,5035 @@
+{
+  "schemaVersion": 1,
+  "title": "Course plan: 32 meetings of 100 minutes · DBMS-F26",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "materials.html",
+            "class": "materials-link"
+          },
+          "children": [
+            "Student materials"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "course-plan.html"
+          },
+          "children": [
+            "32-meeting plan"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "lectures/library/index.html"
+          },
+          "children": [
+            "Existing lecture library"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "course-map.html"
+          },
+          "children": [
+            "Course resources"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        {
+          "tag": "h1",
+          "children": [
+            "Course plan: 32 meetings of 100 minutes"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "16 weeks · 2 meetings/week · 100 minutes/meeting · 3,200 minutes = 53 hours 20 minutes."
+              ]
+            },
+            " This plan maps the existing DBMS-F26 lecture library into teaching meetings. It does not require adding more lecture decks or presenting every slide."
+          ]
+        },
+        "\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "note"
+          },
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Scheduling:"
+              ]
+            },
+            " These are 32 available teaching slots, not verified calendar dates. Holidays, cancellations, and separately scheduled exams must be reconciled with the institutional calendar. Each slot totals 100 minutes including review, practice, and feedback. Required quizzes fit within opening retrieval time. No new grading weights are introduced."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Coverage audit"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "The existing library already covers ER modeling, relational algebra, normalization, windows, recursion, stored programs, triggers, storage/indexes, join algorithms, optimization, transactions/logging/recovery, and MongoDB. SQL already has aligned labs. The additions here strengthen applied practice: complete performance experiments, two-session concurrency, restore verification, least privilege, and a transaction-safe application. Security/application operations are expanded rather than claimed absent; distributed decisions build on the MongoDB availability material."
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Scope:"
+              ]
+            },
+            " PostgreSQL 16+ for new executable labs, Python for application work, and the existing MongoDB lab for document databases. Some source decks and hosted exercises use MySQL/MariaDB; use this supplement’s PostgreSQL scripts for these meetings. Graph databases, full ARIES implementation, distributed consensus internals, and multiple application languages remain optional extensions."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Getting ready"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "labs/semester/setup.sql"
+              },
+              "children": [
+                "Shared fixture"
+              ]
+            },
+            " · ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "labs/semester/performance-setup.sql"
+              },
+              "children": [
+                "Performance dataset"
+              ]
+            },
+            " · ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "labs/semester/booking_app.py"
+              },
+              "children": [
+                "Python starter"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Instructor solutions and assessment keys are not published on this site. Homework preparation is additional to the 3,200 in-class minutes."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting map"
+          ]
+        },
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "table-wrap"
+          },
+          "children": [
+            {
+              "tag": "table",
+              "children": [
+                {
+                  "tag": "thead",
+                  "children": [
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "th",
+                          "children": [
+                            "Week"
+                          ]
+                        },
+                        {
+                          "tag": "th",
+                          "children": [
+                            "Meeting"
+                          ]
+                        },
+                        {
+                          "tag": "th",
+                          "children": [
+                            "Focus"
+                          ]
+                        },
+                        {
+                          "tag": "th",
+                          "children": [
+                            "Existing material"
+                          ]
+                        },
+                        {
+                          "tag": "th",
+                          "children": [
+                            "Exercises"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "tbody",
+                  "children": [
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "1"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-1"
+                              },
+                              "children": [
+                                "1"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Database systems and the relational model"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/01_Introduction/index.html"
+                              },
+                              "children": [
+                                "Introduction"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/foundations.html"
+                              },
+                              "children": [
+                                "Foundations and reproducible SQL"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "1"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-2"
+                              },
+                              "children": [
+                                "2"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "SQL environment, types, keys, and constraints"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "index.html"
+                              },
+                              "children": [
+                                "SQL presentation and aligned labs"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/foundations.html"
+                              },
+                              "children": [
+                                "Foundations and reproducible SQL"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "2"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-3"
+                              },
+                              "children": [
+                                "3"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "ER modeling: entities and cardinalities"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/03_ER_Modeling/index.html"
+                              },
+                              "children": [
+                                "ER Modeling"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/design.html"
+                              },
+                              "children": [
+                                "ER design, dependencies, and decomposition studio"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "2"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-4"
+                              },
+                              "children": [
+                                "4"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Mapping ER designs to relations"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/03_ER_Modeling/index.html"
+                              },
+                              "children": [
+                                "ER Modeling"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/design.html"
+                              },
+                              "children": [
+                                "ER design, dependencies, and decomposition studio"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "3"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-5"
+                              },
+                              "children": [
+                                "5"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "SQL filtering, NULLs, and data modification"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "index.html"
+                              },
+                              "children": [
+                                "SQL presentation and aligned labs"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/foundations.html"
+                              },
+                              "children": [
+                                "Foundations and reproducible SQL"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "3"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-6"
+                              },
+                              "children": [
+                                "6"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Joins, outer joins, and multiplicity"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "index.html"
+                              },
+                              "children": [
+                                "SQL presentation and aligned labs"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/query-reasoning.html"
+                              },
+                              "children": [
+                                "Query reasoning and relational algebra workbook"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "4"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-7"
+                              },
+                              "children": [
+                                "7"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Aggregation and conditional reporting"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "index.html"
+                              },
+                              "children": [
+                                "SQL presentation and aligned labs"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/query-reasoning.html"
+                              },
+                              "children": [
+                                "Query reasoning and relational algebra workbook"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "4"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-8"
+                              },
+                              "children": [
+                                "8"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Subqueries, EXISTS, and set operations"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "index.html"
+                              },
+                              "children": [
+                                "SQL presentation and aligned labs"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/query-reasoning.html"
+                              },
+                              "children": [
+                                "Query reasoning and relational algebra workbook"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "5"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-9"
+                              },
+                              "children": [
+                                "9"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Relational algebra and SQL semantics"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/04_Relational_Algebra/index.html"
+                              },
+                              "children": [
+                                "Relational Algebra"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/query-reasoning.html"
+                              },
+                              "children": [
+                                "Query reasoning and relational algebra workbook"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "5"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-10"
+                              },
+                              "children": [
+                                "10"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Query equivalence and algebra workshop"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/04_Relational_Algebra/index.html"
+                              },
+                              "children": [
+                                "Relational Algebra"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/query-reasoning.html"
+                              },
+                              "children": [
+                                "Query reasoning and relational algebra workbook"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "6"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-11"
+                              },
+                              "children": [
+                                "11"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Functional dependencies, closures, and keys"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/05_Normalization/index.html"
+                              },
+                              "children": [
+                                "Normalization"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/design.html"
+                              },
+                              "children": [
+                                "ER design, dependencies, and decomposition studio"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "6"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-12"
+                              },
+                              "children": [
+                                "12"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "3NF, BCNF, and decomposition"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/05_Normalization/index.html"
+                              },
+                              "children": [
+                                "Normalization"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/design.html"
+                              },
+                              "children": [
+                                "ER design, dependencies, and decomposition studio"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "7"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-13"
+                              },
+                              "children": [
+                                "13"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Window functions and frames"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/06_Window_Functions/index.html"
+                              },
+                              "children": [
+                                "Window Functions"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/analytics.html"
+                              },
+                              "children": [
+                                "Windows and recursive queries lab"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "7"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-14"
+                              },
+                              "children": [
+                                "14"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "CTEs and recursive SQL"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/07_Recursive_SQL/index.html"
+                              },
+                              "children": [
+                                "Recursive SQL"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/analytics.html"
+                              },
+                              "children": [
+                                "Windows and recursive queries lab"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "8"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-15"
+                              },
+                              "children": [
+                                "15"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Integrated SQL and design workshop"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "index.html"
+                              },
+                              "children": [
+                                "SQL presentation and aligned labs"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/project.html"
+                              },
+                              "children": [
+                                "Project milestones and cumulative exercises"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "8"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-16"
+                              },
+                              "children": [
+                                "16"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Midterm project demonstrations and feedback"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/15_Review/index.html"
+                              },
+                              "children": [
+                                "Review"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/project.html"
+                              },
+                              "children": [
+                                "Project milestones and cumulative exercises"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "9"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-17"
+                              },
+                              "children": [
+                                "17"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Stored programs and error handling"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/08_Stored_Programs/index.html"
+                              },
+                              "children": [
+                                "Stored Programs"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/programming.html"
+                              },
+                              "children": [
+                                "Stored programs and transactional audit lab"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "9"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-18"
+                              },
+                              "children": [
+                                "18"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Triggers, constraints, and audit trails"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/09_Triggers/index.html"
+                              },
+                              "children": [
+                                "Triggers"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/programming.html"
+                              },
+                              "children": [
+                                "Stored programs and transactional audit lab"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "10"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-19"
+                              },
+                              "children": [
+                                "19"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Storage, buffers, B+ trees, and sorting"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/10_Storage_and_Indexes/index.html"
+                              },
+                              "children": [
+                                "Storage and Indexes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/performance.html"
+                              },
+                              "children": [
+                                "Storage, indexes, joins, and optimizer laboratory"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "10"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-20"
+                              },
+                              "children": [
+                                "20"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Index design and measurement"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/10_Storage_and_Indexes/index.html"
+                              },
+                              "children": [
+                                "Storage and Indexes"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/performance.html"
+                              },
+                              "children": [
+                                "Storage, indexes, joins, and optimizer laboratory"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "11"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-21"
+                              },
+                              "children": [
+                                "21"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Join algorithms and cost models"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/11_Join_Algorithms/index.html"
+                              },
+                              "children": [
+                                "Join Algorithms"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/performance.html"
+                              },
+                              "children": [
+                                "Storage, indexes, joins, and optimizer laboratory"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "11"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-22"
+                              },
+                              "children": [
+                                "22"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Query optimization and plan diagnosis"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/12_Query_Optimization/index.html"
+                              },
+                              "children": [
+                                "Query Optimization"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/performance.html"
+                              },
+                              "children": [
+                                "Storage, indexes, joins, and optimizer laboratory"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "12"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-23"
+                              },
+                              "children": [
+                                "23"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Transactions, atomicity, and write-ahead logging"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/13_Transactions/index.html"
+                              },
+                              "children": [
+                                "Transactions"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/concurrency.html"
+                              },
+                              "children": [
+                                "Atomicity, recovery reasoning, and two-session concurrency"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "12"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-24"
+                              },
+                              "children": [
+                                "24"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Schedules, serializability, and locking"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/13_Transactions/index.html"
+                              },
+                              "children": [
+                                "Transactions"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/concurrency.html"
+                              },
+                              "children": [
+                                "Atomicity, recovery reasoning, and two-session concurrency"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "13"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-25"
+                              },
+                              "children": [
+                                "25"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Isolation levels and concurrent updates"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/13_Transactions/index.html"
+                              },
+                              "children": [
+                                "Transactions"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/concurrency.html"
+                              },
+                              "children": [
+                                "Atomicity, recovery reasoning, and two-session concurrency"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "13"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-26"
+                              },
+                              "children": [
+                                "26"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Recovery operations and least privilege"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/13_Transactions/index.html"
+                              },
+                              "children": [
+                                "Transactions"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/operations.html"
+                              },
+                              "children": [
+                                "Restore verification and least-privilege exercise"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "14"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-27"
+                              },
+                              "children": [
+                                "27"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Database application integration"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/08_Stored_Programs/index.html"
+                              },
+                              "children": [
+                                "Stored Programs"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/application.html"
+                              },
+                              "children": [
+                                "Database application and secure booking lab"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "14"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-28"
+                              },
+                              "children": [
+                                "28"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Secure application and failure testing"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/09_Triggers/index.html"
+                              },
+                              "children": [
+                                "Triggers"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/application.html"
+                              },
+                              "children": [
+                                "Database application and secure booking lab"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "15"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-29"
+                              },
+                              "children": [
+                                "29"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "MongoDB and document modeling"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/14_MongoDB/index.html"
+                              },
+                              "children": [
+                                "MongoDB"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/models.html"
+                              },
+                              "children": [
+                                "Document models and distributed-system decisions"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "15"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-30"
+                              },
+                              "children": [
+                                "30"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Distribution and database selection workshop"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/14_MongoDB/index.html"
+                              },
+                              "children": [
+                                "MongoDB"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/models.html"
+                              },
+                              "children": [
+                                "Document models and distributed-system decisions"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "16"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-31"
+                              },
+                              "children": [
+                                "31"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Project integration, performance, and recovery clinic"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/12_Query_Optimization/index.html"
+                              },
+                              "children": [
+                                "Query Optimization"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/project.html"
+                              },
+                              "children": [
+                                "Project milestones and cumulative exercises"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "16"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "#meeting-32"
+                              },
+                              "children": [
+                                "32"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "Final demonstrations and cumulative review"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "lectures/library/15_Review/index.html"
+                              },
+                              "children": [
+                                "Review"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            {
+                              "tag": "a",
+                              "attrs": {
+                                "href": "labs/semester/project.html"
+                              },
+                              "children": [
+                                "Project milestones and cumulative exercises"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "h2",
+          "children": [
+            "Detailed meeting plans"
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-1"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 1: Database systems and the relational model"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 1 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Compare a spreadsheet with a DBMS for simultaneous event registrations. Identify a redundancy, an integrity rule, and a concurrent-update risk. Define schema versus instance."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/01_Introduction/index.html"
+                  },
+                  "children": [
+                    "Introduction resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/foundations.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " A one-page requirements/risk analysis and five vocabulary examples."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-2"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 2: SQL environment, types, keys, and constraints"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 1 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Load the semester fixture. Predict and run SELECT results, then attempt duplicate keys, a missing foreign key, and a negative fee inside separate transactions. Explain each failure."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "index.html"
+                  },
+                  "children": [
+                    "SQL presentation and aligned labs resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/foundations.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Setup verification, four query results, and a constraint-test log."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-3"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 3: ER modeling: entities and cardinalities"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 2 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Model the Campus Events requirements in the design lab. State minimum and maximum participation on every relationship and resolve two ambiguities."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/03_ER_Modeling/index.html"
+                  },
+                  "children": [
+                    "ER Modeling resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/design.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " ER diagram with keys, cardinalities, assumptions, and a requirements checklist."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-4"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 4: Mapping ER designs to relations"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 2 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Map M:N registration and speaking assignments to relations. Translate five rules into constraints; identify the room-overlap rule that needs more than a foreign key. Exchange designs for peer review."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/03_ER_Modeling/index.html"
+                  },
+                  "children": [
+                    "ER Modeling resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/design.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Relational schema, five rule-to-mechanism mappings, and a revised diagram. Project proposal due."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-5"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 5: SQL filtering, NULLs, and data modification"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 3 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Solve the filtering tasks with the shared fixture. Predict three-valued logic before execution. Change a fee inside BEGIN/ROLLBACK and explain which state survives."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "index.html"
+                  },
+                  "children": [
+                    "SQL presentation and aligned labs resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/foundations.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Eight short queries, predictions, actual results, and one corrected misconception."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-6"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 6: Joins, outer joins, and multiplicity"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 3 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Write an attendance roster, retain students with no bookings, compare ON versus WHERE filters, and construct a case where DISTINCT hides a bad join."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "index.html"
+                  },
+                  "children": [
+                    "SQL presentation and aligned labs resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/query-reasoning.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Four queries with expected cardinalities and a counterexample dataset."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-7"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 7: Aggregation and conditional reporting"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 4 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Report paid revenue and booking counts per event including empty events; separate COUNT(*) from COUNT(child_key). Classify revenue using CASE."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "index.html"
+                  },
+                  "children": [
+                    "SQL presentation and aligned labs resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/query-reasoning.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Three reports and an explanation of the zero-booking case."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-8"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 8: Subqueries, EXISTS, and set operations"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 4 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Find students with no bookings, both SQL and Design bookings, and every required event. Compare NOT EXISTS with NOT IN when the subquery contains NULL."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "index.html"
+                  },
+                  "children": [
+                    "SQL presentation and aligned labs resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/query-reasoning.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Four queries, a NULL counterexample, and a universal-quantification explanation. Quiz 1."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-9"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 9: Relational algebra and SQL semantics"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 5 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Express selection, projection, join, union, and difference using the fixture. Translate two SQL queries into algebra and explain where SQL duplicates differ from set semantics."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/04_Relational_Algebra/index.html"
+                  },
+                  "children": [
+                    "Relational Algebra resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/query-reasoning.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Five algebra expressions plus hand-calculated intermediate relations."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-10"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 10: Query equivalence and algebra workshop"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 5 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Test selection pushdown for an inner join; produce a counterexample for the same rewrite across a left join. Compare a semijoin with a join followed by projection."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/04_Relational_Algebra/index.html"
+                  },
+                  "children": [
+                    "Relational Algebra resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/query-reasoning.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Two correct rewrites and two counterexamples with exact tuples."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-11"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 11: Functional dependencies, closures, and keys"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 6 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Use the supplied Enrollment relation and dependencies. Compute three closures, prove the candidate key, and distinguish an accidental data pattern from a business dependency."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/05_Normalization/index.html"
+                  },
+                  "children": [
+                    "Normalization resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/design.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Closure steps, key proof, and anomaly examples."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-12"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 12: 3NF, BCNF, and decomposition"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 6 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Decompose Enrollment; justify losslessness and dependency preservation. Analyze the separate BCNF tradeoff example. Apply the checks to the project schema."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/05_Normalization/index.html"
+                  },
+                  "children": [
+                    "Normalization resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/design.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Decomposition proof, dependency audit, and project schema checkpoint. Quiz 2."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-13"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 13: Window functions and frames"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 7 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Rank tied event revenue, compare ROW_NUMBER/RANK/DENSE_RANK, and calculate a deterministic running total with an explicit ROWS frame."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/06_Window_Functions/index.html"
+                  },
+                  "children": [
+                    "Window Functions resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/analytics.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Four analytical queries and a peer-row/frame explanation."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-14"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 14: CTEs and recursive SQL"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 7 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Traverse the topic hierarchy, expose depth and path, impose a depth bound, and explain how a cycle changes termination. Compare recursion with a fixed-depth self-join."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/07_Recursive_SQL/index.html"
+                  },
+                  "children": [
+                    "Recursive SQL resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/analytics.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Recursive query, expected hierarchy output, and a termination argument."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-15"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 15: Integrated SQL and design workshop"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 8 · 100 minutes · 10 retrieval · 15 briefing · 60 workshop/demonstrations · 15 feedback"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Complete the midterm query portfolio: joins, aggregation, anti-join, correlated query, set operation, window, and recursive query. Review one another’s edge cases."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "index.html"
+                  },
+                  "children": [
+                    "SQL presentation and aligned labs resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/project.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Ten queries with expected results, fixture, ER diagram, normalized schema, and test evidence."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-16"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 16: Midterm project demonstrations and feedback"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 8 · 100 minutes · 10 retrieval · 15 briefing · 60 workshop/demonstrations · 15 feedback"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Defend schema choices and demonstrate two randomly selected queries. Use waiting time for the individual debugging exercise in the project lab."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/15_Review/index.html"
+                  },
+                  "children": [
+                    "Review resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/project.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Midterm project submission, individual debugging response, and revision plan. Quiz 3 in opening review."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-17"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 17: Stored programs and error handling"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 9 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Implement a PostgreSQL function that transfers funds atomically. Validate inputs and missing accounts. Contrast its syntax with the MySQL examples in the existing deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/08_Stored_Programs/index.html"
+                  },
+                  "children": [
+                    "Stored Programs resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/programming.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Function and success, insufficient-funds, and missing-account evidence."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-18"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 18: Triggers, constraints, and audit trails"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 9 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Add the supplied audit trigger, test committed and rolled-back changes, and choose CHECK, FK, UNIQUE, trigger, or application logic for five rules."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/09_Triggers/index.html"
+                  },
+                  "children": [
+                    "Triggers resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/programming.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Trigger results and a rule-placement justification. Avoid duplicating simple constraints in triggers."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-19"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 19: Storage, buffers, B+ trees, and sorting"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 10 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Calculate pages and external-sort passes under the stated model. Trace an index lookup and distinguish heap-page access from index-page access."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/10_Storage_and_Indexes/index.html"
+                  },
+                  "children": [
+                    "Storage and Indexes resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/performance.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " I/O calculations and a labeled lookup diagram."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-20"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 20: Index design and measurement"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 10 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Generate 100,000 purchases. Compare selective and broad predicates before/after an index, test composite-index order, and record three warm runs."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/10_Storage_and_Indexes/index.html"
+                  },
+                  "children": [
+                    "Storage and Indexes resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/performance.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Plans, row counts, medians, buffer observations, and index-size tradeoff."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-21"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 21: Join algorithms and cost models"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 11 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Compute page nested-loop, block nested-loop, and hash-join costs. Identify memory/skew assumptions; compare them with the join selected by PostgreSQL."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/11_Join_Algorithms/index.html"
+                  },
+                  "children": [
+                    "Join Algorithms resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/performance.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Cost worksheet and explanation of why a different algorithm may win."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-22"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 22: Query optimization and plan diagnosis"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 11 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Read estimated versus actual rows, rewrite a date predicate, compare two result-equivalent joins, and propose an index for a workload rather than one query."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/12_Query_Optimization/index.html"
+                  },
+                  "children": [
+                    "Query Optimization resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/performance.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Before/after plans, equivalence check, and a recommendation with limitations. Quiz 4."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-23"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 23: Transactions, atomicity, and write-ahead logging"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 12 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Run a transfer that fails halfway and a successful transfer. Trace the supplied simplified undo/redo log and explain durable commit versus a flushed data page."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/13_Transactions/index.html"
+                  },
+                  "children": [
+                    "Transactions resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/concurrency.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Transaction transcript, conserved-balance check, and crash-recovery worksheet."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-24"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 24: Schedules, serializability, and locking"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 12 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Build conflict graphs for two supplied schedules. Run the two-session deadlock and resolve it; retry the whole transaction with a consistent lock order."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/13_Transactions/index.html"
+                  },
+                  "children": [
+                    "Transactions resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/concurrency.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Graphs, deadlock transcript, and retry explanation."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-25"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 25: Isolation levels and concurrent updates"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 13 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Demonstrate READ COMMITTED versus REPEATABLE READ with two sessions. Test a guarded stock update under contention and explain a stale application read."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/13_Transactions/index.html"
+                  },
+                  "children": [
+                    "Transactions resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/concurrency.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Interleaving table, observed values, and invariant-based correctness argument."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-26"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 26: Recovery operations and least privilege"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 13 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Restore a logical backup into a separate database and compare fingerprints. Use a read-only role to prove permitted SELECT and rejected UPDATE. Explain why restore is different from crash recovery."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/13_Transactions/index.html"
+                  },
+                  "children": [
+                    "Transactions resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/operations.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Restore verification, permission matrix, and recovery objective worksheet."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-27"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 27: Database application integration"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 14 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Run and extend the Python registration starter using parameter binding and explicit transaction scope. Trace connect, execute, commit/rollback, and close."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/08_Stored_Programs/index.html"
+                  },
+                  "children": [
+                    "Stored Programs resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/application.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Working command-line registration flow with separate database access functions."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-28"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 28: Secure application and failure testing"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 14 · 100 minutes · 10 retrieval · 15 concepts · 15 guided example · 50 lab · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Test quoted text, duplicate requests, missing students, full events, and simultaneous requests for the last seat. Verify the seat count never exceeds capacity."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/09_Triggers/index.html"
+                  },
+                  "children": [
+                    "Triggers resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/application.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Acceptance-test matrix, SQL injection explanation, and application milestone. Quiz 5."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-29"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 29: MongoDB and document modeling"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 15 · 100 minutes · 10 retrieval · 25 concepts · 20 worked example · 35 practice · 10 debrief"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Use the existing shop lab; compare embedding and references, write a filter and aggregation pipeline, and justify which invariants move out of relational constraints."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/14_MongoDB/index.html"
+                  },
+                  "children": [
+                    "MongoDB resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/models.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Two document designs, queries, and a relational/document comparison."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-30"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 30: Distribution and database selection workshop"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 15 · 100 minutes · 10 retrieval · 15 briefing · 60 workshop/demonstrations · 15 feedback"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Extend the existing availability discussion with the replica-lag and partition scenarios. Choose a design for a catalog, checkout, and analytics workload."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/14_MongoDB/index.html"
+                  },
+                  "children": [
+                    "MongoDB resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/models.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Decision memo with consistency, availability, and reconciliation tradeoffs; no cluster installation required."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-31"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 31: Project integration, performance, and recovery clinic"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 16 · 100 minutes · 10 retrieval · 15 briefing · 60 workshop/demonstrations · 15 feedback"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Run the final acceptance checklist, peer-review the transaction boundary, measure one query improvement, and demonstrate restore into a fresh database."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/12_Query_Optimization/index.html"
+                  },
+                  "children": [
+                    "Query Optimization resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/project.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Final evidence bundle and a prioritized defect/fix log."
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "section",
+          "attrs": {
+            "id": "meeting-32"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Meeting 32: Final demonstrations and cumulative review"
+              ]
+            },
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "meta"
+              },
+              "children": [
+                "Week 16 · 100 minutes · 10 retrieval · 15 briefing · 60 workshop/demonstrations · 15 feedback"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Learning target and class task:"
+                  ]
+                },
+                " Demonstrate the application, defend one design/performance tradeoff, and complete the cumulative reasoning exercise. Use rotating demo stations for larger classes."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Preparation:"
+                  ]
+                },
+                " review the named topics in the ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "lectures/library/15_Review/index.html"
+                  },
+                  "children": [
+                    "Review resource"
+                  ]
+                },
+                "; bring the prior meeting’s work. Select relevant concept blocks rather than attempting to present the entire deck."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Practice:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "href": "labs/semester/project.html"
+                  },
+                  "children": [
+                    "Open the detailed exercises"
+                  ]
+                },
+                ". Complete core tasks first; use the labeled stretch task for early finishers."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Evidence / exit ticket:"
+                  ]
+                },
+                " Final project, demonstration rubric, individual reflection, and cumulative exercise."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

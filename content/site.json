@@ -1,0 +1,902 @@
+{
+  "schemaVersion": 1,
+  "routes": {
+    "course-map.html": {
+      "document": "content/pages/course-map.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "course-plan.html": {
+      "document": "content/pages/course-plan.json",
+      "styles": [
+        "runtime/styles/6cad0046083c.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "docs/GETTING_STARTED.html": {
+      "document": "content/pages/docs/GETTING_STARTED.json",
+      "styles": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css",
+        "runtime/styles/b2a5bf7abca7.css"
+      ],
+      "data": [],
+      "scripts": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js",
+        "runtime/handouts.js"
+      ]
+    },
+    "docs/SQL_CHEAT_SHEET.html": {
+      "document": "content/pages/docs/SQL_CHEAT_SHEET.json",
+      "styles": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css",
+        "runtime/styles/b2a5bf7abca7.css"
+      ],
+      "data": [],
+      "scripts": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js",
+        "runtime/handouts.js"
+      ]
+    },
+    "index.html": {
+      "document": "content/pages/index.json",
+      "styles": [
+        "presentation.css?v=20260901-tables2",
+        "course-theme.css",
+        "presentation-theme.css"
+      ],
+      "data": [
+        "content/runtime/lab-content.json",
+        "content/runtime/query-labs.json",
+        "content/runtime/sql-slide-notes.json",
+        "content/runtime/original-sql-slides.json",
+        "content/runtime/advanced-sql-content.json",
+        "content/runtime/sql-reproducibility.json",
+        "content/runtime/lab-database.json",
+        "content/runtime/questions-config.json",
+        "content/runtime/slide-captions.json"
+      ],
+      "scripts": [
+        "runtime/sql-reproducibility.js",
+        "slide-questions.js",
+        "presentation.js?v=20260901-tables3"
+      ]
+    },
+    "labs/aggregation/aggregation-grouping.html": {
+      "document": "content/pages/labs/aggregation/aggregation-grouping.json",
+      "styles": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css",
+        "runtime/styles/b6c99b56d086.css"
+      ],
+      "data": [],
+      "scripts": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js",
+        "runtime/handouts.js"
+      ]
+    },
+    "labs/foundations/data-types-use-cases.html": {
+      "document": "content/pages/labs/foundations/data-types-use-cases.json",
+      "styles": [
+        "runtime/styles/4b02ff1143f2.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "labs/foundations/foundations-lab.html": {
+      "document": "content/pages/labs/foundations/foundations-lab.json",
+      "styles": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css",
+        "runtime/styles/97120a350c18.css"
+      ],
+      "data": [],
+      "scripts": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js",
+        "runtime/handouts.js"
+      ]
+    },
+    "labs/foundations/inclass-exercise.html": {
+      "document": "content/pages/labs/foundations/inclass-exercise.json",
+      "styles": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css",
+        "runtime/styles/2e22708e9dc3.css"
+      ],
+      "data": [],
+      "scripts": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js",
+        "runtime/handouts.js"
+      ]
+    },
+    "labs/joins-foreign-keys/foreign-keys.html": {
+      "document": "content/pages/labs/joins-foreign-keys/foreign-keys.json",
+      "styles": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css",
+        "runtime/styles/97120a350c18.css"
+      ],
+      "data": [],
+      "scripts": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js",
+        "runtime/handouts.js"
+      ]
+    },
+    "labs/joins-foreign-keys/joins-part1.html": {
+      "document": "content/pages/labs/joins-foreign-keys/joins-part1.json",
+      "styles": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css",
+        "runtime/styles/b6c99b56d086.css"
+      ],
+      "data": [],
+      "scripts": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js",
+        "runtime/handouts.js"
+      ]
+    },
+    "labs/joins-foreign-keys/multi-tables.html": {
+      "document": "content/pages/labs/joins-foreign-keys/multi-tables.json",
+      "styles": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css",
+        "runtime/styles/97120a350c18.css"
+      ],
+      "data": [],
+      "scripts": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js",
+        "runtime/handouts.js"
+      ]
+    },
+    "labs/nosql/mongodb.html": {
+      "document": "content/pages/labs/nosql/mongodb.json",
+      "styles": [
+        "runtime/styles/ada88685a666.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/lab-copy.js"
+      ]
+    },
+    "labs/quick-start/quick-start-guide.html": {
+      "document": "content/pages/labs/quick-start/quick-start-guide.json",
+      "styles": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css",
+        "runtime/styles/94969dbc3231.css"
+      ],
+      "data": [],
+      "scripts": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js",
+        "runtime/handouts.js"
+      ]
+    },
+    "labs/semester/analytics.html": {
+      "document": "content/pages/labs/semester/analytics.json",
+      "styles": [
+        "runtime/styles/6cad0046083c.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "labs/semester/application.html": {
+      "document": "content/pages/labs/semester/application.json",
+      "styles": [
+        "runtime/styles/6cad0046083c.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "labs/semester/concurrency.html": {
+      "document": "content/pages/labs/semester/concurrency.json",
+      "styles": [
+        "runtime/styles/6cad0046083c.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "labs/semester/design.html": {
+      "document": "content/pages/labs/semester/design.json",
+      "styles": [
+        "runtime/styles/6cad0046083c.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "labs/semester/foundations.html": {
+      "document": "content/pages/labs/semester/foundations.json",
+      "styles": [
+        "runtime/styles/6cad0046083c.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "labs/semester/models.html": {
+      "document": "content/pages/labs/semester/models.json",
+      "styles": [
+        "runtime/styles/6cad0046083c.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "labs/semester/operations.html": {
+      "document": "content/pages/labs/semester/operations.json",
+      "styles": [
+        "runtime/styles/6cad0046083c.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "labs/semester/performance.html": {
+      "document": "content/pages/labs/semester/performance.json",
+      "styles": [
+        "runtime/styles/6cad0046083c.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "labs/semester/programming.html": {
+      "document": "content/pages/labs/semester/programming.json",
+      "styles": [
+        "runtime/styles/6cad0046083c.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "labs/semester/project.html": {
+      "document": "content/pages/labs/semester/project.json",
+      "styles": [
+        "runtime/styles/6cad0046083c.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "labs/semester/query-reasoning.html": {
+      "document": "content/pages/labs/semester/query-reasoning.json",
+      "styles": [
+        "runtime/styles/6cad0046083c.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "labs/set-nested/set-nested-queries.html": {
+      "document": "content/pages/labs/set-nested/set-nested-queries.json",
+      "styles": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css",
+        "runtime/styles/b6c99b56d086.css"
+      ],
+      "data": [],
+      "scripts": [
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js",
+        "runtime/handouts.js"
+      ]
+    },
+    "labs/single-table/single-table-queries.html": {
+      "document": "content/pages/labs/single-table/single-table-queries.json",
+      "styles": [
+        "runtime/styles/8d5b1ab15651.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "lectures/library/01_Introduction/index.html": {
+      "document": "content/pages/lectures/library/01_Introduction/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/01_Introduction.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/03_ER_Modeling/index.html": {
+      "document": "content/pages/lectures/library/03_ER_Modeling/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/03_ER_Modeling.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/04_Relational_Algebra/index.html": {
+      "document": "content/pages/lectures/library/04_Relational_Algebra/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/04_Relational_Algebra.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/05_Normalization/index.html": {
+      "document": "content/pages/lectures/library/05_Normalization/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/05_Normalization.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/06_Window_Functions/index.html": {
+      "document": "content/pages/lectures/library/06_Window_Functions/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/06_Window_Functions.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/07_Recursive_SQL/index.html": {
+      "document": "content/pages/lectures/library/07_Recursive_SQL/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/07_Recursive_SQL.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/08_Stored_Programs/index.html": {
+      "document": "content/pages/lectures/library/08_Stored_Programs/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/08_Stored_Programs.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/09_Triggers/index.html": {
+      "document": "content/pages/lectures/library/09_Triggers/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/09_Triggers.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/10_Storage_and_Indexes/index.html": {
+      "document": "content/pages/lectures/library/10_Storage_and_Indexes/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/10_Storage_and_Indexes.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/11_Join_Algorithms/index.html": {
+      "document": "content/pages/lectures/library/11_Join_Algorithms/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/11_Join_Algorithms.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/12_Query_Optimization/index.html": {
+      "document": "content/pages/lectures/library/12_Query_Optimization/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/12_Query_Optimization.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/13_Transactions/index.html": {
+      "document": "content/pages/lectures/library/13_Transactions/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/13_Transactions.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/14_MongoDB/index.html": {
+      "document": "content/pages/lectures/library/14_MongoDB/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/14_MongoDB.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/15_Review/index.html": {
+      "document": "content/pages/lectures/library/15_Review/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [
+        "content/library/15_Review.json"
+      ],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ]
+    },
+    "lectures/library/index.html": {
+      "document": "content/pages/lectures/library/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "mongodb.html": {
+      "document": "content/pages/mongodb.json",
+      "styles": [
+        "presentation.css",
+        "course-theme.css",
+        "presentation-theme.css",
+        "runtime/styles/dd9b3c271a44.css"
+      ],
+      "data": [
+        "content/runtime/mongodb-content.json"
+      ],
+      "scripts": [
+        "presentation.js"
+      ]
+    },
+    "presentations/editable/db-design/index.html": {
+      "document": "content/pages/presentations/editable/db-design/index.json",
+      "styles": [
+        "runtime/styles/2c5588169f94.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/editable-db-design.js"
+      ],
+      "deck": "content/decks-json/db-design.json"
+    },
+    "presentations/editable/db-design-enhanced/index.html": {
+      "document": "content/pages/presentations/editable/db-design-enhanced/index.json",
+      "styles": [
+        "runtime/styles/1798d212a487.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/editable.js"
+      ],
+      "deck": "content/decks-json/db-design-enhanced.json"
+    },
+    "presentations/editable/db-design-with-labs/index.html": {
+      "document": "content/pages/presentations/editable/db-design-with-labs/index.json",
+      "styles": [
+        "runtime/styles/1798d212a487.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/editable.js"
+      ],
+      "deck": "content/decks-json/db-design-with-labs.json"
+    },
+    "presentations/editable/er-v26/index.html": {
+      "document": "content/pages/presentations/editable/er-v26/index.json",
+      "styles": [
+        "runtime/styles/1798d212a487.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/editable.js"
+      ],
+      "deck": "content/decks-json/er-v26.json"
+    },
+    "presentations/editable/er-v26-enhanced/index.html": {
+      "document": "content/pages/presentations/editable/er-v26-enhanced/index.json",
+      "styles": [
+        "runtime/styles/1798d212a487.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/editable.js"
+      ],
+      "deck": "content/decks-json/er-v26-enhanced.json"
+    },
+    "presentations/editable/er-v26-with-labs/index.html": {
+      "document": "content/pages/presentations/editable/er-v26-with-labs/index.json",
+      "styles": [
+        "runtime/styles/1798d212a487.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/editable.js"
+      ],
+      "deck": "content/decks-json/er-v26-with-labs.json"
+    },
+    "presentations/editable/index.html": {
+      "document": "content/pages/presentations/editable/index.json",
+      "styles": [],
+      "data": [],
+      "scripts": []
+    },
+    "presentations/editable/indexes/index.html": {
+      "document": "content/pages/presentations/editable/indexes/index.json",
+      "styles": [
+        "runtime/styles/1798d212a487.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/editable.js"
+      ],
+      "deck": "content/decks-json/indexes.json"
+    },
+    "presentations/editable/intro/index.html": {
+      "document": "content/pages/presentations/editable/intro/index.json",
+      "styles": [
+        "runtime/styles/1798d212a487.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/editable.js"
+      ],
+      "deck": "content/decks-json/intro.json"
+    },
+    "presentations/editable/lecture1/index.html": {
+      "document": "content/pages/presentations/editable/lecture1/index.json",
+      "styles": [
+        "runtime/styles/1798d212a487.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/editable.js"
+      ],
+      "deck": "content/decks-json/lecture1.json"
+    },
+    "presentations/editable/mysql-window-functions/index.html": {
+      "document": "content/pages/presentations/editable/mysql-window-functions/index.json",
+      "styles": [
+        "runtime/styles/1798d212a487.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/editable.js"
+      ],
+      "deck": "content/decks-json/mysql-window-functions.json"
+    },
+    "syntax/aggregate.html": {
+      "document": "content/pages/syntax/aggregate.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/all.html": {
+      "document": "content/pages/syntax/all.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/create-and-insert.html": {
+      "document": "content/pages/syntax/create-and-insert.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/create-index.html": {
+      "document": "content/pages/syntax/create-index.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/create-table.html": {
+      "document": "content/pages/syntax/create-table.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/create-view.html": {
+      "document": "content/pages/syntax/create-view.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/cte.html": {
+      "document": "content/pages/syntax/cte.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/distinct.html": {
+      "document": "content/pages/syntax/distinct.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/exists.html": {
+      "document": "content/pages/syntax/exists.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/explain.html": {
+      "document": "content/pages/syntax/explain.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/grant.html": {
+      "document": "content/pages/syntax/grant.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/group-by.html": {
+      "document": "content/pages/syntax/group-by.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/having.html": {
+      "document": "content/pages/syntax/having.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/in.html": {
+      "document": "content/pages/syntax/in.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/index.html": {
+      "document": "content/pages/syntax/index.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": []
+    },
+    "syntax/insert.html": {
+      "document": "content/pages/syntax/insert.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/is-null.html": {
+      "document": "content/pages/syntax/is-null.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/isolation.html": {
+      "document": "content/pages/syntax/isolation.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/join.html": {
+      "document": "content/pages/syntax/join.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/left-join.html": {
+      "document": "content/pages/syntax/left-join.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/like.html": {
+      "document": "content/pages/syntax/like.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/not-exists.html": {
+      "document": "content/pages/syntax/not-exists.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/order-by.html": {
+      "document": "content/pages/syntax/order-by.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/recursive-cte.html": {
+      "document": "content/pages/syntax/recursive-cte.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/savepoint.html": {
+      "document": "content/pages/syntax/savepoint.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/select.html": {
+      "document": "content/pages/syntax/select.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/set-operators.html": {
+      "document": "content/pages/syntax/set-operators.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/transaction.html": {
+      "document": "content/pages/syntax/transaction.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/update.html": {
+      "document": "content/pages/syntax/update.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "syntax/window.html": {
+      "document": "content/pages/syntax/window.json",
+      "styles": [
+        "runtime/styles/86284111498b.css"
+      ],
+      "data": [],
+      "scripts": [
+        "runtime/syntax-copy.js"
+      ]
+    },
+    "materials.html": {
+      "document": "content/pages/materials.json",
+      "styles": [
+        "runtime/materials.css"
+      ],
+      "data": [],
+      "scripts": []
+    }
+  }
+}

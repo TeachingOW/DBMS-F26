@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "title": "Storage, indexes, joins, and optimizer laboratory · DBMS-F26",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html",
+            "class": "materials-link"
+          },
+          "children": [
+            "Student materials"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-plan.html"
+          },
+          "children": [
+            "32-meeting plan"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../lectures/library/index.html"
+          },
+          "children": [
+            "Existing lecture library"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-map.html"
+          },
+          "children": [
+            "Course resources"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        {
+          "tag": "h1",
+          "children": [
+            "Storage, indexes, joins, and optimizer laboratory"
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Meetings 19–22. Existing decks supply the theory. Use ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "performance-setup.sql"
+              },
+              "children": [
+                "performance-setup.sql"
+              ]
+            },
+            " after the shared setup. It adds 100,000 deterministic purchases to the teaching schema. Run once in a fresh fixture."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 19: storage and I/O worksheet"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "Assume fixed 100-byte records, 8,000 usable bytes/page, no spanning or overhead, and 100,000 records. For sorting assume 11 buffer pages, initial runs of 11 pages, and merges of at most 10 runs; count both reads and writes on every pass, including final output."
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Compute records/page and total pages."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Compute initial runs, merge passes, and total page I/Os."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "A B+ tree has three index levels including leaves. Under a cold-cache model, estimate page reads for one matching tuple stored on one heap page. Explain how caching the root changes this estimate."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Explain why an unclustered range lookup returning most rows can cost more than a sequential scan."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 20: index experiment"
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Run ANALYZE. Capture ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "EXPLAIN (ANALYZE, BUFFERS)"
+                  ]
+                },
+                " for customer_id=42 and for status='paid'."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Create a B-tree index on (customer_id,purchased_at). Repeat both queries three times. Record the median execution time, scan type, estimates/actual rows, and buffer hits/reads. Do not claim a cold-cache comparison merely because this is a new query."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Test customer_id=42 with a date range, then a date-only predicate. Explain the leading-column effect without assuming the planner must choose an index."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Compare ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "EXTRACT(YEAR FROM purchased_at)=2026"
+                  ]
+                },
+                " with a half-open date range. Discuss an expression index as a different design."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Measure index size with pg_relation_size; explain write and storage costs."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 21: join costs"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "R has 1,000 pages, S has 200 pages, and M=22 buffer pages. Ignore final output writes. For page nested-loop use bR+bR×bS. For block nested-loop reserve two pages and use bOuter+ceil(bOuter/(M−2))×bInner. For a two-pass Grace hash join assume partitions fit, no skew, and cost 3(bR+bS)."
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Calculate page nested-loop cost for both outer choices."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Calculate block nested-loop cost for both choices."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Calculate hash-join cost and state the assumption whose failure would require another pass."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Inspect a join between perf_purchases and perf_customers. Explain why textbook cost units are not elapsed milliseconds and why small/selective inputs may favor nested loops."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 22: optimizer investigation"
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Compare the estimate and actual rows at every node for a customer/status join query."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Filter to a single customer, then to all paid purchases. Record whether the join algorithm changes; “no change” is a valid observation."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Prove result equivalence for a rewrite with EXCEPT in both directions, then compare plans."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Recommend indexes for a workload of 70% customer histories, 20% monthly summaries, and 10% inserts. State the data distribution and measurement limits."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Submit per meeting:"
+              ]
+            },
+            " worksheet or plans plus evidence table. Exact plan shape and speedup are not graded; correctness of interpretation is. ",
+            {
+              "tag": "strong",
+              "children": [
+                "Stretch:"
+              ]
+            },
+            " introduce skew and compare stale versus refreshed statistics."
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Reference: ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.postgresql.org/docs/16/using-explain.html"
+              },
+              "children": [
+                "PostgreSQL EXPLAIN guide"
+              ]
+            },
+            ". ANALYZE executes the query; the exercises above use SELECT statements."
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n"
+  ]
+}

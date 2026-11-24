@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "title": "ER design, dependencies, and decomposition studio · DBMS-F26",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html",
+            "class": "materials-link"
+          },
+          "children": [
+            "Student materials"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-plan.html"
+          },
+          "children": [
+            "32-meeting plan"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../lectures/library/index.html"
+          },
+          "children": [
+            "Existing lecture library"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-map.html"
+          },
+          "children": [
+            "Course resources"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        {
+          "tag": "h1",
+          "children": [
+            "ER design, dependencies, and decomposition studio"
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Supports meetings 3, 4, 11, and 12. Use the existing ER and normalization decks for explanations; the following case is a fresh assessment of those concepts."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meetings 3–4: Campus Events case"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "A department sponsors many events; every event has one sponsor. An event has one room, start/end times, a fee, and a seat capacity. Students register for many events and each registration records time and payment status. Speakers may appear at many events; each speaking assignment has a position within its event. A speaker can appear at most once in an event. Students cannot register twice for the same event. Events in the same room cannot overlap. A registration cannot exceed event capacity."
+          ]
+        },
+        "\n",
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Extract entities, candidate keys, attributes, relationship attributes, and min/max cardinalities. State whether an event can have zero speakers and whether cancelled registrations remain in history; these are requirements to clarify, not facts to invent silently."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Draw the ER diagram; explain the modeling of Registration and SpeakingAssignment."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Map to relations. Include a composite key for registration and a uniqueness rule for speaker position within an event."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Map five rules to SQL mechanisms. Explain why an ordinary row CHECK cannot count all registrations safely under concurrency."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Exchange models: attempt duplicate registration, orphan event sponsor, duplicate speaker position, inverted times, and overlapping room bookings."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Revise the model and list unresolved requirements separately."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Deliverables:"
+              ]
+            },
+            " diagram, schemas, five-rule test matrix, and one-page peer-review response. Each studio uses 10 review + 15 explanation + 15 worked example + 50 design/testing + 10 debrief minutes."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 11: functional dependencies"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "Enrollment(S, C, T, StudentName, CourseTitle, Instructor, Office, Grade). T identifies a term. Business rules: S → StudentName; C → CourseTitle; CT → Instructor; Instructor → Office; SCT → Grade. Do not infer any other dependency from sample data."
+          ]
+        },
+        "\n",
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Compute S+, CT+, and SCT+ with explicit steps."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Prove that SCT is the only candidate key under these rules."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Give an update, insertion, and deletion anomaly."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Explain why two students with the same name do not imply StudentName → S."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 12: decomposition and tradeoffs"
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Decompose into Student(S, StudentName), Course(C, CourseTitle), InstructorOffice(Instructor, Office), Offering(C,T,Instructor), and EnrollmentGrade(S,C,T,Grade)."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Check the determinant of every nontrivial dependency in each relation. Prove losslessness by a sequence of binary decompositions whose intersection determines one side. Verify preservation of every listed FD."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "For R(A,B,C) with AB → C and C → B, find all candidate keys. Decide whether R is 3NF and BCNF. Decompose to CB and AC and determine which FD is no longer locally enforceable."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Apply the same audit to your project. Name one business rule not captured by functional dependencies."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Stretch:"
+              ]
+            },
+            " construct a lossy decomposition of R(A,B,C) into AB and BC with no assumed FDs, showing the spurious tuples after joining."
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n"
+  ]
+}

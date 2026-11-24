@@ -1,0 +1,6 @@
+.slide-diagram { margin: 0; overflow-x: auto; }
+    .slide-diagram svg { display: block; width: 100%; min-width: 720px; font-family: Arial, sans-serif; }
+    @media (max-width: 640px) {
+      .controls { flex-wrap: wrap; }
+      .advanced-slide { padding-bottom: 128px; }
+    }

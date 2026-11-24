@@ -1,8 +1,0 @@
-{
-  "description": "Former extractor title overrides, preserved for explicit review migration; not applied automatically.",
-  "overrides": [
-    {"source_stem": "er.v26", "slide_number": 56, "title": "ERD Design Example"},
-    {"source_stem": "er.v26_enhanced", "slide_number": 56, "title": "ERD Design Example"},
-    {"source_stem": "er.v26_with_labs", "slide_number": 56, "title": "ERD Design Example"}
-  ]
-}

@@ -1,0 +1,3565 @@
+{
+  "schemaVersion": 1,
+  "title": "Lab 3: Aggregate Functions and GROUP BY",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Course navigation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #e7f3ff; padding: 15px; margin-bottom: 20px; border-radius: 5px;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h1",
+      "children": [
+        "Lab 3: Aggregate Functions and GROUP BY"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "🎯 Learning Objectives"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "By the end of this lab, you will be able to:\n- Use aggregate functions (COUNT, SUM, AVG, MAX, MIN)\n- Apply GROUP BY clauses effectively\n- Filter grouped results with HAVING\n- Understand COUNT() vs COUNT(DISTINCT)\n- Write complex queries with nested aggregates"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "📋 Table of Contents"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#database-setup"
+              },
+              "children": [
+                "Database Setup"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#aggregate-queries"
+              },
+              "children": [
+                "Aggregate Query Examples"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#group-by"
+              },
+              "children": [
+                "GROUP BY Clause"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#having-clause"
+              },
+              "children": [
+                "HAVING Clause"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "database-setup"
+      },
+      "children": [
+        "🚀 Database Setup"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "This lab uses the Company-Product-Purchase database. Let's set it up first:"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "attrs": {
+        "id": "aggregate-queries"
+      },
+      "children": [
+        "Example"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP TABLE IF EXISTS company;\nDROP TABLE IF EXISTS Product;\nDROP TABLE IF EXISTS Purchase;\n\nCREATE TABLE Company (\ncname CHAR(20) PRIMARY KEY,\ncity CHAR(20)\n);\n\nCREATE TABLE Product (\n  pname CHAR(20) ,\n  maker CHAR(20),\n  price DOUBLE,\n  FOREIGN KEY (maker) REFERENCES company(cname),\n  PRIMARY KEY (pname, maker)\n);\n\nCREATE TABLE Purchase \n(id INT PRIMARY KEY,\n product CHAR(20),\n buyer VARCHAR(30),\nFOREIGN KEY (product) REFERENCES Product(pname)\n );\n\nINSERT INTO Company VALUES('X co','Seattle');\nINSERT INTO Company VALUES('Y co','Jeffersonville');\nINSERT INTO Company VALUES('A co','Seattle');\nINSERT INTO Company VALUES('A inc','LA');\nINSERT INTO Company VALUES('B co','NYC');\nINSERT INTO Product VALUES('X','X co',20);\nINSERT INTO Product VALUES('X+','X co',10);\nINSERT INTO Product VALUES('Y','Y co',5);\nINSERT INTO Product VALUES('A','A co',8);\nINSERT INTO Product VALUES('T','A co',18);\nINSERT INTO Product VALUES('A','A inc',5);\nINSERT INTO Product VALUES('AA','A co',30);\nINSERT INTO Product VALUES('AAA','A co',20);\nINSERT INTO Product VALUES('B','B co',8);\nINSERT INTO Purchase VALUES(1,'A','Joe Blow');\nINSERT INTO Purchase VALUES(2,'A','Joe Smith');\nINSERT INTO Purchase VALUES(3,'A','John Oliver');\nINSERT INTO Purchase VALUES(4,'A','John Oliver');\nINSERT INTO Purchase VALUES(5,'Y','Joe Blow');\nINSERT INTO Purchase VALUES(6,'X','Joe Blow');\nINSERT INTO Purchase VALUES(7,'A','Joe Blow');\nINSERT INTO Purchase VALUES(8,'A','Joe Blow');\nINSERT INTO Purchase VALUES(9,'A','Joe Blow');\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Query Q1"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Cities where one can find companies that manufacture products bought\nby \"Joe Blow”."
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT  c.city\nFROM   Company c\nWHERE  c.cname  IN (\n  SELECT pr.maker\n      FROM   Purchase p, Product pr\n      WHERE  p.product = pr.pname \n     AND p.buyer = 'Joe Blow')\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Note that we got Seattle twice for X co and A co"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Query Q2"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT c.city\n FROM   Company c, \n        Product p, \n        Purchase pu\n WHERE  c.cname = p.maker\n   AND  p.pname = pu.product\n   AND  pu.buyer = 'Joe Blow'\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Compare the  previous two queries."
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Question 1"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find products that are more expensive than all those produced by “X co”"
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n  ",
+        {
+          "tag": "summary",
+          "children": [
+            "Solution"
+          ]
+        },
+        "\n\n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT pname\nFROM   Product\nWHERE  price > ALL(\n  SELECT price\n     FROM   Product\n     WHERE  maker = 'X co')\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n  "
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Question 2"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find ‘copycat’ products, i.e. products made by competitors with the same names as products made by ‘A co’"
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n  ",
+        {
+          "tag": "summary",
+          "children": [
+            "Solution"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    " SELECT p1.pname\nFROM   Product p1\nWHERE  p1.maker = 'A co'\n   AND EXISTS(\n  SELECT p2.pname\n      FROM   Product p2\n      WHERE  p2.maker <> 'A co'\n     AND p1.pname = p2.pname)\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP TABLE Purchase;\nCREATE TABLE Purchase (\nproduct CHAR(20), \npdate DATE, \nprice DOUBLE,\n quantity INT\n);\nINSERT INTO Purchase VALUES('bagel','2021-10-21',1,20);\nINSERT INTO Purchase VALUES('banana','2021-10-3',0.5,10);\nINSERT INTO Purchase VALUES('banana','2021-10-10',1,10);\nINSERT INTO Purchase VALUES('bagel','2021-10-25',1.5,20);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Note that we do not have a primary key."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Get the number of purchases."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "code",
+          "children": [
+            "sql\n  SELECT COUNT(*) FROM purchase"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find the sales after ‘10/10/2021’"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "  SELECT product,\nSUM(price * quantity) AS TotalSales\nFROM Purchase\nWHERE pdate > '2021-10-10'\nGROUP BY product\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\nAnother way for the same query:\n  ",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "\nSELECT DISTINCT  x.product,\n(SELECT SUM(y.price*y.quantity)  \nFROM Purchase y WHERE  x.product = y.product AND y.pdate > '2021-10-10')   TotalSales FROM Purchase x WHERE  x.pdate > '2021-10-10'\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "attrs": {
+        "id": "having-clause"
+      },
+      "children": [
+        "HAVING Clause"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Same query as before, except that we consider only products that have more than 100 buyers\n  ",
+        {
+          "tag": "code",
+          "children": [
+            "sql\nSELECT   product, SUM(price*quantity)\nFROM     Purchase\nWHERE    pdate > '2021-10-1'\nGROUP BY product\nHAVING   SUM(quantity) > 100"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Purchase"
+      ]
+    },
+    "\n",
+    {
+      "tag": "table",
+      "children": [
+        "\n",
+        {
+          "tag": "thead",
+          "children": [
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Id"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Product"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Price"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Quantity"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n",
+        {
+          "tag": "tbody",
+          "children": [
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "bagel"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1.0"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "5"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "2"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "banana"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "0.5"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "6"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "3"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "Juice"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1.0"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "4"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "4"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "donuts"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1.5"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "8"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "5"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "bagel"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1.5"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "7"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "6"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "banana"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1.0"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "4"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "7"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "banana"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1.0"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "3"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "8"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "juice"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "3.0"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "5"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "\nDROP TABLE IF EXISTS Purchase;\nCREATE TABLE Purchase (\n  ID INT PRIMARY KEY AUTO_INCREMENT,\n  Product CHAR(20),\n  Price DECIMAL(10,2),\n  Quantity INT\n  );\n\nINSERT INTO Purchase(Product, Price, Quantity) VALUES('bagel',1.0,5),\n('banana',.5,6), ('juice',1.0,4),\n('donuts', 1.5,8), ('bagel', 1.5,7),\n('banana',1.0,4),('banana',1,3), ('juice',3.0,5)\n;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "em",
+          "children": [
+            "NOTE:"
+          ]
+        },
+        "\nAUTO_INCREMENT, and how we insert into the table."
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT SUM(Price*Quantity) AS Total_sales\nFROM Purchase\nWHERE product='bagel'\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Executing from & WHERE"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "table",
+      "children": [
+        "\n",
+        {
+          "tag": "thead",
+          "children": [
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Id"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Product"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Price"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Quantity"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n",
+        {
+          "tag": "tbody",
+          "children": [
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "bagel"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1.0"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "5"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "5"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "bagel"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1.5"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "7"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Computing the aggregate."
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "table",
+      "children": [
+        "\n",
+        {
+          "tag": "thead",
+          "children": [
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Price"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "X"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Quantity"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n",
+        {
+          "tag": "tbody",
+          "children": [
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1.0"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "x"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "5"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1.5"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "x"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "7"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "15.5"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td"
+                },
+                "\n",
+                {
+                  "tag": "td"
+                },
+                "\n"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "COUNT() vs COUNT(DISTINCT)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Run the following two queries:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT COUNT(*) \nFROM Purchase;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT COUNT(DISTINCT product)\nFROM Purchase;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "First query returns 8 while the second returns 4."
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "attrs": {
+        "id": "group-by"
+      },
+      "children": [
+        "Group By clause"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "The following query finds the total number of units sold across all products."
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT SUM(Quantity) \nFROM Purchase\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "The query returns 36.\nTo find the number of units sold for each product."
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT Product, SUM(Quantity) \nFROM Purchase\nGROUP BY Product\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find products and sales that have sold more than 10 units."
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n  ",
+        {
+          "tag": "summary",
+          "children": [
+            "Solution"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT Product, SUM(Quantity*Price)\nFROM Purchase\nGROUP BY Product\nHAVING SUM(Quantity)> 10\n\n\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "table",
+          "children": [
+            "\n  ",
+            {
+              "tag": "thead",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "th",
+                      "children": [
+                        "Product"
+                      ]
+                    },
+                    "\n      ",
+                    {
+                      "tag": "th",
+                      "children": [
+                        "SUM(Quantity*Price)"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "tbody",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "bagel"
+                      ]
+                    },
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "15.50"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "banana"
+                      ]
+                    },
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "10.00"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find the product with the most units sold."
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n",
+        {
+          "tag": "summary",
+          "children": [
+            "Solution"
+          ]
+        },
+        "\n\n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "\n  SELECT Product, SUM(Quantity*Price)\nFROM Purchase\nGROUP BY Product\nHAVING SUM(Quantity)= (\n  SELECT MAX(t.units) \n  FROM  \n  (SELECT SUM(Quantity) AS units \n   FROM Purchase\n   GROUP BY Product) t\n);\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "p",
+      "children": [
+        "To understand the query, let us start with:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT SUM(Quantity) \nFROM Purchase\nGROUP BY Product\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT MAX(t.units) \nFROM  (SELECT SUM(Quantity) AS units \n     FROM Purchase\n     GROUP BY Product) t\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "The query above finds the maximum of the total unit sold."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Run the following queries, to create the schema:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP TABLE IF EXISTS product;\nDROP TABLE IF EXISTS supplier;\n\nCREATE TABLE supplier(\nid INT,\nsname VARCHAR(30) NOT NULL,\nPRIMARY KEY (id),\nUNIQUE(sname)\n);\n\nCREATE TABLE product(\nid INT PRIMARY KEY, \npname VARCHAR(30) NOT NULL,\nprice FLOAT,\nsupplierid INT,\nFOREIGN KEY (supplierid) REFERENCES supplier(id)\n);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Insert Data"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "INSERT INTO supplier(id, sname) VALUES (1, 'bike Ltd');\nINSERT INTO supplier(id, sname) VALUES (2, 'bike USA');\nINSERT INTO supplier(id, sname) VALUES (3, 'bikes4all');\n\nINSERT INTO product VALUES (1,'girl bike', 110, 1);\nINSERT INTO product VALUES (2,'boy bike', 110, 2);\nINSERT INTO product VALUES (3,'mountain bike', 510, 2);\nINSERT INTO product VALUES (4,'bike', 180, NULL );\nINSERT INTO product VALUES (5,'ebike', 280, NULL );\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Try to insert the following"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "children": [
+                "INSERT INTO supplier(id, sname) VALUES (4, 'bike Ltd');\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "The previous SQL insert should not work, as we have specified that  the supplier name to be unique."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Q1:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find all products with unknown supplier."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "A supplier of a product is recorded in product table\nto find out products with unknown supplier, we need to find those that are NULL."
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n  ",
+        {
+          "tag": "summary",
+          "children": [
+            "Solution"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "  SELECT * FROM product WHERE supplierid IS NULL\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "p",
+      "children": [
+        "Q2:\nFind all suppliers with no product listed."
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n  ",
+        {
+          "tag": "summary",
+          "children": [
+            "Solution"
+          ]
+        },
+        "\n\n  ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "\nSELECT * FROM Supplier s\nWHERE NOT EXISTS (SELECT * FROM product p\n  WHERE p.supplierid=s.id)\n  "
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n"
+      ]
+    },
+    "\n\nQ3:\nFor each product list the supplier information.\n\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n  ",
+        {
+          "tag": "summary",
+          "children": [
+            "Solution"
+          ]
+        },
+        "\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT *\nFROM   supplier s, Product p\nWHERE  s.id = p.supplierid\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\nAnother way to write the above query is by using join clause, as follow:\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "select * from product p \njoin supplier s \non p.supplierid=s.id;\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n However, running the above query, you are not returning\ninformation about Products with no supplier information (e.g., products with id 4 and 5).\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "  SELECT * FROM product p \nLEFT OUTER JOIN supplier s \nON p.supplierid=s.id;\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n\n "
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "p",
+      "children": [
+        "Q4:\nFind supplier (along with the supplied products)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n  ",
+        {
+          "tag": "summary",
+          "children": [
+            "Solution"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT * FROM product p\nRIGHT OUTER JOIN supplier s \nON p.supplierid=s.id;\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Q5\nFind supplier and products including not matched"
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n  ",
+        {
+          "tag": "summary",
+          "children": [
+            "Solution"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT * FROM product p \nfull OUTER JOIN supplier s \nON p.supplierid=s.id;\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\nMysql does not support full outer join. It is can executed as follow:\n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT * FROM product p \nLEFT OUTER JOIN supplier s \nON p.supplierid=s.id\nUNION\nSELECT * FROM product p \nRIGHT OUTER JOIN supplier s \nON p.supplierid=s.id;\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n  "
+      ]
+    },
+    "\n\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "🎯 Additional Practice Examples"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 1: Sales Analysis"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Analyze sales data to find total revenue and average order value by month and product category."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Sample schema for sales analysis\nCREATE TABLE Sales (\n    sale_id INT PRIMARY KEY,\n    product_name VARCHAR(100),\n    category VARCHAR(50),\n    sale_date DATE,\n    quantity INT,\n    unit_price DECIMAL(10,2)\n);\n\n-- Query: Monthly sales summary by category\nSELECT \n    YEAR(sale_date) AS year,\n    MONTH(sale_date) AS month,\n    category,\n    COUNT(*) AS total_transactions,\n    SUM(quantity) AS total_units_sold,\n    SUM(quantity * unit_price) AS total_revenue,\n    AVG(quantity * unit_price) AS avg_transaction_value,\n    MIN(unit_price) AS min_price,\n    MAX(unit_price) AS max_price\nFROM Sales\nGROUP BY YEAR(sale_date), MONTH(sale_date), category\nHAVING total_revenue > 1000\nORDER BY year DESC, month DESC, total_revenue DESC;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 2: Student Performance Statistics"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Calculate grade distribution and class statistics for different courses."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Grade analysis example\nCREATE TABLE StudentGrades (\n    student_id INT,\n    course_name VARCHAR(100),\n    grade DECIMAL(5,2),\n    semester VARCHAR(20)\n);\n\n-- Query: Course statistics with grade distribution\nSELECT \n    course_name,\n    COUNT(DISTINCT student_id) AS num_students,\n    AVG(grade) AS avg_grade,\n    MIN(grade) AS min_grade,\n    MAX(grade) AS max_grade,\n    STDDEV(grade) AS grade_std_dev,\n    SUM(CASE WHEN grade >= 90 THEN 1 ELSE 0 END) AS A_count,\n    SUM(CASE WHEN grade >= 80 AND grade < 90 THEN 1 ELSE 0 END) AS B_count,\n    SUM(CASE WHEN grade >= 70 AND grade < 80 THEN 1 ELSE 0 END) AS C_count,\n    SUM(CASE WHEN grade < 70 THEN 1 ELSE 0 END) AS below_C_count\nFROM StudentGrades\nGROUP BY course_name\nHAVING num_students >= 10\nORDER BY avg_grade DESC;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 3: Inventory Management Aggregations"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Track inventory levels and identify products that need reordering."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Inventory analysis\nCREATE TABLE Inventory (\n    product_id INT,\n    warehouse VARCHAR(50),\n    quantity_on_hand INT,\n    reorder_level INT,\n    unit_cost DECIMAL(10,2),\n    last_updated DATE\n);\n\n-- Query: Inventory summary by warehouse with reorder alerts\nSELECT \n    warehouse,\n    COUNT(DISTINCT product_id) AS total_products,\n    SUM(quantity_on_hand) AS total_units,\n    SUM(quantity_on_hand * unit_cost) AS inventory_value,\n    AVG(quantity_on_hand) AS avg_stock_level,\n    COUNT(CASE WHEN quantity_on_hand <= reorder_level THEN 1 END) AS products_to_reorder,\n    SUM(CASE WHEN quantity_on_hand <= reorder_level \n        THEN (reorder_level - quantity_on_hand) * unit_cost \n        ELSE 0 END) AS reorder_cost\nFROM Inventory\nGROUP BY warehouse\nORDER BY inventory_value DESC;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 4: Customer Purchase Behavior Analysis"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Analyze customer purchasing patterns with aggregations."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Customer behavior analysis\nCREATE TABLE CustomerPurchases (\n    customer_id INT,\n    customer_name VARCHAR(100),\n    purchase_date DATE,\n    product_category VARCHAR(50),\n    purchase_amount DECIMAL(10,2)\n);\n\n-- Query: Customer segmentation based on purchase behavior\nSELECT \n    customer_id,\n    customer_name,\n    COUNT(*) AS total_purchases,\n    COUNT(DISTINCT product_category) AS categories_purchased,\n    SUM(purchase_amount) AS total_spent,\n    AVG(purchase_amount) AS avg_purchase_amount,\n    MIN(purchase_date) AS first_purchase,\n    MAX(purchase_date) AS last_purchase,\n    DATEDIFF(MAX(purchase_date), MIN(purchase_date)) AS customer_lifetime_days,\n    CASE \n        WHEN SUM(purchase_amount) > 10000 THEN 'VIP'\n        WHEN SUM(purchase_amount) > 5000 THEN 'Gold'\n        WHEN SUM(purchase_amount) > 1000 THEN 'Silver'\n        ELSE 'Bronze'\n    END AS customer_tier\nFROM CustomerPurchases\nGROUP BY customer_id, customer_name\nHAVING total_purchases >= 3\nORDER BY total_spent DESC;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #fff3cd; padding: 15px; margin: 20px 0; border-left: 4px solid #ffc107; border-radius: 4px;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "h4",
+          "attrs": {
+            "style": "margin-top: 0;"
+          },
+          "children": [
+            "💡 Key Takeaways - Aggregate Functions"
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "ul",
+          "children": [
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "COUNT(*)"
+                  ]
+                },
+                " counts all rows, while ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "COUNT(column)"
+                  ]
+                },
+                " counts non-NULL values"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "COUNT(DISTINCT column)"
+                  ]
+                },
+                " counts unique values only"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "Use ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "GROUP BY"
+                  ]
+                },
+                " to create subgroups for aggregation"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "HAVING"
+                  ]
+                },
+                " filters groups after aggregation (unlike WHERE which filters before)"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "You can combine multiple aggregate functions in one query"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "Use ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "CASE"
+                  ]
+                },
+                " statements within aggregates for conditional counting/summing"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "Remember: columns in SELECT must either be in GROUP BY or be aggregated"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr",
+      "attrs": {
+        "style": "margin-top: 40px;"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #f0f0f0; padding: 15px; margin-top: 20px; border-radius: 5px; text-align: center;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            " | \n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/GETTING_STARTED.html"
+              },
+              "children": [
+                "🚀 Getting Started"
+              ]
+            },
+            " | \n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/SQL_CHEAT_SHEET.html"
+              },
+              "children": [
+                "📝 SQL Cheat Sheet"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    "\n\n\n"
+  ]
+}

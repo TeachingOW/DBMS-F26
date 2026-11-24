@@ -1,0 +1,534 @@
+{
+  "schemaVersion": 1,
+  "title": "MongoDB Presentation",
+  "bodyAttributes": {
+    "class": "native-deck",
+    "data-title": "MongoDB",
+    "data-count": "0",
+    "data-deck": "mongodb",
+    "data-native": "true",
+    "data-heading-fixed": "true"
+  },
+  "nodes": [
+    "\n  ",
+    {
+      "tag": "main",
+      "attrs": {
+        "class": "stage"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "loading"
+          },
+          "children": [
+            "Loading MongoDB slides…"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "article",
+          "attrs": {
+            "class": "advanced-slide",
+            "hidden": "",
+            "aria-live": "polite"
+          }
+        },
+        "\n    ",
+        {
+          "tag": "article",
+          "attrs": {
+            "class": "lab-slide",
+            "hidden": ""
+          }
+        },
+        "\n  "
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "header",
+      "attrs": {
+        "class": "topbar"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "materials.html",
+            "class": "top-link"
+          },
+          "children": [
+            "Student materials"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "strong",
+          "attrs": {
+            "class": "deck-title"
+          },
+          "children": [
+            "DBMS-F26 · MongoDB"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "top-link",
+            "href": "index.html"
+          },
+          "children": [
+            "SQL"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "top-link",
+            "href": "labs/nosql/mongodb.html"
+          },
+          "children": [
+            "MongoDB lab"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "top-link optional",
+            "href": "lectures/library/14_MongoDB/index.html"
+          },
+          "children": [
+            "Full lecture"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "top-link optional",
+            "href": "lectures/14_MongoDB.pptx",
+            "download": ""
+          },
+          "children": [
+            "PowerPoint"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "help",
+            "aria-label": "Keyboard help"
+          },
+          "children": [
+            "?"
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "nav",
+      "attrs": {
+        "class": "controls",
+        "aria-label": "Slide controls"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "prev",
+            "aria-label": "Previous slide"
+          },
+          "children": [
+            "←"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "span",
+          "attrs": {
+            "class": "counter",
+            "aria-live": "polite"
+          }
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "next",
+            "aria-label": "Next slide"
+          },
+          "children": [
+            "→"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "overview"
+          },
+          "children": [
+            "Overview"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "labs"
+          },
+          "children": [
+            "Materials"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "fullscreen"
+          },
+          "children": [
+            "Fullscreen"
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "progress",
+        "aria-hidden": "true"
+      },
+      "children": [
+        {
+          "tag": "span"
+        }
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "overview",
+        "aria-hidden": "true"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "overview-head"
+          },
+          "children": [
+            "\n      ",
+            {
+              "tag": "h2",
+              "children": [
+                "MongoDB slide overview"
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "button",
+                "data-action": "close-overview"
+              },
+              "children": [
+                "Close"
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "thumb-grid"
+          }
+        },
+        "\n  "
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "labs-panel",
+        "aria-hidden": "true"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "labs-card"
+          },
+          "children": [
+            "\n      ",
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "labs-head"
+              },
+              "children": [
+                "\n        ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "MongoDB materials"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "class": "button",
+                    "data-action": "close-labs"
+                  },
+                  "children": [
+                    "Close"
+                  ]
+                },
+                "\n      "
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "lab-links"
+              },
+              "children": [
+                "\n        ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "lab-link",
+                    "href": "labs/nosql/mongodb.html"
+                  },
+                  "children": [
+                    {
+                      "tag": "strong",
+                      "children": [
+                        "MongoDB lab"
+                      ]
+                    },
+                    {
+                      "tag": "span",
+                      "children": [
+                        "Run the shop examples and check your results."
+                      ]
+                    }
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "lab-link",
+                    "href": "lectures/14_MongoDB.pptx",
+                    "download": ""
+                  },
+                  "children": [
+                    {
+                      "tag": "strong",
+                      "children": [
+                        "MongoDB PowerPoint"
+                      ]
+                    },
+                    {
+                      "tag": "span",
+                      "children": [
+                        "Download the lecture slides."
+                      ]
+                    }
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "lab-link",
+                    "href": "lectures/library/14_MongoDB/index.html"
+                  },
+                  "children": [
+                    {
+                      "tag": "strong",
+                      "children": [
+                        "Full MongoDB lecture"
+                      ]
+                    },
+                    {
+                      "tag": "span",
+                      "children": [
+                        "Open the 53-slide lecture from the course library."
+                      ]
+                    }
+                  ]
+                },
+                "\n      "
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "help",
+        "aria-hidden": "true"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "help-card"
+          },
+          "children": [
+            "\n      ",
+            {
+              "tag": "h2",
+              "children": [
+                "Presentation controls"
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "keys"
+              },
+              "children": [
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "← / →"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Previous or next slide"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "Home / End"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "First or last slide"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "O"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Slide overview"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "L"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Lab and PowerPoint"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "F"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Fullscreen"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "H"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Close panels"
+                  ]
+                },
+                "\n      "
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "class": "button",
+                    "data-action": "close-help"
+                  },
+                  "children": [
+                    "Close"
+                  ]
+                }
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n  ",
+    "\n  ",
+    "\n\n\n"
+  ]
+}

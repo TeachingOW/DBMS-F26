@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "title": "SQL syntax reference · SQL Syntax",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "header",
+      "children": [
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "eyebrow"
+          },
+          "children": [
+            "SQL general syntax"
+          ]
+        },
+        {
+          "tag": "h1",
+          "children": [
+            "SQL syntax reference"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "lead"
+          },
+          "children": [
+            "Open a topic for its reusable pattern, clause-by-clause explanation, and a copyable example. Every presentation query links to one of these pages."
+          ]
+        },
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "topic-grid"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "create-and-insert.html"
+              },
+              "children": [
+                "Create a table and insert rows",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Define a table first, then add one or more rows whose values match its columns and data types."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "create-table.html"
+              },
+              "children": [
+                "CREATE TABLE",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Create a relation by declaring its columns, data types, keys, and integrity rules."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "create-view.html"
+              },
+              "children": [
+                "CREATE VIEW",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Save a query under a reusable virtual-table name."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "create-index.html"
+              },
+              "children": [
+                "CREATE INDEX",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Build an access path that can speed up matching and sorting on selected columns."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "grant.html"
+              },
+              "children": [
+                "GRANT",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Give a database role permission to perform an action on an object."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "savepoint.html"
+              },
+              "children": [
+                "SAVEPOINT",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Mark a point inside a transaction so later work can be undone without discarding earlier work."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "isolation.html"
+              },
+              "children": [
+                "Transaction isolation",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Choose how strongly one transaction is separated from concurrent transactions."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "transaction.html"
+              },
+              "children": [
+                "Transactions",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Treat several statements as one all-or-nothing unit of work."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "explain.html"
+              },
+              "children": [
+                "EXPLAIN",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Ask PostgreSQL to show the execution plan it chooses for a query."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "recursive-cte.html"
+              },
+              "children": [
+                "Recursive common table expression",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Repeatedly apply a query to traverse hierarchical or graph-shaped data."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "cte.html"
+              },
+              "children": [
+                "Common table expression (WITH)",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Name an intermediate query so a larger statement can be read in clear stages."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "window.html"
+              },
+              "children": [
+                "Window functions",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Calculate rankings, running values, or group statistics while keeping each detail row."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "set-operators.html"
+              },
+              "children": [
+                "Set operators",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Combine compatible query results using union, intersection, or difference semantics."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "not-exists.html"
+              },
+              "children": [
+                "NOT EXISTS",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Keep an outer row only when the correlated inner query finds no matching row."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "exists.html"
+              },
+              "children": [
+                "EXISTS",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Keep an outer row when the correlated inner query finds at least one match."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "all.html"
+              },
+              "children": [
+                "ALL subquery comparison",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Require a comparison to be true for every value returned by a subquery."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "in.html"
+              },
+              "children": [
+                "IN subquery",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Keep rows whose expression equals one of the values returned by a subquery."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "having.html"
+              },
+              "children": [
+                "HAVING",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Filter groups after aggregate values have been computed."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "group-by.html"
+              },
+              "children": [
+                "GROUP BY",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Collapse rows into groups and compute one aggregate result per group."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "aggregate.html"
+              },
+              "children": [
+                "Aggregate functions",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Summarize several rows with COUNT, SUM, AVG, MIN, or MAX."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "left-join.html"
+              },
+              "children": [
+                "LEFT JOIN",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Keep every row from the left table and attach matching right-table data when available."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "join.html"
+              },
+              "children": [
+                "INNER JOIN",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Combine rows from two tables when the ON condition is true."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "order-by.html"
+              },
+              "children": [
+                "ORDER BY",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Sort the final query result using one or more expressions."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "like.html"
+              },
+              "children": [
+                "LIKE pattern matching",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Match text using SQL wildcard patterns."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "is-null.html"
+              },
+              "children": [
+                "NULL tests",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Test whether a value is unknown using IS NULL or IS NOT NULL."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "distinct.html"
+              },
+              "children": [
+                "SELECT DISTINCT",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Remove duplicate rows from the projected result."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "insert.html"
+              },
+              "children": [
+                "INSERT",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Add one or more new rows to a table."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "update.html"
+              },
+              "children": [
+                "UPDATE",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Change column values in existing rows that satisfy a condition."
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "select.html"
+              },
+              "children": [
+                "SELECT–FROM–WHERE",
+                {
+                  "tag": "small",
+                  "children": [
+                    "Choose result columns, identify source tables, and optionally filter rows."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "nav",
+          "attrs": {
+            "class": "actions"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../materials.html",
+                "class": "materials-link"
+              },
+              "children": [
+                "Student materials"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "← Return to presentation"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../demo-database.sql",
+                "download": ""
+              },
+              "children": [
+                "Download demo database"
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "footer",
+          "children": [
+            "Designed for PostgreSQL 16+ and the course demo database."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "title": "Windows and recursive queries lab · DBMS-F26",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html",
+            "class": "materials-link"
+          },
+          "children": [
+            "Student materials"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-plan.html"
+          },
+          "children": [
+            "32-meeting plan"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../lectures/library/index.html"
+          },
+          "children": [
+            "Existing lecture library"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-map.html"
+          },
+          "children": [
+            "Course resources"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        {
+          "tag": "h1",
+          "children": [
+            "Windows and recursive queries lab"
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Meetings 13–14. Load ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "setup.sql"
+              },
+              "children": [
+                "setup.sql"
+              ]
+            },
+            ". The dataset deliberately includes tied revenues and a branching hierarchy."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 13: analytics (100 minutes)"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "10 review, 25 windows and frames, 20 worked ranking example, 35 independent tasks, 10 debrief."
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Aggregate paid event revenue first: SQL 40, Design 30, Data 30, Graph 0. Rank using RANK and DENSE_RANK over revenue descending. Explain the tie and the gap."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Use ROW_NUMBER with revenue descending and event ID as a tie-breaker. Why should the ranking function itself omit the event ID if revenue ties must share rank?"
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Calculate a cumulative booking count ordered by booked_at, student_id, event_id with ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW"
+                  ]
+                },
+                "."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Calculate each event’s share of total paid revenue without collapsing the output rows."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Use LAG on daily booking counts to compute the change since the preceding observed day. Explain why that is not necessarily the previous calendar day."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 14: recursive hierarchy (100 minutes)"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "10 review, 15 recursion model, 15 worked anchor/step, 50 lab, 10 debrief."
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Traverse topics starting at Database. Return id, name, depth, and an array path."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Predict Database at depth 0; SQL and Systems at 1; Joins and Transactions at 2."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Add an explicit depth bound and a visited-ID test. Explain what each protects against."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "In a rolled-back transaction make Database a child of Joins. Explain why a root-based anchor now misses that component; start at id=1 and use a path guard to terminate."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Compare the recursive query with a fixed two-level self-join. Which changes if a new level is added?"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Submit:"
+              ]
+            },
+            " SQL, outputs, ranking/frame explanation, and a termination argument. ",
+            {
+              "tag": "strong",
+              "children": [
+                "Stretch:"
+              ]
+            },
+            " return each node’s descendant count and build a calendar series before using LAG."
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n"
+  ]
+}

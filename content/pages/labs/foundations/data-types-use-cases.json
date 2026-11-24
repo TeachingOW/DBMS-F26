@@ -1,0 +1,759 @@
+{
+  "schemaVersion": 1,
+  "title": "Lab: Choosing SQL Data Types from Use Cases",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Course navigation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        }
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "p",
+      "attrs": {
+        "class": "nav"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-map.html"
+          },
+          "children": [
+            "← Course map"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../index.html"
+          },
+          "children": [
+            "Portal"
+          ]
+        }
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "h1",
+      "children": [
+        "Choosing SQL Data Types from Use Cases"
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "p",
+      "attrs": {
+        "class": "callout"
+      },
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Goal:"
+          ]
+        },
+        " choose a type by asking what operations must be correct—not by asking what the sample value happens to look like."
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "h2",
+      "children": [
+        "Part 1 · Classify the job of the field"
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "grid"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "case"
+          },
+          "children": [
+            {
+              "tag": "h3",
+              "children": [
+                "Exact quantity"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                "Money, tax rates, inventory quantities measured to a fixed scale."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Usually:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "DECIMAL(p,s)"
+                  ]
+                },
+                " or ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "NUMERIC(p,s)"
+                  ]
+                },
+                "."
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "case"
+          },
+          "children": [
+            {
+              "tag": "h3",
+              "children": [
+                "Approximate measurement"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                "Sensor readings, scientific values, estimates where floating-point approximation is acceptable."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Usually:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "REAL"
+                  ]
+                },
+                " or ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "DOUBLE PRECISION"
+                  ]
+                },
+                "."
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "case"
+          },
+          "children": [
+            {
+              "tag": "h3",
+              "children": [
+                "Identifier"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                "ZIP code, phone number, SKU, student ID, or account number. Leading zeros and formatting matter; arithmetic does not."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Usually:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "CHAR"
+                  ]
+                },
+                " or ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "VARCHAR"
+                  ]
+                },
+                "."
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "case"
+          },
+          "children": [
+            {
+              "tag": "h3",
+              "children": [
+                "Time"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                "Birthday, due date, event instant, or local appointment time."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Usually:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "DATE"
+                  ]
+                },
+                ", ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "TIME"
+                  ]
+                },
+                ", or ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "TIMESTAMP"
+                  ]
+                },
+                "; consider time-zone semantics."
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "case"
+          },
+          "children": [
+            {
+              "tag": "h3",
+              "children": [
+                "State"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                "Yes/no, active/inactive, passed/failed."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Usually:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "BOOLEAN"
+                  ]
+                },
+                ", unless the domain has more than two states."
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "case"
+          },
+          "children": [
+            {
+              "tag": "h3",
+              "children": [
+                "Human text"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                "Name, title, comment, or description."
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Usually:"
+                  ]
+                },
+                " ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "VARCHAR(n)"
+                  ]
+                },
+                " for a meaningful limit or ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "TEXT"
+                  ]
+                },
+                " for open-ended content."
+              ]
+            }
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "h2",
+      "children": [
+        "Part 2 · Defend each choice"
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "table",
+      "children": [
+        "\n    ",
+        {
+          "tag": "thead",
+          "children": [
+            {
+              "tag": "tr",
+              "children": [
+                {
+                  "tag": "th",
+                  "children": [
+                    "Field"
+                  ]
+                },
+                {
+                  "tag": "th",
+                  "children": [
+                    "Example"
+                  ]
+                },
+                {
+                  "tag": "th",
+                  "children": [
+                    "Your type"
+                  ]
+                },
+                {
+                  "tag": "th",
+                  "children": [
+                    "Operation that must work"
+                  ]
+                },
+                {
+                  "tag": "th",
+                  "children": [
+                    "Risk of the wrong type"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "tbody",
+          "children": [
+            "\n      ",
+            {
+              "tag": "tr",
+              "children": [
+                {
+                  "tag": "td",
+                  "children": [
+                    "price"
+                  ]
+                },
+                {
+                  "tag": "td",
+                  "children": [
+                    "19.99"
+                  ]
+                },
+                {
+                  "tag": "td"
+                },
+                {
+                  "tag": "td",
+                  "children": [
+                    "Add, compare, calculate tax exactly"
+                  ]
+                },
+                {
+                  "tag": "td"
+                }
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "tr",
+              "children": [
+                {
+                  "tag": "td",
+                  "children": [
+                    "zip_code"
+                  ]
+                },
+                {
+                  "tag": "td",
+                  "children": [
+                    "00501"
+                  ]
+                },
+                {
+                  "tag": "td"
+                },
+                {
+                  "tag": "td",
+                  "children": [
+                    "Preserve leading zero; search by prefix"
+                  ]
+                },
+                {
+                  "tag": "td"
+                }
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "tr",
+              "children": [
+                {
+                  "tag": "td",
+                  "children": [
+                    "created_at"
+                  ]
+                },
+                {
+                  "tag": "td",
+                  "children": [
+                    "2026-08-27 14:30"
+                  ]
+                },
+                {
+                  "tag": "td"
+                },
+                {
+                  "tag": "td",
+                  "children": [
+                    "Sort chronologically; compute elapsed time"
+                  ]
+                },
+                {
+                  "tag": "td"
+                }
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "tr",
+              "children": [
+                {
+                  "tag": "td",
+                  "children": [
+                    "temperature_c"
+                  ]
+                },
+                {
+                  "tag": "td",
+                  "children": [
+                    "21.8734"
+                  ]
+                },
+                {
+                  "tag": "td"
+                },
+                {
+                  "tag": "td",
+                  "children": [
+                    "Analyze approximate measurements"
+                  ]
+                },
+                {
+                  "tag": "td"
+                }
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "tr",
+              "children": [
+                {
+                  "tag": "td",
+                  "children": [
+                    "is_active"
+                  ]
+                },
+                {
+                  "tag": "td",
+                  "children": [
+                    "true"
+                  ]
+                },
+                {
+                  "tag": "td"
+                },
+                {
+                  "tag": "td",
+                  "children": [
+                    "Filter a two-state condition"
+                  ]
+                },
+                {
+                  "tag": "td"
+                }
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "tr",
+              "children": [
+                {
+                  "tag": "td",
+                  "children": [
+                    "student_id"
+                  ]
+                },
+                {
+                  "tag": "td",
+                  "children": [
+                    "00127463"
+                  ]
+                },
+                {
+                  "tag": "td"
+                },
+                {
+                  "tag": "td",
+                  "children": [
+                    "Compare for equality; never calculate"
+                  ]
+                },
+                {
+                  "tag": "td"
+                }
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "h2",
+      "children": [
+        "Part 3 · Build and test"
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "p",
+      "children": [
+        "Create a table named ",
+        {
+          "tag": "code",
+          "children": [
+            "event_registration"
+          ]
+        },
+        ". Decide types and useful constraints for every field, then insert three rows designed to test the boundaries of your choices."
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "pre",
+      "children": [
+        {
+          "tag": "code",
+          "children": [
+            "CREATE TABLE event_registration (\n    registration_id  /* choose */ PRIMARY KEY,\n    student_id       /* choose */ NOT NULL,\n    ticket_price     /* choose */ NOT NULL,\n    registered_at    /* choose */ NOT NULL,\n    needs_access     /* choose */ NOT NULL,\n    notes            /* choose */\n);"
+          ]
+        }
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "h3",
+      "children": [
+        "Boundary tests"
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "ol",
+      "children": [
+        {
+          "tag": "li",
+          "children": [
+            "Use a student ID with leading zeros."
+          ]
+        },
+        {
+          "tag": "li",
+          "children": [
+            "Insert a price whose third decimal place is nonzero. Predict what the DBMS will do."
+          ]
+        },
+        {
+          "tag": "li",
+          "children": [
+            "Insert an invalid date or timestamp and record the error."
+          ]
+        },
+        {
+          "tag": "li",
+          "children": [
+            "Try a missing required value."
+          ]
+        },
+        {
+          "tag": "li",
+          "children": [
+            "Explain whether ",
+            {
+              "tag": "code",
+              "children": [
+                "needs_access"
+              ]
+            },
+            " truly has two states or needs an “unknown/not answered” state."
+          ]
+        }
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "details",
+      "children": [
+        {
+          "tag": "summary",
+          "children": [
+            "Suggested core choices"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "code",
+              "children": [
+                "student_id VARCHAR(...)"
+              ]
+            },
+            ", ",
+            {
+              "tag": "code",
+              "children": [
+                "ticket_price DECIMAL(8,2)"
+              ]
+            },
+            ", ",
+            {
+              "tag": "code",
+              "children": [
+                "registered_at TIMESTAMP"
+              ]
+            },
+            ", and ",
+            {
+              "tag": "code",
+              "children": [
+                "needs_access BOOLEAN"
+              ]
+            },
+            ". The best length, nullability, default, and time-zone treatment depend on the stated requirements."
+          ]
+        }
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "h2",
+      "children": [
+        "Exit ticket"
+      ]
+    },
+    "\n  ",
+    {
+      "tag": "p",
+      "children": [
+        "Choose one field whose sample value looks numeric but should be stored as text. Explain the operation that proves your choice."
+      ]
+    },
+    "\n\n\n"
+  ]
+}

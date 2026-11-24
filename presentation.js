@@ -27,30 +27,7 @@
   const notesTakeaway = document.querySelector('.slide-notes-takeaway p');
   const sqlRepro = window.DBMS_SQL_REPRO || {};
   const originalDeck = ((window.DBMS_ORIGINAL_SLIDES && window.DBMS_ORIGINAL_SLIDES[deckKey]) || null);
-  const tableCaptionsBySlide = {
-    9: ['Product'], 10: ['Product'], 11: ['Product'], 12: ['Product'], 13: ['Product'],
-    18: ['Students'],
-    24: ['Product (input)', 'Selection result'],
-    25: ['Product (input)', 'Projection result'],
-    30: ['DISTINCT result', 'Result with duplicates'],
-    34: ['Students', 'Enrolled'],
-    37: ['Company', 'Product'],
-    41: ['Product', 'Company', 'Query result'],
-    45: ['Output', 'Table R', 'R × S (cross product)', 'Table S', 'Rows where R.A = S.B'],
-    50: ['Product', 'Company', 'Query result'],
-    55: ['Multiset X — list form', 'Multiset X — count form'],
-    56: ['Multiset X', 'Multiset Y', 'Intersection result Z'],
-    57: ['Multiset X', 'Multiset Y', 'Union result Z'],
-    64: ['Join result: C ⋈ P'],
-    65: ['Join result: C ⋈ P'],
-    84: ['Purchase'],
-    87: ['FROM and WHERE result'],
-    88: ['Rows before grouping', 'Rows grouped by Product'],
-    89: ['Grouped rows', 'SELECT result'],
-    92: ['Grouped rows', 'HAVING result'],
-    112: ['Product', 'Purchase', 'INNER JOIN result'],
-    113: ['Product', 'Purchase', 'LEFT OUTER JOIN result']
-  };
+  const tableCaptionsBySlide = window.DBMS_TABLE_CAPTIONS || {};
   const slideNotes = ((window.DBMS_SLIDE_NOTES && window.DBMS_SLIDE_NOTES[deckKey]) || {});
   const advancedSlides = ((window.DBMS_ADVANCED_SLIDES && window.DBMS_ADVANCED_SLIDES[deckKey]) || []);
   const activities = [
@@ -344,8 +321,7 @@
           .join(' ')
           .replace(/\s+/g, ' ');
         const isRequestedCallout =
-          (number === 2 && normalizedText === 'SQL separates meaning from execution') ||
-          (number === 7 && normalizedText === 'SQL is a family of dialects');
+          Boolean(window.DBMS_CALLOUTS?.[number]?.includes(normalizedText));
         const block = make(
           'div',
           `source-text-block${isTableDefinition ? ' table-definition' : ''}${isRequestedCallout ? ' source-callout-box' : ''}`

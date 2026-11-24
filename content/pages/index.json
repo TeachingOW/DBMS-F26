@@ -1,0 +1,1175 @@
+{
+  "schemaVersion": 1,
+  "title": "SQL — Reproducible HTML Presentation",
+  "bodyAttributes": {
+    "class": "native-deck",
+    "data-title": "SQL",
+    "data-count": "126",
+    "data-deck": "sql",
+    "data-native": "true",
+    "data-heading-fixed": "true",
+    "data-github-pages": "true"
+  },
+  "nodes": [
+    "\n  ",
+    {
+      "tag": "main",
+      "attrs": {
+        "class": "stage"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "loading"
+          },
+          "children": [
+            "Preparing native HTML slide…"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "article",
+          "attrs": {
+            "class": "native-slide",
+            "hidden": "",
+            "aria-live": "polite"
+          }
+        },
+        "\n    ",
+        {
+          "tag": "article",
+          "attrs": {
+            "class": "lab-slide",
+            "hidden": "",
+            "aria-live": "polite"
+          }
+        },
+        "\n    ",
+        {
+          "tag": "article",
+          "attrs": {
+            "class": "advanced-slide",
+            "hidden": "",
+            "aria-live": "polite"
+          }
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "header",
+      "attrs": {
+        "class": "topbar"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "materials.html",
+            "class": "top-link"
+          },
+          "children": [
+            "Student materials"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "strong",
+          "attrs": {
+            "class": "deck-title"
+          },
+          "children": [
+            "DBMS-F26 · SQL"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "top-link",
+            "href": "#1"
+          },
+          "children": [
+            "First slide"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "top-link",
+            "href": "mongodb.html"
+          },
+          "children": [
+            "MongoDB"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "top-link",
+            "href": "lectures/library/index.html"
+          },
+          "children": [
+            "Lectures"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "top-link",
+            "href": "course-plan.html"
+          },
+          "children": [
+            "Course plan"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "a",
+          "attrs": {
+            "class": "top-link optional",
+            "href": "demo-database.sql",
+            "download": ""
+          },
+          "children": [
+            "Database setup"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "clean-mode"
+          },
+          "children": [
+            "Clean view"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "labs"
+          },
+          "children": [
+            "Labs"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "questions"
+          },
+          "children": [
+            "Questions ",
+            {
+              "tag": "span",
+              "attrs": {
+                "class": "question-count",
+                "data-question-count": "",
+                "hidden": ""
+              },
+              "children": [
+                "0"
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "help",
+            "aria-label": "Keyboard help"
+          },
+          "children": [
+            "?"
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "nav",
+      "attrs": {
+        "class": "controls",
+        "aria-label": "Slide controls"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "prev",
+            "aria-label": "Previous slide"
+          },
+          "children": [
+            "←"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "span",
+          "attrs": {
+            "class": "counter",
+            "aria-live": "polite"
+          }
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "next",
+            "aria-label": "Next slide"
+          },
+          "children": [
+            "→"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "overview"
+          },
+          "children": [
+            "Overview"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "labs"
+          },
+          "children": [
+            "Labs"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "button",
+            "data-action": "fullscreen"
+          },
+          "children": [
+            "Fullscreen"
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "progress",
+        "aria-hidden": "true"
+      },
+      "children": [
+        {
+          "tag": "span"
+        }
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "overview",
+        "aria-hidden": "true"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "overview-head"
+          },
+          "children": [
+            "\n      ",
+            {
+              "tag": "h2",
+              "children": [
+                "SQL — text slide overview"
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "button",
+                "data-action": "close-overview"
+              },
+              "children": [
+                "Close"
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "thumb-grid"
+          }
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "labs-panel",
+        "aria-hidden": "true"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "labs-card"
+          },
+          "children": [
+            "\n      ",
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "labs-head"
+              },
+              "children": [
+                "\n        ",
+                {
+                  "tag": "h2",
+                  "children": [
+                    "SQL labs"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "class": "button",
+                    "data-action": "close-labs"
+                  },
+                  "children": [
+                    "Close"
+                  ]
+                },
+                "\n      "
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "labs-intro"
+              },
+              "children": [
+                "Each activity follows the concept it practices. Every example includes general syntax, copy controls, and a database reset script."
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "h3",
+              "children": [
+                "Aligned practice slides"
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "aligned-lab-list"
+              }
+            },
+            "\n      ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "lab-jump",
+                "data-action": "jump-lab",
+                "data-slide": "125"
+              },
+              "children": [
+                "Jump to the embedded lab · slide 125 →"
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "lab-links"
+              },
+              "children": [
+                "\n        ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "lab-link",
+                    "href": "course-plan.html"
+                  },
+                  "children": [
+                    {
+                      "tag": "strong",
+                      "children": [
+                        "Semester Plan and Labs"
+                      ]
+                    },
+                    {
+                      "tag": "span",
+                      "children": [
+                        "32 meetings, timed exercises, datasets, and project milestones."
+                      ]
+                    }
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "lab-link",
+                    "href": "labs/foundations/data-types-use-cases.html",
+                    "target": "_blank",
+                    "rel": "noopener"
+                  },
+                  "children": [
+                    {
+                      "tag": "strong",
+                      "children": [
+                        "Data Types by Use Case"
+                      ]
+                    },
+                    {
+                      "tag": "span",
+                      "children": [
+                        "Money, identifiers, measurements, Boolean states, dates, and timestamps."
+                      ]
+                    }
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "lab-link",
+                    "href": "labs/quick-start/quick-start-guide.html",
+                    "target": "_blank",
+                    "rel": "noopener"
+                  },
+                  "children": [
+                    {
+                      "tag": "strong",
+                      "children": [
+                        "SQL Quick Start"
+                      ]
+                    },
+                    {
+                      "tag": "span",
+                      "children": [
+                        "Setup, table creation, inserts, and first queries."
+                      ]
+                    }
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "lab-link",
+                    "href": "labs/single-table/single-table-queries.html",
+                    "target": "_blank",
+                    "rel": "noopener"
+                  },
+                  "children": [
+                    {
+                      "tag": "strong",
+                      "children": [
+                        "Single-table Queries"
+                      ]
+                    },
+                    {
+                      "tag": "span",
+                      "children": [
+                        "SELECT, filtering, expressions, sorting, and duplicate handling."
+                      ]
+                    }
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "lab-link",
+                    "href": "labs/joins-foreign-keys/joins-part1.html",
+                    "target": "_blank",
+                    "rel": "noopener"
+                  },
+                  "children": [
+                    {
+                      "tag": "strong",
+                      "children": [
+                        "Joins and Foreign Keys"
+                      ]
+                    },
+                    {
+                      "tag": "span",
+                      "children": [
+                        "Connect related tables and reason about matching rows."
+                      ]
+                    }
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "lab-link",
+                    "href": "labs/aggregation/aggregation-grouping.html",
+                    "target": "_blank",
+                    "rel": "noopener"
+                  },
+                  "children": [
+                    {
+                      "tag": "strong",
+                      "children": [
+                        "Aggregation and GROUP BY"
+                      ]
+                    },
+                    {
+                      "tag": "span",
+                      "children": [
+                        "COUNT, SUM, grouped results, and HAVING."
+                      ]
+                    }
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "lab-link",
+                    "href": "lectures/02_SQL.pptx",
+                    "download": ""
+                  },
+                  "children": [
+                    {
+                      "tag": "strong",
+                      "children": [
+                        "SQL PowerPoint"
+                      ]
+                    },
+                    {
+                      "tag": "span",
+                      "children": [
+                        "Download the organized course lecture."
+                      ]
+                    }
+                  ]
+                },
+                "\n      "
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "questions-panel",
+        "aria-hidden": "true"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "questions-card"
+          },
+          "children": [
+            "\n      ",
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "questions-head"
+              },
+              "children": [
+                "\n        ",
+                {
+                  "tag": "div",
+                  "children": [
+                    "\n          ",
+                    {
+                      "tag": "p",
+                      "children": [
+                        "Slide discussion"
+                      ]
+                    },
+                    "\n          ",
+                    {
+                      "tag": "h2",
+                      "children": [
+                        "Questions for ",
+                        {
+                          "tag": "span",
+                          "attrs": {
+                            "data-question-context": ""
+                          },
+                          "children": [
+                            "the current slide"
+                          ]
+                        }
+                      ]
+                    },
+                    "\n        "
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "class": "button",
+                    "data-action": "close-questions"
+                  },
+                  "children": [
+                    "Close"
+                  ]
+                },
+                "\n      "
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "questions-intro"
+              },
+              "children": [
+                "Use the class discussion to ask questions, answer classmates, or add comments about this slide. Everyone viewing the course site can see the same conversation."
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "section",
+              "attrs": {
+                "class": "shared-discussion",
+                "aria-labelledby": "shared-discussion-title"
+              },
+              "children": [
+                "\n        ",
+                {
+                  "tag": "div",
+                  "attrs": {
+                    "class": "shared-discussion-head"
+                  },
+                  "children": [
+                    "\n          ",
+                    {
+                      "tag": "h3",
+                      "attrs": {
+                        "id": "shared-discussion-title"
+                      },
+                      "children": [
+                        "Class discussion"
+                      ]
+                    },
+                    "\n          ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "Visible to everyone"
+                      ]
+                    },
+                    "\n        "
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "div",
+                  "attrs": {
+                    "class": "comment-provider-switch",
+                    "aria-label": "Choose comment method"
+                  },
+                  "children": [
+                    "\n          ",
+                    {
+                      "tag": "button",
+                      "attrs": {
+                        "type": "button",
+                        "data-comment-provider": "giscus",
+                        "aria-pressed": "true"
+                      },
+                      "children": [
+                        "GitHub discussion"
+                      ]
+                    },
+                    "\n          ",
+                    {
+                      "tag": "button",
+                      "attrs": {
+                        "type": "button",
+                        "data-comment-provider": "disqus",
+                        "aria-pressed": "false"
+                      },
+                      "children": [
+                        "Guest comments"
+                      ]
+                    },
+                    "\n        "
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "p",
+                  "attrs": {
+                    "class": "shared-comment-status",
+                    "data-shared-comment-status": "",
+                    "aria-live": "polite"
+                  },
+                  "children": [
+                    "Loading the discussion for this slide…"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "div",
+                  "attrs": {
+                    "class": "shared-comment-host",
+                    "data-shared-comment-container": ""
+                  }
+                },
+                "\n      "
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "details",
+              "attrs": {
+                "class": "private-question-notes"
+              },
+              "children": [
+                "\n        ",
+                {
+                  "tag": "summary",
+                  "children": [
+                    "Private notes on this device"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "form",
+                  "attrs": {
+                    "id": "slide-question-form"
+                  },
+                  "children": [
+                    "\n        ",
+                    {
+                      "tag": "div",
+                      "attrs": {
+                        "class": "question-fields"
+                      },
+                      "children": [
+                        "\n          ",
+                        {
+                          "tag": "label",
+                          "children": [
+                            {
+                              "tag": "span",
+                              "children": [
+                                "Name or initials ",
+                                {
+                                  "tag": "small",
+                                  "children": [
+                                    "(optional)"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "input",
+                              "attrs": {
+                                "name": "studentName",
+                                "type": "text",
+                                "maxlength": "80",
+                                "autocomplete": "name"
+                              }
+                            }
+                          ]
+                        },
+                        "\n          ",
+                        {
+                          "tag": "label",
+                          "children": [
+                            {
+                              "tag": "span",
+                              "children": [
+                                "Entry type"
+                              ]
+                            },
+                            {
+                              "tag": "select",
+                              "attrs": {
+                                "name": "entryType"
+                              },
+                              "children": [
+                                {
+                                  "tag": "option",
+                                  "children": [
+                                    "Question"
+                                  ]
+                                },
+                                {
+                                  "tag": "option",
+                                  "children": [
+                                    "Comment"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        "\n        "
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "label",
+                      "attrs": {
+                        "class": "question-message"
+                      },
+                      "children": [
+                        {
+                          "tag": "span",
+                          "children": [
+                            "Question or comment"
+                          ]
+                        },
+                        {
+                          "tag": "textarea",
+                          "attrs": {
+                            "name": "message",
+                            "rows": "5",
+                            "maxlength": "2000",
+                            "required": "",
+                            "placeholder": "What would you like clarified or discussed?"
+                          }
+                        }
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "div",
+                      "attrs": {
+                        "class": "question-form-actions"
+                      },
+                      "children": [
+                        "\n          ",
+                        {
+                          "tag": "button",
+                          "attrs": {
+                            "type": "submit"
+                          },
+                          "children": [
+                            "Save on this device"
+                          ]
+                        },
+                        "\n          ",
+                        {
+                          "tag": "button",
+                          "attrs": {
+                            "type": "button",
+                            "data-question-copy-draft": ""
+                          },
+                          "children": [
+                            "Copy draft"
+                          ]
+                        },
+                        "\n        "
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "p",
+                      "attrs": {
+                        "class": "question-status",
+                        "data-question-status": "",
+                        "aria-live": "polite"
+                      }
+                    },
+                    "\n      "
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "div",
+                  "attrs": {
+                    "class": "questions-list-head"
+                  },
+                  "children": [
+                    {
+                      "tag": "h3",
+                      "children": [
+                        "Saved on this device"
+                      ]
+                    },
+                    {
+                      "tag": "button",
+                      "attrs": {
+                        "type": "button",
+                        "data-question-copy-all": "",
+                        "hidden": ""
+                      },
+                      "children": [
+                        "Copy all"
+                      ]
+                    }
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "attrs": {
+                    "class": "question-empty",
+                    "data-question-empty": ""
+                  },
+                  "children": [
+                    "No saved questions for this slide yet."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "div",
+                  "attrs": {
+                    "class": "question-list",
+                    "data-question-list": ""
+                  }
+                },
+                "\n      "
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "help",
+        "aria-hidden": "true"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "help-card"
+          },
+          "children": [
+            "\n      ",
+            {
+              "tag": "h2",
+              "children": [
+                "Presentation controls"
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "keys"
+              },
+              "children": [
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "→ / Space"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Next slide"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "←"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Previous slide"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "Home / End"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "First / last slide"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "F"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Fullscreen"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "P"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Enter or exit clean presentation view"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "O"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Show or hide the text overview"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "L"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Open labs"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "Q"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Ask a question or leave a comment on the current slide"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "H"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Hide overlays or exit clean view"
+                  ]
+                },
+                "\n        ",
+                {
+                  "tag": "kbd",
+                  "children": [
+                    "?"
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "children": [
+                    "Open keyboard help"
+                  ]
+                },
+                "\n      "
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "p",
+              "children": [
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "class": "button",
+                    "data-action": "close-help"
+                  },
+                  "children": [
+                    "Close"
+                  ]
+                }
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    "\n  ",
+    "\n  ",
+    "\n  ",
+    "\n  ",
+    "\n  ",
+    "\n  ",
+    "\n  ",
+    "\n  ",
+    "\n  ",
+    "\n\n\n"
+  ]
+}

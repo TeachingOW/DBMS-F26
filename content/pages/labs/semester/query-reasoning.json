@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "title": "Query reasoning and relational algebra workbook · DBMS-F26",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html",
+            "class": "materials-link"
+          },
+          "children": [
+            "Student materials"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-plan.html"
+          },
+          "children": [
+            "32-meeting plan"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../lectures/library/index.html"
+          },
+          "children": [
+            "Existing lecture library"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-map.html"
+          },
+          "children": [
+            "Course resources"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        {
+          "tag": "h1",
+          "children": [
+            "Query reasoning and relational algebra workbook"
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Supports meetings 6–10. Use ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "setup.sql"
+              },
+              "children": [
+                "the shared fixture"
+              ]
+            },
+            " and ",
+            {
+              "tag": "code",
+              "children": [
+                "SET search_path TO course32;"
+              ]
+            },
+            ". Each meeting has its own task set; do not try to finish all five in one class."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 6: joins and multiplicity"
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Produce (student_name,event_title) for every booking. Predict six rows."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "List every student with their booked event if any. Keep Eli, who has none. Predict seven rows."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Return every event and only its paid bookings. Compare a payment predicate in ON with one in WHERE. Explain why Graph disappears in the second version."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Join students and events without the bookings relation. Predict the cardinality and explain why DISTINCT cannot repair the missing relationship."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 7: aggregation"
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "For every event, report total bookings, paid bookings, and paid revenue. Preserve Graph with zeros."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Explain COUNT(*) versus COUNT(b.student_id) after a left join."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Find events with at least two bookings using HAVING; classify paid revenue as zero, below 30, or at least 30 using CASE."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Add another one-to-many relation on paper and show how joining it before aggregation can double revenue. Repair with preaggregation."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 8: subqueries and sets"
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Find students with no bookings using NOT EXISTS."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Find students booked in both SQL and Design using INTERSECT, then using two EXISTS predicates."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Find students booked in every event in RequiredEvent; explain the double NOT EXISTS pattern."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Run ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "SELECT id FROM students WHERE id NOT IN (SELECT student_id FROM booking_probe)"
+                  ]
+                },
+                ". Explain the empty answer and repair it. Does NOT EXISTS have the same NULL behavior?"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 9: algebra"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "Use S=students, E=events, B=bookings. Classical relational algebra uses sets."
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Write selection and projection for titles of events with fee ≥20."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Write an algebra expression for names of students booked into SQL."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Express students without bookings using difference. Ensure the two operands have compatible attributes."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Express students in both required events using intersection or division."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Project event_id from B using SQL with and without DISTINCT; explain the relationship to algebraic projection."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 10: equivalence workshop"
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Push a fee predicate below an inner join and verify the same tuples."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "For ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "E LEFT JOIN B"
+                  ]
+                },
+                ", move ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "B.paid = true"
+                  ]
+                },
+                " from ON to WHERE. Use Graph as a counterexample to equivalence."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Express students with any booking using EXISTS (a semijoin) and a join. Explain why the latter needs duplicate elimination to return one row per student."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Show why pushing a filter on aggregate revenue below GROUP BY is generally invalid. Distinguish it from a filter on the grouping key."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Submit each meeting:"
+              ]
+            },
+            " numbered answers, runnable SQL where applicable, predicted and actual rows, and one counterexample. ",
+            {
+              "tag": "strong",
+              "children": [
+                "Stretch:"
+              ]
+            },
+            " explain the result of the “every required event” query when RequiredEvent is empty."
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n"
+  ]
+}

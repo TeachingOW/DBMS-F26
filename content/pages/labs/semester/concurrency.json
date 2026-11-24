@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "title": "Atomicity, recovery reasoning, and two-session concurrency · DBMS-F26",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html",
+            "class": "materials-link"
+          },
+          "children": [
+            "Student materials"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-plan.html"
+          },
+          "children": [
+            "32-meeting plan"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../lectures/library/index.html"
+          },
+          "children": [
+            "Existing lecture library"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-map.html"
+          },
+          "children": [
+            "Course resources"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        {
+          "tag": "h1",
+          "children": [
+            "Atomicity, recovery reasoning, and two-session concurrency"
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Meetings 23–25. Open two independent PostgreSQL connections A and B to the same teaching database. In each use ",
+            {
+              "tag": "code",
+              "children": [
+                "SET search_path TO course32;"
+              ]
+            },
+            ". Finish every experiment with COMMIT or ROLLBACK before beginning the next."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 23: atomic transfer and simplified WAL"
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Read the accounts: 1=100, 2=100. BEGIN; debit account 1 by 25; credit account 2 by 25; COMMIT. Verify 75,125 and conserved total 200."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Begin another transfer but attempt a negative balance. Record the error and ROLLBACK. Verify the committed balances survive and the failed transaction makes no partial change."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Reset to 100 each using a committed UPDATE when both sessions are idle."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Paper recovery model:"
+              ]
+            },
+            " Assume steal/no-force, undo/redo logging with before/after values, and a durable log prefix. Initial A=100, B=100. Durable log: START T1; T1 A:100→80; T1 B:100→120; COMMIT T1; START T2; T2 A:80→70; CRASH. Disk at crash has A=70,B=100. Identify winner/loser, redo committed updates and undo incomplete updates, and derive the recovered state. Explain why the log must be durable before an affected page is flushed. This is a teaching model, not a claim that PostgreSQL uses this exact undo algorithm."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 24: schedules and deadlock"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "For S1 = r1(A), w1(A), r2(A), w2(B), c1, c2, draw the precedence graph and discuss serializability separately from recoverability. For S2 = r1(A), r2(B), w1(B), w2(A), draw the graph and find the cycle."
+          ]
+        },
+        "\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "table-wrap"
+          },
+          "children": [
+            {
+              "tag": "table",
+              "children": [
+                {
+                  "tag": "tbody",
+                  "children": [
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "th",
+                          "children": [
+                            "Step"
+                          ]
+                        },
+                        {
+                          "tag": "th",
+                          "children": [
+                            "Session A"
+                          ]
+                        },
+                        {
+                          "tag": "th",
+                          "children": [
+                            "Session B"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "1"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "BEGIN; UPDATE course32.accounts SET balance=balance+1 WHERE id=1;"
+                          ]
+                        },
+                        {
+                          "tag": "td"
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "2"
+                          ]
+                        },
+                        {
+                          "tag": "td"
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "BEGIN; UPDATE course32.accounts SET balance=balance+1 WHERE id=2;"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "3"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "UPDATE course32.accounts SET balance=balance+1 WHERE id=2; (waits)"
+                          ]
+                        },
+                        {
+                          "tag": "td"
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "4"
+                          ]
+                        },
+                        {
+                          "tag": "td"
+                        },
+                        {
+                          "tag": "td",
+                          "children": [
+                            "UPDATE course32.accounts SET balance=balance+1 WHERE id=1;"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "tr",
+                      "children": [
+                        {
+                          "tag": "td",
+                          "children": [
+                            "5"
+                          ]
+                        },
+                        {
+                          "tag": "td",
+                          "attrs": {
+                            "colspan": "2"
+                          },
+                          "children": [
+                            "One transaction receives a deadlock error; the victim is not predetermined. ROLLBACK in both sessions. Repeat using row order 1 then 2 in both sessions: one waits, but this cycle cannot form. Commit the first before finishing the second."
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 25: snapshots and guarded writes"
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "A: BEGIN ISOLATION LEVEL READ COMMITTED; SELECT balance FROM accounts WHERE id=1. B: update that account by +10 and commit. A: repeat the SELECT, then ROLLBACK. Record the new value."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Repeat with A at REPEATABLE READ; establish its snapshot with the first SELECT before B’s committed update. A’s second ordinary SELECT keeps its earlier value."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Reset stock item 1 to quantity=1. A: BEGIN; UPDATE stock SET quantity=quantity-1 WHERE id=1 AND quantity>0 RETURNING quantity. B: issue the same update in its own transaction. After observing the wait, commit A. Under READ COMMITTED B returns no row. Commit B and verify quantity=0."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Explain why reading quantity into the application and later writing an absolute value can lose updates. State what the guarded update guarantees and how the application should interpret zero affected rows."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Submit:"
+              ]
+            },
+            " exact execution order, values, transaction boundaries, graphs, and invariants. ",
+            {
+              "tag": "strong",
+              "children": [
+                "Stretch:"
+              ]
+            },
+            " investigate a serialization failure and explain why retrying just the last statement is insufficient."
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Reference: ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.postgresql.org/docs/16/explicit-locking.html"
+              },
+              "children": [
+                "PostgreSQL locking and deadlocks"
+              ]
+            },
+            "."
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n"
+  ]
+}
