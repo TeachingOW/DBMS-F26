@@ -1,0 +1,471 @@
+[
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-bags",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-bags",
+    "index": 1,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-bags",
+    "index": 2,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-foreign-key",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-foreign-key",
+    "index": 1,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-foreign-key",
+    "index": 2,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-foreign-key",
+    "index": 3,
+    "error": "insert or update on table \"enrolled\" violates foreign key constraint \"enrolled_student_id_fkey\"",
+    "sql": "INSERT INTO Enrolled VALUES ('999', '564', 'A');\n-- Rejected: student 999 does not appear in Students."
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-join",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-join",
+    "index": 1,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-join",
+    "index": 2,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-join",
+    "index": 3,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-groupby",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-groupby",
+    "index": 1,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-groupby",
+    "index": 2,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-groupby",
+    "index": 3,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-null",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-null",
+    "index": 1,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-null",
+    "index": 2,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-null",
+    "index": 3,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-types",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-types",
+    "index": 1,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-types",
+    "index": 2,
+    "pass": true
+  },
+  {
+    "group": "DBMS_LABS",
+    "id": "sql-types",
+    "index": 3,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-selection",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-projection",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-like",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-distinct",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-order-by",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-foreign-key",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-join-japan",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-aliases",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-join-semantics",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-join-duplicates",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-intersect",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-union",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-union-all",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-except",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-nested-in",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-subquery-relation",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-rewrite-distinct",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-all",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-exists",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-not-exists",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-correlated",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-correlated-all",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-aggregate",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-count-distinct",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-sum-expression",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-group-by",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-having",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-author-group",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-grouped-subquery",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-existential",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-universal",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-null-and",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-is-null",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-inner-loss",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-left-join",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_QUERY_LABS",
+    "id": "quick-empty-product",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "cte-purpose",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "cte-pipeline",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "recursive-cte",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "recursive-safety",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "window-intro",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "window-partition",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "window-ranking",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "window-frame",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "window-lag",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "views",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "view-boundaries",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "transactions",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "rollback-savepoint",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "isolation-levels",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "indexes",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "composite-index",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "explain",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "capstone-query",
+    "index": 0,
+    "pass": true
+  },
+  {
+    "group": "DBMS_ADVANCED_SLIDES",
+    "id": "advanced-practice",
+    "index": 0,
+    "pass": true
+  }
+]

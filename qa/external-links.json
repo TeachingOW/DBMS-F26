@@ -1,0 +1,196 @@
+[
+  {
+    "url": "http://sqlfiddle.com/",
+    "status": 200,
+    "final_url": "https://sqlfiddle.com/"
+  },
+  {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js",
+    "status": 200,
+    "final_url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+  },
+  {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js",
+    "status": 200,
+    "final_url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js"
+  },
+  {
+    "url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css",
+    "status": 200,
+    "final_url": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css"
+  },
+  {
+    "url": "https://dbeaver.io/",
+    "status": 200,
+    "final_url": "https://dbeaver.io/"
+  },
+  {
+    "url": "https://dev.mysql.com/doc/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://dev.mysql.com/doc/refman/8.0/en/create-table.html",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://dev.mysql.com/doc/refman/8.0/en/data-types.html",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://dev.mysql.com/downloads/mysql/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://dev.mysql.com/downloads/workbench/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://docs.mongodb.com/manual/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/manual/"
+  },
+  {
+    "url": "https://github.com/TeachingOW/DBMS-SQL-Labs/issues",
+    "status": 200,
+    "final_url": "https://github.com/TeachingOW/DBMS-SQL-Labs/issues"
+  },
+  {
+    "url": "https://leetcode.com/problemset/database/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://mariadb.com/kb/en/mariadb/how-to-quickly-insert-data-into-mariadb/",
+    "status": 200,
+    "final_url": "https://mariadb.com/docs/server/ha-and-performance/optimization-and-tuning/query-optimizations/how-to-quickly-insert-data-into-mariadb"
+  },
+  {
+    "url": "https://neo4j.com/docs/",
+    "status": 200,
+    "final_url": "https://neo4j.com/docs/"
+  },
+  {
+    "url": "https://neo4j.com/download/",
+    "status": 200,
+    "final_url": "https://neo4j.com/download/"
+  },
+  {
+    "url": "https://sqlzoo.net/",
+    "status": 200,
+    "final_url": "https://sqlzoo.net/wiki/SQL_Tutorial"
+  },
+  {
+    "url": "https://sqlzoo.net/wiki/SQL_Tutorial",
+    "status": 200,
+    "final_url": "https://sqlzoo.net/wiki/SQL_Tutorial"
+  },
+  {
+    "url": "https://web.cs.wpi.edu/~cs585/s15/Lectures/W12/MongoDB-1.pdf",
+    "status": 200,
+    "final_url": "https://web.cs.wpi.edu/~cs585/s15/Lectures/W12/MongoDB-1.pdf"
+  },
+  {
+    "url": "https://www.hackerrank.com/domains/sql",
+    "status": 200,
+    "final_url": "https://www.hackerrank.com/domains/sql"
+  },
+  {
+    "url": "https://www.jetbrains.com/datagrip/",
+    "status": 200,
+    "final_url": "https://www.jetbrains.com/datagrip/"
+  },
+  {
+    "url": "https://www.mongodb.com/academia/courses/mongodb-101-getting-started",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/academia/courses/mongodb-101-getting-started"
+  },
+  {
+    "url": "https://www.mongodb.com/docs/manual/core/schema-validation/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/manual/core/schema-validation/"
+  },
+  {
+    "url": "https://www.mongodb.com/docs/manual/core/transactions/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/manual/core/transactions/"
+  },
+  {
+    "url": "https://www.mongodb.com/docs/manual/crud/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/manual/crud/"
+  },
+  {
+    "url": "https://www.mongodb.com/docs/manual/data-modeling/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/manual/data-modeling/"
+  },
+  {
+    "url": "https://www.mongodb.com/docs/manual/replication/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/manual/replication/"
+  },
+  {
+    "url": "https://www.mongodb.com/docs/manual/sharding/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/manual/sharding/"
+  },
+  {
+    "url": "https://www.mongodb.com/docs/manual/tutorial/aggregation-complete-examples/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/manual/tutorial/aggregation-complete-examples/"
+  },
+  {
+    "url": "https://www.mongodb.com/docs/mongodb-shell/connect/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/mongodb-shell/connect/"
+  },
+  {
+    "url": "https://www.mongodb.com/try/download/community",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/try/download/community"
+  },
+  {
+    "url": "https://www.postgresql.org/docs/",
+    "status": 200,
+    "final_url": "https://www.postgresql.org/docs/"
+  },
+  {
+    "url": "https://www.postgresql.org/docs/16/app-pgdump.html",
+    "status": 200,
+    "final_url": "https://www.postgresql.org/docs/16/app-pgdump.html"
+  },
+  {
+    "url": "https://www.postgresql.org/docs/16/explicit-locking.html",
+    "status": 200,
+    "final_url": "https://www.postgresql.org/docs/16/explicit-locking.html"
+  },
+  {
+    "url": "https://www.postgresql.org/docs/16/using-explain.html",
+    "status": 200,
+    "final_url": "https://www.postgresql.org/docs/16/using-explain.html"
+  },
+  {
+    "url": "https://www.postgresql.org/download/",
+    "status": 200,
+    "final_url": "https://www.postgresql.org/download/"
+  },
+  {
+    "url": "https://www.psycopg.org/psycopg3/docs/basic/transactions.html",
+    "status": 200,
+    "final_url": "https://www.psycopg.org/psycopg3/docs/basic/transactions.html"
+  },
+  {
+    "url": "https://www.w3schools.com/sql/",
+    "status": 200,
+    "final_url": "https://www.w3schools.com/sql/"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7S_tz1z_5bA",
+    "status": 200,
+    "final_url": "https://www.youtube.com/watch?v=7S_tz1z_5bA"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+    "status": 200,
+    "final_url": "https://www.youtube.com/watch?v=HXV3zeQKqGY"
+  }
+]

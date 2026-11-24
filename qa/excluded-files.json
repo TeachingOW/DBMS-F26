@@ -1,0 +1,237 @@
+[
+  {
+    "source": "DBMS-F26",
+    "path": "labs/semester/instructor-guide.html",
+    "reason": "Instructor solution explicitly removed by main; not imported."
+  },
+  {
+    "source": "DBMS-F26",
+    "path": "labs/semester/programming.sql",
+    "reason": "Instructor solution explicitly removed by main; not imported."
+  },
+  {
+    "source": "DBMS-F26",
+    "path": "labs/semester/reference-queries.sql",
+    "reason": "Instructor solution explicitly removed by main; not imported."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/agent-runs/e20e18e94a264252951f26ed86cfd792/prompt.txt",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/agent-runs/e20e18e94a264252951f26ed86cfd792/request.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/agent-runs/e20e18e94a264252951f26ed86cfd792/response-schema.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/agent-runs/e20e18e94a264252951f26ed86cfd792/response.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/agent-runs/e20e18e94a264252951f26ed86cfd792/run.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/agent-runs/e20e18e94a264252951f26ed86cfd792/stderr.log",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/agent-runs/e20e18e94a264252951f26ed86cfd792/stdout.log",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/current.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/raw/9e2756120e6060f7df8f5bc71bb6273e22ee8cce1bba8bc5ef8dfc5a3bd5807d/deck.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/raw/9e2756120e6060f7df8f5bc71bb6273e22ee8cce1bba8bc5ef8dfc5a3bd5807d/media/image1.png",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/raw/9e2756120e6060f7df8f5bc71bb6273e22ee8cce1bba8bc5ef8dfc5a3bd5807d/source.pptx",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/raw/b6ca4a93379b1317e5fd88aefa849f06cd4ceafbb64f7fd8b78e9e13c0412c18/deck.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/raw/b6ca4a93379b1317e5fd88aefa849f06cd4ceafbb64f7fd8b78e9e13c0412c18/media/image1.png",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/raw/b6ca4a93379b1317e5fd88aefa849f06cd4ceafbb64f7fd8b78e9e13c0412c18/source.pptx",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/review.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-demo/decks/intro/source.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review.png",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review/.deck-review.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review/candidate/.deck-render.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review/candidate/deck.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review/candidate/index.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review/candidate/media/baed983bb9e82055f20c9654aa244d4db81ea3e1ad328f368bfd97209e040fd1.png",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review/index.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review/raw/.deck-render.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review/raw/deck.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review/raw/index.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review/raw/media/baed983bb9e82055f20c9654aa244d4db81ea3e1ad328f368bfd97209e040fd1.png",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review/review.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/pipeline-review/source.pptx",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/review-browser.log",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/review-dom.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/review-shot.log",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/viewer-browser.log",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/viewer-dom.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/visual-review/db-design.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/visual-review/full-deck-1.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/visual-review/full-deck-2.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/visual-review/full-deck-3.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/visual-review/full-deck-4.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/visual-review/full-deck.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/visual-review/full-size.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/visual-review/side-by-side-comments.html",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/visual-review/slide-31.json",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  },
+  {
+    "source": "DBMS-F26-pptx-layer",
+    "path": "qa/visual-review/source/DB_Design.pptx",
+    "reason": "Disposable QA source snapshot, raw extraction, agent log, review state or generated preview; retain in original folder only."
+  }
+]
