@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="A self-contained SQL lecture with general syntax, reproducible PostgreSQL examples, and aligned labs.">
   <title>SQL — Reproducible HTML Presentation</title>
-  <link rel="stylesheet" href="presentation.css">
+  <link rel="stylesheet" href="presentation.css?v=20260901-tables2">
   <link rel="stylesheet" href="course-theme.css">
   <link rel="stylesheet" href="presentation-theme.css">
 </head>
@@ -26,6 +26,7 @@
     <a class="top-link optional" href="demo-database.sql" download>Database setup</a>
     <button class="button" data-action="clean-mode">Clean view</button>
     <button class="button" data-action="labs">Labs</button>
+    <button class="button" data-action="questions">Questions <span class="question-count" data-question-count hidden>0</span></button>
     <button class="button" data-action="help" aria-label="Keyboard help">?</button>
   </header>
 
@@ -70,6 +71,49 @@
     </div>
   </section>
 
+  <section class="questions-panel" aria-hidden="true">
+    <div class="questions-card">
+      <div class="questions-head">
+        <div>
+          <p>Slide discussion</p>
+          <h2>Questions for <span data-question-context>the current slide</span></h2>
+        </div>
+        <button class="button" data-action="close-questions">Close</button>
+      </div>
+      <p class="questions-intro">Use the class discussion to ask questions, answer classmates, or add comments about this slide. Everyone viewing the course site can see the same conversation.</p>
+      <section class="shared-discussion" aria-labelledby="shared-discussion-title">
+        <div class="shared-discussion-head">
+          <h3 id="shared-discussion-title">Class discussion</h3>
+          <span>Visible to everyone</span>
+        </div>
+        <div class="comment-provider-switch" aria-label="Choose comment method">
+          <button type="button" data-comment-provider="giscus" aria-pressed="true">GitHub discussion</button>
+          <button type="button" data-comment-provider="disqus" aria-pressed="false">Guest comments</button>
+        </div>
+        <p class="shared-comment-status" data-shared-comment-status aria-live="polite">Loading the discussion for this slide…</p>
+        <div class="shared-comment-host" data-shared-comment-container></div>
+      </section>
+      <details class="private-question-notes">
+        <summary>Private notes on this device</summary>
+      <form id="slide-question-form">
+        <div class="question-fields">
+          <label><span>Name or initials <small>(optional)</small></span><input name="studentName" type="text" maxlength="80" autocomplete="name"></label>
+          <label><span>Entry type</span><select name="entryType"><option>Question</option><option>Comment</option></select></label>
+        </div>
+        <label class="question-message"><span>Question or comment</span><textarea name="message" rows="5" maxlength="2000" required placeholder="What would you like clarified or discussed?"></textarea></label>
+        <div class="question-form-actions">
+          <button type="submit">Save on this device</button>
+          <button type="button" data-question-copy-draft>Copy draft</button>
+        </div>
+        <p class="question-status" data-question-status aria-live="polite"></p>
+      </form>
+      <div class="questions-list-head"><h3>Saved on this device</h3><button type="button" data-question-copy-all hidden>Copy all</button></div>
+      <p class="question-empty" data-question-empty>No saved questions for this slide yet.</p>
+      <div class="question-list" data-question-list></div>
+      </details>
+    </div>
+  </section>
+
   <section class="help" aria-hidden="true">
     <div class="help-card">
       <h2>Presentation controls</h2>
@@ -81,6 +125,7 @@
         <kbd>P</kbd><span>Enter or exit clean presentation view</span>
         <kbd>O</kbd><span>Show or hide the text overview</span>
         <kbd>L</kbd><span>Open labs</span>
+        <kbd>Q</kbd><span>Ask a question or leave a comment on the current slide</span>
         <kbd>H</kbd><span>Hide overlays or exit clean view</span>
         <kbd>?</kbd><span>Open keyboard help</span>
       </div>
@@ -94,7 +139,9 @@
   <script src="original-sql-slides.js"></script>
   <script src="advanced-sql-content.js"></script>
   <script src="sql-reproducibility.js"></script>
-  <script src="presentation.js"></script>
+  <script src="lab-database.js"></script>
+  <script src="questions-config.js"></script>
+  <script src="slide-questions.js"></script>
+  <script src="presentation.js?v=20260901-tables3"></script>
 </body>
 </html>
-
