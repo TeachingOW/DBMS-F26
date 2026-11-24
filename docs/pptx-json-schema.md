@@ -1,6 +1,6 @@
 # PowerPoint JSON extraction model
 
-The PowerPoint remains the source of truth. Extraction preserves source evidence in JSON; it does not attempt to decide the instructional meaning of every object.
+The PowerPoint remains the source of truth for extracted evidence. After review, separately authored decks become the source of truth for teaching edits and extensions. Extraction preserves source evidence in JSON; it does not attempt to decide the instructional meaning of every object. See [the extraction, review, and authoring workflow](extraction-workflow.md) for the target separation and implementation sequence.
 
 ## Layers
 

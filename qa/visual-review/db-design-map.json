@@ -1,0 +1,830 @@
+[
+  {
+    "pptx_slide": 1,
+    "title": "Design Theory",
+    "webp_frame": 1,
+    "webp_file": "001.webp",
+    "candidate_webp_frame": 1,
+    "match_score": 1.0,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 2,
+    "title": "1. Normal forms & functional dependencies",
+    "webp_frame": 3,
+    "webp_file": "003.webp",
+    "candidate_webp_frame": 3,
+    "match_score": 0.9056,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 3,
+    "title": "Design Theory",
+    "webp_frame": 7,
+    "webp_file": "007.webp",
+    "candidate_webp_frame": 7,
+    "match_score": 0.9673,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 4,
+    "title": "Normal Forms",
+    "webp_frame": 8,
+    "webp_file": "008.webp",
+    "candidate_webp_frame": 8,
+    "match_score": 0.9811,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 5,
+    "title": "1st Normal Form (1NF)",
+    "webp_frame": 10,
+    "webp_file": "010.webp",
+    "candidate_webp_frame": 10,
+    "match_score": 0.8296,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 6,
+    "title": "Data Anomalies & Constraints",
+    "webp_frame": 11,
+    "webp_file": "011.webp",
+    "candidate_webp_frame": 11,
+    "match_score": 0.8938,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 7,
+    "title": "Constraints Prevent (some) \nAnomalies in the Data",
+    "webp_frame": 18,
+    "webp_file": "018.webp",
+    "candidate_webp_frame": 18,
+    "match_score": 0.9304,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 8,
+    "title": "Constraints Prevent (some) \nAnomalies in the Data",
+    "webp_frame": 19,
+    "webp_file": "019.webp",
+    "candidate_webp_frame": 19,
+    "match_score": 0.9324,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 9,
+    "title": "Constraints Prevent (some) \nAnomalies in the Data",
+    "webp_frame": 20,
+    "webp_file": "020.webp",
+    "candidate_webp_frame": 20,
+    "match_score": 0.9271,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 10,
+    "title": "Constraints Prevent (some) \nAnomalies in the Data",
+    "webp_frame": 21,
+    "webp_file": "021.webp",
+    "candidate_webp_frame": 21,
+    "match_score": 0.9324,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 11,
+    "title": "Constraints Prevent (some) \nAnomalies in the Data",
+    "webp_frame": 22,
+    "webp_file": "022.webp",
+    "candidate_webp_frame": 22,
+    "match_score": 0.9352,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 12,
+    "title": "Functional Dependencies",
+    "webp_frame": 24,
+    "webp_file": "024.webp",
+    "candidate_webp_frame": 24,
+    "match_score": 0.8786,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 13,
+    "title": "Functional Dependency",
+    "webp_frame": 25,
+    "webp_file": "025.webp",
+    "candidate_webp_frame": 25,
+    "match_score": 0.9788,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 14,
+    "title": "A Picture Of FDs",
+    "webp_frame": 26,
+    "webp_file": "026.webp",
+    "candidate_webp_frame": 26,
+    "match_score": 0.9646,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 15,
+    "title": "A Picture Of FDs",
+    "webp_frame": 28,
+    "webp_file": "028.webp",
+    "candidate_webp_frame": 28,
+    "match_score": 0.9185,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 16,
+    "title": "A Picture Of FDs",
+    "webp_frame": 33,
+    "webp_file": "033.webp",
+    "candidate_webp_frame": 33,
+    "match_score": 0.9782,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 17,
+    "title": "A Picture Of FDs",
+    "webp_frame": 34,
+    "webp_file": "034.webp",
+    "candidate_webp_frame": 34,
+    "match_score": 0.9807,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 18,
+    "title": "FDs for Relational Schema Design",
+    "webp_frame": 35,
+    "webp_file": "035.webp",
+    "candidate_webp_frame": 35,
+    "match_score": 0.977,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 19,
+    "title": "Functional Dependencies as Constraints",
+    "webp_frame": 42,
+    "webp_file": "042.webp",
+    "candidate_webp_frame": 42,
+    "match_score": 0.9851,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 20,
+    "title": "Functional Dependencies as Constraints",
+    "webp_frame": 43,
+    "webp_file": "043.webp",
+    "candidate_webp_frame": 43,
+    "match_score": 0.9815,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 21,
+    "title": "More Examples",
+    "webp_frame": 45,
+    "webp_file": "045.webp",
+    "candidate_webp_frame": 45,
+    "match_score": 0.9776,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 22,
+    "title": "More Examples",
+    "webp_frame": 46,
+    "webp_file": "046.webp",
+    "candidate_webp_frame": 46,
+    "match_score": 0.9673,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 23,
+    "title": "More Examples",
+    "webp_frame": 47,
+    "webp_file": "047.webp",
+    "candidate_webp_frame": 47,
+    "match_score": 0.9696,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 24,
+    "title": "ACTIVITY",
+    "webp_frame": 48,
+    "webp_file": "048.webp",
+    "candidate_webp_frame": 48,
+    "match_score": 0.9717,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 25,
+    "title": "2. Finding functional dependencies",
+    "webp_frame": 49,
+    "webp_file": "049.webp",
+    "candidate_webp_frame": 49,
+    "match_score": 0.8938,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 26,
+    "title": "“Good” vs. “Bad” FDs",
+    "webp_frame": 54,
+    "webp_file": "054.webp",
+    "candidate_webp_frame": 54,
+    "match_score": 0.9798,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 27,
+    "title": "“Good” vs. “Bad” FDs",
+    "webp_frame": 55,
+    "webp_file": "055.webp",
+    "candidate_webp_frame": 55,
+    "match_score": 0.9798,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 28,
+    "title": "“Good” vs. “Bad” FDs",
+    "webp_frame": 56,
+    "webp_file": "056.webp",
+    "candidate_webp_frame": 56,
+    "match_score": 0.8438,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 29,
+    "title": "FDs for Relational Schema Design",
+    "webp_frame": 57,
+    "webp_file": "057.webp",
+    "candidate_webp_frame": 57,
+    "match_score": 0.9798,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 30,
+    "title": "Finding Functional Dependencies",
+    "webp_frame": 58,
+    "webp_file": "058.webp",
+    "candidate_webp_frame": 58,
+    "match_score": 0.9811,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 31,
+    "title": "Finding Functional Dependencies",
+    "webp_frame": 61,
+    "webp_file": "061.webp",
+    "candidate_webp_frame": 61,
+    "match_score": 0.9827,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 32,
+    "title": "Finding Functional Dependencies",
+    "webp_frame": 62,
+    "webp_file": "062.webp",
+    "candidate_webp_frame": 62,
+    "match_score": 0.9811,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 33,
+    "title": "1. Split/Combine",
+    "webp_frame": 67,
+    "webp_file": "067.webp",
+    "candidate_webp_frame": 67,
+    "match_score": 0.9433,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 34,
+    "title": "1. Split/Combine",
+    "webp_frame": 68,
+    "webp_file": "068.webp",
+    "candidate_webp_frame": 68,
+    "match_score": 0.9646,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 35,
+    "title": "1. Split/Combine",
+    "webp_frame": 69,
+    "webp_file": "069.webp",
+    "candidate_webp_frame": 69,
+    "match_score": 0.966,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 36,
+    "title": "Example",
+    "webp_frame": 70,
+    "webp_file": "070.webp",
+    "candidate_webp_frame": 70,
+    "match_score": 0.8938,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 37,
+    "title": "Reduction/Trivial",
+    "webp_frame": 72,
+    "webp_file": "072.webp",
+    "candidate_webp_frame": 72,
+    "match_score": 0.9575,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 38,
+    "title": "Example",
+    "webp_frame": 73,
+    "webp_file": "073.webp",
+    "candidate_webp_frame": 73,
+    "match_score": 0.8583,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 39,
+    "title": "3. Transitive Closure",
+    "webp_frame": 76,
+    "webp_file": "076.webp",
+    "candidate_webp_frame": 76,
+    "match_score": 0.9528,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 40,
+    "title": "3. Transitive Closure",
+    "webp_frame": 77,
+    "webp_file": "077.webp",
+    "candidate_webp_frame": 77,
+    "match_score": 0.9553,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 41,
+    "title": "Example",
+    "webp_frame": 78,
+    "webp_file": "078.webp",
+    "candidate_webp_frame": 78,
+    "match_score": 0.8938,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 42,
+    "title": "Finding Functional Dependencies",
+    "webp_frame": 79,
+    "webp_file": "079.webp",
+    "candidate_webp_frame": 79,
+    "match_score": 0.977,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 43,
+    "title": "Finding Functional Dependencies",
+    "webp_frame": 80,
+    "webp_file": "080.webp",
+    "candidate_webp_frame": 80,
+    "match_score": 0.9869,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 44,
+    "title": "Finding Functional Dependencies",
+    "webp_frame": 81,
+    "webp_file": "081.webp",
+    "candidate_webp_frame": 81,
+    "match_score": 0.9895,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 45,
+    "title": "Closures",
+    "webp_frame": 88,
+    "webp_file": "088.webp",
+    "candidate_webp_frame": 88,
+    "match_score": 0.8583,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 46,
+    "title": "Closure of a set of Attributes",
+    "webp_frame": 98,
+    "webp_file": "098.webp",
+    "candidate_webp_frame": 98,
+    "match_score": 0.9717,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 47,
+    "title": "Closure Algorithm",
+    "webp_frame": null,
+    "webp_file": null,
+    "candidate_webp_frame": 104,
+    "match_score": 0.4144,
+    "review": "no-confident-match"
+  },
+  {
+    "pptx_slide": 48,
+    "title": "Closure Algorithm",
+    "webp_frame": null,
+    "webp_file": null,
+    "candidate_webp_frame": 105,
+    "match_score": 0.5907,
+    "review": "no-confident-match"
+  },
+  {
+    "pptx_slide": 49,
+    "title": "Closure Algorithm",
+    "webp_frame": null,
+    "webp_file": null,
+    "candidate_webp_frame": 106,
+    "match_score": 0.5907,
+    "review": "no-confident-match"
+  },
+  {
+    "pptx_slide": 50,
+    "title": "Closure Algorithm",
+    "webp_frame": null,
+    "webp_file": null,
+    "candidate_webp_frame": 107,
+    "match_score": 0.5907,
+    "review": "no-confident-match"
+  },
+  {
+    "pptx_slide": 51,
+    "title": "Closure Algorithm",
+    "webp_frame": null,
+    "webp_file": null,
+    "candidate_webp_frame": 108,
+    "match_score": 0.5907,
+    "review": "no-confident-match"
+  },
+  {
+    "pptx_slide": 52,
+    "title": "Example",
+    "webp_frame": 109,
+    "webp_file": "109.webp",
+    "candidate_webp_frame": 109,
+    "match_score": 0.95,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 53,
+    "title": "3. Closures, Superkeys & Keys",
+    "webp_frame": 110,
+    "webp_file": "110.webp",
+    "candidate_webp_frame": 110,
+    "match_score": 0.8316,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 54,
+    "title": "Why Do We Need the Closure?",
+    "webp_frame": 112,
+    "webp_file": "112.webp",
+    "candidate_webp_frame": 112,
+    "match_score": 0.9837,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 55,
+    "title": "Using Closure to Infer ALL FDs",
+    "webp_frame": 114,
+    "webp_file": "114.webp",
+    "candidate_webp_frame": 114,
+    "match_score": 0.977,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 56,
+    "title": "Using Closure to Infer ALL FDs",
+    "webp_frame": 115,
+    "webp_file": "115.webp",
+    "candidate_webp_frame": 115,
+    "match_score": 0.977,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 57,
+    "title": "Using Closure to Infer ALL FDs",
+    "webp_frame": 116,
+    "webp_file": "116.webp",
+    "candidate_webp_frame": 116,
+    "match_score": 0.9788,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 58,
+    "title": "Using Closure to Infer ALL FDs",
+    "webp_frame": 117,
+    "webp_file": "117.webp",
+    "candidate_webp_frame": 117,
+    "match_score": 0.9798,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 59,
+    "title": "Superkeys and Keys",
+    "webp_frame": 119,
+    "webp_file": "119.webp",
+    "candidate_webp_frame": 119,
+    "match_score": 0.8438,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 60,
+    "title": "Keys and Superkeys",
+    "webp_frame": 120,
+    "webp_file": "120.webp",
+    "candidate_webp_frame": 120,
+    "match_score": 0.9335,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 61,
+    "title": "Finding Keys and Superkeys",
+    "webp_frame": 123,
+    "webp_file": "123.webp",
+    "candidate_webp_frame": 123,
+    "match_score": 0.9303,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 62,
+    "title": "Example of Finding Keys",
+    "webp_frame": 124,
+    "webp_file": "124.webp",
+    "candidate_webp_frame": 124,
+    "match_score": 0.9782,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 63,
+    "title": "Example of Keys",
+    "webp_frame": 126,
+    "webp_file": "126.webp",
+    "candidate_webp_frame": 126,
+    "match_score": 0.7984,
+    "review": "review"
+  },
+  {
+    "pptx_slide": 64,
+    "title": "Superkey vs Key",
+    "webp_frame": 129,
+    "webp_file": "129.webp",
+    "candidate_webp_frame": 129,
+    "match_score": 0.8771,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 65,
+    "title": "Design Theory II",
+    "webp_frame": 130,
+    "webp_file": "130.webp",
+    "candidate_webp_frame": 130,
+    "match_score": 0.7875,
+    "review": "review"
+  },
+  {
+    "pptx_slide": 66,
+    "title": "Normal Forms",
+    "webp_frame": 153,
+    "webp_file": "153.webp",
+    "candidate_webp_frame": 153,
+    "match_score": 0.8583,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 67,
+    "title": "2NF",
+    "webp_frame": 155,
+    "webp_file": "155.webp",
+    "candidate_webp_frame": 155,
+    "match_score": 0.9726,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 68,
+    "title": "Example",
+    "webp_frame": 158,
+    "webp_file": "158.webp",
+    "candidate_webp_frame": 158,
+    "match_score": 0.9837,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 69,
+    "title": "2NF",
+    "webp_frame": 159,
+    "webp_file": "159.webp",
+    "candidate_webp_frame": 159,
+    "match_score": 0.8786,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 70,
+    "title": "3NF",
+    "webp_frame": 160,
+    "webp_file": "160.webp",
+    "candidate_webp_frame": 160,
+    "match_score": 0.9685,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 71,
+    "title": "2NF → 3NF",
+    "webp_frame": 162,
+    "webp_file": "162.webp",
+    "candidate_webp_frame": 162,
+    "match_score": 0.9717,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 72,
+    "title": "BCNF:",
+    "webp_frame": 163,
+    "webp_file": "163.webp",
+    "candidate_webp_frame": 163,
+    "match_score": 0.8351,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 73,
+    "title": "BCNF",
+    "webp_frame": 164,
+    "webp_file": "164.webp",
+    "candidate_webp_frame": 164,
+    "match_score": 0.9575,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 74,
+    "title": "3NF to BCNF",
+    "webp_frame": 166,
+    "webp_file": "166.webp",
+    "candidate_webp_frame": 166,
+    "match_score": 0.9717,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 75,
+    "title": "Boyce-Codd Normal Form (BCNF)",
+    "webp_frame": 167,
+    "webp_file": "167.webp",
+    "candidate_webp_frame": 167,
+    "match_score": 0.8807,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 76,
+    "title": "Boyce-Codd Normal Form (BCNF)",
+    "webp_frame": 172,
+    "webp_file": "172.webp",
+    "candidate_webp_frame": 172,
+    "match_score": 0.8881,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 77,
+    "title": "Boyce-Codd Normal Form",
+    "webp_frame": 173,
+    "webp_file": "173.webp",
+    "candidate_webp_frame": 173,
+    "match_score": 0.8131,
+    "review": "review"
+  },
+  {
+    "pptx_slide": 78,
+    "title": "Example",
+    "webp_frame": 174,
+    "webp_file": "174.webp",
+    "candidate_webp_frame": 174,
+    "match_score": 0.9693,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 79,
+    "title": "Example",
+    "webp_frame": 175,
+    "webp_file": "175.webp",
+    "candidate_webp_frame": 175,
+    "match_score": 0.9807,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 80,
+    "title": "BCNF Decomposition Algorithm",
+    "webp_frame": 176,
+    "webp_file": "176.webp",
+    "candidate_webp_frame": 176,
+    "match_score": 0.9707,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 81,
+    "title": "BCNF Decomposition Algorithm",
+    "webp_frame": 177,
+    "webp_file": "177.webp",
+    "candidate_webp_frame": 177,
+    "match_score": 0.9807,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 82,
+    "title": "BCNF Decomposition Algorithm",
+    "webp_frame": 178,
+    "webp_file": "178.webp",
+    "candidate_webp_frame": 178,
+    "match_score": 0.9764,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 83,
+    "title": "BCNF Decomposition Algorithm",
+    "webp_frame": 179,
+    "webp_file": "179.webp",
+    "candidate_webp_frame": 179,
+    "match_score": 0.9802,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 84,
+    "title": "BCNF Decomposition Algorithm",
+    "webp_frame": 180,
+    "webp_file": "180.webp",
+    "candidate_webp_frame": 180,
+    "match_score": 0.9793,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 85,
+    "title": "BCNF Decomposition Algorithm",
+    "webp_frame": 181,
+    "webp_file": "181.webp",
+    "candidate_webp_frame": 181,
+    "match_score": 0.9788,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 86,
+    "title": "BCNF Decomposition Algorithm",
+    "webp_frame": 182,
+    "webp_file": "182.webp",
+    "candidate_webp_frame": 182,
+    "match_score": 0.9782,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 87,
+    "title": "R(A,B,C,D,E)",
+    "webp_frame": 183,
+    "webp_file": "183.webp",
+    "candidate_webp_frame": 183,
+    "match_score": 0.9757,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 88,
+    "title": "Example",
+    "webp_frame": 186,
+    "webp_file": "186.webp",
+    "candidate_webp_frame": 186,
+    "match_score": 0.95,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 89,
+    "title": "Lossless join decomposition",
+    "webp_frame": null,
+    "webp_file": null,
+    "candidate_webp_frame": 188,
+    "match_score": 0.2775,
+    "review": "no-confident-match"
+  },
+  {
+    "pptx_slide": 90,
+    "title": "Lossless join decomposition",
+    "webp_frame": 189,
+    "webp_file": "189.webp",
+    "candidate_webp_frame": 189,
+    "match_score": 0.9646,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 91,
+    "title": "Summary",
+    "webp_frame": 190,
+    "webp_file": "190.webp",
+    "candidate_webp_frame": 190,
+    "match_score": 0.9782,
+    "review": "strong"
+  },
+  {
+    "pptx_slide": 92,
+    "title": "Exercise",
+    "webp_frame": 191,
+    "webp_file": "191.webp",
+    "candidate_webp_frame": 191,
+    "match_score": 0.9867,
+    "review": "strong"
+  }
+]
