@@ -474,43 +474,48 @@
       ]
     },
     "presentations/editable/db-design/index.html": {
-      "document": "content/pages/presentations/editable/db-design/index.json",
+      "document": "content/pages/presentations/editable/db-design-all/index.json",
       "styles": [
-        "runtime/styles/2c5588169f94.css",
-        "runtime/reviewed-source.css"
+        "lectures/library/library.css"
       ],
       "data": [],
       "scripts": [
-        "runtime/reviewed-source.js",
-        "runtime/editable-db-design.js"
+        "lectures/library/viewer.js"
       ],
-      "deck": "content/decks-json/db-design.json"
+      "deck": "content/decks-json/db-design-all.json"
     },
     "presentations/editable/db-design-enhanced/index.html": {
-      "document": "content/pages/presentations/editable/db-design-enhanced/index.json",
+      "document": "content/pages/presentations/editable/db-design-all/index.json",
       "styles": [
-        "runtime/styles/1798d212a487.css",
-        "runtime/reviewed-source.css"
+        "lectures/library/library.css"
       ],
       "data": [],
       "scripts": [
-        "runtime/reviewed-source.js",
-        "runtime/editable.js"
+        "lectures/library/viewer.js"
       ],
-      "deck": "content/decks-json/db-design-enhanced.json"
+      "deck": "content/decks-json/db-design-all.json"
     },
     "presentations/editable/db-design-with-labs/index.html": {
-      "document": "content/pages/presentations/editable/db-design-with-labs/index.json",
+      "document": "content/pages/presentations/editable/db-design-all/index.json",
       "styles": [
-        "runtime/styles/1798d212a487.css",
-        "runtime/reviewed-source.css"
+        "lectures/library/library.css"
       ],
       "data": [],
       "scripts": [
-        "runtime/reviewed-source.js",
-        "runtime/editable.js"
+        "lectures/library/viewer.js"
       ],
-      "deck": "content/decks-json/db-design-with-labs.json"
+      "deck": "content/decks-json/db-design-all.json"
+    },
+    "presentations/editable/db-design-all/index.html": {
+      "document": "content/pages/presentations/editable/db-design-all/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ],
+      "deck": "content/decks-json/db-design-all.json"
     },
     "presentations/editable/er-v26/index.html": {
       "document": "content/pages/presentations/editable/er-v26/index.json",

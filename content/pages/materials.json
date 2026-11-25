@@ -366,38 +366,10 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "presentations/editable/db-design/index.html"
+                        "href": "presentations/editable/db-design-all/index.html"
                       },
                       "children": [
-                        "DB Design (reviewed source)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "tag": "li",
-                  "children": [
-                    {
-                      "tag": "a",
-                      "attrs": {
-                        "href": "presentations/editable/db-design-enhanced/index.html"
-                      },
-                      "children": [
-                        "DB Design enhanced (reviewed source)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "tag": "li",
-                  "children": [
-                    {
-                      "tag": "a",
-                      "attrs": {
-                        "href": "presentations/editable/db-design-with-labs/index.html"
-                      },
-                      "children": [
-                        "DB Design with labs (reviewed source)"
+                        "DB Design — All (102 JSON slides)"
                       ]
                     }
                   ]
