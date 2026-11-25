@@ -1,0 +1,3053 @@
+{
+  "schemaVersion": 1,
+  "title": "Getting Started with DBMS-SQL-Labs",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Course navigation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "h1",
+      "children": [
+        "Getting Started with DBMS-SQL-Labs"
+      ],
+      "attrs": {
+        "id": "getting-started-with-dbms-sql-labs"
+      }
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "📋 Table of Contents"
+      ],
+      "attrs": {
+        "id": "-table-of-contents"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#introduction"
+              },
+              "children": [
+                "Introduction"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#prerequisites"
+              },
+              "children": [
+                "Prerequisites"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#installation--setup"
+              },
+              "children": [
+                "Installation & Setup"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#quick-start-guide"
+              },
+              "children": [
+                "Quick Start Guide"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#lab-navigation"
+              },
+              "children": [
+                "Lab Navigation"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#troubleshooting"
+              },
+              "children": [
+                "Troubleshooting"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#additional-resources"
+              },
+              "children": [
+                "Additional Resources"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Introduction"
+      ],
+      "attrs": {
+        "id": "introduction"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Welcome to DBMS-SQL-Labs! This repository contains a comprehensive collection of hands-on SQL laboratories designed to teach database concepts from basic queries to advanced database management techniques. Whether you're a beginner learning SQL for the first time or an experienced developer looking to sharpen your database skills, these labs provide structured, practical experience."
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Prerequisites"
+      ],
+      "attrs": {
+        "id": "prerequisites"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Required Knowledge"
+      ],
+      "attrs": {
+        "id": "required-knowledge"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Basic understanding of computer programming concepts"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Familiarity with command-line interfaces"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Basic understanding of data structures"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Software Requirements"
+      ],
+      "attrs": {
+        "id": "software-requirements"
+      }
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "1. Database Management System"
+      ],
+      "attrs": {
+        "id": "1-database-management-system"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "You'll need at least one of the following:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "MySQL/MariaDB"
+          ]
+        },
+        " (Recommended for most labs)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Download: ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://dev.mysql.com/downloads/mysql/"
+              },
+              "children": [
+                "MySQL Community Server"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Or install via package manager:"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-bash"
+              },
+              "children": [
+                "  # Ubuntu/Debian\n  sudo apt-get update\n  sudo apt-get install mysql-server\n  \n  # macOS (using Homebrew)\n  brew install mysql\n  \n  # Windows\n  # Download installer from MySQL website"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "PostgreSQL"
+          ]
+        },
+        " (Alternative option)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Download: ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.postgresql.org/download/"
+              },
+              "children": [
+                "PostgreSQL"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "2. Programming Languages (for integration labs)"
+      ],
+      "attrs": {
+        "id": "2-programming-languages-for-integration-labs"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Python"
+          ]
+        },
+        " (Labs 13-15)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Python 3.7 or higher"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Install MySQL connector:"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-bash"
+              },
+              "children": [
+                "  pip install mysql-connector-python\n  pip install pymysql"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Java"
+          ]
+        },
+        " (Lab 12)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "JDK 11 or higher"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "MySQL Connector/J library"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Maven or Gradle (recommended)"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Node.js"
+          ]
+        },
+        " (Labs 7-8)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Node.js 14 or higher"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Install MySQL package:"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-bash"
+              },
+              "children": [
+                "  npm install mysql2"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "3. Additional Tools"
+      ],
+      "attrs": {
+        "id": "3-additional-tools"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Jupyter Notebooks"
+          ]
+        },
+        " (For interactive labs)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-bash"
+              },
+              "children": [
+                "pip install jupyter\npip install ipython-sql\npip install pymysql"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "MongoDB"
+          ]
+        },
+        " (Lab 20)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Download: ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.mongodb.com/try/download/community"
+              },
+              "children": [
+                "MongoDB Community Edition"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Neo4j"
+          ]
+        },
+        " (Lab 21)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Download: ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://neo4j.com/download/"
+              },
+              "children": [
+                "Neo4j Desktop"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Database GUI Tools"
+          ]
+        },
+        " (Optional but recommended)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://dev.mysql.com/downloads/workbench/"
+              },
+              "children": [
+                "MySQL Workbench"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://dbeaver.io/"
+              },
+              "children": [
+                "DBeaver"
+              ]
+            },
+            " (Universal database tool)"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.jetbrains.com/datagrip/"
+              },
+              "children": [
+                "DataGrip"
+              ]
+            },
+            " (Commercial)"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Installation & Setup"
+      ],
+      "attrs": {
+        "id": "installation--setup"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Step 1: Clone the Repository"
+      ],
+      "attrs": {
+        "id": "step-1-clone-the-repository"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-bash"
+              },
+              "children": [
+                "git clone https://github.com/TeachingOW/DBMS-SQL-Labs.git\ncd DBMS-SQL-Labs"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Step 2: Set Up MySQL"
+      ],
+      "attrs": {
+        "id": "step-2-set-up-mysql"
+      }
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Start MySQL service:"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-bash"
+              },
+              "children": [
+                "   # Linux\n   sudo systemctl start mysql\n   \n   # macOS\n   brew services start mysql\n   \n   # Windows\n   # Use MySQL Workbench or Services panel"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Secure your installation (recommended):"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-bash"
+              },
+              "children": [
+                "   sudo mysql_secure_installation"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Log into MySQL:"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-bash"
+              },
+              "children": [
+                "   mysql -u root -p"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Create a database for practice:"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "   CREATE DATABASE practice_db;\n   USE practice_db;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Step 3: Test Your Setup"
+      ],
+      "attrs": {
+        "id": "step-3-test-your-setup"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Run a simple query to verify everything works:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT 'Hello, SQL!' AS greeting;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "If you see the output, you're ready to start!"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Quick Start Guide"
+      ],
+      "attrs": {
+        "id": "quick-start-guide"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "For Complete Beginners"
+      ],
+      "attrs": {
+        "id": "for-complete-beginners"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Start with these labs in order:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Lab 1"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../labs/foundations/foundations-lab.html"
+              },
+              "children": [
+                "Database Creation & Basic Queries"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Learn to create databases and tables"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Master SELECT statements"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Understand basic data types"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "labs/foundations/inclass-exercise.html"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../labs/foundations/inclass-exercise.html"
+              },
+              "children": [
+                "Workers Database"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Practice CREATE TABLE and INSERT"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Apply what you learned in Lab 1"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Lab 2"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../labs/single-table/single-table-queries.html"
+              },
+              "children": [
+                "Advanced Queries & Joins"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Multi-table queries"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "JOIN operations"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Complex WHERE clauses"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "For Intermediate Users"
+      ],
+      "attrs": {
+        "id": "for-intermediate-users"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "If you already know basic SQL:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Lab 7"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "CASE Expressions"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Lab 8"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "Window Functions"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Lab 9"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "Views"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "For Advanced Users"
+      ],
+      "attrs": {
+        "id": "for-advanced-users"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Jump to these advanced topics:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Lab 16"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "Triggers & Stored Procedures"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Lab 17"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "Transaction Management"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Lab 20"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "MongoDB (NoSQL)"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Lab 21"
+              ]
+            },
+            ": ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "Neo4j (Graph Database)"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Lab Navigation"
+      ],
+      "attrs": {
+        "id": "lab-navigation"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Lab Structure"
+      ],
+      "attrs": {
+        "id": "lab-structure"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Each lab follows this structure:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Learning Objectives"
+              ]
+            },
+            ": What you'll learn"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Prerequisites"
+              ]
+            },
+            ": Required knowledge"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Introduction"
+              ]
+            },
+            ": Concept overview"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Exercises"
+              ]
+            },
+            ": Hands-on practice"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Solutions"
+              ]
+            },
+            ": Example solutions (where applicable)"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Additional Resources"
+              ]
+            },
+            ": Further reading"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Lab Categories"
+      ],
+      "attrs": {
+        "id": "lab-categories"
+      }
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "📘 Foundational Labs (Weeks 1-4)"
+      ],
+      "attrs": {
+        "id": "-foundational-labs-weeks-1-4"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Basic SQL operations"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Table creation and data manipulation"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Simple queries and filtering"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "📗 Intermediate Labs (Weeks 5-8)"
+      ],
+      "attrs": {
+        "id": "-intermediate-labs-weeks-5-8"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Complex queries and joins"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Aggregate functions"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Set operations"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Window functions"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "📙 Advanced SQL (Weeks 9-12)"
+      ],
+      "attrs": {
+        "id": "-advanced-sql-weeks-9-12"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Stored procedures and triggers"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Transaction management"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Optimization techniques"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Database design"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "📕 Programming Integration (Weeks 13-14)"
+      ],
+      "attrs": {
+        "id": "-programming-integration-weeks-13-14"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Python database connectivity"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Java database integration"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Web application development"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "📓 Modern Databases (Weeks 15-16)"
+      ],
+      "attrs": {
+        "id": "-modern-databases-weeks-15-16"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "NoSQL databases"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Graph databases"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "JSON/XML handling"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Troubleshooting"
+      ],
+      "attrs": {
+        "id": "troubleshooting"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Common Issues"
+      ],
+      "attrs": {
+        "id": "common-issues"
+      }
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "1. \"Access denied for user\""
+      ],
+      "attrs": {
+        "id": "1-access-denied-for-user"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Problem"
+          ]
+        },
+        ": Can't connect to MySQL ",
+        {
+          "tag": "strong",
+          "children": [
+            "Solution"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-bash"
+              },
+              "children": [
+                "# Reset MySQL root password\nsudo mysql\nALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'newpassword';\nFLUSH PRIVILEGES;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "2. \"Can't connect to local MySQL server\""
+      ],
+      "attrs": {
+        "id": "2-cant-connect-to-local-mysql-server"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Problem"
+          ]
+        },
+        ": MySQL service not running ",
+        {
+          "tag": "strong",
+          "children": [
+            "Solution"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-bash"
+              },
+              "children": [
+                "# Start MySQL service\nsudo systemctl start mysql  # Linux\nbrew services start mysql   # macOS"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "3. \"Unknown database\""
+      ],
+      "attrs": {
+        "id": "3-unknown-database"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Problem"
+          ]
+        },
+        ": Database doesn't exist ",
+        {
+          "tag": "strong",
+          "children": [
+            "Solution"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Create the database first\nCREATE DATABASE your_database_name;\nUSE your_database_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "4. \"Table doesn't exist\""
+      ],
+      "attrs": {
+        "id": "4-table-doesnt-exist"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Problem"
+          ]
+        },
+        ": Trying to query a table that hasn't been created ",
+        {
+          "tag": "strong",
+          "children": [
+            "Solution"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Make sure you've run the CREATE TABLE statement"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Check you're in the correct database: ",
+            {
+              "tag": "code",
+              "children": [
+                "SELECT DATABASE();"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "List all tables: ",
+            {
+              "tag": "code",
+              "children": [
+                "SHOW TABLES;"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "5. Jupyter Notebook can't connect to MySQL"
+      ],
+      "attrs": {
+        "id": "5-jupyter-notebook-cant-connect-to-mysql"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Problem"
+          ]
+        },
+        ": Jupyter can't find MySQL connection ",
+        {
+          "tag": "strong",
+          "children": [
+            "Solution"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-python"
+              },
+              "children": [
+                "# Install required packages\n!pip install pymysql ipython-sql\n\n# Load SQL extension\n%load_ext sql\n\n# Connect to MySQL\n%sql mysql+pymysql://username:password@localhost/database_name"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Getting Help"
+      ],
+      "attrs": {
+        "id": "getting-help"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Check the ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../Readme.md"
+              },
+              "children": [
+                "Main README"
+              ]
+            },
+            " for overview"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Review specific lab instructions carefully"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Search for error messages online"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Post issues on the ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://github.com/TeachingOW/DBMS-SQL-Labs/issues"
+              },
+              "children": [
+                "GitHub repository"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Additional Resources"
+      ],
+      "attrs": {
+        "id": "additional-resources"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Learning Platforms"
+      ],
+      "attrs": {
+        "id": "learning-platforms"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://sqlzoo.net/"
+              },
+              "children": [
+                "SQLZoo"
+              ]
+            },
+            " - Interactive SQL tutorials"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.w3schools.com/sql/"
+              },
+              "children": [
+                "W3Schools SQL"
+              ]
+            },
+            " - SQL reference and examples"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://leetcode.com/problemset/database/"
+              },
+              "children": [
+                "LeetCode Database"
+              ]
+            },
+            " - Practice problems"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.hackerrank.com/domains/sql"
+              },
+              "children": [
+                "HackerRank SQL"
+              ]
+            },
+            " - SQL challenges"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Documentation"
+      ],
+      "attrs": {
+        "id": "documentation"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://dev.mysql.com/doc/"
+              },
+              "children": [
+                "MySQL Official Documentation"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.postgresql.org/docs/"
+              },
+              "children": [
+                "PostgreSQL Documentation"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://docs.mongodb.com/manual/"
+              },
+              "children": [
+                "MongoDB Manual"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://neo4j.com/docs/"
+              },
+              "children": [
+                "Neo4j Documentation"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Video Tutorials"
+      ],
+      "attrs": {
+        "id": "video-tutorials"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.youtube.com/watch?v=7S_tz1z_5bA"
+              },
+              "children": [
+                "MySQL Tutorial for Beginners"
+              ]
+            },
+            " (Programming with Mosh)"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.youtube.com/watch?v=HXV3zeQKqGY"
+              },
+              "children": [
+                "SQL Full Course"
+              ]
+            },
+            " (freeCodeCamp)"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Books"
+      ],
+      "attrs": {
+        "id": "books"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "\"SQL in 10 Minutes\" by Ben Forta"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "\"Learning SQL\" by Alan Beaulieu"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "\"Database System Concepts\" by Silberschatz, Korth, and Sudarshan"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Practice Datasets"
+      ],
+      "attrs": {
+        "id": "practice-datasets"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "The ",
+        {
+          "tag": "code",
+          "children": [
+            "data/"
+          ]
+        },
+        " directory contains several datasets for practice:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "IMDB Movie Data"
+              ]
+            },
+            ": Movie ratings and information"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Employee Data"
+              ]
+            },
+            ": HR database with hierarchies"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Drivers Database"
+              ]
+            },
+            ": Complete relational database example"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Student Grades"
+              ]
+            },
+            ": Academic performance data"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Next Steps"
+      ],
+      "attrs": {
+        "id": "next-steps"
+      }
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Once you've completed the setup:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "✅ Start with ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../labs/foundations/foundations-lab.html"
+              },
+              "children": [
+                "Lab 1: Basic Queries"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "✅ Complete the ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../labs/foundations/inclass-exercise.html"
+              },
+              "children": [
+                "labs/foundations/inclass-exercise.html"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "✅ Progress through labs sequentially"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "✅ Practice with the provided datasets"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "✅ Try the challenge exercises"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "✅ Build your own projects using learned concepts"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Happy Learning! 🚀"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Need Help?"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Open an issue on GitHub"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Check the troubleshooting section above"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Review the main README for additional guidance"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n"
+  ]
+}

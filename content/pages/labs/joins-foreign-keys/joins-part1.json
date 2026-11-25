@@ -1,0 +1,2193 @@
+{
+  "schemaVersion": 1,
+  "title": "Lab 2: JOINs and Multi-Table Queries",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Course navigation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #e7f3ff; padding: 15px; margin-bottom: 20px; border-radius: 5px;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h1",
+      "children": [
+        "Lab 2: JOINs and Multi-Table Queries"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "🎯 Learning Objectives"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "By the end of this lab, you will be able to:\n- Work with complex multi-table database schemas\n- Master JOIN operations (INNER, LEFT, RIGHT)\n- Write complex multi-table queries\n- Use string functions with JOINs\n- Handle NULL values in JOIN queries"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "📋 Table of Contents"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#prerequisites"
+              },
+              "children": [
+                "Prerequisites"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#scenario"
+              },
+              "children": [
+                "Scenario: University Database System"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#getting-started"
+              },
+              "children": [
+                "Getting Started"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#query-exercises"
+              },
+              "children": [
+                "Query Exercises"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "prerequisites"
+      },
+      "children": [
+        "📋 Prerequisites"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Completion of ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../foundations/foundations-lab.html"
+              },
+              "children": [
+                "Lab 1"
+              ]
+            },
+            " or equivalent knowledge"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Understanding of basic SQL operations"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Familiarity with primary and foreign keys"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "scenario"
+      },
+      "children": [
+        "🏫 Scenario: University Database System"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "In this lab, we'll work with a university database containing information about students, courses, and enrollments. This realistic scenario will help you understand how databases are used in real-world applications."
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Database Schema Overview"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Our database consists of three related tables:\n- ",
+        {
+          "tag": "strong",
+          "children": [
+            "Student"
+          ]
+        },
+        ": Contains student information (ID, name, GPA)\n- ",
+        {
+          "tag": "strong",
+          "children": [
+            "Course"
+          ]
+        },
+        ": Contains course details (ID, code, name, credit hours)\n- ",
+        {
+          "tag": "strong",
+          "children": [
+            "Enrolled"
+          ]
+        },
+        ": Links students to courses with grades (many-to-many relationship)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "getting-started"
+      },
+      "children": [
+        "🚀 Getting Started"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Step 1: Create the Database"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Clean slate: DROP existing DATABASE IF it EXISTS\nDROP DATABASE IF EXISTS lab2;\nCREATE DATABASE lab2;\nUSE lab2;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Step 2: Create the Table Structure"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- DROP TABLES IN correct ORDER (child TABLES first due to FOREIGN KEY constraints)\nDROP TABLE IF EXISTS Enrolled;  -- Junction TABLE (child)\nDROP TABLE IF EXISTS Student;   -- Parent TABLE\nDROP TABLE IF EXISTS Course;    -- Parent TABLE\n\n-- CREATE Student TABLE\nCREATE TABLE Student (\n    sid INT PRIMARY KEY,           -- Student ID (UNIQUE identifier)\n    fname CHAR(20),               -- First name (fixed LENGTH)\n    lname CHAR(20),               -- Last name (fixed LENGTH)\n    gpa FLOAT                     -- Grade Point Average (can be NULL)\n);\n\n-- CREATE Course TABLE  \nCREATE TABLE Course (\n    cid INT PRIMARY KEY,          -- Course ID (UNIQUE identifier)\n    code CHAR(10),               -- Course code (e.g., \"CS101\")\n    name CHAR(40),               -- Course name (e.g., \"Intro to Programming\")\n    credithours SMALLINT         -- Credit hours (1-4 typically)\n);\n\n-- CREATE Enrolled TABLE (junction TABLE FOR many-to-many relationship)\nCREATE TABLE Enrolled (\n    sid INT,                     -- Student ID (FOREIGN KEY)\n    cid INT,                     -- Course ID (FOREIGN KEY)\n    grade CHAR(2),               -- Letter grade (A+, A, B+, etc.)\n    PRIMARY KEY (sid, cid),      -- Composite PRIMARY KEY\n    FOREIGN KEY (sid) REFERENCES Student(sid),   -- Link to Student TABLE\n    FOREIGN KEY (cid) REFERENCES Course(cid)     -- Link to Course TABLE\n);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Key Design Concepts"
+          ]
+        },
+        ":\n- ",
+        {
+          "tag": "strong",
+          "children": [
+            "Composite Primary Key"
+          ]
+        },
+        ": ",
+        {
+          "tag": "code",
+          "children": [
+            "(sid, cid)"
+          ]
+        },
+        " ensures one grade per student per course\n- ",
+        {
+          "tag": "strong",
+          "children": [
+            "Foreign Key Constraints"
+          ]
+        },
+        ": Maintain referential integrity\n- ",
+        {
+          "tag": "strong",
+          "children": [
+            "Many-to-Many Relationship"
+          ]
+        },
+        ": Students can enroll in multiple courses, courses can have multiple students"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Step 3: Populate the Database with Sample Data"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "Insert Student Data"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- INSERT student records (SOME students have NULL GPA - NOT yet calculated)\nINSERT INTO Student VALUES(1,'Amie','Massey',3.0);\nINSERT INTO Student VALUES(2,'Abigail','Larsen',NULL);\nINSERT INTO Student VALUES(3,'Cora','Rowland',4);\nINSERT INTO Student VALUES(4,'Alesha','Ferrell',3.5);\nINSERT INTO Student VALUES(5,'Nina','Lowery',NULL);\nINSERT INTO Student VALUES(6,'Scarlet','Lane',2.6);\nINSERT INTO Student VALUES(7,'Lukas','Reeves',3.6);\nINSERT INTO Student VALUES(8,'Ray','Chang',3.2);\nINSERT INTO Student VALUES(9,'Ioan','Reid',2.5);\nINSERT INTO Student VALUES(10,'Ryan','Peck',3.1);\nINSERT INTO Student VALUES(11,'Marco','Lowery',3.8);\nINSERT INTO Student VALUES(12,'Pearl', 'Mayo',3.7);\nINSERT INTO Student VALUES(13,'Elmer', 'Cain',2.7);\nINSERT INTO Student VALUES(14,'Isla', 'Mccall',2.2);\nINSERT INTO Student VALUES(15,'Kate', 'Kimmel',NULL);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Verify student data"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT * FROM Student ORDER BY sid;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "Insert Course Data"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- INSERT computer science courses WITH varying credit hours\nINSERT INTO Course VALUES(1,'CS101', 'Computer Programming I',3);\nINSERT INTO Course VALUES(2,'CS102', 'Computer Programming II',3);\nINSERT INTO Course VALUES(3,'CS321', 'Data Structures',4);\nINSERT INTO Course VALUES(4,'CS5710', 'Network',4);\nINSERT INTO Course VALUES(5,'CS4550', 'DATABASE',4);\nINSERT INTO Course VALUES(6,'CS5990', 'Capstone Project',4);\nINSERT INTO Course VALUES(7,'CS6020', 'Data Mining',4);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Verify course data"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT * FROM Course ORDER BY cid;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h4",
+      "children": [
+        "Insert Enrollment Data"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- CS101 enrollments (ALL 15 students enrolled)\n\nINSERT INTO Enrolled VALUES(1,1, 'A+');\nINSERT INTO Enrolled VALUES(2,1, 'A-');\nINSERT INTO Enrolled VALUES(3,1, 'B');\nINSERT INTO Enrolled VALUES(4,1, 'C');\nINSERT INTO Enrolled VALUES(5,1, 'D');\nINSERT INTO Enrolled VALUES(6,1, 'A');\nINSERT INTO Enrolled VALUES(7,1, 'B-');\nINSERT INTO Enrolled VALUES(8,1, 'C+');\nINSERT INTO Enrolled VALUES(9,1, 'D');\nINSERT INTO Enrolled VALUES(10,1, 'C+');\nINSERT INTO Enrolled VALUES(11,1, 'A-');\nINSERT INTO Enrolled VALUES(12,1, 'A');\nINSERT INTO Enrolled VALUES(13,1, 'B+');\nINSERT INTO Enrolled VALUES(14,1, 'C+');\nINSERT INTO Enrolled VALUES(15,1, 'A');\nINSERT INTO Enrolled VALUES(1,2, 'A');\nINSERT INTO Enrolled VALUES(2,2, 'C');\nINSERT INTO Enrolled VALUES(3,2, 'B+');\nINSERT INTO Enrolled VALUES(4,2, 'C-');\nINSERT INTO Enrolled VALUES(5,2, 'D+');\nINSERT INTO Enrolled VALUES(6,2, 'A-');\nINSERT INTO Enrolled VALUES(7,2, 'C-');\nINSERT INTO Enrolled VALUES(8,2, 'C');\nINSERT INTO Enrolled VALUES(9,2, 'D+');\nINSERT INTO Enrolled VALUES(10,2, 'C+');\nINSERT INTO Enrolled VALUES(11,2, 'A-');\nINSERT INTO Enrolled VALUES(12,2, 'A');\nINSERT INTO Enrolled VALUES(13,2, 'B-');\nINSERT INTO Enrolled VALUES(14,2, 'C');\n\nINSERT INTO Enrolled VALUES (1,3,'C-');\nINSERT INTO Enrolled VALUES (2,3,'B-');\nINSERT INTO Enrolled VALUES (3,3,'D+');\nINSERT INTO Enrolled VALUES (4,3,'C');\nINSERT INTO Enrolled VALUES (5,3,'A+');\nINSERT INTO Enrolled VALUES (6,3,'D+');\nINSERT INTO Enrolled VALUES (7,3,'F');\nINSERT INTO Enrolled VALUES (8,3,'A-');\nINSERT INTO Enrolled VALUES (9,3,'D+');\nINSERT INTO Enrolled VALUES (10,3,'D');\nINSERT INTO Enrolled VALUES (11,3,'A+');\nINSERT INTO Enrolled VALUES (12,3,'A');\nINSERT INTO Enrolled VALUES (13,3,'B-');\nINSERT INTO Enrolled VALUES (14,3,'C');\nINSERT INTO Enrolled VALUES (15,3,'B-');\n\nINSERT INTO Enrolled VALUES (1,4,'F');\nINSERT INTO Enrolled VALUES (2,4,'A');\nINSERT INTO Enrolled VALUES (3,4,'D-');\nINSERT INTO Enrolled VALUES (4,4,'A-');\nINSERT INTO Enrolled VALUES (5,4,'B-');\nINSERT INTO Enrolled VALUES (6,4,'A-');\nINSERT INTO Enrolled VALUES (7,4,'D+');\nINSERT INTO Enrolled VALUES (8,4,'B+');\nINSERT INTO Enrolled VALUES (9,4,'C+');\nINSERT INTO Enrolled VALUES (10,4,'B');\nINSERT INTO Enrolled VALUES (11,4,'F');\nINSERT INTO Enrolled VALUES (12,4,'F');\nINSERT INTO Enrolled VALUES (13,4,'A+');\nINSERT INTO Enrolled VALUES (14,4,'A+');\n\nINSERT INTO Enrolled VALUES (1,5,'A+');\nINSERT INTO Enrolled VALUES (2,5,'A+');\nINSERT INTO Enrolled VALUES (3,5,'B');\nINSERT INTO Enrolled VALUES (4,5,'D+');\nINSERT INTO Enrolled VALUES (5,5,'C-');\nINSERT INTO Enrolled VALUES (6,5,'B-');\nINSERT INTO Enrolled VALUES (7,5,'B');\nINSERT INTO Enrolled VALUES (8,5,'B+');\nINSERT INTO Enrolled VALUES (9,5,'A');\nINSERT INTO Enrolled VALUES (10,5,'B');\nINSERT INTO Enrolled VALUES (11,5,'D');\nINSERT INTO Enrolled VALUES (12,5,'B');\nINSERT INTO Enrolled VALUES (13,5,'B');\nINSERT INTO Enrolled VALUES (14,5,'A+');\n\nINSERT INTO Enrolled VALUES (1,6,'A+');\nINSERT INTO Enrolled VALUES (2,6,'D');\nINSERT INTO Enrolled VALUES (3,6,'D-');\nINSERT INTO Enrolled VALUES (4,6,'C-');\nINSERT INTO Enrolled VALUES (5,6,'C');\nINSERT INTO Enrolled VALUES (6,6,'C-');\nINSERT INTO Enrolled VALUES (7,6,'A-');\nINSERT INTO Enrolled VALUES (8,6,'D');\nINSERT INTO Enrolled VALUES (9,6,'B');\nINSERT INTO Enrolled VALUES (10,6,'B-');\nINSERT INTO Enrolled VALUES (11,6,'F');\nINSERT INTO Enrolled VALUES (12,6,'C+');\nINSERT INTO Enrolled VALUES (15,6,'F');\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Verify enrollment data"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- CHECK total enrollments\nSELECT COUNT(*) AS total_enrollments FROM Enrolled;\n\n-- See sample enrollments WITH student AND course names\nSELECT s.fname, s.lname, c.code, c.name, e.grade\nFROM Student s\nJOIN Enrolled e ON s.sid = e.sid\nJOIN Course c ON e.cid = c.cid\nLIMIT 10;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "query-exercises"
+      },
+      "children": [
+        "🔍 Query Exercises"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Now that we have our database populated, let's practice various types of queries. Each exercise builds on previous concepts while introducing new techniques."
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Exercise 1: Multi-Table JOIN with String Functions"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Problem"
+          ]
+        },
+        ": Find all students who received an 'A' or 'A+' in the Database course, ordered by their full name."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Analysis"
+          ]
+        },
+        ": \n- We need data from all three tables:\n  - ",
+        {
+          "tag": "code",
+          "children": [
+            "Student"
+          ]
+        },
+        " table: for student names\n  - ",
+        {
+          "tag": "code",
+          "children": [
+            "Course"
+          ]
+        },
+        " table: to identify the Database course\n  - ",
+        {
+          "tag": "code",
+          "children": [
+            "Enrolled"
+          ]
+        },
+        " table: for grades\n- This requires joining three tables with two join conditions"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "Your Solution"
+          ]
+        },
+        ":"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Write your query here\n\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "details",
+      "children": [
+        "\n",
+        {
+          "tag": "summary",
+          "children": [
+            "💡 Click to see the solution"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT CONCAT(fname, ' ', lname) AS student_name \nFROM Student s, Course c, Enrolled e\nWHERE c.cid = e.cid \n  AND s.sid = e.sid\n  AND (e.grade = 'A+' OR e.grade = 'A')\n  AND c.name LIKE '%DATABASE%' \nORDER BY student_name;\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Alternative using explicit JOIN syntax"
+          ]
+        },
+        ":\n\n",
+        {
+          "tag": "div",
+          "attrs": {
+            "class": "code-block-wrapper"
+          },
+          "children": [
+            "\n  ",
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "attrs": {
+                    "class": "language-sql"
+                  },
+                  "children": [
+                    "SELECT CONCAT(s.fname, ' ', s.lname) AS student_name\nFROM Student s\nJOIN Enrolled e ON s.sid = e.sid\nJOIN Course c ON e.cid = c.cid\nWHERE (e.grade = 'A+' OR e.grade = 'A')\n  AND c.name LIKE '%DATABASE%'\nORDER BY student_name;\n"
+                  ]
+                }
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "button",
+              "attrs": {
+                "class": "copy-button",
+                "title": "Copy code",
+                "data-copy-code": ""
+              },
+              "children": [
+                "\n    ",
+                {
+                  "tag": "svg",
+                  "attrs": {
+                    "width": "16",
+                    "height": "16",
+                    "viewBox": "0 0 16 16",
+                    "fill": "none",
+                    "xmlns": "http://www.w3.org/2000/svg"
+                  },
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "path",
+                      "attrs": {
+                        "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                        "stroke": "currentColor",
+                        "stroke-width": "1.5",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Expected Output"
+          ]
+        },
+        ":\n",
+        {
+          "tag": "table",
+          "children": [
+            "\n  ",
+            {
+              "tag": "thead",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "th",
+                      "children": [
+                        "student_name"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n  ",
+            {
+              "tag": "tbody",
+              "children": [
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Abigail Larsen"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Amie Massey"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n    ",
+                {
+                  "tag": "tr",
+                  "children": [
+                    "\n      ",
+                    {
+                      "tag": "td",
+                      "children": [
+                        "Isla Mccall"
+                      ]
+                    },
+                    "\n    "
+                  ]
+                },
+                "\n  "
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n\n",
+        {
+          "tag": "strong",
+          "children": [
+            "Key Concepts"
+          ]
+        },
+        ":\n- `CONCAT()`: Combines first and last names\n- Multiple table joins: Connect related data across tables\n- `LIKE '%Database%'`: Pattern matching for course names\n- `OR` condition: Multiple grade criteria\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Query 2"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find all countries that manufacture some product in the ‘Gadgets’ category.\nAssume you have the following data:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP TABLE IF EXISTS Company;\nDROP TABLE IF EXISTS Product;\n\nCREATE TABLE Product(\n    PName CHAR(20) PRIMARY KEY,\n    Price DOUBLE,\n    category CHAR(20),\n    Manufacturer CHAR(20)\n);\n\nCREATE TABLE Company(\n    CName CHAR(20) PRIMARY KEY,\n    StockPrice DOUBLE,\n    Country CHAR(20)\n);\n\nALTER TABLE Product ADD FOREIGN KEY (Manufacturer) REFERENCES Company(CName);\n\nINSERT INTO Company VALUES('GizmoWorks',25,'USA');\nINSERT INTO Company VALUES('Canon',65,'Japan');\nINSERT INTO Company VALUES('Hitachi',15, 'Japan');\n\nINSERT INTO Product VALUES('Gizmo',19.99,'Gadgets','GizmoWorks');\nINSERT INTO Product VALUES('Powergizmo',29.99,'Gadgets','GizmoWorks');\nINSERT INTO Product VALUES('SingleTouch',149.99,'Photography','Canon');\nINSERT INTO Product VALUES('MultiTouch',203.99,'Household','Hitachi');\nSELECT Country FROM Product, Company\nWHERE Manufacturer=CName AND Category='Gadgets'\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "This would return:\nCountry\nUSA\nUSA\nHow to get USA only once."
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Query 3: An Unintuitive Query"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Prepare the database as follows:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP TABLE IF EXISTS R;\nDROP TABLE IF EXISTS T;\nDROP TABLE IF EXISTS S;\n\nCREATE TABLE R(A INT);\nCREATE TABLE S(A INT);\nCREATE TABLE T(A INT);\n\nINSERT INTO R VALUES (1);\nINSERT INTO R VALUES (1);\nINSERT INTO R VALUES (2);\nINSERT INTO R VALUES (3);\nINSERT INTO R VALUES (5);\nINSERT INTO R VALUES (7);\nINSERT INTO R VALUES (7);\nINSERT INTO R VALUES (8);\n\nINSERT INTO S VALUES (1);\nINSERT INTO S VALUES (1);\nINSERT INTO S VALUES (2);\nINSERT INTO S VALUES (3);\n\nINSERT INTO T VALUES (1);\nINSERT INTO T VALUES (2);\nINSERT INTO T VALUES (3);\nINSERT INTO T VALUES (7);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Run this query"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT  DISTINCT R.A\nFROM R, S, T\nWHERE R.A=S.A OR R.A=T.A\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "This would return the following"
+      ]
+    },
+    "\n",
+    {
+      "tag": "table",
+      "children": [
+        "\n  ",
+        {
+          "tag": "thead",
+          "children": [
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "th",
+                  "children": [
+                    "A"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "tbody",
+          "children": [
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "1"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "2"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "3"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "tr",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "td",
+                  "children": [
+                    "7"
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Remove all tuples from S"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SET SQL_SAFE_UPDATES = 0;\nDELETE FROM S;\nSET SQL_SAFE_UPDATES = 1;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "MySQL has something called safe mode, to disable it. We run SET SQL_SAFE_UPDATES = 0; and to enable it again SET SQL_SAFE_UPDATES = 1;\nRerun the query"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT DISTINCT R.A\nFROM   R, S, T\nWHERE  R.A=S.A OR R.A=T.A\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "children": [
+        "🎯 Additional Practice Examples"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 1: Employee-Department Relationships"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Consider a company database with employees and departments. Find all employees along with their department names, including employees without departments (using LEFT JOIN)."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Sample data structure\nCREATE TABLE Department (\n    dept_id INT PRIMARY KEY,\n    dept_name VARCHAR(50),\n    location VARCHAR(50)\n);\n\nCREATE TABLE Employee (\n    emp_id INT PRIMARY KEY,\n    emp_name VARCHAR(50),\n    dept_id INT,\n    salary DECIMAL(10,2),\n    FOREIGN KEY (dept_id) REFERENCES Department(dept_id)\n);\n\n-- Query: Find all employees with their department info\nSELECT e.emp_name, d.dept_name, d.location, e.salary\nFROM Employee e\nLEFT JOIN Department d ON e.dept_id = d.dept_id\nORDER BY d.dept_name, e.emp_name;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 2: Product Catalog with Suppliers"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find all products along with their suppliers, showing product details even for products without suppliers."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Sample schema\nCREATE TABLE Supplier (\n    supplier_id INT PRIMARY KEY,\n    supplier_name VARCHAR(100),\n    country VARCHAR(50)\n);\n\nCREATE TABLE Product (\n    product_id INT PRIMARY KEY,\n    product_name VARCHAR(100),\n    supplier_id INT,\n    price DECIMAL(10,2),\n    FOREIGN KEY (supplier_id) REFERENCES Supplier(supplier_id)\n);\n\n-- Query: List all products with supplier information\nSELECT \n    p.product_name,\n    p.price,\n    COALESCE(s.supplier_name, 'No Supplier') AS supplier,\n    COALESCE(s.country, 'N/A') AS supplier_country\nFROM Product p\nLEFT JOIN Supplier s ON p.supplier_id = s.supplier_id\nORDER BY p.product_name;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 3: Self-Join for Hierarchical Data"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find employees and their managers using a self-join on the Employee table."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Employee table with manager reference\nCREATE TABLE EmployeeHierarchy (\n    emp_id INT PRIMARY KEY,\n    emp_name VARCHAR(50),\n    manager_id INT,\n    FOREIGN KEY (manager_id) REFERENCES EmployeeHierarchy(emp_id)\n);\n\n-- Query: Show each employee with their manager's name\nSELECT \n    e.emp_name AS employee,\n    COALESCE(m.emp_name, 'No Manager') AS manager\nFROM EmployeeHierarchy e\nLEFT JOIN EmployeeHierarchy m ON e.manager_id = m.emp_id\nORDER BY manager, employee;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Example 4: Complex Multi-Table Join"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Find customers, their orders, and product details in a sales database."
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- E-commerce example with multiple tables\nCREATE TABLE Customer (\n    customer_id INT PRIMARY KEY,\n    customer_name VARCHAR(100),\n    email VARCHAR(100)\n);\n\nCREATE TABLE OrderHeader (\n    order_id INT PRIMARY KEY,\n    customer_id INT,\n    order_date DATE,\n    FOREIGN KEY (customer_id) REFERENCES Customer(customer_id)\n);\n\nCREATE TABLE OrderItem (\n    order_id INT,\n    product_id INT,\n    quantity INT,\n    unit_price DECIMAL(10,2),\n    PRIMARY KEY (order_id, product_id),\n    FOREIGN KEY (order_id) REFERENCES OrderHeader(order_id),\n    FOREIGN KEY (product_id) REFERENCES Product(product_id)\n);\n\n-- Query: Complete order information with customer and product details\nSELECT \n    c.customer_name,\n    o.order_date,\n    p.product_name,\n    oi.quantity,\n    oi.unit_price,\n    (oi.quantity * oi.unit_price) AS line_total\nFROM Customer c\nJOIN OrderHeader o ON c.customer_id = o.customer_id\nJOIN OrderItem oi ON o.order_id = oi.order_id\nJOIN Product p ON oi.product_id = p.product_id\nWHERE o.order_date >= '2024-01-01'\nORDER BY c.customer_name, o.order_date, p.product_name;\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #fff3cd; padding: 15px; margin: 20px 0; border-left: 4px solid #ffc107; border-radius: 4px;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "h4",
+          "attrs": {
+            "style": "margin-top: 0;"
+          },
+          "children": [
+            "💡 Key Takeaways"
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "ul",
+          "children": [
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "Use ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "INNER JOIN"
+                  ]
+                },
+                " when you only want matching records from both tables"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "Use ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "LEFT JOIN"
+                  ]
+                },
+                " to keep all records from the left table even without matches"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "Use ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "RIGHT JOIN"
+                  ]
+                },
+                " to keep all records from the right table even without matches"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "Self-joins are powerful for hierarchical or relationship data within the same table"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "Always use table aliases for clarity, especially with multiple joins"
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "COALESCE"
+                  ]
+                },
+                " function helps handle NULL values in join results"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "hr",
+      "attrs": {
+        "style": "margin-top: 40px;"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #f0f0f0; padding: 15px; margin-top: 20px; border-radius: 5px; text-align: center;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            " | \n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/GETTING_STARTED.html"
+              },
+              "children": [
+                "🚀 Getting Started"
+              ]
+            },
+            " | \n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/SQL_CHEAT_SHEET.html"
+              },
+              "children": [
+                "📝 SQL Cheat Sheet"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    "\n\n\n"
+  ]
+}

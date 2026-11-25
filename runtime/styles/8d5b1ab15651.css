@@ -1,0 +1,42 @@
+:root {
+      --ow-green: #0b5d3b;
+      --ow-green-dark: #07442b;
+      --ow-gold: #c7a34a;
+      --ow-cream: #f6f2e9;
+      --ow-ink: #122019;
+      --ow-moss: #1f7a56;
+    }
+
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 4px; }
+        code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
+
+        .lab-part {
+            background-color: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .lab-part h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .lab-part a {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .lab-part a:hover {
+            background-color: #45a049;
+        }

@@ -1,78 +1,203 @@
--- DBMS SQL lecture demo database
+-- DBMS SQL lecture slide datasets
 -- Dialect: PostgreSQL 16+
--- This script is intentionally repeatable: it removes and rebuilds only the
--- teaching tables used by the presentation examples.
+--
+-- Every inserted value below appears in the lecture slides. The deck reuses
+-- relation names with different schemas and rows, so each distinct example is
+-- kept in its own PostgreSQL schema instead of blending incompatible datasets.
+-- Select the schema for the slide before running its query, for example:
+--   SET search_path TO slide_037_joins;
 
 BEGIN;
 
-DROP VIEW IF EXISTS event_summary CASCADE;
-DROP VIEW IF EXISTS public_student_directory CASCADE;
+DROP SCHEMA IF EXISTS slide_018_nulls CASCADE;
+DROP SCHEMA IF EXISTS slide_034_foreign_keys CASCADE;
+DROP SCHEMA IF EXISTS slide_037_joins CASCADE;
+DROP SCHEMA IF EXISTS slide_042_ambiguity CASCADE;
+DROP SCHEMA IF EXISTS slide_045_semantics CASCADE;
+DROP SCHEMA IF EXISTS slide_059_set_operations CASCADE;
+DROP SCHEMA IF EXISTS slide_064_intersect CASCADE;
+DROP SCHEMA IF EXISTS slide_075_correlated CASCADE;
+DROP SCHEMA IF EXISTS slide_084_aggregation CASCADE;
+DROP SCHEMA IF EXISTS slide_096_authors CASCADE;
+DROP SCHEMA IF EXISTS slide_101_quantifiers CASCADE;
+DROP SCHEMA IF EXISTS slide_105_null_logic CASCADE;
+DROP SCHEMA IF EXISTS slide_112_outer_join CASCADE;
+DROP SCHEMA IF EXISTS slide_124_types CASCADE;
 
-DROP TABLE IF EXISTS event_registration CASCADE;
-DROP TABLE IF EXISTS Event CASCADE;
-DROP TABLE IF EXISTS Student CASCADE;
-DROP TABLE IF EXISTS Employee CASCADE;
-DROP TABLE IF EXISTS Enrolled CASCADE;
-DROP TABLE IF EXISTS Students CASCADE;
-DROP TABLE IF EXISTS Wrote CASCADE;
-DROP TABLE IF EXISTS Author CASCADE;
-DROP TABLE IF EXISTS Movie CASCADE;
-DROP TABLE IF EXISTS Purchase CASCADE;
-DROP TABLE IF EXISTS Product CASCADE;
-DROP TABLE IF EXISTS Company CASCADE;
-DROP TABLE IF EXISTS Person CASCADE;
-DROP TABLE IF EXISTS R CASCADE;
-DROP TABLE IF EXISTS S CASCADE;
-DROP TABLE IF EXISTS T CASCADE;
-DROP TABLE IF EXISTS TypeExamples CASCADE;
+-- Slide 18: NULL and NOT NULL
+CREATE SCHEMA slide_018_nulls;
+CREATE TABLE slide_018_nulls.Students (
+  sid VARCHAR(20) PRIMARY KEY,
+  name VARCHAR(60) NOT NULL,
+  gpa DECIMAL(2,1)
+);
+INSERT INTO slide_018_nulls.Students (sid, name, gpa) VALUES
+  ('123', 'Bob', 3.9),
+  ('143', 'Jim', NULL);
 
-CREATE TABLE Company (
-  name VARCHAR(60) PRIMARY KEY,
-  country VARCHAR(40) NOT NULL,
-  hq_city VARCHAR(60) NOT NULL,
-  city VARCHAR(60) NOT NULL,
+-- Slides 34-36: foreign-key example
+CREATE SCHEMA slide_034_foreign_keys;
+CREATE TABLE slide_034_foreign_keys.Students (
+  sid VARCHAR(20) PRIMARY KEY,
+  name VARCHAR(60) NOT NULL,
+  gpa DECIMAL(2,1)
+);
+CREATE TABLE slide_034_foreign_keys.Enrolled (
+  student_id VARCHAR(20),
+  cid VARCHAR(20),
+  grade VARCHAR(10),
+  PRIMARY KEY (student_id, cid),
+  FOREIGN KEY (student_id)
+    REFERENCES slide_034_foreign_keys.Students(sid)
+);
+INSERT INTO slide_034_foreign_keys.Students (sid, name, gpa) VALUES
+  ('101', 'Bob', 3.2),
+  ('123', 'Mary', 3.8);
+INSERT INTO slide_034_foreign_keys.Enrolled (student_id, cid, grade) VALUES
+  ('123', '564', 'A'),
+  ('123', '537', 'A+');
+
+-- Slides 9-13, 24-31, and 37-50: product/company examples
+CREATE SCHEMA slide_037_joins;
+CREATE TABLE slide_037_joins.Company (
+  CName VARCHAR(60) PRIMARY KEY,
+  StockPrice DECIMAL(10,2) NOT NULL,
+  Country VARCHAR(40) NOT NULL
+);
+CREATE TABLE slide_037_joins.Product (
+  PName VARCHAR(60) PRIMARY KEY,
+  Price DECIMAL(10,2) NOT NULL,
+  Category VARCHAR(40) NOT NULL,
+  Manufacturer VARCHAR(60) NOT NULL
+    REFERENCES slide_037_joins.Company(CName)
+);
+INSERT INTO slide_037_joins.Company (CName, StockPrice, Country) VALUES
+  ('GizmoWorks', 25, 'USA'),
+  ('Canon', 65, 'Japan'),
+  ('Hitachi', 15, 'Japan');
+INSERT INTO slide_037_joins.Product
+  (PName, Price, Category, Manufacturer)
+VALUES
+  ('Gizmo', 19.99, 'Gadgets', 'GizmoWorks'),
+  ('Powergizmo', 29.99, 'Gadgets', 'GizmoWorks'),
+  ('SingleTouch', 149.99, 'Photography', 'Canon'),
+  ('MultiTouch', 203.99, 'Household', 'Hitachi');
+
+-- Slides 42-43 define these relations but provide no rows.
+CREATE SCHEMA slide_042_ambiguity;
+CREATE TABLE slide_042_ambiguity.Company (
+  name VARCHAR(60),
   address VARCHAR(120)
 );
+CREATE TABLE slide_042_ambiguity.Person (
+  name VARCHAR(60),
+  address VARCHAR(120),
+  worksfor VARCHAR(60)
+);
 
-INSERT INTO Company (name, country, hq_city, city, address) VALUES
-  ('GizmoWorks',     'United States', 'Seattle',     'Seattle',     '10 Pine Street'),
-  ('Gizmo-Works',    'United States', 'Seattle',     'Seattle',     '10 Pine Street'),
-  ('Canon',          'Japan',         'Tokyo',       'Tokyo',       '30 Camera Avenue'),
-  ('Hitachi',        'Japan',         'Tokyo',       'Tokyo',       '40 Technology Way'),
-  ('Toyota',         'Japan',         'Toyota City', 'Toyota City', '1 Mobility Plaza'),
-  ('Global Devices', 'United States', 'New York',    'New York',    '50 Broadway'),
-  ('RetroCo',        'United States', 'Austin',      'Austin',      '70 Archive Road');
+-- Slide 45: the exact R and S values shown in the semantics walkthrough
+CREATE SCHEMA slide_045_semantics;
+CREATE TABLE slide_045_semantics.R (A INTEGER);
+CREATE TABLE slide_045_semantics.S (B INTEGER, C INTEGER);
+INSERT INTO slide_045_semantics.R (A) VALUES (1), (3);
+INSERT INTO slide_045_semantics.S (B, C) VALUES
+  (2, 3),
+  (3, 4),
+  (3, 5);
 
-CREATE TABLE Product (
-  name VARCHAR(60) NOT NULL,
-  price DECIMAL(10,2) NOT NULL,
-  manufacturer VARCHAR(60),
+-- Slides 59-62 and 115-119 name R, S, and T but show no base rows.
+CREATE SCHEMA slide_059_set_operations;
+CREATE TABLE slide_059_set_operations.R (A INTEGER, B INTEGER);
+CREATE TABLE slide_059_set_operations.S (A INTEGER, B INTEGER);
+CREATE TABLE slide_059_set_operations.T (A INTEGER, B INTEGER);
+
+-- Slides 64-65: the exact joined rows used to explain the INTERSECT pitfall
+CREATE SCHEMA slide_064_intersect;
+CREATE TABLE slide_064_intersect.Company (
+  name VARCHAR(60) PRIMARY KEY,
+  hq_city VARCHAR(60)
+);
+CREATE TABLE slide_064_intersect.Product (
+  pname VARCHAR(60),
+  maker VARCHAR(60) REFERENCES slide_064_intersect.Company(name),
+  factory_loc VARCHAR(40)
+);
+INSERT INTO slide_064_intersect.Company (name, hq_city) VALUES
+  ('X Co.', 'Seattle'),
+  ('Y Inc.', 'Seattle');
+INSERT INTO slide_064_intersect.Product (pname, maker, factory_loc) VALUES
+  ('X', 'X Co.', 'U.S.'),
+  ('X', 'Y Inc.', 'China');
+
+-- Slides 68-76 specify these schemas but do not display base-table rows.
+CREATE SCHEMA slide_075_correlated;
+CREATE TABLE slide_075_correlated.Company (
+  name VARCHAR(60),
+  hq_city VARCHAR(60),
+  city VARCHAR(60)
+);
+CREATE TABLE slide_075_correlated.Product (
+  name VARCHAR(60),
+  price DECIMAL(10,2),
   category VARCHAR(40),
   maker VARCHAR(60),
   factory_loc VARCHAR(40),
+  year INTEGER
+);
+CREATE TABLE slide_075_correlated.Purchase (
+  id INTEGER,
+  product VARCHAR(60),
+  buyer VARCHAR(60)
+);
+CREATE TABLE slide_075_correlated.Movie (
+  title VARCHAR(100),
   year INTEGER,
+  director VARCHAR(100),
+  length INTEGER
+);
+
+-- Slides 84 and 87-92: the exact Purchase rows in the aggregation example
+CREATE SCHEMA slide_084_aggregation;
+CREATE TABLE slide_084_aggregation.Purchase (
+  product VARCHAR(60),
+  date DATE,
+  price DECIMAL(10,2),
+  quantity INTEGER
+);
+INSERT INTO slide_084_aggregation.Purchase
+  (product, date, price, quantity)
+VALUES
+  ('bagel', DATE '2005-10-21', 1.00, 20),
+  ('banana', DATE '2005-10-03', 0.50, 10),
+  ('banana', DATE '2005-10-10', 1.00, 10),
+  ('bagel', DATE '2005-10-25', 1.50, 20);
+
+-- Slides 96-98 define these relations but provide no rows.
+CREATE SCHEMA slide_096_authors;
+CREATE TABLE slide_096_authors.Author (
+  login VARCHAR(60) PRIMARY KEY,
+  name VARCHAR(100)
+);
+CREATE TABLE slide_096_authors.Wrote (
+  login VARCHAR(60) REFERENCES slide_096_authors.Author(login),
+  url VARCHAR(240)
+);
+
+-- Slides 101-102 define these relations but provide no rows.
+CREATE SCHEMA slide_101_quantifiers;
+CREATE TABLE slide_101_quantifiers.Company (
+  name VARCHAR(60),
+  city VARCHAR(60)
+);
+CREATE TABLE slide_101_quantifiers.Product (
+  name VARCHAR(60),
+  price DECIMAL(10,2),
   company VARCHAR(60)
 );
 
-INSERT INTO Product
-  (name, price, manufacturer, category, maker, factory_loc, year, company)
-VALUES
-  ('Gizmo',           19.99, 'GizmoWorks',     'Gadgets',  'Gizmo-Works',    'US',    1998, 'GizmoWorks'),
-  ('Powergizmo',      29.99, 'GizmoWorks',     'Gadgets',  'Gizmo-Works',    'US',    2000, 'GizmoWorks'),
-  ('SingleTouch',    149.99, 'Canon',          'Gadgets',  'Canon',          'Japan', 2001, 'Canon'),
-  ('MultiTouch',     203.99, 'Hitachi',        'Gadgets',  'Hitachi',        'Japan', 2003, 'Hitachi'),
-  ('Corolla Model',   95.00, 'Toyota',         'Vehicle',  'Toyota',         'Japan', 2000, 'Toyota'),
-  ('GlobalSensor US', 75.00, 'Global Devices', 'Sensors',  'Global Devices', 'US',    2005, 'Global Devices'),
-  ('GlobalSensor CN', 85.00, 'Global Devices', 'Sensors',  'Global Devices', 'China', 2006, 'Global Devices'),
-  ('SharedWidget',    50.00, 'GizmoWorks',     'Gadgets',  'Gizmo-Works',    'US',    1975, 'GizmoWorks'),
-  ('SharedWidget',    60.00, 'Canon',          'Gadgets',  'Canon',          'Japan', 1976, 'Canon'),
-  ('OldGizmo',         5.00, 'GizmoWorks',     'Archive',  'Gizmo-Works',    'US',    1965, 'GizmoWorks'),
-  ('ClassicGizmo',    10.00, 'GizmoWorks',     'Archive',  'Gizmo-Works',    'US',    1970, 'GizmoWorks'),
-  ('RetroOne',        10.00, 'RetroCo',        'Archive',  'RetroCo',        'US',    1960, 'RetroCo'),
-  ('RetroTwo',        12.00, 'RetroCo',        'Archive',  'RetroCo',        'US',    1970, 'RetroCo'),
-  ('RetroPremium',    30.00, 'RetroCo',        'Archive',  'RetroCo',        'US',    1980, 'RetroCo');
-
-CREATE TABLE Person (
+-- Slides 105-107 show one partial tuple: age=20, height=NULL, weight=200.
+CREATE SCHEMA slide_105_null_logic;
+CREATE TABLE slide_105_null_logic.Person (
   name VARCHAR(60),
   address VARCHAR(120),
   worksfor VARCHAR(60),
@@ -80,156 +205,42 @@ CREATE TABLE Person (
   height DECIMAL(3,1),
   weight INTEGER
 );
+INSERT INTO slide_105_null_logic.Person (age, height, weight)
+VALUES (20, NULL, 200);
 
-INSERT INTO Person (name, address, worksfor, age, height, weight) VALUES
-  ('Amina', '1 College Road', 'GizmoWorks', 20, NULL, 200),
-  ('Ben',   '2 College Road', 'Canon',      30, 5.8, 170),
-  ('Chen',  '3 College Road', 'Hitachi',  NULL, 6.1, 195);
-
-CREATE TABLE Purchase (
-  purchase_id INTEGER GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
-  product VARCHAR(60) NOT NULL,
-  buyer VARCHAR(60),
-  store VARCHAR(60),
-  date DATE NOT NULL,
-  price DECIMAL(10,2) NOT NULL,
-  quantity INTEGER NOT NULL CHECK (quantity > 0)
+-- Slides 112-113: the exact inner- and left-join example rows
+CREATE SCHEMA slide_112_outer_join;
+CREATE TABLE slide_112_outer_join.Product (
+  name VARCHAR(60) PRIMARY KEY,
+  category VARCHAR(40)
 );
-
-INSERT INTO Purchase (product, buyer, store, date, price, quantity) VALUES
-  ('Gizmo',       'Joe Blow', 'Campus Store', DATE '2005-10-02', 19.99, 10),
-  ('Powergizmo',  'Joe Blow', 'Campus Store', DATE '2005-10-03', 29.99, 25),
-  ('SingleTouch', 'Mia Lee',  'Tech Center',  DATE '2005-10-04',149.99,  8),
-  ('Bagel',       'Amina',    'Cafe',         DATE '2005-10-05',  2.50, 20),
-  ('Bagel',       'Ben',      'Cafe',         DATE '2005-10-06',  2.50, 15),
-  ('MultiTouch',  'Chen',     'Tech Center',  DATE '2005-09-28',203.99,  2);
-
-CREATE TABLE R (A INTEGER, B INTEGER);
-CREATE TABLE S (A INTEGER, B INTEGER, C INTEGER);
-CREATE TABLE T (A INTEGER, B INTEGER);
-
-INSERT INTO R VALUES (1,10), (2,20), (3,30), (3,31);
-INSERT INTO S VALUES (10,2,3), (11,3,4), (12,3,5), (1,10,100), (3,30,300);
-INSERT INTO T VALUES (2,20), (3,30), (5,50);
-
-CREATE TABLE Movie (
-  title VARCHAR(100) NOT NULL,
-  year INTEGER NOT NULL,
-  PRIMARY KEY (title, year)
+CREATE TABLE slide_112_outer_join.Purchase (
+  prodName VARCHAR(60) REFERENCES slide_112_outer_join.Product(name),
+  store VARCHAR(60)
 );
+INSERT INTO slide_112_outer_join.Product (name, category) VALUES
+  ('Gizmo', 'gadget'),
+  ('Camera', 'Photo'),
+  ('OneClick', 'Photo');
+INSERT INTO slide_112_outer_join.Purchase (prodName, store) VALUES
+  ('Gizmo', 'Wiz'),
+  ('Camera', 'Ritz'),
+  ('Camera', 'Wiz');
 
-INSERT INTO Movie VALUES
-  ('The Journey', 1998),
-  ('The Journey', 2024),
-  ('Database Days', 2026);
-
-CREATE TABLE Author (
-  login VARCHAR(30) PRIMARY KEY,
-  name VARCHAR(80) NOT NULL
-);
-
-CREATE TABLE Wrote (
-  login VARCHAR(30) REFERENCES Author(login),
-  url VARCHAR(200) NOT NULL,
-  PRIMARY KEY (login, url)
-);
-
-INSERT INTO Author VALUES ('ada', 'Ada Rivera'), ('sam', 'Sam Lee');
-INSERT INTO Wrote
-SELECT 'ada', 'https://example.edu/ada/' || n
-FROM generate_series(1, 12) AS n;
-INSERT INTO Wrote VALUES
-  ('sam', 'https://example.edu/sam/1'),
-  ('sam', 'https://example.edu/sam/2');
-
-CREATE TABLE Students (
-  sid VARCHAR(10) PRIMARY KEY,
-  name VARCHAR(60) NOT NULL,
-  gpa DECIMAL(2,1)
-);
-
-CREATE TABLE Enrolled (
-  student_id VARCHAR(10),
-  cid VARCHAR(10),
-  grade VARCHAR(2),
-  PRIMARY KEY (student_id, cid),
-  FOREIGN KEY (student_id) REFERENCES Students(sid)
-);
-
-INSERT INTO Students VALUES
-  ('101', 'Bob',  3.2),
-  ('123', 'Mary', 3.8);
-
-INSERT INTO Enrolled VALUES
-  ('123', '564', 'A'),
-  ('123', '537', 'A+');
-
-CREATE TABLE TypeExamples (
+-- Slide 124: the four displayed type-choice values
+CREATE SCHEMA slide_124_types;
+CREATE TABLE slide_124_types.TypeExamples (
   price DECIMAL(8,2),
   zip_code VARCHAR(5),
   created_at TIMESTAMP,
   temperature_c DOUBLE PRECISION
 );
-
-INSERT INTO TypeExamples VALUES
+INSERT INTO slide_124_types.TypeExamples
+  (price, zip_code, created_at, temperature_c)
+VALUES
   (19.99, '00501', TIMESTAMP '2026-08-27 10:30:00', 21.8734);
 
-CREATE TABLE Student (
-  student_id VARCHAR(10) PRIMARY KEY,
-  display_name VARCHAR(80) NOT NULL,
-  major VARCHAR(80),
-  directory_opt_in BOOLEAN NOT NULL DEFAULT FALSE
-);
-
-INSERT INTO Student VALUES
-  ('00501', 'Amina Hassan', 'Computer Science', TRUE),
-  ('00502', 'Ben Ortiz',    'Mathematics',      TRUE),
-  ('00503', 'Chen Wu',      'Biology',          FALSE);
-
-CREATE TABLE Event (
-  event_id INTEGER PRIMARY KEY,
-  title VARCHAR(120) NOT NULL,
-  seats_remaining INTEGER NOT NULL CHECK (seats_remaining >= 0)
-);
-
-INSERT INTO Event VALUES
-  (42, 'Database Career Night', 50),
-  (43, 'SQL Practice Workshop', 35),
-  (44, 'Research Poster Forum', 20);
-
--- Teaching junction table: one student can register for many events and one
--- event can have many students. Its varied columns support the data-type lab
--- and later examples on joins, grouping, NULL, windows, indexes, and transactions.
-CREATE TABLE event_registration (
-  registration_id INTEGER PRIMARY KEY,
-  student_id VARCHAR(10) NOT NULL REFERENCES Student(student_id),
-  event_id INTEGER NOT NULL REFERENCES Event(event_id),
-  ticket_price DECIMAL(8,2) NOT NULL CHECK (ticket_price >= 0),
-  registered_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  notes TEXT
-);
-
-INSERT INTO event_registration
-  (registration_id, student_id, event_id, ticket_price, registered_at, notes)
-VALUES
-  (1001, '00501', 42,  19.99, TIMESTAMP '2026-08-01 09:00:00', NULL),
-  (1002, '00502', 42,  24.99, TIMESTAMP '2026-08-01 09:05:00', NULL),
-  (1003, '00503', 42,  24.99, TIMESTAMP '2026-08-02 10:00:00', NULL),
-  (1004, '00501', 43, 250.00, TIMESTAMP '2026-08-03 11:00:00', 'Lab computer requested'),
-  (1005, '00502', 43, 300.00, TIMESTAMP '2026-08-04 12:00:00', NULL),
-  (1006, '00503', 44,   0.00, TIMESTAMP '2026-07-20 13:00:00', NULL);
-
-CREATE TABLE Employee (
-  employee_id INTEGER PRIMARY KEY,
-  manager_id INTEGER REFERENCES Employee(employee_id),
-  employee_name VARCHAR(80) NOT NULL
-);
-
-INSERT INTO Employee VALUES
-  (1, NULL, 'Director'),
-  (2, 1,    'Database Manager'),
-  (3, 1,    'Application Manager'),
-  (4, 2,    'Database Analyst'),
-  (5, 2,    'Data Engineer');
+-- Use the main product/company dataset by default.
+SET search_path TO slide_037_joins;
 
 COMMIT;

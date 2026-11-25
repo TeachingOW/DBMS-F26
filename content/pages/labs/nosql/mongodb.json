@@ -1,0 +1,1177 @@
+{
+  "schemaVersion": 1,
+  "title": "MongoDB Lab",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Course navigation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #e7f3ff; padding: 15px; margin-bottom: 20px; border-radius: 5px;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../mongodb.html"
+              },
+              "children": [
+                "MongoDB presentation"
+              ]
+            },
+            " |\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "SQL presentation"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "header",
+      "children": [
+        "\n    ",
+        {
+          "tag": "div",
+          "children": [
+            "\n      ",
+            {
+              "tag": "h1",
+              "children": [
+                "MongoDB Lab"
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "p",
+              "attrs": {
+                "class": "lead"
+              },
+              "children": [
+                "Build a small shop database in ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "mongosh"
+                  ]
+                },
+                ". Query BSON documents, update nested fields, summarize products, and join orders to the product catalog."
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "section"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "1. Documents and collections"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "MongoDB stores documents in collections. A collection is roughly comparable to a SQL table, a document to a row, and a field to a column. A document can hold scalars, nested documents, and arrays. MongoDB stores these values as BSON, which supports types such as dates and ObjectIds alongside the types familiar from JSON."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "Every document in a regular collection has an ",
+            {
+              "tag": "code",
+              "children": [
+                "_id"
+              ]
+            },
+            " that identifies it. MongoDB supplies an ObjectId when you omit ",
+            {
+              "tag": "code",
+              "children": [
+                "_id"
+              ]
+            },
+            ". This lab uses readable string IDs for products so that you can see exactly what an order references."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "Documents in a collection can have different fields. Here, phones and tablets have a nested ",
+            {
+              "tag": "code",
+              "children": [
+                "specs"
+              ]
+            },
+            " document, while chargers omit it. Applications can enforce required fields and types with ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.mongodb.com/docs/manual/core/schema-validation/"
+              },
+              "children": [
+                "schema validation"
+              ]
+            },
+            "."
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "section"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "2. Connect to MongoDB"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "Use a running local MongoDB server or the Atlas deployment provided for your class. For a local server on the default port, run this command in your system terminal. For Atlas, use the shell command from your deployment’s Connect dialog. See the ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.mongodb.com/docs/mongodb-shell/connect/"
+              },
+              "children": [
+                "mongosh connection guide"
+              ]
+            },
+            " for setup details."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "pre",
+          "attrs": {
+            "id": "code-1"
+          },
+          "children": [
+            "mongosh \"mongodb://127.0.0.1:27017\""
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy",
+            "data-target": "code-1"
+          },
+          "children": [
+            "Copy Commands"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "Run the remaining code blocks inside that same ",
+            {
+              "tag": "code",
+              "children": [
+                "mongosh"
+              ]
+            },
+            " session, in order."
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "section"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "3. Select a practice database"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "Start with an empty database for this lab. The first insert creates the database and collection if they do not exist. To repeat the lab from the beginning, choose a fresh database name in the block below."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "pre",
+          "attrs": {
+            "id": "code-2"
+          },
+          "children": [
+            "db = db.getSiblingDB(\"mongodb_shop_lab\");\nprint(db.getName());"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy",
+            "data-target": "code-2"
+          },
+          "children": [
+            "Copy Commands"
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "section"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "4. Insert documents"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "Use ",
+            {
+              "tag": "code",
+              "children": [
+                "insertOne()"
+              ]
+            },
+            " for one document and ",
+            {
+              "tag": "code",
+              "children": [
+                "insertMany()"
+              ]
+            },
+            " for an array of documents. Each price is numeric, and each ",
+            {
+              "tag": "code",
+              "children": [
+                "tags"
+              ]
+            },
+            " field is an array of strings."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "pre",
+          "attrs": {
+            "id": "code-3"
+          },
+          "children": [
+            "printjson(db.products.insertOne({\n  _id: \"laptop\", name: \"Laptop\", price: 1200, tags: [\"electronics\", \"sale\"]\n}));\n\nprintjson(db.products.insertMany([\n  {\n    _id: \"phone\", name: \"Phone\", price: 800, tags: [\"electronics\", \"sale\"],\n    specs: { color: \"black\", memory: \"128GB\" }\n  },\n  {\n    _id: \"tablet\", name: \"Tablet\", price: 600, tags: [\"electronics\"],\n    specs: { color: \"white\", memory: \"256GB\" }\n  },\n  { _id: \"charger\", name: \"Charger\", price: 40, tags: [\"accessory\"] }\n]));\n\nprint(db.products.countDocuments({})); // 4"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy",
+            "data-target": "code-3"
+          },
+          "children": [
+            "Copy Commands"
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "section"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "5. Filter, project, and sort"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "In ",
+            {
+              "tag": "code",
+              "children": [
+                "find(filter, projection)"
+              ]
+            },
+            ", the filter plays the role of SQL’s ",
+            {
+              "tag": "code",
+              "children": [
+                "WHERE"
+              ]
+            },
+            ". The projection chooses the fields to return, like the SQL ",
+            {
+              "tag": "code",
+              "children": [
+                "SELECT"
+              ]
+            },
+            " list. Set ",
+            {
+              "tag": "code",
+              "children": [
+                "_id: 0"
+              ]
+            },
+            " to omit the ID. ",
+            {
+              "tag": "code",
+              "children": [
+                "find()"
+              ]
+            },
+            " returns a cursor, and ",
+            {
+              "tag": "code",
+              "children": [
+                "toArray()"
+              ]
+            },
+            " collects its results for these small examples."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "pre",
+          "attrs": {
+            "id": "code-4"
+          },
+          "children": [
+            "// Like SELECT name, price FROM products WHERE price > 700 ORDER BY price DESC.\nprintjson(db.products.find(\n  { price: { $gt: 700 } },\n  { _id: 0, name: 1, price: 1 }\n).sort({ price: -1 }).toArray());\n\n// Dot notation reaches the memory field in the specs document.\nprintjson(db.products.findOne(\n  { \"specs.memory\": \"128GB\" },\n  { _id: 0, name: 1 }\n));\n\n// A scalar equality filter on an array checks for a matching element.\nprintjson(db.products.find(\n  { tags: \"sale\" },\n  { _id: 0, name: 1 }\n).sort({ name: 1 }).toArray());"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy",
+            "data-target": "code-4"
+          },
+          "children": [
+            "Copy Commands"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "Expect Laptop and Phone in the first result, Phone in the second, and Laptop and Phone in the third."
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "section"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "6. Update and delete documents"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "code",
+              "children": [
+                "$set"
+              ]
+            },
+            " assigns field values, and ",
+            {
+              "tag": "code",
+              "children": [
+                "$inc"
+              ]
+            },
+            " adds to a numeric field. MongoDB operator names are case sensitive. The dotted path in the first update changes the color while preserving ",
+            {
+              "tag": "code",
+              "children": [
+                "specs.memory"
+              ]
+            },
+            ". Check ",
+            {
+              "tag": "code",
+              "children": [
+                "matchedCount"
+              ]
+            },
+            ", ",
+            {
+              "tag": "code",
+              "children": [
+                "modifiedCount"
+              ]
+            },
+            ", and ",
+            {
+              "tag": "code",
+              "children": [
+                "deletedCount"
+              ]
+            },
+            " in the results."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "pre",
+          "attrs": {
+            "id": "code-5"
+          },
+          "children": [
+            "printjson(db.products.updateOne(\n  { _id: \"phone\" },\n  { $set: { price: 850, \"specs.color\": \"blue\" } }\n));\n\nprintjson(db.products.updateMany(\n  { price: { $lt: 1000 } },\n  { $inc: { price: 50 } }\n));\n\nprintjson(db.products.deleteOne({ _id: \"tablet\" }));\nprintjson(db.products.findOne({ _id: \"phone\" }));"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy",
+            "data-target": "code-5"
+          },
+          "children": [
+            "Copy Commands"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "The first update modifies one document. The second modifies three. The delete removes Tablet. Phone now costs 900 and has blue color and 128GB memory."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "To replace the entire document body, use ",
+            {
+              "tag": "code",
+              "children": [
+                "replaceOne(filter, replacement)"
+              ]
+            },
+            ". An upsert, requested with ",
+            {
+              "tag": "code",
+              "children": [
+                "{ upsert: true }"
+              ]
+            },
+            " on an update or replacement, inserts a document when the filter matches none."
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "section"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "7. Create an index and inspect the query plan"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "An index can help MongoDB locate matching documents or return them in order. A compound index orders its entries by the first field and then by the next field. The example below also creates an index for queries that filter by color and then sort by price."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "pre",
+          "attrs": {
+            "id": "code-6"
+          },
+          "children": [
+            "printjson(db.products.createIndex({ price: 1 }));\nprintjson(db.products.createIndex({ \"specs.color\": 1, price: 1 }));\nprintjson(db.products.getIndexes());\n\nprintjson(db.products.find({ price: { $gt: 700 } })\n  .sort({ price: 1 })\n  .explain(\"executionStats\"));"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy",
+            "data-target": "code-6"
+          },
+          "children": [
+            "Copy Commands"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "Look for ",
+            {
+              "tag": "code",
+              "children": [
+                "IXSCAN"
+              ]
+            },
+            " (index scan) or ",
+            {
+              "tag": "code",
+              "children": [
+                "COLLSCAN"
+              ]
+            },
+            " (collection scan) in the plan. Compare the number of documents examined with the number returned. A dataset this small is useful for reading the plan."
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "section"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "8. Summarize data with an aggregation pipeline"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "A pipeline passes the output of one stage to the next. ",
+            {
+              "tag": "code",
+              "children": [
+                "$match"
+              ]
+            },
+            " filters the input. ",
+            {
+              "tag": "code",
+              "children": [
+                "$group"
+              ]
+            },
+            " combines documents by a key, like SQL’s ",
+            {
+              "tag": "code",
+              "children": [
+                "GROUP BY"
+              ]
+            },
+            ". Use ",
+            {
+              "tag": "code",
+              "children": [
+                "_id: null"
+              ]
+            },
+            " for one group containing every matched document. In a pipeline expression, ",
+            {
+              "tag": "code",
+              "children": [
+                "\"$price\""
+              ]
+            },
+            " refers to the price field."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "pre",
+          "attrs": {
+            "id": "code-7"
+          },
+          "children": [
+            "printjson(db.products.aggregate([\n  { $match: { price: { $gt: 700 } } },\n  {\n    $group: {\n      _id: null,\n      count: { $sum: 1 },\n      avgPrice: { $avg: \"$price\" },\n      maxPrice: { $max: \"$price\" }\n    }\n  }\n]).toArray());\n\n// Emit one document per tag, then count the documents for each tag.\nprintjson(db.products.aggregate([\n  { $unwind: \"$tags\" },\n  { $group: { _id: \"$tags\", count: { $sum: 1 } } },\n  { $sort: { count: -1, _id: 1 } }\n]).toArray());"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy",
+            "data-target": "code-7"
+          },
+          "children": [
+            "Copy Commands"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "The first pipeline returns one group with count 2, average price 1050, and maximum price 1200. The second returns ",
+            {
+              "tag": "code",
+              "children": [
+                "electronics"
+              ]
+            },
+            " and ",
+            {
+              "tag": "code",
+              "children": [
+                "sale"
+              ]
+            },
+            " with count 2 each, then ",
+            {
+              "tag": "code",
+              "children": [
+                "accessory"
+              ]
+            },
+            " with count 1."
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "section"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "9. Embed order details and reference products"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "Embed data you usually read together, such as an order’s line items and customer details at the time of purchase. Reference data that has its own lifecycle, such as products in a shared catalog. Each ",
+            {
+              "tag": "code",
+              "children": [
+                "productId"
+              ]
+            },
+            " below stores the same value and BSON type as the corresponding product’s ",
+            {
+              "tag": "code",
+              "children": [
+                "_id"
+              ]
+            },
+            ". The application is responsible for keeping these references valid."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "pre",
+          "attrs": {
+            "id": "code-8"
+          },
+          "children": [
+            "printjson(db.orders.insertOne({\n  _id: \"order-1001\",\n  customer: { name: \"Alice\", email: \"alice@example.com\" },\n  items: [\n    { productId: \"laptop\", quantity: 2 },\n    { productId: \"phone\", quantity: 1 }\n  ]\n}));"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy",
+            "data-target": "code-8"
+          },
+          "children": [
+            "Copy Commands"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "code",
+              "children": [
+                "$elemMatch"
+              ]
+            },
+            " requires both conditions to hold for the same array element. The Phone line has quantity 1 and the Laptop line has quantity 2. This query returns an empty array."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "pre",
+          "attrs": {
+            "id": "code-9"
+          },
+          "children": [
+            "printjson(db.orders.find({\n  items: { $elemMatch: { productId: \"phone\", quantity: { $gte: 2 } } }\n}).toArray());"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy",
+            "data-target": "code-9"
+          },
+          "children": [
+            "Copy Commands"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "code",
+              "children": [
+                "$lookup"
+              ]
+            },
+            " performs a left outer join and returns the matches in an array. Here ",
+            {
+              "tag": "code",
+              "children": [
+                "$unwind"
+              ]
+            },
+            " first creates one document per line item. The result shows the catalog name and current price for each line. To preserve the price at purchase, store it in the line item when the order is placed."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "pre",
+          "attrs": {
+            "id": "code-10"
+          },
+          "children": [
+            "printjson(db.orders.aggregate([\n  { $match: { _id: \"order-1001\" } },\n  { $unwind: \"$items\" },\n  {\n    $lookup: {\n      from: \"products\",\n      localField: \"items.productId\",\n      foreignField: \"_id\",\n      as: \"product\"\n    }\n  },\n  {\n    $project: {\n      _id: 0,\n      productId: \"$items.productId\",\n      quantity: \"$items.quantity\",\n      product: { name: 1, price: 1 }\n    }\n  },\n  { $sort: { productId: 1 } }\n]).toArray());"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy",
+            "data-target": "code-10"
+          },
+          "children": [
+            "Copy Commands"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "Expect a Laptop line with quantity 2 and catalog price 1200, and a Phone line with quantity 1 and catalog price 900. Each ",
+            {
+              "tag": "code",
+              "children": [
+                "product"
+              ]
+            },
+            " array contains one catalog match."
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "section"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "10. Practice"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "ol",
+          "children": [
+            "\n      ",
+            {
+              "tag": "li",
+              "children": [
+                "Find products that still have a ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "specs"
+                  ]
+                },
+                " field using ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "$exists"
+                  ]
+                },
+                ". Expect only Phone."
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "li",
+              "children": [
+                "Change the ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "$elemMatch"
+                  ]
+                },
+                " example to find an order with at least two laptops. Expect order ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "order-1001"
+                  ]
+                },
+                "."
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "li",
+              "children": [
+                "Change the first aggregation to compute the average price across all remaining products. Expect 730 across three products."
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "li",
+              "children": [
+                "Explain what the join would return for a line item whose product was deleted, and why an order might still need its own price field."
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "section",
+      "attrs": {
+        "class": "section"
+      },
+      "children": [
+        "\n    ",
+        {
+          "tag": "h2",
+          "children": [
+            "11. How MongoDB runs across servers"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "A ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.mongodb.com/docs/manual/replication/"
+              },
+              "children": [
+                "replica set"
+              ]
+            },
+            " keeps copies of the same data on several servers. The primary accepts writes and secondaries copy the changes. If the primary becomes unavailable, an eligible secondary can be elected when a majority can communicate. Reads directed to a secondary can lag behind the primary."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.mongodb.com/docs/manual/sharding/"
+              },
+              "children": [
+                "Sharding"
+              ]
+            },
+            " distributes a collection’s documents across shards using a shard key. Replication gives you redundant copies, while sharding distributes storage and work. A single document write is atomic. MongoDB also supports ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.mongodb.com/docs/manual/core/transactions/"
+              },
+              "children": [
+                "transactions across documents"
+              ]
+            },
+            " on replica sets and sharded clusters."
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    {
+      "tag": "footer",
+      "children": [
+        "\n    ",
+        {
+          "tag": "p",
+          "children": [
+            "Further reading"
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "ul",
+          "children": [
+            "\n      ",
+            {
+              "tag": "li",
+              "children": [
+                "Mohamed Eltabakh, WPI, ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "ref-link",
+                    "href": "https://web.cs.wpi.edu/~cs585/s15/Lectures/W12/MongoDB-1.pdf"
+                  },
+                  "children": [
+                    "MongoDB-1"
+                  ]
+                },
+                ". The lecture introduces BSON, document modeling, and CRUD."
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "li",
+              "children": [
+                "MongoDB Educator Center, ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "ref-link",
+                    "href": "https://www.mongodb.com/academia/courses/mongodb-101-getting-started"
+                  },
+                  "children": [
+                    "MongoDB 101: Getting Started"
+                  ]
+                },
+                ". The teaching slides cover the document model, CRUD, aggregation, indexing, and schema design."
+              ]
+            },
+            "\n      ",
+            {
+              "tag": "li",
+              "children": [
+                "MongoDB Manual, ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "ref-link",
+                    "href": "https://www.mongodb.com/docs/manual/crud/"
+                  },
+                  "children": [
+                    "CRUD operations"
+                  ]
+                },
+                ", ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "ref-link",
+                    "href": "https://www.mongodb.com/docs/manual/data-modeling/"
+                  },
+                  "children": [
+                    "data modeling"
+                  ]
+                },
+                ", and ",
+                {
+                  "tag": "a",
+                  "attrs": {
+                    "class": "ref-link",
+                    "href": "https://www.mongodb.com/docs/manual/tutorial/aggregation-complete-examples/"
+                  },
+                  "children": [
+                    "aggregation examples"
+                  ]
+                },
+                "."
+              ]
+            },
+            "\n    "
+          ]
+        },
+        "\n  "
+      ]
+    },
+    "\n\n  ",
+    "\n\n\n\n",
+    {
+      "tag": "hr",
+      "attrs": {
+        "style": "margin-top: 40px;"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #f0f0f0; padding: 15px; margin-top: 20px; border-radius: 5px; text-align: center;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../mongodb.html"
+              },
+              "children": [
+                "MongoDB presentation"
+              ]
+            },
+            " |\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/GETTING_STARTED.html"
+              },
+              "children": [
+                "🚀 Getting Started"
+              ]
+            },
+            " |\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/SQL_CHEAT_SHEET.html"
+              },
+              "children": [
+                "📝 SQL Cheat Sheet"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n\n\n"
+  ]
+}

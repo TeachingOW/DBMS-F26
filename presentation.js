@@ -18,6 +18,7 @@
   const thumbGrid = document.querySelector('.thumb-grid');
   const help = document.querySelector('.help');
   const labs = document.querySelector('.labs-panel');
+  const questions = document.querySelector('.questions-panel');
   const alignedLabList = document.querySelector('.aligned-lab-list');
   const notesPanel = document.querySelector('.slide-notes');
   const notesNumber = document.querySelector('.slide-notes-number');
@@ -26,30 +27,7 @@
   const notesTakeaway = document.querySelector('.slide-notes-takeaway p');
   const sqlRepro = window.DBMS_SQL_REPRO || {};
   const originalDeck = ((window.DBMS_ORIGINAL_SLIDES && window.DBMS_ORIGINAL_SLIDES[deckKey]) || null);
-  const tableCaptionsBySlide = {
-    9: ['Product'], 10: ['Product'], 11: ['Product'], 12: ['Product'], 13: ['Product'],
-    18: ['Students'],
-    24: ['Product (input)', 'Selection result'],
-    25: ['Product (input)', 'Projection result'],
-    30: ['DISTINCT result', 'Result with duplicates'],
-    34: ['Students', 'Enrolled'],
-    37: ['Company', 'Product'],
-    41: ['Product', 'Company', 'Query result'],
-    45: ['Output', 'Table R', 'R × S (cross product)', 'Table S', 'Rows where R.A = S.B'],
-    50: ['Product', 'Company', 'Query result'],
-    55: ['Multiset X — list form', 'Multiset X — count form'],
-    56: ['Multiset X', 'Multiset Y', 'Intersection result Z'],
-    57: ['Multiset X', 'Multiset Y', 'Union result Z'],
-    64: ['Join result: C ⋈ P'],
-    65: ['Join result: C ⋈ P'],
-    84: ['Purchase'],
-    87: ['FROM and WHERE result'],
-    88: ['Rows before grouping', 'Rows grouped by Product'],
-    89: ['Grouped rows', 'SELECT result'],
-    92: ['Grouped rows', 'HAVING result'],
-    112: ['Product', 'Purchase', 'INNER JOIN result'],
-    113: ['Product', 'Purchase', 'LEFT OUTER JOIN result']
-  };
+  const tableCaptionsBySlide = window.DBMS_TABLE_CAPTIONS || {};
   const slideNotes = ((window.DBMS_SLIDE_NOTES && window.DBMS_SLIDE_NOTES[deckKey]) || {});
   const advancedSlides = ((window.DBMS_ADVANCED_SLIDES && window.DBMS_ADVANCED_SLIDES[deckKey]) || []);
   const activities = [
@@ -98,7 +76,7 @@
   function revealControls() {
     body.classList.remove('controls-hidden');
     clearTimeout(hideTimer);
-    if (!overview.classList.contains('open') && !help.classList.contains('open') && !labs.classList.contains('open')) {
+    if (!overview.classList.contains('open') && !help.classList.contains('open') && !labs.classList.contains('open') && !questions?.classList.contains('open')) {
       hideTimer = setTimeout(() => body.classList.add('controls-hidden'), 2800);
     }
   }
@@ -169,7 +147,8 @@
   }
 
   function appendDatabaseSetup(container) {
-    if (!sqlRepro.setup) return;
+    const fixture = window.DBMS_LAB_SETUP || sqlRepro;
+    if (!fixture.setup) return;
     const details = make('details', 'query-setup');
     details.appendChild(make('summary', '', 'Recreate the database for this query'));
     details.appendChild(make(
@@ -178,15 +157,15 @@
       `Run this reset script in a fresh ${sqlRepro.dialect || 'SQL'} database, then run the example query. Schema-definition labs may intentionally replace one table.`
     ));
     const pre = make('pre');
-    pre.appendChild(make('code', 'language-sql', sqlRepro.setup));
+    pre.appendChild(make('code', 'language-sql', fixture.setup));
     const actions = make('div', 'query-setup-actions');
     const copy = make('button', 'copy-button', 'Copy database setup');
     copy.type = 'button';
-    copy.addEventListener('click', () => copyText(sqlRepro.setup, copy));
+    copy.addEventListener('click', () => copyText(fixture.setup, copy));
     actions.appendChild(copy);
-    if (sqlRepro.setupFile) {
-      const download = make('a', 'lab-resource', 'Download demo-database.sql');
-      download.href = sqlRepro.setupFile;
+    if (fixture.setupFile) {
+      const download = make('a', 'lab-resource', 'Download practice database');
+      download.href = fixture.setupFile;
       download.download = '';
       actions.appendChild(download);
     }
@@ -233,27 +212,80 @@
     const querySamples = [];
     const tableCaptions = tableCaptionsBySlide[number] || [];
     const captionRoots = new Set(tableCaptions.map(caption => caption.split(/\s(?:\(|—|:)/)[0].trim().toLowerCase()));
-    let tableIndex = 0;
-    (sourceSlide?.elements || []).forEach(element => {
+    const sourceElements = sourceSlide?.elements || [];
+    const slideWidth = 12192000;
+    const slideHeight = 6858000;
+    let captionIndex = 0;
+    const tableEntries = sourceElements
+      .map((element, sourceIndex) => {
+        if (element.kind !== 'table' || !element.rows?.length) return null;
+        const entry = { element, sourceIndex, captionIndex };
+        captionIndex += 1;
+        return entry;
+      })
+      .filter(Boolean)
+      .sort((a, b) => (a.element.position?.y || 0) - (b.element.position?.y || 0));
+    const tableRows = [];
+    tableEntries.forEach(entry => {
+      const y = entry.element.position?.y || 0;
+      const currentRow = tableRows[tableRows.length - 1];
+      if (!currentRow || Math.abs(y - currentRow.anchorY) > slideHeight * 0.09) {
+        tableRows.push({ anchorY: y, entries: [entry] });
+      } else {
+        currentRow.entries.push(entry);
+      }
+    });
+    const tableRowBySourceIndex = new Map();
+    tableRows.forEach(row => {
+      row.entries.sort((a, b) => (a.element.position?.x || 0) - (b.element.position?.x || 0));
+      row.firstSourceIndex = Math.min(...row.entries.map(entry => entry.sourceIndex));
+      row.entries.forEach(entry => tableRowBySourceIndex.set(entry.sourceIndex, row));
+    });
+
+    const createSourceTable = entry => {
+      const { element } = entry;
+      const wrap = make('figure', 'source-table-wrap');
+      const caption = tableCaptions[entry.captionIndex] || `Table ${entry.captionIndex + 1}`;
+      wrap.appendChild(make('figcaption', 'source-table-caption', caption));
+      const table = make('table', 'source-table');
+      const thead = document.createElement('thead');
+      const headRow = document.createElement('tr');
+      element.rows[0].forEach(value => headRow.appendChild(make('th', '', value)));
+      thead.appendChild(headRow);
+      const tbody = document.createElement('tbody');
+      element.rows.slice(1).forEach(row => {
+        const tr = document.createElement('tr');
+        row.forEach(value => tr.appendChild(make('td', '', value)));
+        tbody.appendChild(tr);
+      });
+      table.append(thead, tbody);
+      wrap.appendChild(table);
+      const x = element.position?.x || 0;
+      const width = element.position?.w || slideWidth;
+      const start = Math.max(1, Math.min(12, Math.floor((x / slideWidth) * 12) + 1));
+      const minimumReadableSpan = Math.min(6, Math.max(2, (element.rows[0]?.length || 1) + 1));
+      const requestedSpan = Math.max(minimumReadableSpan, Math.round((width / slideWidth) * 12));
+      const span = Math.max(1, Math.min(requestedSpan, 13 - start));
+      wrap.style.gridColumn = `${start} / span ${span}`;
+      return wrap;
+    };
+
+    sourceElements.forEach((element, sourceIndex) => {
       if (element.kind === 'table' && element.rows?.length) {
-        const wrap = make('figure', 'source-table-wrap');
-        const caption = tableCaptions[tableIndex] || `Table ${tableIndex + 1}`;
-        tableIndex += 1;
-        wrap.appendChild(make('figcaption', 'source-table-caption', caption));
-        const table = make('table', 'source-table');
-        const thead = document.createElement('thead');
-        const headRow = document.createElement('tr');
-        element.rows[0].forEach(value => headRow.appendChild(make('th', '', value)));
-        thead.appendChild(headRow);
-        const tbody = document.createElement('tbody');
-        element.rows.slice(1).forEach(row => {
-          const tr = document.createElement('tr');
-          row.forEach(value => tr.appendChild(make('td', '', value)));
-          tbody.appendChild(tr);
+        const row = tableRowBySourceIndex.get(sourceIndex);
+        if (!row || row.firstSourceIndex !== sourceIndex) return;
+        const tableRow = make('div', 'source-table-row');
+        tableRow.dataset.tableCount = String(row.entries.length);
+        if (row.entries.length > 1) {
+          tableRow.classList.add('source-table-row-multi');
+          tableRow.style.gridTemplateColumns = `repeat(${Math.min(row.entries.length, 3)}, minmax(0, 1fr))`;
+        }
+        row.entries.forEach(entry => {
+          const table = createSourceTable(entry);
+          if (row.entries.length > 1) table.style.gridColumn = 'auto';
+          tableRow.appendChild(table);
         });
-        table.append(thead, tbody);
-        wrap.appendChild(table);
-        sourceContent.appendChild(wrap);
+        sourceContent.appendChild(tableRow);
         return;
       }
 
@@ -284,7 +316,16 @@
         });
         sourceContent.appendChild(list);
       } else {
-        const block = make('div', `source-text-block${isTableDefinition ? ' table-definition' : ''}`);
+        const normalizedText = paragraphs
+          .map(paragraph => paragraph.text.trim())
+          .join(' ')
+          .replace(/\s+/g, ' ');
+        const isRequestedCallout =
+          Boolean(window.DBMS_CALLOUTS?.[number]?.includes(normalizedText));
+        const block = make(
+          'div',
+          `source-text-block${isTableDefinition ? ' table-definition' : ''}${isRequestedCallout ? ' source-callout-box' : ''}`
+        );
         paragraphs.forEach(paragraph => {
           const p = make('p', '', paragraph.text);
           if (paragraph.level) p.dataset.level = String(paragraph.level);
@@ -298,8 +339,10 @@
     if (querySamples.length) {
       const actions = make('div', 'source-slide-actions');
       appendGeneralSyntax(actions, { language: 'sql', text: querySamples.join('\n') });
-      const setup = make('a', 'lab-resource', 'Recreate the demo database');
-      setup.href = resourceHref(sqlRepro.setupFile || 'demo-database.sql');
+      const databaseSubset = sqlRepro.databaseSubsetForSlide?.(number);
+      const setup = make('a', 'lab-resource', databaseSubset ? 'Download this slide’s database' : 'Recreate the demo database');
+      setup.href = resourceHref(sqlRepro.setupFileForSlide?.(number) || sqlRepro.setupFile || 'demo-database.sql');
+      if (databaseSubset?.label) setup.title = databaseSubset.label;
       setup.target = '_blank';
       setup.rel = 'noopener';
       actions.appendChild(setup);
@@ -647,6 +690,15 @@
       ? `${current + 1} / ${sequence.length} · Lab`
       : `${current + 1} / ${sequence.length} · Slide ${item.slide}`;
     progress.style.width = `${((current + 1) / sequence.length) * 100}%`;
+    const discussionLabel = item.type === 'slide'
+      ? `Slide ${item.slide}: ${originalDeck?.slides?.[item.slide]?.title || slideNotes[item.slide]?.[0] || title}`
+      : item.type === 'lab'
+        ? `Lab: ${item.activity.title}`
+        : `Advanced slide ${item.slide}: ${item.content.title}`;
+    const discussionHash = item.type === 'lab' ? `lab-${item.activity.id}` : String(item.slide);
+    window.dispatchEvent(new CustomEvent('dbms:slidechange', {
+      detail: { key: item.key, label: discussionLabel, hash: discussionHash }
+    }));
     syncHeadingControls();
     if (updateHash) setHash(item);
     preloadNearby(current);
@@ -659,7 +711,7 @@
   }
 
   function closeOverlays() {
-    [overview, help, labs].forEach(panel => {
+    [overview, help, labs, questions].filter(Boolean).forEach(panel => {
       panel.classList.remove('open');
       panel.setAttribute('aria-hidden', 'true');
     });
@@ -667,6 +719,7 @@
   }
 
   function openOverlay(panel) {
+    if (!panel) return;
     closeOverlays();
     panel.classList.add('open');
     panel.setAttribute('aria-hidden', 'false');
@@ -769,11 +822,12 @@
     if (action === 'prev') showIndex(current - 1);
     if (action === 'overview') toggleOverview();
     if (action === 'labs') openOverlay(labs);
+    if (action === 'questions') openOverlay(questions);
     if (action === 'help') openOverlay(help);
     if (action === 'toggle-notes') toggleNotes();
     if (action === 'toggle-heading') toggleHeading();
     if (action === 'clean-mode') toggleCleanMode();
-    if (action === 'close-overview' || action === 'close-help' || action === 'close-labs') closeOverlays();
+    if (action === 'close-overview' || action === 'close-help' || action === 'close-labs' || action === 'close-questions') closeOverlays();
     if (action === 'fullscreen') {
       if (document.fullscreenElement) document.exitFullscreen();
       else document.documentElement.requestFullscreen?.();
@@ -786,9 +840,9 @@
 
   document.addEventListener('keydown', event => {
     const interactive = event.target.closest('button, a, input, textarea, select, code');
-    if (interactive && event.key.toLowerCase() !== 'h') return;
+    if (interactive) return;
     if (event.key.toLowerCase() === 'h') {
-      const overlayOpen = overview.classList.contains('open') || help.classList.contains('open') || labs.classList.contains('open');
+      const overlayOpen = overview.classList.contains('open') || help.classList.contains('open') || labs.classList.contains('open') || questions?.classList.contains('open');
       if (overlayOpen) return closeOverlays();
       if (body.classList.contains('clean-mode')) return toggleCleanMode(false);
       return closeOverlays();
@@ -796,11 +850,12 @@
     if (event.key === '?') return openOverlay(help);
     if (event.key.toLowerCase() === 'o') return toggleOverview();
     if (event.key.toLowerCase() === 'l') return openOverlay(labs);
+    if (event.key.toLowerCase() === 'q') return openOverlay(questions);
     if (event.key.toLowerCase() === 't' && !headingFixed) return toggleHeading();
     if (event.key.toLowerCase() === 'n' && !nativeMode) return toggleNotes();
     if (event.key.toLowerCase() === 'p') return toggleCleanMode();
     if (event.key.toLowerCase() === 'f') return document.querySelector('[data-action="fullscreen"]').click();
-    if (overview.classList.contains('open') || help.classList.contains('open') || labs.classList.contains('open')) return;
+    if (overview.classList.contains('open') || help.classList.contains('open') || labs.classList.contains('open') || questions?.classList.contains('open')) return;
     if (['ArrowRight', 'PageDown', ' ', 'Enter'].includes(event.key)) { event.preventDefault(); showIndex(current + 1); }
     if (['ArrowLeft', 'PageUp', 'Backspace'].includes(event.key)) { event.preventDefault(); showIndex(current - 1); }
     if (event.key === 'Home') { event.preventDefault(); showIndex(0); }

@@ -1,5 +1,11 @@
-(() => {
-  const slides = window.lectureSlides;
+(async () => {
+  const response = await fetch(window.DBMS_PAGE.deckUrl);
+  if (!response.ok) throw new Error('Reviewed presentation could not load');
+  const deck = await response.json();
+  function text(blocks) { return (blocks || []).flatMap(b => [...(b.paragraphs || []), ...(b.rows || []).map(row => row.join(' | ')), ...text(b.children)]); }
+  const slides = deck.slides.map(s => ({...s, text:text(s.content).join('\n'),
+    width:s.presentation.reference.width, height:s.presentation.reference.height,
+    image:s.presentation.reference.media_src, links:s.website_links || s.source_links || []}));
   const image = document.querySelector('[data-slide]');
   const caption = document.querySelector('[data-caption]');
   const status = document.querySelector('[data-status]');
@@ -13,7 +19,7 @@
 
   number.max = slides.length;
   document.querySelector('[data-total]').textContent = `of ${slides.length}`;
-  const source = index => `slides/${String(index).padStart(3, '0')}.webp`;
+  const source = index => slides[index - 1].image;
 
   function show(index) {
     current = Math.max(1, Math.min(slides.length, index || 1));
@@ -63,4 +69,4 @@
   });
   window.addEventListener('hashchange', fromHash);
   fromHash();
-})();
+})().catch(error => { const status=document.querySelector('[data-status]'); if(status){status.textContent=error.message;status.setAttribute('role','alert');} console.error(error); });

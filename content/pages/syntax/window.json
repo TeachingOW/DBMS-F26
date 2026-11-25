@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "title": "Window functions · SQL Syntax",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "header",
+      "children": [
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "eyebrow"
+          },
+          "children": [
+            "SQL general syntax"
+          ]
+        },
+        {
+          "tag": "h1",
+          "children": [
+            "Window functions"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        "\n    ",
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "lead"
+          },
+          "children": [
+            "Calculate rankings, running values, or group statistics while keeping each detail row."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "General pattern"
+              ]
+            },
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "SELECT\n  detail_columns,\n  window_function(expression) OVER (\n    [PARTITION BY group_column]\n    [ORDER BY sort_column]\n    [ROWS BETWEEN frame_start AND frame_end]\n  ) AS result_name\nFROM table_name;"
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "actions"
+              },
+              "children": [
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "type": "button",
+                    "data-copy": "pattern"
+                  },
+                  "children": [
+                    "Copy general pattern"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "How to read it"
+              ]
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "children": [
+                    "PARTITION BY defines independent groups."
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    "ORDER BY defines the order within each group."
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    "Unlike GROUP BY, a window function does not collapse detail rows."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Example using the course database"
+              ]
+            },
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "SELECT name, category, price,\n       RANK() OVER (PARTITION BY category ORDER BY price DESC) AS price_rank\nFROM Product;"
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "actions"
+              },
+              "children": [
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "type": "button",
+                    "data-copy": "example"
+                  },
+                  "children": [
+                    "Copy example"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "nav",
+          "attrs": {
+            "class": "actions"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../materials.html",
+                "class": "materials-link"
+              },
+              "children": [
+                "Student materials"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "← Return to presentation"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "index.html"
+              },
+              "children": [
+                "All syntax topics"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../demo-database.sql",
+                "download": ""
+              },
+              "children": [
+                "Download demo database"
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "footer",
+          "children": [
+            "Designed for PostgreSQL 16+ and the course demo database."
+          ]
+        }
+      ]
+    }
+  ]
+}

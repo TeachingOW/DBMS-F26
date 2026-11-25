@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "title": "Database application and secure booking lab · DBMS-F26",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html",
+            "class": "materials-link"
+          },
+          "children": [
+            "Student materials"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-plan.html"
+          },
+          "children": [
+            "32-meeting plan"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../lectures/library/index.html"
+          },
+          "children": [
+            "Existing lecture library"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-map.html"
+          },
+          "children": [
+            "Course resources"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        {
+          "tag": "h1",
+          "children": [
+            "Database application and secure booking lab"
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Meetings 27–28. Use Python and PostgreSQL; one programming language is sufficient. Start with ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "booking_app.py"
+              },
+              "children": [
+                "booking_app.py"
+              ]
+            },
+            ", install ",
+            {
+              "tag": "code",
+              "children": [
+                "psycopg[binary]"
+              ]
+            },
+            ", and configure PGHOST, PGPORT, PGDATABASE, and PGUSER using your normal PostgreSQL environment. The starter prompts for PGPASSWORD if it is not set; do not commit credentials. The database must already contain setup.sql."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 27: implement and trace"
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Read the starter and mark the SQL statements, parameter values, transaction boundary, and error paths."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Run ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "python booking_app.py 5 104"
+                  ]
+                },
+                " to book Eli into Graph. Explain the composite-key protection against a repeated request."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Add a read-only list-events command and a cancellation command. For cancellation lock the same event row before changing bookings; all application writers must follow the same locking convention."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Return clear user outcomes for a missing student/event, duplicate booking, and sold-out event. Report success only after commit."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Use parameter binding for all user-supplied values. Explain why identifiers such as column names require a separate allowlist/composition mechanism."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 28: acceptance and concurrency tests"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "Use a fresh fixture or record the rows created by each test. Graph has capacity 1 and starts empty. Remove only your test booking before the last-seat experiment."
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Successful booking: exactly one new row, and the student appears once in the event roster."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Duplicate request: a second identical command returns “already booked” and does not create another row."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Missing student and missing event: clear error and no inserted row."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Quoted names: insert a test student through a parameterized helper using ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "O'Brien"
+                  ]
+                },
+                " and then the literal text ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "' OR '1'='1"
+                  ]
+                },
+                ". Verify exact storage and that unrelated rows are unaffected."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Last seat: run two processes for different students against event 104. One succeeds and one reports full; verify exactly one booking. Explain how the event-row lock serializes these writers at READ COMMITTED."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Rollback: temporarily raise an exception after INSERT but before leaving the transaction context. Verify no booking persists and no success message appears."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Submit:"
+              ]
+            },
+            " application, setup instructions, six-case evidence matrix, and transaction explanation. ",
+            {
+              "tag": "strong",
+              "children": [
+                "Stretch:"
+              ]
+            },
+            " add a unique request ID for idempotent external retries; explain why blindly retrying a committed-but-unacknowledged payment is unsafe."
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Reference: ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://www.psycopg.org/psycopg3/docs/basic/transactions.html"
+              },
+              "children": [
+                "Psycopg transaction contexts"
+              ]
+            },
+            "."
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "This is a classroom concurrency contract: it assumes all booking writers lock the event row and event capacity is not changed concurrently outside that contract. Discuss enforcing the contract with restricted permissions or a stored routine in a production design."
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n"
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "title": "Create a table and insert rows · SQL Syntax",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "header",
+      "children": [
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "eyebrow"
+          },
+          "children": [
+            "SQL general syntax"
+          ]
+        },
+        {
+          "tag": "h1",
+          "children": [
+            "Create a table and insert rows"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        "\n    ",
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "lead"
+          },
+          "children": [
+            "Define a table first, then add one or more rows whose values match its columns and data types."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "General pattern"
+              ]
+            },
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "CREATE TABLE table_name (\n  column_name data_type [constraint],\n  ...\n);\n\nINSERT INTO table_name (column_name, ...)\nVALUES (value, ...), (...);"
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "actions"
+              },
+              "children": [
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "type": "button",
+                    "data-copy": "pattern"
+                  },
+                  "children": [
+                    "Copy general pattern"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "How to read it"
+              ]
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "children": [
+                    "CREATE TABLE names the new relation."
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    "Each column has a data type and optional constraint."
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    "INSERT lists target columns; each VALUES row must align with that list."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Example using the course database"
+              ]
+            },
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "CREATE TABLE Course (\n  course_id INTEGER PRIMARY KEY,\n  title VARCHAR(100) NOT NULL\n);\nINSERT INTO Course (course_id, title)\nVALUES (101, 'Database Systems');"
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "actions"
+              },
+              "children": [
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "type": "button",
+                    "data-copy": "example"
+                  },
+                  "children": [
+                    "Copy example"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "nav",
+          "attrs": {
+            "class": "actions"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../materials.html",
+                "class": "materials-link"
+              },
+              "children": [
+                "Student materials"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "← Return to presentation"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "index.html"
+              },
+              "children": [
+                "All syntax topics"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../demo-database.sql",
+                "download": ""
+              },
+              "children": [
+                "Download demo database"
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "footer",
+          "children": [
+            "Designed for PostgreSQL 16+ and the course demo database."
+          ]
+        }
+      ]
+    }
+  ]
+}

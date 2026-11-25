@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+node_modules/
+work/
+preview/
+.env
+.env.*
+!.env.example
+labs/semester/instructor-guide.html
+labs/semester/programming.sql
+labs/semester/reference-queries.sql
+qa/pipeline-demo/
+qa/pipeline-review/
+*.log
+
+# Authoring tools belong to DBMS-teaching-materials.
+/scripts/
+/qa/
+/content/legacy-overrides/
+/docs/*.md

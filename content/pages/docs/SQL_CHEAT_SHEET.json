@@ -1,0 +1,5289 @@
+{
+  "schemaVersion": 1,
+  "title": "SQL Quick Reference Cheat Sheet",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Course navigation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "h1",
+      "children": [
+        "SQL Quick Reference Cheat Sheet"
+      ],
+      "attrs": {
+        "id": "sql-quick-reference-cheat-sheet"
+      }
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Table of Contents"
+      ],
+      "attrs": {
+        "id": "table-of-contents"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#database-operations"
+              },
+              "children": [
+                "Database Operations"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#table-operations"
+              },
+              "children": [
+                "Table Operations"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#data-manipulation"
+              },
+              "children": [
+                "Data Manipulation"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#querying-data"
+              },
+              "children": [
+                "Querying Data"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#joins"
+              },
+              "children": [
+                "Joins"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#aggregate-functions"
+              },
+              "children": [
+                "Aggregate Functions"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#subqueries"
+              },
+              "children": [
+                "Subqueries"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#string-functions"
+              },
+              "children": [
+                "String Functions"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#date-functions"
+              },
+              "children": [
+                "Date Functions"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#window-functions"
+              },
+              "children": [
+                "Window Functions"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#transactions"
+              },
+              "children": [
+                "Transactions"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#indexes"
+              },
+              "children": [
+                "Indexes"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#views"
+              },
+              "children": [
+                "Views"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#stored-procedures"
+              },
+              "children": [
+                "Stored Procedures"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "#triggers"
+              },
+              "children": [
+                "Triggers"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Database Operations"
+      ],
+      "attrs": {
+        "id": "database-operations"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Create Database"
+      ],
+      "attrs": {
+        "id": "create-database"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "CREATE DATABASE database_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Use Database"
+      ],
+      "attrs": {
+        "id": "use-database"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "USE database_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Show Databases"
+      ],
+      "attrs": {
+        "id": "show-databases"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SHOW DATABASES;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Drop Database"
+      ],
+      "attrs": {
+        "id": "drop-database"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP DATABASE database_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Table Operations"
+      ],
+      "attrs": {
+        "id": "table-operations"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Create Table"
+      ],
+      "attrs": {
+        "id": "create-table"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "CREATE TABLE table_name (\n    column1 datatype PRIMARY KEY,\n    column2 datatype NOT NULL,\n    column3 datatype DEFAULT value,\n    column4 datatype UNIQUE,\n    FOREIGN KEY (column) REFERENCES other_table(column)\n);"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Common Data Types"
+      ],
+      "attrs": {
+        "id": "common-data-types"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Numeric\nINT, BIGINT, SMALLINT, TINYINT\nDECIMAL(p,s), NUMERIC(p,s)\nFLOAT, DOUBLE\n\n-- String\nCHAR(n), VARCHAR(n)\nTEXT, MEDIUMTEXT, LONGTEXT\n\n-- Date/Time\nDATE, TIME, DATETIME, TIMESTAMP\nYEAR\n\n-- Boolean\nBOOLEAN (TINYINT(1))\n\n-- Binary\nBLOB, MEDIUMBLOB, LONGBLOB"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Modify Table"
+      ],
+      "attrs": {
+        "id": "modify-table"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Add column\nALTER TABLE table_name ADD column_name datatype;\n\n-- Drop column\nALTER TABLE table_name DROP COLUMN column_name;\n\n-- Modify column\nALTER TABLE table_name MODIFY COLUMN column_name new_datatype;\n\n-- Rename column\nALTER TABLE table_name RENAME COLUMN old_name TO new_name;\n\n-- Rename table\nALTER TABLE old_table_name RENAME TO new_table_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Drop Table"
+      ],
+      "attrs": {
+        "id": "drop-table"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP TABLE table_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Show Tables"
+      ],
+      "attrs": {
+        "id": "show-tables"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SHOW TABLES;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Describe Table"
+      ],
+      "attrs": {
+        "id": "describe-table"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DESCRIBE table_name;\n-- or\nSHOW COLUMNS FROM table_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Data Manipulation"
+      ],
+      "attrs": {
+        "id": "data-manipulation"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "INSERT - Add new rows"
+      ],
+      "attrs": {
+        "id": "insert---add-new-rows"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Insert single row\nINSERT INTO table_name (column1, column2, column3)\nVALUES (value1, value2, value3);\n\n-- Insert multiple rows\nINSERT INTO table_name (column1, column2, column3)\nVALUES \n    (value1a, value2a, value3a),\n    (value1b, value2b, value3b),\n    (value1c, value2c, value3c);\n\n-- Insert from another table\nINSERT INTO table_name (column1, column2)\nSELECT column1, column2 FROM other_table\nWHERE condition;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "UPDATE - Modify existing rows"
+      ],
+      "attrs": {
+        "id": "update---modify-existing-rows"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "UPDATE table_name\nSET column1 = value1, column2 = value2\nWHERE condition;\n\n-- Update with calculation\nUPDATE table_name\nSET price = price * 1.1\nWHERE category = 'electronics';"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "DELETE - Remove rows"
+      ],
+      "attrs": {
+        "id": "delete---remove-rows"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DELETE FROM table_name\nWHERE condition;\n\n-- Delete all rows (but keep table structure)\nDELETE FROM table_name;\n\n-- Faster delete (cannot be rolled back)\nTRUNCATE TABLE table_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Querying Data"
+      ],
+      "attrs": {
+        "id": "querying-data"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Basic SELECT"
+      ],
+      "attrs": {
+        "id": "basic-select"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Select all columns\nSELECT * FROM table_name;\n\n-- Select specific columns\nSELECT column1, column2 FROM table_name;\n\n-- Select with alias\nSELECT column1 AS alias1, column2 AS alias2\nFROM table_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "WHERE Clause"
+      ],
+      "attrs": {
+        "id": "where-clause"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT * FROM table_name\nWHERE condition;\n\n-- Operators: =, !=, <, >, <=, >=, <>, BETWEEN, LIKE, IN, IS NULL"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "WHERE Examples"
+      ],
+      "attrs": {
+        "id": "where-examples"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Equality\nWHERE age = 25\n\n-- Comparison\nWHERE salary > 50000\n\n-- Range\nWHERE age BETWEEN 18 AND 65\n\n-- Pattern matching\nWHERE name LIKE 'J%'        -- Starts with J\nWHERE name LIKE '%son'      -- Ends with son\nWHERE name LIKE '%a%'       -- Contains a\nWHERE name LIKE '_a%'       -- Second char is a\n\n-- Multiple values\nWHERE country IN ('USA', 'Canada', 'Mexico')\n\n-- NULL checking\nWHERE email IS NULL\nWHERE email IS NOT NULL\n\n-- Logical operators\nWHERE age > 18 AND country = 'USA'\nWHERE city = 'NYC' OR city = 'LA'\nWHERE NOT (age < 18)"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "ORDER BY"
+      ],
+      "attrs": {
+        "id": "order-by"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Ascending (default)\nSELECT * FROM table_name\nORDER BY column1;\n\n-- Descending\nSELECT * FROM table_name\nORDER BY column1 DESC;\n\n-- Multiple columns\nSELECT * FROM table_name\nORDER BY column1 ASC, column2 DESC;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "LIMIT"
+      ],
+      "attrs": {
+        "id": "limit"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Limit number of rows\nSELECT * FROM table_name\nLIMIT 10;\n\n-- Offset and limit (skip first 10, get next 20)\nSELECT * FROM table_name\nLIMIT 10, 20;\n-- or\nSELECT * FROM table_name\nLIMIT 20 OFFSET 10;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "DISTINCT"
+      ],
+      "attrs": {
+        "id": "distinct"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Get unique values\nSELECT DISTINCT column1 FROM table_name;\n\n-- Unique combinations\nSELECT DISTINCT column1, column2 FROM table_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Joins"
+      ],
+      "attrs": {
+        "id": "joins"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "INNER JOIN"
+      ],
+      "attrs": {
+        "id": "inner-join"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT t1.column1, t2.column2\nFROM table1 t1\nINNER JOIN table2 t2 ON t1.id = t2.foreign_id;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "LEFT JOIN (LEFT OUTER JOIN)"
+      ],
+      "attrs": {
+        "id": "left-join-left-outer-join"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT t1.column1, t2.column2\nFROM table1 t1\nLEFT JOIN table2 t2 ON t1.id = t2.foreign_id;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "RIGHT JOIN (RIGHT OUTER JOIN)"
+      ],
+      "attrs": {
+        "id": "right-join-right-outer-join"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT t1.column1, t2.column2\nFROM table1 t1\nRIGHT JOIN table2 t2 ON t1.id = t2.foreign_id;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "FULL OUTER JOIN (MySQL workaround)"
+      ],
+      "attrs": {
+        "id": "full-outer-join-mysql-workaround"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT * FROM table1\nLEFT JOIN table2 ON table1.id = table2.id\nUNION\nSELECT * FROM table1\nRIGHT JOIN table2 ON table1.id = table2.id;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "CROSS JOIN"
+      ],
+      "attrs": {
+        "id": "cross-join"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT * FROM table1\nCROSS JOIN table2;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "SELF JOIN"
+      ],
+      "attrs": {
+        "id": "self-join"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT e1.name AS employee, e2.name AS manager\nFROM employees e1\nINNER JOIN employees e2 ON e1.manager_id = e2.id;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Aggregate Functions"
+      ],
+      "attrs": {
+        "id": "aggregate-functions"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Basic Aggregates"
+      ],
+      "attrs": {
+        "id": "basic-aggregates"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Count rows\nSELECT COUNT(*) FROM table_name;\nSELECT COUNT(column) FROM table_name;\nSELECT COUNT(DISTINCT column) FROM table_name;\n\n-- Sum values\nSELECT SUM(column) FROM table_name;\n\n-- Average\nSELECT AVG(column) FROM table_name;\n\n-- Minimum and Maximum\nSELECT MIN(column) FROM table_name;\nSELECT MAX(column) FROM table_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "GROUP BY"
+      ],
+      "attrs": {
+        "id": "group-by"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT column1, COUNT(*), AVG(column2)\nFROM table_name\nGROUP BY column1;\n\n-- Multiple grouping columns\nSELECT column1, column2, SUM(column3)\nFROM table_name\nGROUP BY column1, column2;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "HAVING"
+      ],
+      "attrs": {
+        "id": "having"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Filter groups (use after GROUP BY)\nSELECT column1, COUNT(*) as count\nFROM table_name\nGROUP BY column1\nHAVING COUNT(*) > 10;\n\n-- HAVING with multiple conditions\nSELECT category, AVG(price) as avg_price\nFROM products\nGROUP BY category\nHAVING AVG(price) > 100 AND COUNT(*) >= 5;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Subqueries"
+      ],
+      "attrs": {
+        "id": "subqueries"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Subquery in WHERE"
+      ],
+      "attrs": {
+        "id": "subquery-in-where"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT * FROM employees\nWHERE salary > (SELECT AVG(salary) FROM employees);"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Subquery with IN"
+      ],
+      "attrs": {
+        "id": "subquery-with-in"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT * FROM employees\nWHERE department_id IN (\n    SELECT id FROM departments WHERE location = 'NY'\n);"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Subquery in FROM (Derived Table)"
+      ],
+      "attrs": {
+        "id": "subquery-in-from-derived-table"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT dept_name, avg_salary\nFROM (\n    SELECT department_id, AVG(salary) as avg_salary\n    FROM employees\n    GROUP BY department_id\n) AS dept_avg\nJOIN departments ON dept_avg.department_id = departments.id;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Correlated Subquery"
+      ],
+      "attrs": {
+        "id": "correlated-subquery"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT e1.name, e1.salary\nFROM employees e1\nWHERE salary > (\n    SELECT AVG(salary)\n    FROM employees e2\n    WHERE e2.department_id = e1.department_id\n);"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "EXISTS"
+      ],
+      "attrs": {
+        "id": "exists"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT * FROM customers c\nWHERE EXISTS (\n    SELECT 1 FROM orders o\n    WHERE o.customer_id = c.id\n);"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "String Functions"
+      ],
+      "attrs": {
+        "id": "string-functions"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Concatenation\nSELECT CONCAT(first_name, ' ', last_name) AS full_name FROM users;\n\n-- Length\nSELECT LENGTH(column) FROM table_name;\n\n-- Substring\nSELECT SUBSTRING(column, start, length) FROM table_name;\nSELECT LEFT(column, n) FROM table_name;\nSELECT RIGHT(column, n) FROM table_name;\n\n-- Case conversion\nSELECT UPPER(column) FROM table_name;\nSELECT LOWER(column) FROM table_name;\n\n-- Trim whitespace\nSELECT TRIM(column) FROM table_name;\nSELECT LTRIM(column) FROM table_name;\nSELECT RTRIM(column) FROM table_name;\n\n-- Replace\nSELECT REPLACE(column, 'old', 'new') FROM table_name;\n\n-- Position\nSELECT POSITION('substring' IN column) FROM table_name;\nSELECT LOCATE('substring', column) FROM table_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Date Functions"
+      ],
+      "attrs": {
+        "id": "date-functions"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Current date/time\nSELECT NOW();           -- Current datetime\nSELECT CURDATE();       -- Current date\nSELECT CURTIME();       -- Current time\n\n-- Extract parts\nSELECT YEAR(date_column) FROM table_name;\nSELECT MONTH(date_column) FROM table_name;\nSELECT DAY(date_column) FROM table_name;\nSELECT HOUR(datetime_column) FROM table_name;\n\n-- Date arithmetic\nSELECT DATE_ADD(date_column, INTERVAL 7 DAY) FROM table_name;\nSELECT DATE_SUB(date_column, INTERVAL 1 MONTH) FROM table_name;\n\n-- Date difference\nSELECT DATEDIFF(date1, date2) FROM table_name;\nSELECT TIMESTAMPDIFF(MINUTE, datetime1, datetime2) FROM table_name;\n\n-- Format date\nSELECT DATE_FORMAT(date_column, '%Y-%m-%d') FROM table_name;\nSELECT DATE_FORMAT(datetime_column, '%W, %M %d, %Y %H:%i:%s') FROM table_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Window Functions"
+      ],
+      "attrs": {
+        "id": "window-functions"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "ROW_NUMBER"
+      ],
+      "attrs": {
+        "id": "row_number"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT \n    name,\n    salary,\n    ROW_NUMBER() OVER (ORDER BY salary DESC) as row_num\nFROM employees;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "RANK and DENSE_RANK"
+      ],
+      "attrs": {
+        "id": "rank-and-dense_rank"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT \n    name,\n    score,\n    RANK() OVER (ORDER BY score DESC) as rank,\n    DENSE_RANK() OVER (ORDER BY score DESC) as dense_rank\nFROM students;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "PARTITION BY"
+      ],
+      "attrs": {
+        "id": "partition-by"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT \n    department,\n    name,\n    salary,\n    ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) as dept_rank\nFROM employees;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Aggregate Window Functions"
+      ],
+      "attrs": {
+        "id": "aggregate-window-functions"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT \n    name,\n    salary,\n    AVG(salary) OVER (PARTITION BY department) as dept_avg_salary,\n    salary - AVG(salary) OVER (PARTITION BY department) as diff_from_avg\nFROM employees;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "LEAD and LAG"
+      ],
+      "attrs": {
+        "id": "lead-and-lag"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT \n    date,\n    revenue,\n    LAG(revenue, 1) OVER (ORDER BY date) as prev_day_revenue,\n    LEAD(revenue, 1) OVER (ORDER BY date) as next_day_revenue\nFROM daily_sales;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Transactions"
+      ],
+      "attrs": {
+        "id": "transactions"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Start transaction\nSTART TRANSACTION;\n-- or\nBEGIN;\n\n-- Execute queries\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\n\n-- Commit changes\nCOMMIT;\n\n-- Or rollback if error\nROLLBACK;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Transaction with Savepoint"
+      ],
+      "attrs": {
+        "id": "transaction-with-savepoint"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "START TRANSACTION;\n\nUPDATE accounts SET balance = balance - 100 WHERE id = 1;\nSAVEPOINT sp1;\n\nUPDATE accounts SET balance = balance + 100 WHERE id = 2;\nSAVEPOINT sp2;\n\n-- Rollback to savepoint\nROLLBACK TO sp1;\n\nCOMMIT;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Indexes"
+      ],
+      "attrs": {
+        "id": "indexes"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Create Index"
+      ],
+      "attrs": {
+        "id": "create-index"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Single column index\nCREATE INDEX idx_name ON table_name (column);\n\n-- Multiple column index\nCREATE INDEX idx_name ON table_name (column1, column2);\n\n-- Unique index\nCREATE UNIQUE INDEX idx_name ON table_name (column);"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Drop Index"
+      ],
+      "attrs": {
+        "id": "drop-index"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP INDEX idx_name ON table_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Show Indexes"
+      ],
+      "attrs": {
+        "id": "show-indexes"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SHOW INDEX FROM table_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Views"
+      ],
+      "attrs": {
+        "id": "views"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Create View"
+      ],
+      "attrs": {
+        "id": "create-view"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "CREATE VIEW view_name AS\nSELECT column1, column2\nFROM table_name\nWHERE condition;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Use View"
+      ],
+      "attrs": {
+        "id": "use-view"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT * FROM view_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Update View"
+      ],
+      "attrs": {
+        "id": "update-view"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "CREATE OR REPLACE VIEW view_name AS\nSELECT new_columns\nFROM table_name\nWHERE new_condition;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Drop View"
+      ],
+      "attrs": {
+        "id": "drop-view"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP VIEW view_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Stored Procedures"
+      ],
+      "attrs": {
+        "id": "stored-procedures"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Create Procedure"
+      ],
+      "attrs": {
+        "id": "create-procedure"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DELIMITER //\nCREATE PROCEDURE procedure_name(IN param1 INT, OUT param2 VARCHAR(100))\nBEGIN\n    -- SQL statements\n    SELECT column INTO param2\n    FROM table_name\n    WHERE id = param1;\nEND //\nDELIMITER ;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Call Procedure"
+      ],
+      "attrs": {
+        "id": "call-procedure"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "CALL procedure_name(value1, @result);\nSELECT @result;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Drop Procedure"
+      ],
+      "attrs": {
+        "id": "drop-procedure"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP PROCEDURE procedure_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Triggers"
+      ],
+      "attrs": {
+        "id": "triggers"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Create Trigger"
+      ],
+      "attrs": {
+        "id": "create-trigger"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DELIMITER //\nCREATE TRIGGER trigger_name\nBEFORE INSERT ON table_name\nFOR EACH ROW\nBEGIN\n    -- Trigger logic\n    SET NEW.created_at = NOW();\nEND //\nDELIMITER ;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Trigger Types"
+      ],
+      "attrs": {
+        "id": "trigger-types"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "code",
+              "children": [
+                "BEFORE INSERT"
+              ]
+            },
+            ", ",
+            {
+              "tag": "code",
+              "children": [
+                "AFTER INSERT"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "code",
+              "children": [
+                "BEFORE UPDATE"
+              ]
+            },
+            ", ",
+            {
+              "tag": "code",
+              "children": [
+                "AFTER UPDATE"
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "code",
+              "children": [
+                "BEFORE DELETE"
+              ]
+            },
+            ", ",
+            {
+              "tag": "code",
+              "children": [
+                "AFTER DELETE"
+              ]
+            }
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Drop Trigger"
+      ],
+      "attrs": {
+        "id": "drop-trigger"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP TRIGGER trigger_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "CASE Expression"
+      ],
+      "attrs": {
+        "id": "case-expression"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Simple CASE"
+      ],
+      "attrs": {
+        "id": "simple-case"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT \n    name,\n    CASE grade\n        WHEN 'A' THEN 'Excellent'\n        WHEN 'B' THEN 'Good'\n        WHEN 'C' THEN 'Average'\n        ELSE 'Needs Improvement'\n    END AS performance\nFROM students;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Searched CASE"
+      ],
+      "attrs": {
+        "id": "searched-case"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT \n    name,\n    salary,\n    CASE\n        WHEN salary > 100000 THEN 'High'\n        WHEN salary > 50000 THEN 'Medium'\n        ELSE 'Low'\n    END AS salary_range\nFROM employees;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Set Operations"
+      ],
+      "attrs": {
+        "id": "set-operations"
+      }
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "UNION"
+      ],
+      "attrs": {
+        "id": "union"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "-- Combine results, remove duplicates\nSELECT column FROM table1\nUNION\nSELECT column FROM table2;\n\n-- Keep duplicates\nSELECT column FROM table1\nUNION ALL\nSELECT column FROM table2;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "INTERSECT (MySQL 8.0+)"
+      ],
+      "attrs": {
+        "id": "intersect-mysql-80"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT column FROM table1\nINTERSECT\nSELECT column FROM table2;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "EXCEPT (MySQL workaround)"
+      ],
+      "attrs": {
+        "id": "except-mysql-workaround"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "SELECT column FROM table1\nWHERE column NOT IN (SELECT column FROM table2);"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Common Table Expressions (CTEs)"
+      ],
+      "attrs": {
+        "id": "common-table-expressions-ctes"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "WITH cte_name AS (\n    SELECT column1, column2\n    FROM table_name\n    WHERE condition\n)\nSELECT * FROM cte_name\nWHERE another_condition;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Recursive CTE"
+      ],
+      "attrs": {
+        "id": "recursive-cte"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "WITH RECURSIVE cte_name AS (\n    -- Base case\n    SELECT id, name, parent_id, 1 as level\n    FROM table_name\n    WHERE parent_id IS NULL\n    \n    UNION ALL\n    \n    -- Recursive case\n    SELECT t.id, t.name, t.parent_id, c.level + 1\n    FROM table_name t\n    JOIN cte_name c ON t.parent_id = c.id\n)\nSELECT * FROM cte_name;"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Best Practices"
+      ],
+      "attrs": {
+        "id": "best-practices"
+      }
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Use appropriate data types"
+              ]
+            },
+            " - Choose the smallest type that fits your data"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Index strategically"
+              ]
+            },
+            " - Index columns used in WHERE, JOIN, ORDER BY"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Avoid SELECT "
+              ]
+            },
+            "* - Specify only needed columns"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Use LIMIT"
+              ]
+            },
+            " - When you don't need all rows"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Use transactions"
+              ]
+            },
+            " - For multiple related updates"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Normalize your database"
+              ]
+            },
+            " - Reduce redundancy"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Use meaningful names"
+              ]
+            },
+            " - For tables, columns, and constraints"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Comment complex queries"
+              ]
+            },
+            " - Explain non-obvious logic"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Test with small datasets first"
+              ]
+            },
+            " - Before running on production data"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Back up before major changes"
+              ]
+            },
+            " - Always have a recovery plan"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Performance Tips"
+      ],
+      "attrs": {
+        "id": "performance-tips"
+      }
+    },
+    "\n",
+    {
+      "tag": "ul",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Use indexes"
+              ]
+            },
+            " on columns in WHERE, JOIN, ORDER BY clauses"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Avoid functions in WHERE"
+              ]
+            },
+            " - They prevent index usage"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Use EXPLAIN"
+              ]
+            },
+            " to analyze query performance"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Limit returned rows"
+              ]
+            },
+            " with WHERE and LIMIT"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Use EXISTS instead of IN"
+              ]
+            },
+            " for large subqueries"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Avoid wildcard at start"
+              ]
+            },
+            " of LIKE pattern (",
+            {
+              "tag": "code",
+              "children": [
+                "%abc"
+              ]
+            },
+            " prevents index use)"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Use appropriate JOIN types"
+              ]
+            },
+            " - Don't use LEFT JOIN when INNER JOIN suffices"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Batch operations"
+              ]
+            },
+            " instead of row-by-row updates"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Optimize subqueries"
+              ]
+            },
+            " - Consider using JOINs or EXISTS"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Keep statistics updated"
+              ]
+            },
+            " - Run ANALYZE TABLE regularly"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "hr"
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        {
+          "tag": "strong",
+          "children": [
+            "For more details, visit the ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "https://dev.mysql.com/doc/"
+              },
+              "children": [
+                "MySQL Documentation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "\n\n"
+  ]
+}

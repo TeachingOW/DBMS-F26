@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "title": "CREATE VIEW · SQL Syntax",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "header",
+      "children": [
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "eyebrow"
+          },
+          "children": [
+            "SQL general syntax"
+          ]
+        },
+        {
+          "tag": "h1",
+          "children": [
+            "CREATE VIEW"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        "\n    ",
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "lead"
+          },
+          "children": [
+            "Save a query under a reusable virtual-table name."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "General pattern"
+              ]
+            },
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "CREATE VIEW view_name AS\nSELECT column_list\nFROM table_name\n[JOIN ...]\n[WHERE condition]\n[GROUP BY column_list];\n\nSELECT * FROM view_name;"
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "actions"
+              },
+              "children": [
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "type": "button",
+                    "data-copy": "pattern"
+                  },
+                  "children": [
+                    "Copy general pattern"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "How to read it"
+              ]
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "children": [
+                    "The view stores a query definition, not a separate copy of its result."
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    "Applications can query the view like a table."
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    "Base-table changes appear when the view is queried again."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Example using the course database"
+              ]
+            },
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "CREATE VIEW affordable_products AS\nSELECT name, price\nFROM Product\nWHERE price < 100;\n\nSELECT * FROM affordable_products;"
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "actions"
+              },
+              "children": [
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "type": "button",
+                    "data-copy": "example"
+                  },
+                  "children": [
+                    "Copy example"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "nav",
+          "attrs": {
+            "class": "actions"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../materials.html",
+                "class": "materials-link"
+              },
+              "children": [
+                "Student materials"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "← Return to presentation"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "index.html"
+              },
+              "children": [
+                "All syntax topics"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../demo-database.sql",
+                "download": ""
+              },
+              "children": [
+                "Download demo database"
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "footer",
+          "children": [
+            "Designed for PostgreSQL 16+ and the course demo database."
+          ]
+        }
+      ]
+    }
+  ]
+}

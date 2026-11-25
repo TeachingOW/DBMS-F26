@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "title": "Document models and distributed-system decisions · DBMS-F26",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html",
+            "class": "materials-link"
+          },
+          "children": [
+            "Student materials"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-plan.html"
+          },
+          "children": [
+            "32-meeting plan"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../lectures/library/index.html"
+          },
+          "children": [
+            "Existing lecture library"
+          ]
+        },
+        " · ",
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../course-map.html"
+          },
+          "children": [
+            "Course resources"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        {
+          "tag": "h1",
+          "children": [
+            "Document models and distributed-system decisions"
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            "Meetings 29–30. Build on the existing ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../nosql/mongodb.html"
+              },
+              "children": [
+                "MongoDB shop lab"
+              ]
+            },
+            " and MongoDB lecture. Distribution is a short application of existing material, not a new cluster-administration unit."
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 29: modeling and queries"
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                "Complete the shop dataset setup and CRUD exercises in the existing lab."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Model an order and its line items once with embedding and once with references. State what happens if a product price changes after checkout."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Write a filter for completed orders and an aggregation by customer using the lab’s actual field names."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Map an order/customer/product relationship back to relational tables. Compare join needs, validation, update frequency, and bounded versus unbounded arrays."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                "Explain why “schema flexible” does not mean the application has no schema."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "h2",
+          "children": [
+            "Meeting 30: scenarios (100 minutes)"
+          ]
+        },
+        {
+          "tag": "p",
+          "children": [
+            "10 review, 15 worked replica-lag example, 60 small-group decisions, 15 defense."
+          ]
+        },
+        {
+          "tag": "ol",
+          "children": [
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Replica lag:"
+                  ]
+                },
+                " a customer changes an address on the primary at 10:00:00, then reads from a replica two seconds behind. Predict the result and propose read-your-writes behavior."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Last ticket during a partition:"
+                  ]
+                },
+                " two regions each believe one ticket remains and cannot communicate. Compare accepting both requests, rejecting/deferring one region, and reserving disjoint inventory in advance. State the invariant and cost of each choice."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Catalog versus checkout:"
+                  ]
+                },
+                " stale catalog descriptions may be tolerated, but charging twice is not. Specify different consistency/idempotency needs for the two operations."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Analytics:"
+                  ]
+                },
+                " explain why a reporting replica or warehouse can reduce transactional load and what freshness tradeoff follows."
+              ]
+            },
+            {
+              "tag": "li",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "CAP precision:"
+                  ]
+                },
+                " during a network partition, explain the conflict between linearizable consistency and responding to every request. Do not describe CAP as an unconditional “pick any two” menu."
+              ]
+            }
+          ]
+        },
+        "\n",
+        {
+          "tag": "p",
+          "children": [
+            {
+              "tag": "strong",
+              "children": [
+                "Submit:"
+              ]
+            },
+            " a two-page decision memo with assumptions, failure outcomes, and reconciliation rules. ",
+            {
+              "tag": "strong",
+              "children": [
+                "Stretch:"
+              ]
+            },
+            " sketch a two-phase-commit coordinator failure and explain blocking without implementing a cluster."
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n"
+  ]
+}

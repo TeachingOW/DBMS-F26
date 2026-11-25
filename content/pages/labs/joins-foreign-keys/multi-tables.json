@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "title": "Multi Table Queries",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Course navigation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #e7f3ff; padding: 15px; margin-bottom: 20px; border-radius: 5px;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h3",
+      "children": [
+        "Multi Table Queries"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "CREATE TABLE company (\n    cname VARCHAR(20) PRIMARY KEY, -- company name uniquely identifies the company.\n    stockprice DECIMAL(10,2), -- stock price IS IN money \n    country VARCHAR(10)); -- country IS just a string\nINSERT INTO company VALUES ('GizmoWorks', 25.0, 'USA');\nINSERT INTO company VALUES ('Canon', 65.0, 'Japan');\nINSERT INTO company VALUES ('Hitachi', 15.0, 'Japan');\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Another Example"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP TABLE IF EXISTS product; \nDROP TABLE IF EXISTS company;\n\nCREATE TABLE company (\n    cname VARCHAR(20) PRIMARY KEY, -- company name uniquely identifies the company.\n    stockprice DECIMAL(10,2), -- stock price IS IN money \n    country VARCHAR(10)); -- country IS just a string\nINSERT INTO company VALUES ('ToyWorks', 25.0, 'USA');\nINSERT INTO company VALUES ('ToyFriends', 65.0, 'China');\nINSERT INTO company VALUES ('ToyCo', 15.0, 'China');\n\nCREATE TABLE product(\n       pname VARCHAR(10), -- name of the product\n       price DECIMAL(10,2), -- price of the product\n       category VARCHAR(10), -- category\n       manufacturer VARCHAR(10), -- manufacturer\n       PRIMARY KEY (pname, manufacturer),\n       FOREIGN KEY (manufacturer) REFERENCES company(cname));\nINSERT INTO product VALUES('Pikachu', 19.99, 'Toy', 'ToyWorks');\nINSERT INTO product VALUES('Pikachu', 19.99, 'Toy', 'ToyFriends');\nINSERT INTO product VALUES('Pokeball', 29.99, 'Electronic', 'ToyCo');\nINSERT INTO product VALUES('Bulbasaur', 149.99, 'Toy', 'ToyFriends');\nINSERT INTO product VALUES('Charizard', 203.99, 'Toy', 'ToyCo');\nINSERT INTO product VALUES('PokeCamera', 19.99, 'Electronic', 'ToyWorks');\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Our goal is to answer the following question:\nFind all categories of products that are made by Chinese companies"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "In Class Exerices"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP TABLE IF EXISTS Movies;\nCREATE TABLE Movies(title VARCHAR(50), YEAR INT, director VARCHAR(50), LENGTH INT);\nINSERT INTO Movies VALUES('DATABASE Wars', 1967, 'John Joe', 123);\nINSERT INTO Movies VALUES('The Databaser', 1992, 'John Bob', 190);\nINSERT INTO Movies VALUES('DATABASE Wars', 1998, 'John Jim', 176);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Exercise"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Can you write the movie query from lecture as a single SFW query?"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Recall that we are trying to find all movie titles that were used for more than one movie, and our schema for the movies table is:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "children": [
+                "title VARCHAR(50)\nYEAR INT\ndirector VARCHAR(50)\nLENGTH INT\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Let's try to write the nested query that solves this from lecture:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "use ANY to write it."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "use join to write it."
+      ]
+    },
+    "\n",
+    {
+      "tag": "h1",
+      "children": [
+        "Another example"
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "class": "code-block-wrapper"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "pre",
+          "children": [
+            {
+              "tag": "code",
+              "attrs": {
+                "class": "language-sql"
+              },
+              "children": [
+                "DROP TABLE IF EXISTS Movies;\nCREATE TABLE Movies(title VARCHAR(50), YEAR INT, director VARCHAR(50), LENGTH INT);\nINSERT INTO Movies VALUES('DATABASE Wars', 1967, 'John Joe', 123);\nINSERT INTO Movies VALUES('The Databaser', 1992, 'John Bob', 190);\nINSERT INTO Movies VALUES('DATABASE Wars', 1998, 'John Jim', 176);\n"
+              ]
+            }
+          ]
+        },
+        "\n  ",
+        {
+          "tag": "button",
+          "attrs": {
+            "class": "copy-button",
+            "title": "Copy code",
+            "data-copy-code": ""
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "svg",
+              "attrs": {
+                "width": "16",
+                "height": "16",
+                "viewBox": "0 0 16 16",
+                "fill": "none",
+                "xmlns": "http://www.w3.org/2000/svg"
+              },
+              "children": [
+                "\n      ",
+                {
+                  "tag": "path",
+                  "attrs": {
+                    "d": "M4 2h8a2 2 0 0 1 2 2v8M4 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2",
+                    "stroke": "currentColor",
+                    "stroke-width": "1.5",
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round"
+                  }
+                },
+                "\n    "
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "h2",
+      "children": [
+        "Exercise #1"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Can you write the movie query from lecture as a single SFW query?"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Recall that we are trying to find all movie titles that were used for more than one movie, and our schema for the movies table is:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "title STRING\nyear INT\ndirector STRING\nlength INT"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Let's try to write the nested query that solves this from lecture:"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "use ANY to write it."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "use join to write it."
+      ]
+    },
+    "\n\n",
+    "\n\n",
+    {
+      "tag": "hr",
+      "attrs": {
+        "style": "margin-top: 40px;"
+      }
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #f0f0f0; padding: 15px; margin-top: 20px; border-radius: 5px; text-align: center;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            " | \n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/GETTING_STARTED.html"
+              },
+              "children": [
+                "🚀 Getting Started"
+              ]
+            },
+            " | \n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../docs/SQL_CHEAT_SHEET.html"
+              },
+              "children": [
+                "📝 SQL Cheat Sheet"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n\n"
+  ]
+}

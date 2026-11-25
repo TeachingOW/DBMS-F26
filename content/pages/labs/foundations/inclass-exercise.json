@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "title": "In-Class Exercise",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "nav",
+      "attrs": {
+        "aria-label": "Course navigation"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "../../materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        }
+      ]
+    },
+    "\n",
+    {
+      "tag": "div",
+      "attrs": {
+        "style": "background-color: #e7f3ff; padding: 15px; margin-bottom: 20px; border-radius: 5px;"
+      },
+      "children": [
+        "\n  ",
+        {
+          "tag": "p",
+          "attrs": {
+            "style": "margin: 0;"
+          },
+          "children": [
+            "\n    ",
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../../index.html"
+              },
+              "children": [
+                "🏠 Portal"
+              ]
+            },
+            "\n  "
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n",
+    {
+      "tag": "h2",
+      "attrs": {
+        "id": "in-class-exercise-from-umm"
+      },
+      "children": [
+        "In-Class Exercise (from UMM)"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "Feel Free to search for the exact command format."
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "In particular you are going to need to figure out how the ",
+        {
+          "tag": "code",
+          "children": [
+            "CREATE TABLE"
+          ]
+        },
+        " and ",
+        {
+          "tag": "code",
+          "children": [
+            "INSERT"
+          ]
+        },
+        " statements work.  You will also need to figure out a little bit about SQL data-types.  If you have any questions feel free to ask. With that in mind, here's what I\nwant you to do (or have already done):"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "\n",
+            {
+              "tag": "p",
+              "children": [
+                "Create your database.  You will use this database for all your work."
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "\n",
+            {
+              "tag": "p",
+              "children": [
+                "Create a table called ",
+                {
+                  "tag": "code",
+                  "children": [
+                    "workers"
+                  ]
+                },
+                " with the following fields (all capital):"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "table",
+      "children": [
+        "\n",
+        {
+          "tag": "thead",
+          "children": [
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Column Name"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "th",
+                  "children": [
+                    "Description"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n",
+        {
+          "tag": "tbody",
+          "children": [
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "EMPLOYEE"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "The person's name"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "MANAGER"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "The manager's name"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "JOB"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "A job title"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "SALARY"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "a yearly salary"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n",
+            {
+              "tag": "tr",
+              "children": [
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "YEARS_WORKED"
+                  ]
+                },
+                "\n",
+                {
+                  "tag": "td",
+                  "children": [
+                    "The number of years worked"
+                  ]
+                },
+                "\n"
+              ]
+            },
+            "\n"
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n",
+    {
+      "tag": "p",
+      "children": [
+        "You get to pick the data-types for the fields"
+      ]
+    },
+    "\n",
+    {
+      "tag": "ol",
+      "children": [
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Enter data that satisfies ALL of the following restrictions into your table:"
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Roberts, Ruskin, and Raphael are all ticket agents."
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Rayburn is a baggage handler."
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Rice is a flight mechanic."
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Price manages all ticket agents."
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Powell manages Rayburn."
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Porter manages Rice, Price, Powell and himself."
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Powell is head of ground crews and Porter is chief of operations."
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Every employee receives a 10% raise for each complete year worked."
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Roberts, Ruskin, Raphael, and Rayburn all started at $12,000. Roberts just started work, Ruskin\nand Raphael have worked for a year and a half, and Rayburn has worked for 2 years."
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Rice started at $18,000 and now makes $21,780."
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Price and Powell started at $16,000 and have both been working for three years."
+          ]
+        },
+        "\n",
+        {
+          "tag": "li",
+          "children": [
+            "Porter started at $20,000 and has been around two years longer than anyone else."
+          ]
+        },
+        "\n"
+      ]
+    },
+    "\n\n\n"
+  ]
+}

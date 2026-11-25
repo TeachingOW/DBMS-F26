@@ -1,77 +1,31 @@
-# DBMS-F26 Teaching Materials
+# DBMS Fall 2026 website
 
-This folder is a static GitHub Pages site and requires no build step to serve.
+The student-facing website contains JSON content, shared browser renderers, media, and downloadable student materials. It has no authoring pipeline or build requirement.
 
-## What students get
+Start with [Student materials](materials.html), [Course plan](course-plan.html), or the [SQL presentation](index.html). Existing URLs and slide bookmarks remain available.
 
-- 126 native HTML lecture slides preserving the visible wording, order, SQL, and tables from `Lecture_2_3_SQLv4_with_labs.pptx`
-- 42 aligned and quick labs
-- 22 advanced SQL slides
-- a link from every runnable example to its own standalone general-syntax page
-- a collapsible PostgreSQL database-recreation script beside every example
-- copy buttons for patterns, exact queries, results, and setup SQL
-- a browsable `syntax/index.html` reference with 29 SQL topics
-- `demo-database.sql` as a standalone download
-- a [MongoDB presentation](mongodb.html) with a [PowerPoint download](lectures/14_MongoDB.pptx) and a [hands-on mongosh lab](labs/nosql/mongodb.html) using the same shop dataset
-- a [lecture library](lectures/library/index.html) with PowerPoint downloads and browser slides for the other organized lectures
+## Content layout
 
-## 32-meeting teaching plan
+- `content/site.json`: routes linking stable URLs to JSON documents, data, styles and renderer modules.
+- `content/pages/`: structured nodes for navigation, handouts, labs, syntax references and presentation controls.
+- `content/runtime/`: SQL slides, activities, notes, advanced slides, MongoDB, captions, syntax metadata and discussion configuration.
+- `content/library/`: pointers to pinned reviewed lecture decks.
+- `content/decks-json/`: 26 canonical source-reviewed decks (2,646 slides), with stable source identities, reviewed-version provenance and selectable text.
+- `runtime/`, presentation controllers and CSS: rendering and interactions.
+- Lecture, presentation, asset, lab and database directories: student downloads and media. HTML files are loading shells.
 
-Open [course-plan.html](course-plan.html) for 16 weeks, two 100-minute meetings per week (53 hours 20 minutes). Each meeting links to an existing lecture, a timed activity, and a student deliverable. The plan includes 11 supplemental exercise pages, a shared PostgreSQL fixture, a 100,000-row performance dataset, reference queries, stored programs, a Python booking starter, and openly available instructor checkpoints under `labs/semester/`.
+All 16 published PowerPoints, 18 SQL scripts and the Python booking starter remain downloadable. Library images remain visual references alongside editable decks. Instructor solutions are excluded.
 
-The new executable labs use PostgreSQL 16+; the application uses Python with `psycopg[binary]`. Existing MySQL/MariaDB lecture examples remain unchanged. No PowerPoint or rendered lecture assets are modified. Quizzes and project milestones are scheduled without changing course grading weights. Reconcile the 32 slots with holidays and any separately scheduled final exam.
+## Running and editing
 
-To regenerate the plan and exercise HTML after editing its source, run `python scripts/build-course-plan.py`. SQL and Python starters are maintained directly in `labs/semester/`. The instructor guide is public, not a protected exam answer key.
+Serve this directory with any static HTTP server, for example `python -m http.server 8000 --bind 127.0.0.1`, and open `http://127.0.0.1:8000/materials.html`. JSON loading requires HTTP; direct `file://` loading is unsupported. Project subpaths are supported.
 
-## Preview locally
+Edit JSON and reload; no HTML build is needed. SQL setup panels fetch the files students download. Original slide datasets, `lab_practice`, and `course32` exercises remain separate; use each activity's linked fixture. The booking starter requires psycopg and a PostgreSQL server.
 
-Open `index.html` in a browser. The presentation works directly from the folder.
+## Authoring and QA
 
-## Publish with GitHub Pages using the website
+Tools, review pipelines, migration scripts and QA live in the private [TeachingOW/DBMS-teaching-materials](https://github.com/TeachingOW/DBMS-teaching-materials) repository. Students do not need access to it.
 
-1. Sign in to GitHub and create a new repository, such as `dbms-sql-presentation`.
-2. Open the repository and choose **Add file → Upload files**.
-3. Upload the **contents** of this folder. Keep `index.html` at the repository root and preserve the `labs` and `syntax` subfolders.
-4. Commit the uploaded files to the `main` branch.
-5. Open **Settings → Pages**.
-6. Under **Build and deployment**, select **Deploy from a branch**.
-7. Select the `main` branch and the `/ (root)` folder, then save.
-8. After GitHub finishes publishing, open:
+Presentation pages default to layouts rendered from JSON. A toggle exposes the lossless static PowerPoint references attached to reviewed JSON for comparison; those static exports do not play animations. Plain-text views retain the extracted source content, including Office math/alternate-content blocks. DB-design variants reuse reviewed base layouts where all text and table values match; their added teaching slides remain intact. Discussion providers are configured in JSON; private notes stay on the student's device.
 
-   `https://YOUR-USERNAME.github.io/dbms-sql-presentation/`
-
-GitHub's documentation: [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) and [Configuring a publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
-
-## Optional command-line upload
-
-Run these commands from inside this folder after creating an empty GitHub repository:
-
-```text
-git init
-git add .
-git commit -m "Publish reproducible SQL presentation"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/dbms-sql-presentation.git
-git push -u origin main
-```
-
-Then complete the **Settings → Pages** steps above.
-
-## Updating the presentation
-
-Replace the changed files, commit them to `main`, and push. GitHub Pages republishes from the selected branch automatically.
-
-### MongoDB slides
-
-Edit `lectures/14_MongoDB.pptx` first. Then run `python3 scripts/generate-mongodb-slides.py` from the repository root to regenerate the HTML slide data. Run the same command with `--check` to verify that the two versions match. Keep the existing slide text box names when editing or duplicating slides in PowerPoint.
-
-The live site publishes from `gh-pages`. Update both the PowerPoint and the generated slide data on that branch when releasing changes.
-
-## Database setup
-
-The examples use PostgreSQL 16+ syntax. Create an empty database, open its SQL editor, and run `demo-database.sql`. The script drops and recreates only the teaching tables used by this presentation. Rerun it whenever you want a clean starting state.
-
-## Lecture library
-
-The published PowerPoints in `lectures/library/` are the source for the browser decks. Each uses an editable DBMS-F26 footer. With LibreOffice (`soffice`) and Python packages `pypdfium2`, `pypdf`, and `Pillow` available, run `python3 scripts/generate-lecture-library.py "/path/to/Organized Lectures"` from the repository root. The organized lecture folder supplies the catalog and slide titles. The script renders the published PowerPoints and regenerates the HTML, slide images, selectable text, and links. Slides marked hidden in PowerPoint keep their original positions and are labeled in the browser.
-
+The consolidation is proposed on `consolidate-f26` in [PR #5](https://github.com/TeachingOW/DBMS-F26/pull/5). The source-review migration is included on the same development branch. Publishing to gh-pages remains a separate action.

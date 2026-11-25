@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "title": "INNER JOIN · SQL Syntax",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "header",
+      "children": [
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "eyebrow"
+          },
+          "children": [
+            "SQL general syntax"
+          ]
+        },
+        {
+          "tag": "h1",
+          "children": [
+            "INNER JOIN"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "children": [
+        "\n    ",
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "lead"
+          },
+          "children": [
+            "Combine rows from two tables when the ON condition is true."
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "General pattern"
+              ]
+            },
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "SELECT [DISTINCT] column_list\nFROM first_table AS a\nJOIN second_table AS b\n  ON a.key = b.key\n[WHERE condition];"
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "actions"
+              },
+              "children": [
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "type": "button",
+                    "data-copy": "pattern"
+                  },
+                  "children": [
+                    "Copy general pattern"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "How to read it"
+              ]
+            },
+            {
+              "tag": "ul",
+              "children": [
+                {
+                  "tag": "li",
+                  "children": [
+                    "ON defines how rows match."
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    "A one-to-many match produces multiple result rows."
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "children": [
+                    "Qualify ambiguous columns with table aliases."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "section",
+          "attrs": {
+            "class": "card"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "children": [
+                "Example using the course database"
+              ]
+            },
+            {
+              "tag": "pre",
+              "children": [
+                {
+                  "tag": "code",
+                  "children": [
+                    "SELECT pu.buyer, p.name, p.category\nFROM Purchase pu\nJOIN Product p ON p.name = pu.product;"
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "attrs": {
+                "class": "actions"
+              },
+              "children": [
+                {
+                  "tag": "button",
+                  "attrs": {
+                    "type": "button",
+                    "data-copy": "example"
+                  },
+                  "children": [
+                    "Copy example"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "nav",
+          "attrs": {
+            "class": "actions"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../materials.html",
+                "class": "materials-link"
+              },
+              "children": [
+                "Student materials"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../index.html"
+              },
+              "children": [
+                "← Return to presentation"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "index.html"
+              },
+              "children": [
+                "All syntax topics"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "../demo-database.sql",
+                "download": ""
+              },
+              "children": [
+                "Download demo database"
+              ]
+            }
+          ]
+        },
+        "\n    ",
+        {
+          "tag": "footer",
+          "children": [
+            "Designed for PostgreSQL 16+ and the course demo database."
+          ]
+        }
+      ]
+    }
+  ]
+}
