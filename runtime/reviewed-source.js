@@ -1,6 +1,6 @@
-/* Native source references are selected by reviewed JSON, never by slide number. */
+/* JSON-rendered slides are the default; reviewed source images remain optional. */
 window.DBMSReviewed = (() => {
-  let sourceMode = true;
+  let sourceMode = false;
   function apply(slide, body, main) {
     const ref = slide.presentation?.reference;
     if (!ref) return;
