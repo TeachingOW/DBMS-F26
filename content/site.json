@@ -296,6 +296,17 @@
       ],
       "deck": "content/decks-json/lecture-01-introduction.json"
     },
+    "lectures/library/02_SQL/index.html": {
+      "document": "content/pages/lectures/library/02_SQL/index.json",
+      "styles": [
+        "lectures/library/library.css"
+      ],
+      "data": [],
+      "scripts": [
+        "lectures/library/viewer.js"
+      ],
+      "deck": "content/decks-json/lecture-02-sql.json"
+    },
     "lectures/library/03_ER_Modeling/index.html": {
       "document": "content/pages/lectures/library/03_ER_Modeling/index.json",
       "styles": [

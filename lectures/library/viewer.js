@@ -82,23 +82,9 @@
   sourceImage.before(jsonView);
   sourceImage.hidden = true;
   const caption = document.querySelector('[data-caption]'), status = document.querySelector('[data-status]'), previous = document.querySelector('[data-prev]'), next = document.querySelector('[data-next]'), form = document.querySelector('[data-jump]'), number = form.querySelector('input'), transcript = document.querySelector('[data-text]'), links = document.querySelector('[data-links]');
-  const sourceToggle = document.createElement('button');
-  sourceToggle.type = 'button'; sourceToggle.textContent = 'Show PowerPoint source image';
-  document.querySelector('.slide-controls').append(sourceToggle);
-  let current = 1, sourceMode = false;
+  let current = 1;
   number.max = slides.length;
   document.querySelector('[data-total]').textContent = `of ${slides.length}`;
-
-  function updateMode(slide) {
-    jsonView.hidden = sourceMode; sourceImage.hidden = !sourceMode;
-    sourceToggle.textContent = sourceMode ? 'Show JSON-rendered slide' : 'Show PowerPoint source image';
-    sourceToggle.setAttribute('aria-pressed', String(sourceMode));
-    if (sourceMode) {
-      const reference = slide.presentation?.reference;
-      sourceImage.width = reference?.width || 1280; sourceImage.height = reference?.height || 720;
-      sourceImage.alt = `${slide.title} — static PowerPoint reference`; sourceImage.src = reference?.media_src || '';
-    }
-  }
 
   function show(index) {
     current = Math.max(1, Math.min(slides.length, index || 1));
@@ -109,13 +95,11 @@
     jsonView.innerHTML = renderSlide(slide);
     transcript.textContent = slide.text || 'No selectable text on this slide.';
     links.replaceChildren(...slide.links.map(url => { const entry = document.createElement('li'), link = document.createElement('a'); link.href = url; link.textContent = url; entry.append(link); return entry; }));
-    updateMode(slide);
   }
   function fromHash() { show(Number(location.hash.slice(1).match(/^\d+$/)?.[0])); }
   function go(index) { const target = Math.max(1, Math.min(slides.length, index)); if (target !== current) location.hash = String(target); }
   previous.addEventListener('click', () => go(current - 1));
   next.addEventListener('click', () => go(current + 1));
-  sourceToggle.addEventListener('click', () => { sourceMode = !sourceMode; updateMode(slides[current - 1]); });
   form.addEventListener('submit', event => { event.preventDefault(); go(number.valueAsNumber); });
   document.addEventListener('keydown', event => {
     if (event.target.closest('input, button, a, summary') || event.altKey || event.ctrlKey || event.metaKey) return;

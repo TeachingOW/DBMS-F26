@@ -520,10 +520,10 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "presentations/reviewed/lecture-02-sql/index.html"
+                        "href": "lectures/library/02_SQL/index.html"
                       },
                       "children": [
-                        "02 SQL (reviewed source)"
+                        "02 SQL (JSON slides)"
                       ]
                     }
                   ]

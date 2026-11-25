@@ -156,6 +156,49 @@
                 {
                   "tag": "h2",
                   "children": [
+                    "SQL"
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    "SQL foundations, tables, queries, joins, grouping and data modification."
+                  ]
+                },
+                "\n      ",
+                {
+                  "tag": "p",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "02_SQL/index.html"
+                      },
+                      "children": [
+                        "Open JSON slides"
+                      ]
+                    },
+                    "\n        ",
+                    {
+                      "tag": "span",
+                      "children": [
+                        "217 slides"
+                      ]
+                    }
+                  ]
+                },
+                "\n    "
+              ]
+            },
+            "\n    ",
+            {
+              "tag": "li",
+              "children": [
+                "\n      ",
+                {
+                  "tag": "h2",
+                  "children": [
                     "ER Modeling"
                   ]
                 },

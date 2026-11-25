@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "title": "02 SQL · DBMS-F26",
+  "bodyAttributes": {},
+  "nodes": [
+    {
+      "tag": "main",
+      "attrs": {"class": "lecture"},
+      "children": [
+        {
+          "tag": "nav",
+          "attrs": {"aria-label": "Course navigation"},
+          "children": [
+            {"tag": "a", "attrs": {"href": "../../../materials.html", "class": "materials-link"}, "children": ["Student materials"]},
+            {"tag": "strong", "children": ["DBMS-F26"]},
+            {"tag": "a", "attrs": {"href": "../index.html"}, "children": ["All lectures"]}
+          ]
+        },
+        {"tag": "h1", "children": ["SQL"]},
+        {
+          "tag": "div",
+          "attrs": {"class": "slide-controls", "aria-label": "Slide controls"},
+          "children": [
+            {"tag": "button", "attrs": {"type": "button", "data-prev": ""}, "children": ["Previous"]},
+            {
+              "tag": "form",
+              "attrs": {"data-jump": ""},
+              "children": [
+                {"tag": "label", "attrs": {"for": "slide-number"}, "children": ["Slide"]},
+                {"tag": "input", "attrs": {"id": "slide-number", "type": "number", "min": "1", "value": "1", "required": ""}},
+                {"tag": "span", "attrs": {"data-total": ""}},
+                {"tag": "button", "attrs": {"type": "submit"}, "children": ["Go"]}
+              ]
+            },
+            {"tag": "button", "attrs": {"type": "button", "data-next": ""}, "children": ["Next"]}
+          ]
+        },
+        {"tag": "p", "attrs": {"class": "status", "data-status": "", "role": "status"}},
+        {
+          "tag": "figure",
+          "children": [
+            {"tag": "img", "attrs": {"data-slide": "", "alt": "", "hidden": ""}},
+            {"tag": "figcaption", "attrs": {"data-caption": ""}}
+          ]
+        },
+        {
+          "tag": "details",
+          "attrs": {"data-transcript": ""},
+          "children": [
+            {"tag": "summary", "children": ["Slide text and links"]},
+            {"tag": "p", "attrs": {"class": "transcript", "data-text": ""}},
+            {"tag": "ul", "attrs": {"data-links": ""}}
+          ]
+        },
+        {"tag": "noscript", "children": ["Enable JavaScript to navigate the JSON slides."]}
+      ]
+    }
+  ]
+}
