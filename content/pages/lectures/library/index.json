@@ -129,7 +129,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "01_Introduction.pptx",
+                        "href": "lectures/powerpoint/01_Introduction.pptx",
                         "download": ""
                       },
                       "children": [
@@ -183,7 +183,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "02_SQL.pptx",
+                        "href": "lectures/powerpoint/02_SQL.pptx",
                         "download": ""
                       },
                       "children": [
@@ -237,7 +237,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "03_ER_Modeling.pptx",
+                        "href": "lectures/powerpoint/03_ER_Modeling.pptx",
                         "download": ""
                       },
                       "children": [
@@ -291,7 +291,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "04_Relational_Algebra.pptx",
+                        "href": "lectures/powerpoint/04_Relational_Algebra.pptx",
                         "download": ""
                       },
                       "children": [
@@ -345,7 +345,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "05_Normalization.pptx",
+                        "href": "lectures/powerpoint/05_Normalization.pptx",
                         "download": ""
                       },
                       "children": [
@@ -399,7 +399,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "06_Window_Functions.pptx",
+                        "href": "lectures/powerpoint/06_Window_Functions.pptx",
                         "download": ""
                       },
                       "children": [
@@ -453,7 +453,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "07_Recursive_SQL.pptx",
+                        "href": "lectures/powerpoint/07_Recursive_SQL.pptx",
                         "download": ""
                       },
                       "children": [
@@ -507,7 +507,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "08_Stored_Programs.pptx",
+                        "href": "lectures/powerpoint/08_Stored_Programs.pptx",
                         "download": ""
                       },
                       "children": [
@@ -561,7 +561,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "09_Triggers.pptx",
+                        "href": "lectures/powerpoint/09_Triggers.pptx",
                         "download": ""
                       },
                       "children": [
@@ -615,7 +615,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "10_Storage_and_Indexes.pptx",
+                        "href": "lectures/powerpoint/10_Storage_and_Indexes.pptx",
                         "download": ""
                       },
                       "children": [
@@ -669,7 +669,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "11_Join_Algorithms.pptx",
+                        "href": "lectures/powerpoint/11_Join_Algorithms.pptx",
                         "download": ""
                       },
                       "children": [
@@ -723,7 +723,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "12_Query_Optimization.pptx",
+                        "href": "lectures/powerpoint/12_Query_Optimization.pptx",
                         "download": ""
                       },
                       "children": [
@@ -777,7 +777,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "13_Transactions.pptx",
+                        "href": "lectures/powerpoint/13_Transactions.pptx",
                         "download": ""
                       },
                       "children": [
@@ -831,7 +831,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "14_MongoDB_Full.pptx",
+                        "href": "lectures/powerpoint/14_MongoDB_Full.pptx",
                         "download": ""
                       },
                       "children": [
@@ -885,7 +885,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "15_Review.pptx",
+                        "href": "lectures/powerpoint/15_Review.pptx",
                         "download": ""
                       },
                       "children": [

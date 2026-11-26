@@ -17,10 +17,15 @@ ROOT = Path(__file__).resolve().parents[1]
 HOME_PATH = ROOT / "content/pages/index.json"
 SITE_PATH = ROOT / "content/site.json"
 DECKS_DIR = ROOT / "content/decks-json"
+PAGES_DIR = ROOT / "content/pages"
 DECK_MEDIA_DIR = ROOT / "assets/deck-media"
+POWERPOINT_DIR = ROOT / "lectures/powerpoint"
 MEDIA_REFERENCE = re.compile(r"assets/deck-media/[^\"\\s]+")
 LEGACY_MEDIA_PREFIX = "assets/reviewed-media/"
 DECK_MEDIA_PREFIX = "assets/deck-media/"
+POWERPOINT_JSON_STRING = re.compile(
+    r'"(?P<prefix> — )?(?:(?:[^"/]+/)*)?(?P<filename>[^"/]+\.pptx)"'
+)
 WINDOW_FUNCTIONS_PATH = DECKS_DIR / "lecture-06-window-functions.json"
 LECTURE_INDEX_PATH = ROOT / "content/pages/lectures/library/index.json"
 WINDOW_FUNCTIONS_AUTHORING_NOTE = "authored:1673261d7e4e4fd8aa3c2032c24b8729"
@@ -337,6 +342,18 @@ def convert_text_media(value: object) -> None:
         convert_text_media(child)
 
 
+def migrate_powerpoint_links(text: str) -> str:
+    """Move PowerPoint JSON strings without reformatting hand-authored pages."""
+
+    return POWERPOINT_JSON_STRING.sub(
+        lambda match: (
+            f'"{match.group("prefix") or ""}'
+            f'lectures/powerpoint/{match.group("filename")}"'
+        ),
+        text,
+    )
+
+
 def generate() -> dict[Path, str]:
     site = json.loads(SITE_PATH.read_text())
     site["routes"]["index.html"] = HOME_ROUTE
@@ -361,16 +378,18 @@ def generate() -> dict[Path, str]:
     for number, slide in enumerate(window_functions["slides"], start=1):
         slide["number"] = number
 
-    lecture_index = json.loads(LECTURE_INDEX_PATH.read_text())
-    for node in walk_nodes(lecture_index["nodes"]):
-        children = node.get("children")
-        if children == ["235 slides"]:
-            node["children"] = ["234 slides"]
+    pages = {}
+    for path in sorted(PAGES_DIR.rglob("*.json")):
+        source = path.read_text()
+        if ".pptx" in source:
+            pages[path] = migrate_powerpoint_links(source)
+    pages[HOME_PATH] = serialized(HOME_DOCUMENT)
+    lecture_index = pages[LECTURE_INDEX_PATH]
+    pages[LECTURE_INDEX_PATH] = lecture_index.replace('"235 slides"', '"234 slides"')
 
     return {
-        HOME_PATH: serialized(HOME_DOCUMENT),
         SITE_PATH: serialized(site),
-        LECTURE_INDEX_PATH: serialized(lecture_index),
+        **pages,
         **{path: serialized(deck) for path, deck in decks.items()},
     }
 
@@ -429,6 +448,13 @@ def validate_decks() -> list[str]:
         errors.append(f"found {len(legacy_slide_dirs)} obsolete full-slide image directories")
     if (ROOT / "assets/reviewed-media").exists():
         errors.append("obsolete assets/reviewed-media directory still exists")
+
+    powerpoint_files = sorted(ROOT.glob("**/*.pptx"))
+    misplaced_powerpoints = [path for path in powerpoint_files if path.parent != POWERPOINT_DIR]
+    if len(powerpoint_files) != 16:
+        errors.append(f"expected 16 PowerPoint downloads, found {len(powerpoint_files)}")
+    if misplaced_powerpoints:
+        errors.append(f"found {len(misplaced_powerpoints)} PowerPoints outside lectures/powerpoint")
 
     media_files = {
         path.relative_to(ROOT).as_posix()

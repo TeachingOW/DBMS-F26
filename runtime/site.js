@@ -64,6 +64,10 @@
       link.onload=resolve;link.onerror=()=>new URL(link.href).origin===root.origin ? reject(new Error(`Cannot load styles ${path}`)) : resolve();document.head.append(link);
     }));
     document.body.replaceChildren(...page.nodes.map(node => element(node)));
+    for (const link of document.querySelectorAll('a[href$=".pptx"]')) {
+      const filename = link.getAttribute('href').split('/').pop();
+      link.href = asset(`lectures/powerpoint/${filename}`);
+    }
     window.DBMS_PAGE = {...config, rootUrl:root.href, deckUrl:config.deck ? asset(config.deck) : null};
     await Promise.all(sheets);
     for (const path of config.scripts || []) {

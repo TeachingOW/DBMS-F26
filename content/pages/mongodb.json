@@ -129,7 +129,7 @@
           "tag": "a",
           "attrs": {
             "class": "top-link optional",
-            "href": "lectures/14_MongoDB.pptx",
+            "href": "lectures/powerpoint/14_MongoDB.pptx",
             "download": ""
           },
           "children": [
@@ -363,7 +363,7 @@
                   "tag": "a",
                   "attrs": {
                     "class": "lab-link",
-                    "href": "lectures/14_MongoDB.pptx",
+                    "href": "lectures/powerpoint/14_MongoDB.pptx",
                     "download": ""
                   },
                   "children": [

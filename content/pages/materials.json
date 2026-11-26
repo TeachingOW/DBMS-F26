@@ -1198,7 +1198,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/02_SQL.pptx",
+                        "href": "lectures/powerpoint/02_SQL.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1208,7 +1208,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/02_SQL.pptx"
+                        " — lectures/powerpoint/02_SQL.pptx"
                       ]
                     }
                   ]
@@ -1219,7 +1219,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/14_MongoDB.pptx",
+                        "href": "lectures/powerpoint/14_MongoDB.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1229,7 +1229,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/14_MongoDB.pptx"
+                        " — lectures/powerpoint/14_MongoDB.pptx"
                       ]
                     }
                   ]
@@ -1240,7 +1240,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/01_Introduction.pptx",
+                        "href": "lectures/powerpoint/01_Introduction.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1250,7 +1250,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/01_Introduction.pptx"
+                        " — lectures/powerpoint/01_Introduction.pptx"
                       ]
                     }
                   ]
@@ -1261,7 +1261,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/03_ER_Modeling.pptx",
+                        "href": "lectures/powerpoint/03_ER_Modeling.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1271,7 +1271,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/03_ER_Modeling.pptx"
+                        " — lectures/powerpoint/03_ER_Modeling.pptx"
                       ]
                     }
                   ]
@@ -1282,7 +1282,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/04_Relational_Algebra.pptx",
+                        "href": "lectures/powerpoint/04_Relational_Algebra.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1292,7 +1292,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/04_Relational_Algebra.pptx"
+                        " — lectures/powerpoint/04_Relational_Algebra.pptx"
                       ]
                     }
                   ]
@@ -1303,7 +1303,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/05_Normalization.pptx",
+                        "href": "lectures/powerpoint/05_Normalization.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1313,7 +1313,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/05_Normalization.pptx"
+                        " — lectures/powerpoint/05_Normalization.pptx"
                       ]
                     }
                   ]
@@ -1324,7 +1324,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/06_Window_Functions.pptx",
+                        "href": "lectures/powerpoint/06_Window_Functions.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1334,7 +1334,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/06_Window_Functions.pptx"
+                        " — lectures/powerpoint/06_Window_Functions.pptx"
                       ]
                     }
                   ]
@@ -1345,7 +1345,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/07_Recursive_SQL.pptx",
+                        "href": "lectures/powerpoint/07_Recursive_SQL.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1355,7 +1355,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/07_Recursive_SQL.pptx"
+                        " — lectures/powerpoint/07_Recursive_SQL.pptx"
                       ]
                     }
                   ]
@@ -1366,7 +1366,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/08_Stored_Programs.pptx",
+                        "href": "lectures/powerpoint/08_Stored_Programs.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1376,7 +1376,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/08_Stored_Programs.pptx"
+                        " — lectures/powerpoint/08_Stored_Programs.pptx"
                       ]
                     }
                   ]
@@ -1387,7 +1387,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/09_Triggers.pptx",
+                        "href": "lectures/powerpoint/09_Triggers.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1397,7 +1397,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/09_Triggers.pptx"
+                        " — lectures/powerpoint/09_Triggers.pptx"
                       ]
                     }
                   ]
@@ -1408,7 +1408,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/10_Storage_and_Indexes.pptx",
+                        "href": "lectures/powerpoint/10_Storage_and_Indexes.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1418,7 +1418,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/10_Storage_and_Indexes.pptx"
+                        " — lectures/powerpoint/10_Storage_and_Indexes.pptx"
                       ]
                     }
                   ]
@@ -1429,7 +1429,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/11_Join_Algorithms.pptx",
+                        "href": "lectures/powerpoint/11_Join_Algorithms.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1439,7 +1439,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/11_Join_Algorithms.pptx"
+                        " — lectures/powerpoint/11_Join_Algorithms.pptx"
                       ]
                     }
                   ]
@@ -1450,7 +1450,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/12_Query_Optimization.pptx",
+                        "href": "lectures/powerpoint/12_Query_Optimization.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1460,7 +1460,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/12_Query_Optimization.pptx"
+                        " — lectures/powerpoint/12_Query_Optimization.pptx"
                       ]
                     }
                   ]
@@ -1471,7 +1471,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/13_Transactions.pptx",
+                        "href": "lectures/powerpoint/13_Transactions.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1481,7 +1481,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/13_Transactions.pptx"
+                        " — lectures/powerpoint/13_Transactions.pptx"
                       ]
                     }
                   ]
@@ -1492,7 +1492,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/14_MongoDB_Full.pptx",
+                        "href": "lectures/powerpoint/14_MongoDB_Full.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1502,7 +1502,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/14_MongoDB_Full.pptx"
+                        " — lectures/powerpoint/14_MongoDB_Full.pptx"
                       ]
                     }
                   ]
@@ -1513,7 +1513,7 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/15_Review.pptx",
+                        "href": "lectures/powerpoint/15_Review.pptx",
                         "download": ""
                       },
                       "children": [
@@ -1523,7 +1523,7 @@
                     {
                       "tag": "small",
                       "children": [
-                        " — lectures/library/15_Review.pptx"
+                        " — lectures/powerpoint/15_Review.pptx"
                       ]
                     }
                   ]
