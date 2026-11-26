@@ -181,6 +181,17 @@
                     },
                     "\n        ",
                     {
+                      "tag": "a",
+                      "attrs": {
+                        "href": "02_SQL.pptx",
+                        "download": ""
+                      },
+                      "children": [
+                        "Download PowerPoint"
+                      ]
+                    },
+                    "\n        ",
+                    {
                       "tag": "span",
                       "children": [
                         "217 slides"

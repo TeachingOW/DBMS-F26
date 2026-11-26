@@ -13,7 +13,8 @@
           "children": [
             {"tag": "a", "attrs": {"href": "../../../materials.html", "class": "materials-link"}, "children": ["Student materials"]},
             {"tag": "strong", "children": ["DBMS-F26"]},
-            {"tag": "a", "attrs": {"href": "../index.html"}, "children": ["All lectures"]}
+            {"tag": "a", "attrs": {"href": "../index.html"}, "children": ["All lectures"]},
+            {"tag": "a", "attrs": {"href": "../02_SQL.pptx", "download": ""}, "children": ["Download PowerPoint"]}
           ]
         },
         {"tag": "h1", "children": ["SQL"]},
