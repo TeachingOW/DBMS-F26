@@ -19,6 +19,9 @@ SITE_PATH = ROOT / "content/site.json"
 DECKS_DIR = ROOT / "content/decks-json"
 REVIEWED_MEDIA_DIR = ROOT / "assets/reviewed-media"
 MEDIA_REFERENCE = re.compile(r"assets/reviewed-media/[^\"\\s]+")
+WINDOW_FUNCTIONS_PATH = DECKS_DIR / "lecture-06-window-functions.json"
+LECTURE_INDEX_PATH = ROOT / "content/pages/lectures/library/index.json"
+WINDOW_FUNCTIONS_AUTHORING_NOTE = "authored:1673261d7e4e4fd8aa3c2032c24b8729"
 
 
 HOME_DOCUMENT = {
@@ -102,7 +105,35 @@ def serialized(value: object) -> str:
 def generate() -> dict[Path, str]:
     site = json.loads(SITE_PATH.read_text())
     site["routes"]["index.html"] = HOME_ROUTE
-    return {HOME_PATH: serialized(HOME_DOCUMENT), SITE_PATH: serialized(site)}
+    window_functions = json.loads(WINDOW_FUNCTIONS_PATH.read_text())
+    window_functions["slides"] = [
+        slide
+        for slide in window_functions["slides"]
+        if slide.get("id") != WINDOW_FUNCTIONS_AUTHORING_NOTE
+    ]
+    for number, slide in enumerate(window_functions["slides"], start=1):
+        slide["number"] = number
+
+    lecture_index = json.loads(LECTURE_INDEX_PATH.read_text())
+    for node in walk_nodes(lecture_index["nodes"]):
+        children = node.get("children")
+        if children == ["235 slides"]:
+            node["children"] = ["234 slides"]
+
+    return {
+        HOME_PATH: serialized(HOME_DOCUMENT),
+        SITE_PATH: serialized(site),
+        WINDOW_FUNCTIONS_PATH: serialized(window_functions),
+        LECTURE_INDEX_PATH: serialized(lecture_index),
+    }
+
+
+def walk_nodes(nodes: list[object]):
+    for node in nodes:
+        if not isinstance(node, dict):
+            continue
+        yield node
+        yield from walk_nodes(node.get("children", []))
 
 
 def validate_decks() -> list[str]:
