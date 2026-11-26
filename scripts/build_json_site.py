@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 
@@ -16,6 +17,8 @@ ROOT = Path(__file__).resolve().parents[1]
 HOME_PATH = ROOT / "content/pages/index.json"
 SITE_PATH = ROOT / "content/site.json"
 DECKS_DIR = ROOT / "content/decks-json"
+REVIEWED_MEDIA_DIR = ROOT / "assets/reviewed-media"
+MEDIA_REFERENCE = re.compile(r"assets/reviewed-media/[^\"\\s]+")
 
 
 HOME_DOCUMENT = {
@@ -105,10 +108,13 @@ def generate() -> dict[Path, str]:
 def validate_decks() -> list[str]:
     errors = []
     decks = sorted(DECKS_DIR.glob("*.json"))
+    media_references: set[str] = set()
     if len(decks) != 16:
         errors.append(f"expected 16 canonical decks, found {len(decks)}")
     for path in decks:
-        deck = json.loads(path.read_text())
+        source = path.read_text()
+        deck = json.loads(source)
+        media_references.update(MEDIA_REFERENCE.findall(source))
         numbers = [slide.get("number") for slide in deck.get("slides", [])]
         if numbers != list(range(1, len(numbers) + 1)):
             errors.append(f"{path.name}: slide numbers are not contiguous")
@@ -119,6 +125,22 @@ def validate_decks() -> list[str]:
         ]
         if references:
             errors.append(f"{path.name}: contains {len(references)} PowerPoint reference images")
+
+    legacy_slide_dirs = sorted((ROOT / "lectures/library").glob("*/slides"))
+    if legacy_slide_dirs:
+        errors.append(f"found {len(legacy_slide_dirs)} obsolete full-slide image directories")
+
+    media_files = {
+        path.relative_to(ROOT).as_posix()
+        for path in REVIEWED_MEDIA_DIR.iterdir()
+        if path.is_file()
+    }
+    missing_media = sorted(media_references - media_files)
+    unused_media = sorted(media_files - media_references)
+    if missing_media:
+        errors.append(f"canonical decks reference {len(missing_media)} missing media files")
+    if unused_media:
+        errors.append(f"reviewed-media contains {len(unused_media)} unreferenced files")
     return errors
 
 
