@@ -1,6 +1,0 @@
-.source-view-controls { display:flex; flex-wrap:wrap; gap:.6rem 1rem; align-items:center; width:min(1100px,calc(100% - 2rem)); margin:.7rem auto; font:14px/1.5 system-ui,sans-serif; color:#33453c; }
-.source-view-controls a { overflow-wrap:anywhere; }
-.source-view-controls button { cursor:pointer; padding:.5rem .8rem; border:1px solid #43745d; border-radius:5px; background:#fff; color:#174832; }
-.reviewed-source-image { display:block; width:100%; height:auto; max-height:74vh; object-fit:contain; background:white; }
-.reviewed-source-image[hidden], .reviewed-editable-layout[hidden] { display:none; }
-.reviewed-editable-layout { width:100%; }
