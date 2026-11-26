@@ -20,7 +20,9 @@ The 18 SQL scripts and Python booking starter remain downloadable. Presentation 
 
 Serve this directory with any static HTTP server, for example `python -m http.server 8000 --bind 127.0.0.1`, and open `http://127.0.0.1:8000/materials.html`. JSON loading requires HTTP; direct `file://` loading is unsupported. Project subpaths are supported.
 
-Edit JSON and reload; no HTML build is needed. SQL setup panels fetch the files students download. Original slide datasets, `lab_practice`, and `course32` exercises remain separate; use each activity's linked fixture. The booking starter requires psycopg and a PostgreSQL server.
+Edit source files and reload; no HTML build is needed. Do not hand-edit generated JSON when a Python generator exists. SQL setup panels fetch the files students download. Original slide datasets, `lab_practice`, and `course32` exercises remain separate; use each activity's linked fixture. The booking starter requires psycopg and a PostgreSQL server.
+
+For generated site JSON, edit `scripts/build_json_site.py` first and run `python3 scripts/build_json_site.py`. Use `python3 scripts/build_json_site.py --check` to detect generated-file drift. Canonical deck JSON is validated by the same command; its private PowerPoint extraction and source-review pipeline remains in `DBMS-teaching-materials`.
 
 ## Authoring and QA
 

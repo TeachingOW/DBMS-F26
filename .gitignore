@@ -13,8 +13,10 @@ qa/pipeline-demo/
 qa/pipeline-review/
 *.log
 
-# Authoring tools belong to DBMS-teaching-materials.
-/scripts/
+# Authoring tools belong to DBMS-teaching-materials. Keep only the public
+# generated-JSON entry point in this repository.
+/scripts/*
+!/scripts/build_json_site.py
 /qa/
 /content/legacy-overrides/
 /docs/*.md

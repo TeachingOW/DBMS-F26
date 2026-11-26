@@ -5,41 +5,135 @@
   "nodes": [
     {
       "tag": "nav",
-      "attrs": {"class": "home-nav", "aria-label": "Course navigation"},
+      "attrs": {
+        "class": "home-nav",
+        "aria-label": "Course navigation"
+      },
       "children": [
-        {"tag": "strong", "children": ["DBMS-F26"]},
-        {"tag": "a", "attrs": {"href": "materials.html"}, "children": ["Student materials"]},
-        {"tag": "a", "attrs": {"href": "lectures/library/index.html"}, "children": ["Lectures"]},
-        {"tag": "a", "attrs": {"href": "course-plan.html"}, "children": ["Course plan"]},
-        {"tag": "a", "attrs": {"href": "docs/GETTING_STARTED.html"}, "children": ["Database setup"]}
+        {
+          "tag": "strong",
+          "children": [
+            "DBMS-F26"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "materials.html"
+          },
+          "children": [
+            "Student materials"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "lectures/library/index.html"
+          },
+          "children": [
+            "Lectures"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "course-plan.html"
+          },
+          "children": [
+            "Course plan"
+          ]
+        },
+        {
+          "tag": "a",
+          "attrs": {
+            "href": "docs/GETTING_STARTED.html"
+          },
+          "children": [
+            "Database setup"
+          ]
+        }
       ]
     },
     {
       "tag": "main",
-      "attrs": {"class": "home"},
+      "attrs": {
+        "class": "home"
+      },
       "children": [
-        {"tag": "h1", "children": ["Database systems"]},
-        {"tag": "p", "attrs": {"class": "lede"}, "children": ["Fall 2026 course materials for relational design, SQL, storage, query processing, transactions, and document databases."]},
+        {
+          "tag": "h1",
+          "children": [
+            "Database systems"
+          ]
+        },
+        {
+          "tag": "p",
+          "attrs": {
+            "class": "lede"
+          },
+          "children": [
+            "Fall 2026 course materials for relational design, SQL, storage, query processing, transactions, and document databases."
+          ]
+        },
         {
           "tag": "div",
-          "attrs": {"class": "home-actions"},
+          "attrs": {
+            "class": "home-actions"
+          },
           "children": [
-            {"tag": "a", "attrs": {"href": "lectures/library/index.html"}, "children": ["Browse lecture topics"]},
-            {"tag": "a", "attrs": {"href": "materials.html", "class": "secondary"}, "children": ["Open all materials"]}
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "lectures/library/index.html"
+              },
+              "children": [
+                "Browse lecture topics"
+              ]
+            },
+            {
+              "tag": "a",
+              "attrs": {
+                "href": "materials.html",
+                "class": "secondary"
+              },
+              "children": [
+                "Open all materials"
+              ]
+            }
           ]
         },
         {
           "tag": "section",
           "children": [
-            {"tag": "h2", "children": ["One sequence per topic"]},
-            {"tag": "p", "children": ["Each lecture opens as a JSON-rendered slide sequence. Alternate source decks and labs are combined into the relevant topic instead of appearing as separate presentations."]}
+            {
+              "tag": "h2",
+              "children": [
+                "One sequence per topic"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                "Each lecture opens as a JSON-rendered slide sequence. Alternate source decks and labs are combined into the relevant topic instead of appearing as separate presentations."
+              ]
+            }
           ]
         },
         {
           "tag": "section",
           "children": [
-            {"tag": "h2", "children": ["Course work"]},
-            {"tag": "p", "children": ["Use Student materials for labs, datasets, handouts, and downloadable SQL. The course plan connects those activities to the lecture sequence."]}
+            {
+              "tag": "h2",
+              "children": [
+                "Course work"
+              ]
+            },
+            {
+              "tag": "p",
+              "children": [
+                "Use Student materials for labs, datasets, handouts, and downloadable SQL. The course plan connects those activities to the lecture sequence."
+              ]
+            }
           ]
         }
       ]
