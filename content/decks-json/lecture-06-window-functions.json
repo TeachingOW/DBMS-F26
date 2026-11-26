@@ -668519,13 +668519,13 @@
       "id": "authored:a07ab1827f5b497c9fa76bb4868e1552",
       "source_part": "ppt/slides/slide3.xml",
       "number": 153,
-      "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "title": "1. Introduction to Window Functions",
       "subtitle": null,
       "hidden": false,
       "content": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -668540,8 +668540,79 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image1.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/0463c5d2459347f1dbad48a887426897d5bd3828a54c566573876caf183045a5.png",
-          "media_sha256": "0463c5d2459347f1dbad48a887426897d5bd3828a54c566573876caf183045a5"
+          "media_sha256": "0463c5d2459347f1dbad48a887426897d5bd3828a54c566573876caf183045a5",
+          "paragraphs": [
+            "1. Introduction to Window Functions",
+            "Window functions compute values across related rows while preserving each individual row in the result."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "1. Introduction to Window Functions",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "1. Introduction to Window Functions",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Window functions compute values across related rows while preserving each individual row in the result.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Window functions compute values across related rows while preserving each individual row in the result.",
+                  "style": {
+                    "sz": "1800",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -668619,8 +668690,8 @@
       ],
       "diagram_objects": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -668635,8 +668706,79 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image1.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/0463c5d2459347f1dbad48a887426897d5bd3828a54c566573876caf183045a5.png",
-          "media_sha256": "0463c5d2459347f1dbad48a887426897d5bd3828a54c566573876caf183045a5"
+          "media_sha256": "0463c5d2459347f1dbad48a887426897d5bd3828a54c566573876caf183045a5",
+          "paragraphs": [
+            "1. Introduction to Window Functions",
+            "Window functions compute values across related rows while preserving each individual row in the result."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "1. Introduction to Window Functions",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "1. Introduction to Window Functions",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Window functions compute values across related rows while preserving each individual row in the result.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Window functions compute values across related rows while preserving each individual row in the result.",
+                  "style": {
+                    "sz": "1800",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -671850,13 +671992,13 @@
       "id": "authored:ad0f4e8a6782459aa08c090baca99b33",
       "source_part": "ppt/slides/slide6.xml",
       "number": 156,
-      "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "title": "Aggregates Called as Normal Functions",
       "subtitle": null,
       "hidden": false,
       "content": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -671871,8 +672013,139 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image2.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/46547036dfadff217bb00fb9d6e8fd972e1b0e5aa67d85fabad1339619212122.png",
-          "media_sha256": "46547036dfadff217bb00fb9d6e8fd972e1b0e5aa67d85fabad1339619212122"
+          "media_sha256": "46547036dfadff217bb00fb9d6e8fd972e1b0e5aa67d85fabad1339619212122",
+          "paragraphs": [
+            "Aggregates Called as Normal Functions",
+            "Rows are sorted into groups.",
+            "A normal aggregate returns one result row for each group.",
+            "Example: GROUP BY x with an aggregate produces one aggregate value per distinct x."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Aggregates Called as Normal Functions",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Aggregates Called as Normal Functions",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Rows are sorted into groups.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Rows are sorted into groups.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "A normal aggregate returns one result row for each group.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "A normal aggregate returns one result row for each group.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Example: GROUP BY x with an aggregate produces one aggregate value per distinct x.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Example: GROUP BY x with an aggregate produces one aggregate value per distinct x.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -671950,8 +672223,8 @@
       ],
       "diagram_objects": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -671966,8 +672239,139 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image2.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/46547036dfadff217bb00fb9d6e8fd972e1b0e5aa67d85fabad1339619212122.png",
-          "media_sha256": "46547036dfadff217bb00fb9d6e8fd972e1b0e5aa67d85fabad1339619212122"
+          "media_sha256": "46547036dfadff217bb00fb9d6e8fd972e1b0e5aa67d85fabad1339619212122",
+          "paragraphs": [
+            "Aggregates Called as Normal Functions",
+            "Rows are sorted into groups.",
+            "A normal aggregate returns one result row for each group.",
+            "Example: GROUP BY x with an aggregate produces one aggregate value per distinct x."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Aggregates Called as Normal Functions",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Aggregates Called as Normal Functions",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Rows are sorted into groups.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Rows are sorted into groups.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "A normal aggregate returns one result row for each group.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "A normal aggregate returns one result row for each group.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Example: GROUP BY x with an aggregate produces one aggregate value per distinct x.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Example: GROUP BY x with an aggregate produces one aggregate value per distinct x.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -672111,13 +672515,13 @@
       "id": "authored:49029b88cf0c44e9a19ab63b34b4ff4e",
       "source_part": "ppt/slides/slide7.xml",
       "number": 157,
-      "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "title": "Aggregates Called as Window Functions",
       "subtitle": null,
       "hidden": false,
       "content": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -672132,8 +672536,139 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image3.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/be1ba3d6bf43579449e2bde164fd06c2cc57b19da34a3783ba1cf93e713e48f3.png",
-          "media_sha256": "be1ba3d6bf43579449e2bde164fd06c2cc57b19da34a3783ba1cf93e713e48f3"
+          "media_sha256": "be1ba3d6bf43579449e2bde164fd06c2cc57b19da34a3783ba1cf93e713e48f3",
+          "paragraphs": [
+            "Aggregates Called as Window Functions",
+            "Rows remain individually visible.",
+            "A window aggregate calculates across related rows and repeats the result alongside each input row.",
+            "The window result does not collapse the rows into one row per group."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Aggregates Called as Window Functions",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Aggregates Called as Window Functions",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Rows remain individually visible.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Rows remain individually visible.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "A window aggregate calculates across related rows and repeats the result alongside each input row.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "A window aggregate calculates across related rows and repeats the result alongside each input row.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "The window result does not collapse the rows into one row per group.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "The window result does not collapse the rows into one row per group.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -672211,8 +672746,8 @@
       ],
       "diagram_objects": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -672227,8 +672762,139 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image3.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/be1ba3d6bf43579449e2bde164fd06c2cc57b19da34a3783ba1cf93e713e48f3.png",
-          "media_sha256": "be1ba3d6bf43579449e2bde164fd06c2cc57b19da34a3783ba1cf93e713e48f3"
+          "media_sha256": "be1ba3d6bf43579449e2bde164fd06c2cc57b19da34a3783ba1cf93e713e48f3",
+          "paragraphs": [
+            "Aggregates Called as Window Functions",
+            "Rows remain individually visible.",
+            "A window aggregate calculates across related rows and repeats the result alongside each input row.",
+            "The window result does not collapse the rows into one row per group."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Aggregates Called as Window Functions",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Aggregates Called as Window Functions",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Rows remain individually visible.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Rows remain individually visible.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "A window aggregate calculates across related rows and repeats the result alongside each input row.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "A window aggregate calculates across related rows and repeats the result alongside each input row.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "The window result does not collapse the rows into one row per group.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "The window result does not collapse the rows into one row per group.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -698189,13 +698855,13 @@
       "id": "authored:d765a508cd494a808fe1a966c61405b0",
       "source_part": "ppt/slides/slide13.xml",
       "number": 163,
-      "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "title": "2. Window Function Syntax",
       "subtitle": null,
       "hidden": false,
       "content": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -698210,8 +698876,169 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image4.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/07f0a265a5b690592385d7fae9a37d715a3ee3b1e9557868542f90163022ead8.png",
-          "media_sha256": "07f0a265a5b690592385d7fae9a37d715a3ee3b1e9557868542f90163022ead8"
+          "media_sha256": "07f0a265a5b690592385d7fae9a37d715a3ee3b1e9557868542f90163022ead8",
+          "paragraphs": [
+            "2. Window Function Syntax",
+            "The OVER clause defines the window used by a window function.",
+            "PARTITION BY divides rows into independent partitions.",
+            "ORDER BY establishes row order within each partition.",
+            "A frame clause selects the rows around the current row."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "2. Window Function Syntax",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "2. Window Function Syntax",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "The OVER clause defines the window used by a window function.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "The OVER clause defines the window used by a window function.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "PARTITION BY divides rows into independent partitions.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "PARTITION BY divides rows into independent partitions.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "ORDER BY establishes row order within each partition.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "ORDER BY establishes row order within each partition.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "A frame clause selects the rows around the current row.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "A frame clause selects the rows around the current row.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -698289,8 +699116,8 @@
       ],
       "diagram_objects": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -698305,8 +699132,169 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image4.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/07f0a265a5b690592385d7fae9a37d715a3ee3b1e9557868542f90163022ead8.png",
-          "media_sha256": "07f0a265a5b690592385d7fae9a37d715a3ee3b1e9557868542f90163022ead8"
+          "media_sha256": "07f0a265a5b690592385d7fae9a37d715a3ee3b1e9557868542f90163022ead8",
+          "paragraphs": [
+            "2. Window Function Syntax",
+            "The OVER clause defines the window used by a window function.",
+            "PARTITION BY divides rows into independent partitions.",
+            "ORDER BY establishes row order within each partition.",
+            "A frame clause selects the rows around the current row."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "2. Window Function Syntax",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "2. Window Function Syntax",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "The OVER clause defines the window used by a window function.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "The OVER clause defines the window used by a window function.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "PARTITION BY divides rows into independent partitions.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "PARTITION BY divides rows into independent partitions.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "ORDER BY establishes row order within each partition.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "ORDER BY establishes row order within each partition.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "A frame clause selects the rows around the current row.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "A frame clause selects the rows around the current row.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -708018,13 +709006,13 @@
       "id": "authored:ecc5b1869e6a4c75a198b19da6226666",
       "source_part": "ppt/slides/slide18.xml",
       "number": 168,
-      "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "title": "Visual Window Terms",
       "subtitle": null,
       "hidden": false,
       "content": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -708039,8 +709027,199 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image5.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/52c45360ca7d40397a67d5691df2be1574fb2862c912d6ccb1a0896b19c9667d.png",
-          "media_sha256": "52c45360ca7d40397a67d5691df2be1574fb2862c912d6ccb1a0896b19c9667d"
+          "media_sha256": "52c45360ca7d40397a67d5691df2be1574fb2862c912d6ccb1a0896b19c9667d",
+          "paragraphs": [
+            "Visual Window Terms",
+            "Example ordered values: 1, 1, 2, 2, 3, 3, 4, 4, 5, 5.",
+            "Current row: the row being evaluated.",
+            "Peers: rows with the same ORDER BY value.",
+            "Window frame: the subset selected by the frame clause.",
+            "Partition: all rows in the current PARTITION BY group."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Visual Window Terms",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Visual Window Terms",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Example ordered values: 1, 1, 2, 2, 3, 3, 4, 4, 5, 5.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Example ordered values: 1, 1, 2, 2, 3, 3, 4, 4, 5, 5.",
+                  "style": {
+                    "sz": "1650",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Current row: the row being evaluated.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Current row: the row being evaluated.",
+                  "style": {
+                    "sz": "1650",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Peers: rows with the same ORDER BY value.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Peers: rows with the same ORDER BY value.",
+                  "style": {
+                    "sz": "1650",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Window frame: the subset selected by the frame clause.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Window frame: the subset selected by the frame clause.",
+                  "style": {
+                    "sz": "1650",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Partition: all rows in the current PARTITION BY group.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Partition: all rows in the current PARTITION BY group.",
+                  "style": {
+                    "sz": "1650",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -708118,8 +709297,8 @@
       ],
       "diagram_objects": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -708134,8 +709313,199 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image5.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/52c45360ca7d40397a67d5691df2be1574fb2862c912d6ccb1a0896b19c9667d.png",
-          "media_sha256": "52c45360ca7d40397a67d5691df2be1574fb2862c912d6ccb1a0896b19c9667d"
+          "media_sha256": "52c45360ca7d40397a67d5691df2be1574fb2862c912d6ccb1a0896b19c9667d",
+          "paragraphs": [
+            "Visual Window Terms",
+            "Example ordered values: 1, 1, 2, 2, 3, 3, 4, 4, 5, 5.",
+            "Current row: the row being evaluated.",
+            "Peers: rows with the same ORDER BY value.",
+            "Window frame: the subset selected by the frame clause.",
+            "Partition: all rows in the current PARTITION BY group."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Visual Window Terms",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Visual Window Terms",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Example ordered values: 1, 1, 2, 2, 3, 3, 4, 4, 5, 5.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Example ordered values: 1, 1, 2, 2, 3, 3, 4, 4, 5, 5.",
+                  "style": {
+                    "sz": "1650",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Current row: the row being evaluated.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Current row: the row being evaluated.",
+                  "style": {
+                    "sz": "1650",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Peers: rows with the same ORDER BY value.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Peers: rows with the same ORDER BY value.",
+                  "style": {
+                    "sz": "1650",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Window frame: the subset selected by the frame clause.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Window frame: the subset selected by the frame clause.",
+                  "style": {
+                    "sz": "1650",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Partition: all rows in the current PARTITION BY group.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Partition: all rows in the current PARTITION BY group.",
+                  "style": {
+                    "sz": "1650",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -708279,13 +709649,13 @@
       "id": "authored:f26f0505b0424991aea9dd60a12d7e28",
       "source_part": "ppt/slides/slide19.xml",
       "number": 169,
-      "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "title": "SQL for Window Frames",
       "subtitle": null,
       "hidden": false,
       "content": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -708300,8 +709670,199 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image6.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/7503be6105f8b6c6f493ee557a2cdb50dff28e4fcb37b61189dcfa353ad48dac.png",
-          "media_sha256": "7503be6105f8b6c6f493ee557a2cdb50dff28e4fcb37b61189dcfa353ad48dac"
+          "media_sha256": "7503be6105f8b6c6f493ee557a2cdb50dff28e4fcb37b61189dcfa353ad48dac",
+          "paragraphs": [
+            "SQL for Window Frames",
+            "ROWS CURRENT ROW AND CURRENT ROW — end-frame default",
+            "ORDER BY x RANGE CURRENT ROW",
+            "ROWS UNBOUNDED PRECEDING",
+            "ORDER BY x RANGE UNBOUNDED PRECEDING",
+            "ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "SQL for Window Frames",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "SQL for Window Frames",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "ROWS CURRENT ROW AND CURRENT ROW — end-frame default",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "ROWS CURRENT ROW AND CURRENT ROW — end-frame default",
+                  "style": {
+                    "sz": "1550",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "ORDER BY x RANGE CURRENT ROW",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "ORDER BY x RANGE CURRENT ROW",
+                  "style": {
+                    "sz": "1550",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "ROWS UNBOUNDED PRECEDING",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "ROWS UNBOUNDED PRECEDING",
+                  "style": {
+                    "sz": "1550",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "ORDER BY x RANGE UNBOUNDED PRECEDING",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "ORDER BY x RANGE UNBOUNDED PRECEDING",
+                  "style": {
+                    "sz": "1550",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING",
+                  "style": {
+                    "sz": "1550",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -708379,8 +709940,8 @@
       ],
       "diagram_objects": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -708395,8 +709956,199 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image6.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/7503be6105f8b6c6f493ee557a2cdb50dff28e4fcb37b61189dcfa353ad48dac.png",
-          "media_sha256": "7503be6105f8b6c6f493ee557a2cdb50dff28e4fcb37b61189dcfa353ad48dac"
+          "media_sha256": "7503be6105f8b6c6f493ee557a2cdb50dff28e4fcb37b61189dcfa353ad48dac",
+          "paragraphs": [
+            "SQL for Window Frames",
+            "ROWS CURRENT ROW AND CURRENT ROW — end-frame default",
+            "ORDER BY x RANGE CURRENT ROW",
+            "ROWS UNBOUNDED PRECEDING",
+            "ORDER BY x RANGE UNBOUNDED PRECEDING",
+            "ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "SQL for Window Frames",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "SQL for Window Frames",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "ROWS CURRENT ROW AND CURRENT ROW — end-frame default",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "ROWS CURRENT ROW AND CURRENT ROW — end-frame default",
+                  "style": {
+                    "sz": "1550",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "ORDER BY x RANGE CURRENT ROW",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "ORDER BY x RANGE CURRENT ROW",
+                  "style": {
+                    "sz": "1550",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "ROWS UNBOUNDED PRECEDING",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "ROWS UNBOUNDED PRECEDING",
+                  "style": {
+                    "sz": "1550",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "ORDER BY x RANGE UNBOUNDED PRECEDING",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "ORDER BY x RANGE UNBOUNDED PRECEDING",
+                  "style": {
+                    "sz": "1550",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING",
+                  "style": {
+                    "sz": "1550",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -708540,13 +710292,13 @@
       "id": "authored:3889aec59b1d4e83ab9a8b88cabd6770",
       "source_part": "ppt/slides/slide20.xml",
       "number": 170,
-      "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "title": "3. Window Syntax with Generic Aggregates",
       "subtitle": null,
       "hidden": false,
       "content": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -708561,8 +710313,79 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image7.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/847a952640b77de00cf9a751b44ffbe5ef69f39f75ddbbde2fceac7c3a69e36f.png",
-          "media_sha256": "847a952640b77de00cf9a751b44ffbe5ef69f39f75ddbbde2fceac7c3a69e36f"
+          "media_sha256": "847a952640b77de00cf9a751b44ffbe5ef69f39f75ddbbde2fceac7c3a69e36f",
+          "paragraphs": [
+            "3. Window Syntax with Generic Aggregates",
+            "Generic aggregate functions such as SUM, AVG, MIN, MAX, and COUNT become window functions when followed by an OVER clause."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "3. Window Syntax with Generic Aggregates",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "3. Window Syntax with Generic Aggregates",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Generic aggregate functions such as SUM, AVG, MIN, MAX, and COUNT become window functions when followed by an OVER clause.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Generic aggregate functions such as SUM, AVG, MIN, MAX, and COUNT become window functions when followed by an OVER clause.",
+                  "style": {
+                    "sz": "1800",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -708640,8 +710463,8 @@
       ],
       "diagram_objects": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -708656,8 +710479,79 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image7.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/847a952640b77de00cf9a751b44ffbe5ef69f39f75ddbbde2fceac7c3a69e36f.png",
-          "media_sha256": "847a952640b77de00cf9a751b44ffbe5ef69f39f75ddbbde2fceac7c3a69e36f"
+          "media_sha256": "847a952640b77de00cf9a751b44ffbe5ef69f39f75ddbbde2fceac7c3a69e36f",
+          "paragraphs": [
+            "3. Window Syntax with Generic Aggregates",
+            "Generic aggregate functions such as SUM, AVG, MIN, MAX, and COUNT become window functions when followed by an OVER clause."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "3. Window Syntax with Generic Aggregates",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "3. Window Syntax with Generic Aggregates",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Generic aggregate functions such as SUM, AVG, MIN, MAX, and COUNT become window functions when followed by an OVER clause.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Generic aggregate functions such as SUM, AVG, MIN, MAX, and COUNT become window functions when followed by an OVER clause.",
+                  "style": {
+                    "sz": "1800",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -858855,13 +860749,13 @@
       "id": "authored:f596b0eed84248169645022bc9f08229",
       "source_part": "ppt/slides/slide45.xml",
       "number": 195,
-      "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "title": "4. Window-Specific Functions",
       "subtitle": null,
       "hidden": false,
       "content": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -858876,8 +860770,79 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image8.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/3ac6c053a8ec208d861f3d3481c41f2ef2eac66550d34db11bc108d31507664d.png",
-          "media_sha256": "3ac6c053a8ec208d861f3d3481c41f2ef2eac66550d34db11bc108d31507664d"
+          "media_sha256": "3ac6c053a8ec208d861f3d3481c41f2ef2eac66550d34db11bc108d31507664d",
+          "paragraphs": [
+            "4. Window-Specific Functions",
+            "Window-specific functions include ROW_NUMBER, RANK, DENSE_RANK, NTILE, LAG, LEAD, FIRST_VALUE, LAST_VALUE, and NTH_VALUE."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "4. Window-Specific Functions",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "4. Window-Specific Functions",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Window-specific functions include ROW_NUMBER, RANK, DENSE_RANK, NTILE, LAG, LEAD, FIRST_VALUE, LAST_VALUE, and NTH_VALUE.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Window-specific functions include ROW_NUMBER, RANK, DENSE_RANK, NTILE, LAG, LEAD, FIRST_VALUE, LAST_VALUE, and NTH_VALUE.",
+                  "style": {
+                    "sz": "1800",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -858955,8 +860920,8 @@
       ],
       "diagram_objects": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -858971,8 +860936,79 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image8.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/3ac6c053a8ec208d861f3d3481c41f2ef2eac66550d34db11bc108d31507664d.png",
-          "media_sha256": "3ac6c053a8ec208d861f3d3481c41f2ef2eac66550d34db11bc108d31507664d"
+          "media_sha256": "3ac6c053a8ec208d861f3d3481c41f2ef2eac66550d34db11bc108d31507664d",
+          "paragraphs": [
+            "4. Window-Specific Functions",
+            "Window-specific functions include ROW_NUMBER, RANK, DENSE_RANK, NTILE, LAG, LEAD, FIRST_VALUE, LAST_VALUE, and NTH_VALUE."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "4. Window-Specific Functions",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "4. Window-Specific Functions",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Window-specific functions include ROW_NUMBER, RANK, DENSE_RANK, NTILE, LAG, LEAD, FIRST_VALUE, LAST_VALUE, and NTH_VALUE.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Window-specific functions include ROW_NUMBER, RANK, DENSE_RANK, NTILE, LAG, LEAD, FIRST_VALUE, LAST_VALUE, and NTH_VALUE.",
+                  "style": {
+                    "sz": "1800",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -964932,13 +966968,13 @@
       "id": "authored:d278edeec69b4f3ab4d65a59743a747f",
       "source_part": "ppt/slides/slide62.xml",
       "number": 212,
-      "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "title": "5. Window Function Examples",
       "subtitle": null,
       "hidden": false,
       "content": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -964953,8 +966989,79 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image9.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/41931ab340f2905c615b111b4ff9b8a3f16152ab65a93973312de6240008d8c9.png",
-          "media_sha256": "41931ab340f2905c615b111b4ff9b8a3f16152ab65a93973312de6240008d8c9"
+          "media_sha256": "41931ab340f2905c615b111b4ff9b8a3f16152ab65a93973312de6240008d8c9",
+          "paragraphs": [
+            "5. Window Function Examples",
+            "The following examples combine partitions, ordering, frames, ranking, row access, and aggregate window functions."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "5. Window Function Examples",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "5. Window Function Examples",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "The following examples combine partitions, ordering, frames, ranking, row access, and aggregate window functions.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "The following examples combine partitions, ordering, frames, ranking, row access, and aggregate window functions.",
+                  "style": {
+                    "sz": "1800",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -965032,8 +967139,8 @@
       ],
       "diagram_objects": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -965048,8 +967155,79 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image9.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/41931ab340f2905c615b111b4ff9b8a3f16152ab65a93973312de6240008d8c9.png",
-          "media_sha256": "41931ab340f2905c615b111b4ff9b8a3f16152ab65a93973312de6240008d8c9"
+          "media_sha256": "41931ab340f2905c615b111b4ff9b8a3f16152ab65a93973312de6240008d8c9",
+          "paragraphs": [
+            "5. Window Function Examples",
+            "The following examples combine partitions, ordering, frames, ranking, row access, and aggregate window functions."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "5. Window Function Examples",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "5. Window Function Examples",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "The following examples combine partitions, ordering, frames, ranking, row access, and aggregate window functions.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "The following examples combine partitions, ordering, frames, ranking, row access, and aggregate window functions.",
+                  "style": {
+                    "sz": "1800",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -1051996,13 +1054174,13 @@
       "id": "authored:306f09b2cf1a4771811046a56607b52d",
       "source_part": "ppt/slides/slide81.xml",
       "number": 231,
-      "title": "Adapted from Bruce Momjian · Postgres Window Magic · MySQL 8.0+",
+      "title": "6. Considerations",
       "subtitle": null,
       "hidden": false,
       "content": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -1052017,8 +1054195,139 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image10.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/1801a9433f7c373edcbca2fb869f6a51b982429b1f18cc68f22754d176072973.png",
-          "media_sha256": "1801a9433f7c373edcbca2fb869f6a51b982429b1f18cc68f22754d176072973"
+          "media_sha256": "1801a9433f7c373edcbca2fb869f6a51b982429b1f18cc68f22754d176072973",
+          "paragraphs": [
+            "6. Considerations",
+            "Choose partitions and ordering deliberately.",
+            "Check the default frame before using FIRST_VALUE, LAST_VALUE, or NTH_VALUE.",
+            "Consider ties, NULL ordering, and whether the database supports the requested frame syntax."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "6. Considerations",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "6. Considerations",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Choose partitions and ordering deliberately.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Choose partitions and ordering deliberately.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Check the default frame before using FIRST_VALUE, LAST_VALUE, or NTH_VALUE.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Check the default frame before using FIRST_VALUE, LAST_VALUE, or NTH_VALUE.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Consider ties, NULL ordering, and whether the database supports the requested frame syntax.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Consider ties, NULL ordering, and whether the database supports the requested frame syntax.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -1052096,8 +1054405,8 @@
       ],
       "diagram_objects": [
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "2",
           "name": "Picture 1",
           "bounds_emu": {
@@ -1052112,8 +1054421,139 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image10.png",
           "source_order": 1,
-          "media_src": "../../../assets/deck-media/1801a9433f7c373edcbca2fb869f6a51b982429b1f18cc68f22754d176072973.png",
-          "media_sha256": "1801a9433f7c373edcbca2fb869f6a51b982429b1f18cc68f22754d176072973"
+          "media_sha256": "1801a9433f7c373edcbca2fb869f6a51b982429b1f18cc68f22754d176072973",
+          "paragraphs": [
+            "6. Considerations",
+            "Choose partitions and ordering deliberately.",
+            "Check the default frame before using FIRST_VALUE, LAST_VALUE, or NTH_VALUE.",
+            "Consider ties, NULL ordering, and whether the database supports the requested frame syntax."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "6. Considerations",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "6. Considerations",
+                  "style": {
+                    "sz": "3000",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": true
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Choose partitions and ordering deliberately.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Choose partitions and ordering deliberately.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Check the default frame before using FIRST_VALUE, LAST_VALUE, or NTH_VALUE.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Check the default frame before using FIRST_VALUE, LAST_VALUE, or NTH_VALUE.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Consider ties, NULL ordering, and whether the database supports the requested frame syntax.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Consider ties, NULL ordering, and whether the database supports the requested frame syntax.",
+                  "style": {
+                    "sz": "1700",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "bold": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",

@@ -26,6 +26,67 @@ LECTURE_INDEX_PATH = ROOT / "content/pages/lectures/library/index.json"
 WINDOW_FUNCTIONS_AUTHORING_NOTE = "authored:1673261d7e4e4fd8aa3c2032c24b8729"
 
 TEXT_MEDIA = {
+    "0463c5d2459347f1dbad48a887426897d5bd3828a54c566573876caf183045a5.png": {
+        "title": "1. Introduction to Window Functions",
+        "lines": ["Window functions compute values across related rows while preserving each individual row in the result."],
+        "font": "Arial",
+        "size": "1800",
+    },
+    "46547036dfadff217bb00fb9d6e8fd972e1b0e5aa67d85fabad1339619212122.png": {
+        "title": "Aggregates Called as Normal Functions",
+        "lines": ["Rows are sorted into groups.", "A normal aggregate returns one result row for each group.", "Example: GROUP BY x with an aggregate produces one aggregate value per distinct x."],
+        "font": "Arial",
+        "size": "1700",
+    },
+    "be1ba3d6bf43579449e2bde164fd06c2cc57b19da34a3783ba1cf93e713e48f3.png": {
+        "title": "Aggregates Called as Window Functions",
+        "lines": ["Rows remain individually visible.", "A window aggregate calculates across related rows and repeats the result alongside each input row.", "The window result does not collapse the rows into one row per group."],
+        "font": "Arial",
+        "size": "1700",
+    },
+    "07f0a265a5b690592385d7fae9a37d715a3ee3b1e9557868542f90163022ead8.png": {
+        "title": "2. Window Function Syntax",
+        "lines": ["The OVER clause defines the window used by a window function.", "PARTITION BY divides rows into independent partitions.", "ORDER BY establishes row order within each partition.", "A frame clause selects the rows around the current row."],
+        "font": "Arial",
+        "size": "1700",
+    },
+    "52c45360ca7d40397a67d5691df2be1574fb2862c912d6ccb1a0896b19c9667d.png": {
+        "title": "Visual Window Terms",
+        "lines": ["Example ordered values: 1, 1, 2, 2, 3, 3, 4, 4, 5, 5.", "Current row: the row being evaluated.", "Peers: rows with the same ORDER BY value.", "Window frame: the subset selected by the frame clause.", "Partition: all rows in the current PARTITION BY group."],
+        "font": "Arial",
+        "size": "1650",
+    },
+    "7503be6105f8b6c6f493ee557a2cdb50dff28e4fcb37b61189dcfa353ad48dac.png": {
+        "title": "SQL for Window Frames",
+        "lines": ["ROWS CURRENT ROW AND CURRENT ROW — end-frame default", "ORDER BY x RANGE CURRENT ROW", "ROWS UNBOUNDED PRECEDING", "ORDER BY x RANGE UNBOUNDED PRECEDING", "ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING"],
+        "bullet": True,
+        "font": "Consolas",
+        "size": "1550",
+    },
+    "847a952640b77de00cf9a751b44ffbe5ef69f39f75ddbbde2fceac7c3a69e36f.png": {
+        "title": "3. Window Syntax with Generic Aggregates",
+        "lines": ["Generic aggregate functions such as SUM, AVG, MIN, MAX, and COUNT become window functions when followed by an OVER clause."],
+        "font": "Arial",
+        "size": "1800",
+    },
+    "3ac6c053a8ec208d861f3d3481c41f2ef2eac66550d34db11bc108d31507664d.png": {
+        "title": "4. Window-Specific Functions",
+        "lines": ["Window-specific functions include ROW_NUMBER, RANK, DENSE_RANK, NTILE, LAG, LEAD, FIRST_VALUE, LAST_VALUE, and NTH_VALUE."],
+        "font": "Arial",
+        "size": "1800",
+    },
+    "41931ab340f2905c615b111b4ff9b8a3f16152ab65a93973312de6240008d8c9.png": {
+        "title": "5. Window Function Examples",
+        "lines": ["The following examples combine partitions, ordering, frames, ranking, row access, and aggregate window functions."],
+        "font": "Arial",
+        "size": "1800",
+    },
+    "1801a9433f7c373edcbca2fb869f6a51b982429b1f18cc68f22754d176072973.png": {
+        "title": "6. Considerations",
+        "lines": ["Choose partitions and ordering deliberately.", "Check the default frame before using FIRST_VALUE, LAST_VALUE, or NTH_VALUE.", "Consider ties, NULL ordering, and whether the database supports the requested frame syntax."],
+        "font": "Arial",
+        "size": "1700",
+    },
     "fe34ddefcb4d3e8f8f87169d9ca4fe582b9b8cb954a55d2cb1559013e5b8fd74.png": {
         "lines": ["C", "C++", "Erlang", "Haskell", "Java", "Javascript", ".NET (C# F#, PowerShell, etc)", "Node.js", "Perl", "PHP", "Python", "Ruby", "Scala"],
         "bullet": True,
@@ -184,7 +245,7 @@ def convert_text_media(value: object) -> None:
     media_name = Path(str(value.get("media_src", ""))).name
     replacement = TEXT_MEDIA.get(media_name)
     if replacement:
-        lines = replacement["lines"]
+        lines = ([replacement["title"]] if replacement.get("title") else []) + replacement["lines"]
         value.pop("media_src", None)
         value.pop("media_content_type", None)
         value.pop("crop", None)
@@ -200,20 +261,21 @@ def convert_text_media(value: object) -> None:
                     {
                         "text": line,
                         "style": {
-                            "sz": replacement["size"],
+                            "sz": "3000" if replacement.get("title") and index == 0 else replacement["size"],
                             "font": replacement["font"],
                             "color": {"type": "srgbClr", "value": "111111"},
+                            "bold": bool(replacement.get("title") and index == 0),
                         },
                     }
                 ],
                 "paragraph_format": {"spcAft": {"spcPts": "300"}},
                 "bullet": {
-                    "type": "char" if replacement.get("bullet") else "none",
-                    "value": "•" if replacement.get("bullet") else None,
+                    "type": "char" if replacement.get("bullet") and not (replacement.get("title") and index == 0) else "none",
+                    "value": "•" if replacement.get("bullet") and not (replacement.get("title") and index == 0) else None,
                     "source": "generated-text-media",
                 },
             }
-            for line in lines
+            for index, line in enumerate(lines)
         ]
         value["text_box"] = {
             "anchor": "t",
@@ -235,6 +297,12 @@ def generate() -> dict[Path, str]:
         for path in sorted(DECKS_DIR.glob("*.json"))
     }
     for deck in decks.values():
+        for slide in deck.get("slides", []):
+            source = json.dumps(slide)
+            for media_name, replacement in TEXT_MEDIA.items():
+                if replacement.get("title") and media_name in source:
+                    slide["title"] = replacement["title"]
+                    break
         convert_text_media(deck)
     window_functions = decks[WINDOW_FUNCTIONS_PATH]
     window_functions["slides"] = [
@@ -267,6 +335,14 @@ def walk_nodes(nodes: list[object]):
         yield from walk_nodes(node.get("children", []))
 
 
+def walk_objects(values: list[object]):
+    for value in values:
+        if not isinstance(value, dict):
+            continue
+        yield value
+        yield from walk_objects(value.get("children", []))
+
+
 def validate_decks() -> list[str]:
     errors = []
     decks = sorted(DECKS_DIR.glob("*.json"))
@@ -287,6 +363,18 @@ def validate_decks() -> list[str]:
         ]
         if references:
             errors.append(f"{path.name}: contains {len(references)} PowerPoint reference images")
+        slide_size = deck.get("slide_size_emu", {})
+        slide_area = slide_size.get("width", 0) * slide_size.get("height", 0)
+        full_slide_media = []
+        if slide_area:
+            for slide in deck.get("slides", []):
+                for block in walk_objects(slide.get("content", [])):
+                    bounds = block.get("bounds_emu", {})
+                    coverage = bounds.get("width", 0) * bounds.get("height", 0) / slide_area
+                    if block.get("media_src") and coverage >= 0.9:
+                        full_slide_media.append(slide.get("number"))
+        if full_slide_media:
+            errors.append(f"{path.name}: contains {len(full_slide_media)} full-slide media objects")
 
     legacy_slide_dirs = sorted((ROOT / "lectures/library").glob("*/slides"))
     if legacy_slide_dirs:
