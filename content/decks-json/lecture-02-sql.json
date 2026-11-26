@@ -6398,7 +6398,7 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image2.png",
           "source_order": 3,
-          "media_src": "../../../assets/reviewed-media/693999a434e3f0f169646a22b9fe6bb3b90bb23fd9965c4e7cbf5297c1957bb9.png",
+          "media_src": "../../../assets/deck-media/693999a434e3f0f169646a22b9fe6bb3b90bb23fd9965c4e7cbf5297c1957bb9.png",
           "media_sha256": "693999a434e3f0f169646a22b9fe6bb3b90bb23fd9965c4e7cbf5297c1957bb9"
         },
         {
@@ -6418,7 +6418,7 @@
           "embedded_media_relationship": "rId3",
           "embedded_media_target": "ppt/media/image3.png",
           "source_order": 4,
-          "media_src": "../../../assets/reviewed-media/85025b94d688af4acbf7348110c01176f1a54b97f8a3c879684b58b6072182cc.png",
+          "media_src": "../../../assets/deck-media/85025b94d688af4acbf7348110c01176f1a54b97f8a3c879684b58b6072182cc.png",
           "media_sha256": "85025b94d688af4acbf7348110c01176f1a54b97f8a3c879684b58b6072182cc"
         },
         {
@@ -6438,7 +6438,7 @@
           "embedded_media_relationship": "rId4",
           "embedded_media_target": "ppt/media/image4.png",
           "source_order": 5,
-          "media_src": "../../../assets/reviewed-media/3612bcc535232df4f92b1744a9d6483cdaa40bdafdc037a0a26e5c021b765434.png",
+          "media_src": "../../../assets/deck-media/3612bcc535232df4f92b1744a9d6483cdaa40bdafdc037a0a26e5c021b765434.png",
           "media_sha256": "3612bcc535232df4f92b1744a9d6483cdaa40bdafdc037a0a26e5c021b765434"
         },
         {
@@ -6458,7 +6458,7 @@
           "embedded_media_relationship": "rId5",
           "embedded_media_target": "ppt/media/image5.png",
           "source_order": 6,
-          "media_src": "../../../assets/reviewed-media/2bff32b7006280b514e83f9790e647f41bb68103f883b0886142b7707eaf4342.png",
+          "media_src": "../../../assets/deck-media/2bff32b7006280b514e83f9790e647f41bb68103f883b0886142b7707eaf4342.png",
           "media_sha256": "2bff32b7006280b514e83f9790e647f41bb68103f883b0886142b7707eaf4342"
         },
         {
@@ -7094,7 +7094,7 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image2.png",
           "source_order": 3,
-          "media_src": "../../../assets/reviewed-media/693999a434e3f0f169646a22b9fe6bb3b90bb23fd9965c4e7cbf5297c1957bb9.png",
+          "media_src": "../../../assets/deck-media/693999a434e3f0f169646a22b9fe6bb3b90bb23fd9965c4e7cbf5297c1957bb9.png",
           "media_sha256": "693999a434e3f0f169646a22b9fe6bb3b90bb23fd9965c4e7cbf5297c1957bb9"
         },
         {
@@ -7114,7 +7114,7 @@
           "embedded_media_relationship": "rId3",
           "embedded_media_target": "ppt/media/image3.png",
           "source_order": 4,
-          "media_src": "../../../assets/reviewed-media/85025b94d688af4acbf7348110c01176f1a54b97f8a3c879684b58b6072182cc.png",
+          "media_src": "../../../assets/deck-media/85025b94d688af4acbf7348110c01176f1a54b97f8a3c879684b58b6072182cc.png",
           "media_sha256": "85025b94d688af4acbf7348110c01176f1a54b97f8a3c879684b58b6072182cc"
         },
         {
@@ -7134,7 +7134,7 @@
           "embedded_media_relationship": "rId4",
           "embedded_media_target": "ppt/media/image4.png",
           "source_order": 5,
-          "media_src": "../../../assets/reviewed-media/3612bcc535232df4f92b1744a9d6483cdaa40bdafdc037a0a26e5c021b765434.png",
+          "media_src": "../../../assets/deck-media/3612bcc535232df4f92b1744a9d6483cdaa40bdafdc037a0a26e5c021b765434.png",
           "media_sha256": "3612bcc535232df4f92b1744a9d6483cdaa40bdafdc037a0a26e5c021b765434"
         },
         {
@@ -7154,7 +7154,7 @@
           "embedded_media_relationship": "rId5",
           "embedded_media_target": "ppt/media/image5.png",
           "source_order": 6,
-          "media_src": "../../../assets/reviewed-media/2bff32b7006280b514e83f9790e647f41bb68103f883b0886142b7707eaf4342.png",
+          "media_src": "../../../assets/deck-media/2bff32b7006280b514e83f9790e647f41bb68103f883b0886142b7707eaf4342.png",
           "media_sha256": "2bff32b7006280b514e83f9790e647f41bb68103f883b0886142b7707eaf4342"
         },
         {

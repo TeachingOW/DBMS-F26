@@ -16472,7 +16472,7 @@
           "embedded_media_relationship": "rId3",
           "embedded_media_target": "ppt/media/image1.tiff",
           "source_order": 6,
-          "media_src": "../../../assets/reviewed-media/3defc2346b1d1b216fd6f9e3afcaf0b09d3c0b6c69432d2c22f51d8caee11379.png",
+          "media_src": "../../../assets/deck-media/3defc2346b1d1b216fd6f9e3afcaf0b09d3c0b6c69432d2c22f51d8caee11379.png",
           "media_sha256": "ea58f7349b1f123c12637748aaba0ce90e425e0825a24fb38b2becb447ebf17c",
           "browser_derivative_of": "ea58f7349b1f123c12637748aaba0ce90e425e0825a24fb38b2becb447ebf17c.tiff"
         },
@@ -26297,7 +26297,7 @@
           "embedded_media_relationship": "rId3",
           "embedded_media_target": "ppt/media/image1.tiff",
           "source_order": 6,
-          "media_src": "../../../assets/reviewed-media/3defc2346b1d1b216fd6f9e3afcaf0b09d3c0b6c69432d2c22f51d8caee11379.png",
+          "media_src": "../../../assets/deck-media/3defc2346b1d1b216fd6f9e3afcaf0b09d3c0b6c69432d2c22f51d8caee11379.png",
           "media_sha256": "ea58f7349b1f123c12637748aaba0ce90e425e0825a24fb38b2becb447ebf17c",
           "browser_derivative_of": "ea58f7349b1f123c12637748aaba0ce90e425e0825a24fb38b2becb447ebf17c.tiff"
         },
@@ -213307,7 +213307,7 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image2.png",
           "source_order": 2,
-          "media_src": "../../../assets/reviewed-media/75e5c84d5f760b004bbdd878105ac4ee507a9e31c9b43e9b2155a116f2007149.png",
+          "media_src": "../../../assets/deck-media/75e5c84d5f760b004bbdd878105ac4ee507a9e31c9b43e9b2155a116f2007149.png",
           "media_sha256": "75e5c84d5f760b004bbdd878105ac4ee507a9e31c9b43e9b2155a116f2007149"
         },
         {
@@ -213971,7 +213971,7 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image2.png",
           "source_order": 2,
-          "media_src": "../../../assets/reviewed-media/75e5c84d5f760b004bbdd878105ac4ee507a9e31c9b43e9b2155a116f2007149.png",
+          "media_src": "../../../assets/deck-media/75e5c84d5f760b004bbdd878105ac4ee507a9e31c9b43e9b2155a116f2007149.png",
           "media_sha256": "75e5c84d5f760b004bbdd878105ac4ee507a9e31c9b43e9b2155a116f2007149"
         },
         {

@@ -17,8 +17,10 @@ ROOT = Path(__file__).resolve().parents[1]
 HOME_PATH = ROOT / "content/pages/index.json"
 SITE_PATH = ROOT / "content/site.json"
 DECKS_DIR = ROOT / "content/decks-json"
-REVIEWED_MEDIA_DIR = ROOT / "assets/reviewed-media"
-MEDIA_REFERENCE = re.compile(r"assets/reviewed-media/[^\"\\s]+")
+DECK_MEDIA_DIR = ROOT / "assets/deck-media"
+MEDIA_REFERENCE = re.compile(r"assets/deck-media/[^\"\\s]+")
+LEGACY_MEDIA_PREFIX = "assets/reviewed-media/"
+DECK_MEDIA_PREFIX = "assets/deck-media/"
 WINDOW_FUNCTIONS_PATH = DECKS_DIR / "lecture-06-window-functions.json"
 LECTURE_INDEX_PATH = ROOT / "content/pages/lectures/library/index.json"
 WINDOW_FUNCTIONS_AUTHORING_NOTE = "authored:1673261d7e4e4fd8aa3c2032c24b8729"
@@ -105,7 +107,11 @@ def serialized(value: object) -> str:
 def generate() -> dict[Path, str]:
     site = json.loads(SITE_PATH.read_text())
     site["routes"]["index.html"] = HOME_ROUTE
-    window_functions = json.loads(WINDOW_FUNCTIONS_PATH.read_text())
+    decks = {
+        path: json.loads(path.read_text().replace(LEGACY_MEDIA_PREFIX, DECK_MEDIA_PREFIX))
+        for path in sorted(DECKS_DIR.glob("*.json"))
+    }
+    window_functions = decks[WINDOW_FUNCTIONS_PATH]
     window_functions["slides"] = [
         slide
         for slide in window_functions["slides"]
@@ -123,8 +129,8 @@ def generate() -> dict[Path, str]:
     return {
         HOME_PATH: serialized(HOME_DOCUMENT),
         SITE_PATH: serialized(site),
-        WINDOW_FUNCTIONS_PATH: serialized(window_functions),
         LECTURE_INDEX_PATH: serialized(lecture_index),
+        **{path: serialized(deck) for path, deck in decks.items()},
     }
 
 
@@ -160,10 +166,12 @@ def validate_decks() -> list[str]:
     legacy_slide_dirs = sorted((ROOT / "lectures/library").glob("*/slides"))
     if legacy_slide_dirs:
         errors.append(f"found {len(legacy_slide_dirs)} obsolete full-slide image directories")
+    if (ROOT / "assets/reviewed-media").exists():
+        errors.append("obsolete assets/reviewed-media directory still exists")
 
     media_files = {
         path.relative_to(ROOT).as_posix()
-        for path in REVIEWED_MEDIA_DIR.iterdir()
+        for path in DECK_MEDIA_DIR.iterdir()
         if path.is_file()
     }
     missing_media = sorted(media_references - media_files)
@@ -171,7 +179,7 @@ def validate_decks() -> list[str]:
     if missing_media:
         errors.append(f"canonical decks reference {len(missing_media)} missing media files")
     if unused_media:
-        errors.append(f"reviewed-media contains {len(unused_media)} unreferenced files")
+        errors.append(f"deck-media contains {len(unused_media)} unreferenced files")
     return errors
 
 
