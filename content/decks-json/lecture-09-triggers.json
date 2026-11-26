@@ -57974,8 +57974,8 @@
           "source_order": 4
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "31749",
           "name": "Picture 9",
           "bounds_emu": {
@@ -58000,8 +58000,343 @@
             "dash": null
           },
           "source_order": 5,
-          "media_src": "../../../assets/deck-media/f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d.png",
-          "media_sha256": "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d"
+          "media_sha256": "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d",
+          "paragraphs": [
+            "branch (branch_name, branch_city, assets)",
+            "customer (customer_name, customer_street, customer_city)",
+            "account (account_number, branch_name, balance)",
+            "loan (loan_number, branch_name, amount)",
+            "depositor (customer_name, account_number)",
+            "borrower (customer_name, loan_number)"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "branch (branch_name, branch_city, assets)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "branch (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "branch_name",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_city, assets)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "customer (customer_name, customer_street, customer_city)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "customer (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, customer_street, customer_city",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "account (account_number, branch_name, balance)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "account (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "account_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_name, balance)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "loan (loan_number, branch_name, amount)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "loan (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "loan_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_name, amount)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "depositor (customer_name, account_number)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "depositor (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, account_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "borrower (customer_name, loan_number)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "borrower (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, loan_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -58929,8 +59264,8 @@
           "source_order": 4
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "31749",
           "name": "Picture 9",
           "bounds_emu": {
@@ -58955,8 +59290,343 @@
             "dash": null
           },
           "source_order": 5,
-          "media_src": "../../../assets/deck-media/f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d.png",
-          "media_sha256": "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d"
+          "media_sha256": "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d",
+          "paragraphs": [
+            "branch (branch_name, branch_city, assets)",
+            "customer (customer_name, customer_street, customer_city)",
+            "account (account_number, branch_name, balance)",
+            "loan (loan_number, branch_name, amount)",
+            "depositor (customer_name, account_number)",
+            "borrower (customer_name, loan_number)"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "branch (branch_name, branch_city, assets)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "branch (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "branch_name",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_city, assets)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "customer (customer_name, customer_street, customer_city)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "customer (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, customer_street, customer_city",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "account (account_number, branch_name, balance)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "account (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "account_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_name, balance)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "loan (loan_number, branch_name, amount)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "loan (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "loan_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_name, amount)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "depositor (customer_name, account_number)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "depositor (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, account_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "borrower (customer_name, loan_number)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "borrower (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, loan_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -60040,8 +60710,8 @@
           "source_order": 4
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "32773",
           "name": "Picture 9",
           "bounds_emu": {
@@ -60066,8 +60736,343 @@
             "dash": null
           },
           "source_order": 5,
-          "media_src": "../../../assets/deck-media/f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d.png",
-          "media_sha256": "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d"
+          "media_sha256": "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d",
+          "paragraphs": [
+            "branch (branch_name, branch_city, assets)",
+            "customer (customer_name, customer_street, customer_city)",
+            "account (account_number, branch_name, balance)",
+            "loan (loan_number, branch_name, amount)",
+            "depositor (customer_name, account_number)",
+            "borrower (customer_name, loan_number)"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "branch (branch_name, branch_city, assets)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "branch (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "branch_name",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_city, assets)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "customer (customer_name, customer_street, customer_city)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "customer (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, customer_street, customer_city",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "account (account_number, branch_name, balance)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "account (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "account_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_name, balance)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "loan (loan_number, branch_name, amount)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "loan (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "loan_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_name, amount)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "depositor (customer_name, account_number)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "depositor (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, account_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "borrower (customer_name, loan_number)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "borrower (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, loan_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -60847,8 +61852,8 @@
           "source_order": 4
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "32773",
           "name": "Picture 9",
           "bounds_emu": {
@@ -60873,8 +61878,343 @@
             "dash": null
           },
           "source_order": 5,
-          "media_src": "../../../assets/deck-media/f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d.png",
-          "media_sha256": "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d"
+          "media_sha256": "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d",
+          "paragraphs": [
+            "branch (branch_name, branch_city, assets)",
+            "customer (customer_name, customer_street, customer_city)",
+            "account (account_number, branch_name, balance)",
+            "loan (loan_number, branch_name, amount)",
+            "depositor (customer_name, account_number)",
+            "borrower (customer_name, loan_number)"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "branch (branch_name, branch_city, assets)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "branch (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "branch_name",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_city, assets)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "customer (customer_name, customer_street, customer_city)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "customer (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, customer_street, customer_city",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "account (account_number, branch_name, balance)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "account (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "account_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_name, balance)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "loan (loan_number, branch_name, amount)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "loan (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "loan_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_name, amount)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "depositor (customer_name, account_number)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "depositor (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, account_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "borrower (customer_name, loan_number)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "borrower (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, loan_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -61784,8 +63124,8 @@
           "source_order": 4
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "33797",
           "name": "Picture 9",
           "bounds_emu": {
@@ -61810,8 +63150,343 @@
             "dash": null
           },
           "source_order": 5,
-          "media_src": "../../../assets/deck-media/f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d.png",
-          "media_sha256": "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d"
+          "media_sha256": "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d",
+          "paragraphs": [
+            "branch (branch_name, branch_city, assets)",
+            "customer (customer_name, customer_street, customer_city)",
+            "account (account_number, branch_name, balance)",
+            "loan (loan_number, branch_name, amount)",
+            "depositor (customer_name, account_number)",
+            "borrower (customer_name, loan_number)"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "branch (branch_name, branch_city, assets)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "branch (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "branch_name",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_city, assets)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "customer (customer_name, customer_street, customer_city)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "customer (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, customer_street, customer_city",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "account (account_number, branch_name, balance)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "account (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "account_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_name, balance)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "loan (loan_number, branch_name, amount)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "loan (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "loan_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_name, amount)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "depositor (customer_name, account_number)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "depositor (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, account_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "borrower (customer_name, loan_number)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "borrower (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, loan_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -62539,8 +64214,8 @@
           "source_order": 4
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "33797",
           "name": "Picture 9",
           "bounds_emu": {
@@ -62565,8 +64240,343 @@
             "dash": null
           },
           "source_order": 5,
-          "media_src": "../../../assets/deck-media/f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d.png",
-          "media_sha256": "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d"
+          "media_sha256": "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d",
+          "paragraphs": [
+            "branch (branch_name, branch_city, assets)",
+            "customer (customer_name, customer_street, customer_city)",
+            "account (account_number, branch_name, balance)",
+            "loan (loan_number, branch_name, amount)",
+            "depositor (customer_name, account_number)",
+            "borrower (customer_name, loan_number)"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "branch (branch_name, branch_city, assets)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "branch (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "branch_name",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_city, assets)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "customer (customer_name, customer_street, customer_city)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "customer (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, customer_street, customer_city",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "account (account_number, branch_name, balance)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "account (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "account_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_name, balance)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "loan (loan_number, branch_name, amount)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "loan (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "loan_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ", branch_name, amount)",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "depositor (customer_name, account_number)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "depositor (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, account_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "borrower (customer_name, loan_number)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "borrower (",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                },
+                {
+                  "text": "customer_name, loan_number",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": true
+                  }
+                },
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1500",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    },
+                    "underline": false
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "500"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",

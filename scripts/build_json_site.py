@@ -26,6 +26,27 @@ LECTURE_INDEX_PATH = ROOT / "content/pages/lectures/library/index.json"
 WINDOW_FUNCTIONS_AUTHORING_NOTE = "authored:1673261d7e4e4fd8aa3c2032c24b8729"
 
 TEXT_MEDIA = {
+    "f1d462db1fb42dc3ad2c91dfbc20d4ba07198389fa734f1048ee7f8966fab85d.png": {
+        "lines": [
+            "branch (branch_name, branch_city, assets)",
+            "customer (customer_name, customer_street, customer_city)",
+            "account (account_number, branch_name, balance)",
+            "loan (loan_number, branch_name, amount)",
+            "depositor (customer_name, account_number)",
+            "borrower (customer_name, loan_number)",
+        ],
+        "rich_lines": [
+            [("branch (", False), ("branch_name", True), (", branch_city, assets)", False)],
+            [("customer (", False), ("customer_name, customer_street, customer_city", True), (")", False)],
+            [("account (", False), ("account_number", True), (", branch_name, balance)", False)],
+            [("loan (", False), ("loan_number", True), (", branch_name, amount)", False)],
+            [("depositor (", False), ("customer_name, account_number", True), (")", False)],
+            [("borrower (", False), ("customer_name, loan_number", True), (")", False)],
+        ],
+        "bullet": True,
+        "font": "Arial",
+        "size": "1500",
+    },
     "0463c5d2459347f1dbad48a887426897d5bd3828a54c566573876caf183045a5.png": {
         "title": "1. Introduction to Window Functions",
         "lines": ["Window functions compute values across related rows while preserving each individual row in the result."],
@@ -277,6 +298,33 @@ def convert_text_media(value: object) -> None:
             }
             for index, line in enumerate(lines)
         ]
+        if replacement.get("rich_lines"):
+            value["rich_paragraphs"] = [
+                {
+                    "text": replacement["lines"][index],
+                    "level": 0,
+                    "alignment": None,
+                    "runs": [
+                        {
+                            "text": text,
+                            "style": {
+                                "sz": replacement["size"],
+                                "font": replacement["font"],
+                                "color": {"type": "srgbClr", "value": "111111"},
+                                "underline": underline,
+                            },
+                        }
+                        for text, underline in runs
+                    ],
+                    "paragraph_format": {"spcAft": {"spcPts": "500"}},
+                    "bullet": {
+                        "type": "char" if replacement.get("bullet") else "none",
+                        "value": "•" if replacement.get("bullet") else None,
+                        "source": "generated-text-media",
+                    },
+                }
+                for index, runs in enumerate(replacement["rich_lines"])
+            ]
         value["text_box"] = {
             "anchor": "t",
             "lIns": "60000",
