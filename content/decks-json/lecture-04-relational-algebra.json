@@ -870,17 +870,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6cf532b7d9eb2442e6c407c75e0a863e02dfdbc29dd681d0612ec48a9cd30325.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6cf532b7d9eb2442e6c407c75e0a863e02dfdbc29dd681d0612ec48a9cd30325",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:257",
-          "source_slide_number": 1
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -1782,17 +1771,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8dace211145abd85f52d74e0e47752de3bf8249a0a1bcda26fd27b1d8ef87793.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "8dace211145abd85f52d74e0e47752de3bf8249a0a1bcda26fd27b1d8ef87793",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:319",
-          "source_slide_number": 2
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -3386,17 +3364,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/167ae6ee309eda0e2313db3c67c2b15d09e472399473bd02592e25c0115b6523.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "167ae6ee309eda0e2313db3c67c2b15d09e472399473bd02592e25c0115b6523",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:416",
-          "source_slide_number": 3
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -4787,17 +4754,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d51fb038048fac5dfbbc725804f4a46313503affb2c0374f1342e710bd05a006.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d51fb038048fac5dfbbc725804f4a46313503affb2c0374f1342e710bd05a006",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:320",
-          "source_slide_number": 4
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -6028,17 +5984,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/98b43972ea42fdcb8a9cb3615b073b90b8da55521a6248c9a9ca9f5893d36d48.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "98b43972ea42fdcb8a9cb3615b073b90b8da55521a6248c9a9ca9f5893d36d48",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:259",
-          "source_slide_number": 5
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -7853,17 +7798,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/63eb4cad1c237fd0475701957308346c4126077b1c76cf39df516c19e8353ef4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "63eb4cad1c237fd0475701957308346c4126077b1c76cf39df516c19e8353ef4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:417",
-          "source_slide_number": 6
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -9724,17 +9658,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c8dcdc6dc1996fb3cacda6b62df8d9dd91d860cc94c0c61dce72825046f25ee6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c8dcdc6dc1996fb3cacda6b62df8d9dd91d860cc94c0c61dce72825046f25ee6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:323",
-          "source_slide_number": 7
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -12493,17 +12416,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b462f20494dbe88900c2fb81ad6bca2a1ed263b5b4c9ebfbfadb49f181aead41.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b462f20494dbe88900c2fb81ad6bca2a1ed263b5b4c9ebfbfadb49f181aead41",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:262",
-          "source_slide_number": 8
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -14304,17 +14216,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/fe5e83ee3fc1d0ae26b38cf20c223c12e9ee1fd0eb74b365f056fabbf3eb254a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "fe5e83ee3fc1d0ae26b38cf20c223c12e9ee1fd0eb74b365f056fabbf3eb254a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:324",
-          "source_slide_number": 9
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -16131,17 +16032,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0e1af7ece799efeeb7163e362292f2d6b8a3e3a51764eb2edd5d00162b8a0ecc.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "0e1af7ece799efeeb7163e362292f2d6b8a3e3a51764eb2edd5d00162b8a0ecc",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:327",
-          "source_slide_number": 10
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -17682,17 +17572,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/cd719e4368f4d07a3c58eaca78605ca368f2add095c137026826d17699bb494e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "cd719e4368f4d07a3c58eaca78605ca368f2add095c137026826d17699bb494e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:325",
-          "source_slide_number": 11
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -19721,17 +19600,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/662a28b841687ac79e5a679ba9d6a7d4b7bb7f01219b15cc4b34fd76fb587873.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "662a28b841687ac79e5a679ba9d6a7d4b7bb7f01219b15cc4b34fd76fb587873",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:264",
-          "source_slide_number": 12
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -21615,17 +21483,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/32ee45e213159db944f70f63616fae7dffa62e41db3c3f97e3eec6b5a95ba06c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "32ee45e213159db944f70f63616fae7dffa62e41db3c3f97e3eec6b5a95ba06c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:328",
-          "source_slide_number": 13
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -23139,17 +22996,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e18bbb7bdce80f2092ddc69a69c0159fd8896fa540c9e8cb9d59b681c83c48c4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e18bbb7bdce80f2092ddc69a69c0159fd8896fa540c9e8cb9d59b681c83c48c4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:267",
-          "source_slide_number": 14
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -26395,17 +26241,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/23df1d66e36814412335aae5df39a3849ae02de8c68b485901fcc022764f017d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "23df1d66e36814412335aae5df39a3849ae02de8c68b485901fcc022764f017d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:418",
-          "source_slide_number": 15
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -29650,17 +29485,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d7646eeb3e5f8df936cdde2a87fd96839f38e84e41007ec2ec2efc31ff82f226.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d7646eeb3e5f8df936cdde2a87fd96839f38e84e41007ec2ec2efc31ff82f226",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:268",
-          "source_slide_number": 16
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -31717,17 +31541,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b4a2a0dc83baf1c4d341b9f596dcdb9e3daef88ccc9eae1e5bcb475ebcb3e991.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b4a2a0dc83baf1c4d341b9f596dcdb9e3daef88ccc9eae1e5bcb475ebcb3e991",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:270",
-          "source_slide_number": 17
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -33160,17 +32973,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b3eb0c50a9ab145ad7699dfdcd7d7921838aadf979ea3bb76407cadd61fe2396.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b3eb0c50a9ab145ad7699dfdcd7d7921838aadf979ea3bb76407cadd61fe2396",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:271",
-          "source_slide_number": 18
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -33935,17 +33737,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e8afa715b8568119fec69730ce881b14b2076144b1b44e277a12906ad63dd338.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e8afa715b8568119fec69730ce881b14b2076144b1b44e277a12906ad63dd338",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:419",
-          "source_slide_number": 19
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -34709,17 +34500,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3442ebafd9c53dd374214809a14e356242c0389e05001b5e7aa03477b9f36140.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3442ebafd9c53dd374214809a14e356242c0389e05001b5e7aa03477b9f36140",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:272",
-          "source_slide_number": 20
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -36942,17 +36722,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b6bdbaab3f0855b0f5f4baefdc66ab0c47d5fbc0f9156608564689f4f5b8cc81.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b6bdbaab3f0855b0f5f4baefdc66ab0c47d5fbc0f9156608564689f4f5b8cc81",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:273",
-          "source_slide_number": 21
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -39034,17 +38803,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/dce29aa95cfb679039cf8d6e13655755cc14d2b79562a92783417f0d41a7dc96.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "dce29aa95cfb679039cf8d6e13655755cc14d2b79562a92783417f0d41a7dc96",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:329",
-          "source_slide_number": 22
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -41472,17 +41230,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1320e99a0d5bce0b6accde8bf4fa7000c341af23aab106790efbd07737197d53.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "1320e99a0d5bce0b6accde8bf4fa7000c341af23aab106790efbd07737197d53",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:276",
-          "source_slide_number": 23
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -45802,17 +45549,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c752a9b8026fbf47eab6467487c7b716bbcaa197b9c935784697e1608c8d6748.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c752a9b8026fbf47eab6467487c7b716bbcaa197b9c935784697e1608c8d6748",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:340",
-          "source_slide_number": 24
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -47054,17 +46790,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c9e8dad9944b0a512f338da49a5a492ae6f11f258311bc977efbd544e78cc8ba.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c9e8dad9944b0a512f338da49a5a492ae6f11f258311bc977efbd544e78cc8ba",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:408",
-          "source_slide_number": 25
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -49032,17 +48757,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/569ab789713cdd4d2b32d3d7d3209d03e626fa1bbe8214d5b9dbc1caf61bef12.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "569ab789713cdd4d2b32d3d7d3209d03e626fa1bbe8214d5b9dbc1caf61bef12",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:341",
-          "source_slide_number": 26
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -50624,17 +50338,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6fb10d771bce7bec48282cb0461f5f527d26f3e8ebc0fc00c330575d6b492359.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6fb10d771bce7bec48282cb0461f5f527d26f3e8ebc0fc00c330575d6b492359",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:291",
-          "source_slide_number": 27
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -52632,17 +52335,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/223f15beb586d04a85c47d008f880fea86dc601aa55d83ca6ff07b33c4daafe2.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "223f15beb586d04a85c47d008f880fea86dc601aa55d83ca6ff07b33c4daafe2",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:348",
-          "source_slide_number": 28
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -54123,17 +53815,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/105a3f4c964e608c52aa37101d07e252bef1cac6613a942b262c50c59345cb30.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "105a3f4c964e608c52aa37101d07e252bef1cac6613a942b262c50c59345cb30",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:349",
-          "source_slide_number": 29
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -55092,17 +54773,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1df9f80da1f6114b05777e1c5a6566adf024610050ca1729f3c98fb65a88164d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "1df9f80da1f6114b05777e1c5a6566adf024610050ca1729f3c98fb65a88164d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:410",
-          "source_slide_number": 30
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -57144,17 +56814,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0cdd1686a68869a95ee33f8744367392fd1854ba30b412476404815e929d4215.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "0cdd1686a68869a95ee33f8744367392fd1854ba30b412476404815e929d4215",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:345",
-          "source_slide_number": 31
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -59193,17 +58852,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c98da4cab5a16f41e8e291904c42c11f01d1e510f51bc76f38241e44b867c4a7.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c98da4cab5a16f41e8e291904c42c11f01d1e510f51bc76f38241e44b867c4a7",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:346",
-          "source_slide_number": 32
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -61123,17 +60771,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d5348e21ac1b9c6352432351b9a058ad2b33dcd947c75120657a60bca7fcca35.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d5348e21ac1b9c6352432351b9a058ad2b33dcd947c75120657a60bca7fcca35",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:344",
-          "source_slide_number": 33
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -62981,17 +62618,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/585940d31b445c0d622c290e00345b1e255074fa5798552d439b5ae24c066f2e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "585940d31b445c0d622c290e00345b1e255074fa5798552d439b5ae24c066f2e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:352",
-          "source_slide_number": 34
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -63894,17 +63520,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5d044804c6be0a618158c21c2b0d8eb542ee2fd1d23f104a2e99e70184d91592.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5d044804c6be0a618158c21c2b0d8eb542ee2fd1d23f104a2e99e70184d91592",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:432",
-          "source_slide_number": 35
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -64806,17 +64421,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3f602a7cfb7c18d50dddc4c516e90c515982c5ea940c148a4758f37d0e6c36f4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3f602a7cfb7c18d50dddc4c516e90c515982c5ea940c148a4758f37d0e6c36f4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:380",
-          "source_slide_number": 36
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -66203,17 +65807,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3a6075734b92efc3ba3ff7a64c0101c6e47da37ecf77a6da89ecb251ada43eb1.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3a6075734b92efc3ba3ff7a64c0101c6e47da37ecf77a6da89ecb251ada43eb1",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:381",
-          "source_slide_number": 37
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -68505,17 +68098,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ddcdb410c0cf196a031b6f61ed13d8ca3ff57946ad318b77bd823fee21711d51.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ddcdb410c0cf196a031b6f61ed13d8ca3ff57946ad318b77bd823fee21711d51",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:382",
-          "source_slide_number": 38
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -70791,17 +70373,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ba463f68c58f05d3cf337055b4209916bac756447d53982cc984d2d1d3f70c9d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ba463f68c58f05d3cf337055b4209916bac756447d53982cc984d2d1d3f70c9d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:383",
-          "source_slide_number": 39
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -72530,17 +72101,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e0842630e48a77fb20d81c65d89d3bb63beb4ec1ff82e73c6472ea935d7adf20.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e0842630e48a77fb20d81c65d89d3bb63beb4ec1ff82e73c6472ea935d7adf20",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:384",
-          "source_slide_number": 40
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -73304,17 +72864,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/67ba9695b84a6870a804ef21375dfbf5a04a1ab446b7015f0cb6223c41cc152c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "67ba9695b84a6870a804ef21375dfbf5a04a1ab446b7015f0cb6223c41cc152c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:433",
-          "source_slide_number": 41
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -75940,17 +75489,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ea840fed98e3959f312dc52350f4ac61921fa13c524aae4799e08dc848320b74.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ea840fed98e3959f312dc52350f4ac61921fa13c524aae4799e08dc848320b74",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:434",
-          "source_slide_number": 42
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -78831,17 +78369,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e6d2cab994838d89c3fd039baaa07d115ac43c9069fa9f2d8f24a3c2812b76ad.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e6d2cab994838d89c3fd039baaa07d115ac43c9069fa9f2d8f24a3c2812b76ad",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:435",
-          "source_slide_number": 43
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -81628,17 +81155,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e103dbec4c1accc49a923c9be98b6a0440a9d3e39a5c4e2100d5fa7182201487.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e103dbec4c1accc49a923c9be98b6a0440a9d3e39a5c4e2100d5fa7182201487",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:436",
-          "source_slide_number": 44
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -85040,17 +84556,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8aced382ec1950e3fb1049c16c3e9f8ec11c73be231c1e3c73e4ee1688a3c0d6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "8aced382ec1950e3fb1049c16c3e9f8ec11c73be231c1e3c73e4ee1688a3c0d6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:437",
-          "source_slide_number": 45
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -85814,17 +85319,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3845b39b6fb3899795ccbcce577525adfc3ff566514d65d7412ec36fbccef299.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3845b39b6fb3899795ccbcce577525adfc3ff566514d65d7412ec36fbccef299",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:385",
-          "source_slide_number": 46
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -88450,17 +87944,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8d6e3f566f8501edf9c2f0b2048eff43cd7cf1e44d893fcb29ddbf3d6039b6ac.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "8d6e3f566f8501edf9c2f0b2048eff43cd7cf1e44d893fcb29ddbf3d6039b6ac",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:386",
-          "source_slide_number": 47
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -91341,17 +90824,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/fae5bb3b4ca6144dd269715555412f121ac580f9f38295be8455e0bf01dc11ae.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "fae5bb3b4ca6144dd269715555412f121ac580f9f38295be8455e0bf01dc11ae",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:387",
-          "source_slide_number": 48
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -94138,17 +93610,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4a99a864468df38625f59b0b2cfbf9eb66f054e4a43134c6c974b26ec5020e0c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4a99a864468df38625f59b0b2cfbf9eb66f054e4a43134c6c974b26ec5020e0c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:388",
-          "source_slide_number": 49
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -97536,17 +96997,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/858d12799697c39c5c44f80c75858805be4cd5818dec9419776a2646999a9f0a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "858d12799697c39c5c44f80c75858805be4cd5818dec9419776a2646999a9f0a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:389",
-          "source_slide_number": 50
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -99231,17 +98681,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d5466653d749a1ad1f04ecb2ee020409490b0e7abeef0f461c8fe0704975d15a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d5466653d749a1ad1f04ecb2ee020409490b0e7abeef0f461c8fe0704975d15a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:409",
-          "source_slide_number": 51
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -100763,17 +100202,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e94d03fd0b0be780113aef9f342553197c88b9f79187a6820806b562027a1756.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e94d03fd0b0be780113aef9f342553197c88b9f79187a6820806b562027a1756",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:412",
-          "source_slide_number": 52
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -104894,17 +104322,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4b89a59e65deef8ba44c8cc3bd9f76e83787726af5b6bd9b10e7b2a4dc6e9f80.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4b89a59e65deef8ba44c8cc3bd9f76e83787726af5b6bd9b10e7b2a4dc6e9f80",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:392",
-          "source_slide_number": 53
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -105668,17 +105085,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c6021cb93ea93ceeca9f1a04f6060672a430e1b1ecc5bdea728057dcd837e5cd.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c6021cb93ea93ceeca9f1a04f6060672a430e1b1ecc5bdea728057dcd837e5cd",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:438",
-          "source_slide_number": 54
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -107698,17 +107104,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/189d3772c43ee4b94d4aabfb7f6eb4031c3ddac0541bc96c7609065356061841.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "189d3772c43ee4b94d4aabfb7f6eb4031c3ddac0541bc96c7609065356061841",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:439",
-          "source_slide_number": 55
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -109855,17 +109250,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9660557dd5e31b272c76bf155b3cb4288b8e6019dfbc6855c52df11abf9c5138.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "9660557dd5e31b272c76bf155b3cb4288b8e6019dfbc6855c52df11abf9c5138",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:440",
-          "source_slide_number": 56
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -112053,17 +111437,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1f859d03b0d72242aade3894d442fe229b25ad5b76e4df6acefc0ccec39d2073.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "1f859d03b0d72242aade3894d442fe229b25ad5b76e4df6acefc0ccec39d2073",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:441",
-          "source_slide_number": 57
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -112827,17 +112200,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2e0dedb5a5d0101c4cedbc6dfd61d63777498e4d103a2e4c544c91170ae65e3b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2e0dedb5a5d0101c4cedbc6dfd61d63777498e4d103a2e4c544c91170ae65e3b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:399",
-          "source_slide_number": 58
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -114817,17 +114179,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/fb0c00143cfb43cacd6b032bf09ed51747dd4024c3b2cf2673592e6993cb8c1d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "fb0c00143cfb43cacd6b032bf09ed51747dd4024c3b2cf2673592e6993cb8c1d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:393",
-          "source_slide_number": 59
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -116974,17 +116325,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8006e56e503deae0606c8fd6adbf4440024bc9f49dbe59b1440ddfb2e2c04780.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "8006e56e503deae0606c8fd6adbf4440024bc9f49dbe59b1440ddfb2e2c04780",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:394",
-          "source_slide_number": 60
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -119160,17 +118500,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/23a6301583b268a15fb6df8b0eed88b33cce265a10b50a54037b28ce69573d40.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "23a6301583b268a15fb6df8b0eed88b33cce265a10b50a54037b28ce69573d40",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:395",
-          "source_slide_number": 61
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -120763,17 +120092,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/023e629eb7a6259184434b47b44f75fd958da956255f3be74055f76143e6ec7c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "023e629eb7a6259184434b47b44f75fd958da956255f3be74055f76143e6ec7c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:396",
-          "source_slide_number": 62
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -122302,17 +121620,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8fd97f5b52b7bdaf986a0af71500de7751f6d98fd990000de3c515fda64a06f1.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "8fd97f5b52b7bdaf986a0af71500de7751f6d98fd990000de3c515fda64a06f1",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:397",
-          "source_slide_number": 63
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -123734,17 +123041,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f58e0b6048370949072bc74349f78175033f8381b4312d14fa8652516471e094.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f58e0b6048370949072bc74349f78175033f8381b4312d14fa8652516471e094",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:402",
-          "source_slide_number": 64
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -125980,17 +125276,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5caa11fc9271265ccdc329867ea38c97504b980f861ecf3af6c315bdae52e513.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5caa11fc9271265ccdc329867ea38c97504b980f861ecf3af6c315bdae52e513",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:442",
-          "source_slide_number": 65
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -128119,17 +127404,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d820f6ae34b416f38bc0b61fc14bf62f76056906c86d86712d2393b30fa9d942.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d820f6ae34b416f38bc0b61fc14bf62f76056906c86d86712d2393b30fa9d942",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:443",
-          "source_slide_number": 66
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -130294,17 +129568,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f1745787fdc0ece064008feaca355ab050619f74cf16955eaf68e7d29fdbbe74.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f1745787fdc0ece064008feaca355ab050619f74cf16955eaf68e7d29fdbbe74",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:444",
-          "source_slide_number": 67
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -132302,17 +131565,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bf289824251457c9230b1458ca7a7db458e8a63a75e1b97a64f98bc9662324f3.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "bf289824251457c9230b1458ca7a7db458e8a63a75e1b97a64f98bc9662324f3",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:411",
-          "source_slide_number": 68
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -134548,17 +133800,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/df16c82dbc6e911f443e78d5785f28b7989c7586b92e28b58ca01c102dfa1723.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "df16c82dbc6e911f443e78d5785f28b7989c7586b92e28b58ca01c102dfa1723",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:405",
-          "source_slide_number": 69
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -136687,17 +135928,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/05e38f2bdbaf79d2358fd1ebee1eb6124da4074e72c21fcd042d3dfea61e5405.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "05e38f2bdbaf79d2358fd1ebee1eb6124da4074e72c21fcd042d3dfea61e5405",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:406",
-          "source_slide_number": 70
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -138862,17 +138092,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a7c8542baae97647ea93da18e2729ac685dc6b89e4922246181dbe21c219296b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a7c8542baae97647ea93da18e2729ac685dc6b89e4922246181dbe21c219296b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:407",
-          "source_slide_number": 71
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -140183,17 +139402,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9b8a555ab212c87ca7c63c65b28cd790287cbe4a46af5c781600904caa5679ed.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "9b8a555ab212c87ca7c63c65b28cd790287cbe4a46af5c781600904caa5679ed",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:404",
-          "source_slide_number": 72
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -141171,17 +140379,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c31c02e4962f3f856c88740f87313645022dc0741de1f1d95f97631d61b0f5ef.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c31c02e4962f3f856c88740f87313645022dc0741de1f1d95f97631d61b0f5ef",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:414",
-          "source_slide_number": 73
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -142612,17 +141809,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e0f9a5f0536689c81ef81e700776546c7bfc49ed8d62c41d7f68e0b5d03f69b6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e0f9a5f0536689c81ef81e700776546c7bfc49ed8d62c41d7f68e0b5d03f69b6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:398",
-          "source_slide_number": 74
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -145271,17 +144457,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/11d5a2764b9a18839f85d88c63bc26c2b3ef4d89b9494b91cf9d2cb13c8aec95.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "11d5a2764b9a18839f85d88c63bc26c2b3ef4d89b9494b91cf9d2cb13c8aec95",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:420",
-          "source_slide_number": 75
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -147929,17 +147104,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/85ac0968e59e4ff2e5af7e726a1f5c04fd6186e4a085d8e6ec74397d0bcf371c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "85ac0968e59e4ff2e5af7e726a1f5c04fd6186e4a085d8e6ec74397d0bcf371c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:279",
-          "source_slide_number": 76
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -149195,17 +148359,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7e714ad9ce2f8744908d82442450f249071c2fba721ed3f7069140856eef5e66.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7e714ad9ce2f8744908d82442450f249071c2fba721ed3f7069140856eef5e66",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:280",
-          "source_slide_number": 77
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -151737,17 +150890,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/21c21bcccf07647b8efbf9ec3968f66212774911cf22cb9a712dea028fbd9224.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "21c21bcccf07647b8efbf9ec3968f66212774911cf22cb9a712dea028fbd9224",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:421",
-          "source_slide_number": 78
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -154278,17 +153420,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/cfd619dfae3c3ea44c5701603852615aaca9e4f5a271daa181815b90ddfcd5d5.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "cfd619dfae3c3ea44c5701603852615aaca9e4f5a271daa181815b90ddfcd5d5",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:334",
-          "source_slide_number": 79
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -155534,17 +154665,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ee0c977f9baa7a11cb3de42fb3bfe325544ac2ca8d46dd7f42988246690fe32b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ee0c977f9baa7a11cb3de42fb3bfe325544ac2ca8d46dd7f42988246690fe32b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:282",
-          "source_slide_number": 80
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -157749,17 +156869,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e0cda1834d4ce7c449d98214ae039f71bcbe63993471fd559535ee346dde2286.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e0cda1834d4ce7c449d98214ae039f71bcbe63993471fd559535ee346dde2286",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:422",
-          "source_slide_number": 81
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -160183,17 +159292,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f89de976f8d48fa16988594c6b28831ed6fbcd1dbebe5a87e903b50f07338688.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f89de976f8d48fa16988594c6b28831ed6fbcd1dbebe5a87e903b50f07338688",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:423",
-          "source_slide_number": 82
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -161854,17 +160952,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/358dcf537973228a07f7282925b805163b014b0f98b92aa77e61b3563224276f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "358dcf537973228a07f7282925b805163b014b0f98b92aa77e61b3563224276f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:424",
-          "source_slide_number": 83
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -164918,17 +164005,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bc5e40a07194569dc76402ec5a74fe2bc8dddca6cecb89785d4d6d77ad46840e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "bc5e40a07194569dc76402ec5a74fe2bc8dddca6cecb89785d4d6d77ad46840e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:425",
-          "source_slide_number": 84
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -166346,17 +165422,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/66c20a91ae37dce34a8b56fc8d230bb33bb4d4bdd540ec16e3f282c570647a78.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "66c20a91ae37dce34a8b56fc8d230bb33bb4d4bdd540ec16e3f282c570647a78",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:426",
-          "source_slide_number": 85
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -170676,17 +169741,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/cf7f012b9843b3025f29914026edec5de6ba7a72920a4e286c3fa1d822c664e1.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "cf7f012b9843b3025f29914026edec5de6ba7a72920a4e286c3fa1d822c664e1",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:427",
-          "source_slide_number": 86
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -172304,17 +171358,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/fdcc370f199c7dd98b8f166ea2f97587f646b793c3295970bb88b06e1a26ba71.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "fdcc370f199c7dd98b8f166ea2f97587f646b793c3295970bb88b06e1a26ba71",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:428",
-          "source_slide_number": 87
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -173548,17 +172591,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ec05731204df0d88af02667c491721e4b393027d33af8c32d73d6077f3590834.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ec05731204df0d88af02667c491721e4b393027d33af8c32d73d6077f3590834",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:429",
-          "source_slide_number": 88
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -175556,17 +174588,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/af524fe6b60de63a5e6b50015894268896c29a5cd6133482f7f6f79637c10502.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "af524fe6b60de63a5e6b50015894268896c29a5cd6133482f7f6f79637c10502",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:430",
-          "source_slide_number": 89
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -177168,17 +176189,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/94bd795a21dfb90033bca0dafed3e884f3b5b40efec4c7881bd6a3b2ce4fa958.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "94bd795a21dfb90033bca0dafed3e884f3b5b40efec4c7881bd6a3b2ce4fa958",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:431",
-          "source_slide_number": 90
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -179355,17 +178365,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/603e15a8a521b77246d42737aba0214b8e081a023c0b29fb39e3ab701bec7dfe.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "603e15a8a521b77246d42737aba0214b8e081a023c0b29fb39e3ab701bec7dfe",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:335",
-          "source_slide_number": 91
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -181789,17 +180788,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c4ce0e6e6f893ebe41be48b617374ecbd6533f69556243857cd6599b965c31e1.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c4ce0e6e6f893ebe41be48b617374ecbd6533f69556243857cd6599b965c31e1",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:336",
-          "source_slide_number": 92
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -183460,17 +182448,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/cbb2b96e0ad0b86b66b10da5925795b4261f7e2714c8afaab6ae3c1b9d3647e2.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "cbb2b96e0ad0b86b66b10da5925795b4261f7e2714c8afaab6ae3c1b9d3647e2",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:339",
-          "source_slide_number": 93
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -186524,17 +185501,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/61185fe44b3b23b486e3f5c8298e418f831d6e5f11f454f168d87cf5967613a6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "61185fe44b3b23b486e3f5c8298e418f831d6e5f11f454f168d87cf5967613a6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:400",
-          "source_slide_number": 94
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -187953,17 +186919,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/82bc6a6c265d74851fb1d4971b1c6d66f6cd17173ee68fd12454561c74b530cf.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "82bc6a6c265d74851fb1d4971b1c6d66f6cd17173ee68fd12454561c74b530cf",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:401",
-          "source_slide_number": 95
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -188861,17 +187816,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6987837f218149867fed1d060eb171b4c85364dcc1fd102b8abcb89d446a06db.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6987837f218149867fed1d060eb171b4c85364dcc1fd102b8abcb89d446a06db",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:415",
-          "source_slide_number": 96
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -190173,17 +189117,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/310d938ed2fab307b68c52b723c16698a8ed52095db5eb3da431ca1e302e7cbd.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "310d938ed2fab307b68c52b723c16698a8ed52095db5eb3da431ca1e302e7cbd",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:318",
-          "source_slide_number": 97
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -191738,17 +190671,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7eaed3760e601abb23fff353ca605860301ba9893038d8fbfef724fc9f56257d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7eaed3760e601abb23fff353ca605860301ba9893038d8fbfef724fc9f56257d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-04-relational-algebra:445",
-          "source_slide_number": 98
-        }
       },
       "review": {
         "status": "source-reviewed",

@@ -338,20 +338,6 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "lectures/library/index.html"
-                      },
-                      "children": [
-                        "Database lectures"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "tag": "li",
-                  "children": [
-                    {
-                      "tag": "a",
-                      "attrs": {
                         "href": "mongodb.html"
                       },
                       "children": [
@@ -380,48 +366,6 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "presentations/editable/er-v26/index.html"
-                      },
-                      "children": [
-                        "ER.v26 (reviewed source)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "tag": "li",
-                  "children": [
-                    {
-                      "tag": "a",
-                      "attrs": {
-                        "href": "presentations/editable/er-v26-enhanced/index.html"
-                      },
-                      "children": [
-                        "ER.v26 enhanced (reviewed source)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "tag": "li",
-                  "children": [
-                    {
-                      "tag": "a",
-                      "attrs": {
-                        "href": "presentations/editable/er-v26-with-labs/index.html"
-                      },
-                      "children": [
-                        "ER.v26 with labs (reviewed source)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "tag": "li",
-                  "children": [
-                    {
-                      "tag": "a",
-                      "attrs": {
                         "href": "presentations/editable/index.html"
                       },
                       "children": [
@@ -436,80 +380,10 @@
                     {
                       "tag": "a",
                       "attrs": {
-                        "href": "presentations/editable/indexes/index.html"
-                      },
-                      "children": [
-                        "Indexes (reviewed source)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "tag": "li",
-                  "children": [
-                    {
-                      "tag": "a",
-                      "attrs": {
-                        "href": "presentations/editable/intro/index.html"
-                      },
-                      "children": [
-                        "intro (reviewed source)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "tag": "li",
-                  "children": [
-                    {
-                      "tag": "a",
-                      "attrs": {
-                        "href": "presentations/editable/lecture1/index.html"
-                      },
-                      "children": [
-                        "Lecture1 (reviewed source)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "tag": "li",
-                  "children": [
-                    {
-                      "tag": "a",
-                      "attrs": {
-                        "href": "presentations/editable/mysql-window-functions/index.html"
-                      },
-                      "children": [
-                        "mysql window functions (reviewed source)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "tag": "li",
-                  "children": [
-                    {
-                      "tag": "a",
-                      "attrs": {
                         "href": "lectures/library/02_SQL/index.html"
                       },
                       "children": [
                         "02 SQL (JSON slides)"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "tag": "li",
-                  "children": [
-                    {
-                      "tag": "a",
-                      "attrs": {
-                        "href": "presentations/reviewed/lecture-14-mongodb/index.html"
-                      },
-                      "children": [
-                        "14 MongoDB (reviewed source)"
                       ]
                     }
                   ]

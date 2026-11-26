@@ -1,178 +1,33 @@
 {
   "schemaVersion": 1,
-  "title": "Editable course presentations",
+  "title": "Combined JSON presentations · DBMS-F26",
   "bodyAttributes": {},
   "nodes": [
     {
-      "tag": "nav",
-      "attrs": {
-        "aria-label": "Course navigation"
-      },
+      "tag": "main",
+      "attrs": {"class": "catalog"},
       "children": [
         {
-          "tag": "a",
-          "attrs": {
-            "href": "../../materials.html"
-          },
+          "tag": "nav",
+          "attrs": {"aria-label": "Course navigation"},
           "children": [
-            "Student materials"
-          ]
-        }
-      ]
-    },
-    {
-      "tag": "h1",
-      "children": [
-        "Editable course presentations"
-      ]
-    },
-    {
-      "tag": "p",
-      "children": [
-        "Content is stored as JSON; these HTML decks render text and tables without slide screenshots."
-      ]
-    },
-    {
-      "tag": "ul",
-      "children": [
-        {
-          "tag": "li",
-          "children": [
-            {
-              "tag": "a",
-              "attrs": {
-                "href": "db-design/index.html"
-              },
-              "children": [
-                "db design"
-              ]
-            }
+            {"tag": "a", "attrs": {"href": "../../materials.html"}, "children": ["Student materials"]},
+            {"tag": "strong", "children": ["DBMS-F26"]},
+            {"tag": "a", "attrs": {"href": "../../lectures/library/index.html"}, "children": ["All topics"]}
           ]
         },
+        {"tag": "h1", "children": ["Combined JSON presentations"]},
+        {"tag": "p", "children": ["Alternate presentation variants have been merged into one complete JSON sequence per topic."]},
         {
-          "tag": "li",
+          "tag": "ul",
+          "attrs": {"class": "lecture-list"},
           "children": [
-            {
-              "tag": "a",
-              "attrs": {
-                "href": "db-design-enhanced/index.html"
-              },
-              "children": [
-                "db design enhanced"
-              ]
-            }
-          ]
-        },
-        {
-          "tag": "li",
-          "children": [
-            {
-              "tag": "a",
-              "attrs": {
-                "href": "db-design-with-labs/index.html"
-              },
-              "children": [
-                "db design with labs"
-              ]
-            }
-          ]
-        },
-        {
-          "tag": "li",
-          "children": [
-            {
-              "tag": "a",
-              "attrs": {
-                "href": "er-v26/index.html"
-              },
-              "children": [
-                "er v26"
-              ]
-            }
-          ]
-        },
-        {
-          "tag": "li",
-          "children": [
-            {
-              "tag": "a",
-              "attrs": {
-                "href": "er-v26-enhanced/index.html"
-              },
-              "children": [
-                "er v26 enhanced"
-              ]
-            }
-          ]
-        },
-        {
-          "tag": "li",
-          "children": [
-            {
-              "tag": "a",
-              "attrs": {
-                "href": "er-v26-with-labs/index.html"
-              },
-              "children": [
-                "er v26 with labs"
-              ]
-            }
-          ]
-        },
-        {
-          "tag": "li",
-          "children": [
-            {
-              "tag": "a",
-              "attrs": {
-                "href": "indexes/index.html"
-              },
-              "children": [
-                "indexes"
-              ]
-            }
-          ]
-        },
-        {
-          "tag": "li",
-          "children": [
-            {
-              "tag": "a",
-              "attrs": {
-                "href": "intro/index.html"
-              },
-              "children": [
-                "intro"
-              ]
-            }
-          ]
-        },
-        {
-          "tag": "li",
-          "children": [
-            {
-              "tag": "a",
-              "attrs": {
-                "href": "lecture1/index.html"
-              },
-              "children": [
-                "lecture1"
-              ]
-            }
-          ]
-        },
-        {
-          "tag": "li",
-          "children": [
-            {
-              "tag": "a",
-              "attrs": {
-                "href": "mysql-window-functions/index.html"
-              },
-              "children": [
-                "mysql window functions"
-              ]
-            }
+            {"tag": "li", "children": [{"tag": "a", "attrs": {"href": "db-design-all/index.html"}, "children": ["DB Design — All (102 slides)"]}]},
+            {"tag": "li", "children": [{"tag": "a", "attrs": {"href": "../../lectures/library/01_Introduction/index.html"}, "children": ["Introduction — All (51 slides)"]}]},
+            {"tag": "li", "children": [{"tag": "a", "attrs": {"href": "../../lectures/library/03_ER_Modeling/index.html"}, "children": ["ER Modeling — All (298 slides)"]}]},
+            {"tag": "li", "children": [{"tag": "a", "attrs": {"href": "../../lectures/library/06_Window_Functions/index.html"}, "children": ["Window Functions — All (235 slides)"]}]},
+            {"tag": "li", "children": [{"tag": "a", "attrs": {"href": "../../lectures/library/10_Storage_and_Indexes/index.html"}, "children": ["Storage and Indexes — All (107 slides)"]}]},
+            {"tag": "li", "children": [{"tag": "a", "attrs": {"href": "../../lectures/library/14_MongoDB/index.html"}, "children": ["MongoDB — All (71 slides)"]}]}
           ]
         }
       ]

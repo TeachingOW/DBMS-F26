@@ -437,7 +437,7 @@
       "scripts": [
         "lectures/library/viewer.js"
       ],
-      "deck": "content/decks-json/lecture-14-mongodb-full.json"
+      "deck": "content/decks-json/lecture-14-mongodb.json"
     },
     "lectures/library/15_Review/index.html": {
       "document": "content/pages/lectures/library/15_Review/index.json",
@@ -518,43 +518,37 @@
       "deck": "content/decks-json/db-design-all.json"
     },
     "presentations/editable/er-v26/index.html": {
-      "document": "content/pages/presentations/editable/er-v26/index.json",
+      "document": "content/pages/lectures/library/03_ER_Modeling/index.json",
       "styles": [
-        "runtime/styles/1798d212a487.css",
-        "runtime/reviewed-source.css"
+        "lectures/library/library.css"
       ],
       "data": [],
       "scripts": [
-        "runtime/reviewed-source.js",
-        "runtime/editable.js"
+        "lectures/library/viewer.js"
       ],
-      "deck": "content/decks-json/er-v26.json"
+      "deck": "content/decks-json/lecture-03-er-modeling.json"
     },
     "presentations/editable/er-v26-enhanced/index.html": {
-      "document": "content/pages/presentations/editable/er-v26-enhanced/index.json",
+      "document": "content/pages/lectures/library/03_ER_Modeling/index.json",
       "styles": [
-        "runtime/styles/1798d212a487.css",
-        "runtime/reviewed-source.css"
+        "lectures/library/library.css"
       ],
       "data": [],
       "scripts": [
-        "runtime/reviewed-source.js",
-        "runtime/editable.js"
+        "lectures/library/viewer.js"
       ],
-      "deck": "content/decks-json/er-v26-enhanced.json"
+      "deck": "content/decks-json/lecture-03-er-modeling.json"
     },
     "presentations/editable/er-v26-with-labs/index.html": {
-      "document": "content/pages/presentations/editable/er-v26-with-labs/index.json",
+      "document": "content/pages/lectures/library/03_ER_Modeling/index.json",
       "styles": [
-        "runtime/styles/1798d212a487.css",
-        "runtime/reviewed-source.css"
+        "lectures/library/library.css"
       ],
       "data": [],
       "scripts": [
-        "runtime/reviewed-source.js",
-        "runtime/editable.js"
+        "lectures/library/viewer.js"
       ],
-      "deck": "content/decks-json/er-v26-with-labs.json"
+      "deck": "content/decks-json/lecture-03-er-modeling.json"
     },
     "presentations/editable/index.html": {
       "document": "content/pages/presentations/editable/index.json",
@@ -563,56 +557,48 @@
       "scripts": []
     },
     "presentations/editable/indexes/index.html": {
-      "document": "content/pages/presentations/editable/indexes/index.json",
+      "document": "content/pages/lectures/library/10_Storage_and_Indexes/index.json",
       "styles": [
-        "runtime/styles/1798d212a487.css",
-        "runtime/reviewed-source.css"
+        "lectures/library/library.css"
       ],
       "data": [],
       "scripts": [
-        "runtime/reviewed-source.js",
-        "runtime/editable.js"
+        "lectures/library/viewer.js"
       ],
-      "deck": "content/decks-json/indexes.json"
+      "deck": "content/decks-json/lecture-10-storage-and-indexes.json"
     },
     "presentations/editable/intro/index.html": {
-      "document": "content/pages/presentations/editable/intro/index.json",
+      "document": "content/pages/lectures/library/01_Introduction/index.json",
       "styles": [
-        "runtime/styles/1798d212a487.css",
-        "runtime/reviewed-source.css"
+        "lectures/library/library.css"
       ],
       "data": [],
       "scripts": [
-        "runtime/reviewed-source.js",
-        "runtime/editable.js"
+        "lectures/library/viewer.js"
       ],
-      "deck": "content/decks-json/intro.json"
+      "deck": "content/decks-json/lecture-01-introduction.json"
     },
     "presentations/editable/lecture1/index.html": {
-      "document": "content/pages/presentations/editable/lecture1/index.json",
+      "document": "content/pages/lectures/library/01_Introduction/index.json",
       "styles": [
-        "runtime/styles/1798d212a487.css",
-        "runtime/reviewed-source.css"
+        "lectures/library/library.css"
       ],
       "data": [],
       "scripts": [
-        "runtime/reviewed-source.js",
-        "runtime/editable.js"
+        "lectures/library/viewer.js"
       ],
-      "deck": "content/decks-json/lecture1.json"
+      "deck": "content/decks-json/lecture-01-introduction.json"
     },
     "presentations/editable/mysql-window-functions/index.html": {
-      "document": "content/pages/presentations/editable/mysql-window-functions/index.json",
+      "document": "content/pages/lectures/library/06_Window_Functions/index.json",
       "styles": [
-        "runtime/styles/1798d212a487.css",
-        "runtime/reviewed-source.css"
+        "lectures/library/library.css"
       ],
       "data": [],
       "scripts": [
-        "runtime/reviewed-source.js",
-        "runtime/editable.js"
+        "lectures/library/viewer.js"
       ],
-      "deck": "content/decks-json/mysql-window-functions.json"
+      "deck": "content/decks-json/lecture-06-window-functions.json"
     },
     "syntax/aggregate.html": {
       "document": "content/pages/syntax/aggregate.json",
@@ -921,28 +907,24 @@
       "scripts": []
     },
     "presentations/reviewed/lecture-02-sql/index.html": {
-      "document": "content/pages/presentations/reviewed/lecture-02-sql/index.json",
+      "document": "content/pages/lectures/library/02_SQL/index.json",
       "styles": [
-        "runtime/styles/1798d212a487.css",
-        "runtime/reviewed-source.css"
+        "lectures/library/library.css"
       ],
       "data": [],
       "scripts": [
-        "runtime/reviewed-source.js",
-        "runtime/editable.js"
+        "lectures/library/viewer.js"
       ],
       "deck": "content/decks-json/lecture-02-sql.json"
     },
     "presentations/reviewed/lecture-14-mongodb/index.html": {
-      "document": "content/pages/presentations/reviewed/lecture-14-mongodb/index.json",
+      "document": "content/pages/lectures/library/14_MongoDB/index.json",
       "styles": [
-        "runtime/styles/1798d212a487.css",
-        "runtime/reviewed-source.css"
+        "lectures/library/library.css"
       ],
       "data": [],
       "scripts": [
-        "runtime/reviewed-source.js",
-        "runtime/editable.js"
+        "lectures/library/viewer.js"
       ],
       "deck": "content/decks-json/lecture-14-mongodb.json"
     }

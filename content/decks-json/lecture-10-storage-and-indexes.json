@@ -1,6 +1,6 @@
 {
   "schema_version": "1.3",
-  "source_file": "10_Storage_and_Indexes.pptx",
+  "source_file": "10 Storage and Indexes — All",
   "authored": true,
   "slides": [
     {
@@ -986,17 +986,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/63b1a90cc0cc877b9709f76c6b2064dbd67f040488c4d097eec266c7af3fc451.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "63b1a90cc0cc877b9709f76c6b2064dbd67f040488c4d097eec266c7af3fc451",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:402",
-          "source_slide_number": 1
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -1004,7 +993,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 1
+      }
     },
     {
       "id": "authored:07723ddd4ffb41cd9606c95fe9bc19fd",
@@ -2627,17 +2620,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/27d61a63cd0ec0b6801d4dde1df723448c3ef0fcefcbfad8622df805521d580b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "27d61a63cd0ec0b6801d4dde1df723448c3ef0fcefcbfad8622df805521d580b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:403",
-          "source_slide_number": 2
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -2645,7 +2627,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 2
+      }
     },
     {
       "id": "authored:c05619c36873498892ca5e9ef4f39b01",
@@ -3656,17 +3642,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a35c0a790aa31aec42b83338519681048964c8d92f8432a31cdf7370b948a0eb.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a35c0a790aa31aec42b83338519681048964c8d92f8432a31cdf7370b948a0eb",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:404",
-          "source_slide_number": 3
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -3674,7 +3649,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 3
+      }
     },
     {
       "id": "authored:0b0f8a29dbcf4f5faea6b912963b7ab5",
@@ -5639,17 +5618,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ae7b0e85103f0c9b4f59c5519a6a6c5ecfe180aac902823a51e130e34b092d94.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ae7b0e85103f0c9b4f59c5519a6a6c5ecfe180aac902823a51e130e34b092d94",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:405",
-          "source_slide_number": 4
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -5657,7 +5625,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 4
+      }
     },
     {
       "id": "authored:22c2fd9897fb45eba6dd742b79283ecc",
@@ -7137,17 +7109,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/523627e2cdeeda7765f6c2574a313ee9211c82eb5896e1b3c968328a25cf6540.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "523627e2cdeeda7765f6c2574a313ee9211c82eb5896e1b3c968328a25cf6540",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:406",
-          "source_slide_number": 5
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -7155,7 +7116,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 5
+      }
     },
     {
       "id": "authored:c506a269b389453397b1a44da4245a0f",
@@ -27017,17 +26982,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b907ced87637d63d9031fdde07edb56902c1a963251f36d2fb48505b3975af05.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b907ced87637d63d9031fdde07edb56902c1a963251f36d2fb48505b3975af05",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:407",
-          "source_slide_number": 6
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -27035,7 +26989,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 6
+      }
     },
     {
       "id": "authored:4f0c83d76c164d44a4779f1c8ed3c921",
@@ -29514,17 +29472,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c660176b2661f655d02792d180cd2544decb6682cf1e1f58fdef01e25e1f109a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c660176b2661f655d02792d180cd2544decb6682cf1e1f58fdef01e25e1f109a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:408",
-          "source_slide_number": 7
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -29532,7 +29479,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 7
+      }
     },
     {
       "id": "authored:88e943813d954cc59ad260a636dc8d50",
@@ -32174,17 +32125,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b48ed3f09f4f439a52721fc0806c6909450a9cfd941152949a2d0e0f5b3b8753.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b48ed3f09f4f439a52721fc0806c6909450a9cfd941152949a2d0e0f5b3b8753",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:409",
-          "source_slide_number": 8
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -32192,7 +32132,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 8
+      }
     },
     {
       "id": "authored:b356224c1d8c425c888872b802188b74",
@@ -35284,17 +35228,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/275507fcafe2735fffba8ef84a6bee373958ba69d4733c4b2a0504d6b1a5b8d1.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "275507fcafe2735fffba8ef84a6bee373958ba69d4733c4b2a0504d6b1a5b8d1",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:410",
-          "source_slide_number": 9
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -35302,7 +35235,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 9
+      }
     },
     {
       "id": "authored:d6472ec3594846f2b713d5f782105ca4",
@@ -38105,17 +38042,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/72b92e2effeada1ac25e959af6976449d4086d260f043edc5b4f23f20f9c8ce8.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "72b92e2effeada1ac25e959af6976449d4086d260f043edc5b4f23f20f9c8ce8",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:411",
-          "source_slide_number": 10
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -38123,7 +38049,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 10
+      }
     },
     {
       "id": "authored:e01d409fb7e64cbca21e3ea89162ad2d",
@@ -41125,17 +41055,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f27ff32549dc30fc6c319aa0a7b55bd5a0d2732aecedc941b62833058f1c1a5e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f27ff32549dc30fc6c319aa0a7b55bd5a0d2732aecedc941b62833058f1c1a5e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:412",
-          "source_slide_number": 11
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -41143,7 +41062,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 11
+      }
     },
     {
       "id": "authored:4c835d720ebe46da9d53227ad0fcbebe",
@@ -43742,17 +43665,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ec46ba873baa8ac1aa300038cbdad5fb2c6cea8adab82dceebd8dff79f70bea6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ec46ba873baa8ac1aa300038cbdad5fb2c6cea8adab82dceebd8dff79f70bea6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:471",
-          "source_slide_number": 12
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -43760,7 +43672,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 12
+      }
     },
     {
       "id": "authored:13448e91e99e4003a78b4bfebd9fb6ca",
@@ -46482,17 +46398,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0fdfaa2542143e8742378a71c161984df09828109c3b1611fad0cc5b9291660a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "0fdfaa2542143e8742378a71c161984df09828109c3b1611fad0cc5b9291660a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:413",
-          "source_slide_number": 13
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -46500,7 +46405,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 13
+      }
     },
     {
       "id": "authored:6494f75936c045d59043e1c878457d89",
@@ -48179,17 +48088,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/37caad1dafa306df75415d3283efa23bab9b744f56cf8d61112fa0510da53db3.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "37caad1dafa306df75415d3283efa23bab9b744f56cf8d61112fa0510da53db3",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:414",
-          "source_slide_number": 14
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -48197,7 +48095,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 14
+      }
     },
     {
       "id": "authored:cb1153a164f0470f9e62082b101415d9",
@@ -51257,17 +51159,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/fdd4e28a90a6f4cdb46427d3c06aba843f27d8bc50bf3b340e931c623bd69599.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "fdd4e28a90a6f4cdb46427d3c06aba843f27d8bc50bf3b340e931c623bd69599",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:415",
-          "source_slide_number": 15
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -51275,7 +51166,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 15
+      }
     },
     {
       "id": "authored:1e692e36baf64770a1556205935a53a5",
@@ -52398,17 +52293,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d80c0d312b4bbd227a99bcbcf33d94120fc56bed1326556bb099b6f379d46436.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d80c0d312b4bbd227a99bcbcf33d94120fc56bed1326556bb099b6f379d46436",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:461",
-          "source_slide_number": 16
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -52416,7 +52300,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 16
+      }
     },
     {
       "id": "authored:04ff347f21754d129dbff4df76509555",
@@ -53773,17 +53661,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/69b36d1d44eb4a1e3f8892cfcf81acadbde589178ac5a9a5bffb2b9f7e720d32.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "69b36d1d44eb4a1e3f8892cfcf81acadbde589178ac5a9a5bffb2b9f7e720d32",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:462",
-          "source_slide_number": 17
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -53791,7 +53668,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 17
+      }
     },
     {
       "id": "authored:9645c6b09dcc4902be320df29ad4004d",
@@ -55360,17 +55241,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f4a184fdf4e71b810cd3fc60265e7aed96bda9f59a19e0a2f6239baeea6d1d52.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f4a184fdf4e71b810cd3fc60265e7aed96bda9f59a19e0a2f6239baeea6d1d52",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:463",
-          "source_slide_number": 18
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -55378,7 +55248,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 18
+      }
     },
     {
       "id": "authored:7e2a9a224561446a9c1f9cb1798171fc",
@@ -57079,17 +56953,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/09b49020f6b586036daf7a929511f65fea8892d824e0ab55f825ccb49220f449.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "09b49020f6b586036daf7a929511f65fea8892d824e0ab55f825ccb49220f449",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:327",
-          "source_slide_number": 19
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -57097,7 +56960,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 19
+      }
     },
     {
       "id": "authored:00929d2536bf4e0fa7acfa7b2809a5cb",
@@ -59342,17 +59209,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/616d2da1a2241245ebc7b4e2b5c97e592b12656b359b8026aa4d42fe30d3a22f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "616d2da1a2241245ebc7b4e2b5c97e592b12656b359b8026aa4d42fe30d3a22f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:260",
-          "source_slide_number": 20
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -59360,7 +59216,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 20
+      }
     },
     {
       "id": "authored:33b4a157f8064dcdb88dd0d09aaf3f87",
@@ -62827,17 +62687,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4442a631860ff584e9b9bca9ed5ab886b85c57d4003eacb6a2db708907126ccc.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4442a631860ff584e9b9bca9ed5ab886b85c57d4003eacb6a2db708907126ccc",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:378",
-          "source_slide_number": 21
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -62845,7 +62694,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 21
+      }
     },
     {
       "id": "authored:b4748d9db1a64224a76f923b1945679e",
@@ -64551,17 +64404,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8d3bfb4757a0a3d54f9bef74cdd393a5a67eb5f20a74de504640c22ba508a650.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "8d3bfb4757a0a3d54f9bef74cdd393a5a67eb5f20a74de504640c22ba508a650",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:379",
-          "source_slide_number": 22
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -64569,7 +64411,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 22
+      }
     },
     {
       "id": "authored:2e9d4f4b36724cbaa5b00381e1b774d6",
@@ -66301,17 +66147,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/53a985e53083108e32d9a60d0e4956eab3017e75a00a1baa847a8d34c0b560af.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "53a985e53083108e32d9a60d0e4956eab3017e75a00a1baa847a8d34c0b560af",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:400",
-          "source_slide_number": 23
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -66319,7 +66154,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 23
+      }
     },
     {
       "id": "authored:b5f9f678fcf648fa9ce991969448328c",
@@ -68849,17 +68688,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d3aa81d64987a9b6880de124d1d53f309e0062e40c45bd69b481428975282864.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d3aa81d64987a9b6880de124d1d53f309e0062e40c45bd69b481428975282864",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:261",
-          "source_slide_number": 24
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -68867,7 +68695,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 24
+      }
     },
     {
       "id": "authored:6e266248aa6a43e28852a30d692d2892",
@@ -71054,17 +70886,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9dbb0ef24b6d0335510cb7b14d89c229686f15f0bac1df37925e3a3b59825092.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "9dbb0ef24b6d0335510cb7b14d89c229686f15f0bac1df37925e3a3b59825092",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:328",
-          "source_slide_number": 25
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -71072,7 +70893,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 25
+      }
     },
     {
       "id": "authored:51491ddcc0b74063bd071e3ccd5b36e2",
@@ -73047,17 +72872,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7f5004f583c6b54f78a3f8abbc48501dc229aadda277fbb289fc21363794440b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7f5004f583c6b54f78a3f8abbc48501dc229aadda277fbb289fc21363794440b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:264",
-          "source_slide_number": 26
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -73065,7 +72879,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 26
+      }
     },
     {
       "id": "authored:c45edd58fa30485b943e454bfa5db23f",
@@ -75071,17 +74889,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0cdf8cc7d9f0fc5410c9f1630306ea46c09747427694bd146a2bc4efe0851e06.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "0cdf8cc7d9f0fc5410c9f1630306ea46c09747427694bd146a2bc4efe0851e06",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:329",
-          "source_slide_number": 27
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -75089,7 +74896,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 27
+      }
     },
     {
       "id": "authored:f1518578bf88417a89c9e0a4df4555e6",
@@ -77195,17 +77006,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7a0ea7626dfd65095ed97c1ae908f21cd76b6fa47dd172fdf07d56a4b43770c4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7a0ea7626dfd65095ed97c1ae908f21cd76b6fa47dd172fdf07d56a4b43770c4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:331",
-          "source_slide_number": 28
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -77213,7 +77013,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 28
+      }
     },
     {
       "id": "authored:e2f2d65786f949c38ad6e8b08cfb8d38",
@@ -79793,17 +79597,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/593686eaf67321ea0dfee832a951dba171202766ccdc7179f09b1c03683fe862.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "593686eaf67321ea0dfee832a951dba171202766ccdc7179f09b1c03683fe862",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:332",
-          "source_slide_number": 29
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -79811,7 +79604,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 29
+      }
     },
     {
       "id": "authored:48a8a10b1e9b4f5a9e1500f29215c4b1",
@@ -82040,17 +81837,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/dbcb3ddf3f5c8e297a1005f05d3030f074382df5fba1e1b18701b89258439fb5.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "dbcb3ddf3f5c8e297a1005f05d3030f074382df5fba1e1b18701b89258439fb5",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:398",
-          "source_slide_number": 30
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -82058,7 +81844,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 30
+      }
     },
     {
       "id": "authored:2641959861cc4234bff1a13ac98cfb90",
@@ -84323,17 +84113,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/281732fd9e4e973788e438530e10f5598d789742ee107f663e7a1e8c0969b2fd.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "281732fd9e4e973788e438530e10f5598d789742ee107f663e7a1e8c0969b2fd",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:268",
-          "source_slide_number": 31
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -84341,7 +84120,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 31
+      }
     },
     {
       "id": "authored:f92193657b3f438e9343770625266b39",
@@ -85560,17 +85343,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2d217a4d0872d98e8383a9502b39f6e0aecd562567cf54d3ae81ff4753aeb923.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2d217a4d0872d98e8383a9502b39f6e0aecd562567cf54d3ae81ff4753aeb923",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:399",
-          "source_slide_number": 32
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -85578,7 +85350,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 32
+      }
     },
     {
       "id": "authored:2408b0f529a043b1a598f406199659e0",
@@ -87177,17 +86953,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d57b2adc3e6095130038c4adaf899ff524c79664aa9261c5023478f745874c1c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d57b2adc3e6095130038c4adaf899ff524c79664aa9261c5023478f745874c1c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:434",
-          "source_slide_number": 33
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -87195,7 +86960,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 33
+      }
     },
     {
       "id": "authored:0151d1b700554eee9e7b163f14170dc3",
@@ -88410,17 +88179,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2af4616cbf67a4567af2827c6c63a36f6ed0e1eeed5259a5502596f4d0dd4484.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2af4616cbf67a4567af2827c6c63a36f6ed0e1eeed5259a5502596f4d0dd4484",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:436",
-          "source_slide_number": 34
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -88428,7 +88186,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 34
+      }
     },
     {
       "id": "authored:cdc37792dfe3407abfd9ab1dcea58489",
@@ -90013,17 +89775,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d75115f9c1c04b85896ee1d683012dbae3b969ce49f481efaacb89f93b072463.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d75115f9c1c04b85896ee1d683012dbae3b969ce49f481efaacb89f93b072463",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:437",
-          "source_slide_number": 35
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -90031,7 +89782,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 35
+      }
     },
     {
       "id": "authored:0ac7dce3e7cc4558be65d70781f21860",
@@ -91840,17 +91595,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5d91893c987718329a91df37c4751e30478647636c348ad3f5db2a4a86e9245d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5d91893c987718329a91df37c4751e30478647636c348ad3f5db2a4a86e9245d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:438",
-          "source_slide_number": 36
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -91858,7 +91602,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 36
+      }
     },
     {
       "id": "authored:aa9d8f062d9643ab933b1ec810772784",
@@ -93767,17 +93515,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/01a3eb7ed43523e0311ec373524cd4ae3cbd71eed246fcc70668c1b441d55ac6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "01a3eb7ed43523e0311ec373524cd4ae3cbd71eed246fcc70668c1b441d55ac6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:439",
-          "source_slide_number": 37
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -93785,7 +93522,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 37
+      }
     },
     {
       "id": "authored:e3b841cbf9e64800ac542d7a5af4f8c8",
@@ -96120,17 +95861,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6a08bf4df0ee092e7955f85d9c97b2d151781c6fbbf476f39d00c260ba4bf855.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6a08bf4df0ee092e7955f85d9c97b2d151781c6fbbf476f39d00c260ba4bf855",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:440",
-          "source_slide_number": 38
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -96138,7 +95868,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 38
+      }
     },
     {
       "id": "authored:8b7d8951e3024a3784d36191c874410c",
@@ -97987,17 +97721,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/eeaf8a0bafe28ef15b24f8bac70c30aeb22ec900389d96daef8a46fb704bda39.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "eeaf8a0bafe28ef15b24f8bac70c30aeb22ec900389d96daef8a46fb704bda39",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:441",
-          "source_slide_number": 39
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -98005,7 +97728,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 39
+      }
     },
     {
       "id": "authored:1370b538913a4015b5d0bc872418b5c9",
@@ -100355,17 +100082,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a1bf9f065b87a712d097af0245f0d0643315754143ff135980fe857eb604b056.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a1bf9f065b87a712d097af0245f0d0643315754143ff135980fe857eb604b056",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:442",
-          "source_slide_number": 40
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -100373,7 +100089,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 40
+      }
     },
     {
       "id": "authored:cb9401fc0085449c8f99fcbf740e2036",
@@ -105023,17 +104743,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c4cde259bff9f368c59797005c07caa53d7a899d00e1e7bd611622540c8ff1b7.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c4cde259bff9f368c59797005c07caa53d7a899d00e1e7bd611622540c8ff1b7",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:443",
-          "source_slide_number": 41
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -105041,7 +104750,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 41
+      }
     },
     {
       "id": "authored:288348997fb849e5ae75cc5219ca4824",
@@ -110085,17 +109798,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9bf588d24a67772c64c8f29c4712d504e7bab1d098d869fdb9a98c82b7268a95.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "9bf588d24a67772c64c8f29c4712d504e7bab1d098d869fdb9a98c82b7268a95",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:444",
-          "source_slide_number": 42
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -110103,7 +109805,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 42
+      }
     },
     {
       "id": "authored:64a16f20db784a35b1c79f167961519e",
@@ -115335,17 +115041,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/69aca087cff4a3dae1fb71e2309164113b65ed38cc14a83b6ad83ae535b7270f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "69aca087cff4a3dae1fb71e2309164113b65ed38cc14a83b6ad83ae535b7270f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:445",
-          "source_slide_number": 43
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -115353,7 +115048,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 43
+      }
     },
     {
       "id": "authored:dc84b5699cec405f92bcdd556f9675a2",
@@ -116430,17 +116129,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/851dcf142546e1c4dd06f739581b74666a06a4e86f67165767450ffd17de6da0.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "851dcf142546e1c4dd06f739581b74666a06a4e86f67165767450ffd17de6da0",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:446",
-          "source_slide_number": 44
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -116448,7 +116136,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 44
+      }
     },
     {
       "id": "authored:ac90f661bd1b46b596790f9886e85e7b",
@@ -118812,17 +118504,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4cc0bebacf6147f68cdd8e99180d15fcd9d285d2dfcd93ce9c0baa37f5d43d6b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4cc0bebacf6147f68cdd8e99180d15fcd9d285d2dfcd93ce9c0baa37f5d43d6b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:447",
-          "source_slide_number": 45
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -118830,7 +118511,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 45
+      }
     },
     {
       "id": "authored:593ed849995b45a687b5ee503b24311a",
@@ -126230,17 +125915,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4d99ddb783dbb714fed6f9c3e8b26c6c1186ca71efcae28de294adfdb97ceb11.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4d99ddb783dbb714fed6f9c3e8b26c6c1186ca71efcae28de294adfdb97ceb11",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:448",
-          "source_slide_number": 46
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -126248,7 +125922,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 46
+      }
     },
     {
       "id": "authored:0ce2c71d77334db481b6d00427e01539",
@@ -133655,17 +133333,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/17bf90a85b9e3ce5a2f1ddfd16d49630d3f42533b929bee2620fbbb8706bd1ce.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "17bf90a85b9e3ce5a2f1ddfd16d49630d3f42533b929bee2620fbbb8706bd1ce",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:449",
-          "source_slide_number": 47
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -133673,7 +133340,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 47
+      }
     },
     {
       "id": "authored:a534985744d9424c96ccfdec81cb41d9",
@@ -135829,17 +135500,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/94518135c92d29f994f4df96f6c3bab833ce930f691547a2de457b9e1b48261b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "94518135c92d29f994f4df96f6c3bab833ce930f691547a2de457b9e1b48261b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:450",
-          "source_slide_number": 48
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -135847,7 +135507,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 48
+      }
     },
     {
       "id": "authored:d042b36f46a14d51b5d14a2a05030623",
@@ -138540,17 +138204,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d402cd17b2c04c2ad81742a0b9a3c29af9c231589ed3492fa8a21b1dcb4511b9.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d402cd17b2c04c2ad81742a0b9a3c29af9c231589ed3492fa8a21b1dcb4511b9",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:451",
-          "source_slide_number": 49
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -138558,7 +138211,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 49
+      }
     },
     {
       "id": "authored:35371d5ed65a49579cfea6fa32db2df6",
@@ -141416,17 +141073,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/dfe8d91fcc9f3cb43247d50a7ef7bebc12d2fac2fcde5cc2c1dc3d7e306b334c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "dfe8d91fcc9f3cb43247d50a7ef7bebc12d2fac2fcde5cc2c1dc3d7e306b334c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:452",
-          "source_slide_number": 50
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -141434,7 +141080,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 50
+      }
     },
     {
       "id": "authored:1b506f68145247bc8e76dea98570a3d1",
@@ -144700,17 +144350,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/62defbde9b8cc6febd69311894c676c4af24b580187b7952c2da62b0a34109ad.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "62defbde9b8cc6febd69311894c676c4af24b580187b7952c2da62b0a34109ad",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:453",
-          "source_slide_number": 51
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -144718,7 +144357,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 51
+      }
     },
     {
       "id": "authored:a9ff041609334b45896e30b28f4e5110",
@@ -147213,17 +146856,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/20f01f2428282c5da63ec6d157f8c91fa43e49685cdda0b41adaa498d27fe769.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "20f01f2428282c5da63ec6d157f8c91fa43e49685cdda0b41adaa498d27fe769",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:454",
-          "source_slide_number": 52
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -147231,7 +146863,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 52
+      }
     },
     {
       "id": "authored:41c72e916d1f47be99a6af29562881ec",
@@ -149202,17 +148838,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bc915a517d35acc16090a53b54b069971188547b1cddaeee95903eca40d3e548.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "bc915a517d35acc16090a53b54b069971188547b1cddaeee95903eca40d3e548",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:455",
-          "source_slide_number": 53
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -149220,7 +148845,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 53
+      }
     },
     {
       "id": "authored:0b0edbc076bf4273895d41555dd3e744",
@@ -151283,17 +150912,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e654b2cae47acba7f501e1bcb6575ca4cfd916717dbef3c1202e73598efd9f63.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e654b2cae47acba7f501e1bcb6575ca4cfd916717dbef3c1202e73598efd9f63",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:456",
-          "source_slide_number": 54
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -151301,7 +150919,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 54
+      }
     },
     {
       "id": "authored:11f0ec7f4f8840b08cbe6625a9884d07",
@@ -152794,17 +152416,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e5702a25ca4323ed6f2f05c26dca94fdb44fed0997f14a9f501cb6f0fe4d4e5b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e5702a25ca4323ed6f2f05c26dca94fdb44fed0997f14a9f501cb6f0fe4d4e5b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:457",
-          "source_slide_number": 55
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -152812,7 +152423,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 55
+      }
     },
     {
       "id": "authored:eaf01f3d91ac4f0c8efa64d6f00cb72b",
@@ -159059,17 +158674,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/303641ff388b965cf3a353ff206359204d29f2ea39e8aad80733c6beb7dddcc9.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "303641ff388b965cf3a353ff206359204d29f2ea39e8aad80733c6beb7dddcc9",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:458",
-          "source_slide_number": 56
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -159077,7 +158681,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 56
+      }
     },
     {
       "id": "authored:3efc6900325244308386fe20c94541dc",
@@ -161220,17 +160828,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d89cad2a8fa43aef144f0f2b540ad5c43f59f313b939327afe35c0508b5728ce.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d89cad2a8fa43aef144f0f2b540ad5c43f59f313b939327afe35c0508b5728ce",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:459",
-          "source_slide_number": 57
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -161238,7 +160835,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 57
+      }
     },
     {
       "id": "authored:a3e4a8e547e0474294c8503096cc590b",
@@ -163547,17 +163148,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3173b87907e81e2f737ea70d9981355cd7e26a5cb731aa36a32f477dd7cf481f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3173b87907e81e2f737ea70d9981355cd7e26a5cb731aa36a32f477dd7cf481f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:460",
-          "source_slide_number": 58
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -163565,7 +163155,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 58
+      }
     },
     {
       "id": "authored:82d2e46e5ef84f14b35d4e3b54e07fc2",
@@ -164780,17 +164374,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/45e7223e9298cc68f6d1a2218a0f73c23a77f2879dd9df15fbe8569d6b76af1a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "45e7223e9298cc68f6d1a2218a0f73c23a77f2879dd9df15fbe8569d6b76af1a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:416",
-          "source_slide_number": 59
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -164798,7 +164381,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 59
+      }
     },
     {
       "id": "authored:6ff631634abb4f3d971773f97d912d3d",
@@ -166385,17 +165972,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/56fd78acbc7650118204dac92bc660b5e60eb619eccd98a6bf111799c925e7c3.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "56fd78acbc7650118204dac92bc660b5e60eb619eccd98a6bf111799c925e7c3",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:419",
-          "source_slide_number": 60
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -166403,7 +165979,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 60
+      }
     },
     {
       "id": "authored:b9f15c994fde4af1b4c374114be45106",
@@ -168098,17 +167678,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/31640f449afef7ba5db14c21caa738d2b9f27695d5d46869d16599a21d7328e9.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "31640f449afef7ba5db14c21caa738d2b9f27695d5d46869d16599a21d7328e9",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:420",
-          "source_slide_number": 61
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -168116,7 +167685,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 61
+      }
     },
     {
       "id": "authored:2260ed3af02e4a25894ac298b0827551",
@@ -169737,17 +169310,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f660c60b8bf5fbc2118141f78916a567a0fa8870bae42d8966ebfb85d640000f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f660c60b8bf5fbc2118141f78916a567a0fa8870bae42d8966ebfb85d640000f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:421",
-          "source_slide_number": 62
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -169755,7 +169317,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 62
+      }
     },
     {
       "id": "authored:2d7d9309af0d44e3987d516427bb03ee",
@@ -173909,17 +173475,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9d59640d1a7e206f2072dea84fd3bde1b1ba72a1ec70e75ed165eaf37ec8fcaa.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "9d59640d1a7e206f2072dea84fd3bde1b1ba72a1ec70e75ed165eaf37ec8fcaa",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:422",
-          "source_slide_number": 63
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -173927,7 +173482,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 63
+      }
     },
     {
       "id": "authored:f6b52614343b44b3b0205346c040de57",
@@ -178066,17 +177625,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c42ba8d39e4c37de9ae7f532c4b8b24114289129786a9959cc964b8bae02a26d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c42ba8d39e4c37de9ae7f532c4b8b24114289129786a9959cc964b8bae02a26d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:423",
-          "source_slide_number": 64
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -178084,7 +177632,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 64
+      }
     },
     {
       "id": "authored:0797fd6d71a049819e81966c80dc718e",
@@ -182362,17 +181914,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/28a864890b6f69f0472f3ba48334d28737c42a05091df1f1d6c271491626734e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "28a864890b6f69f0472f3ba48334d28737c42a05091df1f1d6c271491626734e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:424",
-          "source_slide_number": 65
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -182380,7 +181921,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 65
+      }
     },
     {
       "id": "authored:7cb7773bd5244486815061be54f8957f",
@@ -187033,17 +186578,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c04dbf2eb1fef793e95a14ea13a039904d6a2d3e5db64adca934914674d0a325.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c04dbf2eb1fef793e95a14ea13a039904d6a2d3e5db64adca934914674d0a325",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:426",
-          "source_slide_number": 66
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -187051,7 +186585,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 66
+      }
     },
     {
       "id": "authored:92aab27561094fdb8e4d7ed1c4a8f48b",
@@ -191778,17 +191316,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4dc6f67ca90e0a7ac4ba609c2746cb4186a05cc19bd681b803c1659acf074cbd.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4dc6f67ca90e0a7ac4ba609c2746cb4186a05cc19bd681b803c1659acf074cbd",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:427",
-          "source_slide_number": 67
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -191796,7 +191323,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 67
+      }
     },
     {
       "id": "authored:eeb4831789ec42f68fe18927caa54f60",
@@ -196066,17 +195597,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/64ab69c118d4b87bd00ed5114594efa1fdf103623534bd1902d294e2519e88b2.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "64ab69c118d4b87bd00ed5114594efa1fdf103623534bd1902d294e2519e88b2",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:428",
-          "source_slide_number": 68
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -196084,7 +195604,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 68
+      }
     },
     {
       "id": "authored:67add664bbaf452bac5ddeeaf9d851f9",
@@ -200362,17 +199886,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f9baa5054da0854dd94101173b4cc4f1b5d961e8b6dd9335f6901546ff46d236.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f9baa5054da0854dd94101173b4cc4f1b5d961e8b6dd9335f6901546ff46d236",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:429",
-          "source_slide_number": 69
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -200380,7 +199893,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 69
+      }
     },
     {
       "id": "authored:266f04e460a04de580393740684ed3f5",
@@ -204903,17 +204420,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2de7f80b9c21d69cf6de6526d0d63807ee353ee2ec485ada90abe45843b6576b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2de7f80b9c21d69cf6de6526d0d63807ee353ee2ec485ada90abe45843b6576b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:431",
-          "source_slide_number": 70
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -204921,7 +204427,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 70
+      }
     },
     {
       "id": "authored:e28ebe9f61f44f8a8619f12bb2925985",
@@ -206554,17 +206064,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/678a33b64c3b34948758528d03720a3fd06c511050f36a440b920479415e4516.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "678a33b64c3b34948758528d03720a3fd06c511050f36a440b920479415e4516",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:432",
-          "source_slide_number": 71
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -206572,7 +206071,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 71
+      }
     },
     {
       "id": "authored:68fddc5989c84d4bad33c53f166f4a32",
@@ -208587,17 +208090,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b223911530ccd159dd27cf20f35320d767121ff501f12263343ffe022376f590.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b223911530ccd159dd27cf20f35320d767121ff501f12263343ffe022376f590",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:350",
-          "source_slide_number": 72
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -208605,7 +208097,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 72
+      }
     },
     {
       "id": "authored:f17e3cfc42f743b093d03d527d03d249",
@@ -209788,17 +209284,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f88a25e3da6b161ecca316952bd30212ab456e23f8064fd2fb6dffc7286300ff.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f88a25e3da6b161ecca316952bd30212ab456e23f8064fd2fb6dffc7286300ff",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:467",
-          "source_slide_number": 73
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -209806,7 +209291,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 73
+      }
     },
     {
       "id": "authored:cf36ea9ed6a7484f859135b59129a65e",
@@ -211809,17 +211298,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2cb649e45202bf9235e71c9d5c2c0078aa96ef9b0237f8c011c5c8d0836fc742.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2cb649e45202bf9235e71c9d5c2c0078aa96ef9b0237f8c011c5c8d0836fc742",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:372",
-          "source_slide_number": 74
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -211827,7 +211305,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 74
+      }
     },
     {
       "id": "authored:cb467118ff424f3b9d644c52592fdf54",
@@ -213723,17 +213205,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ebf93656307481e514b899e9f7cf652a8b5575cf0ce232305333d2f68164b669.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ebf93656307481e514b899e9f7cf652a8b5575cf0ce232305333d2f68164b669",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:351",
-          "source_slide_number": 75
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -213741,7 +213212,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 75
+      }
     },
     {
       "id": "authored:3499c160dcf04096a08ac2ff15c5f2ac",
@@ -215181,17 +214656,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e74f162fd5cec8cf3d541c10f3154cbecafcc740f0be0cfaf7fcf704843f5fab.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e74f162fd5cec8cf3d541c10f3154cbecafcc740f0be0cfaf7fcf704843f5fab",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:352",
-          "source_slide_number": 76
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -215201,7 +214665,11 @@
       },
       "website_links": [
         "http://sortbenchmark.org/"
-      ]
+      ],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 76
+      }
     },
     {
       "id": "authored:81bd6bd622854990a154ab7a34eb84db",
@@ -216928,17 +216396,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c59db8e8b78294fe01fd54bbac41fc747d4731ef15cb00a7c4a8d3dc1731edaa.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c59db8e8b78294fe01fd54bbac41fc747d4731ef15cb00a7c4a8d3dc1731edaa",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:354",
-          "source_slide_number": 77
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -216946,7 +216403,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 77
+      }
     },
     {
       "id": "authored:4c04d350c274410aa360afd407decd01",
@@ -220969,17 +220430,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/61e44a10c0138e4a98ab7503b78a885a287f6e558103573dfd76aced6c7fbeb6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "61e44a10c0138e4a98ab7503b78a885a287f6e558103573dfd76aced6c7fbeb6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:355",
-          "source_slide_number": 78
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -220987,7 +220437,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 78
+      }
     },
     {
       "id": "authored:d15a24a9bc6d481f865714b25967b7aa",
@@ -225280,17 +224734,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f22d15920033bc2b01ab3e6410824234117d5e2d638fc76c15b4011f77f87a79.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f22d15920033bc2b01ab3e6410824234117d5e2d638fc76c15b4011f77f87a79",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:356",
-          "source_slide_number": 79
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -225298,7 +224741,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 79
+      }
     },
     {
       "id": "authored:0ea0e27e34654080b0f967a4fa873ba6",
@@ -229541,17 +228988,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a7a2144806c6405250f65f60cea3a1788bb6153f8667449bd4e9139b25ffa616.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a7a2144806c6405250f65f60cea3a1788bb6153f8667449bd4e9139b25ffa616",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:358",
-          "source_slide_number": 80
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -229559,7 +228995,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 80
+      }
     },
     {
       "id": "authored:3d8110ab056f4dbd94edbb6bd895207f",
@@ -234493,17 +233933,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f3cad7fb5d8a4e6f7bea7e594d20486bd12ee9a694cdd52c381da0b7994837f7.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f3cad7fb5d8a4e6f7bea7e594d20486bd12ee9a694cdd52c381da0b7994837f7",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:359",
-          "source_slide_number": 81
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -234511,7 +233940,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 81
+      }
     },
     {
       "id": "authored:62395cbb11e041b5aa189d52da4db7cd",
@@ -238665,17 +238098,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/cda7e8b627115e2390b6991c36cb9f184c4a4efa6de2fcb77b0fc64cbb09dbda.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "cda7e8b627115e2390b6991c36cb9f184c4a4efa6de2fcb77b0fc64cbb09dbda",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:360",
-          "source_slide_number": 82
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -238683,7 +238105,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 82
+      }
     },
     {
       "id": "authored:3cf75c74959446268f6df0d97a6af068",
@@ -240647,17 +240073,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b4dd15ae623ce8de1d07c4f5771409bf85dd14ba8d109b0b485a0acd32b9b129.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b4dd15ae623ce8de1d07c4f5771409bf85dd14ba8d109b0b485a0acd32b9b129",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:361",
-          "source_slide_number": 83
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -240665,7 +240080,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 83
+      }
     },
     {
       "id": "authored:3022b33ff66e495e88bf8304b658bd4e",
@@ -245658,17 +245077,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8d18b24f0f0df5ecf20a1c1cad8158d6de338f37a05accc2954f519fbbe8b753.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "8d18b24f0f0df5ecf20a1c1cad8158d6de338f37a05accc2954f519fbbe8b753",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:363",
-          "source_slide_number": 84
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -245676,7 +245084,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 84
+      }
     },
     {
       "id": "authored:3b24a3bfc47b424eab6801f3cc4bf27a",
@@ -251533,17 +250945,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/669a753e636cb8309a5217054ef180c9cbd51078a2601ba2f7935fa6094c66af.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "669a753e636cb8309a5217054ef180c9cbd51078a2601ba2f7935fa6094c66af",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:364",
-          "source_slide_number": 85
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -251551,7 +250952,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 85
+      }
     },
     {
       "id": "authored:e8b15b73134b4704abd2f71b56e01426",
@@ -257695,17 +257100,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ba791aca025116bfbea33e787608bb762a501e828460ccbfa06f0bc4ba509cb8.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ba791aca025116bfbea33e787608bb762a501e828460ccbfa06f0bc4ba509cb8",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:365",
-          "source_slide_number": 86
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -257713,7 +257107,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 86
+      }
     },
     {
       "id": "authored:b0080878aa3540ff808c61fa6c38221c",
@@ -267725,17 +267123,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3be4f2980ebce67e6d26a509fdc28cb1cf3da8cf252c0f9769afa8db17dd1366.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3be4f2980ebce67e6d26a509fdc28cb1cf3da8cf252c0f9769afa8db17dd1366",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:366",
-          "source_slide_number": 87
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -267743,7 +267130,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 87
+      }
     },
     {
       "id": "authored:ed45c11903334f78b0ffa53c302e199f",
@@ -281825,17 +281216,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/634696744239962f31e9c3aa21e38ba7e6b0eb168af6fb3316c998228417f9a6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "634696744239962f31e9c3aa21e38ba7e6b0eb168af6fb3316c998228417f9a6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:367",
-          "source_slide_number": 88
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -281843,7 +281223,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 88
+      }
     },
     {
       "id": "authored:0a7f85509a664ec9bda633d15de46b3a",
@@ -299421,17 +298805,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c43647e219389ff3e56186ae84bd9498efad80c78b1c1b75cd3aec3a0432604d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c43647e219389ff3e56186ae84bd9498efad80c78b1c1b75cd3aec3a0432604d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:368",
-          "source_slide_number": 89
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -299439,7 +298812,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 89
+      }
     },
     {
       "id": "authored:d8b778effbc8449a9aa295433b3616e6",
@@ -304116,17 +303493,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0d13924784d5032c2d32cc055e52ff456cfff97a9c74828a961a26153680ce76.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "0d13924784d5032c2d32cc055e52ff456cfff97a9c74828a961a26153680ce76",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:369",
-          "source_slide_number": 90
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -304134,7 +303500,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 90
+      }
     },
     {
       "id": "authored:e886f269b1664becbf4e147bd3d1213b",
@@ -305753,17 +305123,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d40c04a520d6a35ec744975f23b4a9bd61c83a74e59cbbb1c5a1851fa51c6a26.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d40c04a520d6a35ec744975f23b4a9bd61c83a74e59cbbb1c5a1851fa51c6a26",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:469",
-          "source_slide_number": 91
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -305771,7 +305130,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 91
+      }
     },
     {
       "id": "authored:0fba4160c95145a7994a8e2f15bb1a8b",
@@ -308044,17 +307407,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2300f2dcdff30185379f044d2a257b3d923d887d70b5c3853f06500c08ef84de.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2300f2dcdff30185379f044d2a257b3d923d887d70b5c3853f06500c08ef84de",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:370",
-          "source_slide_number": 92
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -308062,7 +307414,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 92
+      }
     },
     {
       "id": "authored:81ae97546bdc4b3192d76ee5efc8d9bf",
@@ -310730,17 +310086,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7ef9dd156af2426a7be43499d3345376bb2a0d06e1d30739a058d17251ab174f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7ef9dd156af2426a7be43499d3345376bb2a0d06e1d30739a058d17251ab174f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:385",
-          "source_slide_number": 93
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -310748,7 +310093,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 93
+      }
     },
     {
       "id": "authored:323d4adb55154afda06be9d6d15e79ef",
@@ -312463,17 +311812,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/51daffa424ff50965e06dfd06d9c7f4c808c1b5973ab3a56661c34b646b5c9b2.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "51daffa424ff50965e06dfd06d9c7f4c808c1b5973ab3a56661c34b646b5c9b2",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:386",
-          "source_slide_number": 94
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -312481,7 +311819,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 94
+      }
     },
     {
       "id": "authored:de8b26c0bee343998bac3cded4a11ffd",
@@ -316325,17 +315667,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2f943d0719b36690b4249c3902a2ff7e568cd65e8ac03453d86772d49578003a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2f943d0719b36690b4249c3902a2ff7e568cd65e8ac03453d86772d49578003a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:382",
-          "source_slide_number": 95
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -316343,7 +315674,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 95
+      }
     },
     {
       "id": "authored:26f957b63d354aac8c8393cfc6eed899",
@@ -320908,17 +320243,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/aa77687215f8b96b476892bdbc001edc23c6b14c71e904895e39fd86e87b5fd4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "aa77687215f8b96b476892bdbc001edc23c6b14c71e904895e39fd86e87b5fd4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:388",
-          "source_slide_number": 96
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -320926,7 +320250,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 96
+      }
     },
     {
       "id": "authored:0b9b9233ec644572a4a657cb44337815",
@@ -325222,17 +324550,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/406f9ee2501d436dc40bcb004a000790be049244b19d449ef2472f59cbeac674.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "406f9ee2501d436dc40bcb004a000790be049244b19d449ef2472f59cbeac674",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:389",
-          "source_slide_number": 97
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -325240,7 +324557,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 97
+      }
     },
     {
       "id": "authored:a729c42a34e24dc7b4341cdf233e0237",
@@ -329426,17 +328747,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d0adc35f9df609f946da0534133b17773a8b7af45ac7d9475401adf732da02b0.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d0adc35f9df609f946da0534133b17773a8b7af45ac7d9475401adf732da02b0",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:391",
-          "source_slide_number": 98
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -329444,7 +328754,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 98
+      }
     },
     {
       "id": "authored:5f1f82d1e5cb46c4a422afb682950541",
@@ -333788,17 +333102,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bc806bddfaed19d7ad3812384140f3020ce639fd16e200bd8fb9faea9b3bcf65.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "bc806bddfaed19d7ad3812384140f3020ce639fd16e200bd8fb9faea9b3bcf65",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:390",
-          "source_slide_number": 99
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -333806,7 +333109,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 99
+      }
     },
     {
       "id": "authored:404dcfca337241cf9bfb2559b232e0a5",
@@ -338126,17 +337433,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6c1d3ab8ef0c45180cd456f3e802981643eefba99fadd31cf4106e7a7e578762.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6c1d3ab8ef0c45180cd456f3e802981643eefba99fadd31cf4106e7a7e578762",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:470",
-          "source_slide_number": 100
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -338144,7 +337440,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 100
+      }
     },
     {
       "id": "authored:a7d55e3199694de8aa551cf1d60ddead",
@@ -342166,17 +341466,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a2280c0ad1318352e8b5bf5415b06e618dcc475342fc01e315e08fe7233db667.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a2280c0ad1318352e8b5bf5415b06e618dcc475342fc01e315e08fe7233db667",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:392",
-          "source_slide_number": 101
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -342184,7 +341473,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 101
+      }
     },
     {
       "id": "authored:4d7a5046475340ee806ec632eac3fa48",
@@ -346184,17 +345477,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/63baf5c788a98313ba7bc6635eee3915b16f7f4f11afd578a6af5227da557c07.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "63baf5c788a98313ba7bc6635eee3915b16f7f4f11afd578a6af5227da557c07",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:394",
-          "source_slide_number": 102
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -346202,7 +345484,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 102
+      }
     },
     {
       "id": "authored:ba965025878249ac842f806f34e2a33d",
@@ -350448,17 +349734,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/49de28cbb15b318ec4c3554db5fe3a66ea0b0e2a54db53147a7cc62e2a65ec92.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "49de28cbb15b318ec4c3554db5fe3a66ea0b0e2a54db53147a7cc62e2a65ec92",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:395",
-          "source_slide_number": 103
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -350466,7 +349741,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 103
+      }
     },
     {
       "id": "authored:81d3d91d36fa4ba08cd1740e3209297c",
@@ -354727,17 +354006,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a2b8f164cafa7eb815c91820d8bca4f58e0f7645f18657c083bbf96968e6e179.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a2b8f164cafa7eb815c91820d8bca4f58e0f7645f18657c083bbf96968e6e179",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:396",
-          "source_slide_number": 104
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -354745,7 +354013,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 104
+      }
     },
     {
       "id": "authored:b638987a6590480d8dc92071327a715f",
@@ -356745,17 +356017,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/12b24479bac8371dbe6de1e5d8f0a1dd805b46c52c25aaa8e6169dbd43f22102.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "12b24479bac8371dbe6de1e5d8f0a1dd805b46c52c25aaa8e6169dbd43f22102",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:397",
-          "source_slide_number": 105
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -356763,7 +356024,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 105
+      }
     },
     {
       "id": "authored:4cbbe41dcb28471db7dc0fc64d1231e3",
@@ -358589,17 +357854,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/748bddd2ea9679a67fdff442ca032354940545ca944a81047eacf5295b94a476.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "748bddd2ea9679a67fdff442ca032354940545ca944a81047eacf5295b94a476",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:371",
-          "source_slide_number": 106
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -358607,7 +357861,11 @@
         "source_sha256": "4b076e2815c42046f88c3b959f83b5c8a2af7c717ff4b896af60d5afc8274b94",
         "reference_repair": null
       },
-      "website_links": []
+      "website_links": [],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 106
+      }
     },
     {
       "id": "authored:6708ed03526e4516bc4ab030523cba00",
@@ -360010,17 +359268,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4531e54a941560d87bc891bbb08525a20e689319b3d5e04fbe9859b2712fd8e9.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4531e54a941560d87bc891bbb08525a20e689319b3d5e04fbe9859b2712fd8e9",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-10-storage-and-indexes:472",
-          "source_slide_number": 107
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -360031,7 +359278,11 @@
       "website_links": [
         "https://teachingow.github.io/DBMS-SQL-Labs/labs/advanced-sql/advanced-sql-techniques.html",
         "https://teachingow.github.io/DBMS-SQL-Labs/labs/advanced-sql/query-patterns.html"
-      ]
+      ],
+      "topic_source": {
+        "deck": "lecture-10-storage-and-indexes.json",
+        "source_slide_number": 107
+      }
     }
   ],
   "slide_size_emu": {
@@ -360059,5 +359310,18 @@
     "extractor_sha256": "214cad18c843f0b34c1f118a8b5fc4ad9f23f97934b6c2b64e0070e0d9424c6e",
     "pipeline_sha256": "fdd81a05f7de48baf655a0e2cb9a79b3e9b9534a721f629a7cec7560cc3d1574",
     "reviewed_version": "7539935b4e4581e09b71a8232475abfdb9876f31ea53e6fa7c72e8e4f031ed5f"
-  }
+  },
+  "topic_sources": [
+    {
+      "deck": "lecture-10-storage-and-indexes.json",
+      "source_file": "10_Storage_and_Indexes.pptx",
+      "slide_count": 107
+    },
+    {
+      "deck": "indexes.json",
+      "source_file": "Indexes.pptx",
+      "slide_count": 109
+    }
+  ],
+  "combined_topic_deck": true
 }

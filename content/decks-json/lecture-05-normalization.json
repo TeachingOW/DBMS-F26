@@ -1120,17 +1120,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3371b7611fb5fa60a566a8276835c2e824e4adb323aa3f33dc24bc12b534a51f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3371b7611fb5fa60a566a8276835c2e824e4adb323aa3f33dc24bc12b534a51f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:256",
-          "source_slide_number": 1
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -2657,17 +2646,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5790c6149dbec473feecee446b6ecf9b6de1671df13cea6dd4807940f20f45c4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5790c6149dbec473feecee446b6ecf9b6de1671df13cea6dd4807940f20f45c4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:257",
-          "source_slide_number": 2
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -3817,17 +3795,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/dd24c671b129e2bb0950ce23578c4a23f8654199b73f03307e5a1245bc266c4a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "dd24c671b129e2bb0950ce23578c4a23f8654199b73f03307e5a1245bc266c4a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:258",
-          "source_slide_number": 3
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -5603,17 +5570,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0db35cc7f69480b4def87e4634447af55097d2a465e8d1caed94ca775c1f4183.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "0db35cc7f69480b4def87e4634447af55097d2a465e8d1caed94ca775c1f4183",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:462",
-          "source_slide_number": 4
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -7331,17 +7287,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5ab3d08ad9fefe0174e484dd0592567bddee1110fa36f908156f6c036e01b383.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5ab3d08ad9fefe0174e484dd0592567bddee1110fa36f908156f6c036e01b383",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:368",
-          "source_slide_number": 5
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -10151,17 +10096,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/50dcc7ff99e9ef9848f25f57c927b47d67c523662e159489551c328d2a31ddc5.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "50dcc7ff99e9ef9848f25f57c927b47d67c523662e159489551c328d2a31ddc5",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:369",
-          "source_slide_number": 6
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -11725,17 +11659,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5e775b733185a13d489e6a5e32e61be4f31880db8610bbee26197701ab4411e6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5e775b733185a13d489e6a5e32e61be4f31880db8610bbee26197701ab4411e6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:259",
-          "source_slide_number": 7
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -14102,17 +14025,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5a58301f2bbba1329773f31eeba7a789ab9d203b1cca06cf314fa4b1244a51a1.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5a58301f2bbba1329773f31eeba7a789ab9d203b1cca06cf314fa4b1244a51a1",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:260",
-          "source_slide_number": 8
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -16037,17 +15949,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b7efeaec3739c677d84dcd872428fd80ebc8828da447c8fd2ebc8549efcc48be.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b7efeaec3739c677d84dcd872428fd80ebc8828da447c8fd2ebc8549efcc48be",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:370",
-          "source_slide_number": 9
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -17793,17 +17694,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/dc16c59666efd027e86371c63853f259088ffe86824b718c119ad63fccc5805e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "dc16c59666efd027e86371c63853f259088ffe86824b718c119ad63fccc5805e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:261",
-          "source_slide_number": 10
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -18941,17 +18831,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8761750f46eab6923c64d98fbff3b365062a97431cb45b76d77b28d7a0163a51.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "8761750f46eab6923c64d98fbff3b365062a97431cb45b76d77b28d7a0163a51",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:262",
-          "source_slide_number": 11
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -20670,17 +20549,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ec570e9cc1bcdf7ca8fe9b05429322ff97e6e66a1436b1ed1c6cc86656212262.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ec570e9cc1bcdf7ca8fe9b05429322ff97e6e66a1436b1ed1c6cc86656212262",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:550",
-          "source_slide_number": 12
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -22545,17 +22413,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ee11e2efd97ea96bb60e67f052f2d33eefcb75e4303d6a98dd66166e1910731d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ee11e2efd97ea96bb60e67f052f2d33eefcb75e4303d6a98dd66166e1910731d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:467",
-          "source_slide_number": 13
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -24422,17 +24279,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d903262783f710290d0d8196288eb24842162669cf8df8aa95cc82c43a97932c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d903262783f710290d0d8196288eb24842162669cf8df8aa95cc82c43a97932c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:468",
-          "source_slide_number": 14
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -26261,17 +26107,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e318a0393e7414ba9316106f0ca3931168ac78b774139260fc7180322a0a88e4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e318a0393e7414ba9316106f0ca3931168ac78b774139260fc7180322a0a88e4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:470",
-          "source_slide_number": 15
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -28304,17 +28139,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1d00f842c9093f74953180e091e4612035c5c0898ca446cc21365e95bed3eaf8.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "1d00f842c9093f74953180e091e4612035c5c0898ca446cc21365e95bed3eaf8",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:469",
-          "source_slide_number": 16
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -30328,17 +30152,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0b13292c9978b65f31ebba2df4aa30f82df646784cbec46b86f3547edbb579f2.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "0b13292c9978b65f31ebba2df4aa30f82df646784cbec46b86f3547edbb579f2",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:373",
-          "source_slide_number": 17
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -32116,17 +31929,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/65a065c1cebe65a9df9732562d834af35ce435ee8ae8f147658cc4c7163ea268.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "65a065c1cebe65a9df9732562d834af35ce435ee8ae8f147658cc4c7163ea268",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:263",
-          "source_slide_number": 18
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -33914,17 +33716,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6c839db3c33a2aea13d27943c265891eb0b34fdaf60e01904a2a69f7e8ffa038.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6c839db3c33a2aea13d27943c265891eb0b34fdaf60e01904a2a69f7e8ffa038",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:264",
-          "source_slide_number": 19
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -35674,17 +35465,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/651aa1abd06f9a327f505803a9d734e0b770075da15bbdd775915b951547f54b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "651aa1abd06f9a327f505803a9d734e0b770075da15bbdd775915b951547f54b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:265",
-          "source_slide_number": 20
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -37638,17 +37418,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6aa4279a425a3bcf346e186a3abe7e1104bda768c7e30d7a3cd21f5f0358cbfd.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6aa4279a425a3bcf346e186a3abe7e1104bda768c7e30d7a3cd21f5f0358cbfd",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:266",
-          "source_slide_number": 21
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -39583,17 +39352,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1fb08137653b0c59d7bc839407c93ec66a5a8985e409f2bcf2198892937309c2.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "1fb08137653b0c59d7bc839407c93ec66a5a8985e409f2bcf2198892937309c2",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:267",
-          "source_slide_number": 22
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -41222,17 +40980,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4a34cd84938e029dea5d37de96a27817d52fc769ac3f661195cdfe80ff83d954.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4a34cd84938e029dea5d37de96a27817d52fc769ac3f661195cdfe80ff83d954",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:268",
-          "source_slide_number": 23
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -42370,17 +42117,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5ac5f4de9902f7d5319301c79997529c8c061cba01abdf5e7359e8895e247d30.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5ac5f4de9902f7d5319301c79997529c8c061cba01abdf5e7359e8895e247d30",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:269",
-          "source_slide_number": 24
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -44065,17 +43801,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/45f3a906549bf4441ba58d1d78f3c4d20df7ceba6a09660810c98590192654d5.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "45f3a906549bf4441ba58d1d78f3c4d20df7ceba6a09660810c98590192654d5",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:270",
-          "source_slide_number": 25
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -46209,17 +45934,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bd54b3ca70278be521ac84256fe678e2f123aca81bd193b43dc86ffa688a0c99.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "bd54b3ca70278be521ac84256fe678e2f123aca81bd193b43dc86ffa688a0c99",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:471",
-          "source_slide_number": 26
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -48964,17 +48678,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f38554c50eab342848a7d9a89ece817c9b135f3d54cf5b95d6af6e9d327002c3.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f38554c50eab342848a7d9a89ece817c9b135f3d54cf5b95d6af6e9d327002c3",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:473",
-          "source_slide_number": 27
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -52109,17 +51812,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7648c260977ce269ef1456598a2d0aa0182bd74b3006d220817aba6da33b9b1f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7648c260977ce269ef1456598a2d0aa0182bd74b3006d220817aba6da33b9b1f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:474",
-          "source_slide_number": 28
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -56225,17 +55917,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/72a6d514b849408577bd1c40f5b1e7a2f08bf0ef1e4a71f9b51f9334cf3c3778.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "72a6d514b849408577bd1c40f5b1e7a2f08bf0ef1e4a71f9b51f9334cf3c3778",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:551",
-          "source_slide_number": 29
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -60483,17 +60164,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ac657de6ef2637c5b7812b71570ed2896362cb2304791aca9227ab53f7ca3a18.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ac657de6ef2637c5b7812b71570ed2896362cb2304791aca9227ab53f7ca3a18",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:476",
-          "source_slide_number": 30
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -62367,17 +62037,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/88998fe3a884e73964a4fb273a8ed5a84a41a9e6e44c2109b6c6bea0f2f8fc1e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "88998fe3a884e73964a4fb273a8ed5a84a41a9e6e44c2109b6c6bea0f2f8fc1e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:271",
-          "source_slide_number": 31
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -64761,17 +64420,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bd880d3067e2b32990733646b54e4e64d199edbd47f53d69b7a9dc076baf75d7.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "bd880d3067e2b32990733646b54e4e64d199edbd47f53d69b7a9dc076baf75d7",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:272",
-          "source_slide_number": 32
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -67173,17 +66821,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b2820856c5d72d37645af25d6085d117437c8afa2abf66b90ed59bbdb46c2688.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b2820856c5d72d37645af25d6085d117437c8afa2abf66b90ed59bbdb46c2688",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:273",
-          "source_slide_number": 33
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -70168,17 +69805,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b50c905ca7b93d8167148b32b07d591d14b6322cfa5d273b02ad91c3842ea434.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b50c905ca7b93d8167148b32b07d591d14b6322cfa5d273b02ad91c3842ea434",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:274",
-          "source_slide_number": 34
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -72086,17 +71712,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bcff0b13a9b222b83bbfa9a9db690f6ae995bcb7bb36c93eb760c3e424412b84.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "bcff0b13a9b222b83bbfa9a9db690f6ae995bcb7bb36c93eb760c3e424412b84",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:275",
-          "source_slide_number": 35
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -74295,17 +73910,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d7810104b74d48238e278b7d7cfe6ecfb9c74fea727b79f5a309dc5c68727dc4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d7810104b74d48238e278b7d7cfe6ecfb9c74fea727b79f5a309dc5c68727dc4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:380",
-          "source_slide_number": 36
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -76263,17 +75867,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/370e133fb2d358c04ed85b3fe387abaf7f36909d15ac468bfa606e4a4ff74bc1.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "370e133fb2d358c04ed85b3fe387abaf7f36909d15ac468bfa606e4a4ff74bc1",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:477",
-          "source_slide_number": 37
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -77813,17 +77406,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d0284006cd10bbb612bfd3e92c5b11aacdffe8c8ef5de66f07dcfbf55ca55832.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d0284006cd10bbb612bfd3e92c5b11aacdffe8c8ef5de66f07dcfbf55ca55832",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:383",
-          "source_slide_number": 38
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -82696,17 +82278,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/cc61718ee4985fd4e967ece89624cef4eb614d14d6503d7db0d6a1ed7ae58f5f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "cc61718ee4985fd4e967ece89624cef4eb614d14d6503d7db0d6a1ed7ae58f5f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:384",
-          "source_slide_number": 39
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -84533,17 +84104,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9cd707738adb151ebcb2de3e7ded9167900396b54fad2d10120141bd41ef72e4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "9cd707738adb151ebcb2de3e7ded9167900396b54fad2d10120141bd41ef72e4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:385",
-          "source_slide_number": 40
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -86597,17 +86157,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a47041937c2eca0b5e7609de07186ed2e6c4d1d98c59d6d81a23461ad180d1bb.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a47041937c2eca0b5e7609de07186ed2e6c4d1d98c59d6d81a23461ad180d1bb",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:541",
-          "source_slide_number": 41
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -88660,17 +88209,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/894f58e2cdcae2694b6731fdf162a6e4fc5ff616786709496466a79d0e30914d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "894f58e2cdcae2694b6731fdf162a6e4fc5ff616786709496466a79d0e30914d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:276",
-          "source_slide_number": 42
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -90554,17 +90092,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d52b08fe98f285be2d821514806070dc9855c1bd4dc2c24ef241251d17fff46e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d52b08fe98f285be2d821514806070dc9855c1bd4dc2c24ef241251d17fff46e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:277",
-          "source_slide_number": 43
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -92091,17 +91618,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6b8483b1d3035c08d537bfda61c5c420cb7c39d41796c84de74dcf49fff41bc9.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6b8483b1d3035c08d537bfda61c5c420cb7c39d41796c84de74dcf49fff41bc9",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:278",
-          "source_slide_number": 44
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -93565,17 +93081,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3b9d6cea797432152c4154fec3f7319de78189f418412a4481fc4a600aa53c10.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3b9d6cea797432152c4154fec3f7319de78189f418412a4481fc4a600aa53c10",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:279",
-          "source_slide_number": 45
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -98241,17 +97746,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7b1e4d578c8496992338fec3020e2324a626dee2be8c91fe17d304e3b0cdebda.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7b1e4d578c8496992338fec3020e2324a626dee2be8c91fe17d304e3b0cdebda",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:280",
-          "source_slide_number": 46
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -99979,17 +99473,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/cd2f65cd73040db69c5a9887a71f3c15b19e4024b2dfb78d5df85f2b46f4c117.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "cd2f65cd73040db69c5a9887a71f3c15b19e4024b2dfb78d5df85f2b46f4c117",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:281",
-          "source_slide_number": 47
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -101862,17 +101345,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/161de0cdc1fa0ec33f1e0c65942dda45aaaec29f6e207cb6b35be3028f790f82.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "161de0cdc1fa0ec33f1e0c65942dda45aaaec29f6e207cb6b35be3028f790f82",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:282",
-          "source_slide_number": 48
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -103022,17 +102494,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6f4401965cb4153ffabe4bb1a2c9667d6a3e216515b94c18701b0207a52a67ae.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6f4401965cb4153ffabe4bb1a2c9667d6a3e216515b94c18701b0207a52a67ae",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:283",
-          "source_slide_number": 49
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -104890,17 +104351,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2d7ca13d502bfa67532b0a1267a45b12e58d2f3206a8ace7a6025d45869f2dec.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2d7ca13d502bfa67532b0a1267a45b12e58d2f3206a8ace7a6025d45869f2dec",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:517",
-          "source_slide_number": 50
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -106852,17 +106302,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bf87c554a79f94a959825308ad5ac3b3d90266b08902ebc5d0ecc9a7f6295f87.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "bf87c554a79f94a959825308ad5ac3b3d90266b08902ebc5d0ecc9a7f6295f87",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:387",
-          "source_slide_number": 51
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -108897,17 +108336,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c909670c0f71b67f0c320e302f5ee719b5148279b1e7e17cb11734517be3eca9.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c909670c0f71b67f0c320e302f5ee719b5148279b1e7e17cb11734517be3eca9",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:478",
-          "source_slide_number": 52
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -110794,17 +110222,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/08c2b8de5bfd1ed025512082d978d1c41f20ca7dd6326d5d56d776b2d64008a0.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "08c2b8de5bfd1ed025512082d978d1c41f20ca7dd6326d5d56d776b2d64008a0",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:390",
-          "source_slide_number": 53
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -112666,17 +112083,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3a02b9a816283b5d670a23f4e8eeb334ed32830855030a42a53c5fea1048a583.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3a02b9a816283b5d670a23f4e8eeb334ed32830855030a42a53c5fea1048a583",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:284",
-          "source_slide_number": 54
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -114622,17 +114028,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1883c3f49e36a48cdc8f268798e5bee3aa0a6654de74109b68acf29f856d1377.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "1883c3f49e36a48cdc8f268798e5bee3aa0a6654de74109b68acf29f856d1377",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:285",
-          "source_slide_number": 55
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -116451,17 +115846,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7d9212c48ce0faa60adb72155114a779dc10fb8490b0490b14c939566faa00b7.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7d9212c48ce0faa60adb72155114a779dc10fb8490b0490b14c939566faa00b7",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:286",
-          "source_slide_number": 56
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -118626,17 +118010,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/61aea7019bb2c4694362bdae58e7cf9044e674966f53f776dc6eb58c848ae57b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "61aea7019bb2c4694362bdae58e7cf9044e674966f53f776dc6eb58c848ae57b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:287",
-          "source_slide_number": 57
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -120441,17 +119814,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3d69d03b299ed97a91faa49c95139d6c5e2d4113b6f08883677b1ddc57dd07bb.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3d69d03b299ed97a91faa49c95139d6c5e2d4113b6f08883677b1ddc57dd07bb",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:288",
-          "source_slide_number": 58
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -121937,17 +121299,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ecccab1856e969df8f99534c117ad3486b8796971b7e6343c21479e55d2701d9.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ecccab1856e969df8f99534c117ad3486b8796971b7e6343c21479e55d2701d9",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:392",
-          "source_slide_number": 59
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -124183,17 +123534,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/55841dcefa4b7f5fa5839e464f95e3a42fc544828cbb580e418f188ed8f621c4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "55841dcefa4b7f5fa5839e464f95e3a42fc544828cbb580e418f188ed8f621c4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:391",
-          "source_slide_number": 60
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -126295,17 +125635,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5e4476456f4fa7dc56eb3c930898d5bed16a68b8508bc986bf244ccb9185bad5.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5e4476456f4fa7dc56eb3c930898d5bed16a68b8508bc986bf244ccb9185bad5",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:289",
-          "source_slide_number": 61
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -128051,17 +127380,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4767e63b9d4138e0ae8d6cdfd92452d3da26e65a83fe452f05f8ddbae388d172.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4767e63b9d4138e0ae8d6cdfd92452d3da26e65a83fe452f05f8ddbae388d172",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:290",
-          "source_slide_number": 62
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -130026,17 +129344,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/962d7663329becd704b1a8578509ad3e0b5f07cac59f94812f9643f6676fcffc.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "962d7663329becd704b1a8578509ad3e0b5f07cac59f94812f9643f6676fcffc",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:394",
-          "source_slide_number": 63
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -132374,17 +131681,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1faa45e19164d2a0c19020f92838b0349574d124f0b461305d364976ec86de4c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "1faa45e19164d2a0c19020f92838b0349574d124f0b461305d364976ec86de4c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:395",
-          "source_slide_number": 64
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -134713,17 +134009,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/34de0a098c0d598c993f350297656d76c4ae0d595a1d9c7de636c8d4425925d8.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "34de0a098c0d598c993f350297656d76c4ae0d595a1d9c7de636c8d4425925d8",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:396",
-          "source_slide_number": 65
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -136488,17 +135773,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/32f53b3a46f9a9eb6c7b8d3e9464fdf91a71af5222d4d0c58d9dd73b88027727.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "32f53b3a46f9a9eb6c7b8d3e9464fdf91a71af5222d4d0c58d9dd73b88027727",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:552",
-          "source_slide_number": 66
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -138276,17 +137550,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a4b46c004abf54a1ad3db6d23c10c82c023d312862f609b21b5012d8702f532e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a4b46c004abf54a1ad3db6d23c10c82c023d312862f609b21b5012d8702f532e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:291",
-          "source_slide_number": 67
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -140323,17 +139586,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/01799b9b90085ebba59b7219489babb7645afb7edc50136dd37e4cbbe55730d1.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "01799b9b90085ebba59b7219489babb7645afb7edc50136dd37e4cbbe55730d1",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:292",
-          "source_slide_number": 68
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -142361,17 +141613,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/22fb06f39b948ead61efdce32ae7e324c7247df4cb77fa4333b2fec4b76aa573.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "22fb06f39b948ead61efdce32ae7e324c7247df4cb77fa4333b2fec4b76aa573",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:293",
-          "source_slide_number": 69
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -143615,17 +142856,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7812e35b212845e5f895eb4713a57171fa12b7accc1474f0612286797e6b4e9b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7812e35b212845e5f895eb4713a57171fa12b7accc1474f0612286797e6b4e9b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:294",
-          "source_slide_number": 70
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -145698,17 +144928,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8584b71e6d6bb925d16a594fa3b72d0227e99c27ad0405dfa383a8f595419fe4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "8584b71e6d6bb925d16a594fa3b72d0227e99c27ad0405dfa383a8f595419fe4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:398",
-          "source_slide_number": 71
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -147607,17 +146826,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/53e8469b55ff06ae6c539d8dc00cdd25af8a0e61861651c13f25c8cd59d0ea09.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "53e8469b55ff06ae6c539d8dc00cdd25af8a0e61861651c13f25c8cd59d0ea09",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:295",
-          "source_slide_number": 72
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -148849,17 +148057,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/03b9391ea96548070573e2951136661225a18d47a711309a2765b6b19606048e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "03b9391ea96548070573e2951136661225a18d47a711309a2765b6b19606048e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:296",
-          "source_slide_number": 73
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -151222,17 +150419,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/200ea583f7d0ac3382e9a347b9a37dd9786450b07e0f5a2a524cf3d98add3bde.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "200ea583f7d0ac3382e9a347b9a37dd9786450b07e0f5a2a524cf3d98add3bde",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:400",
-          "source_slide_number": 74
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -153752,17 +152938,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7bbd01bbcb178bf74ea63521f479187a08c6944d5fa03a2cf7f19c8109472c6d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7bbd01bbcb178bf74ea63521f479187a08c6944d5fa03a2cf7f19c8109472c6d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:401",
-          "source_slide_number": 75
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -155795,17 +154970,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/11d160974c5cc6e4f8574a017df77634e840eb24f63c499543cb89660243e1e8.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "11d160974c5cc6e4f8574a017df77634e840eb24f63c499543cb89660243e1e8",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:297",
-          "source_slide_number": 76
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -157880,17 +157044,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4a5a3b6b89abf566a8c4a1ace3ae529d8f3524d92c5f5048fc8199f794f8b472.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4a5a3b6b89abf566a8c4a1ace3ae529d8f3524d92c5f5048fc8199f794f8b472",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:298",
-          "source_slide_number": 77
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -159190,17 +158343,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1cc441f0f44c66f4871d57cb15f1e61912bf58dcfd39803041a674480698908b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "1cc441f0f44c66f4871d57cb15f1e61912bf58dcfd39803041a674480698908b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:299",
-          "source_slide_number": 78
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -161287,17 +160429,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2aae231b41b286a9d7cd405ffe7ce012ad04406dc6ea0a280e05ed87f1e18400.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2aae231b41b286a9d7cd405ffe7ce012ad04406dc6ea0a280e05ed87f1e18400",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:483",
-          "source_slide_number": 79
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -163249,17 +162380,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/85fe4eede79887b875a98e972af27612846d01b5760ce71a36ee58dd0ca704db.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "85fe4eede79887b875a98e972af27612846d01b5760ce71a36ee58dd0ca704db",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:553",
-          "source_slide_number": 80
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -165226,17 +164346,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/18074197db1c8307a7bb738a60cd7671e99b7de6ef17f98ca2ec90afaf4d99d8.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "18074197db1c8307a7bb738a60cd7671e99b7de6ef17f98ca2ec90afaf4d99d8",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:554",
-          "source_slide_number": 81
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -167317,17 +166426,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c685d65c487debd132f0130662dd0c279bed664f15049a2584ec9f63cfb01da1.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c685d65c487debd132f0130662dd0c279bed664f15049a2584ec9f63cfb01da1",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:484",
-          "source_slide_number": 82
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -169407,17 +168505,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e648f4f8676c54abe7cbc6b26fb7c1dab48f64143afcb378893502d54b52ed52.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e648f4f8676c54abe7cbc6b26fb7c1dab48f64143afcb378893502d54b52ed52",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:485",
-          "source_slide_number": 83
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -171382,17 +170469,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/164226bc7398bcb611d0cde340a0e532788018716c167d6454ee74f2c6be80d3.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "164226bc7398bcb611d0cde340a0e532788018716c167d6454ee74f2c6be80d3",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:300",
-          "source_slide_number": 84
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -173350,17 +172426,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/02a3f221d98e630c51b813c451aec8364f43f7ba8740b02195d9b8a4c3b7a56a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "02a3f221d98e630c51b813c451aec8364f43f7ba8740b02195d9b8a4c3b7a56a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:301",
-          "source_slide_number": 85
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -175320,17 +174385,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2930ce54d8dcb2a2bc17565ed575be962b3f33338fb5f25a4234fd433871fb1c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2930ce54d8dcb2a2bc17565ed575be962b3f33338fb5f25a4234fd433871fb1c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:302",
-          "source_slide_number": 86
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -176959,17 +176013,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a9388e9a883a3d92fa08cb06e3eb3dbe85b1747991850c3de43486c5294ffe0b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a9388e9a883a3d92fa08cb06e3eb3dbe85b1747991850c3de43486c5294ffe0b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:303",
-          "source_slide_number": 87
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -178107,17 +177150,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/053415e650fa64b7e8cbbfbd7430fe922fd6c517764f4f28ff9b60274c6fe949.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "053415e650fa64b7e8cbbfbd7430fe922fd6c517764f4f28ff9b60274c6fe949",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:304",
-          "source_slide_number": 88
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -181812,17 +180844,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/23a195096755cc3009a0a4a8dadc308adaa2ca227a0a25b5d790e9d09a51b7a7.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "23a195096755cc3009a0a4a8dadc308adaa2ca227a0a25b5d790e9d09a51b7a7",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:407",
-          "source_slide_number": 89
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -184098,17 +183119,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c3e3f2d120fb468fbc368380e8246f2c7b93b0fdaa50b32bf0e52cc9d127efe5.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c3e3f2d120fb468fbc368380e8246f2c7b93b0fdaa50b32bf0e52cc9d127efe5",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:555",
-          "source_slide_number": 90
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -187316,17 +186326,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f373ebfe1188611bc9a30cb779b60ddd9a15770148adc5454442e2ab04b27294.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f373ebfe1188611bc9a30cb779b60ddd9a15770148adc5454442e2ab04b27294",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:556",
-          "source_slide_number": 91
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -191065,17 +190064,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3f346276dad20328889942c3efbbd83aa83d9488b16c2828b6d359fca3b6f444.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3f346276dad20328889942c3efbbd83aa83d9488b16c2828b6d359fca3b6f444",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:557",
-          "source_slide_number": 92
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -195151,17 +194139,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ac8a7fc2df7f1300fc66e8f01628d5648b5e56ec5c37371baf6f7423ebeb382e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ac8a7fc2df7f1300fc66e8f01628d5648b5e56ec5c37371baf6f7423ebeb382e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:558",
-          "source_slide_number": 93
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -199575,17 +198552,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e6b2a9284195cdcb352463136dd8e0ea93d7ee2a639e7b4ce9e7d0abdbed018a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e6b2a9284195cdcb352463136dd8e0ea93d7ee2a639e7b4ce9e7d0abdbed018a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:559",
-          "source_slide_number": 94
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -201776,17 +200742,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c2dc3154018e3bd8bc77586d1323323716211fbb84c942047ca498bb68fbb4ee.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c2dc3154018e3bd8bc77586d1323323716211fbb84c942047ca498bb68fbb4ee",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:523",
-          "source_slide_number": 95
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -203933,17 +202888,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d438b0b4c06866da9ddf653acd1c2f95649c918fc6624c01871e30ab7c1e25ad.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d438b0b4c06866da9ddf653acd1c2f95649c918fc6624c01871e30ab7c1e25ad",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:533",
-          "source_slide_number": 96
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -206089,17 +205033,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5db269bd29497063f2244ec9839fe47053e3763559d920fbf82e0f8c638db288.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5db269bd29497063f2244ec9839fe47053e3763559d920fbf82e0f8c638db288",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:534",
-          "source_slide_number": 97
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -208872,17 +207805,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/da7c1d8de8efbc9cfd2b5b60fa2e519250dd1511ff5f523ff8b1a2bdd9538289.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "da7c1d8de8efbc9cfd2b5b60fa2e519250dd1511ff5f523ff8b1a2bdd9538289",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:305",
-          "source_slide_number": 98
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -211158,17 +210080,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0198b2d9deeac57de3cd53aa4a43d302a1d05383134bf4d1f4c873d91796eab8.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "0198b2d9deeac57de3cd53aa4a43d302a1d05383134bf4d1f4c873d91796eab8",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:408",
-          "source_slide_number": 99
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -214376,17 +213287,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6b6ad49772f4c968e5cac1102c1662a3670d3eb60bbe849bb73f1727941c142e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6b6ad49772f4c968e5cac1102c1662a3670d3eb60bbe849bb73f1727941c142e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:486",
-          "source_slide_number": 100
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -218125,17 +217025,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a9e1d6a22b15df63b9c2710f2d467e936bc36ffc361532607b537fa9efccb788.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a9e1d6a22b15df63b9c2710f2d467e936bc36ffc361532607b537fa9efccb788",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:487",
-          "source_slide_number": 101
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -222211,17 +221100,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1fa67f3a31814fc92e300165a3fbc334ae7c1ab0a2860da7b2f6449187713fa4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "1fa67f3a31814fc92e300165a3fbc334ae7c1ab0a2860da7b2f6449187713fa4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:488",
-          "source_slide_number": 102
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -226635,17 +225513,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4dc887a7917af28d38e4e12051aaf9d36f870bba2db4bd9ec8766748400196fc.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4dc887a7917af28d38e4e12051aaf9d36f870bba2db4bd9ec8766748400196fc",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:489",
-          "source_slide_number": 103
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -228549,17 +227416,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bd45f671a3f9d7ed2ab6f8294d4897c39a9b5fd0808b81d5479d9968bec6a497.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "bd45f671a3f9d7ed2ab6f8294d4897c39a9b5fd0808b81d5479d9968bec6a497",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:306",
-          "source_slide_number": 104
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -231236,17 +230092,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c81f219098342018b03bf2cd7402bad56986c84317ce360658eb50c6c39893ed.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c81f219098342018b03bf2cd7402bad56986c84317ce360658eb50c6c39893ed",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:307",
-          "source_slide_number": 105
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -234382,17 +233227,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5546e08c06382984beb65ace65fd6a99c49c87c835a3001314118b163d0454c5.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5546e08c06382984beb65ace65fd6a99c49c87c835a3001314118b163d0454c5",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:308",
-          "source_slide_number": 106
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -237749,17 +236583,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6fbfab83e3bc65d1618f6eba5c43e4c99c31946f51b5a4863ff04397d80f6516.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6fbfab83e3bc65d1618f6eba5c43e4c99c31946f51b5a4863ff04397d80f6516",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:309",
-          "source_slide_number": 107
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -241338,17 +240161,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f1db1133f73c852f00330cef5977c2547c1e7c6c4dbc4471d7c019aee187bd37.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f1db1133f73c852f00330cef5977c2547c1e7c6c4dbc4471d7c019aee187bd37",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:310",
-          "source_slide_number": 108
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -243428,17 +242240,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/37af871aaa1702dabdacc7ac8dbdfbeba9e30340957053631144098be8ec60a6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "37af871aaa1702dabdacc7ac8dbdfbeba9e30340957053631144098be8ec60a6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:311",
-          "source_slide_number": 109
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -244588,17 +243389,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9dfc89ad11950dcd4ee55b444145bc319c94c065b5cc62d4381e47021482a4e6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "9dfc89ad11950dcd4ee55b444145bc319c94c065b5cc62d4381e47021482a4e6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:312",
-          "source_slide_number": 110
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -246351,17 +245141,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c4a716090f992121bf11ed2eb642a8a27ca6650dd8a2aa974232fb3cecd94a69.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c4a716090f992121bf11ed2eb642a8a27ca6650dd8a2aa974232fb3cecd94a69",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:519",
-          "source_slide_number": 111
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -248967,17 +247746,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3d7d0e4ca53c8c632b0e3b5c25a1d24d8c64eb2c89cb8d7359014d642db4a58e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3d7d0e4ca53c8c632b0e3b5c25a1d24d8c64eb2c89cb8d7359014d642db4a58e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:313",
-          "source_slide_number": 112
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -252284,17 +251052,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e39cf6a83a4e2678e576d87d97369dd7fc4f06a281e8cee1759f5a031185c590.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e39cf6a83a4e2678e576d87d97369dd7fc4f06a281e8cee1759f5a031185c590",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:490",
-          "source_slide_number": 113
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -255033,17 +253790,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/51e678208b183c67122ca979d540b88b9354a90862db80b727789fa70048a45e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "51e678208b183c67122ca979d540b88b9354a90862db80b727789fa70048a45e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:314",
-          "source_slide_number": 114
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -258012,17 +256758,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5f6d8c8f786761d7c642ef664b814f09d93a4c2f560ad4c551476aa5eb47cd79.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5f6d8c8f786761d7c642ef664b814f09d93a4c2f560ad4c551476aa5eb47cd79",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:315",
-          "source_slide_number": 115
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -261250,17 +259985,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/db132cc37621e00937dcaed034de7e006f483aed7a420a06e15e8d2624ad4fe5.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "db132cc37621e00937dcaed034de7e006f483aed7a420a06e15e8d2624ad4fe5",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:316",
-          "source_slide_number": 116
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -264487,17 +263211,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b3a8c97f1b9543fc4f703a2e5c3d6c5e30785a5715ee5d67cb6006053427c4a8.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b3a8c97f1b9543fc4f703a2e5c3d6c5e30785a5715ee5d67cb6006053427c4a8",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:317",
-          "source_slide_number": 117
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -266024,17 +264737,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/718a81c1b09dd30b61fd6df2023b9a66e3ca6806136461fd9325ec115a4d3e65.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "718a81c1b09dd30b61fd6df2023b9a66e3ca6806136461fd9325ec115a4d3e65",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:318",
-          "source_slide_number": 118
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -267172,17 +265874,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/be03b119489e22de98be64724de0e5f29a4567f08672e37f55364308ba0ddada.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "be03b119489e22de98be64724de0e5f29a4567f08672e37f55364308ba0ddada",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:319",
-          "source_slide_number": 119
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -269494,17 +268185,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6615cf5c6b38149277e7ce2989825fc5d1b61ee27c4638ba55c00ea4518f1473.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6615cf5c6b38149277e7ce2989825fc5d1b61ee27c4638ba55c00ea4518f1473",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:560",
-          "source_slide_number": 120
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -272084,17 +270764,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6612bc565676901114548fac985bff191a2424127cee09b3a0a08aadf3e8153b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6612bc565676901114548fac985bff191a2424127cee09b3a0a08aadf3e8153b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:415",
-          "source_slide_number": 121
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -274216,17 +272885,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/99548615bf642c8608b4837055ad8df5f5b15f8cd6ab71641a23893b02d86cec.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "99548615bf642c8608b4837055ad8df5f5b15f8cd6ab71641a23893b02d86cec",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:320",
-          "source_slide_number": 122
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -275971,17 +274629,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b07a08aa14bab2a008fdf8c15155d230bfe6003a97680c12ad029779c9c8799d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b07a08aa14bab2a008fdf8c15155d230bfe6003a97680c12ad029779c9c8799d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:321",
-          "source_slide_number": 123
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -277677,17 +276324,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/07b640d7c5d4e00afe6e9d635bfc6d63f937691ccaaed497c271c70d711e7173.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "07b640d7c5d4e00afe6e9d635bfc6d63f937691ccaaed497c271c70d711e7173",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:417",
-          "source_slide_number": 124
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -279763,17 +278399,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b75af3011c801d11f251be4c18a91ed814e5f899332a65abf583baddc31a718f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b75af3011c801d11f251be4c18a91ed814e5f899332a65abf583baddc31a718f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:561",
-          "source_slide_number": 125
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -281645,17 +280270,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1d9961a67ec201c4f2a327e2ea2849f882edca87c9961af0c9ec540466be1f48.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "1d9961a67ec201c4f2a327e2ea2849f882edca87c9961af0c9ec540466be1f48",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:322",
-          "source_slide_number": 126
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -283867,17 +282481,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e05011500a2127d1e69a0ac3ea1db88bb5a3bbf9f7d10390801c2e5710800eac.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e05011500a2127d1e69a0ac3ea1db88bb5a3bbf9f7d10390801c2e5710800eac",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:494",
-          "source_slide_number": 127
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -285931,17 +284534,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6d12701c5276b07be5b6ce97ae3c7d43244dbddbc6331db8ae81c35fe59b918f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6d12701c5276b07be5b6ce97ae3c7d43244dbddbc6331db8ae81c35fe59b918f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:323",
-          "source_slide_number": 128
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -287462,17 +286054,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/88d85ed3d74d15b7d1a4353d32be25f40ca65d6a4d42f1586f9eabcee47a4136.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "88d85ed3d74d15b7d1a4353d32be25f40ca65d6a4d42f1586f9eabcee47a4136",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:324",
-          "source_slide_number": 129
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -288593,17 +287174,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2aa008fa6b0a8b49071ade40950d0b3bb56a7035575ba4c3d569ae715236fb07.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2aa008fa6b0a8b49071ade40950d0b3bb56a7035575ba4c3d569ae715236fb07",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:325",
-          "source_slide_number": 130
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -289688,17 +288258,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/752a8104ad0db09cc40ae87009d624f2ba420c339ee08d665de4f49d66dc39dd.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "752a8104ad0db09cc40ae87009d624f2ba420c339ee08d665de4f49d66dc39dd",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:562",
-          "source_slide_number": 131
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -290782,17 +289341,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4f8926ed3ad33cdcc23180b24fb14af787924883da038a0023eb909ae6c86437.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4f8926ed3ad33cdcc23180b24fb14af787924883da038a0023eb909ae6c86437",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:421",
-          "source_slide_number": 132
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -292037,17 +290585,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9489473a15b0b30aa3b2bedc2fa37a5afacceb62b56021e47c6dc880e39603bb.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "9489473a15b0b30aa3b2bedc2fa37a5afacceb62b56021e47c6dc880e39603bb",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:563",
-          "source_slide_number": 133
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -295738,17 +294275,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ec09486eb76ac9248e77e118a0daa7775d73602d81e75a64ce0e6a21501e76cd.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ec09486eb76ac9248e77e118a0daa7775d73602d81e75a64ce0e6a21501e76cd",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:564",
-          "source_slide_number": 134
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -297983,17 +296509,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a5342f8b33c68f1bb7f74020d7491fef4dc214876535f54ce8ba834ecf5ad8d0.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a5342f8b33c68f1bb7f74020d7491fef4dc214876535f54ce8ba834ecf5ad8d0",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:565",
-          "source_slide_number": 135
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -300198,17 +298713,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2b3a1dab479ed232a7b118f67fc2520a36f9dfce1eb968891b120f1c2f620dac.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2b3a1dab479ed232a7b118f67fc2520a36f9dfce1eb968891b120f1c2f620dac",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:566",
-          "source_slide_number": 136
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -301474,17 +299978,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8b89a9cc8c3035a4e6c44b9adb6ae0343e5f58abd5bc414bc9c4e3796de3bf63.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "8b89a9cc8c3035a4e6c44b9adb6ae0343e5f58abd5bc414bc9c4e3796de3bf63",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:465",
-          "source_slide_number": 137
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -303427,17 +301920,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c92dc3028d2e8eefc0c839bbbcdd2dccc69035bccc3ebd1adda452353427ad1a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c92dc3028d2e8eefc0c839bbbcdd2dccc69035bccc3ebd1adda452353427ad1a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:422",
-          "source_slide_number": 138
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -305327,17 +303809,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4b144215c694ccc151169a8a4da36ddb2c13017f96048031d2677311e40d9f0c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4b144215c694ccc151169a8a4da36ddb2c13017f96048031d2677311e40d9f0c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:423",
-          "source_slide_number": 139
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -307357,17 +305828,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/48adc9a8ba7f64d8aa31b44316a6bd998bd27ec53e66509c13df49f3d334083a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "48adc9a8ba7f64d8aa31b44316a6bd998bd27ec53e66509c13df49f3d334083a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:567",
-          "source_slide_number": 140
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -309827,17 +308287,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/10bad9baab7ff817e234866a979af95f0e54674e6b472880f510a2aac81f010a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "10bad9baab7ff817e234866a979af95f0e54674e6b472880f510a2aac81f010a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:568",
-          "source_slide_number": 141
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -312050,17 +310499,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6e5de293665edd22c9a960094a13b417ae02bc177836d0c24a9fbd96476cc43c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6e5de293665edd22c9a960094a13b417ae02bc177836d0c24a9fbd96476cc43c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:569",
-          "source_slide_number": 142
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -314321,17 +312759,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9d4333ba35ce73341f3df18303ac3a33f857ae608e46ed0a3f21dae1097bb91f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "9d4333ba35ce73341f3df18303ac3a33f857ae608e46ed0a3f21dae1097bb91f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:570",
-          "source_slide_number": 143
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -317004,17 +315431,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/feb1cfbd7335f6710e9b5aaf4a3be12e34f7611c5004a4ae68db55859c978312.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "feb1cfbd7335f6710e9b5aaf4a3be12e34f7611c5004a4ae68db55859c978312",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:497",
-          "source_slide_number": 144
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -319792,17 +318208,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/634b7f0f53575b1812205e0f922a861d445e0df8368154fba5b2b29c141ac2f0.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "634b7f0f53575b1812205e0f922a861d445e0df8368154fba5b2b29c141ac2f0",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:499",
-          "source_slide_number": 145
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -322566,17 +320971,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/66795920ace884a93e5b030d5f85ec3afcd2840471c26ff5af769f94cb085ba8.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "66795920ace884a93e5b030d5f85ec3afcd2840471c26ff5af769f94cb085ba8",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:500",
-          "source_slide_number": 146
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -325585,17 +323979,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1ca48cf8feb9cb323d1ef30fcb109d598d485a8d17462b75c97bfc821f26dd81.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "1ca48cf8feb9cb323d1ef30fcb109d598d485a8d17462b75c97bfc821f26dd81",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:498",
-          "source_slide_number": 147
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -329442,17 +327825,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/34229d3f93b4980f08601bcced6c9434785e7d2fb29706511b4b73f126f41070.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "34229d3f93b4980f08601bcced6c9434785e7d2fb29706511b4b73f126f41070",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:501",
-          "source_slide_number": 148
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -333332,17 +331704,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/790f8bc3932165aa686e8e80a7b7557846b3bfd967fac46bf0eb28c8e6528ec0.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "790f8bc3932165aa686e8e80a7b7557846b3bfd967fac46bf0eb28c8e6528ec0",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:502",
-          "source_slide_number": 149
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -336283,17 +334644,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f6192c548bdd96ed748cb5a4a5cbd366dc169302a3f71ea3da3b40fb71d00a17.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f6192c548bdd96ed748cb5a4a5cbd366dc169302a3f71ea3da3b40fb71d00a17",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:503",
-          "source_slide_number": 150
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -339005,17 +337355,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3b13c1087ba0deaa43252ae4557ac024ec6670be96292760ffafdca9d5c7e290.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3b13c1087ba0deaa43252ae4557ac024ec6670be96292760ffafdca9d5c7e290",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:432",
-          "source_slide_number": 151
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -342438,17 +340777,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8906b79c37a7559aa0916dd2336f3aad20f1f3d292f611efa6640faa2257e99a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "8906b79c37a7559aa0916dd2336f3aad20f1f3d292f611efa6640faa2257e99a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:571",
-          "source_slide_number": 152
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -343586,17 +341914,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d03dcaa0aa0f3d1e8f45f47c914bc8be82e736624e28f275a08c16f1df474259.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d03dcaa0aa0f3d1e8f45f47c914bc8be82e736624e28f275a08c16f1df474259",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:326",
-          "source_slide_number": 153
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -345225,17 +343542,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6cad642e9160fe3a54b54b90180d192ef10ef8503b76eaa81ada9b8ac1caf1ff.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6cad642e9160fe3a54b54b90180d192ef10ef8503b76eaa81ada9b8ac1caf1ff",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:327",
-          "source_slide_number": 154
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -347084,17 +345390,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6fd6b0d3abbaef8158079394931156a58b22bf8193389f57ca2e2ce20ea4669e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6fd6b0d3abbaef8158079394931156a58b22bf8193389f57ca2e2ce20ea4669e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:328",
-          "source_slide_number": 155
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -351779,17 +350074,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/55132c58d5dd6efac2fc97f8838038b88ca7b39e25f5bb77f4a1666b148bf356.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "55132c58d5dd6efac2fc97f8838038b88ca7b39e25f5bb77f4a1666b148bf356",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:542",
-          "source_slide_number": 156
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -353206,17 +351490,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9d6c7126262f7cdc48e955bfc770ae3ee0d8e19f107e419e35def7182855e77c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "9d6c7126262f7cdc48e955bfc770ae3ee0d8e19f107e419e35def7182855e77c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:543",
-          "source_slide_number": 157
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -356572,17 +354845,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bec1ce669698a2a36cdf74eacde9d4bbb1f7c841253b1b570b026fe0e22fab7a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "bec1ce669698a2a36cdf74eacde9d4bbb1f7c841253b1b570b026fe0e22fab7a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:329",
-          "source_slide_number": 158
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -357999,17 +356261,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3036ca116e2d6735d8f86aed51b969c07a1180b0ab3b2c24838e622138d1bed1.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "3036ca116e2d6735d8f86aed51b969c07a1180b0ab3b2c24838e622138d1bed1",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:330",
-          "source_slide_number": 159
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -359742,17 +357993,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/29f4ed9137df683d4c1a729f0ed94bbe1251d637fee1088c84be3d134859100a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "29f4ed9137df683d4c1a729f0ed94bbe1251d637fee1088c84be3d134859100a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:331",
-          "source_slide_number": 160
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -362139,17 +360379,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/de13ebcc250d9576cd9209866334d9c79eb85e170cfa21044df1b08341db0297.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "de13ebcc250d9576cd9209866334d9c79eb85e170cfa21044df1b08341db0297",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:544",
-          "source_slide_number": 161
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -364386,17 +362615,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b20e543d87e22cd5ca9ab8ff30462de7c814299613ce8c39252c377c5a491e7e.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b20e543d87e22cd5ca9ab8ff30462de7c814299613ce8c39252c377c5a491e7e",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:332",
-          "source_slide_number": 162
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -365977,17 +364195,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/619591188aecbd5ccb92f3c3f83b89ba4dc9e9f582a143729ac14b35ebde617b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "619591188aecbd5ccb92f3c3f83b89ba4dc9e9f582a143729ac14b35ebde617b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:333",
-          "source_slide_number": 163
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -367457,17 +365664,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d5a3b1e18f36e2629d81dad2dddbf4f735c4be0673cf1542aee85f7fcf62a0ff.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d5a3b1e18f36e2629d81dad2dddbf4f735c4be0673cf1542aee85f7fcf62a0ff",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:334",
-          "source_slide_number": 164
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -370411,17 +368607,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a5a62231ca467fbaba111064f9b5d6b0e6c63c1e8708c694ffb04b5519af3dfa.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a5a62231ca467fbaba111064f9b5d6b0e6c63c1e8708c694ffb04b5519af3dfa",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:545",
-          "source_slide_number": 165
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -373004,17 +371189,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4a8e39a3e3b677d37cd98b34f8a125a29b80886eb96efded5d35804f615fb4d4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4a8e39a3e3b677d37cd98b34f8a125a29b80886eb96efded5d35804f615fb4d4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:335",
-          "source_slide_number": 166
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -374828,17 +373002,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c2180d1e09f385f5c4125ba7e5a80bdc21ef21e84e07d37ab9fe1ded2acdb788.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "c2180d1e09f385f5c4125ba7e5a80bdc21ef21e84e07d37ab9fe1ded2acdb788",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:336",
-          "source_slide_number": 167
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -376984,17 +375147,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a0aae0c43c6bd0f0a61938c42e3cb2fc0f7be90ca2f6e3bf50dde5b7ff4d8d74.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a0aae0c43c6bd0f0a61938c42e3cb2fc0f7be90ca2f6e3bf50dde5b7ff4d8d74",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:496",
-          "source_slide_number": 168
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -379454,17 +377606,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4a89a27ed806f7464badc849d4c2c7f76842b0c5e6cb2b3488396bcf3016c479.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "4a89a27ed806f7464badc849d4c2c7f76842b0c5e6cb2b3488396bcf3016c479",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:425",
-          "source_slide_number": 169
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -381677,17 +379818,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/cd41db2a8bfbf0bc13614eabce46378acd3dc97c45d4b14830d4a217433f41a7.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "cd41db2a8bfbf0bc13614eabce46378acd3dc97c45d4b14830d4a217433f41a7",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:429",
-          "source_slide_number": 170
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -383949,17 +382079,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7d413546baa44ebcb3d06c2df56cdfc42d6eba7b29a0e44f6238be2619fa43a6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7d413546baa44ebcb3d06c2df56cdfc42d6eba7b29a0e44f6238be2619fa43a6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:430",
-          "source_slide_number": 171
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -385934,17 +384053,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/98840d6a60ccf4e8951c0e1cf118a232d9d3d35d1c131fa5938424825b8ef042.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "98840d6a60ccf4e8951c0e1cf118a232d9d3d35d1c131fa5938424825b8ef042",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:337",
-          "source_slide_number": 172
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -388048,17 +386156,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d5a29db67e8e60d264a8c8e97be20a74058e5b367343336e265a886cb0b811ec.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d5a29db67e8e60d264a8c8e97be20a74058e5b367343336e265a886cb0b811ec",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:338",
-          "source_slide_number": 173
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -390039,17 +388136,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a4866f3047fefde18eb38622f606f871a34c8d4505a20c05d5caa66c691e8e58.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "a4866f3047fefde18eb38622f606f871a34c8d4505a20c05d5caa66c691e8e58",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:339",
-          "source_slide_number": 174
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -392129,17 +390215,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2be14d7d883e40c34488824dbdecdf87c2bb3f4685965c07b945407df735312a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2be14d7d883e40c34488824dbdecdf87c2bb3f4685965c07b945407df735312a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:340",
-          "source_slide_number": 175
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -394187,17 +392262,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/76f970248008ddcda7315542b251ab159cc5cc11b5e7ccd9e0c1f7b0c9ec586c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "76f970248008ddcda7315542b251ab159cc5cc11b5e7ccd9e0c1f7b0c9ec586c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:341",
-          "source_slide_number": 176
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -396371,17 +394435,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bddf27908f1c16c7b771938b24ac06cf894b793b27e9e37230976e525ed83dcf.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "bddf27908f1c16c7b771938b24ac06cf894b793b27e9e37230976e525ed83dcf",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:342",
-          "source_slide_number": 177
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -398521,17 +396574,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9ddd872d4e598f185af72c4ac9e37d17ccc16d41007fd94a5139f97c3258dbd3.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "9ddd872d4e598f185af72c4ac9e37d17ccc16d41007fd94a5139f97c3258dbd3",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:343",
-          "source_slide_number": 178
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -400908,17 +398950,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/43913ce3d40e72e87f56a41694afdeb22595199539a7fd1892d97586cc636345.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "43913ce3d40e72e87f56a41694afdeb22595199539a7fd1892d97586cc636345",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:344",
-          "source_slide_number": 179
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -404022,17 +402053,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/024765da17a96ec37848ed0440e2333661f343d24ba9e65f428af41d659583c6.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "024765da17a96ec37848ed0440e2333661f343d24ba9e65f428af41d659583c6",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:345",
-          "source_slide_number": 180
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -407169,17 +405189,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8cc3d55218c894a2b298e2b3418ec3462c0b880da6fbb5ac0ffd856dea583e4c.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "8cc3d55218c894a2b298e2b3418ec3462c0b880da6fbb5ac0ffd856dea583e4c",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:346",
-          "source_slide_number": 181
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -409359,17 +407368,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/221140afcc066b99526b8158af5997bf53774450b0955d389abbace9c03614a4.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "221140afcc066b99526b8158af5997bf53774450b0955d389abbace9c03614a4",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:347",
-          "source_slide_number": 182
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -411573,17 +409571,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e7300aa16cac2b0b6a07c31190edaf2473d091a1812cce06de0ea7403f7cb45d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "e7300aa16cac2b0b6a07c31190edaf2473d091a1812cce06de0ea7403f7cb45d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:348",
-          "source_slide_number": 183
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -415006,17 +412993,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0497129f77b8a234a88140b79cf9bb5d62b99aeba5db13e3cc1eac581692138b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "0497129f77b8a234a88140b79cf9bb5d62b99aeba5db13e3cc1eac581692138b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:433",
-          "source_slide_number": 184
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -416960,17 +414936,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/cf47892e2485c008109a5bca7cd4893bd64e361103ab19866ec441ddd57efff3.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "cf47892e2485c008109a5bca7cd4893bd64e361103ab19866ec441ddd57efff3",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:549",
-          "source_slide_number": 185
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -419902,17 +417867,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/34cbf012e67e78dcd1843be9be3f93be9c5fb4f05554d09ad373b5f43c1f4849.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "34cbf012e67e78dcd1843be9be3f93be9c5fb4f05554d09ad373b5f43c1f4849",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:349",
-          "source_slide_number": 186
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -421438,17 +419392,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5a027c56eb0d86ecf00b8efcdb06272b153de64c3446eb0c2f1289ae6ac4a556.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "5a027c56eb0d86ecf00b8efcdb06272b153de64c3446eb0c2f1289ae6ac4a556",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:350",
-          "source_slide_number": 187
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -423350,17 +421293,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/14fe8b25456bb159134991c426a2b57ce69485ca96c8f2fccedfde3dce38ae66.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "14fe8b25456bb159134991c426a2b57ce69485ca96c8f2fccedfde3dce38ae66",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:351",
-          "source_slide_number": 188
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -424664,17 +422596,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2bac1280a64c2b90f61f9973f3f6fbae183519bbf1bf25a5eeb31d48dd1e5c64.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2bac1280a64c2b90f61f9973f3f6fbae183519bbf1bf25a5eeb31d48dd1e5c64",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:352",
-          "source_slide_number": 189
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -426467,17 +424388,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2c8d83e45c78a8dd4e266686cdf971023f4f632efc4edb040df1ffc284a220c5.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2c8d83e45c78a8dd4e266686cdf971023f4f632efc4edb040df1ffc284a220c5",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:353",
-          "source_slide_number": 190
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -428483,17 +426393,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7f4f4d9cd84fa0c672299946e210dbbbc61a5a2950edf87d3c8fdd2bccaaeaee.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7f4f4d9cd84fa0c672299946e210dbbbc61a5a2950edf87d3c8fdd2bccaaeaee",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:354",
-          "source_slide_number": 191
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -430121,17 +428020,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6af0b852493b06bcabd96fea9bfc4e85e6c7ddbfcd80354a7076b04f91f025bf.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6af0b852493b06bcabd96fea9bfc4e85e6c7ddbfcd80354a7076b04f91f025bf",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:355",
-          "source_slide_number": 192
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -431761,17 +429649,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9c1bddf3c70b932b63276a1d0562095a552bd247349363a20914c4f9b455b7d5.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "9c1bddf3c70b932b63276a1d0562095a552bd247349363a20914c4f9b455b7d5",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:356",
-          "source_slide_number": 193
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -433400,17 +431277,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f17989f2c2871f312cbf507615655bd90b0e979c2e8431bb7a8ffece0cba6ac8.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f17989f2c2871f312cbf507615655bd90b0e979c2e8431bb7a8ffece0cba6ac8",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:357",
-          "source_slide_number": 194
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -434959,17 +432825,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/41e183c7e8b1b4ace3c7cfb4b016b4b1fc56256a9f34e6c8e9395bf249649451.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "41e183c7e8b1b4ace3c7cfb4b016b4b1fc56256a9f34e6c8e9395bf249649451",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-05-normalization:572",
-          "source_slide_number": 195
-        }
       },
       "review": {
         "status": "source-reviewed",

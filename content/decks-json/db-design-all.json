@@ -546,17 +546,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/445eb0f8218361d9abbbe6b28f8c0b3969d494bbc1acf47750d62487ab856796.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "445eb0f8218361d9abbbe6b28f8c0b3969d494bbc1acf47750d62487ab856796",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:367",
-          "source_slide_number": 1
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -1506,17 +1495,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7ae6a4336d764c61404d9ad41c209bf5269e4e3be94058cf46bd7f992e5eed36.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "7ae6a4336d764c61404d9ad41c209bf5269e4e3be94058cf46bd7f992e5eed36",
-          "kind": "native-source-static",
-          "source_slide_id": "db-design-with-labs:257",
-          "source_slide_number": 2
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -2091,17 +2069,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f9e1be56a3c70a01985abec7332e3dabd3d10856230760920d3c1571fac86830.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "f9e1be56a3c70a01985abec7332e3dabd3d10856230760920d3c1571fac86830",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:461",
-          "source_slide_number": 2
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -3097,17 +3064,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/67d1bf041e2c4c1d9b7cbef09fab01f928dc11bdc2176d36e0c873e0cbbe8c2b.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "67d1bf041e2c4c1d9b7cbef09fab01f928dc11bdc2176d36e0c873e0cbbe8c2b",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:368",
-          "source_slide_number": 3
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -5182,17 +5138,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/46385544f8e166c33350114eeef69767f58043c15c490612985eb4d1f43063e9.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "46385544f8e166c33350114eeef69767f58043c15c490612985eb4d1f43063e9",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:369",
-          "source_slide_number": 4
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -6422,17 +6367,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e3cc80ea324c361723831c9888667838f7157473c90ed96bec0ef4b1d4f8ba79.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "e3cc80ea324c361723831c9888667838f7157473c90ed96bec0ef4b1d4f8ba79",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:370",
-          "source_slide_number": 5
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -7001,17 +6935,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/402563f0c8a2d33b27feb764c363102edc3238666bf5df516d234edf55ba348f.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "402563f0c8a2d33b27feb764c363102edc3238666bf5df516d234edf55ba348f",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:371",
-          "source_slide_number": 6
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -8207,17 +8130,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/75fe6df72d3034ca6fcad8ba4e2e7fec586ac62f7991991b553707b2ab5a3797.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "75fe6df72d3034ca6fcad8ba4e2e7fec586ac62f7991991b553707b2ab5a3797",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:467",
-          "source_slide_number": 7
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -9422,17 +9334,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a2b82fbeddb51c9c25a87a093a12ba8e24fa7c2b0f627bb6657300034d3a694e.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "a2b82fbeddb51c9c25a87a093a12ba8e24fa7c2b0f627bb6657300034d3a694e",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:468",
-          "source_slide_number": 8
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -10599,17 +10500,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1beee52e4b32a21cb1ffea84944389264683034d64995c158a8463955d44ba1e.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "1beee52e4b32a21cb1ffea84944389264683034d64995c158a8463955d44ba1e",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:470",
-          "source_slide_number": 9
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -11978,17 +11868,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/67ff9a6567a1f0ba8d41d30731528c7397cc38d85eeff67a59fdd2a250b7fbce.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "67ff9a6567a1f0ba8d41d30731528c7397cc38d85eeff67a59fdd2a250b7fbce",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:469",
-          "source_slide_number": 10
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -13340,17 +13219,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6d24cbf2ad92e5d5320e4c62b50c205681d7ea854cc5bb6f0b1814f5362bead0.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "6d24cbf2ad92e5d5320e4c62b50c205681d7ea854cc5bb6f0b1814f5362bead0",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:373",
-          "source_slide_number": 11
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -14402,17 +14270,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a1421897f2137a8f591fff127f679d66eca4d553b30fb2ab54d689a589637d36.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "a1421897f2137a8f591fff127f679d66eca4d553b30fb2ab54d689a589637d36",
-          "kind": "native-source-static",
-          "source_slide_id": "db-design-with-labs:268",
-          "source_slide_number": 13
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -14975,17 +14832,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3a547e8fba89f8eb3b28376b91338ff37ef8709fd76ed322bc153843a45b69da.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "3a547e8fba89f8eb3b28376b91338ff37ef8709fd76ed322bc153843a45b69da",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:520",
-          "source_slide_number": 12
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -16343,17 +16189,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6e529abec48a832c219eec6b8297acbfd5887c795cec36299fcad70596470288.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "6e529abec48a832c219eec6b8297acbfd5887c795cec36299fcad70596470288",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:374",
-          "source_slide_number": 13
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -17825,17 +17660,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/21842cbea435375b3a082e31824860e2087bd62e32c39de835d5172391402bf4.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "21842cbea435375b3a082e31824860e2087bd62e32c39de835d5172391402bf4",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:471",
-          "source_slide_number": 14
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -19903,17 +19727,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d5a6103fb9514d56662cf3fa0f93da7b3c4e8eb649cf0e528855233cb1752366.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "d5a6103fb9514d56662cf3fa0f93da7b3c4e8eb649cf0e528855233cb1752366",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:473",
-          "source_slide_number": 15
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -22347,17 +22160,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5a0f3238a85377a6acdf8e7d79077fbffebe489a03a62f37d3793f564b206feb.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "5a0f3238a85377a6acdf8e7d79077fbffebe489a03a62f37d3793f564b206feb",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:474",
-          "source_slide_number": 16
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -25892,17 +25694,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/974c2e9f88e40bcaff02df633aa9941e639229deae53ef029d37ab9b30becef5.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "974c2e9f88e40bcaff02df633aa9941e639229deae53ef029d37ab9b30becef5",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:476",
-          "source_slide_number": 17
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -27241,17 +27032,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/dddabe0e0e591e5be946977defd55452e9563d74b540c92843dfb5cc505911f8.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "dddabe0e0e591e5be946977defd55452e9563d74b540c92843dfb5cc505911f8",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:375",
-          "source_slide_number": 18
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -28774,17 +28554,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bf066cab4f028b1aed4ad260a7ae581ca80f05aacce3e1c4162d64d48c9e7574.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "bf066cab4f028b1aed4ad260a7ae581ca80f05aacce3e1c4162d64d48c9e7574",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:380",
-          "source_slide_number": 19
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -30086,17 +29855,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/01de9a752a609336d5d72578c8ce9499b6d0c02d08d14b31c6aff08709a1403e.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "01de9a752a609336d5d72578c8ce9499b6d0c02d08d14b31c6aff08709a1403e",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:477",
-          "source_slide_number": 20
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -31046,17 +30804,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b631a9a994d5d3457deb2282e8c7ca29a4586ce2bfed1eb14fa7fa288d59d2a9.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "b631a9a994d5d3457deb2282e8c7ca29a4586ce2bfed1eb14fa7fa288d59d2a9",
-          "kind": "native-source-static",
-          "source_slide_id": "db-design-with-labs:278",
-          "source_slide_number": 23
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -31945,17 +31692,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9245df05c909d1dcea40b045f206b82028fde6b54a0aa73279d8d181dc9968ed.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "9245df05c909d1dcea40b045f206b82028fde6b54a0aa73279d8d181dc9968ed",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:383",
-          "source_slide_number": 21
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -36036,17 +35772,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/298db3a3cc57f9e77f23334e85d097f772c10d34934c557ae5ca1f93c5dd40b1.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "298db3a3cc57f9e77f23334e85d097f772c10d34934c557ae5ca1f93c5dd40b1",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:384",
-          "source_slide_number": 22
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -37215,17 +36940,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f7a917bd2f50e524e78a4599f9df196640bf1784fbc706962ebc653e09217be7.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "f7a917bd2f50e524e78a4599f9df196640bf1784fbc706962ebc653e09217be7",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:385",
-          "source_slide_number": 23
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -38626,17 +38340,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0e3404a8cd726fb105c9dbf32bc7ec1fbe7464ce58f42bef68675b9d3f501a58.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "0e3404a8cd726fb105c9dbf32bc7ec1fbe7464ce58f42bef68675b9d3f501a58",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:541",
-          "source_slide_number": 24
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -39217,17 +38920,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ff1592eb5634755b796e6a27a4bddb7f5f902baf90a6e8c430c4e97e35253532.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "ff1592eb5634755b796e6a27a4bddb7f5f902baf90a6e8c430c4e97e35253532",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:516",
-          "source_slide_number": 25
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -40521,17 +40213,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e62395870a685881573da8bc5086ca8ce740b1be4c1eb66fb7c1330f90ac826d.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "e62395870a685881573da8bc5086ca8ce740b1be4c1eb66fb7c1330f90ac826d",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:387",
-          "source_slide_number": 26
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -41908,17 +41589,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e2748913688f8835560142c29fc093b43da7ae9dcb94618399fc2884881cba56.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "e2748913688f8835560142c29fc093b43da7ae9dcb94618399fc2884881cba56",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:478",
-          "source_slide_number": 27
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -43155,17 +42825,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5aab8450ec2e99e037ae314ddaa901719ef1a0dd91b5ce16f8611b3c90e8111c.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "5aab8450ec2e99e037ae314ddaa901719ef1a0dd91b5ce16f8611b3c90e8111c",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:390",
-          "source_slide_number": 28
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -44748,17 +44407,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5c52dcd3f7e8c72ec1da72d1c7bdfc05af859e78428fd6c16091a22e1a601860.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "5c52dcd3f7e8c72ec1da72d1c7bdfc05af859e78428fd6c16091a22e1a601860",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:479",
-          "source_slide_number": 29
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -45993,17 +45641,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4138f0deff7c2fd4982125c2b9529b8673d8ab5c03052113fbace80724746f9e.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "4138f0deff7c2fd4982125c2b9529b8673d8ab5c03052113fbace80724746f9e",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:480",
-          "source_slide_number": 30
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -47574,17 +47211,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5a9d05c11c63b12d505706a66b7b5783d39cf5241690352c9f68a5e5babb0dbe.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "5a9d05c11c63b12d505706a66b7b5783d39cf5241690352c9f68a5e5babb0dbe",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:391",
-          "source_slide_number": 31
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -48871,17 +48497,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/94c52a35bb9cb1ab64a59ef470e0dbf22801be1473bc7a263293fa452eb72f65.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "94c52a35bb9cb1ab64a59ef470e0dbf22801be1473bc7a263293fa452eb72f65",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:482",
-          "source_slide_number": 32
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -50183,17 +49798,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/002dee7382b232b79fc5bb7d28d0a6c26b646336ca499e5d178fb56b43c7a490.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "002dee7382b232b79fc5bb7d28d0a6c26b646336ca499e5d178fb56b43c7a490",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:394",
-          "source_slide_number": 33
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -51860,17 +51464,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d31f69a3f3f94d01259275c19cd54b5e17e4cb5852fa5c6064ec6c9d5916ef73.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "d31f69a3f3f94d01259275c19cd54b5e17e4cb5852fa5c6064ec6c9d5916ef73",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:395",
-          "source_slide_number": 34
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -53528,17 +53121,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d3712dc63ff5a1855f61b4ca4ea2baf915735038daab8a622e7baa4d9de47314.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "d3712dc63ff5a1855f61b4ca4ea2baf915735038daab8a622e7baa4d9de47314",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:396",
-          "source_slide_number": 35
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -54213,17 +53795,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/39b83d985644d5ea7b130e42d9869748edf2f7d350293264fb623ee6eda28ec0.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "39b83d985644d5ea7b130e42d9869748edf2f7d350293264fb623ee6eda28ec0",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:547",
-          "source_slide_number": 36
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -55634,17 +55205,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e80ba412d7cee220ea4bd357839436b4cc478d7a253ae75e0a502d8e9a4e01d9.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "e80ba412d7cee220ea4bd357839436b4cc478d7a253ae75e0a502d8e9a4e01d9",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:398",
-          "source_slide_number": 37
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -56307,17 +55867,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/187ec36afb27071fe1dfdcf69f7ccf2cdace7b11b1448372a2653fd689a8b2e9.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "187ec36afb27071fe1dfdcf69f7ccf2cdace7b11b1448372a2653fd689a8b2e9",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:553",
-          "source_slide_number": 38
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -58005,17 +57554,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/662204188b4a7c6a122595590d07c7fbd2987b1154c1ed6146f4e9b0f1e2e77a.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "662204188b4a7c6a122595590d07c7fbd2987b1154c1ed6146f4e9b0f1e2e77a",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:400",
-          "source_slide_number": 39
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -59852,17 +59390,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4e9e0e86175678068cc8b0956bdc1a9f414834e85c1353d91b67d7282fbfd666.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "4e9e0e86175678068cc8b0956bdc1a9f414834e85c1353d91b67d7282fbfd666",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:401",
-          "source_slide_number": 40
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -60593,17 +60120,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7ca735066150fb1a8726b818eb5c53276a408bd5701a785fbec752b8de2c8ee2.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "7ca735066150fb1a8726b818eb5c53276a408bd5701a785fbec752b8de2c8ee2",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:554",
-          "source_slide_number": 41
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -62026,17 +61542,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a896ca95986a5662805f296fcc17ce0a28eedec2f2acc315171c5316005c4955.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "a896ca95986a5662805f296fcc17ce0a28eedec2f2acc315171c5316005c4955",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:483",
-          "source_slide_number": 42
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -63451,17 +62956,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1445e3d8c6a73c2069b0a7b7b289747a4366b41520f99c1df867eb42476f4f3e.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "1445e3d8c6a73c2069b0a7b7b289747a4366b41520f99c1df867eb42476f4f3e",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:484",
-          "source_slide_number": 43
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -64878,17 +64372,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1e7dd79087114f542bc0cf3c77e16f50bf13e01030e94164c585c60f243bc8b5.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "1e7dd79087114f542bc0cf3c77e16f50bf13e01030e94164c585c60f243bc8b5",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:485",
-          "source_slide_number": 44
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -65940,17 +65423,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c740470067cba301184de52456b92117e407fe69855f957ccc9f3ff623e2d9a6.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "c740470067cba301184de52456b92117e407fe69855f957ccc9f3ff623e2d9a6",
-          "kind": "native-source-static",
-          "source_slide_id": "db-design-with-labs:303",
-          "source_slide_number": 48
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -66513,17 +65985,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a62e2ac631feea3d38abc8173bd4ad03f9c8f11234c822df19e9152ecbf8de2e.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "a62e2ac631feea3d38abc8173bd4ad03f9c8f11234c822df19e9152ecbf8de2e",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:522",
-          "source_slide_number": 45
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -69494,17 +68955,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e0fac09a6bcfb5eb7bfc001814c85b98e7b0c55e8e7472af93b52bcd54107fc8.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "e0fac09a6bcfb5eb7bfc001814c85b98e7b0c55e8e7472af93b52bcd54107fc8",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:407",
-          "source_slide_number": 46
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -71125,17 +70575,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8fac81305f23e0717a504fad8c4b63c59464bf7a946c9480dcc892421867dcb3.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "8fac81305f23e0717a504fad8c4b63c59464bf7a946c9480dcc892421867dcb3",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:408",
-          "source_slide_number": 47
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -73669,17 +73108,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/72a49e173bde8bfb0a12cf91b9afcc64eaeb4741ed692929ff3e8c8668ed119f.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "72a49e173bde8bfb0a12cf91b9afcc64eaeb4741ed692929ff3e8c8668ed119f",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:486",
-          "source_slide_number": 48
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -76735,17 +76163,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/86e4394d9f62b391561a0df6d23d6759051f0eeee799c617ede0e174b990bd54.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "86e4394d9f62b391561a0df6d23d6759051f0eeee799c617ede0e174b990bd54",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:487",
-          "source_slide_number": 49
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -80144,17 +79561,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/10bc1cf9f2be0743d2e509f0483104aa568f4ebd81da4531bc6405a3b1615b72.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "10bc1cf9f2be0743d2e509f0483104aa568f4ebd81da4531bc6405a3b1615b72",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:488",
-          "source_slide_number": 50
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -83885,17 +83291,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/841d1a3f11d6f2b3a8df43a7e8ce539def52b70b0727f404bc6f50a15a21c9f2.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "841d1a3f11d6f2b3a8df43a7e8ce539def52b70b0727f404bc6f50a15a21c9f2",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:489",
-          "source_slide_number": 51
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -85547,17 +84942,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9740be4fee66d93e225d991bf95b5b82928a992092db67f0fe8883acf2662f68.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "9740be4fee66d93e225d991bf95b5b82928a992092db67f0fe8883acf2662f68",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:523",
-          "source_slide_number": 52
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -86182,17 +85566,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/bac75af2996adf56746127f8e0b0b6dc048564fdd8ad4861e14e228d86f9419e.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "bac75af2996adf56746127f8e0b0b6dc048564fdd8ad4861e14e228d86f9419e",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:518",
-          "source_slide_number": 53
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -88384,17 +87757,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d9d41f71bcced8fd569300204e740e0d92e27a6eb8a41943838bc262a959b288.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "d9d41f71bcced8fd569300204e740e0d92e27a6eb8a41943838bc262a959b288",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:410",
-          "source_slide_number": 54
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -91276,17 +90638,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/adaaa0c230b7381b4362b4b84e8233d340c2a98664587c2015790085cd61105e.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "adaaa0c230b7381b4362b4b84e8233d340c2a98664587c2015790085cd61105e",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:490",
-          "source_slide_number": 55
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -94495,17 +93846,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b2aca839ae80ede55e470438d787942cc93818e584585cea44501544092de284.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "b2aca839ae80ede55e470438d787942cc93818e584585cea44501544092de284",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:491",
-          "source_slide_number": 56
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -97972,17 +97312,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/56a7038ea87944e1f78bbacc977744408d605cd74def2d9f50725af9cb8357a8.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "56a7038ea87944e1f78bbacc977744408d605cd74def2d9f50725af9cb8357a8",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:492",
-          "source_slide_number": 57
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -101468,17 +100797,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7428b202520f5489a613cae73f6f4c0725dfbe6248404589f91fdbf8bcab6886.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "7428b202520f5489a613cae73f6f4c0725dfbe6248404589f91fdbf8bcab6886",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:493",
-          "source_slide_number": 58
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -102428,17 +101746,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e5d0998004a4579f946e95f16b792974a292f9fb82cf598ec32e94262b37c982.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "e5d0998004a4579f946e95f16b792974a292f9fb82cf598ec32e94262b37c982",
-          "kind": "native-source-static",
-          "source_slide_id": "db-design-with-labs:318",
-          "source_slide_number": 63
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -103083,17 +102390,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/06d39bf3e0ca2e7d1acfadf003877a98b8a2a536eefb5dbcb61a8eb6e56cac51.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "06d39bf3e0ca2e7d1acfadf003877a98b8a2a536eefb5dbcb61a8eb6e56cac51",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:414",
-          "source_slide_number": 59
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -104974,17 +104270,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/796c42bed7cdf4c4117d24c0209885fb03d0f0f295fe5f26e73d747ffa86694e.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "796c42bed7cdf4c4117d24c0209885fb03d0f0f295fe5f26e73d747ffa86694e",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:415",
-          "source_slide_number": 60
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -106329,17 +105614,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3dda246a5ae833d5395ce37dab5a0c518d3fe5e0b9108f764e69bcd5aa8a821c.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "3dda246a5ae833d5395ce37dab5a0c518d3fe5e0b9108f764e69bcd5aa8a821c",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:416",
-          "source_slide_number": 61
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -107689,17 +106963,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4ecec91efa7d25cacb891d5ff9f88686c1551c2db119d933985cc35bd510f9aa.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "4ecec91efa7d25cacb891d5ff9f88686c1551c2db119d933985cc35bd510f9aa",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:417",
-          "source_slide_number": 62
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -109268,17 +108531,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/045b5c635a6ddbe4995211810305d96e27c65b2d81ab775968cc86751dbd8441.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "045b5c635a6ddbe4995211810305d96e27c65b2d81ab775968cc86751dbd8441",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:494",
-          "source_slide_number": 63
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -110340,17 +109592,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/910ce5056d3a4b25880f37edc2a7246ca40ed81504d668c025ca1a6de6c8d79c.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "910ce5056d3a4b25880f37edc2a7246ca40ed81504d668c025ca1a6de6c8d79c",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:548",
-          "source_slide_number": 64
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -110901,17 +110142,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5cd0d5f1000341b59cf4d341c34855bed79e42b99edfb6a9c202ff02fe55f0b6.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "5cd0d5f1000341b59cf4d341c34855bed79e42b99edfb6a9c202ff02fe55f0b6",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:463",
-          "source_slide_number": 65
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -111481,17 +110711,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/8aaa448bccb7621127f854888e6fcfe5dce97e001d7986c1ba7d0d3077ef8713.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "8aaa448bccb7621127f854888e6fcfe5dce97e001d7986c1ba7d0d3077ef8713",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:542",
-          "source_slide_number": 66
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -112543,17 +111762,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0b75f79e03d7135039ee978cae9eab863887a051eef20b10587946021c8dedec.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "0b75f79e03d7135039ee978cae9eab863887a051eef20b10587946021c8dedec",
-          "kind": "native-source-static",
-          "source_slide_id": "db-design-with-labs:327",
-          "source_slide_number": 72
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -113871,17 +113079,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/82de8563699952071e552e29a4f8f6e563d6cb557cf458fc5f88a621bfd32dd3.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "82de8563699952071e552e29a4f8f6e563d6cb557cf458fc5f88a621bfd32dd3",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:544",
-          "source_slide_number": 67
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -117790,17 +116987,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/060c3da3924325e79413f77a3deaa76053843b614c7b4affa2f89e6fb976760e.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "060c3da3924325e79413f77a3deaa76053843b614c7b4affa2f89e6fb976760e",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:258",
-          "source_slide_number": 68
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -118635,17 +117821,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/fec579392703ac623efe1569ec10a3f760bdad39426d9881aa65a70a8ff1dd2a.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "fec579392703ac623efe1569ec10a3f760bdad39426d9881aa65a70a8ff1dd2a",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:543",
-          "source_slide_number": 69
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -119853,17 +119028,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/54588234e032e47aac2797897aadf501c08fcf17f87e28a1a552e23d89bbfb69.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "54588234e032e47aac2797897aadf501c08fcf17f87e28a1a552e23d89bbfb69",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:545",
-          "source_slide_number": 70
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -121647,17 +120811,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d487bfa88f60963f039dd1153430a03018658ccb630dc401e4ee7e739c0f6ced.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "d487bfa88f60963f039dd1153430a03018658ccb630dc401e4ee7e739c0f6ced",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:335",
-          "source_slide_number": 71
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -122701,17 +121854,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/e45bbd4cfa473563bb67028714fa64c992de163e90eaeb4760b0b3a9e1094e5c.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "e45bbd4cfa473563bb67028714fa64c992de163e90eaeb4760b0b3a9e1094e5c",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:552",
-          "source_slide_number": 72
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -123656,17 +122798,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6013c0ef4c8912aea8fc310b89d3a6e3864c20922914f4fee821982cf5f6026a.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "6013c0ef4c8912aea8fc310b89d3a6e3864c20922914f4fee821982cf5f6026a",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:546",
-          "source_slide_number": 73
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -125896,17 +125027,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/197498d15aedc159fb238a5be190126721b3bb4e78b3479825cb1c8ffd8dbc98.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "197498d15aedc159fb238a5be190126721b3bb4e78b3479825cb1c8ffd8dbc98",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:337",
-          "source_slide_number": 74
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -127217,17 +126337,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6add86de06b56a6d78fbeba8dd5c030ae63c077f4a4ae99e5a4b8b9338151ba6.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "6add86de06b56a6d78fbeba8dd5c030ae63c077f4a4ae99e5a4b8b9338151ba6",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:423",
-          "source_slide_number": 75
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -128665,17 +127774,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6c1de3bb055a7c77d37b7aa32648851434c0f487839f1c0e20171d79928da8da.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "6c1de3bb055a7c77d37b7aa32648851434c0f487839f1c0e20171d79928da8da",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:496",
-          "source_slide_number": 76
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -130442,17 +129540,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/5658832ce6775f4aa725f9d24964bc7dd1f846ddb2de54f9fa530d9874561a7f.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "5658832ce6775f4aa725f9d24964bc7dd1f846ddb2de54f9fa530d9874561a7f",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:425",
-          "source_slide_number": 77
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -131987,17 +131074,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a2b3165e1949053b328ac088bd540e41114edb182f59b9f402d67cb4fdc013f9.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "a2b3165e1949053b328ac088bd540e41114edb182f59b9f402d67cb4fdc013f9",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:429",
-          "source_slide_number": 78
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -133579,17 +132655,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d0ed96c75c921afd3a0c8ad7cc4074bd87f839af34291b2c9f9feef329ea8476.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "d0ed96c75c921afd3a0c8ad7cc4074bd87f839af34291b2c9f9feef329ea8476",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:430",
-          "source_slide_number": 79
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -135547,17 +134612,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/73b3446c8ef3fa0d9b73bd8f4593337d6340df397e547970d217d85c3ad8e257.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "73b3446c8ef3fa0d9b73bd8f4593337d6340df397e547970d217d85c3ad8e257",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:497",
-          "source_slide_number": 80
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -137620,17 +136674,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6eb055b6b17b2a764eb75b9125b4768143c265927e031c489b27c1e49f9ed758.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "6eb055b6b17b2a764eb75b9125b4768143c265927e031c489b27c1e49f9ed758",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:499",
-          "source_slide_number": 81
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -139679,17 +138722,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/3ba96bb025c3d2128d754a8c9700f5efa8129f1eb8f5da341ee28a4afaa56bf5.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "3ba96bb025c3d2128d754a8c9700f5efa8129f1eb8f5da341ee28a4afaa56bf5",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:500",
-          "source_slide_number": 82
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -141975,17 +141007,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a09f6ce7edb0af48251e6529118cd3b1d15c34c1562dce7af973a141853d602f.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "a09f6ce7edb0af48251e6529118cd3b1d15c34c1562dce7af973a141853d602f",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:498",
-          "source_slide_number": 83
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -145077,17 +144098,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/c31e19ae7e4ee1a57227a49dd80b0c72516472ff21310e9b58bbea653afdbbd3.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "c31e19ae7e4ee1a57227a49dd80b0c72516472ff21310e9b58bbea653afdbbd3",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:501",
-          "source_slide_number": 84
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -148212,17 +147222,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/568aae24ef43fbbc2c02387e3d98ce1da89a8b280720b79efd862b3230971f3f.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "568aae24ef43fbbc2c02387e3d98ce1da89a8b280720b79efd862b3230971f3f",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:502",
-          "source_slide_number": 85
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -150440,17 +149439,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/fdebb52000f258f4d88d97254cd54fd4b1bf7a686b42fbc35941f979dbec7542.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "fdebb52000f258f4d88d97254cd54fd4b1bf7a686b42fbc35941f979dbec7542",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:503",
-          "source_slide_number": 86
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -152597,17 +151585,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4e046f651b6dcf7b646eb6894aea7f7cc046629bb0d5d4317f73512eb8f37c93.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "4e046f651b6dcf7b646eb6894aea7f7cc046629bb0d5d4317f73512eb8f37c93",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:432",
-          "source_slide_number": 87
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -155229,17 +154206,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/9a4fe9f1a49921db932d0c7a041aa465458da4584d3630a64be03839780d066c.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "9a4fe9f1a49921db932d0c7a041aa465458da4584d3630a64be03839780d066c",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:433",
-          "source_slide_number": 88
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -156188,17 +155154,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2479a222e96d4cab27005733f835a3e1ecd9a54760b417b29f47bd357fb9f63a.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "2479a222e96d4cab27005733f835a3e1ecd9a54760b417b29f47bd357fb9f63a",
-          "kind": "native-source-static",
-          "source_slide_id": "db-design-with-labs:350",
-          "source_slide_number": 95
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -157525,17 +156480,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0246d3d8a47c0573b20cb65eaf61ed60b465755c2de04afd33cc9a6037f1f0d4.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "0246d3d8a47c0573b20cb65eaf61ed60b465755c2de04afd33cc9a6037f1f0d4",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:549",
-          "source_slide_number": 89
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -158270,17 +157214,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/1dd953f5fafd3815044f737bfa068adeb18771073c895ef9e596a715ae94adb4.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "1dd953f5fafd3815044f737bfa068adeb18771073c895ef9e596a715ae94adb4",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:550",
-          "source_slide_number": 90
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -159504,17 +158437,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2c65a275b4afbd6b9bdc1f3dfb83282b7ab56d0520f097c25c9776bbce95539c.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "2c65a275b4afbd6b9bdc1f3dfb83282b7ab56d0520f097c25c9776bbce95539c",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:458",
-          "source_slide_number": 91
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -160951,17 +159873,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4333c1cfd6b55e545c32a1006165e1628c6e7749f0564c146d0ea3b99ca29215.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "4333c1cfd6b55e545c32a1006165e1628c6e7749f0564c146d0ea3b99ca29215",
-          "kind": "base-source-static",
-          "source_slide_id": "db-design:551",
-          "source_slide_number": 92
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -162013,17 +160924,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/a3ac1bb5ce8bf489b04c9276de9f19e775d86e9b7f1e7cdc7519afec8b12377f.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "a3ac1bb5ce8bf489b04c9276de9f19e775d86e9b7f1e7cdc7519afec8b12377f",
-          "kind": "native-source-static",
-          "source_slide_id": "db-design-with-labs:355",
-          "source_slide_number": 100
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -163069,17 +161969,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/4513cfcfa8bc9f317869df4786d342143df7b3480cc50545538ba665694a0a50.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "4513cfcfa8bc9f317869df4786d342143df7b3480cc50545538ba665694a0a50",
-          "kind": "native-source-static",
-          "source_slide_id": "db-design-with-labs:356",
-          "source_slide_number": 101
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -164124,17 +163013,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/0eb68a72a6dfaa317262e7d511c7d846facdff8a24f283840440e757c1936c99.webp",
-          "width": 1440,
-          "height": 810,
-          "sha256": "0eb68a72a6dfaa317262e7d511c7d846facdff8a24f283840440e757c1936c99",
-          "kind": "native-source-static",
-          "source_slide_id": "db-design-with-labs:357",
-          "source_slide_number": 102
-        }
       },
       "review": {
         "status": "source-reviewed",

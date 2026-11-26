@@ -870,17 +870,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/6a33634fda2f0fde8cb01d4a75b209aa639a7ad9bfeb9129b00c70dac8f6541f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "6a33634fda2f0fde8cb01d4a75b209aa639a7ad9bfeb9129b00c70dac8f6541f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:256",
-          "source_slide_number": 1
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -1975,17 +1964,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/df3ef3555d5457e979b6f593953aa9f376712acaa8300795afd7506c2203b74f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "df3ef3555d5457e979b6f593953aa9f376712acaa8300795afd7506c2203b74f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:257",
-          "source_slide_number": 2
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -3055,17 +3033,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/ec67c6433fd93d15da5fe493a4707edc74785c083697e037d3999253d456096d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "ec67c6433fd93d15da5fe493a4707edc74785c083697e037d3999253d456096d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:258",
-          "source_slide_number": 3
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -4137,17 +4104,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b6adf45e9e4839ea71040b8423f083e9dac60bc504e901104cd92d0c53bc5f24.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b6adf45e9e4839ea71040b8423f083e9dac60bc504e901104cd92d0c53bc5f24",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:259",
-          "source_slide_number": 4
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -5218,17 +5174,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/aaef0d25501fb34b9e42c5a43867a83b2b3d51407d166167d558f99df3e99c04.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "aaef0d25501fb34b9e42c5a43867a83b2b3d51407d166167d558f99df3e99c04",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:260",
-          "source_slide_number": 5
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -6288,17 +6233,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/55405f55e394e53a469f8d27b869f7bb25c6db130abc32ecc5f892db2aa96fda.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "55405f55e394e53a469f8d27b869f7bb25c6db130abc32ecc5f892db2aa96fda",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:261",
-          "source_slide_number": 6
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -7564,17 +7498,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/aee32e120d6312d5cbb8c7fc1ea34824722dabd7900a618f5fd38fd790b8ed5a.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "aee32e120d6312d5cbb8c7fc1ea34824722dabd7900a618f5fd38fd790b8ed5a",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:262",
-          "source_slide_number": 7
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -8499,17 +8422,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/628f8d54db15909147a7abbe7ede8a27b9b62b1ac5c9affe6f541b8a71dd9524.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "628f8d54db15909147a7abbe7ede8a27b9b62b1ac5c9affe6f541b8a71dd9524",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:263",
-          "source_slide_number": 8
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -9397,17 +9309,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/33defcd6f7bdaa206ae7842db686f128e9b33988bb92f2a301de486dbed66236.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "33defcd6f7bdaa206ae7842db686f128e9b33988bb92f2a301de486dbed66236",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:264",
-          "source_slide_number": 9
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -10342,17 +10243,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b4cd5cf43cd50618e064f8176687deea3e2fa8b8982cfb19336a13e972fb5a0d.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b4cd5cf43cd50618e064f8176687deea3e2fa8b8982cfb19336a13e972fb5a0d",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:265",
-          "source_slide_number": 10
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -11299,17 +11189,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/2b19ca059320b65df55d343eae10bd9447e1936252d96b02754512d6589032eb.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "2b19ca059320b65df55d343eae10bd9447e1936252d96b02754512d6589032eb",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:266",
-          "source_slide_number": 11
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -12385,17 +12264,6 @@
         "hlink": "0563C1",
         "folHlink": "954F72"
       },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/d0634c14f1cb23cbbf8e3ec12edcad35a5858ed3f666ec463034924dc4b52c7f.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "d0634c14f1cb23cbbf8e3ec12edcad35a5858ed3f666ec463034924dc4b52c7f",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:267",
-          "source_slide_number": 12
-        }
-      },
       "review": {
         "status": "source-reviewed",
         "scope": "Native static reference; editable layout and animation playback are not fidelity-approved.",
@@ -13333,17 +13201,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/7adc1a2bf98b179d5d76f338d133adf1aa2f6a8240297662924f022dbb3d0b93.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "7adc1a2bf98b179d5d76f338d133adf1aa2f6a8240297662924f022dbb3d0b93",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:268",
-          "source_slide_number": 13
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -14330,17 +14187,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/b38b4c78b7d964b5558029bd3c8254646fe24c7c4b861ae2cb305932cffa447b.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "b38b4c78b7d964b5558029bd3c8254646fe24c7c4b861ae2cb305932cffa447b",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:269",
-          "source_slide_number": 14
-        }
       },
       "review": {
         "status": "source-reviewed",
@@ -15751,17 +15597,6 @@
         "accent6": "70AD47",
         "hlink": "0563C1",
         "folHlink": "954F72"
-      },
-      "presentation": {
-        "reference": {
-          "media_src": "../../../assets/reviewed-media/f681eeb239da9547a9d02f8cbccac5f1b97c0c0cadea80dc85d57cf52a5c5822.webp",
-          "width": 1440,
-          "height": 855,
-          "sha256": "f681eeb239da9547a9d02f8cbccac5f1b97c0c0cadea80dc85d57cf52a5c5822",
-          "kind": "native-source-static",
-          "source_slide_id": "lecture-07-recursive-sql:270",
-          "source_slide_number": 15
-        }
       },
       "review": {
         "status": "source-reviewed",

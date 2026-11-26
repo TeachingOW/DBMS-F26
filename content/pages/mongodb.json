@@ -19,7 +19,7 @@
         {
           "tag": "a",
           "attrs": {
-            "href": "presentations/reviewed/lecture-14-mongodb/index.html"
+            "href": "lectures/library/14_MongoDB/index.html"
           },
           "children": [
             "Reviewed PowerPoint source"
