@@ -32,8 +32,8 @@ figure img { display: block; width: auto; max-width: 100%; height: auto; max-hei
 .json-slide { position: relative; width: 100%; aspect-ratio: 16 / 9; container-type: inline-size; overflow: hidden; background: white; box-shadow: 0 1px 7px #14251c29; }
 .json-object { position: absolute; box-sizing: border-box; overflow: hidden; }
 .json-object > img, .json-shape { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
-.json-text { position: absolute; inset: 0; z-index: 1; display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; padding: .25cqw .45cqw; font-size: 1.8cqw; line-height: 1.18; }
-.json-text p { margin: .12em 0; line-height: inherit; }
+.json-text { position:absolute; inset:0; z-index:1; display:flex; flex-direction:column; box-sizing:border-box; min-width:0; min-height:0; font-size:calc(1.8cqw * var(--fit,1)); line-height:1.18; }
+.json-text p { flex:0 0 auto; margin:.12em 0; line-height:inherit; }
 .json-bullet { display: inline-block; min-width: 1.1em; }
 .json-object table { width: 100%; height: 100%; border-collapse: collapse; table-layout: fixed; font-size: 1.15cqw; }
 .json-object th, .json-object td { padding: .22cqw .35cqw; border: .08cqw solid #4a5b50; overflow: hidden; }
@@ -45,3 +45,19 @@ details { padding: .65rem 0; border-top: 1px solid #b6c1b7; }
 summary { cursor: pointer; }
 .transcript { white-space: pre-wrap; }
 [data-links] { overflow-wrap: anywhere; }
+.slide-overview, .shortcut-help { width:min(92vw,72rem); max-height:88vh; padding:0; color:var(--course-ink); background:var(--course-paper); border:1px solid #809388; border-radius:.45rem; box-shadow:0 18px 70px #10251b55; }
+.slide-overview::backdrop, .shortcut-help::backdrop { background:#071b12bb; }
+.slide-overview header, .shortcut-help header { position:sticky; top:0; z-index:2; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 1.2rem; color:white; background:var(--course-green); border-top:3px solid var(--course-gold); }
+.slide-overview h2, .shortcut-help h2 { margin:0; color:white; font-size:1.35rem; }
+.overview-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(13rem,1fr)); gap:1px; padding:1px; background:#b6c1b7; }
+.overview-item { min-height:7rem; display:flex; align-items:flex-start; gap:.7rem; padding:.9rem; color:var(--course-ink); text-align:left; background:white; border:0; border-radius:0; }
+.overview-item:hover { color:white; background:var(--course-green); }
+.overview-item span { min-width:2.2rem; color:#52645a; font-variant-numeric:tabular-nums; }
+.overview-item:hover span { color:#dce9e0; }
+.overview-item strong { line-height:1.3; }
+.shortcut-help { width:min(92vw,38rem); }
+.shortcut-help dl { margin:0; padding:1rem 1.2rem 1.4rem; }
+.shortcut-help dl div { display:grid; grid-template-columns:8rem 1fr; gap:1rem; padding:.65rem 0; border-bottom:1px solid #c8d0ca; }
+.shortcut-help dt { font-weight:800; }
+.shortcut-help dd { margin:0; }
+@media (max-width:650px) { .overview-grid { grid-template-columns:1fr 1fr; } .shortcut-help dl div { grid-template-columns:6rem 1fr; } }

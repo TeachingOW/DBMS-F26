@@ -46,26 +46,10 @@
     "index.html": {
       "document": "content/pages/index.json",
       "styles": [
-        "presentation.css?v=20260901-tables2",
-        "course-theme.css",
-        "presentation-theme.css"
+        "runtime/home.css"
       ],
-      "data": [
-        "content/runtime/lab-content.json",
-        "content/runtime/query-labs.json",
-        "content/runtime/sql-slide-notes.json",
-        "content/runtime/original-sql-slides.json",
-        "content/runtime/advanced-sql-content.json",
-        "content/runtime/sql-reproducibility.json",
-        "content/runtime/lab-database.json",
-        "content/runtime/questions-config.json",
-        "content/runtime/slide-captions.json"
-      ],
-      "scripts": [
-        "runtime/sql-reproducibility.js",
-        "slide-questions.js",
-        "presentation.js?v=20260901-tables3"
-      ]
+      "data": [],
+      "scripts": []
     },
     "labs/aggregation/aggregation-grouping.html": {
       "document": "content/pages/labs/aggregation/aggregation-grouping.json",

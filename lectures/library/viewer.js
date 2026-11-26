@@ -26,12 +26,20 @@
     return paragraphs.map(paragraph => {
       const runs = (paragraph.runs || []).map(run => {
         const style = run.style || {};
-        const css = [style.sz ? `font-size:${Number(style.sz) / 1080}cqw` : '', style.bold ? 'font-weight:700' : '', style.italic ? 'font-style:italic' : '', style.underline ? 'text-decoration:underline' : '', resolveColor(style.color) ? `color:${resolveColor(style.color)}` : ''].filter(Boolean).join(';');
+        const css = [style.sz ? `font-size:calc(${Number(style.sz) / 1080}cqw * var(--fit,1))` : '', style.bold ? 'font-weight:700' : '', style.italic ? 'font-style:italic' : '', style.underline ? 'text-decoration:underline' : '', resolveColor(style.color) ? `color:${resolveColor(style.color)}` : '', style.font ? `font-family:${escapeHtml(style.font)},Arial,sans-serif` : ''].filter(Boolean).join(';');
         return `<span style="${css}">${escapeHtml(run.text)}</span>`;
       }).join('');
       const bullet = paragraph.bullet?.type === 'char' ? escapeHtml(paragraph.bullet.value || '•') : paragraph.bullet?.type === 'number' ? `${escapeHtml(paragraph.bullet.start_at || '1')}.` : '';
       const alignment = {ctr:'center', r:'right', just:'justify'}[paragraph.alignment] || 'left';
-      return `<p style="text-align:${alignment}">${bullet ? `<span class="json-bullet">${bullet}</span>` : ''}${runs || escapeHtml(paragraph.text) || '&nbsp;'}</p>`;
+      const format = paragraph.paragraph_format || {};
+      const emuCqw = value => Number(value || 0) / width * 100;
+      const spacing = [];
+      if (format.marL) spacing.push(`padding-left:${emuCqw(format.marL).toFixed(3)}cqw`);
+      if (format.indent) spacing.push(`text-indent:${emuCqw(format.indent).toFixed(3)}cqw`);
+      if (format.spcBef?.spcPts) spacing.push(`margin-top:${(Number(format.spcBef.spcPts) * 127 / width * 100).toFixed(3)}cqw`);
+      if (format.spcAft?.spcPts) spacing.push(`margin-bottom:${(Number(format.spcAft.spcPts) * 127 / width * 100).toFixed(3)}cqw`);
+      if (format.lnSpc?.spcPct) spacing.push(`line-height:${Number(format.lnSpc.spcPct) / 100000}`);
+      return `<p style="text-align:${alignment};${spacing.join(';')}">${bullet ? `<span class="json-bullet">${bullet}</span>` : ''}${runs || escapeHtml(paragraph.text) || '&nbsp;'}</p>`;
     }).join('');
   }
 
@@ -66,12 +74,16 @@
       return `<div class="json-object" style="${frame}"><table>${rows}</table></div>`;
     }
     const image = block.media_src ? `<img src="${escapeHtml(block.media_src)}" alt="${escapeHtml(block.name || 'Slide illustration')}">` : '';
-    const text = block.paragraphs || block.rich_paragraphs ? `<div class="json-text">${paragraphHtml(block)}</div>` : '';
+    const textBox = block.text_box || {};
+    const anchor = {ctr:'center', b:'flex-end'}[textBox.anchor] || 'flex-start';
+    const inset = value => `${(Number(value || 0) / width * 100).toFixed(3)}cqw`;
+    const textStyle = `justify-content:${anchor};padding:${inset(textBox.tIns)} ${inset(textBox.rIns)} ${inset(textBox.bIns)} ${inset(textBox.lIns)}`;
+    const text = block.paragraphs || block.rich_paragraphs ? `<div class="json-text" style="${textStyle}">${paragraphHtml(block)}</div>` : '';
     return `<div class="json-object" style="${frame}" aria-label="${escapeHtml(block.name || 'Slide object')}">${shapeHtml(block)}${image}${text}</div>`;
   }
 
   function renderSlide(slide) {
-    const objects = (slide.content || []).filter(block => block.bounds_emu);
+    const objects = (slide.content || []).filter(block => block.bounds_emu && (block.placeholder || '').toLowerCase() !== 'sldnum');
     const priority = block => block.object_type === 'pic' ? 0 : block.kind === 'drawing' ? 1 : block.kind === 'table' ? 2 : 3;
     return `<div class="json-slide" role="img" aria-label="${escapeHtml(slide.title)}">${[...objects].sort((a, b) => priority(a) - priority(b)).map(block => renderObject(block)).join('')}</div>`;
   }
@@ -82,6 +94,32 @@
   sourceImage.before(jsonView);
   sourceImage.hidden = true;
   const caption = document.querySelector('[data-caption]'), status = document.querySelector('[data-status]'), previous = document.querySelector('[data-prev]'), next = document.querySelector('[data-next]'), form = document.querySelector('[data-jump]'), number = form.querySelector('input'), transcript = document.querySelector('[data-text]'), links = document.querySelector('[data-links]');
+  const controls = document.querySelector('.slide-controls');
+  const overviewButton = document.createElement('button');
+  overviewButton.type = 'button'; overviewButton.textContent = 'Overview'; overviewButton.title = 'Overview (O)';
+  const helpButton = document.createElement('button');
+  helpButton.type = 'button'; helpButton.textContent = 'Shortcuts'; helpButton.title = 'Keyboard shortcuts (?)';
+  controls.append(overviewButton, helpButton);
+  const overview = document.createElement('dialog');
+  overview.className = 'slide-overview';
+  overview.innerHTML = `<header><h2>Slide overview</h2><button type="button" data-close>Close</button></header><div class="overview-grid"></div>`;
+  document.body.append(overview);
+  const overviewGrid = overview.querySelector('.overview-grid');
+  slides.forEach((slide, index) => {
+    const button = document.createElement('button');
+    button.type = 'button'; button.className = 'overview-item';
+    button.innerHTML = `<span>${index + 1}</span><strong>${escapeHtml(slide.title || 'Untitled slide')}</strong>`;
+    button.addEventListener('click', () => { overview.close(); go(index + 1); });
+    overviewGrid.append(button);
+  });
+  const help = document.createElement('dialog');
+  help.className = 'shortcut-help';
+  help.innerHTML = `<header><h2>Keyboard shortcuts</h2><button type="button" data-close>Close</button></header><dl><div><dt>← / →</dt><dd>Previous / next slide</dd></div><div><dt>Home / End</dt><dd>First / last slide</dd></div><div><dt>O</dt><dd>Open slide overview</dd></div><div><dt>G</dt><dd>Go to slide number</dd></div><div><dt>?</dt><dd>Show shortcuts</dd></div><div><dt>Esc</dt><dd>Close overview or help</dd></div></dl>`;
+  document.body.append(help);
+  overview.querySelector('[data-close]').onclick = () => overview.close();
+  help.querySelector('[data-close]').onclick = () => help.close();
+  overviewButton.onclick = () => overview.showModal();
+  helpButton.onclick = () => help.showModal();
   let current = 1;
   number.max = slides.length;
   document.querySelector('[data-total]').textContent = `of ${slides.length}`;
@@ -93,6 +131,13 @@
     caption.textContent = slide.title;
     status.textContent = `Slide ${current} of ${slides.length}${slide.hidden ? ' · Hidden in PowerPoint' : ''}`;
     jsonView.innerHTML = renderSlide(slide);
+    for (const text of jsonView.querySelectorAll('.json-text')) {
+      let fit = 1;
+      while ((text.scrollHeight > text.clientHeight + 1 || text.scrollWidth > text.clientWidth + 1) && fit > .45) {
+        fit -= .05;
+        text.style.setProperty('--fit', fit.toFixed(2));
+      }
+    }
     transcript.textContent = slide.text || 'No selectable text on this slide.';
     links.replaceChildren(...slide.links.map(url => { const entry = document.createElement('li'), link = document.createElement('a'); link.href = url; link.textContent = url; entry.append(link); return entry; }));
   }
@@ -102,7 +147,11 @@
   next.addEventListener('click', () => go(current + 1));
   form.addEventListener('submit', event => { event.preventDefault(); go(number.valueAsNumber); });
   document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') { if (overview.open) overview.close(); if (help.open) help.close(); return; }
     if (event.target.closest('input, button, a, summary') || event.altKey || event.ctrlKey || event.metaKey) return;
+    if (event.key.toLowerCase() === 'o') { event.preventDefault(); overview.showModal(); return; }
+    if (event.key.toLowerCase() === 'g') { event.preventDefault(); number.focus(); number.select(); return; }
+    if (event.key === '?') { event.preventDefault(); help.showModal(); return; }
     const keys = {ArrowLeft:current - 1, ArrowRight:current + 1, Home:1, End:slides.length};
     if (Object.hasOwn(keys, event.key)) { event.preventDefault(); go(keys[event.key]); }
   });
