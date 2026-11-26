@@ -25,6 +25,76 @@ WINDOW_FUNCTIONS_PATH = DECKS_DIR / "lecture-06-window-functions.json"
 LECTURE_INDEX_PATH = ROOT / "content/pages/lectures/library/index.json"
 WINDOW_FUNCTIONS_AUTHORING_NOTE = "authored:1673261d7e4e4fd8aa3c2032c24b8729"
 
+TEXT_MEDIA = {
+    "fe34ddefcb4d3e8f8f87169d9ca4fe582b9b8cb954a55d2cb1559013e5b8fd74.png": {
+        "lines": ["C", "C++", "Erlang", "Haskell", "Java", "Javascript", ".NET (C# F#, PowerShell, etc)", "Node.js", "Perl", "PHP", "Python", "Ruby", "Scala"],
+        "bullet": True,
+        "font": "Arial",
+        "size": "1350",
+    },
+    "3000fa9e68c49dfb5489133e34766f660b627bc23f2c33628ff15e8043b0b95e.png": {
+        "lines": ["CREATE TABLE users (", "  id MEDIUMINT NOT NULL", "    AUTO_INCREMENT,", "  user_id VARCHAR(30),", "  age NUMBER,", "  status CHAR(1),", "  PRIMARY KEY (id)", ")"],
+        "font": "Consolas",
+        "size": "1100",
+    },
+    "28e1228aa05d5b184fce34438ffc304e6dae3bf08a82c49a99a88d23eac27b58.png": {
+        "lines": ["db.users.insert({", "  user_id: \"abc123\",", "  age: 55,", "  status: \"A\"", "})"],
+        "font": "Consolas",
+        "size": "1100",
+    },
+    "ca1d731c5b429c9701fee0c999de75ff9ee3af63d84cf4e6245be317cc8b02d0.png": {
+        "lines": ["db.createCollection(\"users\")"],
+        "font": "Consolas",
+        "size": "1100",
+    },
+    "eeae385a0da30543701551c71b96c1e11915ba0b2657e2b55de8cef6b8aebae4.png": {
+        "lines": ["db.users.drop()"],
+        "font": "Consolas",
+        "size": "1100",
+    },
+    "3c65ccdac3c52de5e6357d8ce5b5fb0bc5f5b91e725b76e890c7e816852007bd.png": {
+        "lines": ["DROP TABLE users;"],
+        "font": "Consolas",
+        "size": "1100",
+    },
+    "a46c6ebdd016cb5d699decab0384770e074d6c3d5f72bcac8b31ddeb181455fd.png": {
+        "lines": ["db.inventory.insert(mydocuments);"],
+        "font": "Consolas",
+        "size": "1200",
+    },
+    "4165c724a9bb301a5a49a219f063dbc09864eb9ac40d3d1938b3476d922f65da.png": {
+        "lines": ["For the document with item equal to \"MNO2\", use the $set operator to update the category and details fields, and use $currentDate to update lastModified with the current date."],
+        "font": "Arial",
+        "size": "1350",
+    },
+    "a03e91c5374716bf01bf9893a5e490436a83b1e7aa117d9c6efbcdbd125422ab.png": {
+        "lines": ["Definition. A relation schema R is in BCNF if whenever a nontrivial functional dependency X → A holds in R, then X is a superkey of R."],
+        "font": "Arial",
+        "size": "1350",
+    },
+    "2895ef19a1a4c32be38b6d5a0be97fc710db855c5b48011452ec9a2bcf18fb02.png": {
+        "lines": ["Definition. A relation schema R is in third normal form (3NF) if, whenever a nontrivial functional dependency X → A holds in R, either (a) X is a superkey of R, or (b) A is a prime attribute of R."],
+        "font": "Arial",
+        "size": "1350",
+    },
+    "830afc08934eafc63b5c5344d275692846c3d3b3f5dfe8b09ec140d5c118d011.png": {
+        "lines": ["Definition. A relation schema R is in second normal form (2NF) if every non-prime attribute A in R is not partially dependent on any key of R."],
+        "font": "Arial",
+        "size": "1350",
+    },
+    "17777ff9dc1e9220997db63d1a3ab6e2502555b90758084c291d754f8c87094f.png": {
+        "lines": [
+            "Consider a social network database about people and their relationships. The database has two relations:",
+            "Person(pid, name)",
+            "Relationship(pid1, rel, pid2)",
+            "Person.pid is a key. Relationship.pid1 and Relationship.pid2 are foreign keys; rel represents the relationship type and may be friend or enemy. The relationship is not necessarily symmetric.",
+            "(a) (10 points) Write the SQL statements that define the relational schema. Assume pid values are integers, and name and rel are character strings.",
+        ],
+        "font": "Arial",
+        "size": "1150",
+    },
+}
+
 
 HOME_DOCUMENT = {
     "schemaVersion": 1,
@@ -104,6 +174,59 @@ def serialized(value: object) -> str:
     return json.dumps(value, indent=2, ensure_ascii=False) + "\n"
 
 
+def convert_text_media(value: object) -> None:
+    if isinstance(value, list):
+        for item in value:
+            convert_text_media(item)
+        return
+    if not isinstance(value, dict):
+        return
+    media_name = Path(str(value.get("media_src", ""))).name
+    replacement = TEXT_MEDIA.get(media_name)
+    if replacement:
+        lines = replacement["lines"]
+        value.pop("media_src", None)
+        value.pop("media_content_type", None)
+        value.pop("crop", None)
+        value["kind"] = "text"
+        value["object_type"] = "sp"
+        value["paragraphs"] = lines
+        value["rich_paragraphs"] = [
+            {
+                "text": line,
+                "level": 0,
+                "alignment": None,
+                "runs": [
+                    {
+                        "text": line,
+                        "style": {
+                            "sz": replacement["size"],
+                            "font": replacement["font"],
+                            "color": {"type": "srgbClr", "value": "111111"},
+                        },
+                    }
+                ],
+                "paragraph_format": {"spcAft": {"spcPts": "300"}},
+                "bullet": {
+                    "type": "char" if replacement.get("bullet") else "none",
+                    "value": "•" if replacement.get("bullet") else None,
+                    "source": "generated-text-media",
+                },
+            }
+            for line in lines
+        ]
+        value["text_box"] = {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit",
+        }
+    for child in value.values():
+        convert_text_media(child)
+
+
 def generate() -> dict[Path, str]:
     site = json.loads(SITE_PATH.read_text())
     site["routes"]["index.html"] = HOME_ROUTE
@@ -111,6 +234,8 @@ def generate() -> dict[Path, str]:
         path: json.loads(path.read_text().replace(LEGACY_MEDIA_PREFIX, DECK_MEDIA_PREFIX))
         for path in sorted(DECKS_DIR.glob("*.json"))
     }
+    for deck in decks.values():
+        convert_text_media(deck)
     window_functions = decks[WINDOW_FUNCTIONS_PATH]
     window_functions["slides"] = [
         slide

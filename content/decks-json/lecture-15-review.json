@@ -286170,8 +286170,8 @@
           }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "4",
           "name": "Content Placeholder 3",
           "bounds_emu": {
@@ -286186,8 +286186,164 @@
           "embedded_media_relationship": "rId3",
           "embedded_media_target": "ppt/media/image10.png",
           "source_order": 2,
-          "media_src": "../../../assets/deck-media/17777ff9dc1e9220997db63d1a3ab6e2502555b90758084c291d754f8c87094f.png",
-          "media_sha256": "17777ff9dc1e9220997db63d1a3ab6e2502555b90758084c291d754f8c87094f"
+          "media_sha256": "17777ff9dc1e9220997db63d1a3ab6e2502555b90758084c291d754f8c87094f",
+          "paragraphs": [
+            "Consider a social network database about people and their relationships. The database has two relations:",
+            "Person(pid, name)",
+            "Relationship(pid1, rel, pid2)",
+            "Person.pid is a key. Relationship.pid1 and Relationship.pid2 are foreign keys; rel represents the relationship type and may be friend or enemy. The relationship is not necessarily symmetric.",
+            "(a) (10 points) Write the SQL statements that define the relational schema. Assume pid values are integers, and name and rel are character strings."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Consider a social network database about people and their relationships. The database has two relations:",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Consider a social network database about people and their relationships. The database has two relations:",
+                  "style": {
+                    "sz": "1150",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Person(pid, name)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Person(pid, name)",
+                  "style": {
+                    "sz": "1150",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Relationship(pid1, rel, pid2)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Relationship(pid1, rel, pid2)",
+                  "style": {
+                    "sz": "1150",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Person.pid is a key. Relationship.pid1 and Relationship.pid2 are foreign keys; rel represents the relationship type and may be friend or enemy. The relationship is not necessarily symmetric.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Person.pid is a key. Relationship.pid1 and Relationship.pid2 are foreign keys; rel represents the relationship type and may be friend or enemy. The relationship is not necessarily symmetric.",
+                  "style": {
+                    "sz": "1150",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "(a) (10 points) Write the SQL statements that define the relational schema. Assume pid values are integers, and name and rel are character strings.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "(a) (10 points) Write the SQL statements that define the relational schema. Assume pid values are integers, and name and rel are character strings.",
+                  "style": {
+                    "sz": "1150",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "drawing",
@@ -286532,8 +286688,8 @@
           }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "4",
           "name": "Content Placeholder 3",
           "bounds_emu": {
@@ -286548,8 +286704,164 @@
           "embedded_media_relationship": "rId3",
           "embedded_media_target": "ppt/media/image10.png",
           "source_order": 2,
-          "media_src": "../../../assets/deck-media/17777ff9dc1e9220997db63d1a3ab6e2502555b90758084c291d754f8c87094f.png",
-          "media_sha256": "17777ff9dc1e9220997db63d1a3ab6e2502555b90758084c291d754f8c87094f"
+          "media_sha256": "17777ff9dc1e9220997db63d1a3ab6e2502555b90758084c291d754f8c87094f",
+          "paragraphs": [
+            "Consider a social network database about people and their relationships. The database has two relations:",
+            "Person(pid, name)",
+            "Relationship(pid1, rel, pid2)",
+            "Person.pid is a key. Relationship.pid1 and Relationship.pid2 are foreign keys; rel represents the relationship type and may be friend or enemy. The relationship is not necessarily symmetric.",
+            "(a) (10 points) Write the SQL statements that define the relational schema. Assume pid values are integers, and name and rel are character strings."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Consider a social network database about people and their relationships. The database has two relations:",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Consider a social network database about people and their relationships. The database has two relations:",
+                  "style": {
+                    "sz": "1150",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Person(pid, name)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Person(pid, name)",
+                  "style": {
+                    "sz": "1150",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Relationship(pid1, rel, pid2)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Relationship(pid1, rel, pid2)",
+                  "style": {
+                    "sz": "1150",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Person.pid is a key. Relationship.pid1 and Relationship.pid2 are foreign keys; rel represents the relationship type and may be friend or enemy. The relationship is not necessarily symmetric.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Person.pid is a key. Relationship.pid1 and Relationship.pid2 are foreign keys; rel represents the relationship type and may be friend or enemy. The relationship is not necessarily symmetric.",
+                  "style": {
+                    "sz": "1150",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "(a) (10 points) Write the SQL statements that define the relational schema. Assume pid values are integers, and name and rel are character strings.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "(a) (10 points) Write the SQL statements that define the relational schema. Assume pid values are integers, and name and rel are character strings.",
+                  "style": {
+                    "sz": "1150",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "drawing",

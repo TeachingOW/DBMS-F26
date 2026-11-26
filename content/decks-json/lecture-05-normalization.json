@@ -289479,8 +289479,8 @@
           }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "4",
           "name": "Picture 2",
           "bounds_emu": {
@@ -289505,12 +289505,52 @@
             "dash": null
           },
           "source_order": 3,
-          "media_src": "../../../assets/deck-media/830afc08934eafc63b5c5344d275692846c3d3b3f5dfe8b09ec140d5c118d011.png",
-          "media_sha256": "830afc08934eafc63b5c5344d275692846c3d3b3f5dfe8b09ec140d5c118d011"
+          "media_sha256": "830afc08934eafc63b5c5344d275692846c3d3b3f5dfe8b09ec140d5c118d011",
+          "paragraphs": [
+            "Definition. A relation schema R is in second normal form (2NF) if every non-prime attribute A in R is not partially dependent on any key of R."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Definition. A relation schema R is in second normal form (2NF) if every non-prime attribute A in R is not partially dependent on any key of R.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Definition. A relation schema R is in second normal form (2NF) if every non-prime attribute A in R is not partially dependent on any key of R.",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "5",
           "name": "Picture 3",
           "bounds_emu": {
@@ -289535,12 +289575,52 @@
             "dash": null
           },
           "source_order": 4,
-          "media_src": "../../../assets/deck-media/2895ef19a1a4c32be38b6d5a0be97fc710db855c5b48011452ec9a2bcf18fb02.png",
-          "media_sha256": "2895ef19a1a4c32be38b6d5a0be97fc710db855c5b48011452ec9a2bcf18fb02"
+          "media_sha256": "2895ef19a1a4c32be38b6d5a0be97fc710db855c5b48011452ec9a2bcf18fb02",
+          "paragraphs": [
+            "Definition. A relation schema R is in third normal form (3NF) if, whenever a nontrivial functional dependency X → A holds in R, either (a) X is a superkey of R, or (b) A is a prime attribute of R."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Definition. A relation schema R is in third normal form (3NF) if, whenever a nontrivial functional dependency X → A holds in R, either (a) X is a superkey of R, or (b) A is a prime attribute of R.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Definition. A relation schema R is in third normal form (3NF) if, whenever a nontrivial functional dependency X → A holds in R, either (a) X is a superkey of R, or (b) A is a prime attribute of R.",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "6",
           "name": "Picture 2",
           "bounds_emu": {
@@ -289565,8 +289645,48 @@
             "dash": null
           },
           "source_order": 5,
-          "media_src": "../../../assets/deck-media/a03e91c5374716bf01bf9893a5e490436a83b1e7aa117d9c6efbcdbd125422ab.png",
-          "media_sha256": "a03e91c5374716bf01bf9893a5e490436a83b1e7aa117d9c6efbcdbd125422ab"
+          "media_sha256": "a03e91c5374716bf01bf9893a5e490436a83b1e7aa117d9c6efbcdbd125422ab",
+          "paragraphs": [
+            "Definition. A relation schema R is in BCNF if whenever a nontrivial functional dependency X → A holds in R, then X is a superkey of R."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Definition. A relation schema R is in BCNF if whenever a nontrivial functional dependency X → A holds in R, then X is a superkey of R.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Definition. A relation schema R is in BCNF if whenever a nontrivial functional dependency X → A holds in R, then X is a superkey of R.",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -290029,8 +290149,8 @@
           }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "4",
           "name": "Picture 2",
           "bounds_emu": {
@@ -290055,12 +290175,52 @@
             "dash": null
           },
           "source_order": 3,
-          "media_src": "../../../assets/deck-media/830afc08934eafc63b5c5344d275692846c3d3b3f5dfe8b09ec140d5c118d011.png",
-          "media_sha256": "830afc08934eafc63b5c5344d275692846c3d3b3f5dfe8b09ec140d5c118d011"
+          "media_sha256": "830afc08934eafc63b5c5344d275692846c3d3b3f5dfe8b09ec140d5c118d011",
+          "paragraphs": [
+            "Definition. A relation schema R is in second normal form (2NF) if every non-prime attribute A in R is not partially dependent on any key of R."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Definition. A relation schema R is in second normal form (2NF) if every non-prime attribute A in R is not partially dependent on any key of R.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Definition. A relation schema R is in second normal form (2NF) if every non-prime attribute A in R is not partially dependent on any key of R.",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "5",
           "name": "Picture 3",
           "bounds_emu": {
@@ -290085,12 +290245,52 @@
             "dash": null
           },
           "source_order": 4,
-          "media_src": "../../../assets/deck-media/2895ef19a1a4c32be38b6d5a0be97fc710db855c5b48011452ec9a2bcf18fb02.png",
-          "media_sha256": "2895ef19a1a4c32be38b6d5a0be97fc710db855c5b48011452ec9a2bcf18fb02"
+          "media_sha256": "2895ef19a1a4c32be38b6d5a0be97fc710db855c5b48011452ec9a2bcf18fb02",
+          "paragraphs": [
+            "Definition. A relation schema R is in third normal form (3NF) if, whenever a nontrivial functional dependency X → A holds in R, either (a) X is a superkey of R, or (b) A is a prime attribute of R."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Definition. A relation schema R is in third normal form (3NF) if, whenever a nontrivial functional dependency X → A holds in R, either (a) X is a superkey of R, or (b) A is a prime attribute of R.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Definition. A relation schema R is in third normal form (3NF) if, whenever a nontrivial functional dependency X → A holds in R, either (a) X is a superkey of R, or (b) A is a prime attribute of R.",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "6",
           "name": "Picture 2",
           "bounds_emu": {
@@ -290115,8 +290315,48 @@
             "dash": null
           },
           "source_order": 5,
-          "media_src": "../../../assets/deck-media/a03e91c5374716bf01bf9893a5e490436a83b1e7aa117d9c6efbcdbd125422ab.png",
-          "media_sha256": "a03e91c5374716bf01bf9893a5e490436a83b1e7aa117d9c6efbcdbd125422ab"
+          "media_sha256": "a03e91c5374716bf01bf9893a5e490436a83b1e7aa117d9c6efbcdbd125422ab",
+          "paragraphs": [
+            "Definition. A relation schema R is in BCNF if whenever a nontrivial functional dependency X → A holds in R, then X is a superkey of R."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "Definition. A relation schema R is in BCNF if whenever a nontrivial functional dependency X → A holds in R, then X is a superkey of R.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Definition. A relation schema R is in BCNF if whenever a nontrivial functional dependency X → A holds in R, then X is a superkey of R.",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",

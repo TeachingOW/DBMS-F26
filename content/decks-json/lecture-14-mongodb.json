@@ -9403,8 +9403,8 @@
           }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "7",
           "name": "Picture 6",
           "bounds_emu": {
@@ -9419,8 +9419,396 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image10.png",
           "source_order": 3,
-          "media_src": "../../../assets/deck-media/fe34ddefcb4d3e8f8f87169d9ca4fe582b9b8cb954a55d2cb1559013e5b8fd74.png",
-          "media_sha256": "fe34ddefcb4d3e8f8f87169d9ca4fe582b9b8cb954a55d2cb1559013e5b8fd74"
+          "media_sha256": "fe34ddefcb4d3e8f8f87169d9ca4fe582b9b8cb954a55d2cb1559013e5b8fd74",
+          "paragraphs": [
+            "C",
+            "C++",
+            "Erlang",
+            "Haskell",
+            "Java",
+            "Javascript",
+            ".NET (C# F#, PowerShell, etc)",
+            "Node.js",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby",
+            "Scala"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "C",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "C",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "C++",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "C++",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Erlang",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Erlang",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Haskell",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Haskell",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Java",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Java",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Javascript",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Javascript",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": ".NET (C# F#, PowerShell, etc)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": ".NET (C# F#, PowerShell, etc)",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Node.js",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Node.js",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Perl",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Perl",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "PHP",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "PHP",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Python",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Python",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Ruby",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Ruby",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Scala",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Scala",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "drawing",
@@ -9852,8 +10240,8 @@
           }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "7",
           "name": "Picture 6",
           "bounds_emu": {
@@ -9868,8 +10256,396 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image10.png",
           "source_order": 3,
-          "media_src": "../../../assets/deck-media/fe34ddefcb4d3e8f8f87169d9ca4fe582b9b8cb954a55d2cb1559013e5b8fd74.png",
-          "media_sha256": "fe34ddefcb4d3e8f8f87169d9ca4fe582b9b8cb954a55d2cb1559013e5b8fd74"
+          "media_sha256": "fe34ddefcb4d3e8f8f87169d9ca4fe582b9b8cb954a55d2cb1559013e5b8fd74",
+          "paragraphs": [
+            "C",
+            "C++",
+            "Erlang",
+            "Haskell",
+            "Java",
+            "Javascript",
+            ".NET (C# F#, PowerShell, etc)",
+            "Node.js",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby",
+            "Scala"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "C",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "C",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "C++",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "C++",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Erlang",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Erlang",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Haskell",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Haskell",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Java",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Java",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Javascript",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Javascript",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": ".NET (C# F#, PowerShell, etc)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": ".NET (C# F#, PowerShell, etc)",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Node.js",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Node.js",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Perl",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Perl",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "PHP",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "PHP",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Python",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Python",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Ruby",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Ruby",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "Scala",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "Scala",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "char",
+                "value": "•",
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "drawing",
@@ -53802,8 +54578,8 @@
           }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "5",
           "name": "Picture 4",
           "bounds_emu": {
@@ -53818,8 +54594,251 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image38.png",
           "source_order": 3,
-          "media_src": "../../../assets/deck-media/3000fa9e68c49dfb5489133e34766f660b627bc23f2c33628ff15e8043b0b95e.png",
-          "media_sha256": "3000fa9e68c49dfb5489133e34766f660b627bc23f2c33628ff15e8043b0b95e"
+          "media_sha256": "3000fa9e68c49dfb5489133e34766f660b627bc23f2c33628ff15e8043b0b95e",
+          "paragraphs": [
+            "CREATE TABLE users (",
+            "  id MEDIUMINT NOT NULL",
+            "    AUTO_INCREMENT,",
+            "  user_id VARCHAR(30),",
+            "  age NUMBER,",
+            "  status CHAR(1),",
+            "  PRIMARY KEY (id)",
+            ")"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "CREATE TABLE users (",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "CREATE TABLE users (",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  id MEDIUMINT NOT NULL",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  id MEDIUMINT NOT NULL",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "    AUTO_INCREMENT,",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "    AUTO_INCREMENT,",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  user_id VARCHAR(30),",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  user_id VARCHAR(30),",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  age NUMBER,",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  age NUMBER,",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  status CHAR(1),",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  status CHAR(1),",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  PRIMARY KEY (id)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  PRIMARY KEY (id)",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": ")",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -53881,8 +54900,8 @@
           "source_order": 4
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "7",
           "name": "Picture 6",
           "bounds_emu": {
@@ -53897,12 +54916,168 @@
           "embedded_media_relationship": "rId3",
           "embedded_media_target": "ppt/media/image39.png",
           "source_order": 5,
-          "media_src": "../../../assets/deck-media/28e1228aa05d5b184fce34438ffc304e6dae3bf08a82c49a99a88d23eac27b58.png",
-          "media_sha256": "28e1228aa05d5b184fce34438ffc304e6dae3bf08a82c49a99a88d23eac27b58"
+          "media_sha256": "28e1228aa05d5b184fce34438ffc304e6dae3bf08a82c49a99a88d23eac27b58",
+          "paragraphs": [
+            "db.users.insert({",
+            "  user_id: \"abc123\",",
+            "  age: 55,",
+            "  status: \"A\"",
+            "})"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "db.users.insert({",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "db.users.insert({",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  user_id: \"abc123\",",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  user_id: \"abc123\",",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  age: 55,",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  age: 55,",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  status: \"A\"",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  status: \"A\"",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "})",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "})",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "8",
           "name": "Picture 7",
           "bounds_emu": {
@@ -53917,8 +55092,48 @@
           "embedded_media_relationship": "rId4",
           "embedded_media_target": "ppt/media/image40.png",
           "source_order": 6,
-          "media_src": "../../../assets/deck-media/ca1d731c5b429c9701fee0c999de75ff9ee3af63d84cf4e6245be317cc8b02d0.png",
-          "media_sha256": "ca1d731c5b429c9701fee0c999de75ff9ee3af63d84cf4e6245be317cc8b02d0"
+          "media_sha256": "ca1d731c5b429c9701fee0c999de75ff9ee3af63d84cf4e6245be317cc8b02d0",
+          "paragraphs": [
+            "db.createCollection(\"users\")"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "db.createCollection(\"users\")",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "db.createCollection(\"users\")",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -54164,8 +55379,8 @@
           },
           "children": [
             {
-              "kind": "drawing",
-              "object_type": "pic",
+              "kind": "text",
+              "object_type": "sp",
               "shape_id": "12",
               "name": "Picture 11",
               "bounds_emu": {
@@ -54180,12 +55395,52 @@
               "embedded_media_relationship": "rId5",
               "embedded_media_target": "ppt/media/image41.png",
               "source_order": 1,
-              "media_src": "../../../assets/deck-media/3c65ccdac3c52de5e6357d8ce5b5fb0bc5f5b91e725b76e890c7e816852007bd.png",
-              "media_sha256": "3c65ccdac3c52de5e6357d8ce5b5fb0bc5f5b91e725b76e890c7e816852007bd"
+              "media_sha256": "3c65ccdac3c52de5e6357d8ce5b5fb0bc5f5b91e725b76e890c7e816852007bd",
+              "paragraphs": [
+                "DROP TABLE users;"
+              ],
+              "rich_paragraphs": [
+                {
+                  "text": "DROP TABLE users;",
+                  "level": 0,
+                  "alignment": null,
+                  "runs": [
+                    {
+                      "text": "DROP TABLE users;",
+                      "style": {
+                        "sz": "1100",
+                        "font": "Consolas",
+                        "color": {
+                          "type": "srgbClr",
+                          "value": "111111"
+                        }
+                      }
+                    }
+                  ],
+                  "paragraph_format": {
+                    "spcAft": {
+                      "spcPts": "300"
+                    }
+                  },
+                  "bullet": {
+                    "type": "none",
+                    "value": null,
+                    "source": "generated-text-media"
+                  }
+                }
+              ],
+              "text_box": {
+                "anchor": "t",
+                "lIns": "60000",
+                "rIns": "60000",
+                "tIns": "30000",
+                "bIns": "30000",
+                "auto_fit": "normAutoFit"
+              }
             },
             {
-              "kind": "drawing",
-              "object_type": "pic",
+              "kind": "text",
+              "object_type": "sp",
               "shape_id": "14",
               "name": "Picture 13",
               "bounds_emu": {
@@ -54200,8 +55455,48 @@
               "embedded_media_relationship": "rId6",
               "embedded_media_target": "ppt/media/image42.png",
               "source_order": 2,
-              "media_src": "../../../assets/deck-media/eeae385a0da30543701551c71b96c1e11915ba0b2657e2b55de8cef6b8aebae4.png",
-              "media_sha256": "eeae385a0da30543701551c71b96c1e11915ba0b2657e2b55de8cef6b8aebae4"
+              "media_sha256": "eeae385a0da30543701551c71b96c1e11915ba0b2657e2b55de8cef6b8aebae4",
+              "paragraphs": [
+                "db.users.drop()"
+              ],
+              "rich_paragraphs": [
+                {
+                  "text": "db.users.drop()",
+                  "level": 0,
+                  "alignment": null,
+                  "runs": [
+                    {
+                      "text": "db.users.drop()",
+                      "style": {
+                        "sz": "1100",
+                        "font": "Consolas",
+                        "color": {
+                          "type": "srgbClr",
+                          "value": "111111"
+                        }
+                      }
+                    }
+                  ],
+                  "paragraph_format": {
+                    "spcAft": {
+                      "spcPts": "300"
+                    }
+                  },
+                  "bullet": {
+                    "type": "none",
+                    "value": null,
+                    "source": "generated-text-media"
+                  }
+                }
+              ],
+              "text_box": {
+                "anchor": "t",
+                "lIns": "60000",
+                "rIns": "60000",
+                "tIns": "30000",
+                "bIns": "30000",
+                "auto_fit": "normAutoFit"
+              }
             }
           ],
           "source_order": 10
@@ -54667,8 +55962,8 @@
           }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "5",
           "name": "Picture 4",
           "bounds_emu": {
@@ -54683,8 +55978,251 @@
           "embedded_media_relationship": "rId2",
           "embedded_media_target": "ppt/media/image38.png",
           "source_order": 3,
-          "media_src": "../../../assets/deck-media/3000fa9e68c49dfb5489133e34766f660b627bc23f2c33628ff15e8043b0b95e.png",
-          "media_sha256": "3000fa9e68c49dfb5489133e34766f660b627bc23f2c33628ff15e8043b0b95e"
+          "media_sha256": "3000fa9e68c49dfb5489133e34766f660b627bc23f2c33628ff15e8043b0b95e",
+          "paragraphs": [
+            "CREATE TABLE users (",
+            "  id MEDIUMINT NOT NULL",
+            "    AUTO_INCREMENT,",
+            "  user_id VARCHAR(30),",
+            "  age NUMBER,",
+            "  status CHAR(1),",
+            "  PRIMARY KEY (id)",
+            ")"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "CREATE TABLE users (",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "CREATE TABLE users (",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  id MEDIUMINT NOT NULL",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  id MEDIUMINT NOT NULL",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "    AUTO_INCREMENT,",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "    AUTO_INCREMENT,",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  user_id VARCHAR(30),",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  user_id VARCHAR(30),",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  age NUMBER,",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  age NUMBER,",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  status CHAR(1),",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  status CHAR(1),",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  PRIMARY KEY (id)",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  PRIMARY KEY (id)",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": ")",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": ")",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -54746,8 +56284,8 @@
           "source_order": 4
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "7",
           "name": "Picture 6",
           "bounds_emu": {
@@ -54762,12 +56300,168 @@
           "embedded_media_relationship": "rId3",
           "embedded_media_target": "ppt/media/image39.png",
           "source_order": 5,
-          "media_src": "../../../assets/deck-media/28e1228aa05d5b184fce34438ffc304e6dae3bf08a82c49a99a88d23eac27b58.png",
-          "media_sha256": "28e1228aa05d5b184fce34438ffc304e6dae3bf08a82c49a99a88d23eac27b58"
+          "media_sha256": "28e1228aa05d5b184fce34438ffc304e6dae3bf08a82c49a99a88d23eac27b58",
+          "paragraphs": [
+            "db.users.insert({",
+            "  user_id: \"abc123\",",
+            "  age: 55,",
+            "  status: \"A\"",
+            "})"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "db.users.insert({",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "db.users.insert({",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  user_id: \"abc123\",",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  user_id: \"abc123\",",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  age: 55,",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  age: 55,",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "  status: \"A\"",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "  status: \"A\"",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            },
+            {
+              "text": "})",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "})",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "8",
           "name": "Picture 7",
           "bounds_emu": {
@@ -54782,8 +56476,48 @@
           "embedded_media_relationship": "rId4",
           "embedded_media_target": "ppt/media/image40.png",
           "source_order": 6,
-          "media_src": "../../../assets/deck-media/ca1d731c5b429c9701fee0c999de75ff9ee3af63d84cf4e6245be317cc8b02d0.png",
-          "media_sha256": "ca1d731c5b429c9701fee0c999de75ff9ee3af63d84cf4e6245be317cc8b02d0"
+          "media_sha256": "ca1d731c5b429c9701fee0c999de75ff9ee3af63d84cf4e6245be317cc8b02d0",
+          "paragraphs": [
+            "db.createCollection(\"users\")"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "db.createCollection(\"users\")",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "db.createCollection(\"users\")",
+                  "style": {
+                    "sz": "1100",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -55029,8 +56763,8 @@
           },
           "children": [
             {
-              "kind": "drawing",
-              "object_type": "pic",
+              "kind": "text",
+              "object_type": "sp",
               "shape_id": "12",
               "name": "Picture 11",
               "bounds_emu": {
@@ -55045,12 +56779,52 @@
               "embedded_media_relationship": "rId5",
               "embedded_media_target": "ppt/media/image41.png",
               "source_order": 1,
-              "media_src": "../../../assets/deck-media/3c65ccdac3c52de5e6357d8ce5b5fb0bc5f5b91e725b76e890c7e816852007bd.png",
-              "media_sha256": "3c65ccdac3c52de5e6357d8ce5b5fb0bc5f5b91e725b76e890c7e816852007bd"
+              "media_sha256": "3c65ccdac3c52de5e6357d8ce5b5fb0bc5f5b91e725b76e890c7e816852007bd",
+              "paragraphs": [
+                "DROP TABLE users;"
+              ],
+              "rich_paragraphs": [
+                {
+                  "text": "DROP TABLE users;",
+                  "level": 0,
+                  "alignment": null,
+                  "runs": [
+                    {
+                      "text": "DROP TABLE users;",
+                      "style": {
+                        "sz": "1100",
+                        "font": "Consolas",
+                        "color": {
+                          "type": "srgbClr",
+                          "value": "111111"
+                        }
+                      }
+                    }
+                  ],
+                  "paragraph_format": {
+                    "spcAft": {
+                      "spcPts": "300"
+                    }
+                  },
+                  "bullet": {
+                    "type": "none",
+                    "value": null,
+                    "source": "generated-text-media"
+                  }
+                }
+              ],
+              "text_box": {
+                "anchor": "t",
+                "lIns": "60000",
+                "rIns": "60000",
+                "tIns": "30000",
+                "bIns": "30000",
+                "auto_fit": "normAutoFit"
+              }
             },
             {
-              "kind": "drawing",
-              "object_type": "pic",
+              "kind": "text",
+              "object_type": "sp",
               "shape_id": "14",
               "name": "Picture 13",
               "bounds_emu": {
@@ -55065,8 +56839,48 @@
               "embedded_media_relationship": "rId6",
               "embedded_media_target": "ppt/media/image42.png",
               "source_order": 2,
-              "media_src": "../../../assets/deck-media/eeae385a0da30543701551c71b96c1e11915ba0b2657e2b55de8cef6b8aebae4.png",
-              "media_sha256": "eeae385a0da30543701551c71b96c1e11915ba0b2657e2b55de8cef6b8aebae4"
+              "media_sha256": "eeae385a0da30543701551c71b96c1e11915ba0b2657e2b55de8cef6b8aebae4",
+              "paragraphs": [
+                "db.users.drop()"
+              ],
+              "rich_paragraphs": [
+                {
+                  "text": "db.users.drop()",
+                  "level": 0,
+                  "alignment": null,
+                  "runs": [
+                    {
+                      "text": "db.users.drop()",
+                      "style": {
+                        "sz": "1100",
+                        "font": "Consolas",
+                        "color": {
+                          "type": "srgbClr",
+                          "value": "111111"
+                        }
+                      }
+                    }
+                  ],
+                  "paragraph_format": {
+                    "spcAft": {
+                      "spcPts": "300"
+                    }
+                  },
+                  "bullet": {
+                    "type": "none",
+                    "value": null,
+                    "source": "generated-text-media"
+                  }
+                }
+              ],
+              "text_box": {
+                "anchor": "t",
+                "lIns": "60000",
+                "rIns": "60000",
+                "tIns": "30000",
+                "bIns": "30000",
+                "auto_fit": "normAutoFit"
+              }
             }
           ],
           "source_order": 10
@@ -56976,8 +58790,8 @@
           "browser_derivative_of": "e3a296e59dd4ffd95d6c741851d3f9d79c4865cb0e4e470213cc41fff84ad96a.emf"
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "9",
           "name": "Picture 8",
           "bounds_emu": {
@@ -57003,8 +58817,48 @@
             "dash": null
           },
           "source_order": 4,
-          "media_src": "../../../assets/deck-media/a46c6ebdd016cb5d699decab0384770e074d6c3d5f72bcac8b31ddeb181455fd.png",
-          "media_sha256": "a46c6ebdd016cb5d699decab0384770e074d6c3d5f72bcac8b31ddeb181455fd"
+          "media_sha256": "a46c6ebdd016cb5d699decab0384770e074d6c3d5f72bcac8b31ddeb181455fd",
+          "paragraphs": [
+            "db.inventory.insert(mydocuments);"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "db.inventory.insert(mydocuments);",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "db.inventory.insert(mydocuments);",
+                  "style": {
+                    "sz": "1200",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -57618,8 +59472,8 @@
           "browser_derivative_of": "e3a296e59dd4ffd95d6c741851d3f9d79c4865cb0e4e470213cc41fff84ad96a.emf"
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "9",
           "name": "Picture 8",
           "bounds_emu": {
@@ -57645,8 +59499,48 @@
             "dash": null
           },
           "source_order": 4,
-          "media_src": "../../../assets/deck-media/a46c6ebdd016cb5d699decab0384770e074d6c3d5f72bcac8b31ddeb181455fd.png",
-          "media_sha256": "a46c6ebdd016cb5d699decab0384770e074d6c3d5f72bcac8b31ddeb181455fd"
+          "media_sha256": "a46c6ebdd016cb5d699decab0384770e074d6c3d5f72bcac8b31ddeb181455fd",
+          "paragraphs": [
+            "db.inventory.insert(mydocuments);"
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "db.inventory.insert(mydocuments);",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "db.inventory.insert(mydocuments);",
+                  "style": {
+                    "sz": "1200",
+                    "font": "Consolas",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "text",
@@ -63408,8 +65302,8 @@
           "media_sha256": "fd1a872dffe8fc19c96dda65116ad6fb55edc94b9525b6afed96778598f05330"
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "6",
           "name": "Picture 5",
           "bounds_emu": {
@@ -63424,8 +65318,48 @@
           "embedded_media_relationship": "rId3",
           "embedded_media_target": "ppt/media/image51.png",
           "source_order": 4,
-          "media_src": "../../../assets/deck-media/4165c724a9bb301a5a49a219f063dbc09864eb9ac40d3d1938b3476d922f65da.png",
-          "media_sha256": "4165c724a9bb301a5a49a219f063dbc09864eb9ac40d3d1938b3476d922f65da"
+          "media_sha256": "4165c724a9bb301a5a49a219f063dbc09864eb9ac40d3d1938b3476d922f65da",
+          "paragraphs": [
+            "For the document with item equal to \"MNO2\", use the $set operator to update the category and details fields, and use $currentDate to update lastModified with the current date."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "For the document with item equal to \"MNO2\", use the $set operator to update the category and details fields, and use $currentDate to update lastModified with the current date.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "For the document with item equal to \"MNO2\", use the $set operator to update the category and details fields, and use $currentDate to update lastModified with the current date.",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "drawing",
@@ -64046,8 +65980,8 @@
           "media_sha256": "fd1a872dffe8fc19c96dda65116ad6fb55edc94b9525b6afed96778598f05330"
         },
         {
-          "kind": "drawing",
-          "object_type": "pic",
+          "kind": "text",
+          "object_type": "sp",
           "shape_id": "6",
           "name": "Picture 5",
           "bounds_emu": {
@@ -64062,8 +65996,48 @@
           "embedded_media_relationship": "rId3",
           "embedded_media_target": "ppt/media/image51.png",
           "source_order": 4,
-          "media_src": "../../../assets/deck-media/4165c724a9bb301a5a49a219f063dbc09864eb9ac40d3d1938b3476d922f65da.png",
-          "media_sha256": "4165c724a9bb301a5a49a219f063dbc09864eb9ac40d3d1938b3476d922f65da"
+          "media_sha256": "4165c724a9bb301a5a49a219f063dbc09864eb9ac40d3d1938b3476d922f65da",
+          "paragraphs": [
+            "For the document with item equal to \"MNO2\", use the $set operator to update the category and details fields, and use $currentDate to update lastModified with the current date."
+          ],
+          "rich_paragraphs": [
+            {
+              "text": "For the document with item equal to \"MNO2\", use the $set operator to update the category and details fields, and use $currentDate to update lastModified with the current date.",
+              "level": 0,
+              "alignment": null,
+              "runs": [
+                {
+                  "text": "For the document with item equal to \"MNO2\", use the $set operator to update the category and details fields, and use $currentDate to update lastModified with the current date.",
+                  "style": {
+                    "sz": "1350",
+                    "font": "Arial",
+                    "color": {
+                      "type": "srgbClr",
+                      "value": "111111"
+                    }
+                  }
+                }
+              ],
+              "paragraph_format": {
+                "spcAft": {
+                  "spcPts": "300"
+                }
+              },
+              "bullet": {
+                "type": "none",
+                "value": null,
+                "source": "generated-text-media"
+              }
+            }
+          ],
+          "text_box": {
+            "anchor": "t",
+            "lIns": "60000",
+            "rIns": "60000",
+            "tIns": "30000",
+            "bIns": "30000",
+            "auto_fit": "normAutoFit"
+          }
         },
         {
           "kind": "drawing",
