@@ -45,16 +45,24 @@
 
   function shapeHtml(block) {
     const fill = resolveColor(block.fill) || 'transparent';
-    const stroke = resolveColor(block.line?.color) || 'transparent';
+    const connector = block.object_type === 'cxnSp';
+    const inheritedConnectorColor = connector && (block.line?.head_end?.type || block.line?.tail_end?.type)
+      ? resolveColor({type:'schemeClr', value:'accent2'})
+      : '#243c2f';
+    const stroke = resolveColor(block.line?.color) || (connector ? inheritedConnectorColor : 'transparent');
     const geometry = block.geometry?.name;
-    if (!geometry && fill === 'transparent' && stroke === 'transparent') return '';
+    if (!geometry && fill === 'transparent' && stroke === 'transparent' && !connector) return '';
     const common = `fill="${fill}" stroke="${stroke}" stroke-width="1"`;
     let shape = `<rect x="1" y="1" width="98" height="98" ${common}/>`;
     if (geometry === 'ellipse') shape = `<ellipse cx="50" cy="50" rx="48" ry="48" ${common}/>`;
     if (geometry === 'diamond') shape = `<polygon points="50,1 99,50 50,99 1,50" ${common}/>`;
-    if (['line', 'lineInv'].includes(geometry) || block.object_type === 'cxnSp') {
+    if (['line', 'lineInv'].includes(geometry) || connector) {
       const reversed = geometry === 'lineInv';
-      shape = `<line x1="${reversed ? 100 : 0}" y1="0" x2="${reversed ? 0 : 100}" y2="100" stroke="${stroke === 'transparent' ? '#243c2f' : stroke}" stroke-width="2"/>`;
+      const markerId = `arrow-${block.shape_id || 'connector'}`;
+      const marker = `<defs><marker id="${markerId}" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="${stroke}"/></marker></defs>`;
+      const markerStart = block.line?.tail_end?.type && block.line.tail_end.type !== 'none' ? ` marker-start="url(#${markerId})"` : '';
+      const markerEnd = block.line?.head_end?.type && block.line.head_end.type !== 'none' ? ` marker-end="url(#${markerId})"` : '';
+      shape = `${marker}<line x1="${reversed ? 100 : 0}" y1="0" x2="${reversed ? 0 : 100}" y2="100" stroke="${stroke}" stroke-width="2"${markerStart}${markerEnd}/>`;
     }
     return `<svg class="json-shape" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">${shape}</svg>`;
   }
@@ -84,8 +92,7 @@
 
   function renderSlide(slide) {
     const objects = (slide.content || []).filter(block => block.bounds_emu && (block.placeholder || '').toLowerCase() !== 'sldnum');
-    const priority = block => block.object_type === 'pic' ? 0 : block.kind === 'drawing' ? 1 : block.kind === 'table' ? 2 : 3;
-    return `<div class="json-slide" role="img" aria-label="${escapeHtml(slide.title)}">${[...objects].sort((a, b) => priority(a) - priority(b)).map(block => renderObject(block)).join('')}</div>`;
+    return `<div class="json-slide" role="img" aria-label="${escapeHtml(slide.title)}">${[...objects].sort((a, b) => (a.source_order || 0) - (b.source_order || 0)).map(block => renderObject(block)).join('')}</div>`;
   }
 
   const sourceImage = document.querySelector('[data-slide]');
