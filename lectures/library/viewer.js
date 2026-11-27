@@ -18,7 +18,13 @@
       const themeValue = deck.theme_colors?.[key];
       hex = typeof themeValue === 'string' ? themeValue : themeValue?.lastClr || themeValue?.val;
     }
-    return /^[0-9a-f]{6}$/i.test(hex || '') ? `#${hex}` : '';
+    if (!/^[0-9a-f]{6}$/i.test(hex || '')) return '';
+    const channels = [0, 2, 4].map(offset => parseInt(hex.slice(offset, offset + 2), 16));
+    const lumMod = value.lumMod == null ? 1 : Number(value.lumMod) / 100000;
+    const lumOff = value.lumOff == null ? 0 : Number(value.lumOff) / 100000;
+    const transformed = channels.map(channel => Math.max(0, Math.min(255, Math.round(channel * lumMod + 255 * lumOff))));
+    const alpha = value.alpha == null ? 1 : Number(value.alpha) / 100000;
+    return alpha < 1 ? `rgba(${transformed.join(',')},${alpha})` : `#${transformed.map(channel => channel.toString(16).padStart(2, '0')).join('')}`;
   }
 
   function paragraphHtml(block) {
@@ -52,17 +58,18 @@
     const stroke = resolveColor(block.line?.color) || (connector ? inheritedConnectorColor : 'transparent');
     const geometry = block.geometry?.name;
     if (!geometry && fill === 'transparent' && stroke === 'transparent' && !connector) return '';
-    const common = `fill="${fill}" stroke="${stroke}" stroke-width="1"`;
+    const strokeWidth = block.line?.width_emu ? Math.max(.6, Number(block.line.width_emu) / 19050) : 1;
+    const common = `fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}"`;
     let shape = `<rect x="1" y="1" width="98" height="98" ${common}/>`;
     if (geometry === 'ellipse') shape = `<ellipse cx="50" cy="50" rx="48" ry="48" ${common}/>`;
     if (geometry === 'diamond') shape = `<polygon points="50,1 99,50 50,99 1,50" ${common}/>`;
     if (['line', 'lineInv'].includes(geometry) || connector) {
       const reversed = geometry === 'lineInv';
       const markerId = `arrow-${block.shape_id || 'connector'}`;
-      const marker = `<defs><marker id="${markerId}" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="${stroke}"/></marker></defs>`;
-      const markerStart = block.line?.tail_end?.type && block.line.tail_end.type !== 'none' ? ` marker-start="url(#${markerId})"` : '';
-      const markerEnd = block.line?.head_end?.type && block.line.head_end.type !== 'none' ? ` marker-end="url(#${markerId})"` : '';
-      shape = `${marker}<line x1="${reversed ? 100 : 0}" y1="0" x2="${reversed ? 0 : 100}" y2="100" stroke="${stroke}" stroke-width="2"${markerStart}${markerEnd}/>`;
+      const marker = `<defs><marker id="${markerId}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="${stroke}"/></marker></defs>`;
+      const markerStart = block.line?.head_end?.type && block.line.head_end.type !== 'none' ? ` marker-start="url(#${markerId})"` : '';
+      const markerEnd = block.line?.tail_end?.type && block.line.tail_end.type !== 'none' ? ` marker-end="url(#${markerId})"` : '';
+      shape = `${marker}<line x1="${reversed ? 100 : 0}" y1="0" x2="${reversed ? 0 : 100}" y2="100" stroke="${stroke}" stroke-width="${strokeWidth}"${markerStart}${markerEnd}/>`;
     }
     return `<svg class="json-shape" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">${shape}</svg>`;
   }
@@ -75,8 +82,13 @@
       return (block.children || []).map(child => renderObject(child, childContext)).join('');
     }
     const x = context.tx + (bounds.x || 0) * context.sx, y = context.ty + (bounds.y || 0) * context.sy, w = (bounds.width || 0) * context.sx, h = (bounds.height || 0) * context.sy;
-    const rotation = bounds.rotation_60000deg ? `transform:rotate(${bounds.rotation_60000deg / 60000}deg);` : '';
-    const frame = `left:${x}%;top:${y}%;width:${w}%;height:${h}%;${rotation}`;
+    const transforms = [];
+    if (bounds.rotation_60000deg) transforms.push(`rotate(${bounds.rotation_60000deg / 60000}deg)`);
+    if (bounds.flipH) transforms.push('scaleX(-1)');
+    if (bounds.flipV) transforms.push('scaleY(-1)');
+    const transform = transforms.length ? `transform:${transforms.join(' ')};` : '';
+    const overflow = block.object_type === 'cxnSp' ? 'overflow:visible;' : '';
+    const frame = `left:${x}%;top:${y}%;width:${w}%;height:${h}%;${transform}${overflow}`;
     if (block.kind === 'table') {
       const rows = (block.rows || []).map((row, rowIndex) => `<tr>${row.map(cell => rowIndex ? `<td>${escapeHtml(cell)}</td>` : `<th>${escapeHtml(cell)}</th>`).join('')}</tr>`).join('');
       return `<div class="json-object" style="${frame}"><table>${rows}</table></div>`;
