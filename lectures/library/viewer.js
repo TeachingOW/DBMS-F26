@@ -69,7 +69,7 @@
       const marker = `<defs><marker id="${markerId}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="${stroke}"/></marker></defs>`;
       const markerStart = block.line?.head_end?.type && block.line.head_end.type !== 'none' ? ` marker-start="url(#${markerId})"` : '';
       const markerEnd = block.line?.tail_end?.type && block.line.tail_end.type !== 'none' ? ` marker-end="url(#${markerId})"` : '';
-      shape = `${marker}<line x1="${reversed ? 100 : 0}" y1="0" x2="${reversed ? 0 : 100}" y2="100" stroke="${stroke}" stroke-width="${strokeWidth}"${markerStart}${markerEnd}/>`;
+      shape = `${marker}<line x1="${reversed ? 100 : 0}" y1="0" x2="${reversed ? 0 : 100}" y2="100" stroke="${stroke}" stroke-width="${strokeWidth}" vector-effect="non-scaling-stroke"${markerStart}${markerEnd}/>`;
     }
     return `<svg class="json-shape" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">${shape}</svg>`;
   }
@@ -87,7 +87,7 @@
     if (bounds.flipH) transforms.push('scaleX(-1)');
     if (bounds.flipV) transforms.push('scaleY(-1)');
     const transform = transforms.length ? `transform:${transforms.join(' ')};` : '';
-    const overflow = block.object_type === 'cxnSp' ? 'overflow:visible;' : '';
+    const overflow = block.object_type === 'cxnSp' ? 'overflow:visible;min-width:1px;min-height:1px;' : '';
     const frame = `left:${x}%;top:${y}%;width:${w}%;height:${h}%;${transform}${overflow}`;
     if (block.kind === 'table') {
       const rows = (block.rows || []).map((row, rowIndex) => `<tr>${row.map(cell => rowIndex ? `<td>${escapeHtml(cell)}</td>` : `<th>${escapeHtml(cell)}</th>`).join('')}</tr>`).join('');

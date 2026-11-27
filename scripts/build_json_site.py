@@ -27,6 +27,8 @@ POWERPOINT_JSON_STRING = re.compile(
     r'"(?P<prefix> — )?(?:(?:[^"/]+/)*)?(?P<filename>[^"/]+\.pptx)"'
 )
 WINDOW_FUNCTIONS_PATH = DECKS_DIR / "lecture-06-window-functions.json"
+ER_MODELING_PATH = DECKS_DIR / "lecture-03-er-modeling.json"
+ERD_LINE_WIDTH_EMU = 38100
 LECTURE_INDEX_PATH = ROOT / "content/pages/lectures/library/index.json"
 WINDOW_FUNCTIONS_AUTHORING_NOTE = "authored:1673261d7e4e4fd8aa3c2032c24b8729"
 
@@ -354,6 +356,19 @@ def migrate_powerpoint_links(text: str) -> str:
     )
 
 
+def thicken_erd_lines(deck: dict, slide_number: int) -> None:
+    """Keep ER diagram shapes legible at browser presentation scale."""
+
+    slide = next(slide for slide in deck["slides"] if slide.get("number") == slide_number)
+    for block in walk_objects(slide.get("content", [])):
+        line = block.get("line")
+        geometry = block.get("geometry", {}).get("name")
+        if line and line.get("width_emu", 0) > 0 and (
+            block.get("object_type") == "cxnSp" or geometry in {"rect", "ellipse", "diamond"}
+        ):
+            line["width_emu"] = ERD_LINE_WIDTH_EMU
+
+
 def generate() -> dict[Path, str]:
     site = json.loads(SITE_PATH.read_text())
     site["routes"]["index.html"] = HOME_ROUTE
@@ -369,6 +384,7 @@ def generate() -> dict[Path, str]:
                     slide["title"] = replacement["title"]
                     break
         convert_text_media(deck)
+    thicken_erd_lines(decks[ER_MODELING_PATH], 42)
     window_functions = decks[WINDOW_FUNCTIONS_PATH]
     window_functions["slides"] = [
         slide
